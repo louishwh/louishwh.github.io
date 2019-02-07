@@ -1,14 +1,14 @@
 # Site settings
 name: Atomix
-email: sincerehwh@126.com
+email: louishwh@gmail.com
 author: louis han
-url: http://www.sincerehwh.top
+url: http://www.louishwh.top
 
-github: https://github.com/sincerehwh/
+github: https://github.com/louishwh/
 baseurl: ""
 description: Seeking truth from facts.
-meta_description: 韩文鹤;个人博客;生命不息,折腾不止.
-motto: 自强-自律.
+meta_description: 个人博客
+motto: 技术改变世界.
 banner: 学而不思则罔，思而不学则殆。
 
 permalink: /:categories/:year/:month/:day/:title/
@@ -17,7 +17,7 @@ paginate: 10
 
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
 
-github_username: sincerehwh
+github_username: louishwh
 
 # Build settings
 markdown: kramdown

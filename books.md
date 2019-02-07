@@ -8,12 +8,62 @@ permalink: /books/
 {:toc}
 
 
-2019书单
+2019书单: 具体技术篇
 -----------------------------------------------------------------
 
-+ 《鸟哥的Linux私房菜基础学习篇-第三版》
-+ 《深入JVM虚拟机》
-+ 《算法(第四版)》
-+ 《HTTP协议详解》
-+ 《TCP/IP协议详解-卷一》
-+ 《亿级流量网站架构核心技术——跟开涛学搭建高可用高并发系统》
+容器与虚拟机
++ 《Docker》
+
+单机版程序：
++ 《iOS》
++ 《MacOS》
++ 《Android》
++ 《windows》
+
+后端框架：
++ 《SpringCloud》
++ 《SpringBoot》
++ 《Django》
++ 《Flask》
++ 《Ruby 》
+
+数据库：
+
++ 《MySQL》
++ 《PostgreSQL》
++ 《Redis》
++ 《CourchDB》
++ 《MongoDB》
++ 《Neo4j》
+
+区块链框架：
++ 《BitCoin》
++ 《Ethereum》
++ 《Frabic》
++ 《EOS》
++ 《FPS》
+
+区块链核心技术：
++ 《P2P网络》
++ 《加密技术》
++ 《共识算法》
+
+
+大数据：
++ 《Hadoop》
++ 《Spark》
++ 《Hive》
+
+人工智能框架：
++ 《Tensorflow》
++ 《Keras》
++ 《Caffe》
++ 《》
++ 《》
+
+人工智能算法：
++《DNN》
++《KNN》
++《CNN》
++《LSTM》
+
