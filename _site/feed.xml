@@ -5,9 +5,103 @@
     <description>Seeking truth from facts.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 09 Feb 2019 23:57:52 +0800</pubDate>
-    <lastBuildDate>Sat, 09 Feb 2019 23:57:52 +0800</lastBuildDate>
+    <pubDate>Mon, 11 Feb 2019 00:51:33 +0800</pubDate>
+    <lastBuildDate>Mon, 11 Feb 2019 00:51:33 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>【工具】Sublime Text</title>
+        <description>&lt;h3 id=&quot;用sublime-text的理由&quot;&gt;用Sublime Text的理由&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;轻量级的编辑器&lt;/li&gt;
+  &lt;li&gt;很简单的连接编译器/解释器&lt;/li&gt;
+  &lt;li&gt;配置简单&lt;/li&gt;
+  &lt;li&gt;插件也很多&lt;/li&gt;
+  &lt;li&gt;用起来很顺手&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;sublme-text的安装&quot;&gt;Sublme Text的安装&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://download.sublimetext.com/Sublime%20Text%20Build%203176.dmg&quot;&gt;下载Mac版&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;sublime-text包的安装&quot;&gt;Sublime Text包的安装&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://packagecontrol.io/installation&quot;&gt;安装过程&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;手动导入Package Control:&lt;/p&gt;
+
+&lt;p&gt;1.Perferences &amp;gt; Browse Packages&lt;/p&gt;
+
+&lt;p&gt;2.将&lt;a href=&quot;https://packagecontrol.io/Package%20Control.sublime-package&quot;&gt;Control.sublime-package&lt;/a&gt;复制到 Installed Packages/&lt;/p&gt;
+
+&lt;p&gt;3.重启Sublie Text&lt;/p&gt;
+
+&lt;h3 id=&quot;sublime-text插件的安装&quot;&gt;Sublime Text插件的安装&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Command + Shift + P&lt;/li&gt;
+  &lt;li&gt;Package Control: Install Package&lt;/li&gt;
+  &lt;li&gt;看到左下脚：等号在左右移动（在加载仓库）&lt;/li&gt;
+  &lt;li&gt;输入仓库名称即可
+⚠️ 安装插件可能需要科学上网工具&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;推荐仓库：&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/qq_20011607/article/details/81370236&quot;&gt;markdown&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;sublime-text-集成编译器解释器&quot;&gt;Sublime Text 集成编译器/解释器&lt;/h3&gt;
+
+&lt;p&gt;1.Tools -&amp;gt; Build System -&amp;gt; New Build System&lt;/p&gt;
+
+&lt;p&gt;2.添加下列编程语言的配置&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/qq_33304418/article/details/63337602&quot;&gt;Python&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;{ 
+	“shell_cmd”: “python3  &quot;$file&quot;”,&lt;br /&gt;
+	“encoding”: “utf-8”,
+	“file_regex”: “^[ ]&lt;em&gt;File &quot;(…&lt;/em&gt;?)&quot;, line ([0-9]*)”,  &lt;br /&gt;
+	“env”: {“LANG”: “en_US.UTF-8”}
+ }&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Perl&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;{
+    “cmd”: [“perl”, “$file”],
+    “file_regex”: “.* at (.&lt;em&gt;) line ([0-9]&lt;/em&gt;)”,
+    “selector”: “source.perl”,
+    “encoding”: “UTF-8”
+}&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Julia&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;{
+	“shell_cmd”: “/Applications/Julia-1.0.app/Contents/Resources/julia/bin/julia &quot;$file&quot;”
+  }&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;3.添加前缀保存&lt;/p&gt;
+
+&lt;p&gt;4.运行前选择： Tools -&amp;gt; Build System -&amp;gt; X语言&lt;/p&gt;
+
+&lt;p&gt;5.Command + B即可运行&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 10 Feb 2019 23:50:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/02/10/%E5%B7%A5%E5%85%B7%E4%B9%8BSublimeText/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/02/10/%E5%B7%A5%E5%85%B7%E4%B9%8BSublimeText/</guid>
+        
+        <category>工具箱</category>
+        
+        
+        <category>工具</category>
+        
+      </item>
     
       <item>
         <title>【书籍】计算机网络一：梗概</title>
