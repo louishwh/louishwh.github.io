@@ -5,9 +5,50 @@
     <description>Seeking truth from facts.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 11 Feb 2019 00:59:30 +0800</pubDate>
-    <lastBuildDate>Mon, 11 Feb 2019 00:59:30 +0800</lastBuildDate>
+    <pubDate>Tue, 12 Feb 2019 23:38:31 +0800</pubDate>
+    <lastBuildDate>Tue, 12 Feb 2019 23:38:31 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>【工具】Tensorflow介绍</title>
+        <description>&lt;h3 id=&quot;tensorflow索引&quot;&gt;&lt;a href=&quot;https://tensorflow.google.cn/&quot;&gt;Tensorflow&lt;/a&gt;索引：&lt;/h3&gt;
+
+&lt;p&gt;1.tensorflow简介&lt;/p&gt;
+
+&lt;p&gt;2.tensorflow安装&lt;/p&gt;
+
+&lt;p&gt;3.tesnorflow使用&lt;/p&gt;
+
+&lt;h2 id=&quot;tensorflow可以做什么&quot;&gt;Tensorflow可以做什么？&lt;/h2&gt;
+
+&lt;h2 id=&quot;tensorflow怎么安装&quot;&gt;Tensorflow怎么安装&lt;/h2&gt;
+
+</description>
+        <pubDate>Tue, 12 Feb 2019 23:30:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/02/12/%E5%B7%A5%E5%85%B7%E4%B9%8BTensorflow1/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/02/12/%E5%B7%A5%E5%85%B7%E4%B9%8BTensorflow1/</guid>
+        
+        <category>工具箱</category>
+        
+        
+        <category>工具</category>
+        
+      </item>
+    
+      <item>
+        <title>【工具】Docker介绍</title>
+        <description>
+</description>
+        <pubDate>Sun, 10 Feb 2019 23:50:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/02/10/%E5%B7%A5%E5%85%B7%E4%B9%8BDocker1/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/02/10/%E5%B7%A5%E5%85%B7%E4%B9%8BDocker1/</guid>
+        
+        <category>工具箱</category>
+        
+        
+        <category>工具</category>
+        
+      </item>
     
       <item>
         <title>【工具】Sublime Text</title>
