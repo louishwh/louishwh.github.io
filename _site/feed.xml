@@ -5,9 +5,215 @@
     <description>Seeking truth from facts.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 12 Feb 2019 23:38:31 +0800</pubDate>
-    <lastBuildDate>Tue, 12 Feb 2019 23:38:31 +0800</lastBuildDate>
+    <pubDate>Sun, 24 Mar 2019 17:43:28 +0800</pubDate>
+    <lastBuildDate>Sun, 24 Mar 2019 17:43:28 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>EOS合约研讨会</title>
+        <description>&lt;h2 id=&quot;eos合约开发&quot;&gt;EOS合约开发：&lt;/h2&gt;
+
+&lt;h3 id=&quot;eos-studio-ceo-phil&quot;&gt;EOS studio CEO： Phil&lt;/h3&gt;
+
+&lt;p&gt;EOS账号体系：&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;私钥/公钥匙&lt;/li&gt;
+  &lt;li&gt;账号： 公钥+系统合约 -&amp;gt; 注册账号&lt;/li&gt;
+  &lt;li&gt;owner: 最高权限可以改activate&lt;/li&gt;
+  &lt;li&gt;activate:&lt;/li&gt;
+  &lt;li&gt;账号： 占用4Kb资源 (测试网发合约免费)&lt;/li&gt;
+  &lt;li&gt;C++17&lt;/li&gt;
+  &lt;li&gt;CPU资源：需要抵押代币： 72小时后退回（逐渐退回）&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;eos-节点搭建与维护-eospark-cto-specer&quot;&gt;EOS 节点搭建与维护： EOSPark CTO: Specer&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;切换道对应Tag再编译&lt;/li&gt;
+  &lt;li&gt;设置-s
+    &lt;blockquote&gt;
+      &lt;p&gt;./eosio_build.sh -s EOS&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;mongo插件： 避免开history插件： 节省内存&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;节点配置：
++
++&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;eosshenzhen-cto-sheldon&quot;&gt;EOSshenzhen CTO: Sheldon&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;developer.eos.io&quot;&gt;EOS官网&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;battles.eos.io&quot;&gt;EOS游戏&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Develope Telegram&lt;/li&gt;
+  &lt;li&gt;github.com/eosio&lt;/li&gt;
+  &lt;li&gt;eos.cdt&lt;/li&gt;
+  &lt;li&gt;eosio.contract&lt;/li&gt;
+  &lt;li&gt;eos-card-game-repo&lt;/li&gt;
+  &lt;li&gt;bancor&lt;/li&gt;
+  &lt;li&gt;eosio.token 学习发币&lt;/li&gt;
+  &lt;li&gt;boscore.io(BPFT)&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Fri, 22 Mar 2019 22:15:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/03/22/EOS%E5%90%88%E7%BA%A6%E7%A0%94%E8%AE%A8%E4%BC%9A/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/03/22/EOS%E5%90%88%E7%BA%A6%E7%A0%94%E8%AE%A8%E4%BC%9A/</guid>
+        
+        <category>三月</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>【理论】P2P网络结构</title>
+        <description>&lt;h2 id=&quot;p2p网络&quot;&gt;P2P网络：&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;P2P网络概要&lt;/li&gt;
+  &lt;li&gt;集中式P2P网络&lt;/li&gt;
+  &lt;li&gt;纯分布式网络&lt;/li&gt;
+  &lt;li&gt;混合式P2P网络&lt;/li&gt;
+  &lt;li&gt;结构化P2P网络&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;p2p网络概要&quot;&gt;P2P网络概要&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;在应用层上建立的一个逻辑上的覆盖网络&lt;/li&gt;
+  &lt;li&gt;覆盖网络由： 节点/Peer/Node 通过P2P协议组成P2P网络&lt;/li&gt;
+  &lt;li&gt;节点：提供资源&lt;/li&gt;
+  &lt;li&gt;内容路由：节点定位资源的功能：内容路由/内容搜索/路由查询&lt;/li&gt;
+  &lt;li&gt;内容传送⚠️（重点）：从多个节点并行获取资源&lt;/li&gt;
+  &lt;li&gt;其他问题：防火墙穿越问题（NAT）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;中心化拓扑centralized-topology&quot;&gt;中心化拓扑（Centralized Topology）&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;集中式P2P网络&lt;/li&gt;
+  &lt;li&gt;MP3共享软件Napster&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;优势：&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;ul&gt;
+    &lt;li&gt;最大的优点是维护简单，资源发现效率高.&lt;/li&gt;
+    &lt;li&gt;由于资源的发现依赖中心化的目录系统，发现算法灵活高效并能够实现复杂查询.&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;劣势：&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;ul&gt;
+    &lt;li&gt;最大的问题与传统客户机/服务器结构类似，容易造成单点故障&lt;/li&gt;
+    &lt;li&gt;访问的“热点”现象和版权纠纷等相关问题。&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;过程描述：&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;ul&gt;
+    &lt;li&gt;通过一个中央索引服务器保存所有用户上传的文件索引和存放位置的信息&lt;/li&gt;
+    &lt;li&gt;在服务器上进行检索，服务器返回存有该文件的用户信息&lt;/li&gt;
+    &lt;li&gt;请求者直接连到文件的所有者传输文件&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;功能：&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;ul&gt;
+    &lt;li&gt;首先实现了文件查询与文件传输的分离&lt;/li&gt;
+    &lt;li&gt;有效地节省了中央服务器的带宽消耗，减少了系统的文件传输延时&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;模型存的问题：&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;ul&gt;
+    &lt;li&gt;中央索引服务器的瘫痪容易导致整个网络的崩溃，因此可靠性和安全性较低。&lt;/li&gt;
+    &lt;li&gt;随着网络规模的扩大，对中央索引服务器进行维护和更新的费用将急剧增加，所需成本较高。&lt;/li&gt;
+    &lt;li&gt;中央索引服务器的存在常引起版权问题上的纠纷，服务提供商容易被追究法律责任。&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;适用范围：&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;对小型网络而言，中心化拓扑模型在管理和控制方面占一定优势, 该模型并不适合大型网络应用。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;全分布式非结构化拓扑decentralized-unstructured-topology&quot;&gt;全分布式非结构化拓扑（Decentralized Unstructured Topology）&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;纯分布式网络&lt;/li&gt;
+  &lt;li&gt;Gnutella网络&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;全分布式结构化拓扑decentralized-structured-topology也称作dht网络&quot;&gt;全分布式结构化拓扑（Decentralized Structured Topology，也称作DHT网络）&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;结构化P2P网络&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;半分布式拓扑partially-decentralized-topology&quot;&gt;半分布式拓扑（Partially Decentralized Topology）&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;混合式P2P网络&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;参考文献：&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.intsci.ac.cn/users/luojw/P2P/ch02.html&quot;&gt;Peer-to-Peer 综述&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;P2P对等网络原理与应用： 科学出版社&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Thu, 21 Mar 2019 12:45:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/03/21/P2P%E7%BD%91%E7%BB%9C/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/03/21/P2P%E7%BD%91%E7%BB%9C/</guid>
+        
+        <category>三月</category>
+        
+        
+        <category>区块链</category>
+        
+      </item>
+    
+      <item>
+        <title>【工具】Docker入门</title>
+        <description>&lt;p&gt;1.Docker&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 10 Mar 2019 23:30:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/03/10/Docker%E5%85%A5%E9%97%A8/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/03/10/Docker%E5%85%A5%E9%97%A8/</guid>
+        
+        <category>工具箱</category>
+        
+        
+        <category>技术</category>
+        
+      </item>
+    
+      <item>
+        <title>【区块链】EOS</title>
+        <description>&lt;p&gt;1.EOS编译
+2.EOS智能合约
+3.EOS发币&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 20 Feb 2019 23:30:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/02/20/EOS%E4%B9%8B%E5%85%A5%E9%97%A8/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/02/20/EOS%E4%B9%8B%E5%85%A5%E9%97%A8/</guid>
+        
+        <category>工具箱</category>
+        
+        
+        <category>技术</category>
+        
+      </item>
     
       <item>
         <title>【工具】Tensorflow介绍</title>

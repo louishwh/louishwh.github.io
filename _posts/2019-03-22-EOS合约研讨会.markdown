@@ -1,0 +1,46 @@
+---
+layout: post
+title:  EOS合约研讨会
+date:   2019-03-22 22:15:00 +0800
+categories: 
+tag: 三月
+---
+
+## EOS合约开发：
+
+### EOS studio CEO： Phil
+
+EOS账号体系：
++ 私钥/公钥匙
++ 账号： 公钥+系统合约 -> 注册账号 
++ owner: 最高权限可以改activate
++ activate: 
++ 账号： 占用4Kb资源 (测试网发合约免费)
++ C++17 
++ CPU资源：需要抵押代币： 72小时后退回（逐渐退回）
++ 
+
+### EOS 节点搭建与维护： EOSPark CTO: Specer
+
++ 切换道对应Tag再编译
++ 设置-s
+> ./eosio_build.sh -s EOS 
++ mongo插件： 避免开history插件： 节省内存
+
+节点配置：
++
++
++ 
+
+### EOSshenzhen CTO: Sheldon
++ [EOS官网](developer.eos.io)
++ [EOS游戏](battles.eos.io)
++ Develope Telegram
++ github.com/eosio
++ eos.cdt
++ eosio.contract
++ eos-card-game-repo
++ bancor
++ eosio.token 学习发币
++ boscore.io(BPFT)
++ 
