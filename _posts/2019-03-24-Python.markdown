@@ -1,0 +1,18 @@
+---
+layout: post
+title:  Python知识点
+date:   2019-03-24 18:35:00 +0800
+categories: 【编程语言】
+tag: 三月
+---
+
+
+[时间总汇](https://blog.csdn.net/BF02jgtRS00XKtCx/article/details/78448799)
+[反模式](https://mp.weixin.qq.com/s/TpVQM3l2DLEqSsWKvLyvsw)
+
+[PPT->PDF](https://mp.weixin.qq.com/s/6hwq7OZZeUq7Z1n-LWZ07A)
+[10大Python开源项目](https://mp.weixin.qq.com/s/e4FdoZLn-BA9Qs93q1v3Bg)
+[30个惊艳的开源项目](https://www.jianshu.com/p/618c179ca88b?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
+
+[公众号开发](https://mp.weixin.qq.com/s/8ZtQSLYGbFA4ZwiZR0ScjQ)
+[WordCloud词云配置过程及词频分析](https://mp.weixin.qq.com/s/BUrLuuSD9Y_Akqy9RTRqnA)

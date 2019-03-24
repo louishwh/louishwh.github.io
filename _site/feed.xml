@@ -5,9 +5,62 @@
     <description>Seeking truth from facts.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 24 Mar 2019 17:43:28 +0800</pubDate>
-    <lastBuildDate>Sun, 24 Mar 2019 17:43:28 +0800</lastBuildDate>
+    <pubDate>Sun, 24 Mar 2019 19:17:04 +0800</pubDate>
+    <lastBuildDate>Sun, 24 Mar 2019 19:17:04 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>机器学习</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://github.com/clone95/Machine-Learning-Study-Path-March-2019/tree/master/Career%20Paths/Machine%20Learning%20Engineer%20Career%20Path&quot;&gt;机器学习笔记&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 24 Mar 2019 18:55:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/03/24/MachineLearning/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/03/24/MachineLearning/</guid>
+        
+        <category>三月</category>
+        
+        
+        <category>【机器学习】</category>
+        
+      </item>
+    
+      <item>
+        <title>Julia知识点</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s/HNdR3PahyExix3F6O8yHeA&quot;&gt;Julia为什么快？&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 24 Mar 2019 18:50:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/03/24/Julia/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/03/24/Julia/</guid>
+        
+        <category>三月</category>
+        
+        
+        <category>【编程语言】</category>
+        
+      </item>
+    
+      <item>
+        <title>Python知识点</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/BF02jgtRS00XKtCx/article/details/78448799&quot;&gt;时间总汇&lt;/a&gt;
+&lt;a href=&quot;https://mp.weixin.qq.com/s/TpVQM3l2DLEqSsWKvLyvsw&quot;&gt;反模式&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s/6hwq7OZZeUq7Z1n-LWZ07A&quot;&gt;PPT-&amp;gt;PDF&lt;/a&gt;
+&lt;a href=&quot;https://mp.weixin.qq.com/s/e4FdoZLn-BA9Qs93q1v3Bg&quot;&gt;10大Python开源项目&lt;/a&gt;
+&lt;a href=&quot;https://www.jianshu.com/p/618c179ca88b?utm_campaign=hugo&amp;amp;utm_medium=reader_share&amp;amp;utm_content=note&amp;amp;utm_source=weixin-friends&quot;&gt;30个惊艳的开源项目&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s/8ZtQSLYGbFA4ZwiZR0ScjQ&quot;&gt;公众号开发&lt;/a&gt;
+&lt;a href=&quot;https://mp.weixin.qq.com/s/BUrLuuSD9Y_Akqy9RTRqnA&quot;&gt;WordCloud词云配置过程及词频分析&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 24 Mar 2019 18:35:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/03/24/Python/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/03/24/Python/</guid>
+        
+        <category>三月</category>
+        
+        
+        <category>【编程语言】</category>
+        
+      </item>
     
       <item>
         <title>EOS合约研讨会</title>
@@ -347,130 +400,6 @@
         
         
         <category>工具</category>
-        
-      </item>
-    
-      <item>
-        <title>【原理】计算机网络1：梗概</title>
-        <description>&lt;ol&gt;
-  &lt;li&gt;网络分层结构&lt;/li&gt;
-  &lt;li&gt;协议简介&lt;/li&gt;
-  &lt;li&gt;网络延伸知识&lt;/li&gt;
-  &lt;li&gt;网络分析工具&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;网络的分层结构&quot;&gt;网络的分层结构：&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/2019-02-09网络结构.png&quot; alt=&quot;/images/2019-02-09网络结构.png&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;协议简介&quot;&gt;协议简介&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/2019-02-09各层协议.png&quot; alt=&quot;/images/2019-02-09各层协议.png&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;网络延伸知识&quot;&gt;网络延伸知识&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;无线网络和移动网络
-    &lt;ul&gt;
-      &lt;li&gt;Wifi&lt;/li&gt;
-      &lt;li&gt;蜂窝网&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;多媒体网络
-    &lt;ul&gt;
-      &lt;li&gt;流视频&lt;/li&gt;
-      &lt;li&gt;IP语音&lt;/li&gt;
-      &lt;li&gt;实时会话&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;网络安全
-    &lt;ul&gt;
-      &lt;li&gt;密码学&lt;/li&gt;
-      &lt;li&gt;SSL&lt;/li&gt;
-      &lt;li&gt;IPsec/VPN&lt;/li&gt;
-      &lt;li&gt;防火墙&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;网络管理
-    &lt;ul&gt;
-      &lt;li&gt;SMI&lt;/li&gt;
-      &lt;li&gt;MIB&lt;/li&gt;
-      &lt;li&gt;SNMP&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-</description>
-        <pubDate>Sat, 09 Feb 2019 22:30:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/02/09/%E5%8E%9F%E7%90%86%E4%B9%8B%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C1/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/02/09/%E5%8E%9F%E7%90%86%E4%B9%8B%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C1/</guid>
-        
-        <category>基础知识</category>
-        
-        
-        <category>网络</category>
-        
-      </item>
-    
-      <item>
-        <title>Tensorflow的使用</title>
-        <description>&lt;h2 id=&quot;目录&quot;&gt;目录&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Tensorflow是什么？&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Tensorflow能干什么？&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Tensorflow怎么使用？&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;是什么&quot;&gt;是什么？&lt;/h2&gt;
-
-&lt;h3 id=&quot;来源&quot;&gt;来源：&lt;/h3&gt;
-
-&lt;h3 id=&quot;原理&quot;&gt;原理：&lt;/h3&gt;
-
-&lt;h3 id=&quot;结构&quot;&gt;结构：&lt;/h3&gt;
-
-&lt;h2 id=&quot;能干什么&quot;&gt;能干什么？&lt;/h2&gt;
-
-&lt;h3 id=&quot;实现神经网络&quot;&gt;实现神经网络&lt;/h3&gt;
-
-</description>
-        <pubDate>Mon, 28 Jan 2019 20:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/01/28/Tensorflow/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/01/28/Tensorflow/</guid>
-        
-        <category>工具</category>
-        
-        
-        <category>人工智能</category>
-        
-      </item>
-    
-      <item>
-        <title>三年后的开篇</title>
-        <description>
-&lt;p&gt;很久都没写博客了, 将近一年的996对自己的影响很大.技术上有了质的飞跃.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;2018年学习了密码学&lt;/li&gt;
-  &lt;li&gt;2018年入门了区块链技术&lt;/li&gt;
-  &lt;li&gt;2018年正式参与了后端的开发&lt;/li&gt;
-  &lt;li&gt;2018年入门了人工智能技术,对真个的技术体系有了认识&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Mon, 28 Jan 2019 20:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/01/28/%E4%B8%89%E5%B9%B4%E5%90%8E%E5%BC%80%E7%AF%87/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/01/28/%E4%B8%89%E5%B9%B4%E5%90%8E%E5%BC%80%E7%AF%87/</guid>
-        
-        <category>教程</category>
-        
-        
-        <category>体会</category>
         
       </item>
     
