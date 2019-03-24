@@ -5,17 +5,17 @@
     <description>Seeking truth from facts.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 24 Mar 2019 19:17:04 +0800</pubDate>
-    <lastBuildDate>Sun, 24 Mar 2019 19:17:04 +0800</lastBuildDate>
+    <pubDate>Sun, 24 Mar 2019 22:57:52 +0800</pubDate>
+    <lastBuildDate>Sun, 24 Mar 2019 22:57:52 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
-        <title>机器学习</title>
+        <title>【ML】机器学习</title>
         <description>&lt;p&gt;&lt;a href=&quot;https://github.com/clone95/Machine-Learning-Study-Path-March-2019/tree/master/Career%20Paths/Machine%20Learning%20Engineer%20Career%20Path&quot;&gt;机器学习笔记&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 24 Mar 2019 18:55:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/03/24/MachineLearning/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/03/24/MachineLearning/</guid>
+        <link>http://localhost:4000/2019/03/24/ML/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/03/24/ML/</guid>
         
         <category>三月</category>
         
@@ -224,13 +224,13 @@
 
 </description>
         <pubDate>Thu, 21 Mar 2019 12:45:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/03/21/P2P%E7%BD%91%E7%BB%9C/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/03/21/P2P%E7%BD%91%E7%BB%9C/</guid>
+        <link>http://localhost:4000/2019/03/21/P2P%E7%BD%91%E7%BB%9C%E6%A6%82%E8%A6%81/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/03/21/P2P%E7%BD%91%E7%BB%9C%E6%A6%82%E8%A6%81/</guid>
         
         <category>三月</category>
         
         
-        <category>区块链</category>
+        <category>【P2P】</category>
         
       </item>
     

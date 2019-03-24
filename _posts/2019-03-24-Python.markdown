@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Python知识点
-date:   2019-03-24 18:35:00 +0800
+date: 2019-03-24 18:35:00 +0800
 categories: 【编程语言】
 tag: 三月
 ---
