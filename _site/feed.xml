@@ -5,8 +5,8 @@
     <description>Seeking truth from facts.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 24 Mar 2019 22:57:52 +0800</pubDate>
-    <lastBuildDate>Sun, 24 Mar 2019 22:57:52 +0800</lastBuildDate>
+    <pubDate>Sun, 24 Mar 2019 23:16:42 +0800</pubDate>
+    <lastBuildDate>Sun, 24 Mar 2019 23:16:42 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -251,15 +251,15 @@
       </item>
     
       <item>
-        <title>【区块链】EOS</title>
+        <title>【区块链】概要</title>
         <description>&lt;p&gt;1.EOS编译
 2.EOS智能合约
 3.EOS发币&lt;/p&gt;
 
 </description>
         <pubDate>Wed, 20 Feb 2019 23:30:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/02/20/EOS%E4%B9%8B%E5%85%A5%E9%97%A8/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/02/20/EOS%E4%B9%8B%E5%85%A5%E9%97%A8/</guid>
+        <link>http://localhost:4000/2019/02/20/%E5%8C%BA%E5%9D%97%E9%93%BE%E5%85%A5%E9%97%A8/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/02/20/%E5%8C%BA%E5%9D%97%E9%93%BE%E5%85%A5%E9%97%A8/</guid>
         
         <category>工具箱</category>
         
