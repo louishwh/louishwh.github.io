@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Rust入门
+title:  Rust初识
 date: 2019-05-12 09:50:00 +0800
 categories: 【Rust】
 tag: 五月
