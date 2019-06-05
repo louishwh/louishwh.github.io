@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>【理论】P2P网络拓扑结构与内容路由 - Atomix</title>
+	<title>量子公链技术 - Atomix</title>
 
 	<link rel="shortcut icon" href="/styles/images/favicon.jpg">
 	<link rel="icon" href="/styles/images/favicon.jpg">
@@ -13,10 +13,10 @@
 	<link rel="stylesheet" href="/styles/css/index.css">
 	<link rel="stylesheet" href="/styles/css/fontawesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="/styles/css/syntax.css">
-	<link rel="canonical" href="/2019/03/21/P2P%E7%BD%91%E7%BB%9C%E6%A6%82%E8%A6%81/">
+	<link rel="canonical" href="/2019/03/28/%E9%87%8F%E5%AD%90%E5%85%AC%E9%93%BE%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/">
 	<link rel="alternate" type="application/rss+xml" title="Atomix" href="/feed.xml">
 	
-	<meta name="keywords" content="【理论】P2P网络拓扑结构与内容路由, Atomix, 个人博客">
+	<meta name="keywords" content="量子公链技术, Atomix, 个人博客">
 	<meta name="description" content="个人博客">
 
 	<script src="/styles/js/jquery.min.js"></script>
@@ -87,8 +87,8 @@
   <div class="container">
   	
   		<!--
-		    <h1>【理论】P2P网络拓扑结构与内容路由</h1>
-		    <p>Post on Mar 21, 2019 by <a href="/about">louis han</a></p>
+		    <h1>量子公链技术</h1>
+		    <p>Post on Mar 28, 2019 by <a href="/about">louis han</a></p>
 		-->
 		    <h1>技术改变世界.</h1>
     
@@ -99,7 +99,7 @@
 <div class="banner">
   <div class="container">
   	
-    	<a href="/categories/#【P2P】-ref">【P2P】</a>	/
+    	<a href="/categories/#【QUTM】-ref">【QUTM】</a>	/
     	<a href="/tag/#三月-ref">三月</a>
     
   </div>
@@ -128,111 +128,15 @@
       <div class="panel docs-content">
         <div class="wrapper">
             <header class="post-header">
-              <h1 class="post-title">【理论】P2P网络拓扑结构与内容路由</h1>
+              <h1 class="post-title">量子公链技术</h1>
               <!--
-                <p class="post-meta">Mar 21, 2019</p>
+                <p class="post-meta">Mar 28, 2019</p>
               -->
-              <div class="meta">Posted on <span class="postdate">Mar 21, 2019</span> By <a target="_blank" href="http://localhost:4000">louis han</a></div>
+              <div class="meta">Posted on <span class="postdate">Mar 28, 2019</span> By <a target="_blank" href="http://localhost:4000">louis han</a></div>
               <br />
             </header>
             <article class="post-content">
-              <h2 id="p2p网络">P2P网络：</h2>
-<ul>
-  <li>P2P网络概要</li>
-  <li>集中式P2P网络</li>
-  <li>纯分布式网络</li>
-  <li>混合式P2P网络</li>
-  <li>结构化P2P网络</li>
-</ul>
-
-<h4 id="p2p网络概要">P2P网络概要</h4>
-<ul>
-  <li>在应用层上建立的一个逻辑上的覆盖网络</li>
-  <li>覆盖网络由： 节点/Peer/Node 通过P2P协议组成P2P网络</li>
-  <li>节点：提供资源</li>
-  <li>内容路由：节点定位资源的功能：内容路由/内容搜索/路由查询</li>
-  <li>内容传送⚠️（重点）：从多个节点并行获取资源</li>
-  <li>其他问题：防火墙穿越问题（NAT）</li>
-</ul>
-
-<h4 id="中心化拓扑centralized-topology">中心化拓扑（Centralized Topology）</h4>
-
-<ul>
-  <li>集中式P2P网络</li>
-  <li>MP3共享软件Napster</li>
-</ul>
-
-<p>优势：</p>
-<blockquote>
-  <ul>
-    <li>最大的优点是维护简单，资源发现效率高.</li>
-    <li>由于资源的发现依赖中心化的目录系统，发现算法灵活高效并能够实现复杂查询.</li>
-  </ul>
-</blockquote>
-
-<p>劣势：</p>
-<blockquote>
-  <ul>
-    <li>最大的问题与传统客户机/服务器结构类似，容易造成单点故障</li>
-    <li>访问的“热点”现象和版权纠纷等相关问题。</li>
-  </ul>
-</blockquote>
-
-<p>过程描述：</p>
-<blockquote>
-  <ul>
-    <li>通过一个中央索引服务器保存所有用户上传的文件索引和存放位置的信息</li>
-    <li>在服务器上进行检索，服务器返回存有该文件的用户信息</li>
-    <li>请求者直接连到文件的所有者传输文件</li>
-  </ul>
-</blockquote>
-
-<p>功能：</p>
-<blockquote>
-  <ul>
-    <li>首先实现了文件查询与文件传输的分离</li>
-    <li>有效地节省了中央服务器的带宽消耗，减少了系统的文件传输延时</li>
-  </ul>
-</blockquote>
-
-<p>模型存的问题：</p>
-<blockquote>
-  <ul>
-    <li>中央索引服务器的瘫痪容易导致整个网络的崩溃，因此可靠性和安全性较低。</li>
-    <li>随着网络规模的扩大，对中央索引服务器进行维护和更新的费用将急剧增加，所需成本较高。</li>
-    <li>中央索引服务器的存在常引起版权问题上的纠纷，服务提供商容易被追究法律责任。</li>
-  </ul>
-</blockquote>
-
-<p>适用范围：</p>
-<blockquote>
-  <p>对小型网络而言，中心化拓扑模型在管理和控制方面占一定优势, 该模型并不适合大型网络应用。</p>
-</blockquote>
-
-<h4 id="全分布式非结构化拓扑decentralized-unstructured-topology">全分布式非结构化拓扑（Decentralized Unstructured Topology）</h4>
-<ul>
-  <li>纯分布式网络</li>
-  <li>Gnutella网络</li>
-  <li></li>
-</ul>
-
-<h4 id="全分布式结构化拓扑decentralized-structured-topology也称作dht网络">全分布式结构化拓扑（Decentralized Structured Topology，也称作DHT网络）</h4>
-<ul>
-  <li>结构化P2P网络</li>
-</ul>
-
-<h4 id="半分布式拓扑partially-decentralized-topology">半分布式拓扑（Partially Decentralized Topology）</h4>
-<ul>
-  <li>混合式P2P网络</li>
-</ul>
-
-<p>参考文献：</p>
-<ul>
-  <li><a href="http://www.intsci.ac.cn/users/luojw/P2P/ch02.html">Peer-to-Peer 综述</a></li>
-  <li>P2P对等网络原理与应用： 科学出版社</li>
-  <li></li>
-</ul>
-
+              
 
             </article>
         </div>
