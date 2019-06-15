@@ -6,5 +6,4 @@ categories: 【教程】
 tag: 六月
 ---
 
-[Rust的Web框架：Actix](https://actix.rs/)
 
