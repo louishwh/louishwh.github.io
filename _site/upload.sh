@@ -1,5 +1,5 @@
 
 git add .
 git commit -m "update"
-git pull
-git push 
+git pull orign master 
+git push origin master
