@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  Rust的Web框架：Actix
-date: 2019-05-26 21:50:00 +0800
-categories: 【Rust】
-tag: 五月
+title:  Python高级教程
+date: 2019-06-16 15:50:00 +0800
+categories: 【教程】
+tag: 六月
 ---
 
 [Rust的Web框架：Actix](https://actix.rs/)
