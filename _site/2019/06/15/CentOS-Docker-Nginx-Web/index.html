@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CentOS-Docker-Nginx-Web - Atomix</title>
+
+	<link rel="shortcut icon" href="/styles/images/favicon.jpg">
+	<link rel="icon" href="/styles/images/favicon.jpg">
+
+	<link rel="stylesheet" href="/styles/css/index.css">
+	<link rel="stylesheet" href="/styles/css/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/styles/css/syntax.css">
+	<link rel="canonical" href="/2019/06/15/CentOS-Docker-Nginx-Web/">
+	<link rel="alternate" type="application/rss+xml" title="Atomix" href="/feed.xml">
+	
+	<meta name="keywords" content="CentOS-Docker-Nginx-Web, Atomix, 个人博客">
+	<meta name="description" content="个人博客">
+
+	<script src="/styles/js/jquery.min.js"></script>
+	<!--[if lt IE 9]>
+    	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  	<![endif]-->
+  	<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "//hm.baidu.com/hm.js?624f97ab37fd73fbedc7929427ca95ea";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+  	<style type="text/css">
+	  	.docs-content{
+	  		margin-bottom: 10px;
+	  	}
+  	</style>
+</head>
+
+  <body class="index">
+
+    <header class="navbar navbar-inverse navbar-fixed-top docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand">
+        <img src="/styles/images/logo.png">
+      </a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">    
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/categories/">Category</a>
+        </li>
+        <li>
+          <a href="/tag">Index</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+            <a><span id="busuanzi_container_site_pv">总访问量<span id="busuanzi_value_site_pv"></span>次</span></a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">关于<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a rel="nofollow" target="_blank" href="https://github.com/louishwh/">Github</a></li>
+            <li><a rel="nofollow" target="_blank" href="">关于作者</a></li>
+            <li><a rel="nofollow" href="/books">我的书单</a></li>
+            <li class="divider"></li>
+            <li><a rel="nofollow" target="_blank" href="https://github.com/luoyan35714/LessOrMore.git">本项目</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+    <div class="docs-header" id="content">
+  <div class="container">
+  	
+  		<!--
+		    <h1>CentOS-Docker-Nginx-Web</h1>
+		    <p>Post on Jun 15, 2019 by <a href="/about">louis han</a></p>
+		-->
+		    <h1>技术改变世界.</h1>
+    
+  </div>
+</div>
+    
+      
+<div class="banner">
+  <div class="container">
+  	
+    	<a href="/categories/#【小记】-ref">【小记】</a>	/
+    	<a href="/tag/#六月-ref">六月</a>
+    
+  </div>
+</div>
+
+    
+
+    <div class="container docs-container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="sidebar hidden-print" role="complementary">
+        <div id="navigation">
+  <h1>目录</h1>
+  <ul class="nav sidenav">
+  </ul>
+  <div style="height: 200px;width: 200px;">
+    <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async"> 
+    </script>
+  </div>
+</div>
+
+ 
+      </div>
+    </div>
+    <div class="col-md-9" role="main">
+      <div class="panel docs-content">
+        <div class="wrapper">
+            <header class="post-header">
+              <h1 class="post-title">CentOS-Docker-Nginx-Web</h1>
+              <!--
+                <p class="post-meta">Jun 15, 2019</p>
+              -->
+              <div class="meta">Posted on <span class="postdate">Jun 15, 2019</span> By <a target="_blank" href="http://localhost:4000">louis han</a></div>
+              <br />
+            </header>
+            <article class="post-content">
+              <h3 id="问题定位">问题定位</h3>
+
+<h4 id="问题描述">问题描述：</h4>
+<ol>
+  <li>最近部门部门各个系统的URL又更新了，原本浏览器就已经存的地址废除了。</li>
+  <li>所有人的地址都要更新地址：产品、前端、后端。</li>
+</ol>
+
+<h4 id="解决方案">解决方案：</h4>
+<ol>
+  <li>搭建一个小网站：包含需要的网址(URL资源中心)</li>
+  <li>配置简单的域名</li>
+  <li>更新部署方便</li>
+</ol>
+
+<h4 id="需要资源">需要资源：</h4>
+<ol>
+  <li>前端小伙一枚（自己不想写前端界面）</li>
+  <li>服务器一台（可以要一台云主机）</li>
+  <li>域名一枚（内网的DNS）</li>
+</ol>
+
+<h3 id="流程解析">流程解析</h3>
+
+<h4 id="整体流程">整体流程</h4>
+<ol>
+  <li>给前端小伙说了目的（他也很支持）</li>
+  <li>大致画了简单的草图（简单草稿那种）</li>
+  <li>他搞定了界面：大概20分钟：主要是找URL花了较多时间</li>
+  <li>自己上传到公开的gitee仓库</li>
+  <li>我找李子要服务器：10分钟</li>
+  <li>安装Docker</li>
+  <li>拉Nginx镜像</li>
+  <li>启动容器：挂载文件</li>
+  <li>排查Server 500的错误(docker装vim)</li>
+  <li>愉快的成功了，小伙伴们分享😊</li>
+</ol>
+
+<p><br /></p>
+<h4 id="前端界面vuejs">前端界面（Vue.js）</h4>
+<p>这个没学过，估计不难，最近优先学后端架构。</p>
+
+<p><br /></p>
+<h4 id="安装dockercentos">安装Docker（CentOS）</h4>
+<p>网上找到了这个<a href="https://www.cnblogs.com/yufeng218/p/8370670.html">教程很不错👍</a></p>
+
+<ol>
+  <li>查看内核版本（内核版本&gt;3.10）：
+    <blockquote>
+      <p>uname -r</p>
+    </blockquote>
+  </li>
+  <li>更新yum包(root权限)：
+    <blockquote>
+      <p>sudo yum update</p>
+    </blockquote>
+  </li>
+  <li>卸载旧版本（可选）：
+    <blockquote>
+      <p>sudo yum remove docker  docker-common docker-selinux docker-engine</p>
+    </blockquote>
+  </li>
+  <li>安装需要的软件包（yum-util提供yum-config-manager功能，另外两个是devicemapper驱动依赖的）
+    <blockquote>
+      <p>sudo yum install -y yum-utils device-mapper-persistent-data lvm2</p>
+    </blockquote>
+  </li>
+  <li>设置yum源
+    <blockquote>
+      <p>sudo yum-config-manager –add-repo https://download.docker.com/linux/centos/docker-ce.repo</p>
+    </blockquote>
+  </li>
+  <li>查看所有仓库中所有docker版本，并选择特定版本安装
+    <blockquote>
+      <p>yum list docker-ce –showduplicates</p>
+    </blockquote>
+  </li>
+  <li>安装docker
+    <blockquote>
+      <p>sudo yum install docker-ce  # repo中默认只开启stable仓库，故这里安装的是最新稳定版17.12.0</p>
+
+      <p>sudo yum install <FQPN>  # 例如：sudo yum install docker-ce-17.12.0.ce</FQPN></p>
+    </blockquote>
+  </li>
+  <li>启动并加入开机启动
+    <blockquote>
+      <p>sudo systemctl start docker</p>
+
+      <p>sudo systemctl enable docker</p>
+    </blockquote>
+  </li>
+  <li>验证安装是否成功(有client和service两部分表示docker安装启动都成功了)
+    <blockquote>
+      <p>docker version</p>
+    </blockquote>
+  </li>
+</ol>
+
+<p><br /></p>
+<h4 id="docker拉取nginx镜像配置nginx">Docker拉取Nginx镜像，配置Nginx</h4>
+<p>找的教程，一步一步来就能解决<a href="https://www.cnblogs.combingo1024/p/9022890.html">教程很全，不过有坑</a></p>
+
+<ol>
+  <li>拉取镜像
+    <blockquote>
+      <p>docker pull nginx</p>
+    </blockquote>
+  </li>
+  <li>创建挂载目录
+    <blockquote>
+      <p>mkdir -p /data/nginx/{conf,conf.d,html,logs}</p>
+    </blockquote>
+  </li>
+  <li>安装vim
+    <blockquote>
+      <p>yum install vim</p>
+    </blockquote>
+  </li>
+  <li>配置文件</li>
+</ol>
+
+<blockquote>
+  <h6 id="vim-dataconfnginxconf">vim /data/conf/nginx.conf</h6>
+
+  <p>user  nginx;</p>
+
+  <p>worker_processes  1;</p>
+
+  <p>error_log  /var/log/nginx/error.log warn;</p>
+
+  <p>pid        /var/run/nginx.pid;</p>
+
+  <p>events {</p>
+
+  <p>   worker_connections  1024;</p>
+
+  <p>}</p>
+
+  <p>http {</p>
+
+  <p>  include       /etc/nginx/mime.types;</p>
+
+  <p>  default_type  application/octet-stream;</p>
+
+  <p>  log_format  main  ‘$remote_addr - $remote_user [$time_local] “$request” ‘</p>
+
+  <p>     ‘$status $body_bytes_sent “$http_referer” ‘</p>
+
+  <p>      ‘“$http_user_agent” “$http_x_forwarded_for”’;</p>
+
+  <p>   access_log  /var/log/nginx/access.log  main;</p>
+
+  <p>   sendfile        on;</p>
+
+  <p>   #tcp_nopush     on;</p>
+
+  <p>   keepalive_timeout  65;</p>
+
+  <p>   #gzip  on;</p>
+
+  <p>   include /etc/nginx/conf.d/*.conf;</p>
+
+  <p>}</p>
+</blockquote>
+
+<blockquote>
+  <h6 id="vim-dataconfnginxconf-1">vim /data/conf/nginx.conf</h6>
+</blockquote>
+
+<blockquote>
+  <p>server {</p>
+
+  <p>listen       80;</p>
+
+  <p>server_name  localhost;</p>
+
+  <p>location / {</p>
+
+  <p>   root   /usr/share/nginx/html;</p>
+
+  <p>   index  index.html index.htm;</p>
+
+  <p>   autoindex  on;</p>
+
+  <p>  }</p>
+
+  <p>error_page   500 502 503 504  /50x.html;</p>
+
+  <p>location = /50x.html {</p>
+
+  <p>   root /usr/share/nginx/html;</p>
+
+  <p>   }</p>
+
+  <p>}</p>
+</blockquote>
+
+<h4 id="整体流程-1">整体流程</h4>
+<p>将容器中nginx的80端口映射到本地的80端口</p>
+
+<blockquote>
+  <p>docker run –name nginx81 -d -p 80:80</p>
+
+  <p>   -v /data/nginx/html:/usr/share/nginx/html</p>
+
+  <p>   -v /data/nginx/conf/nginx.conf:/etc/nginx/nginx.conf</p>
+
+  <p>   -v /data/nginx/logs:/var/log/nginx</p>
+
+  <p>   -v /data/nginx/conf.d:/etc/nginx/conf.d</p>
+
+  <p>   -d nginx:latest</p>
+
+</blockquote>
+
+<p><br /></p>
+<h4 id="问题解析">问题解析</h4>
+
+<ol>
+  <li>nginx配置注意事项：
+    <blockquote>
+      <p>nginx配置的资源地址必须是容器内部的地址，即映射的内部地址</p>
+    </blockquote>
+  </li>
+  <li>nginx错误定位：
+    <blockquote>
+      <p>在容器内查看错误日志：</p>
+
+      <p>tail -f  error.log</p>
+    </blockquote>
+  </li>
+  <li>docker命令：
+    <blockquote>
+      <p>docker -p 宿主机端口：容器内端口 -v 宿主机文件路径：容器文件路径 -d 启动的镜像</p>
+    </blockquote>
+  </li>
+  <li>整个过程大致花了一个小时：
+    <blockquote>
+      <p>主要耗时在：nginx的配置错误导致一直报500的错误：重定向错误
+问题定位不清楚，一直在纠结在挂载文件上, 实际上是nginx的配置问题</p>
+    </blockquote>
+  </li>
+</ol>
+
+
+            </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+    <footer class="footer" role="contentinfo">
+	<div class="container">
+		<p class="copyright">Copyright &copy; 2014-2019 <a href=""><code>louis han</code></a>.</p>
+		<p>Powered by <a href="http://jekyllrb.com">Jekyll</a>, themed from <a href="http://lesscss.cn/">Less</a>, refactored by <a href="http://www.sincerehwh.cn/">Sincere Han</a></p>
+	</div>
+</footer>
+
+<script src="/styles/js/jquery.min.js"></script>
+<script src="/styles/js/bootstrap.min.js"></script>
+<script src="/styles/js/holder.min.js"></script>
+<script src="/styles/js/lessismore.js"></script>
+<script src="/styles/js/application.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  </body>
+</html>

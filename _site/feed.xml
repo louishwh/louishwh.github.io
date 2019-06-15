@@ -5,9 +5,299 @@
     <description>Seeking truth from facts.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 12 May 2019 11:09:58 +0800</pubDate>
-    <lastBuildDate>Sun, 12 May 2019 11:09:58 +0800</lastBuildDate>
+    <pubDate>Sat, 15 Jun 2019 23:39:19 +0800</pubDate>
+    <lastBuildDate>Sat, 15 Jun 2019 23:39:19 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>CentOS-Docker-Nginx-Web</title>
+        <description>&lt;h3 id=&quot;问题定位&quot;&gt;问题定位&lt;/h3&gt;
+
+&lt;h4 id=&quot;问题描述&quot;&gt;问题描述：&lt;/h4&gt;
+&lt;ol&gt;
+  &lt;li&gt;最近部门部门各个系统的URL又更新了，原本浏览器就已经存的地址废除了。&lt;/li&gt;
+  &lt;li&gt;所有人的地址都要更新地址：产品、前端、后端。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;解决方案&quot;&gt;解决方案：&lt;/h4&gt;
+&lt;ol&gt;
+  &lt;li&gt;搭建一个小网站：包含需要的网址(URL资源中心)&lt;/li&gt;
+  &lt;li&gt;配置简单的域名&lt;/li&gt;
+  &lt;li&gt;更新部署方便&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;需要资源&quot;&gt;需要资源：&lt;/h4&gt;
+&lt;ol&gt;
+  &lt;li&gt;前端小伙一枚（自己不想写前端界面）&lt;/li&gt;
+  &lt;li&gt;服务器一台（可以要一台云主机）&lt;/li&gt;
+  &lt;li&gt;域名一枚（内网的DNS）&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;流程解析&quot;&gt;流程解析&lt;/h3&gt;
+
+&lt;h4 id=&quot;整体流程&quot;&gt;整体流程&lt;/h4&gt;
+&lt;ol&gt;
+  &lt;li&gt;给前端小伙说了目的（他也很支持）&lt;/li&gt;
+  &lt;li&gt;大致画了简单的草图（简单草稿那种）&lt;/li&gt;
+  &lt;li&gt;他搞定了界面：大概20分钟：主要是找URL花了较多时间&lt;/li&gt;
+  &lt;li&gt;自己上传到公开的gitee仓库&lt;/li&gt;
+  &lt;li&gt;我找李子要服务器：10分钟&lt;/li&gt;
+  &lt;li&gt;安装Docker&lt;/li&gt;
+  &lt;li&gt;拉Nginx镜像&lt;/li&gt;
+  &lt;li&gt;启动容器：挂载文件&lt;/li&gt;
+  &lt;li&gt;排查Server 500的错误(docker装vim)&lt;/li&gt;
+  &lt;li&gt;愉快的成功了，小伙伴们分享😊&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;前端界面vuejs&quot;&gt;前端界面（Vue.js）&lt;/h4&gt;
+&lt;p&gt;这个没学过，估计不难，最近优先学后端架构。&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;安装dockercentos&quot;&gt;安装Docker（CentOS）&lt;/h4&gt;
+&lt;p&gt;网上找到了这个&lt;a href=&quot;https://www.cnblogs.com/yufeng218/p/8370670.html&quot;&gt;教程很不错👍&lt;/a&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;查看内核版本（内核版本&amp;gt;3.10）：
+    &lt;blockquote&gt;
+      &lt;p&gt;uname -r&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;更新yum包(root权限)：
+    &lt;blockquote&gt;
+      &lt;p&gt;sudo yum update&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;卸载旧版本（可选）：
+    &lt;blockquote&gt;
+      &lt;p&gt;sudo yum remove docker  docker-common docker-selinux docker-engine&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;安装需要的软件包（yum-util提供yum-config-manager功能，另外两个是devicemapper驱动依赖的）
+    &lt;blockquote&gt;
+      &lt;p&gt;sudo yum install -y yum-utils device-mapper-persistent-data lvm2&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;设置yum源
+    &lt;blockquote&gt;
+      &lt;p&gt;sudo yum-config-manager –add-repo https://download.docker.com/linux/centos/docker-ce.repo&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;查看所有仓库中所有docker版本，并选择特定版本安装
+    &lt;blockquote&gt;
+      &lt;p&gt;yum list docker-ce –showduplicates&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;安装docker
+    &lt;blockquote&gt;
+      &lt;p&gt;sudo yum install docker-ce  # repo中默认只开启stable仓库，故这里安装的是最新稳定版17.12.0&lt;/p&gt;
+
+      &lt;p&gt;sudo yum install &lt;FQPN&gt;  # 例如：sudo yum install docker-ce-17.12.0.ce&lt;/FQPN&gt;&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;启动并加入开机启动
+    &lt;blockquote&gt;
+      &lt;p&gt;sudo systemctl start docker&lt;/p&gt;
+
+      &lt;p&gt;sudo systemctl enable docker&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;验证安装是否成功(有client和service两部分表示docker安装启动都成功了)
+    &lt;blockquote&gt;
+      &lt;p&gt;docker version&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;docker拉取nginx镜像配置nginx&quot;&gt;Docker拉取Nginx镜像，配置Nginx&lt;/h4&gt;
+&lt;p&gt;找的教程，一步一步来就能解决&lt;a href=&quot;https://www.cnblogs.combingo1024/p/9022890.html&quot;&gt;教程很全，不过有坑&lt;/a&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;拉取镜像
+    &lt;blockquote&gt;
+      &lt;p&gt;docker pull nginx&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;创建挂载目录
+    &lt;blockquote&gt;
+      &lt;p&gt;mkdir -p /data/nginx/{conf,conf.d,html,logs}&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;安装vim
+    &lt;blockquote&gt;
+      &lt;p&gt;yum install vim&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;配置文件&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+  &lt;h6 id=&quot;vim-dataconfnginxconf&quot;&gt;vim /data/conf/nginx.conf&lt;/h6&gt;
+
+  &lt;p&gt;user  nginx;&lt;/p&gt;
+
+  &lt;p&gt;worker_processes  1;&lt;/p&gt;
+
+  &lt;p&gt;error_log  /var/log/nginx/error.log warn;&lt;/p&gt;
+
+  &lt;p&gt;pid        /var/run/nginx.pid;&lt;/p&gt;
+
+  &lt;p&gt;events {&lt;/p&gt;
+
+  &lt;p&gt;   worker_connections  1024;&lt;/p&gt;
+
+  &lt;p&gt;}&lt;/p&gt;
+
+  &lt;p&gt;http {&lt;/p&gt;
+
+  &lt;p&gt;  include       /etc/nginx/mime.types;&lt;/p&gt;
+
+  &lt;p&gt;  default_type  application/octet-stream;&lt;/p&gt;
+
+  &lt;p&gt;  log_format  main  ‘$remote_addr - $remote_user [$time_local] “$request” ‘&lt;/p&gt;
+
+  &lt;p&gt;     ‘$status $body_bytes_sent “$http_referer” ‘&lt;/p&gt;
+
+  &lt;p&gt;      ‘“$http_user_agent” “$http_x_forwarded_for”’;&lt;/p&gt;
+
+  &lt;p&gt;   access_log  /var/log/nginx/access.log  main;&lt;/p&gt;
+
+  &lt;p&gt;   sendfile        on;&lt;/p&gt;
+
+  &lt;p&gt;   #tcp_nopush     on;&lt;/p&gt;
+
+  &lt;p&gt;   keepalive_timeout  65;&lt;/p&gt;
+
+  &lt;p&gt;   #gzip  on;&lt;/p&gt;
+
+  &lt;p&gt;   include /etc/nginx/conf.d/*.conf;&lt;/p&gt;
+
+  &lt;p&gt;}&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;h6 id=&quot;vim-dataconfnginxconf-1&quot;&gt;vim /data/conf/nginx.conf&lt;/h6&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;server {&lt;/p&gt;
+
+  &lt;p&gt;listen       80;&lt;/p&gt;
+
+  &lt;p&gt;server_name  localhost;&lt;/p&gt;
+
+  &lt;p&gt;location / {&lt;/p&gt;
+
+  &lt;p&gt;   root   /usr/share/nginx/html;&lt;/p&gt;
+
+  &lt;p&gt;   index  index.html index.htm;&lt;/p&gt;
+
+  &lt;p&gt;   autoindex  on;&lt;/p&gt;
+
+  &lt;p&gt;  }&lt;/p&gt;
+
+  &lt;p&gt;error_page   500 502 503 504  /50x.html;&lt;/p&gt;
+
+  &lt;p&gt;location = /50x.html {&lt;/p&gt;
+
+  &lt;p&gt;   root /usr/share/nginx/html;&lt;/p&gt;
+
+  &lt;p&gt;   }&lt;/p&gt;
+
+  &lt;p&gt;}&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;整体流程-1&quot;&gt;整体流程&lt;/h4&gt;
+&lt;p&gt;将容器中nginx的80端口映射到本地的80端口&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;docker run –name nginx81 -d -p 80:80&lt;/p&gt;
+
+  &lt;p&gt;   -v /data/nginx/html:/usr/share/nginx/html&lt;/p&gt;
+
+  &lt;p&gt;   -v /data/nginx/conf/nginx.conf:/etc/nginx/nginx.conf&lt;/p&gt;
+
+  &lt;p&gt;   -v /data/nginx/logs:/var/log/nginx&lt;/p&gt;
+
+  &lt;p&gt;   -v /data/nginx/conf.d:/etc/nginx/conf.d&lt;/p&gt;
+
+  &lt;p&gt;   -d nginx:latest&lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;问题解析&quot;&gt;问题解析&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;nginx配置注意事项：
+    &lt;blockquote&gt;
+      &lt;p&gt;nginx配置的资源地址必须是容器内部的地址，即映射的内部地址&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;nginx错误定位：
+    &lt;blockquote&gt;
+      &lt;p&gt;在容器内查看错误日志：&lt;/p&gt;
+
+      &lt;p&gt;tail -f  error.log&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;docker命令：
+    &lt;blockquote&gt;
+      &lt;p&gt;docker -p 宿主机端口：容器内端口 -v 宿主机文件路径：容器文件路径 -d 启动的镜像&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;整个过程大致花了一个小时：
+    &lt;blockquote&gt;
+      &lt;p&gt;主要耗时在：nginx的配置错误导致一直报500的错误：重定向错误
+问题定位不清楚，一直在纠结在挂载文件上, 实际上是nginx的配置问题&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+        <pubDate>Sat, 15 Jun 2019 21:50:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/06/15/CentOS-Docker-Nginx-Web/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/06/15/CentOS-Docker-Nginx-Web/</guid>
+        
+        <category>六月</category>
+        
+        
+        <category>【小记】</category>
+        
+      </item>
+    
+      <item>
+        <title>Rust的Web框架：Actix</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://actix.rs/&quot;&gt;Rust的Web框架：Actix&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 26 May 2019 21:50:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/05/26/Python%E9%AB%98%E7%BA%A7%E6%95%99%E7%A8%8B/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/05/26/Python%E9%AB%98%E7%BA%A7%E6%95%99%E7%A8%8B/</guid>
+        
+        <category>五月</category>
+        
+        
+        <category>【Rust】</category>
+        
+      </item>
+    
+      <item>
+        <title>Rust的Web框架：Actix</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://actix.rs/&quot;&gt;Rust的Web框架：Actix&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 26 May 2019 21:50:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/05/26/Rust-Actix/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/05/26/Rust-Actix/</guid>
+        
+        <category>五月</category>
+        
+        
+        <category>【Rust】</category>
+        
+      </item>
     
       <item>
         <title>Rust初识</title>
@@ -391,51 +681,6 @@
         
         
         <category>【ETH】</category>
-        
-      </item>
-    
-      <item>
-        <title>比特币公链技术</title>
-        <description>&lt;p&gt;学习资料汇总&lt;/p&gt;
-</description>
-        <pubDate>Mon, 25 Mar 2019 23:30:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/03/25/%E6%AF%94%E7%89%B9%E5%B8%81%E5%85%AC%E9%93%BE%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/03/25/%E6%AF%94%E7%89%B9%E5%B8%81%E5%85%AC%E9%93%BE%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/</guid>
-        
-        <category>三月</category>
-        
-        
-        <category>【BTC】</category>
-        
-      </item>
-    
-      <item>
-        <title>【理论】密码学概要</title>
-        <description>&lt;p&gt;密码学&lt;/p&gt;
-</description>
-        <pubDate>Sun, 24 Mar 2019 23:35:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/03/24/%E5%AF%86%E7%A0%81%E5%AD%A6%E6%A6%82%E8%A6%81/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/03/24/%E5%AF%86%E7%A0%81%E5%AD%A6%E6%A6%82%E8%A6%81/</guid>
-        
-        <category>三月</category>
-        
-        
-        <category>【密码学】</category>
-        
-      </item>
-    
-      <item>
-        <title>【ML】机器学习</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://github.com/clone95/Machine-Learning-Study-Path-March-2019/tree/master/Career%20Paths/Machine%20Learning%20Engineer%20Career%20Path&quot;&gt;机器学习笔记&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Sun, 24 Mar 2019 18:55:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/03/24/ML/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/03/24/ML/</guid>
-        
-        <category>三月</category>
-        
-        
-        <category>【机器学习】</category>
         
       </item>
     
