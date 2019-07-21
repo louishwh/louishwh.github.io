@@ -169,156 +169,115 @@ tag: 【编程语言】
 			- 正则表达式
 				- Regex
 				- 字符串匹配
-					>- Regex(""""\d+""").matchs("1233")
+					> `Regex(""""\d+""").matchs("1233")`
 				- 字符串查找
-					>- Regex(""""\d+""").find("1233")
+					> `Regex(""""\d+""").find("1233")`
 				- 字符串替换
-					>- Regex("""\d+""").replace("123mmm", "")
+					> `Regex("""\d+""").replace("123mmm", "")`
 				- 字符串分割
-					>- Regex("""\d+""").split("123mmm")
+					> `Regex("""\d+""").split("123mmm")`
 	- 运算符
 		- 算术运算符
 			- 一元运算符
-				- 取反符号: -
-				- 自加: ++
-				- 自减: --
+				- 取反符号: `-a`
+				- 自加: `++`
+				- 自减: `--`
 			- 二元运算符
-				- a + b
-				- a - b
-				- a * b 
-				- a / b 
-				- a % b
+				- `a + b`
+				- `a - b`
+				- `a * b`
+				- `a / b`
+				- `a % b`
 			- 算术赋值运算符
-				- a += 1
-				- a -= 1
-				- a *= 2
-				- a /= 2 
-				- a %= 2
+				- `a += 1`
+				- `a -= 1`
+				- `a *= 2`
+				- `a /= 2`
+				- `a %= 2`
 		- 关系运算符
-			- == 
-			- != 
-			- >
-			- <
-			- >=
-			- <= 
-			- === 引用相等
-			- !== 引用不相等
+			- `== 、>、<、>=、<= 、===、!==`
 		- 逻辑运算符
-			- ！
-			- && 
-			- || 
+			- `&&、|| `
 		- 位运算符
-			- inv 位反
-			- and 位与
-			- or  位或
-			- xor 位异或
-			- shr 有符号右移
-			- shl 左移
-			- ushr 无符号右移
+			- `inv 位反`
+			- `and 位与`
+			- `or  位或`
+			- `xor 位异或`
+			- `shr 有符号右移`
+			- `shl 左移`
+			- `ushr 无符号右移`
 		- 其他运算符
-			- Class A : B()
-			- ()
-			- []
-			- .
-			- =
-			- ?
-			- ?.
-			- ?:
-			- !!
-			- ::
-			- ..
-			- -> 
-			- * 
-		- 运算符优先级
-			- 1. ()
-			- 2. ++ 、-- 、 . 、 ?. 、？
-			- 3. -、 + 、 ++ 、-- 、！
-			- 4. :、as、as?
-			- 5. * 、 / 、%
-			- 6. +、-
-			- 7. ..
-			- 8. 中缀运算符
-			- 9. Elvis运算符 ?:
-			- 10. in、!in、is、!is
-			- 11. <、>、<=、>=
-			- 12. ==、!=、===、!==
-			- 13. &&
-			- 14. ||
-			- 15. =、+=、-=、*= 、/= 、%= 
+			- `Class A : B()、()、[]、.=、?、?.、?:、!!、::、..、-> 、* `
+		- 运算符优先级（从高到低）
+			-  `()`
+			-  `++ 、-- 、 . 、 ?. 、？`
+			-  `-、 + 、 ++ 、-- 、！`
+			-  `:、as、as?`
+			-  `* 、 / 、%`
+			-  `+、-`
+			-  `..`
+			-  `中缀运算符`
+			-  `Elvis运算符 ?:`
+			-  `in、!in、is、!is`
+			-  `<、>、<=、>=`
+			-  `==、!=、===、!==`
+			-  `&&`
+			-  `|| `
+			-  `=、+=、-=、*= 、/= 、%= `
 	- 控制流
 		- if
-			>- if(true) a = 1
-			>- val a = if(true) "" else null
+			>- `if(true) a = 1`
+			>- `val a = if(true) "" else null`
 		- when
-			>- when() 
-			>- val a = when(name) 
-		- while {}
-		- do {} while
-		- for () {} 
+			>- `when() {} `
+			>- `val a = when(name)`
+		- `while {}`
+		- `do {} while`
+		- `for () {}`
 		- break
-			>- label@ for (x in 0..8) {
-			>- 	
-			>- 	for (y in 0..8) {
-			>- 	
-			>- 	 if (x == y ) {
-			>- 	
-			>- 	  	break@label
-			>- 	
-			>- 	}
-			>- 	
-			>- }
+			>- `label@ for (x in 0..8) {`
+			>- &emsp;`for (y in 0..8) {`
+			>- &emsp;&emsp;`if (x == y ) {`
+			>- &emsp;&emsp;&emsp;`break@label`
+			>- &emsp;&emsp;`}`
+			>- &emsp;`}`
 		- continue
-			>- label@ for (x in 0..8) {
-			>- 	
-			>- 	for (y in 0..8) {
-			>- 	
-			>- 	 if (x == y ) {
-			>- 	
-			>- 	  	continue@label
-			>- 	
-			>- 	}
-			>- 	
-			>- }
+			>- `label@ for (x in 0..8) {`
+			>- &emsp;`for (y in 0..8) {`
+			>- &emsp;&emsp;`if (x == y ) {`
+			>- &emsp;&emsp;&emsp;`continue@label`
+			>- &emsp;&emsp;`}`
+			>- &emsp;`}`
+			>- `}`
+	
 	- 函数
 		- 函数声明
 		- 命名参数
-			>- fun add(a: Int, b: Int): Int {
-			>- 
-			>-  return a + b
-			>-   
-			>- }
+			>- `fun add(a: Int, b: Int): Int {`
+			>- &emsp;`return a + b`
+			>- `}`
 		- 默认参数
-			>- fun add(a: Int, b: Int, c: Int = 1): Int {
-			>- 
-			>-  return a + b + c 
-			>-   
-			>- }
+			>- `fun add(a: Int, b: Int, c: Int = 1): Int {`
+			>- &emsp;`return a + b + c `
+			>- `}`
 		- 可变参数
-			>- fun add(vararg numbers: Int): Int {
-			>- 
-			>-   var total = 0.0 
-			>-   
-			>-  for (number in numbers) {
-			>-   	
-			>-   	total += number 
-			>-   
-			>-   }
-			>-   
-			>-   return total
-			>-   
-			>- }
+			>- `fun add(vararg numbers: Int): Int {`
+			>- &emsp;`var total = 0.0` 
+			>- &emsp;`for (number in numbers) {`
+			>- &emsp;&emsp;`total += number `
+			>- &emsp;`}`
+			>- &emsp;`return total`
+			>- `}`
 		- 表达式函数
-			>- fun area(x: Int, y: Int) = x * y
+			>- `fun area(x: Int, y: Int) = x * y`
 		- 局部函数
-			>- fun func() {
-			>- 		
-			>- 		fun func() {
-			>-		
-			>-		}
-			>-
-			>- }
+			>- `fun func() {`
+			>- &emsp;`fun func() {`
+			>- 
+			>- &emsp;`}`
+			>- `}`
 		- 匿名函数
-			>- val oneF = fun(x: Int, y:Int): Int = x * y
+			>- `val oneF = fun(x: Int, y:Int): Int = x * y`
 
 3. 面向对象
 	- 类
