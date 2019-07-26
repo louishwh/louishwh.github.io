@@ -2,8 +2,8 @@
 layout: post
 title:  Rust初识
 date: 2019-05-12 09:50:00 +0800
-categories: 【Rust】
-tag: 五月
+categories: 【编程语言】
+tag: Rust
 ---
 
 程序员不应该拘泥于编程语言和框架，进化才是王道。

@@ -5,6 +5,7 @@
     <description>Seeking truth from facts.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+<<<<<<< HEAD
     <pubDate>Thu, 20 Jun 2019 09:38:13 +0800</pubDate>
     <lastBuildDate>Thu, 20 Jun 2019 09:38:13 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
@@ -18,6 +19,21 @@
         <guid isPermaLink="true">http://localhost:4000/2019/06/17/Web-API%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%BC%80%E5%8F%91/</guid>
         
         <category>六月</category>
+=======
+    <pubDate>Sun, 21 Jul 2019 23:05:13 +0800</pubDate>
+    <lastBuildDate>Sun, 21 Jul 2019 23:05:13 +0800</lastBuildDate>
+    <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>高阶Python玩法</title>
+        <description>
+</description>
+        <pubDate>Sun, 21 Jul 2019 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/07/21/%E9%AB%98%E9%98%B6Python/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/07/21/%E9%AB%98%E9%98%B6Python/</guid>
+        
+        <category>【编程语言】</category>
+>>>>>>> ca15ae821ae8c3ae3e2916cc2eb4d2cdef10dfba
         
         
         <category>【读书】</category>
@@ -25,32 +41,663 @@
       </item>
     
       <item>
+<<<<<<< HEAD
         <title>百度XuperChain</title>
         <description>
 </description>
         <pubDate>Sun, 16 Jun 2019 18:50:00 +0800</pubDate>
         <link>http://localhost:4000/2019/06/16/%E7%99%BE%E5%BA%A6XuperChain/</link>
         <guid isPermaLink="true">http://localhost:4000/2019/06/16/%E7%99%BE%E5%BA%A6XuperChain/</guid>
+=======
+        <title>Kotlin</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;世界上没有最好的编程语言，就像世界上没有最好的人一样。&lt;/p&gt;
+
+  &lt;p&gt;如果你想知道一门编程语言的优劣，那就去学会它。&lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+&lt;p&gt;用Kotlin也快一年，最近总觉的对它熟悉又陌生,不由的重新学习一下这门语言。&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+&lt;h4 id=&quot;这门语言最舒服的地方&quot;&gt;这门语言最舒服的地方&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;可空类型：判空的代码省了&lt;/li&gt;
+  &lt;li&gt;when，强大的分支结构：已知的编程语言中最强&lt;/li&gt;
+  &lt;li&gt;if，可以做为表达式： 不用再另外生命变量&lt;/li&gt;
+  &lt;li&gt;object，语法层面的单例&lt;/li&gt;
+  &lt;li&gt;闭包，很实用&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt; &lt;/p&gt;
+&lt;h3 id=&quot;整体介绍&quot;&gt;整体介绍&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;开发工具
+    &lt;ul&gt;
+      &lt;li&gt;Intellij IDEA:&lt;/li&gt;
+      &lt;li&gt;Sublime Text:&lt;/li&gt;
+      &lt;li&gt;Vscode:&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;面向过程
+    &lt;ul&gt;
+      &lt;li&gt;基本语法和规范
+        &lt;ul&gt;
+          &lt;li&gt;变量
+            &lt;blockquote&gt;
+              &lt;ul&gt;
+                &lt;li&gt;var a = “hello”&lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/blockquote&gt;
+          &lt;/li&gt;
+          &lt;li&gt;常量
+            &lt;blockquote&gt;
+              &lt;ul&gt;
+                &lt;li&gt;val a = “name”  // 运行期常量&lt;/li&gt;
+                &lt;li&gt;const val co = “常量” //编译器常量,只能用于顶层常量或对象中的常量声明，只能是String和基础数据类型&lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/blockquote&gt;
+          &lt;/li&gt;
+          &lt;li&gt;注释
+            &lt;blockquote&gt;
+              &lt;ul&gt;
+                &lt;li&gt;// 单行注释&lt;/li&gt;
+                &lt;li&gt;/* 块注释 */&lt;/li&gt;
+                &lt;li&gt;/* /&lt;em&gt;嵌套注释&lt;/em&gt;/ */&lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/blockquote&gt;
+            &lt;ul&gt;
+              &lt;li&gt;文件注释
+                &lt;blockquote&gt;
+                  &lt;ul&gt;
+                    &lt;li&gt;版权信息&lt;/li&gt;
+                    &lt;li&gt;许可信息&lt;/li&gt;
+                    &lt;li&gt;描述&lt;/li&gt;
+                    &lt;li&gt;历史版本&lt;/li&gt;
+                  &lt;/ul&gt;
+                &lt;/blockquote&gt;
+              &lt;/li&gt;
+              &lt;li&gt;文档注释: 公开SDK
+                &lt;ul&gt;
+                  &lt;li&gt;Kdoc
+                    &lt;blockquote&gt;
+                      &lt;ul&gt;
+                        &lt;li&gt;@author&lt;/li&gt;
+                        &lt;li&gt;@deprecated&lt;/li&gt;
+                        &lt;li&gt;@param&lt;/li&gt;
+                        &lt;li&gt;@return&lt;/li&gt;
+                        &lt;li&gt;@version&lt;/li&gt;
+                      &lt;/ul&gt;
+                    &lt;/blockquote&gt;
+                  &lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+              &lt;li&gt;代码注释: 阅读源码参考&lt;/li&gt;
+              &lt;li&gt;地标注释: IDE提供的功能
+                &lt;ul&gt;
+                  &lt;li&gt;//TODO: 代码未完成&lt;/li&gt;
+                  &lt;li&gt;//FIXME: 代码错误，待修正&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;命名规范
+            &lt;ul&gt;
+              &lt;li&gt;包名: 全小写，可用点分割&lt;/li&gt;
+              &lt;li&gt;类名、接口: 大驼峰&lt;/li&gt;
+              &lt;li&gt;文件名: 大驼峰&lt;/li&gt;
+              &lt;li&gt;变量名: 小驼峰&lt;/li&gt;
+              &lt;li&gt;编译器常量: 全大写，可以加下划线&lt;/li&gt;
+              &lt;li&gt;函数名: 小驼峰&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;代码排版
+            &lt;ul&gt;
+              &lt;li&gt;空行
+                &lt;ul&gt;
+                  &lt;li&gt;代码注释之后（除尾端注释）&lt;/li&gt;
+                  &lt;li&gt;函数内第一条语句之前&lt;/li&gt;
+                  &lt;li&gt;一个函数内部两个逻辑段&lt;/li&gt;
+                  &lt;li&gt;类声明或接口声明之间&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+              &lt;li&gt;空格
+                &lt;ul&gt;
+                  &lt;li&gt;赋值符号&lt;/li&gt;
+                  &lt;li&gt;二元运算符&lt;/li&gt;
+                  &lt;li&gt;小括号前后&lt;/li&gt;
+                  &lt;li&gt;函数参数之间&lt;/li&gt;
+                  &lt;li&gt;类继承，接口实现&lt;/li&gt;
+                  &lt;li&gt;lambda表达式大括号左右&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+              &lt;li&gt;缩紧
+                &lt;ul&gt;
+                  &lt;li&gt;4个空格&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+              &lt;li&gt;断行
+                &lt;ul&gt;
+                  &lt;li&gt;逗号后，运算符前&lt;/li&gt;
+                  &lt;li&gt;类声明时&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+              &lt;li&gt;省略
+                &lt;ul&gt;
+                  &lt;li&gt;分号&lt;/li&gt;
+                  &lt;li&gt;省略Unit&lt;/li&gt;
+                  &lt;li&gt;lambda参数&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;数据类型
+        &lt;ul&gt;
+          &lt;li&gt;整数
+            &lt;ul&gt;
+              &lt;li&gt;Byte
+                &lt;ul&gt;
+                  &lt;li&gt;8位&lt;/li&gt;
+                  &lt;li&gt;-128～127&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+              &lt;li&gt;Short
+                &lt;ul&gt;
+                  &lt;li&gt;16位&lt;/li&gt;
+                  &lt;li&gt;-2 ^ 15 ~ 2 ^ 15 - 1&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+              &lt;li&gt;Int
+                &lt;ul&gt;
+                  &lt;li&gt;32位&lt;/li&gt;
+                  &lt;li&gt;-2 ^ 31 ~ 2 ^ 31 -1&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+              &lt;li&gt;Long
+                &lt;ul&gt;
+                  &lt;li&gt;64位&lt;/li&gt;
+                  &lt;li&gt;-2 ^ 63 ~ 2 ^ 63 -1&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;浮点数
+            &lt;ul&gt;
+              &lt;li&gt;Float
+                &lt;ul&gt;
+                  &lt;li&gt;32位&lt;/li&gt;
+                  &lt;li&gt;3.0F&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+              &lt;li&gt;Double
+                &lt;ul&gt;
+                  &lt;li&gt;64位&lt;/li&gt;
+                  &lt;li&gt;默认小数为double&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+              &lt;li&gt;科学计数
+                &lt;blockquote&gt;
+                  &lt;ul&gt;
+                    &lt;li&gt;3.14e15&lt;/li&gt;
+                  &lt;/ul&gt;
+                &lt;/blockquote&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;字符类型
+            &lt;ul&gt;
+              &lt;li&gt;Kotlin字符采用双字节Unicode编码（16位）&lt;/li&gt;
+              &lt;li&gt;可以使用16进制表示
+                &lt;blockquote&gt;
+                  &lt;ul&gt;
+                    &lt;li&gt;val a = ‘A’&lt;/li&gt;
+                    &lt;li&gt;val b = ‘\u0041’&lt;/li&gt;
+                    &lt;li&gt;val c = ‘码’&lt;/li&gt;
+                  &lt;/ul&gt;
+                &lt;/blockquote&gt;
+              &lt;/li&gt;
+              &lt;li&gt;制表符
+                &lt;blockquote&gt;
+                  &lt;ul&gt;
+                    &lt;li&gt;\t  \u0009 Tab&lt;/li&gt;
+                    &lt;li&gt;\n  \u000a 换行&lt;/li&gt;
+                    &lt;li&gt;\r  \u000d 回车&lt;/li&gt;
+                    &lt;li&gt;&quot;  \u0022 双引号&lt;/li&gt;
+                    &lt;li&gt;'  \u0027 单引号&lt;/li&gt;
+                    &lt;li&gt;\  \u005c 反斜线&lt;/li&gt;
+                    &lt;li&gt;$  \u0024 美元符号&lt;/li&gt;
+                    &lt;li&gt;\b  \u0008 退格&lt;/li&gt;
+                  &lt;/ul&gt;
+                &lt;/blockquote&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;布尔类型
+            &lt;ul&gt;
+              &lt;li&gt;true&lt;/li&gt;
+              &lt;li&gt;false&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;数据类型之间的转换
+            &lt;ul&gt;
+              &lt;li&gt;toXXX(): 转换函数&lt;/li&gt;
+              &lt;li&gt;⚠️ 大范围转小范围会存在进度丢失的风险&lt;/li&gt;
+              &lt;li&gt;隐式转换优先度: double &amp;gt; float &amp;gt; Long &amp;gt; Int&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;可空类型
+            &lt;ul&gt;
+              &lt;li&gt;防止空指针异常&lt;/li&gt;
+              &lt;li&gt;可空运算
+                &lt;ul&gt;
+                  &lt;li&gt;安全调用运算 ?.&lt;/li&gt;
+                  &lt;li&gt;as?&lt;/li&gt;
+                  &lt;li&gt;Elvis运算符 ?:&lt;/li&gt;
+                  &lt;li&gt;非空断言!!&lt;/li&gt;
+                  &lt;li&gt;let&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;字符串类型
+            &lt;ul&gt;
+              &lt;li&gt;普通字符串&lt;/li&gt;
+              &lt;li&gt;原始字符串
+                &lt;ul&gt;
+                  &lt;li&gt;可以包含任何字符，不能包含转移字符&lt;/li&gt;
+                  &lt;li&gt;== 判断两个对象内容是否相等&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+              &lt;li&gt;不可变字符串
+                &lt;ul&gt;
+                  &lt;li&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+              &lt;li&gt;字符串操作
+                &lt;ul&gt;
+                  &lt;li&gt;拼接
+                    &lt;ul&gt;
+                      &lt;li&gt;a + b&lt;/li&gt;
+                    &lt;/ul&gt;
+                  &lt;/li&gt;
+                  &lt;li&gt;模版
+                    &lt;ul&gt;
+                      &lt;li&gt;$x&lt;/li&gt;
+                    &lt;/ul&gt;
+                  &lt;/li&gt;
+                  &lt;li&gt;查找
+                    &lt;ul&gt;
+                      &lt;li&gt;indexOf: 从x开始往后查&lt;/li&gt;
+                      &lt;li&gt;lastIndexOf: 从x开始由后向前查&lt;/li&gt;
+                    &lt;/ul&gt;
+                  &lt;/li&gt;
+                  &lt;li&gt;比较
+                    &lt;ul&gt;
+                      &lt;li&gt;相等&lt;/li&gt;
+                      &lt;li&gt;比较大小&lt;/li&gt;
+                      &lt;li&gt;比较前后缀&lt;/li&gt;
+                    &lt;/ul&gt;
+                  &lt;/li&gt;
+                  &lt;li&gt;字符串截取
+                    &lt;ul&gt;
+                      &lt;li&gt;区间截取: 左闭右开区间&lt;/li&gt;
+                    &lt;/ul&gt;
+                  &lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+              &lt;li&gt;可变字符串
+                &lt;ul&gt;
+                  &lt;li&gt;StringBuilder&lt;/li&gt;
+                  &lt;li&gt;追加&lt;/li&gt;
+                  &lt;li&gt;插入&lt;/li&gt;
+                  &lt;li&gt;删除&lt;/li&gt;
+                  &lt;li&gt;替换&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+              &lt;li&gt;正则表达式
+                &lt;ul&gt;
+                  &lt;li&gt;Regex&lt;/li&gt;
+                  &lt;li&gt;字符串匹配
+                    &lt;blockquote&gt;
+                      &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Regex(&quot;&quot;&quot;&quot;\d+&quot;&quot;&quot;).matchs(&quot;1233&quot;)&lt;/code&gt;&lt;/p&gt;
+                    &lt;/blockquote&gt;
+                  &lt;/li&gt;
+                  &lt;li&gt;字符串查找
+                    &lt;blockquote&gt;
+                      &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Regex(&quot;&quot;&quot;&quot;\d+&quot;&quot;&quot;).find(&quot;1233&quot;)&lt;/code&gt;&lt;/p&gt;
+                    &lt;/blockquote&gt;
+                  &lt;/li&gt;
+                  &lt;li&gt;字符串替换
+                    &lt;blockquote&gt;
+                      &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Regex(&quot;&quot;&quot;\d+&quot;&quot;&quot;).replace(&quot;123mmm&quot;, &quot;&quot;)&lt;/code&gt;&lt;/p&gt;
+                    &lt;/blockquote&gt;
+                  &lt;/li&gt;
+                  &lt;li&gt;字符串分割
+                    &lt;blockquote&gt;
+                      &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Regex(&quot;&quot;&quot;\d+&quot;&quot;&quot;).split(&quot;123mmm&quot;)&lt;/code&gt;&lt;/p&gt;
+                    &lt;/blockquote&gt;
+                  &lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;运算符
+        &lt;ul&gt;
+          &lt;li&gt;算术运算符
+            &lt;ul&gt;
+              &lt;li&gt;一元运算符
+                &lt;ul&gt;
+                  &lt;li&gt;取反符号: &lt;code class=&quot;highlighter-rouge&quot;&gt;-a&lt;/code&gt;&lt;/li&gt;
+                  &lt;li&gt;自加: &lt;code class=&quot;highlighter-rouge&quot;&gt;++&lt;/code&gt;&lt;/li&gt;
+                  &lt;li&gt;自减: &lt;code class=&quot;highlighter-rouge&quot;&gt;--&lt;/code&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+              &lt;li&gt;二元运算符
+                &lt;ul&gt;
+                  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;a + b&lt;/code&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;a - b&lt;/code&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;a * b&lt;/code&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;a / b&lt;/code&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;a % b&lt;/code&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+              &lt;li&gt;算术赋值运算符
+                &lt;ul&gt;
+                  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;a += 1&lt;/code&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;a -= 1&lt;/code&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;a *= 2&lt;/code&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;a /= 2&lt;/code&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;a %= 2&lt;/code&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;关系运算符
+            &lt;ul&gt;
+              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;== 、&amp;gt;、&amp;lt;、&amp;gt;=、&amp;lt;= 、===、!==&lt;/code&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;逻辑运算符
+            &lt;ul&gt;
+              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;amp;&amp;amp;、|| &lt;/code&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;位运算符
+            &lt;ul&gt;
+              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;inv 位反&lt;/code&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;and 位与&lt;/code&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;or  位或&lt;/code&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;xor 位异或&lt;/code&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;shr 有符号右移&lt;/code&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;shl 左移&lt;/code&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ushr 无符号右移&lt;/code&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;其他运算符
+            &lt;ul&gt;
+              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Class A : B()、()、[]、.=、?、?.、?:、!!、::、..、-&amp;gt; 、* &lt;/code&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;运算符优先级（从高到低）
+            &lt;ul&gt;
+              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;()&lt;/code&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;++ 、-- 、 . 、 ?. 、？&lt;/code&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-、 + 、 ++ 、-- 、！&lt;/code&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;:、as、as?&lt;/code&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;* 、 / 、%&lt;/code&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;+、-&lt;/code&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;..&lt;/code&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;中缀运算符&lt;/code&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Elvis运算符 ?:&lt;/code&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;in、!in、is、!is&lt;/code&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;、&amp;gt;、&amp;lt;=、&amp;gt;=&lt;/code&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;==、!=、===、!==&lt;/code&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;amp;&amp;amp;&lt;/code&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;|| &lt;/code&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;=、+=、-=、*= 、/= 、%= &lt;/code&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;控制流
+        &lt;ul&gt;
+          &lt;li&gt;if
+            &lt;blockquote&gt;
+              &lt;ul&gt;
+                &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;if(true) a = 1&lt;/code&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;val a = if(true) &quot;&quot; else null&lt;/code&gt;&lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/blockquote&gt;
+          &lt;/li&gt;
+          &lt;li&gt;when
+            &lt;blockquote&gt;
+              &lt;ul&gt;
+                &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;when() {} &lt;/code&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;val a = when(name)&lt;/code&gt;&lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/blockquote&gt;
+          &lt;/li&gt;
+          &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;while {}&lt;/code&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;do {} while&lt;/code&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;for () {}&lt;/code&gt;&lt;/li&gt;
+          &lt;li&gt;break
+            &lt;blockquote&gt;
+              &lt;ul&gt;
+                &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;label@ for (x in 0..8) {&lt;/code&gt;&lt;/li&gt;
+                &lt;li&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;for (y in 0..8) {&lt;/code&gt;&lt;/li&gt;
+                &lt;li&gt;  &lt;code class=&quot;highlighter-rouge&quot;&gt;if (x == y ) {&lt;/code&gt;&lt;/li&gt;
+                &lt;li&gt;   &lt;code class=&quot;highlighter-rouge&quot;&gt;break@label&lt;/code&gt;&lt;/li&gt;
+                &lt;li&gt;  &lt;code class=&quot;highlighter-rouge&quot;&gt;}&lt;/code&gt;&lt;/li&gt;
+                &lt;li&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;}&lt;/code&gt;&lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/blockquote&gt;
+          &lt;/li&gt;
+          &lt;li&gt;continue
+            &lt;blockquote&gt;
+              &lt;ul&gt;
+                &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;label@ for (x in 0..8) {&lt;/code&gt;&lt;/li&gt;
+                &lt;li&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;for (y in 0..8) {&lt;/code&gt;&lt;/li&gt;
+                &lt;li&gt;  &lt;code class=&quot;highlighter-rouge&quot;&gt;if (x == y ) {&lt;/code&gt;&lt;/li&gt;
+                &lt;li&gt;   &lt;code class=&quot;highlighter-rouge&quot;&gt;continue@label&lt;/code&gt;&lt;/li&gt;
+                &lt;li&gt;  &lt;code class=&quot;highlighter-rouge&quot;&gt;}&lt;/code&gt;&lt;/li&gt;
+                &lt;li&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;}&lt;/code&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;}&lt;/code&gt;&lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/blockquote&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;函数
+        &lt;ul&gt;
+          &lt;li&gt;函数声明&lt;/li&gt;
+          &lt;li&gt;命名参数
+            &lt;blockquote&gt;
+              &lt;ul&gt;
+                &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;fun add(a: Int, b: Int): Int {&lt;/code&gt;&lt;/li&gt;
+                &lt;li&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;return a + b&lt;/code&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;}&lt;/code&gt;&lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/blockquote&gt;
+          &lt;/li&gt;
+          &lt;li&gt;默认参数
+            &lt;blockquote&gt;
+              &lt;ul&gt;
+                &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;fun add(a: Int, b: Int, c: Int = 1): Int {&lt;/code&gt;&lt;/li&gt;
+                &lt;li&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;return a + b + c &lt;/code&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;}&lt;/code&gt;&lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/blockquote&gt;
+          &lt;/li&gt;
+          &lt;li&gt;可变参数
+            &lt;blockquote&gt;
+              &lt;ul&gt;
+                &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;fun add(vararg numbers: Int): Int {&lt;/code&gt;&lt;/li&gt;
+                &lt;li&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;var total = 0.0&lt;/code&gt;&lt;/li&gt;
+                &lt;li&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;for (number in numbers) {&lt;/code&gt;&lt;/li&gt;
+                &lt;li&gt;  &lt;code class=&quot;highlighter-rouge&quot;&gt;total += number &lt;/code&gt;&lt;/li&gt;
+                &lt;li&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;}&lt;/code&gt;&lt;/li&gt;
+                &lt;li&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;return total&lt;/code&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;}&lt;/code&gt;&lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/blockquote&gt;
+          &lt;/li&gt;
+          &lt;li&gt;表达式函数
+            &lt;blockquote&gt;
+              &lt;ul&gt;
+                &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;fun area(x: Int, y: Int) = x * y&lt;/code&gt;&lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/blockquote&gt;
+          &lt;/li&gt;
+          &lt;li&gt;局部函数
+            &lt;blockquote&gt;
+              &lt;ul&gt;
+                &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;fun func() {&lt;/code&gt;&lt;/li&gt;
+                &lt;li&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;fun func() {&lt;/code&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;/li&gt;
+                &lt;li&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;}&lt;/code&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;}&lt;/code&gt;&lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/blockquote&gt;
+          &lt;/li&gt;
+          &lt;li&gt;匿名函数
+            &lt;blockquote&gt;
+              &lt;ul&gt;
+                &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;val oneF = fun(x: Int, y:Int): Int = x * y&lt;/code&gt;&lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/blockquote&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;面向对象
+    &lt;ul&gt;
+      &lt;li&gt;类&lt;/li&gt;
+      &lt;li&gt;封装&lt;/li&gt;
+      &lt;li&gt;继承&lt;/li&gt;
+      &lt;li&gt;多态&lt;/li&gt;
+      &lt;li&gt;抽象类/接口&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;函数式编程
+    &lt;ul&gt;
+      &lt;li&gt;高阶函数&lt;/li&gt;
+      &lt;li&gt;Lambda&lt;/li&gt;
+      &lt;li&gt;闭包&lt;/li&gt;
+      &lt;li&gt;内联函数&lt;/li&gt;
+      &lt;li&gt;范型&lt;/li&gt;
+      &lt;li&gt;数据容器&lt;/li&gt;
+      &lt;li&gt;函数式API&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;通用模式
+    &lt;ul&gt;
+      &lt;li&gt;异常处理&lt;/li&gt;
+      &lt;li&gt;线程&lt;/li&gt;
+      &lt;li&gt;协程&lt;/li&gt;
+      &lt;li&gt;I/O&lt;/li&gt;
+      &lt;li&gt;文件管理&lt;/li&gt;
+      &lt;li&gt;网络编程&lt;/li&gt;
+      &lt;li&gt;GUI编程&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Java特性
+    &lt;ul&gt;
+      &lt;li&gt;反射&lt;/li&gt;
+      &lt;li&gt;注解&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+        <pubDate>Sat, 06 Jul 2019 10:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/07/06/Kotlin/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/07/06/Kotlin/</guid>
         
-        <category>六月</category>
+        <category>【编程语言】</category>
         
         
-        <category>【区块链】</category>
+        <category>【读书】</category>
         
       </item>
     
       <item>
+        <title>Apple那些事</title>
+        <description>&lt;h3 id=&quot;证书申请那些事&quot;&gt;证书申请那些事&lt;/h3&gt;
+
+&lt;h3 id=&quot;打包那些事&quot;&gt;打包那些事&lt;/h3&gt;
+
+&lt;h3 id=&quot;苹果资源那些事&quot;&gt;苹果资源那些事&lt;/h3&gt;
+
+&lt;h3 id=&quot;你可能不知的关于苹果的事&quot;&gt;你可能不知的关于苹果的事&lt;/h3&gt;
+
+&lt;h3 id=&quot;对苹果的敬仰&quot;&gt;对苹果的敬仰&lt;/h3&gt;
+
+&lt;h3 id=&quot;对苹果的惋惜&quot;&gt;对苹果的惋惜&lt;/h3&gt;
+
+</description>
+        <pubDate>Sat, 06 Jul 2019 08:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/07/06/Apple%E9%82%A3%E4%BA%9B%E4%BA%8B/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/07/06/Apple%E9%82%A3%E4%BA%9B%E4%BA%8B/</guid>
+        
+        <category>【方法】</category>
+        
+        
+        <category>【iOS】</category>
+        
+      </item>
+    
+      <item>
+        <title>Web API的设计与开发</title>
+        <description>
+</description>
+        <pubDate>Mon, 17 Jun 2019 21:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/06/17/Web-API%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%BC%80%E5%8F%91/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/06/17/Web-API%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%BC%80%E5%8F%91/</guid>
+>>>>>>> ca15ae821ae8c3ae3e2916cc2eb4d2cdef10dfba
+        
+        <category>六月</category>
+        
+        
+<<<<<<< HEAD
+        <category>【区块链】</category>
+=======
+        <category>【读书】</category>
+>>>>>>> ca15ae821ae8c3ae3e2916cc2eb4d2cdef10dfba
+        
+      </item>
+    
+      <item>
+<<<<<<< HEAD
         <title>Python高级玩法</title>
         <description>
 </description>
         <pubDate>Sun, 16 Jun 2019 15:50:00 +0800</pubDate>
         <link>http://localhost:4000/2019/06/16/Python%E9%AB%98%E7%BA%A7%E7%8E%A9%E6%B3%95/</link>
         <guid isPermaLink="true">http://localhost:4000/2019/06/16/Python%E9%AB%98%E7%BA%A7%E7%8E%A9%E6%B3%95/</guid>
+=======
+        <title>百度XuperChain</title>
+        <description>
+</description>
+        <pubDate>Sun, 16 Jun 2019 18:50:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/06/16/%E7%99%BE%E5%BA%A6XuperChain/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/06/16/%E7%99%BE%E5%BA%A6XuperChain/</guid>
+>>>>>>> ca15ae821ae8c3ae3e2916cc2eb4d2cdef10dfba
         
         <category>六月</category>
         
         
+<<<<<<< HEAD
         <category>【教程】</category>
+=======
+        <category>【区块链】</category>
+>>>>>>> ca15ae821ae8c3ae3e2916cc2eb4d2cdef10dfba
         
       </item>
     
@@ -322,10 +969,10 @@
         <link>http://localhost:4000/2019/05/26/Rust-Actix/</link>
         <guid isPermaLink="true">http://localhost:4000/2019/05/26/Rust-Actix/</guid>
         
-        <category>五月</category>
+        <category>Rust</category>
         
         
-        <category>【Rust】</category>
+        <category>【后端框架】</category>
         
       </item>
     
@@ -400,10 +1047,10 @@
         <link>http://localhost:4000/2019/05/12/Rust%E5%88%9D%E8%AF%86/</link>
         <guid isPermaLink="true">http://localhost:4000/2019/05/12/Rust%E5%88%9D%E8%AF%86/</guid>
         
-        <category>五月</category>
+        <category>Rust</category>
         
         
-        <category>【Rust】</category>
+        <category>【编程语言】</category>
         
       </item>
     
@@ -678,6 +1325,7 @@
         
       </item>
     
+<<<<<<< HEAD
       <item>
         <title>量子公链技术</title>
         <description>
@@ -708,5 +1356,7 @@
         
       </item>
     
+=======
+>>>>>>> ca15ae821ae8c3ae3e2916cc2eb4d2cdef10dfba
   </channel>
 </rss>
