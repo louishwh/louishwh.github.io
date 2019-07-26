@@ -5,9 +5,54 @@
     <description>Seeking truth from facts.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 15 Jun 2019 23:39:47 +0800</pubDate>
-    <lastBuildDate>Sat, 15 Jun 2019 23:39:47 +0800</lastBuildDate>
+    <pubDate>Thu, 20 Jun 2019 09:38:13 +0800</pubDate>
+    <lastBuildDate>Thu, 20 Jun 2019 09:38:13 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>Web API的设计与开发</title>
+        <description>
+</description>
+        <pubDate>Mon, 17 Jun 2019 21:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/06/17/Web-API%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%BC%80%E5%8F%91/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/06/17/Web-API%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%BC%80%E5%8F%91/</guid>
+        
+        <category>六月</category>
+        
+        
+        <category>【读书】</category>
+        
+      </item>
+    
+      <item>
+        <title>百度XuperChain</title>
+        <description>
+</description>
+        <pubDate>Sun, 16 Jun 2019 18:50:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/06/16/%E7%99%BE%E5%BA%A6XuperChain/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/06/16/%E7%99%BE%E5%BA%A6XuperChain/</guid>
+        
+        <category>六月</category>
+        
+        
+        <category>【区块链】</category>
+        
+      </item>
+    
+      <item>
+        <title>Python高级玩法</title>
+        <description>
+</description>
+        <pubDate>Sun, 16 Jun 2019 15:50:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/06/16/Python%E9%AB%98%E7%BA%A7%E7%8E%A9%E6%B3%95/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/06/16/Python%E9%AB%98%E7%BA%A7%E7%8E%A9%E6%B3%95/</guid>
+        
+        <category>六月</category>
+        
+        
+        <category>【教程】</category>
+        
+      </item>
     
       <item>
         <title>CentOS-Docker-Nginx-Web</title>
@@ -80,12 +125,12 @@
   &lt;/li&gt;
   &lt;li&gt;设置yum源
     &lt;blockquote&gt;
-      &lt;p&gt;sudo yum-config-manager –add-repo https://download.docker.com/linux/centos/docker-ce.repo&lt;/p&gt;
+      &lt;p&gt;sudo yum-config-manager -‌-add-repo https://download.docker.com/linux/centos/docker-ce.repo&lt;/p&gt;
     &lt;/blockquote&gt;
   &lt;/li&gt;
   &lt;li&gt;查看所有仓库中所有docker版本，并选择特定版本安装
     &lt;blockquote&gt;
-      &lt;p&gt;yum list docker-ce –showduplicates&lt;/p&gt;
+      &lt;p&gt;yum list docker-ce -‌-showduplicates&lt;/p&gt;
     &lt;/blockquote&gt;
   &lt;/li&gt;
   &lt;li&gt;安装docker
@@ -249,8 +294,9 @@
   &lt;/li&gt;
   &lt;li&gt;整个过程大致花了一个小时：
     &lt;blockquote&gt;
-      &lt;p&gt;主要耗时在：nginx的配置错误导致一直报500的错误：重定向错误
-问题定位不清楚，一直在纠结在挂载文件上, 实际上是nginx的配置问题&lt;/p&gt;
+      &lt;p&gt;主要耗时在：nginx的配置错误导致一直报500的错误(重定向错误)&lt;/p&gt;
+
+      &lt;p&gt;问题定位不清楚，一直在纠结在挂载文件上(实际上是nginx的配置问题)&lt;/p&gt;
     &lt;/blockquote&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
@@ -264,22 +310,6 @@
         
         
         <category>【小记】</category>
-        
-      </item>
-    
-      <item>
-        <title>Rust的Web框架：Actix</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://actix.rs/&quot;&gt;Rust的Web框架：Actix&lt;/a&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Sun, 26 May 2019 21:50:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/05/26/Python%E9%AB%98%E7%BA%A7%E6%95%99%E7%A8%8B/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/05/26/Python%E9%AB%98%E7%BA%A7%E6%95%99%E7%A8%8B/</guid>
-        
-        <category>五月</category>
-        
-        
-        <category>【Rust】</category>
         
       </item>
     
@@ -537,28 +567,10 @@
     &lt;blockquote&gt;
       &lt;ul&gt;
         &lt;li&gt;产生想法&lt;/li&gt;
-        &lt;li&gt;实现策略：Julia／Python&lt;/li&gt;
-        &lt;li&gt;
-          &lt;table&gt;
-            &lt;tbody&gt;
-              &lt;tr&gt;
-                &lt;td&gt;检验策略：回测&lt;/td&gt;
-                &lt;td&gt;模拟交易&lt;/td&gt;
-              &lt;/tr&gt;
-            &lt;/tbody&gt;
-          &lt;/table&gt;
-        &lt;/li&gt;
+        &lt;li&gt;实现策略：Julia-Python&lt;/li&gt;
+        &lt;li&gt;检验策略：回测-模拟交易&lt;/li&gt;
         &lt;li&gt;实盘交易&lt;/li&gt;
-        &lt;li&gt;
-          &lt;table&gt;
-            &lt;tbody&gt;
-              &lt;tr&gt;
-                &lt;td&gt;优化策略&lt;/td&gt;
-                &lt;td&gt;采用新策略&lt;/td&gt;
-              &lt;/tr&gt;
-            &lt;/tbody&gt;
-          &lt;/table&gt;
-        &lt;/li&gt;
+        &lt;li&gt;优化策略-采用新策略&lt;/li&gt;
       &lt;/ul&gt;
     &lt;/blockquote&gt;
   &lt;/li&gt;
@@ -596,6 +608,48 @@
     &lt;/blockquote&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;h4 id=&quot;量化投资与python&quot;&gt;量化投资与Python&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;选择：Excel、SAS、R、Python、Julia&lt;/li&gt;
+  &lt;li&gt;numpy:高性能科学计算与数据分析的基础包
+    &lt;blockquote&gt;
+      &lt;ul&gt;
+        &lt;li&gt;ndarray:&lt;/li&gt;
+        &lt;li&gt;高阶函数&lt;/li&gt;
+        &lt;li&gt;磁盘读写工具&lt;/li&gt;
+        &lt;li&gt;线性代数、随机数生成、傅立叶变换&lt;/li&gt;
+        &lt;li&gt;集成C/C++&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;pandas:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;numpy&quot;&gt;numpy&lt;/h4&gt;
+&lt;ol&gt;
+  &lt;li&gt;创建: ndarry&lt;/li&gt;
+  &lt;li&gt;多维数组&lt;/li&gt;
+  &lt;li&gt;常用属性：
+    &lt;blockquote&gt;
+      &lt;ul&gt;
+        &lt;li&gt;T：数组的转置&lt;/li&gt;
+        &lt;li&gt;dtype：元素的类型&lt;/li&gt;
+        &lt;li&gt;size： 元素个数&lt;/li&gt;
+        &lt;li&gt;ndim: 维数&lt;/li&gt;
+        &lt;li&gt;shape: 维度大小&lt;/li&gt;
+        &lt;li&gt;astype: 类型转换&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
 
 </description>
         <pubDate>Wed, 08 May 2019 01:00:00 +0800</pubDate>
@@ -651,36 +705,6 @@
         
         
         <category>【P2P】</category>
-        
-      </item>
-    
-      <item>
-        <title>EOS公链技术</title>
-        <description>&lt;p&gt;学习资料汇总&lt;/p&gt;
-</description>
-        <pubDate>Wed, 27 Mar 2019 23:30:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/03/27/EOS%E5%85%AC%E9%93%BE%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/03/27/EOS%E5%85%AC%E9%93%BE%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/</guid>
-        
-        <category>三月</category>
-        
-        
-        <category>【EOS】</category>
-        
-      </item>
-    
-      <item>
-        <title>以太坊公链技术</title>
-        <description>&lt;p&gt;学习资料汇总&lt;/p&gt;
-</description>
-        <pubDate>Tue, 26 Mar 2019 21:30:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/03/26/%E4%BB%A5%E5%A4%AA%E5%9D%8A%E5%85%AC%E9%93%BE%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/03/26/%E4%BB%A5%E5%A4%AA%E5%9D%8A%E5%85%AC%E9%93%BE%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/</guid>
-        
-        <category>三月</category>
-        
-        
-        <category>【ETH】</category>
         
       </item>
     
