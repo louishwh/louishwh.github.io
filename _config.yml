@@ -7,9 +7,9 @@ url: http://www.louishwh.top
 github: https://github.com/louishwh/
 baseurl: ""
 description: Seeking truth from facts.
-meta_description: 个人博客
-motto: 技术改变世界.
-banner: 学而不思则罔，思而不学则殆。
+meta_description: Atomix
+motto: Science and technology constitute the primary productive force..
+banner: The unity of knowledge and action。
 
 permalink: /:categories/:year/:month/:day/:title/
 permalink: /:year/:month/:day/:title/
