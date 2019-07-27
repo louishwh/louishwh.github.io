@@ -5,6 +5,21 @@
     <description>Seeking truth from facts.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+<<<<<<< HEAD
+    <pubDate>Thu, 20 Jun 2019 09:38:13 +0800</pubDate>
+    <lastBuildDate>Thu, 20 Jun 2019 09:38:13 +0800</lastBuildDate>
+    <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>Web API的设计与开发</title>
+        <description>
+</description>
+        <pubDate>Mon, 17 Jun 2019 21:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/06/17/Web-API%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%BC%80%E5%8F%91/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/06/17/Web-API%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%BC%80%E5%8F%91/</guid>
+        
+        <category>六月</category>
+=======
     <pubDate>Sun, 21 Jul 2019 23:05:13 +0800</pubDate>
     <lastBuildDate>Sun, 21 Jul 2019 23:05:13 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
@@ -18,6 +33,7 @@
         <guid isPermaLink="true">http://localhost:4000/2019/07/21/%E9%AB%98%E9%98%B6Python/</guid>
         
         <category>【编程语言】</category>
+>>>>>>> ca15ae821ae8c3ae3e2916cc2eb4d2cdef10dfba
         
         
         <category>【读书】</category>
@@ -25,6 +41,14 @@
       </item>
     
       <item>
+<<<<<<< HEAD
+        <title>百度XuperChain</title>
+        <description>
+</description>
+        <pubDate>Sun, 16 Jun 2019 18:50:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/06/16/%E7%99%BE%E5%BA%A6XuperChain/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/06/16/%E7%99%BE%E5%BA%A6XuperChain/</guid>
+=======
         <title>Kotlin</title>
         <description>&lt;blockquote&gt;
   &lt;p&gt;世界上没有最好的编程语言，就像世界上没有最好的人一样。&lt;/p&gt;
@@ -636,26 +660,44 @@
         <pubDate>Mon, 17 Jun 2019 21:00:00 +0800</pubDate>
         <link>http://localhost:4000/2019/06/17/Web-API%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%BC%80%E5%8F%91/</link>
         <guid isPermaLink="true">http://localhost:4000/2019/06/17/Web-API%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%BC%80%E5%8F%91/</guid>
+>>>>>>> ca15ae821ae8c3ae3e2916cc2eb4d2cdef10dfba
         
         <category>六月</category>
         
         
+<<<<<<< HEAD
+        <category>【区块链】</category>
+=======
         <category>【读书】</category>
+>>>>>>> ca15ae821ae8c3ae3e2916cc2eb4d2cdef10dfba
         
       </item>
     
       <item>
+<<<<<<< HEAD
+        <title>Python高级玩法</title>
+        <description>
+</description>
+        <pubDate>Sun, 16 Jun 2019 15:50:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/06/16/Python%E9%AB%98%E7%BA%A7%E7%8E%A9%E6%B3%95/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/06/16/Python%E9%AB%98%E7%BA%A7%E7%8E%A9%E6%B3%95/</guid>
+=======
         <title>百度XuperChain</title>
         <description>
 </description>
         <pubDate>Sun, 16 Jun 2019 18:50:00 +0800</pubDate>
         <link>http://localhost:4000/2019/06/16/%E7%99%BE%E5%BA%A6XuperChain/</link>
         <guid isPermaLink="true">http://localhost:4000/2019/06/16/%E7%99%BE%E5%BA%A6XuperChain/</guid>
+>>>>>>> ca15ae821ae8c3ae3e2916cc2eb4d2cdef10dfba
         
         <category>六月</category>
         
         
+<<<<<<< HEAD
+        <category>【教程】</category>
+=======
         <category>【区块链】</category>
+>>>>>>> ca15ae821ae8c3ae3e2916cc2eb4d2cdef10dfba
         
       </item>
     
@@ -730,12 +772,12 @@
   &lt;/li&gt;
   &lt;li&gt;设置yum源
     &lt;blockquote&gt;
-      &lt;p&gt;sudo yum-config-manager –add-repo https://download.docker.com/linux/centos/docker-ce.repo&lt;/p&gt;
+      &lt;p&gt;sudo yum-config-manager -‌-add-repo https://download.docker.com/linux/centos/docker-ce.repo&lt;/p&gt;
     &lt;/blockquote&gt;
   &lt;/li&gt;
   &lt;li&gt;查看所有仓库中所有docker版本，并选择特定版本安装
     &lt;blockquote&gt;
-      &lt;p&gt;yum list docker-ce –showduplicates&lt;/p&gt;
+      &lt;p&gt;yum list docker-ce -‌-showduplicates&lt;/p&gt;
     &lt;/blockquote&gt;
   &lt;/li&gt;
   &lt;li&gt;安装docker
@@ -1283,5 +1325,38 @@
         
       </item>
     
+<<<<<<< HEAD
+      <item>
+        <title>量子公链技术</title>
+        <description>
+</description>
+        <pubDate>Thu, 28 Mar 2019 23:30:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/03/28/%E9%87%8F%E5%AD%90%E5%85%AC%E9%93%BE%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/03/28/%E9%87%8F%E5%AD%90%E5%85%AC%E9%93%BE%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/</guid>
+        
+        <category>三月</category>
+        
+        
+        <category>【QUTM】</category>
+        
+      </item>
+    
+      <item>
+        <title>【理论】P2P网络内容传输技术</title>
+        <description>
+</description>
+        <pubDate>Wed, 27 Mar 2019 23:55:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/03/27/P2P%E7%BD%91%E7%BB%9C%E5%86%85%E5%AE%B9%E4%BC%A0%E8%BE%93%E6%8A%80%E6%9C%AF/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/03/27/P2P%E7%BD%91%E7%BB%9C%E5%86%85%E5%AE%B9%E4%BC%A0%E8%BE%93%E6%8A%80%E6%9C%AF/</guid>
+        
+        <category>三月</category>
+        
+        
+        <category>【P2P】</category>
+        
+      </item>
+    
+=======
+>>>>>>> ca15ae821ae8c3ae3e2916cc2eb4d2cdef10dfba
   </channel>
 </rss>

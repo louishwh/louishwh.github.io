@@ -57,10 +57,10 @@ tag: 六月
 > sudo yum install -y yum-utils device-mapper-persistent-data lvm2
 
 5. 设置yum源
-> sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+> sudo yum-config-manager -&zwnj;-add-repo https://download.docker.com/linux/centos/docker-ce.repo
 
 6. 查看所有仓库中所有docker版本，并选择特定版本安装
-> yum list docker-ce --showduplicates 
+> yum list docker-ce -&zwnj;-showduplicates 
 
 7. 安装docker
 > sudo yum install docker-ce  # repo中默认只开启stable仓库，故这里安装的是最新稳定版17.12.0
