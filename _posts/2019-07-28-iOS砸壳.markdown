@@ -43,6 +43,11 @@ tag: 【编程语言】
 
 4. [frida-iOS-dump](https://www.jianshu.com/p/12407c198ff0)
 
+5. [Hopper](https://www.jianshu.com/p/b6737504c71e)
+
+6. [软件](https://www.jianshu.com/p/b6737504c71e)
+
 #### 引申问题
 
 1. iOS/MacOS的内核了解？
+
