@@ -5,24 +5,345 @@
     <description>Seeking truth from facts.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-<<<<<<< HEAD
-    <pubDate>Thu, 20 Jun 2019 09:38:13 +0800</pubDate>
-    <lastBuildDate>Thu, 20 Jun 2019 09:38:13 +0800</lastBuildDate>
+    <pubDate>Tue, 30 Jul 2019 12:47:58 +0800</pubDate>
+    <lastBuildDate>Tue, 30 Jul 2019 12:47:58 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
-        <title>Web API的设计与开发</title>
-        <description>
+        <title></title>
+        <description>&lt;h3 id=&quot;内容概要&quot;&gt;内容概要&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- 介绍
+- 编译
+- 文件结构介绍
+- 基本操作
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;介绍&quot;&gt;介绍&lt;/h4&gt;
+
+&lt;p&gt;XuperUion是超级链体系下的第一个开源项目，是构建超级联盟网络的底层方案。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;核心特点&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;高性能
+        &lt;ul&gt;
+          &lt;li&gt;原创的XuperModel模型，真正实现了智能合约的并发执行和验证。&lt;/li&gt;
+          &lt;li&gt;TDPOS算法确保大规模节点下的快速共识。&lt;/li&gt;
+          &lt;li&gt;使用AOT加速的WASM虚拟机，合约运行速度接近native程序。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;更安全
+        &lt;ul&gt;
+          &lt;li&gt;多私钥保护的账户体系。&lt;/li&gt;
+          &lt;li&gt;鉴权支持权重累计、集合运算等灵活的策略。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;易扩展
+        &lt;ul&gt;
+          &lt;li&gt;鲁棒的P2P网络，支持广域网超大规模节点。&lt;/li&gt;
+          &lt;li&gt;底层账本支持分叉管理，自动收敛一致性，实现真正全球化部署。&lt;/li&gt;
+          &lt;li&gt;多语言开发智能合约&lt;/li&gt;
+          &lt;li&gt;通过原创的XuperBridge技术，可插拔多语言虚拟机。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;高灵活性
+        &lt;ul&gt;
+          &lt;li&gt;可插拔、插件化的设计使得用户可以方便选择适合自己业务场景的解决方案。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;编译&quot;&gt;编译&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;系统配置
+    &lt;ul&gt;
+      &lt;li&gt;操作系统：支持Linux以及Mac OS&lt;/li&gt;
+      &lt;li&gt;开发语言：Go 1.12.x及以上&lt;/li&gt;
+      &lt;li&gt;编译器：GCC 4.8.x及以上&lt;/li&gt;
+      &lt;li&gt;版本控制工具：Git&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;获取代码
+    &lt;blockquote&gt;
+      &lt;p&gt;git clone https://github.com/xuperchain/xuperunion&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;生成执行文件
+    &lt;blockquote&gt;
+      &lt;p&gt;cd xuperunion&lt;/p&gt;
+
+      &lt;p&gt;make&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;编译完成
+    &lt;ul&gt;
+      &lt;li&gt;在output文件夹内部&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;文件结构介绍&quot;&gt;文件结构介绍&lt;/h4&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;output
+│
+├── conf  	// 创始的共识采用tdpos模式，指定单一地址有权利出块
+│  	│
+│   ├── plugins.conf 		// 插件的配置信息
+│  	│
+│   ├── xchain.yaml.   		// xchain服务的配置信息
+│  	│
+│   └── xchain.yaml.sample 	// 防止冲突，部署时根据需要修改端口号
+│  	
+│  	
+├── contractCall.sh
+│
+├── createAccount.sh
+│
+├── data  // 数据的存放目录,创世块信息，以及共识和合约的样例
+│   │
+│   ├── blockchain	// 账本目录
+│   │   │
+│   │   └── xuper
+│   │       ├── ledger
+│   │       │   ├── 000001.log
+│   │       │   │
+│   │       │   ├── CURRENT
+│   │       │   │
+│   │       │   ├── LOCK
+│   │       │   │
+│   │       │   ├── LOG
+│   │       │   │
+│   │       │   └── MANIFEST-000000
+│   │       │   
+│   │       ├── utxoVM
+│   │       │   │
+│   │       │   ├── 000001.log
+│   │       │   │
+│   │       │   ├── CURRENT
+│   │       │   │
+│   │       │   ├── LOCK
+│   │       │   │
+│   │       │   ├── LOG
+│   │       │   │
+│   │       │   └── MANIFEST-000000
+│   │       │  	
+│   │       └── xuper.json
+│   │   	
+│   ├── config	// 创始的共识采用tdpos模式，指定单一地址有权利出块
+│   │  	│  	
+│   │   ├── decay_demo.json
+│   │  	│  	
+│   │   ├── pmroot.json
+│   │  	│  	
+│   │   ├── pow.json
+│   │  	│  	
+│   │   ├── root_demo.json
+│   │  	│  	
+│   │   └── xuper.json
+│   │  	
+│   │  	
+│   ├── keys // 此节点的地址，唯一性
+│   │  	│  	
+│   │   ├── address
+│   │  	│  	
+│   │   ├── private.key
+│   │  	│  	
+│   │   └── public.key
+│   │  	
+│   └── netkeys // 此节点的网络标识ID，唯一性
+│      	│  	
+│       └── net_private.key
+│   
+│   
+├── deployContract.sh
+│   
+│   
+├── dump_chain
+│   
+│   
+├── logs  // 程序日志目录
+│   │  	
+│   ├── pluginmgr.log
+│   │  	
+│   ├── pluginmgr.log.wf
+│   │  	
+│   ├── xchain.log
+│   │  	
+│   └── xchain.log.wf
+│   
+│   
+├── plugins	// so的存放目录
+│   │   
+│   ├── consensus
+│   │   │   
+│   │   ├── consensus-pow.so.1.0.0
+│   │   │   
+│   │   ├── consensus-single.so.1.0.0
+│   │   │   
+│   │   └── consensus-tdpos.so.1.0.0
+│   │   
+│   ├── contract
+│   │   
+│   ├── crypto
+│   │   │   
+│   │   └── crypto-default.so.1.0.0
+│   │   
+│   └── kv
+│       │   
+│       ├── kv-badger.so.1.0.0
+│       │   
+│       ├── kv-ldb-multi.so.1.0.0
+│       │   
+│       └── kv-ldb-single.so.1.0.0
+│   
+│   
+├── testnet.conf
+│       
+├── transfer.sh
+│       
+├── wasm2c	// wasm工具
+│       	
+├── xchain  // 服务的二进制文件
+│       
+└── xchain-cli	// 客户端工具
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;链的操作&quot;&gt;链的操作&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;创建链
+    &lt;blockquote&gt;
+      &lt;p&gt;./xchain-cli createChain&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;启动服务
+    &lt;blockquote&gt;
+      &lt;p&gt;nohup ./xchain &amp;amp;&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;观察区块
+    &lt;blockquote&gt;
+      &lt;p&gt;./xchain-cli status -H 127.0.0.1:37101&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;创建账号
+    &lt;blockquote&gt;
+      &lt;p&gt;./xchain-cli account newkeys –output data/accounts/louis&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;创建合约账号
+    &lt;blockquote&gt;
+      &lt;p&gt;./xchain-cli account new –desc account.des
+合约内容如下:
+&lt;code class=&quot;highlighter-rouge&quot;&gt;
+ {
+ &quot;module_name&quot;: &quot;xkernel&quot;,
+ &quot;method_name&quot;: &quot;NewAccount&quot;,
+ &quot;args&quot; : {
+     &quot;account_name&quot;: &quot;1111111111111111&quot;,  //说明：16位数字组成的字符串
+     &quot;acl&quot;: &quot;{
+     		\&quot;pm\&quot;: {\&quot;rule\&quot;: 1,\&quot;acceptValue\&quot;: 0.6},
+     		\&quot;aksWeight\&quot;: {\&quot;AK1\&quot;: 0.3,\&quot;AK2\&quot;: 0.3}}&quot;
+ }
+ }&lt;/code&gt;&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;资源链接&quot;&gt;资源链接&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://xchain.baidu.com/&quot;&gt;官网&lt;/a&gt;
+&lt;a href=&quot;https://xuperchain.baidu.com/whitepaper&quot;&gt;白皮书&lt;/a&gt;
+&lt;a href=&quot;https://github.com/xuperchain/xuperunion&quot;&gt;Github&lt;/a&gt;
+&lt;a href=&quot;https://github.com/xuperchain/xuperunion/blob/master/CONTRIBUTING_CN.md&quot;&gt;贡献指南&lt;/a&gt;&lt;/p&gt;
+
 </description>
-        <pubDate>Mon, 17 Jun 2019 21:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/06/17/Web-API%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%BC%80%E5%8F%91/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/06/17/Web-API%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%BC%80%E5%8F%91/</guid>
+        <pubDate>Tue, 30 Jul 2019 12:47:58 +0800</pubDate>
+        <link>http://localhost:4000/2019/07/30/2019-06-16-%E7%99%BE%E5%BA%A6XuperChain/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/07/30/2019-06-16-%E7%99%BE%E5%BA%A6XuperChain/</guid>
         
-        <category>六月</category>
-=======
-    <pubDate>Sun, 21 Jul 2019 23:05:13 +0800</pubDate>
-    <lastBuildDate>Sun, 21 Jul 2019 23:05:13 +0800</lastBuildDate>
-    <generator>Jekyll v3.8.5</generator>
+        
+      </item>
+    
+      <item>
+        <title>《去中心化应用》</title>
+        <description>&lt;h4 id=&quot;索引&quot;&gt;索引&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;什么是去中心化应用?&lt;/li&gt;
+  &lt;li&gt;去中心化生态系统&lt;/li&gt;
+  &lt;li&gt;怎么创建你的去中心化应用?&lt;/li&gt;
+  &lt;li&gt;实例OpenBazazaar?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;什么是去中心化应用&quot;&gt;什么是去中心化应用?&lt;/h3&gt;
+
+&lt;h4 id=&quot;1-应用的分类&quot;&gt;1. 应用的分类&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;集中式&lt;/li&gt;
+  &lt;li&gt;分布式&lt;/li&gt;
+  &lt;li&gt;去中心化&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;能够达成去中心化共识的应用软件才是真正的革新成果.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;2-去中心化应用dapp的4个特征&quot;&gt;2. 去中心化应用(dapp)的4个特征&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;开源
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://www.gnu.org/philosophy/free-sw.zh-cn.html&quot;&gt;自由软件&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;⚠️ 很多国内的程序猿对开源完全没概念,这一块要重点理解一下&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;内部货币
+  -
+    &lt;ul&gt;
+      &lt;li&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;去中心化共识
+  -
+    &lt;ul&gt;
+      &lt;li&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;没有中心失效点
+  -
+    &lt;ul&gt;
+      &lt;li&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;3-去中心化应用的历史&quot;&gt;3. 去中心化应用的历史&lt;/h4&gt;
+
+&lt;h3 id=&quot;去中心化生态系统&quot;&gt;去中心化生态系统&lt;/h3&gt;
+
+&lt;h3 id=&quot;怎么创建你的去中心化应用&quot;&gt;怎么创建你的去中心化应用?&lt;/h3&gt;
+
+&lt;h3 id=&quot;实例openbazazaar&quot;&gt;实例OpenBazazaar?&lt;/h3&gt;
+</description>
+        <pubDate>Tue, 30 Jul 2019 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/07/30/%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E5%BA%94%E7%94%A8/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/07/30/%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E5%BA%94%E7%94%A8/</guid>
+        
+        <category>【书籍】</category>
+        
+        
+        <category>【区块链】</category>
+        
+      </item>
     
       <item>
         <title>高阶Python玩法</title>
@@ -33,7 +354,6 @@
         <guid isPermaLink="true">http://localhost:4000/2019/07/21/%E9%AB%98%E9%98%B6Python/</guid>
         
         <category>【编程语言】</category>
->>>>>>> ca15ae821ae8c3ae3e2916cc2eb4d2cdef10dfba
         
         
         <category>【读书】</category>
@@ -41,14 +361,6 @@
       </item>
     
       <item>
-<<<<<<< HEAD
-        <title>百度XuperChain</title>
-        <description>
-</description>
-        <pubDate>Sun, 16 Jun 2019 18:50:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/06/16/%E7%99%BE%E5%BA%A6XuperChain/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/06/16/%E7%99%BE%E5%BA%A6XuperChain/</guid>
-=======
         <title>Kotlin</title>
         <description>&lt;blockquote&gt;
   &lt;p&gt;世界上没有最好的编程语言，就像世界上没有最好的人一样。&lt;/p&gt;
@@ -654,50 +966,60 @@
       </item>
     
       <item>
+        <title>Gitlab&amp;runner</title>
+        <description>
+</description>
+        <pubDate>Mon, 24 Jun 2019 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/06/24/Gitlab&Runner/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/06/24/Gitlab&Runner/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Libra项目</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://libra.org/zh-CN/white-paper/#how-to-get-involved&quot;&gt;Libra白皮书&lt;/a&gt;
+&lt;a href=&quot;https://developers.libra.org/&quot;&gt;Libra安装&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 20 Jun 2019 21:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/06/20/Libra%E9%A1%B9%E7%9B%AE/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/06/20/Libra%E9%A1%B9%E7%9B%AE/</guid>
+        
+        <category>六月</category>
+        
+        
+        <category>【解读】</category>
+        
+      </item>
+    
+      <item>
+        <title>Docker-MySQL</title>
+        <description>
+</description>
+        <pubDate>Thu, 20 Jun 2019 21:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/06/20/Docker-MySQL/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/06/20/Docker-MySQL/</guid>
+        
+        <category>六月</category>
+        
+        
+        <category>【读书】</category>
+        
+      </item>
+    
+      <item>
         <title>Web API的设计与开发</title>
         <description>
 </description>
         <pubDate>Mon, 17 Jun 2019 21:00:00 +0800</pubDate>
         <link>http://localhost:4000/2019/06/17/Web-API%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%BC%80%E5%8F%91/</link>
         <guid isPermaLink="true">http://localhost:4000/2019/06/17/Web-API%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%BC%80%E5%8F%91/</guid>
->>>>>>> ca15ae821ae8c3ae3e2916cc2eb4d2cdef10dfba
         
         <category>六月</category>
         
         
-<<<<<<< HEAD
-        <category>【区块链】</category>
-=======
         <category>【读书】</category>
->>>>>>> ca15ae821ae8c3ae3e2916cc2eb4d2cdef10dfba
-        
-      </item>
-    
-      <item>
-<<<<<<< HEAD
-        <title>Python高级玩法</title>
-        <description>
-</description>
-        <pubDate>Sun, 16 Jun 2019 15:50:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/06/16/Python%E9%AB%98%E7%BA%A7%E7%8E%A9%E6%B3%95/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/06/16/Python%E9%AB%98%E7%BA%A7%E7%8E%A9%E6%B3%95/</guid>
-=======
-        <title>百度XuperChain</title>
-        <description>
-</description>
-        <pubDate>Sun, 16 Jun 2019 18:50:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/06/16/%E7%99%BE%E5%BA%A6XuperChain/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/06/16/%E7%99%BE%E5%BA%A6XuperChain/</guid>
->>>>>>> ca15ae821ae8c3ae3e2916cc2eb4d2cdef10dfba
-        
-        <category>六月</category>
-        
-        
-<<<<<<< HEAD
-        <category>【教程】</category>
-=======
-        <category>【区块链】</category>
->>>>>>> ca15ae821ae8c3ae3e2916cc2eb4d2cdef10dfba
         
       </item>
     
@@ -960,403 +1282,5 @@
         
       </item>
     
-      <item>
-        <title>Rust的Web框架：Actix</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://actix.rs/&quot;&gt;Rust的Web框架：Actix&lt;/a&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Sun, 26 May 2019 21:50:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/05/26/Rust-Actix/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/05/26/Rust-Actix/</guid>
-        
-        <category>Rust</category>
-        
-        
-        <category>【后端框架】</category>
-        
-      </item>
-    
-      <item>
-        <title>Rust初识</title>
-        <description>&lt;p&gt;程序员不应该拘泥于编程语言和框架，进化才是王道。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://rustlang-cn.org/office/rust/book/getting-started/ch01-03-hello-cargo.html&quot;&gt;学习网站🐂&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;rust语言的作用和领域&quot;&gt;Rust语言的作用和领域？&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Rust 的低开销非常适合嵌入式编程&lt;/li&gt;
-  &lt;li&gt;Rust 可以构建强大的 Web 应用程序&lt;/li&gt;
-  &lt;li&gt;Rust 适用于构建分布式在线服务&lt;/li&gt;
-  &lt;li&gt;Rust 适合创建功能强大的跨平台命令行工具&lt;/li&gt;
-  &lt;li&gt;Rust 拥有新的开发工具和更好的 IDE 支持&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;还有很多好处，你有什么理由不学习？&lt;/p&gt;
-
-&lt;h3 id=&quot;安装&quot;&gt;安装&lt;/h3&gt;
-
-&lt;h5 id=&quot;linux和macos用户&quot;&gt;Linux和MacOS用户：&lt;/h5&gt;
-&lt;blockquote&gt;
-  &lt;table&gt;
-    &lt;tbody&gt;
-      &lt;tr&gt;
-        &lt;td&gt;curl https://sh.rustup.rs -sSf&lt;/td&gt;
-        &lt;td&gt;sh&lt;/td&gt;
-      &lt;/tr&gt;
-    &lt;/tbody&gt;
-  &lt;/table&gt;
-
-  &lt;p&gt;source $HOME/.cargo/env&lt;/p&gt;
-
-  &lt;p&gt;export PATH=”$HOME/.cargo/bin:$PATH”
-⚠️ 如果你愿意，可在运行前下载并检查该脚本&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h5 id=&quot;更新和卸载&quot;&gt;更新和卸载：&lt;/h5&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;rustup update 			// 更新&lt;/p&gt;
-
-  &lt;p&gt;rustup self uninstall 	// 卸载&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h5 id=&quot;编译与运行&quot;&gt;编译与运行：&lt;/h5&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;rustc –version 			// 查看版本&lt;/p&gt;
-
-  &lt;p&gt;rust *.rs 				// 编译&lt;/p&gt;
-
-  &lt;p&gt;./main 					// 运行&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h5 id=&quot;项目管理&quot;&gt;项目管理&lt;/h5&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;cargo new PROJECT_NAME 	// 生成新项目&lt;/p&gt;
-
-  &lt;p&gt;cargo build PROJECT_NAME	// 编译项目&lt;/p&gt;
-
-  &lt;p&gt;cargo build –release		// 发布（release）构建&lt;/p&gt;
-
-  &lt;p&gt;cargo run PROJECT_NAME	// 运行项目&lt;/p&gt;
-
-  &lt;p&gt;cargo check 				// 检查项目：速度快&lt;/p&gt;
-&lt;/blockquote&gt;
-
-</description>
-        <pubDate>Sun, 12 May 2019 09:50:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/05/12/Rust%E5%88%9D%E8%AF%86/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/05/12/Rust%E5%88%9D%E8%AF%86/</guid>
-        
-        <category>Rust</category>
-        
-        
-        <category>【编程语言】</category>
-        
-      </item>
-    
-      <item>
-        <title>金融与量化分析</title>
-        <description>&lt;h4 id=&quot;股票&quot;&gt;股票：&lt;/h4&gt;
-&lt;ol&gt;
-  &lt;li&gt;股份公司发给出资人的凭证，股票持有者就是股份公司的股东&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;股票面值和市值&quot;&gt;股票面值和市值&lt;/h4&gt;
-&lt;ol&gt;
-  &lt;li&gt;面值是票面金额&lt;/li&gt;
-  &lt;li&gt;市值是市场价值&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;上市ipo&quot;&gt;上市|IPO：&lt;/h4&gt;
-&lt;ol&gt;
-  &lt;li&gt;企业通过证券交易所公开向社会增发股票以募集资金&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;股票的作用&quot;&gt;股票的作用：&lt;/h4&gt;
-&lt;ol&gt;
-  &lt;li&gt;出资证明、证明股东身份、对公司经营发表意见&lt;/li&gt;
-  &lt;li&gt;公司分红、交易获利&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;股票分类&quot;&gt;股票分类&lt;/h4&gt;
-
-&lt;p&gt;按照业绩分类：&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;蓝筹股：资本雄厚、信誉优良的公司的股票&lt;/li&gt;
-  &lt;li&gt;绩优股：业绩优良的公司的股票&lt;/li&gt;
-  &lt;li&gt;ST股：特别处理的股票，连续亏损或每股净资产低于股票面值&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;按照上市地区分类：&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;A股：中国大陆上市，人民币认购买卖（T+1，涨跌幅10%）&lt;/li&gt;
-  &lt;li&gt;B股：中国大陆上市，外币认购买卖（T+1， T+3）&lt;/li&gt;
-  &lt;li&gt;H股：中国香港上市（T+0,涨跌不设限制）&lt;/li&gt;
-  &lt;li&gt;N股：美国纽约上市&lt;/li&gt;
-  &lt;li&gt;S股：新加坡上市&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;股票市场构成&quot;&gt;股票市场构成&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;上市公司&lt;/li&gt;
-  &lt;li&gt;投资者&lt;/li&gt;
-  &lt;li&gt;证监会、证券业协会、交易所&lt;/li&gt;
-  &lt;li&gt;证券中介机构&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;交易所：&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;上海证券交易所：
-    &lt;blockquote&gt;
-      &lt;ul&gt;
-        &lt;li&gt;主板（沪指）&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;深圳证券交易所：
-    &lt;blockquote&gt;
-      &lt;ul&gt;
-        &lt;li&gt;主板：大型成熟企业（深成指）&lt;/li&gt;
-        &lt;li&gt;中小板：经营规模较小&lt;/li&gt;
-        &lt;li&gt;创业板：处于成长期的创业企业&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;影响股价的因素&quot;&gt;影响股价的因素&lt;/h4&gt;
-&lt;ol&gt;
-  &lt;li&gt;市场内部因素：买卖房力量&lt;/li&gt;
-  &lt;li&gt;基本面因素：公司的营收状况&lt;/li&gt;
-  &lt;li&gt;政策因素&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;股票买卖a&quot;&gt;股票买卖（A）&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;委托买卖股票&lt;/li&gt;
-  &lt;li&gt;股票交易日：&lt;/li&gt;
-  &lt;li&gt;股票交易时间：
-    &lt;blockquote&gt;
-      &lt;ul&gt;
-        &lt;li&gt;9:15-9:25: 开盘集合竞价时间（定开盘价）&lt;/li&gt;
-        &lt;li&gt;9:30-11:30：前市，连续竞价时间&lt;/li&gt;
-        &lt;li&gt;13:00-15:00: 后市，连续竞价时间&lt;/li&gt;
-        &lt;li&gt;14:57-15:00: 深交所收盘集合竞价时间&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;T+1交易制度：
-    &lt;blockquote&gt;
-      &lt;ul&gt;
-        &lt;li&gt;股票买入后当天不能卖出，下一个交易日才能卖出&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;金融分析&quot;&gt;金融分析&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;基本面分析
-    &lt;blockquote&gt;
-      &lt;ul&gt;
-        &lt;li&gt;宏观经济面分析：国家财政政策、货币政策&lt;/li&gt;
-        &lt;li&gt;行业分析&lt;/li&gt;
-        &lt;li&gt;公司分析：财务数据、业绩报告&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;技术面分析
-    &lt;blockquote&gt;
-      &lt;ul&gt;
-        &lt;li&gt;K线&lt;/li&gt;
-        &lt;li&gt;平均线&lt;/li&gt;
-        &lt;li&gt;KDJ&lt;/li&gt;
-        &lt;li&gt;MACD&lt;/li&gt;
-        &lt;li&gt;….&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;金融量化投资&quot;&gt;金融量化投资&lt;/h4&gt;
-&lt;ol&gt;
-  &lt;li&gt;量化投资：计算机用数学模型去实践投资理念&lt;/li&gt;
-  &lt;li&gt;量化投资的优势：
-    &lt;blockquote&gt;
-      &lt;ul&gt;
-        &lt;li&gt;避免主观情绪、人性弱点、认知偏差，选择更加客观&lt;/li&gt;
-        &lt;li&gt;多角度的观察、多层次的模型&lt;/li&gt;
-        &lt;li&gt;即使跟踪市场变化，不断发现新的统计模型，寻找交易机会&lt;/li&gt;
-        &lt;li&gt;在决定投资策略后，能通过回测验证其结果&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;量化策略&quot;&gt;量化策略&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;通过固定的逻辑来分析、判断和决策，自动的进行交易&lt;/li&gt;
-  &lt;li&gt;核心内容；
-    &lt;blockquote&gt;
-      &lt;ul&gt;
-        &lt;li&gt;选股&lt;/li&gt;
-        &lt;li&gt;选时&lt;/li&gt;
-        &lt;li&gt;仓位管理&lt;/li&gt;
-        &lt;li&gt;止盈止损&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;策略的周期
-    &lt;blockquote&gt;
-      &lt;ul&gt;
-        &lt;li&gt;产生想法&lt;/li&gt;
-        &lt;li&gt;实现策略：Julia-Python&lt;/li&gt;
-        &lt;li&gt;检验策略：回测-模拟交易&lt;/li&gt;
-        &lt;li&gt;实盘交易&lt;/li&gt;
-        &lt;li&gt;优化策略-采用新策略&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;输入：
-    &lt;blockquote&gt;
-      &lt;ul&gt;
-        &lt;li&gt;行情数据&lt;/li&gt;
-        &lt;li&gt;财务数据&lt;/li&gt;
-        &lt;li&gt;自定义数据&lt;/li&gt;
-        &lt;li&gt;投资经验&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;策略：
-    &lt;blockquote&gt;
-      &lt;ul&gt;
-        &lt;li&gt;选股&lt;/li&gt;
-        &lt;li&gt;择时&lt;/li&gt;
-        &lt;li&gt;仓位管理&lt;/li&gt;
-        &lt;li&gt;止盈止损&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;输出
-    &lt;blockquote&gt;
-      &lt;ul&gt;
-        &lt;li&gt;买入信号&lt;/li&gt;
-        &lt;li&gt;卖出信号&lt;/li&gt;
-        &lt;li&gt;交易费用&lt;/li&gt;
-        &lt;li&gt;收益&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;量化投资与python&quot;&gt;量化投资与Python&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;选择：Excel、SAS、R、Python、Julia&lt;/li&gt;
-  &lt;li&gt;numpy:高性能科学计算与数据分析的基础包
-    &lt;blockquote&gt;
-      &lt;ul&gt;
-        &lt;li&gt;ndarray:&lt;/li&gt;
-        &lt;li&gt;高阶函数&lt;/li&gt;
-        &lt;li&gt;磁盘读写工具&lt;/li&gt;
-        &lt;li&gt;线性代数、随机数生成、傅立叶变换&lt;/li&gt;
-        &lt;li&gt;集成C/C++&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;pandas:&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;numpy&quot;&gt;numpy&lt;/h4&gt;
-&lt;ol&gt;
-  &lt;li&gt;创建: ndarry&lt;/li&gt;
-  &lt;li&gt;多维数组&lt;/li&gt;
-  &lt;li&gt;常用属性：
-    &lt;blockquote&gt;
-      &lt;ul&gt;
-        &lt;li&gt;T：数组的转置&lt;/li&gt;
-        &lt;li&gt;dtype：元素的类型&lt;/li&gt;
-        &lt;li&gt;size： 元素个数&lt;/li&gt;
-        &lt;li&gt;ndim: 维数&lt;/li&gt;
-        &lt;li&gt;shape: 维度大小&lt;/li&gt;
-        &lt;li&gt;astype: 类型转换&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;blockquote&gt;
-  &lt;ul&gt;
-    &lt;li&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/blockquote&gt;
-
-</description>
-        <pubDate>Wed, 08 May 2019 01:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/05/08/%E9%87%91%E8%9E%8D%E4%B8%8E%E9%87%8F%E5%8C%96%E6%8A%95%E8%B5%84/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/05/08/%E9%87%91%E8%9E%8D%E4%B8%8E%E9%87%8F%E5%8C%96%E6%8A%95%E8%B5%84/</guid>
-        
-        <category>五月</category>
-        
-        
-        <category>【量化】</category>
-        
-      </item>
-    
-      <item>
-        <title>WayKi公链技术</title>
-        <description>&lt;p&gt;学习资料汇总&lt;/p&gt;
-</description>
-        <pubDate>Thu, 28 Mar 2019 23:30:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/03/28/WayKi%E5%85%AC%E9%93%BE%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/03/28/WayKi%E5%85%AC%E9%93%BE%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/</guid>
-        
-        <category>三月</category>
-        
-        
-        <category>【Wayki】</category>
-        
-      </item>
-    
-<<<<<<< HEAD
-      <item>
-        <title>量子公链技术</title>
-        <description>
-</description>
-        <pubDate>Thu, 28 Mar 2019 23:30:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/03/28/%E9%87%8F%E5%AD%90%E5%85%AC%E9%93%BE%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/03/28/%E9%87%8F%E5%AD%90%E5%85%AC%E9%93%BE%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/</guid>
-        
-        <category>三月</category>
-        
-        
-        <category>【QUTM】</category>
-        
-      </item>
-    
-      <item>
-        <title>【理论】P2P网络内容传输技术</title>
-        <description>
-</description>
-        <pubDate>Wed, 27 Mar 2019 23:55:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/03/27/P2P%E7%BD%91%E7%BB%9C%E5%86%85%E5%AE%B9%E4%BC%A0%E8%BE%93%E6%8A%80%E6%9C%AF/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/03/27/P2P%E7%BD%91%E7%BB%9C%E5%86%85%E5%AE%B9%E4%BC%A0%E8%BE%93%E6%8A%80%E6%9C%AF/</guid>
-        
-        <category>三月</category>
-        
-        
-        <category>【P2P】</category>
-        
-      </item>
-    
-=======
->>>>>>> ca15ae821ae8c3ae3e2916cc2eb4d2cdef10dfba
   </channel>
 </rss>
