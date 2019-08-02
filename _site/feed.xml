@@ -5,8 +5,8 @@
     <description>Seeking truth from facts.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 30 Jul 2019 12:47:58 +0800</pubDate>
-    <lastBuildDate>Tue, 30 Jul 2019 12:47:58 +0800</lastBuildDate>
+    <pubDate>Tue, 30 Jul 2019 12:48:12 +0800</pubDate>
+    <lastBuildDate>Tue, 30 Jul 2019 12:48:12 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -265,7 +265,7 @@
 &lt;a href=&quot;https://github.com/xuperchain/xuperunion/blob/master/CONTRIBUTING_CN.md&quot;&gt;贡献指南&lt;/a&gt;&lt;/p&gt;
 
 </description>
-        <pubDate>Tue, 30 Jul 2019 12:47:58 +0800</pubDate>
+        <pubDate>Tue, 30 Jul 2019 12:48:12 +0800</pubDate>
         <link>http://localhost:4000/2019/07/30/2019-06-16-%E7%99%BE%E5%BA%A6XuperChain/</link>
         <guid isPermaLink="true">http://localhost:4000/2019/07/30/2019-06-16-%E7%99%BE%E5%BA%A6XuperChain/</guid>
         
@@ -346,12 +346,18 @@
       </item>
     
       <item>
-        <title>高阶Python玩法</title>
-        <description>
+        <title>Swift</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;世界上没有最好的编程语言，就像世界上没有最好的人一样。&lt;/p&gt;
+
+  &lt;p&gt;如果你想知道一门编程语言的优劣，那就去学会它。&lt;/p&gt;
+
+&lt;/blockquote&gt;
+
 </description>
-        <pubDate>Sun, 21 Jul 2019 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/07/21/%E9%AB%98%E9%98%B6Python/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/07/21/%E9%AB%98%E9%98%B6Python/</guid>
+        <pubDate>Sun, 28 Jul 2019 10:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/07/28/Swift/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/07/28/Swift/</guid>
         
         <category>【编程语言】</category>
         
@@ -928,9 +934,9 @@
 &lt;/ol&gt;
 
 </description>
-        <pubDate>Sat, 06 Jul 2019 10:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/07/06/Kotlin/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/07/06/Kotlin/</guid>
+        <pubDate>Sun, 21 Jul 2019 10:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/07/21/Kotlin/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/07/21/Kotlin/</guid>
         
         <category>【编程语言】</category>
         
@@ -962,6 +968,316 @@
         
         
         <category>【iOS】</category>
+        
+      </item>
+    
+      <item>
+        <title>如何学习一门编程语言？</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;先学习几门，然后总结，实践与理论相结合。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;最近几年学会了几门编程语言：&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;C&lt;/li&gt;
+  &lt;li&gt;Objective-C&lt;/li&gt;
+  &lt;li&gt;C++&lt;/li&gt;
+  &lt;li&gt;Java&lt;/li&gt;
+  &lt;li&gt;Swift&lt;/li&gt;
+  &lt;li&gt;Kotlin&lt;/li&gt;
+  &lt;li&gt;Go&lt;/li&gt;
+  &lt;li&gt;Python&lt;/li&gt;
+  &lt;li&gt;Rust&lt;/li&gt;
+  &lt;li&gt;Ada&lt;/li&gt;
+  &lt;li&gt;…&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;编程语言层次&quot;&gt;编程语言层次&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;h5 id=&quot;你学习编程的目的&quot;&gt;你学习编程的目的？：&lt;/h5&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;编程就是为了解决问题&lt;/p&gt;
+    &lt;/blockquote&gt;
+    &lt;ul&gt;
+      &lt;li&gt;成为一名黑客？&lt;/li&gt;
+      &lt;li&gt;成为一名架构师？
+        &lt;ul&gt;
+          &lt;li&gt;前端有木有？
+            &lt;ul&gt;
+              &lt;li&gt;Vue有木有？&lt;/li&gt;
+              &lt;li&gt;React有木有？&lt;/li&gt;
+              &lt;li&gt;Angular有木有？&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;后端有木有？
+            &lt;ul&gt;
+              &lt;li&gt;PHP有木有？&lt;/li&gt;
+              &lt;li&gt;Java有木有？
+                &lt;ul&gt;
+                  &lt;li&gt;SpringBoot有木有？
+                    &lt;ul&gt;
+                      &lt;li&gt;netty?&lt;/li&gt;
+                      &lt;li&gt;jetty?&lt;/li&gt;
+                    &lt;/ul&gt;
+                  &lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+              &lt;li&gt;Python有木有？
+                &lt;ul&gt;
+                  &lt;li&gt;Django?&lt;/li&gt;
+                  &lt;li&gt;Flask?&lt;/li&gt;
+                  &lt;li&gt;Tornado?&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+              &lt;li&gt;数据持久化有木有？
+                &lt;ul&gt;
+                  &lt;li&gt;Mysql?&lt;/li&gt;
+                  &lt;li&gt;Oracle&lt;/li&gt;
+                  &lt;li&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;移动端有木有？
+            &lt;ul&gt;
+              &lt;li&gt;Android有木有？&lt;/li&gt;
+              &lt;li&gt;iOS有木有？
+                &lt;ul&gt;
+                  &lt;li&gt;MVC?&lt;/li&gt;
+                  &lt;li&gt;MVVM?
+                    &lt;ul&gt;
+                      &lt;li&gt;RxSwift?&lt;/li&gt;
+                    &lt;/ul&gt;
+                  &lt;/li&gt;
+                  &lt;li&gt;MVP?&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;blockquote&gt;
+      &lt;p&gt;目的决定态度，态度决定高度。&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h5 id=&quot;基础环境&quot;&gt;基础环境：&lt;/h5&gt;
+    &lt;ol&gt;
+      &lt;li&gt;安装语言的开发环境（编译器、解释器、IDE）&lt;/li&gt;
+      &lt;li&gt;选一个适合自己的编辑器
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;http://www.gnu.org/software/emacs/&quot;&gt;Emacs&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://www.vim.org/&quot;&gt;Vim&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://www.sublimetext.com/3&quot;&gt;Sublime&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://code.visualstudio.com/&quot;&gt;VScode&lt;/a&gt;
+            &lt;blockquote&gt;
+              &lt;p&gt;最好选一款编辑器用到很溜&lt;/p&gt;
+            &lt;/blockquote&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h5 id=&quot;语法层面&quot;&gt;语法层面：&lt;/h5&gt;
+    &lt;ul&gt;
+      &lt;li&gt;面向过程编程
+        &lt;ol&gt;
+          &lt;li&gt;关键字&lt;/li&gt;
+          &lt;li&gt;代码规范&lt;/li&gt;
+          &lt;li&gt;数据类型&lt;/li&gt;
+          &lt;li&gt;运算符&lt;/li&gt;
+          &lt;li&gt;流程控制&lt;/li&gt;
+          &lt;li&gt;函数&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+      &lt;li&gt;面向对象编程
+        &lt;ol&gt;
+          &lt;li&gt;类&lt;/li&gt;
+          &lt;li&gt;封装&lt;/li&gt;
+          &lt;li&gt;继承&lt;/li&gt;
+          &lt;li&gt;多态&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+      &lt;li&gt;函数式编程
+        &lt;ol&gt;
+          &lt;li&gt;高阶函数&lt;/li&gt;
+          &lt;li&gt;Map、reduce、filter&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h5 id=&quot;设计模式&quot;&gt;设计模式：&lt;/h5&gt;
+    &lt;ul&gt;
+      &lt;li&gt;可参考书籍：
+        &lt;ul&gt;
+          &lt;li&gt;《Head First设计模式》&lt;/li&gt;
+          &lt;li&gt;《23种设计模式》&lt;/li&gt;
+          &lt;li&gt;《图解设计模式》&lt;/li&gt;
+          &lt;li&gt;《Swift设计模式》&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;创建型
+        &lt;ul&gt;
+          &lt;li&gt;单例模式&lt;/li&gt;
+          &lt;li&gt;工厂模式&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;结构型
+        &lt;ul&gt;
+          &lt;li&gt;门面模式&lt;/li&gt;
+          &lt;li&gt;代理模式&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;行为型
+        &lt;ul&gt;
+          &lt;li&gt;观察者模式&lt;/li&gt;
+          &lt;li&gt;命令模式&lt;/li&gt;
+          &lt;li&gt;模版模式&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h5 id=&quot;架构设计&quot;&gt;架构设计：&lt;/h5&gt;
+    &lt;ul&gt;
+      &lt;li&gt;可参考书籍：
+        &lt;ul&gt;
+          &lt;li&gt;《从零开始学架构》&lt;/li&gt;
+          &lt;li&gt;《聊聊架构》&lt;/li&gt;
+          &lt;li&gt;《架构即未来》&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;开发人员架构设计
+        &lt;ul&gt;
+          &lt;li&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;软件架构
+  -
+        &lt;ul&gt;
+          &lt;li&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;通用架构
+  -
+        &lt;ul&gt;
+          &lt;li&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+        <pubDate>Sat, 06 Jul 2019 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/07/06/%E5%A6%82%E4%BD%95%E5%AD%A6%E4%B9%A0%E4%B8%80%E9%97%A8%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/07/06/%E5%A6%82%E4%BD%95%E5%AD%A6%E4%B9%A0%E4%B8%80%E9%97%A8%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/</guid>
+        
+        <category>【编程语言】</category>
+        
+        
+        <category>【方法论】</category>
+        
+      </item>
+    
+      <item>
+        <title>iOS砸壳</title>
+        <description>&lt;h3 id=&quot;砸壳是什么&quot;&gt;砸壳是什么？&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;软件脱壳
+    &lt;ul&gt;
+      &lt;li&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;砸壳原理
+    &lt;ul&gt;
+      &lt;li&gt;应用加壳&lt;/li&gt;
+      &lt;li&gt;应用砸壳
+        &lt;ol&gt;
+          &lt;li&gt;静态砸壳
+            &lt;ul&gt;
+              &lt;li&gt;需要知道壳应用的加密算法和逻辑后，对不运行的应用程序解密&lt;/li&gt;
+              &lt;li&gt;难度大&lt;/li&gt;
+              &lt;li&gt;很容易在破解后被改变&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;动态砸壳
+            &lt;ul&gt;
+              &lt;li&gt;从运行的进程内存空间中的可执行程序映像入手&lt;/li&gt;
+              &lt;li&gt;将内存中的内容进行转储处理后实现脱壳处理&lt;/li&gt;
+              &lt;li&gt;相对简单，且越过加密技术&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;iOS应用运行原理
+    &lt;ul&gt;
+      &lt;li&gt;应用壳&lt;/li&gt;
+      &lt;li&gt;MachO&lt;/li&gt;
+      &lt;li&gt;DYLD&lt;/li&gt;
+      &lt;li&gt;共享缓存库
+        &lt;ul&gt;
+          &lt;li&gt;动态库&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;砸壳的工具&quot;&gt;砸壳的工具&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://www.i-funbox.com/&quot;&gt;iFunBox&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Clutch
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/KJCracks/Clutch/releases&quot;&gt;Clutch-Github&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://www.jianshu.com/p/ab79a8a641dc&quot;&gt;介绍文件&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.jianshu.com/p/b2f2e6575e0c&quot;&gt;dumpdecrypted&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.jianshu.com/p/12407c198ff0&quot;&gt;frida-iOS-dump&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.hopperapp.com/&quot;&gt;Hopper&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://www.jianshu.com/p/b6737504c71e&quot;&gt;Hopper&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.jianshu.com/p/b6737504c71e&quot;&gt;软件&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;引申问题&quot;&gt;引申问题&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;iOS/MacOS的内核了解？&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;相对安全：破解的成本 &amp;gt; 破解后的收获&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Sat, 06 Jul 2019 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/07/06/iOS%E7%A0%B8%E5%A3%B3/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/07/06/iOS%E7%A0%B8%E5%A3%B3/</guid>
+        
+        <category>【编程语言】</category>
+        
+        
+        <category>【技术】</category>
         
       </item>
     
@@ -1005,280 +1321,6 @@
         
         
         <category>【读书】</category>
-        
-      </item>
-    
-      <item>
-        <title>Web API的设计与开发</title>
-        <description>
-</description>
-        <pubDate>Mon, 17 Jun 2019 21:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/06/17/Web-API%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%BC%80%E5%8F%91/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/06/17/Web-API%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%BC%80%E5%8F%91/</guid>
-        
-        <category>六月</category>
-        
-        
-        <category>【读书】</category>
-        
-      </item>
-    
-      <item>
-        <title>CentOS-Docker-Nginx-Web</title>
-        <description>&lt;h3 id=&quot;问题定位&quot;&gt;问题定位&lt;/h3&gt;
-
-&lt;h4 id=&quot;问题描述&quot;&gt;问题描述：&lt;/h4&gt;
-&lt;ol&gt;
-  &lt;li&gt;最近部门部门各个系统的URL又更新了，原本浏览器就已经存的地址废除了。&lt;/li&gt;
-  &lt;li&gt;所有人的地址都要更新地址：产品、前端、后端。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;解决方案&quot;&gt;解决方案：&lt;/h4&gt;
-&lt;ol&gt;
-  &lt;li&gt;搭建一个小网站：包含需要的网址(URL资源中心)&lt;/li&gt;
-  &lt;li&gt;配置简单的域名&lt;/li&gt;
-  &lt;li&gt;更新部署方便&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;需要资源&quot;&gt;需要资源：&lt;/h4&gt;
-&lt;ol&gt;
-  &lt;li&gt;前端小伙一枚（自己不想写前端界面）&lt;/li&gt;
-  &lt;li&gt;服务器一台（可以要一台云主机）&lt;/li&gt;
-  &lt;li&gt;域名一枚（内网的DNS）&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;流程解析&quot;&gt;流程解析&lt;/h3&gt;
-
-&lt;h4 id=&quot;整体流程&quot;&gt;整体流程&lt;/h4&gt;
-&lt;ol&gt;
-  &lt;li&gt;给前端小伙说了目的（他也很支持）&lt;/li&gt;
-  &lt;li&gt;大致画了简单的草图（简单草稿那种）&lt;/li&gt;
-  &lt;li&gt;他搞定了界面：大概20分钟：主要是找URL花了较多时间&lt;/li&gt;
-  &lt;li&gt;自己上传到公开的gitee仓库&lt;/li&gt;
-  &lt;li&gt;我找李子要服务器：10分钟&lt;/li&gt;
-  &lt;li&gt;安装Docker&lt;/li&gt;
-  &lt;li&gt;拉Nginx镜像&lt;/li&gt;
-  &lt;li&gt;启动容器：挂载文件&lt;/li&gt;
-  &lt;li&gt;排查Server 500的错误(docker装vim)&lt;/li&gt;
-  &lt;li&gt;愉快的成功了，小伙伴们分享😊&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h4 id=&quot;前端界面vuejs&quot;&gt;前端界面（Vue.js）&lt;/h4&gt;
-&lt;p&gt;这个没学过，估计不难，最近优先学后端架构。&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h4 id=&quot;安装dockercentos&quot;&gt;安装Docker（CentOS）&lt;/h4&gt;
-&lt;p&gt;网上找到了这个&lt;a href=&quot;https://www.cnblogs.com/yufeng218/p/8370670.html&quot;&gt;教程很不错👍&lt;/a&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;查看内核版本（内核版本&amp;gt;3.10）：
-    &lt;blockquote&gt;
-      &lt;p&gt;uname -r&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;更新yum包(root权限)：
-    &lt;blockquote&gt;
-      &lt;p&gt;sudo yum update&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;卸载旧版本（可选）：
-    &lt;blockquote&gt;
-      &lt;p&gt;sudo yum remove docker  docker-common docker-selinux docker-engine&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;安装需要的软件包（yum-util提供yum-config-manager功能，另外两个是devicemapper驱动依赖的）
-    &lt;blockquote&gt;
-      &lt;p&gt;sudo yum install -y yum-utils device-mapper-persistent-data lvm2&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;设置yum源
-    &lt;blockquote&gt;
-      &lt;p&gt;sudo yum-config-manager -‌-add-repo https://download.docker.com/linux/centos/docker-ce.repo&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;查看所有仓库中所有docker版本，并选择特定版本安装
-    &lt;blockquote&gt;
-      &lt;p&gt;yum list docker-ce -‌-showduplicates&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;安装docker
-    &lt;blockquote&gt;
-      &lt;p&gt;sudo yum install docker-ce  # repo中默认只开启stable仓库，故这里安装的是最新稳定版17.12.0&lt;/p&gt;
-
-      &lt;p&gt;sudo yum install &lt;FQPN&gt;  # 例如：sudo yum install docker-ce-17.12.0.ce&lt;/FQPN&gt;&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;启动并加入开机启动
-    &lt;blockquote&gt;
-      &lt;p&gt;sudo systemctl start docker&lt;/p&gt;
-
-      &lt;p&gt;sudo systemctl enable docker&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;验证安装是否成功(有client和service两部分表示docker安装启动都成功了)
-    &lt;blockquote&gt;
-      &lt;p&gt;docker version&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h4 id=&quot;docker拉取nginx镜像配置nginx&quot;&gt;Docker拉取Nginx镜像，配置Nginx&lt;/h4&gt;
-&lt;p&gt;找的教程，一步一步来就能解决&lt;a href=&quot;https://www.cnblogs.combingo1024/p/9022890.html&quot;&gt;教程很全，不过有坑&lt;/a&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;拉取镜像
-    &lt;blockquote&gt;
-      &lt;p&gt;docker pull nginx&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;创建挂载目录
-    &lt;blockquote&gt;
-      &lt;p&gt;mkdir -p /data/nginx/{conf,conf.d,html,logs}&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;安装vim
-    &lt;blockquote&gt;
-      &lt;p&gt;yum install vim&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;配置文件&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;blockquote&gt;
-  &lt;h6 id=&quot;vim-dataconfnginxconf&quot;&gt;vim /data/conf/nginx.conf&lt;/h6&gt;
-
-  &lt;p&gt;user  nginx;&lt;/p&gt;
-
-  &lt;p&gt;worker_processes  1;&lt;/p&gt;
-
-  &lt;p&gt;error_log  /var/log/nginx/error.log warn;&lt;/p&gt;
-
-  &lt;p&gt;pid        /var/run/nginx.pid;&lt;/p&gt;
-
-  &lt;p&gt;events {&lt;/p&gt;
-
-  &lt;p&gt;   worker_connections  1024;&lt;/p&gt;
-
-  &lt;p&gt;}&lt;/p&gt;
-
-  &lt;p&gt;http {&lt;/p&gt;
-
-  &lt;p&gt;  include       /etc/nginx/mime.types;&lt;/p&gt;
-
-  &lt;p&gt;  default_type  application/octet-stream;&lt;/p&gt;
-
-  &lt;p&gt;  log_format  main  ‘$remote_addr - $remote_user [$time_local] “$request” ‘&lt;/p&gt;
-
-  &lt;p&gt;     ‘$status $body_bytes_sent “$http_referer” ‘&lt;/p&gt;
-
-  &lt;p&gt;      ‘“$http_user_agent” “$http_x_forwarded_for”’;&lt;/p&gt;
-
-  &lt;p&gt;   access_log  /var/log/nginx/access.log  main;&lt;/p&gt;
-
-  &lt;p&gt;   sendfile        on;&lt;/p&gt;
-
-  &lt;p&gt;   #tcp_nopush     on;&lt;/p&gt;
-
-  &lt;p&gt;   keepalive_timeout  65;&lt;/p&gt;
-
-  &lt;p&gt;   #gzip  on;&lt;/p&gt;
-
-  &lt;p&gt;   include /etc/nginx/conf.d/*.conf;&lt;/p&gt;
-
-  &lt;p&gt;}&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;h6 id=&quot;vim-dataconfnginxconf-1&quot;&gt;vim /data/conf/nginx.conf&lt;/h6&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;server {&lt;/p&gt;
-
-  &lt;p&gt;listen       80;&lt;/p&gt;
-
-  &lt;p&gt;server_name  localhost;&lt;/p&gt;
-
-  &lt;p&gt;location / {&lt;/p&gt;
-
-  &lt;p&gt;   root   /usr/share/nginx/html;&lt;/p&gt;
-
-  &lt;p&gt;   index  index.html index.htm;&lt;/p&gt;
-
-  &lt;p&gt;   autoindex  on;&lt;/p&gt;
-
-  &lt;p&gt;  }&lt;/p&gt;
-
-  &lt;p&gt;error_page   500 502 503 504  /50x.html;&lt;/p&gt;
-
-  &lt;p&gt;location = /50x.html {&lt;/p&gt;
-
-  &lt;p&gt;   root /usr/share/nginx/html;&lt;/p&gt;
-
-  &lt;p&gt;   }&lt;/p&gt;
-
-  &lt;p&gt;}&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h4 id=&quot;整体流程-1&quot;&gt;整体流程&lt;/h4&gt;
-&lt;p&gt;将容器中nginx的80端口映射到本地的80端口&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;docker run –name nginx81 -d -p 80:80&lt;/p&gt;
-
-  &lt;p&gt;   -v /data/nginx/html:/usr/share/nginx/html&lt;/p&gt;
-
-  &lt;p&gt;   -v /data/nginx/conf/nginx.conf:/etc/nginx/nginx.conf&lt;/p&gt;
-
-  &lt;p&gt;   -v /data/nginx/logs:/var/log/nginx&lt;/p&gt;
-
-  &lt;p&gt;   -v /data/nginx/conf.d:/etc/nginx/conf.d&lt;/p&gt;
-
-  &lt;p&gt;   -d nginx:latest&lt;/p&gt;
-
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h4 id=&quot;问题解析&quot;&gt;问题解析&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;nginx配置注意事项：
-    &lt;blockquote&gt;
-      &lt;p&gt;nginx配置的资源地址必须是容器内部的地址，即映射的内部地址&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;nginx错误定位：
-    &lt;blockquote&gt;
-      &lt;p&gt;在容器内查看错误日志：&lt;/p&gt;
-
-      &lt;p&gt;tail -f  error.log&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;docker命令：
-    &lt;blockquote&gt;
-      &lt;p&gt;docker -p 宿主机端口：容器内端口 -v 宿主机文件路径：容器文件路径 -d 启动的镜像&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;整个过程大致花了一个小时：
-    &lt;blockquote&gt;
-      &lt;p&gt;主要耗时在：nginx的配置错误导致一直报500的错误(重定向错误)&lt;/p&gt;
-
-      &lt;p&gt;问题定位不清楚，一直在纠结在挂载文件上(实际上是nginx的配置问题)&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-</description>
-        <pubDate>Sat, 15 Jun 2019 21:50:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/06/15/CentOS-Docker-Nginx-Web/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/06/15/CentOS-Docker-Nginx-Web/</guid>
-        
-        <category>六月</category>
-        
-        
-        <category>【小记】</category>
         
       </item>
     
