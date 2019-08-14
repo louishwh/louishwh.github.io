@@ -5,9 +5,24 @@
     <description>Seeking truth from facts.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 14 Aug 2019 12:46:16 +0800</pubDate>
-    <lastBuildDate>Wed, 14 Aug 2019 12:46:16 +0800</lastBuildDate>
+    <pubDate>Wed, 14 Aug 2019 13:49:46 +0800</pubDate>
+    <lastBuildDate>Wed, 14 Aug 2019 13:49:46 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>Foundation</title>
+        <description>
+</description>
+        <pubDate>Tue, 13 Aug 2019 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/08/13/Foundation/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/08/13/Foundation/</guid>
+        
+        <category>【移动端】</category>
+        
+        
+        <category>【iOS】</category>
+        
+      </item>
     
       <item>
         <title>iOS系统框架</title>
@@ -215,7 +230,10 @@
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h4 id=&quot;必用框架&quot;&gt;必用框架&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;这些构成了iOS/MacOS的骨架
+是最大层次的架构&lt;/p&gt;
+&lt;/blockquote&gt;
 
 </description>
         <pubDate>Tue, 13 Aug 2019 00:00:00 +0800</pubDate>
@@ -1263,21 +1281,6 @@
         
         
         <category>【解读】</category>
-        
-      </item>
-    
-      <item>
-        <title>Docker-MySQL</title>
-        <description>
-</description>
-        <pubDate>Thu, 20 Jun 2019 21:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/06/20/Docker-MySQL/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/06/20/Docker-MySQL/</guid>
-        
-        <category>六月</category>
-        
-        
-        <category>【读书】</category>
         
       </item>
     
