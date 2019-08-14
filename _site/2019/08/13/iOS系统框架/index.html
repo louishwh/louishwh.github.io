@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>iOS系统框架 - Atomix</title>
+
+	<link rel="shortcut icon" href="/styles/images/favicon.jpg">
+	<link rel="icon" href="/styles/images/favicon.jpg">
+
+	<link rel="stylesheet" href="/styles/css/index.css">
+	<link rel="stylesheet" href="/styles/css/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/styles/css/syntax.css">
+	<link rel="canonical" href="/2019/08/13/iOS%E7%B3%BB%E7%BB%9F%E6%A1%86%E6%9E%B6/">
+	<link rel="alternate" type="application/rss+xml" title="Atomix" href="/feed.xml">
+	
+	<meta name="keywords" content="iOS系统框架, Atomix, Atomix">
+	<meta name="description" content="Atomix">
+
+	<script src="/styles/js/jquery.min.js"></script>
+	<!--[if lt IE 9]>
+    	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  	<![endif]-->
+  	<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "//hm.baidu.com/hm.js?624f97ab37fd73fbedc7929427ca95ea";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+  	<style type="text/css">
+	  	.docs-content{
+	  		margin-bottom: 10px;
+	  	}
+  	</style>
+</head>
+
+  <body class="index">
+
+    <header class="navbar navbar-inverse navbar-fixed-top docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand">
+        <img src="/styles/images/logo.png">
+      </a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">    
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/categories/">Category</a>
+        </li>
+        <li>
+          <a href="/tag">Index</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+            <a><span id="busuanzi_container_site_pv">总访问量<span id="busuanzi_value_site_pv"></span>次</span></a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">关于<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a rel="nofollow" target="_blank" href="https://github.com/louishwh/">Github</a></li>
+            <li><a rel="nofollow" target="_blank" href="">关于作者</a></li>
+            <li><a rel="nofollow" href="/books">我的书单</a></li>
+            <li class="divider"></li>
+            <li><a rel="nofollow" target="_blank" href="https://github.com/luoyan35714/LessOrMore.git">本项目</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+    <div class="docs-header" id="content">
+  <div class="container">
+  	
+  		<!--
+		    <h1>iOS系统框架</h1>
+		    <p>Post on Aug 13, 2019 by <a href="/about">louis han</a></p>
+		-->
+		    <h1>Seeking truth from facts.</h1>
+    
+  </div>
+</div>
+    
+      
+<div class="banner">
+  <div class="container">
+  	
+    	<a href="/categories/#【iOS】-ref">【iOS】</a>	/
+    	<a href="/tag/#【移动端】-ref">【移动端】</a>
+    
+  </div>
+</div>
+
+    
+
+    <div class="container docs-container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="sidebar hidden-print" role="complementary">
+        <div id="navigation">
+  <h1>目录</h1>
+  <ul class="nav sidenav">
+  </ul>
+  <div style="height: 200px;width: 200px;">
+    <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async"> 
+    </script>
+  </div>
+</div>
+
+ 
+      </div>
+    </div>
+    <div class="col-md-9" role="main">
+      <div class="panel docs-content">
+        <div class="wrapper">
+            <header class="post-header">
+              <h1 class="post-title">iOS系统框架</h1>
+              <!--
+                <p class="post-meta">Aug 13, 2019</p>
+              -->
+              <div class="meta">Posted on <span class="postdate">Aug 13, 2019</span> By <a target="_blank" href="http://localhost:4000">louis han</a></div>
+              <br />
+            </header>
+            <article class="post-content">
+              <h4 id="apple系统框架"><a href="https://developer.apple.com/documentation/">Apple系统框架</a></h4>
+
+<h3 id="ios系统层级">iOS系统层级</h3>
+
+<ul>
+  <li>可触摸层（Cocoa Touch Layer）</li>
+  <li>媒体层（Media Layer）</li>
+  <li>核心服务层（Core Services Layer）</li>
+  <li>核心系统层（Core OS Layer）</li>
+</ul>
+
+<p><img src="/images/iOS系统层级1.jpg" alt="iOS系统层级" /></p>
+
+<h3 id="各层的详情">各层的详情</h3>
+
+<hr />
+<ul>
+  <li>Cocoa Touch Layer
+    <ul>
+      <li>UIKit（界面相关）</li>
+      <li>EventKit（日历事件提醒等）</li>
+      <li>Notification Center（通知中心）</li>
+      <li>MapKit（地图显示）</li>
+      <li>Address Book（联系人）</li>
+      <li>iAd（广告）</li>
+      <li>Message UI（邮件与SMS显示）</li>
+      <li>PushKit（iOS8新push机制）</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+<ul>
+  <li>
+    <p>Media Layer</p>
+
+    <ul>
+      <li>图像引擎
+        <ul>
+          <li>Core Graphics</li>
+          <li>Core Image</li>
+          <li>Core Animation</li>
+          <li>OpenGL ES</li>
+        </ul>
+      </li>
+      <li>音频引擎
+        <ul>
+          <li>Core Audio</li>
+          <li>AV Foundation</li>
+          <li>OpenAL</li>
+        </ul>
+      </li>
+      <li>视频引擎
+        <ul>
+          <li>AV Foundation</li>
+          <li>Core Media）</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+<ul>
+  <li>Core Services Layer
+    <ul>
+      <li>CFNetwork（网络访问）</li>
+      <li>CoreData（数据存储）</li>
+      <li>CoreLocation（定位功能）</li>
+      <li>CoreMotion（重力加速度，陀螺仪）</li>
+      <li>Foundation（基础功能如NSString）</li>
+      <li>Webkit（浏览器引擎）</li>
+      <li>JavaScript（JavaScript引擎）</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+<ul>
+  <li>Core OS Layer
+    <ul>
+      <li>操作系统内核服务（BSD sockets、I/O访问、内存申请、文件系统、数学计算等）</li>
+      <li>本地认证（指纹识别验证等）</li>
+      <li>安全（提供管理证书、公钥、密钥等的接口）</li>
+      <li>加速 (执行数学、大数字以及DSP运算,这些接口iOS设备硬件相匹配）</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<p><img src="/images/iOS系统层级2.png" alt="iOS系统层级" /></p>
+
+<h3 id="很重要的几个框架">很重要的几个框架</h3>
+
+<ol>
+  <li>Foundation
+    <ul>
+      <li>为所有的应用程序提供基本系统服务</li>
+      <li>你的应用程序，UIKit是建立在Foundation框架上面的。</li>
+      <li>Foundation框架是用Objective-C对Core Foundation框架里许多特性的封装。</li>
+      <li>使用Foundation可以:
+        <ul>
+          <li>创建和管理集合，比如：数组和字典</li>
+          <li>访问存储在应用程序里的图片和其它资源</li>
+          <li>创建和管理字符串</li>
+          <li>提交和接收通知</li>
+          <li>创建日期和时间对象</li>
+          <li>自动发现IP网络上的设备</li>
+          <li>操作URL流</li>
+          <li>执行异步代码</li>
+          <li></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>UIKit
+    <ul>
+      <li>框架提供创建基于触摸用户界面的类</li>
+      <li>所有的iOS应用程序都基于UIKit，你不能是应用程序脱离这个框架。</li>
+      <li>UIKit提供了在屏幕上绘制的机制，捕获事件，和创建通用用户界面元素。</li>
+      <li>UIKit也通过管理显示在屏幕上的组件来组织复杂的项目。</li>
+      <li>使用UIKit可以：
+        <ul>
+          <li>构建和管理你的用户界面</li>
+          <li>捕获触摸和基于移动的事件</li>
+          <li>呈现文字和web内容</li>
+          <li>优化你的多任务程序</li>
+          <li>创建定制的用户界面元素</li>
+          <li></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>CoreData
+    <ul>
+      <li>框架管着理应用程序数据模型</li>
+      <li>Core Data提供对象的管理，使用CoreData，你可以创建模型对象，并管理这些对象。</li>
+      <li>你管理这些对象间的联系并修改数据。</li>
+      <li>CoreData提供的内建SQLlite技术可以高效的管理数据。</li>
+      <li>使用Core Data可以：
+        <ul>
+          <li>在库里存储和接收对象</li>
+          <li>提供基本的undo/redo</li>
+          <li>自动验证属性值</li>
+          <li>过滤、分组和优化内存中的数据</li>
+          <li>用[NSFetchedResultsController]管理表视图中的结果</li>
+          <li>支持基于文档的应用程序</li>
+          <li></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Core Graphics框架帮助你创建图形
+    <ul>
+      <li>高质量的图形对于所有的iOS应用程序都是很重要的。</li>
+      <li>在iOS中最简单且最快捷的创建图形的方式是使用UIKit框架提供的基于预渲染图形的视图和控件，然后让UIKit和iOS完成绘制。</li>
+      <li>当你需要创建复杂的图形时，Core Graphics则提供了更底层的库来帮助你。</li>
+      <li>使用Core Graphics可以：
+        <ul>
+          <li>创建基于路径的绘图</li>
+          <li>抗锯齿渲染</li>
+          <li>添加梯度、图片和颜色</li>
+          <li>Use coordinate-space transformations.</li>
+          <li>创建、显示和分析PDF文档</li>
+          <li></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Core Animation允许你创建高级的动画和虚拟效果
+    <ul>
+      <li>UIKit提供建立在Core Animation之上的动画。</li>
+      <li>如果你需要比UIKit能力更高级的功能，可以直接使用Core Animation。</li>
+      <li>Core Animation接口包含在QuartzCore框架里。</li>
+      <li>使用Core Animation可以创建嵌套的对象，并且可以对它们操作、旋转、缩放和转换。</li>
+      <li>使用Core animation，你可以创建动态的用户界面而不用使用更底层的图形API，如OpenGL ES。</li>
+      <li>使用Core Animation可以：
+        <ul>
+          <li>创建定制动画</li>
+          <li>添加定时函数和图形</li>
+          <li>支持帧动画</li>
+          <li>Specify graphical layout constraints.</li>
+          <li>Group multiple-layer changes into anatomic update.</li>
+          <li></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>OpenGL ES 框架提供2D和3D绘图工具
+    <ul>
+      <li>OpenGL ES支持2D和3D绘图，Apple的OpenGL ES实现通过硬件提供了高速的全屏游戏式的应用程序。</li>
+      <li>使用OpenGL ES可以：
+        <ul>
+          <li>创建2D和3D图形</li>
+          <li>创建更复杂的图形，比如数据虚拟化、模拟飞行，或者视频游戏</li>
+          <li>访问底层图形设备</li>
+          <li></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+<h4 id="必用框架">必用框架</h4>
+
+
+            </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+    <footer class="footer" role="contentinfo">
+	<div class="container">
+		<p class="copyright">Copyright &copy; 2014-2019 <a href=""><code>louis han</code></a>.</p>
+		<p>Powered by <a href="http://jekyllrb.com">Jekyll</a>, themed from <a href="http://lesscss.cn/">Less</a>, refactored by <a href="http://www.sincerehwh.cn/">Sincere Han</a></p>
+	</div>
+</footer>
+
+<script src="/styles/js/jquery.min.js"></script>
+<script src="/styles/js/bootstrap.min.js"></script>
+<script src="/styles/js/holder.min.js"></script>
+<script src="/styles/js/lessismore.js"></script>
+<script src="/styles/js/application.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  </body>
+</html>

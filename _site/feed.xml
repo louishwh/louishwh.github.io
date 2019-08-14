@@ -5,270 +5,227 @@
     <description>Seeking truth from facts.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 30 Jul 2019 12:48:12 +0800</pubDate>
-    <lastBuildDate>Tue, 30 Jul 2019 12:48:12 +0800</lastBuildDate>
+    <pubDate>Wed, 14 Aug 2019 12:46:16 +0800</pubDate>
+    <lastBuildDate>Wed, 14 Aug 2019 12:46:16 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
-        <title></title>
-        <description>&lt;h3 id=&quot;内容概要&quot;&gt;内容概要&lt;/h3&gt;
+        <title>iOS系统框架</title>
+        <description>&lt;h4 id=&quot;apple系统框架&quot;&gt;&lt;a href=&quot;https://developer.apple.com/documentation/&quot;&gt;Apple系统框架&lt;/a&gt;&lt;/h4&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- 介绍
-- 编译
-- 文件结构介绍
-- 基本操作
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h4 id=&quot;介绍&quot;&gt;介绍&lt;/h4&gt;
-
-&lt;p&gt;XuperUion是超级链体系下的第一个开源项目，是构建超级联盟网络的底层方案。&lt;/p&gt;
+&lt;h3 id=&quot;ios系统层级&quot;&gt;iOS系统层级&lt;/h3&gt;
 
 &lt;ul&gt;
+  &lt;li&gt;可触摸层（Cocoa Touch Layer）&lt;/li&gt;
+  &lt;li&gt;媒体层（Media Layer）&lt;/li&gt;
+  &lt;li&gt;核心服务层（Core Services Layer）&lt;/li&gt;
+  &lt;li&gt;核心系统层（Core OS Layer）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/iOS系统层级1.jpg&quot; alt=&quot;iOS系统层级&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;各层的详情&quot;&gt;各层的详情&lt;/h3&gt;
+
+&lt;hr /&gt;
+&lt;ul&gt;
+  &lt;li&gt;Cocoa Touch Layer
+    &lt;ul&gt;
+      &lt;li&gt;UIKit（界面相关）&lt;/li&gt;
+      &lt;li&gt;EventKit（日历事件提醒等）&lt;/li&gt;
+      &lt;li&gt;Notification Center（通知中心）&lt;/li&gt;
+      &lt;li&gt;MapKit（地图显示）&lt;/li&gt;
+      &lt;li&gt;Address Book（联系人）&lt;/li&gt;
+      &lt;li&gt;iAd（广告）&lt;/li&gt;
+      &lt;li&gt;Message UI（邮件与SMS显示）&lt;/li&gt;
+      &lt;li&gt;PushKit（iOS8新push机制）&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;ul&gt;
   &lt;li&gt;
-    &lt;p&gt;核心特点&lt;/p&gt;
+    &lt;p&gt;Media Layer&lt;/p&gt;
 
     &lt;ul&gt;
-      &lt;li&gt;高性能
+      &lt;li&gt;图像引擎
         &lt;ul&gt;
-          &lt;li&gt;原创的XuperModel模型，真正实现了智能合约的并发执行和验证。&lt;/li&gt;
-          &lt;li&gt;TDPOS算法确保大规模节点下的快速共识。&lt;/li&gt;
-          &lt;li&gt;使用AOT加速的WASM虚拟机，合约运行速度接近native程序。&lt;/li&gt;
+          &lt;li&gt;Core Graphics&lt;/li&gt;
+          &lt;li&gt;Core Image&lt;/li&gt;
+          &lt;li&gt;Core Animation&lt;/li&gt;
+          &lt;li&gt;OpenGL ES&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
-      &lt;li&gt;更安全
+      &lt;li&gt;音频引擎
         &lt;ul&gt;
-          &lt;li&gt;多私钥保护的账户体系。&lt;/li&gt;
-          &lt;li&gt;鉴权支持权重累计、集合运算等灵活的策略。&lt;/li&gt;
+          &lt;li&gt;Core Audio&lt;/li&gt;
+          &lt;li&gt;AV Foundation&lt;/li&gt;
+          &lt;li&gt;OpenAL&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
-      &lt;li&gt;易扩展
+      &lt;li&gt;视频引擎
         &lt;ul&gt;
-          &lt;li&gt;鲁棒的P2P网络，支持广域网超大规模节点。&lt;/li&gt;
-          &lt;li&gt;底层账本支持分叉管理，自动收敛一致性，实现真正全球化部署。&lt;/li&gt;
-          &lt;li&gt;多语言开发智能合约&lt;/li&gt;
-          &lt;li&gt;通过原创的XuperBridge技术，可插拔多语言虚拟机。&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;高灵活性
-        &lt;ul&gt;
-          &lt;li&gt;可插拔、插件化的设计使得用户可以方便选择适合自己业务场景的解决方案。&lt;/li&gt;
+          &lt;li&gt;AV Foundation&lt;/li&gt;
+          &lt;li&gt;Core Media）&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&quot;编译&quot;&gt;编译&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;系统配置
+&lt;hr /&gt;
+&lt;ul&gt;
+  &lt;li&gt;Core Services Layer
     &lt;ul&gt;
-      &lt;li&gt;操作系统：支持Linux以及Mac OS&lt;/li&gt;
-      &lt;li&gt;开发语言：Go 1.12.x及以上&lt;/li&gt;
-      &lt;li&gt;编译器：GCC 4.8.x及以上&lt;/li&gt;
-      &lt;li&gt;版本控制工具：Git&lt;/li&gt;
+      &lt;li&gt;CFNetwork（网络访问）&lt;/li&gt;
+      &lt;li&gt;CoreData（数据存储）&lt;/li&gt;
+      &lt;li&gt;CoreLocation（定位功能）&lt;/li&gt;
+      &lt;li&gt;CoreMotion（重力加速度，陀螺仪）&lt;/li&gt;
+      &lt;li&gt;Foundation（基础功能如NSString）&lt;/li&gt;
+      &lt;li&gt;Webkit（浏览器引擎）&lt;/li&gt;
+      &lt;li&gt;JavaScript（JavaScript引擎）&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;获取代码
-    &lt;blockquote&gt;
-      &lt;p&gt;git clone https://github.com/xuperchain/xuperunion&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;生成执行文件
-    &lt;blockquote&gt;
-      &lt;p&gt;cd xuperunion&lt;/p&gt;
+&lt;/ul&gt;
 
-      &lt;p&gt;make&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;编译完成
+&lt;hr /&gt;
+&lt;ul&gt;
+  &lt;li&gt;Core OS Layer
     &lt;ul&gt;
-      &lt;li&gt;在output文件夹内部&lt;/li&gt;
+      &lt;li&gt;操作系统内核服务（BSD sockets、I/O访问、内存申请、文件系统、数学计算等）&lt;/li&gt;
+      &lt;li&gt;本地认证（指纹识别验证等）&lt;/li&gt;
+      &lt;li&gt;安全（提供管理证书、公钥、密钥等的接口）&lt;/li&gt;
+      &lt;li&gt;加速 (执行数学、大数字以及DSP运算,这些接口iOS设备硬件相匹配）&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/iOS系统层级2.png&quot; alt=&quot;iOS系统层级&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;很重要的几个框架&quot;&gt;很重要的几个框架&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Foundation
+    &lt;ul&gt;
+      &lt;li&gt;为所有的应用程序提供基本系统服务&lt;/li&gt;
+      &lt;li&gt;你的应用程序，UIKit是建立在Foundation框架上面的。&lt;/li&gt;
+      &lt;li&gt;Foundation框架是用Objective-C对Core Foundation框架里许多特性的封装。&lt;/li&gt;
+      &lt;li&gt;使用Foundation可以:
+        &lt;ul&gt;
+          &lt;li&gt;创建和管理集合，比如：数组和字典&lt;/li&gt;
+          &lt;li&gt;访问存储在应用程序里的图片和其它资源&lt;/li&gt;
+          &lt;li&gt;创建和管理字符串&lt;/li&gt;
+          &lt;li&gt;提交和接收通知&lt;/li&gt;
+          &lt;li&gt;创建日期和时间对象&lt;/li&gt;
+          &lt;li&gt;自动发现IP网络上的设备&lt;/li&gt;
+          &lt;li&gt;操作URL流&lt;/li&gt;
+          &lt;li&gt;执行异步代码&lt;/li&gt;
+          &lt;li&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;UIKit
+    &lt;ul&gt;
+      &lt;li&gt;框架提供创建基于触摸用户界面的类&lt;/li&gt;
+      &lt;li&gt;所有的iOS应用程序都基于UIKit，你不能是应用程序脱离这个框架。&lt;/li&gt;
+      &lt;li&gt;UIKit提供了在屏幕上绘制的机制，捕获事件，和创建通用用户界面元素。&lt;/li&gt;
+      &lt;li&gt;UIKit也通过管理显示在屏幕上的组件来组织复杂的项目。&lt;/li&gt;
+      &lt;li&gt;使用UIKit可以：
+        &lt;ul&gt;
+          &lt;li&gt;构建和管理你的用户界面&lt;/li&gt;
+          &lt;li&gt;捕获触摸和基于移动的事件&lt;/li&gt;
+          &lt;li&gt;呈现文字和web内容&lt;/li&gt;
+          &lt;li&gt;优化你的多任务程序&lt;/li&gt;
+          &lt;li&gt;创建定制的用户界面元素&lt;/li&gt;
+          &lt;li&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;CoreData
+    &lt;ul&gt;
+      &lt;li&gt;框架管着理应用程序数据模型&lt;/li&gt;
+      &lt;li&gt;Core Data提供对象的管理，使用CoreData，你可以创建模型对象，并管理这些对象。&lt;/li&gt;
+      &lt;li&gt;你管理这些对象间的联系并修改数据。&lt;/li&gt;
+      &lt;li&gt;CoreData提供的内建SQLlite技术可以高效的管理数据。&lt;/li&gt;
+      &lt;li&gt;使用Core Data可以：
+        &lt;ul&gt;
+          &lt;li&gt;在库里存储和接收对象&lt;/li&gt;
+          &lt;li&gt;提供基本的undo/redo&lt;/li&gt;
+          &lt;li&gt;自动验证属性值&lt;/li&gt;
+          &lt;li&gt;过滤、分组和优化内存中的数据&lt;/li&gt;
+          &lt;li&gt;用[NSFetchedResultsController]管理表视图中的结果&lt;/li&gt;
+          &lt;li&gt;支持基于文档的应用程序&lt;/li&gt;
+          &lt;li&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Core Graphics框架帮助你创建图形
+    &lt;ul&gt;
+      &lt;li&gt;高质量的图形对于所有的iOS应用程序都是很重要的。&lt;/li&gt;
+      &lt;li&gt;在iOS中最简单且最快捷的创建图形的方式是使用UIKit框架提供的基于预渲染图形的视图和控件，然后让UIKit和iOS完成绘制。&lt;/li&gt;
+      &lt;li&gt;当你需要创建复杂的图形时，Core Graphics则提供了更底层的库来帮助你。&lt;/li&gt;
+      &lt;li&gt;使用Core Graphics可以：
+        &lt;ul&gt;
+          &lt;li&gt;创建基于路径的绘图&lt;/li&gt;
+          &lt;li&gt;抗锯齿渲染&lt;/li&gt;
+          &lt;li&gt;添加梯度、图片和颜色&lt;/li&gt;
+          &lt;li&gt;Use coordinate-space transformations.&lt;/li&gt;
+          &lt;li&gt;创建、显示和分析PDF文档&lt;/li&gt;
+          &lt;li&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Core Animation允许你创建高级的动画和虚拟效果
+    &lt;ul&gt;
+      &lt;li&gt;UIKit提供建立在Core Animation之上的动画。&lt;/li&gt;
+      &lt;li&gt;如果你需要比UIKit能力更高级的功能，可以直接使用Core Animation。&lt;/li&gt;
+      &lt;li&gt;Core Animation接口包含在QuartzCore框架里。&lt;/li&gt;
+      &lt;li&gt;使用Core Animation可以创建嵌套的对象，并且可以对它们操作、旋转、缩放和转换。&lt;/li&gt;
+      &lt;li&gt;使用Core animation，你可以创建动态的用户界面而不用使用更底层的图形API，如OpenGL ES。&lt;/li&gt;
+      &lt;li&gt;使用Core Animation可以：
+        &lt;ul&gt;
+          &lt;li&gt;创建定制动画&lt;/li&gt;
+          &lt;li&gt;添加定时函数和图形&lt;/li&gt;
+          &lt;li&gt;支持帧动画&lt;/li&gt;
+          &lt;li&gt;Specify graphical layout constraints.&lt;/li&gt;
+          &lt;li&gt;Group multiple-layer changes into anatomic update.&lt;/li&gt;
+          &lt;li&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;OpenGL ES 框架提供2D和3D绘图工具
+    &lt;ul&gt;
+      &lt;li&gt;OpenGL ES支持2D和3D绘图，Apple的OpenGL ES实现通过硬件提供了高速的全屏游戏式的应用程序。&lt;/li&gt;
+      &lt;li&gt;使用OpenGL ES可以：
+        &lt;ul&gt;
+          &lt;li&gt;创建2D和3D图形&lt;/li&gt;
+          &lt;li&gt;创建更复杂的图形，比如数据虚拟化、模拟飞行，或者视频游戏&lt;/li&gt;
+          &lt;li&gt;访问底层图形设备&lt;/li&gt;
+          &lt;li&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h4 id=&quot;文件结构介绍&quot;&gt;文件结构介绍&lt;/h4&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;output
-│
-├── conf  	// 创始的共识采用tdpos模式，指定单一地址有权利出块
-│  	│
-│   ├── plugins.conf 		// 插件的配置信息
-│  	│
-│   ├── xchain.yaml.   		// xchain服务的配置信息
-│  	│
-│   └── xchain.yaml.sample 	// 防止冲突，部署时根据需要修改端口号
-│  	
-│  	
-├── contractCall.sh
-│
-├── createAccount.sh
-│
-├── data  // 数据的存放目录,创世块信息，以及共识和合约的样例
-│   │
-│   ├── blockchain	// 账本目录
-│   │   │
-│   │   └── xuper
-│   │       ├── ledger
-│   │       │   ├── 000001.log
-│   │       │   │
-│   │       │   ├── CURRENT
-│   │       │   │
-│   │       │   ├── LOCK
-│   │       │   │
-│   │       │   ├── LOG
-│   │       │   │
-│   │       │   └── MANIFEST-000000
-│   │       │   
-│   │       ├── utxoVM
-│   │       │   │
-│   │       │   ├── 000001.log
-│   │       │   │
-│   │       │   ├── CURRENT
-│   │       │   │
-│   │       │   ├── LOCK
-│   │       │   │
-│   │       │   ├── LOG
-│   │       │   │
-│   │       │   └── MANIFEST-000000
-│   │       │  	
-│   │       └── xuper.json
-│   │   	
-│   ├── config	// 创始的共识采用tdpos模式，指定单一地址有权利出块
-│   │  	│  	
-│   │   ├── decay_demo.json
-│   │  	│  	
-│   │   ├── pmroot.json
-│   │  	│  	
-│   │   ├── pow.json
-│   │  	│  	
-│   │   ├── root_demo.json
-│   │  	│  	
-│   │   └── xuper.json
-│   │  	
-│   │  	
-│   ├── keys // 此节点的地址，唯一性
-│   │  	│  	
-│   │   ├── address
-│   │  	│  	
-│   │   ├── private.key
-│   │  	│  	
-│   │   └── public.key
-│   │  	
-│   └── netkeys // 此节点的网络标识ID，唯一性
-│      	│  	
-│       └── net_private.key
-│   
-│   
-├── deployContract.sh
-│   
-│   
-├── dump_chain
-│   
-│   
-├── logs  // 程序日志目录
-│   │  	
-│   ├── pluginmgr.log
-│   │  	
-│   ├── pluginmgr.log.wf
-│   │  	
-│   ├── xchain.log
-│   │  	
-│   └── xchain.log.wf
-│   
-│   
-├── plugins	// so的存放目录
-│   │   
-│   ├── consensus
-│   │   │   
-│   │   ├── consensus-pow.so.1.0.0
-│   │   │   
-│   │   ├── consensus-single.so.1.0.0
-│   │   │   
-│   │   └── consensus-tdpos.so.1.0.0
-│   │   
-│   ├── contract
-│   │   
-│   ├── crypto
-│   │   │   
-│   │   └── crypto-default.so.1.0.0
-│   │   
-│   └── kv
-│       │   
-│       ├── kv-badger.so.1.0.0
-│       │   
-│       ├── kv-ldb-multi.so.1.0.0
-│       │   
-│       └── kv-ldb-single.so.1.0.0
-│   
-│   
-├── testnet.conf
-│       
-├── transfer.sh
-│       
-├── wasm2c	// wasm工具
-│       	
-├── xchain  // 服务的二进制文件
-│       
-└── xchain-cli	// 客户端工具
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h4 id=&quot;链的操作&quot;&gt;链的操作&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;创建链
-    &lt;blockquote&gt;
-      &lt;p&gt;./xchain-cli createChain&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;启动服务
-    &lt;blockquote&gt;
-      &lt;p&gt;nohup ./xchain &amp;amp;&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;观察区块
-    &lt;blockquote&gt;
-      &lt;p&gt;./xchain-cli status -H 127.0.0.1:37101&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;创建账号
-    &lt;blockquote&gt;
-      &lt;p&gt;./xchain-cli account newkeys –output data/accounts/louis&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;创建合约账号
-    &lt;blockquote&gt;
-      &lt;p&gt;./xchain-cli account new –desc account.des
-合约内容如下:
-&lt;code class=&quot;highlighter-rouge&quot;&gt;
- {
- &quot;module_name&quot;: &quot;xkernel&quot;,
- &quot;method_name&quot;: &quot;NewAccount&quot;,
- &quot;args&quot; : {
-     &quot;account_name&quot;: &quot;1111111111111111&quot;,  //说明：16位数字组成的字符串
-     &quot;acl&quot;: &quot;{
-     		\&quot;pm\&quot;: {\&quot;rule\&quot;: 1,\&quot;acceptValue\&quot;: 0.6},
-     		\&quot;aksWeight\&quot;: {\&quot;AK1\&quot;: 0.3,\&quot;AK2\&quot;: 0.3}}&quot;
- }
- }&lt;/code&gt;&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;资源链接&quot;&gt;资源链接&lt;/h4&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://xchain.baidu.com/&quot;&gt;官网&lt;/a&gt;
-&lt;a href=&quot;https://xuperchain.baidu.com/whitepaper&quot;&gt;白皮书&lt;/a&gt;
-&lt;a href=&quot;https://github.com/xuperchain/xuperunion&quot;&gt;Github&lt;/a&gt;
-&lt;a href=&quot;https://github.com/xuperchain/xuperunion/blob/master/CONTRIBUTING_CN.md&quot;&gt;贡献指南&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&quot;必用框架&quot;&gt;必用框架&lt;/h4&gt;
 
 </description>
-        <pubDate>Tue, 30 Jul 2019 12:48:12 +0800</pubDate>
-        <link>http://localhost:4000/2019/07/30/2019-06-16-%E7%99%BE%E5%BA%A6XuperChain/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/07/30/2019-06-16-%E7%99%BE%E5%BA%A6XuperChain/</guid>
+        <pubDate>Tue, 13 Aug 2019 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/08/13/iOS%E7%B3%BB%E7%BB%9F%E6%A1%86%E6%9E%B6/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/08/13/iOS%E7%B3%BB%E7%BB%9F%E6%A1%86%E6%9E%B6/</guid>
         
+        <category>【移动端】</category>
+        
+        
+        <category>【iOS】</category>
         
       </item>
     
