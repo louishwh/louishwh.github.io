@@ -5,17 +5,250 @@
     <description>Seeking truth from facts.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 14 Aug 2019 13:49:46 +0800</pubDate>
-    <lastBuildDate>Wed, 14 Aug 2019 13:49:46 +0800</lastBuildDate>
+    <pubDate>Wed, 14 Aug 2019 21:05:52 +0800</pubDate>
+    <lastBuildDate>Wed, 14 Aug 2019 21:05:52 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
         <title>Foundation</title>
-        <description>
+        <description>&lt;p&gt;&lt;a href=&quot;https://www.jianshu.com/p/495f5f8045ee&quot;&gt;参考一&lt;/a&gt;
+&lt;a href=&quot;https://www.cnblogs.com/kenshincui/p/3885689.html&quot;&gt;参考二&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;nsobject&quot;&gt;NSObject&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;值类型:
+    &lt;ul&gt;
+      &lt;li&gt;NSAffineTransform&lt;/li&gt;
+      &lt;li&gt;NSCalendar&lt;/li&gt;
+      &lt;li&gt;NSCache&lt;/li&gt;
+      &lt;li&gt;NSValue
+        &lt;ul&gt;
+          &lt;li&gt;NSValue&lt;/li&gt;
+          &lt;li&gt;NSNumber&lt;/li&gt;
+          &lt;li&gt;NSDecimalNumber&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;NSData
+        &lt;ul&gt;
+          &lt;li&gt;NSMutableData&lt;/li&gt;
+          &lt;li&gt;NSPurgeableData&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;NSDate&lt;/li&gt;
+      &lt;li&gt;NSDateComponents&lt;/li&gt;
+      &lt;li&gt;NSDecimalNumberHandler&lt;/li&gt;
+      &lt;li&gt;NSLocale&lt;/li&gt;
+      &lt;li&gt;NSNull&lt;/li&gt;
+      &lt;li&gt;NSTimeZone&lt;/li&gt;
+      &lt;li&gt;NSValueTransformer&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;XML
+    &lt;ul&gt;
+      &lt;li&gt;NSXMLNode&lt;/li&gt;
+      &lt;li&gt;NSXMLParser&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Strings
+    &lt;ul&gt;
+      &lt;li&gt;NSAttributedString&lt;/li&gt;
+      &lt;li&gt;NSCharacterSet&lt;/li&gt;
+      &lt;li&gt;NSString&lt;/li&gt;
+      &lt;li&gt;NSFormatter
+        &lt;ul&gt;
+          &lt;li&gt;NSDateFormatter&lt;/li&gt;
+          &lt;li&gt;NSNumberFormatter&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;NSScanner&lt;/li&gt;
+      &lt;li&gt;NSSortDescriptor&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Collections
+    &lt;ul&gt;
+      &lt;li&gt;NSArray
+        &lt;ul&gt;
+          &lt;li&gt;NSMutableArray&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;NSDictionary
+        &lt;ul&gt;
+          &lt;li&gt;NSMutableDictionary&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;NSNumerator
+        &lt;ul&gt;
+          &lt;li&gt;NSDirectoryEnumerator&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;NSHashTable&lt;/li&gt;
+      &lt;li&gt;NSIndexPath&lt;/li&gt;
+      &lt;li&gt;NSIndexSet
+        &lt;ul&gt;
+          &lt;li&gt;NSMutableIndexSet&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;NSMapTable&lt;/li&gt;
+      &lt;li&gt;NSPointerArray&lt;/li&gt;
+      &lt;li&gt;NSPointerFunctions&lt;/li&gt;
+      &lt;li&gt;NSSet
+        &lt;ul&gt;
+          &lt;li&gt;NSMutableSet&lt;/li&gt;
+          &lt;li&gt;NSCountedSet&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Predicates
+    &lt;ul&gt;
+      &lt;li&gt;NSExpression&lt;/li&gt;
+      &lt;li&gt;NSPredicate
+        &lt;ul&gt;
+          &lt;li&gt;NSComparisonPredicate&lt;/li&gt;
+          &lt;li&gt;NSCompoundPredicate&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Operating-System Services
+    &lt;ul&gt;
+      &lt;li&gt;NSError&lt;/li&gt;
+      &lt;li&gt;NSHost&lt;/li&gt;
+      &lt;li&gt;NSNetService&lt;/li&gt;
+      &lt;li&gt;NSNetServiceBrowser&lt;/li&gt;
+      &lt;li&gt;NSOrthography&lt;/li&gt;
+      &lt;li&gt;NSProcessInfo&lt;/li&gt;
+      &lt;li&gt;NSRunLoop&lt;/li&gt;
+      &lt;li&gt;NSSpeliServer&lt;/li&gt;
+      &lt;li&gt;NSTextCheckingResult&lt;/li&gt;
+      &lt;li&gt;NSTimer&lt;/li&gt;
+      &lt;li&gt;NSUserDefaults&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;File System
+    &lt;ul&gt;
+      &lt;li&gt;NSBundle&lt;/li&gt;
+      &lt;li&gt;NSFileHandler&lt;/li&gt;
+      &lt;li&gt;NSFileManager&lt;/li&gt;
+      &lt;li&gt;NSMetadataItem&lt;/li&gt;
+      &lt;li&gt;NSMetadataQuery&lt;/li&gt;
+      &lt;li&gt;NSMetadataQueryAttributeValueTuple&lt;/li&gt;
+      &lt;li&gt;NSMetadataQueryResuleGroup&lt;/li&gt;
+      &lt;li&gt;NSStream
+        &lt;ul&gt;
+          &lt;li&gt;NSInputStream&lt;/li&gt;
+          &lt;li&gt;NSOutputStream&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;URL
+    &lt;ul&gt;
+      &lt;li&gt;NSCachedURLResponse&lt;/li&gt;
+      &lt;li&gt;NSHTTPCookie&lt;/li&gt;
+      &lt;li&gt;NSHTTPCookieStorage&lt;/li&gt;
+      &lt;li&gt;NSURL&lt;/li&gt;
+      &lt;li&gt;NSURLAuthorizationChallenge&lt;/li&gt;
+      &lt;li&gt;NSURLCache&lt;/li&gt;
+      &lt;li&gt;NSURLSession&lt;/li&gt;
+      &lt;li&gt;NSURLCredential&lt;/li&gt;
+      &lt;li&gt;NSURLCredentialStorage&lt;/li&gt;
+      &lt;li&gt;NSURLDownload&lt;/li&gt;
+      &lt;li&gt;NSURLProtectionSpace&lt;/li&gt;
+      &lt;li&gt;NSURLProtocol&lt;/li&gt;
+      &lt;li&gt;NSURLRequest
+        &lt;ul&gt;
+          &lt;li&gt;NSMutableURLRequest&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;NSURLResponse
+        &lt;ul&gt;
+          &lt;li&gt;NSHTTPURLResponse&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Interprocess Communication
+    &lt;ul&gt;
+      &lt;li&gt;NSPipe&lt;/li&gt;
+      &lt;li&gt;NSPort
+        &lt;ul&gt;
+          &lt;li&gt;NSMachPort&lt;/li&gt;
+          &lt;li&gt;NSMessagePort&lt;/li&gt;
+          &lt;li&gt;NSSockerPort&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;NSPortMessage&lt;/li&gt;
+      &lt;li&gt;NSPortNameServer
+        &lt;ul&gt;
+          &lt;li&gt;NSMachBootstrapServer&lt;/li&gt;
+          &lt;li&gt;NSMessagePortNameServer&lt;/li&gt;
+          &lt;li&gt;NSSockerPortNameServer&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Locking-Threading
+    &lt;ul&gt;
+      &lt;li&gt;NSConditionLock&lt;/li&gt;
+      &lt;li&gt;NSDistributedLock&lt;/li&gt;
+      &lt;li&gt;NSLock&lt;/li&gt;
+      &lt;li&gt;NSOperation
+        &lt;ul&gt;
+          &lt;li&gt;NSBlockOperation&lt;/li&gt;
+          &lt;li&gt;NSInvocationOperation&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;NSOperationQueue&lt;/li&gt;
+      &lt;li&gt;NSRecursiveLock&lt;/li&gt;
+      &lt;li&gt;NSTask&lt;/li&gt;
+      &lt;li&gt;NSThread&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Notifications
+    &lt;ul&gt;
+      &lt;li&gt;NSNotification&lt;/li&gt;
+      &lt;li&gt;NSNotificationCenter
+        &lt;ul&gt;
+          &lt;li&gt;NSNotificationQueue&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Archiving and Serialization
+    &lt;ul&gt;
+      &lt;li&gt;NSCoder
+        &lt;ul&gt;
+          &lt;li&gt;NSArchiver&lt;/li&gt;
+          &lt;li&gt;NSKeyedArchiver&lt;/li&gt;
+          &lt;li&gt;NSKeyedUnArchiver&lt;/li&gt;
+          &lt;li&gt;NSPortCoder&lt;/li&gt;
+          &lt;li&gt;NSUnarchiver&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;NSPropertyListSerialization&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Objective-C Language Service
+    &lt;ul&gt;
+      &lt;li&gt;NSSeertionHandler&lt;/li&gt;
+      &lt;li&gt;NSAutoreleasePool&lt;/li&gt;
+      &lt;li&gt;NSClassDescription&lt;/li&gt;
+      &lt;li&gt;NSException&lt;/li&gt;
+      &lt;li&gt;NSInvocation&lt;/li&gt;
+      &lt;li&gt;NSMethodSignature&lt;/li&gt;
+      &lt;li&gt;NSUndoManager&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;nsproxy&quot;&gt;NSProxy&lt;/h3&gt;
+
 </description>
-        <pubDate>Tue, 13 Aug 2019 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/08/13/Foundation/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/08/13/Foundation/</guid>
+        <pubDate>Wed, 14 Aug 2019 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/08/14/Foundation/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/08/14/Foundation/</guid>
         
         <category>【移动端】</category>
         
