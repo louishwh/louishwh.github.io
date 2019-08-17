@@ -5,3 +5,197 @@ date: 2019-08-15 00:00:00 +0800
 categories: 【iOS】
 tag: 【移动端】
 ---
+
+[Apple官网-UIKit](https://developer.apple.com/documentation/uikit)
+
+
+[Views and Controls](https://developer.apple.com/documentation/uikit/views_and_controls?changes=latest_major)
+
+- UIView and Controls
+
+	- Container Views
+		- Collection Views
+		- Table Views
+		- UIStackView
+		- UIScrollView
+
+	- Content Views
+		- UIActivityIndicatorView
+		- UIImageView
+		- UIPickerView
+		- UIProgressView
+		- ~~UIWebView~~
+
+	- Controls
+		- UIControl
+		- UIButton
+		- UIDatePicker
+		- UIPageControl
+		- UISegmentedControl
+		- UISlider
+		- UIStepper
+		- UISwitch
+
+	- Text Views
+		- UILabel
+		- UITextField
+		- UITextView
+		- UISearchTextField
+		- UISearchToken
+
+	- Visual Effects
+		- UIVisualEffect
+		- UIVisualEffectView
+		- UIVibrancyEffect
+		- UIBlurEffect
+
+	- Bars
+		- UIBarItem
+		- UIBarButtonItem
+		- UIBarButtonItemGroup
+		- UINavigationBar
+		- UISearchBar
+		- UIToolbar
+		- UITabBar
+		- UITabBarItem
+		- UIBarPositioning
+		- UIBarPositioningDelegate
+
+	- Content Viewer
+		- UILargeContentViewerInteraction
+
+	- Related Types
+		- UIOffset
+		- UIEdgeInsets
+		- NSDirectionalEdgeInsets
+		- NSDirectionalRectEdge
+		- NSRectAlignment
+
+- View Controllers
+	- Custom View Controllers
+		- UIViewController
+		- UITableViewController
+		- UICollectionViewController
+			- UIContentContainer
+
+	- Split View Interface
+		- UISplitViewController
+
+	- Navigation Interface
+		- UINavigationController
+		- UINavigationBar
+		- UINavigationItem
+
+	- Page View Interface
+		- UIPageViewController
+
+	- Tab View Interface
+		- UITabBarController
+		- UITabBar
+		- UITabBarItem
+
+	- Search Interface
+		- UISearchContainerViewController
+		- UISearchController
+		- UISearchBar
+
+	- Images and Video
+		- UIImagePickerController
+		- UIVideoEditorController
+
+	- Document Previewing
+		- UIDocumentInteractionController
+
+	-  iCloud Sharing
+		- UICloudSharingController
+ 
+ 	- Activities Interface
+ 		- UIActivityViewController
+ 		- UIActivityItemProvider
+ 		- UIActivityItemSource
+ 		- UIActivity
+
+ 	- Font Picker
+ 		- UIFontPickerViewController
+ 		- UIFontPickerViewController.Configuration
+
+ 	- Word Lookup
+ 		- UIReferenceLibraryViewController
+
+ 	- Printer Picker
+ 		- UIPrinterPickerController
+
+- View Layout
+	- First Steps
+		- UIStackView 
+
+	- Constraints
+		- NSLayoutConstraint
+
+	- Layout Guides
+		- UILayoutGuide
+		- NSLayoutDimension
+
+	- Anchors
+		- NSLayoutAnchor
+		- NSLayoutXAxisAnchor
+		- NSLayoutYAxisAnchor
+
+- Appearance Customization(外观定制)
+	- Dark Mode
+
+	- Navigation Bar Appearance
+		- UINavigationBarAppearance
+
+	- Toolbar Appearance
+		- UIToolbarAppearance
+
+	- Tab Bar Appearance
+		- UITabBarAppearance
+		- UITabBarItemAppearance
+		- UITabBarItemStateAppearance
+
+	- Shared Appearance
+		- UIBarAppearance
+		- UIBarButtonItemAppearance
+		- UIBarButtonItemStateAppearance
+
+	- Appearance Proxies
+		- UIAppearance
+		- UIAppearanceContainer
+
+- Animation and Haptics
+	- Content Animations
+
+	- Physics-Based Animations
+
+	- Parallax Effects(视差影响)
+
+	- Haptic Feedback
+		- UIFeedbackGenerator
+		- UIImpactFeedbackGenerator
+		- UINotificationFeedbackGenerator
+		- UISelectionFeedbackGenerator
+
+- Windows and Screens
+	- Windows
+		- UIWidow
+		- UICoordinateSpace
+
+	- Popovers
+		- UIPopoverPresentationController
+		- UIPopoverBackgroundView
+		- UIPopoverBackgroundViewMethods
+
+	- Alerts
+		- UIAlertController
+		- UIAlertAction
+
+	- Screens
+		- UIScreen
+		- UIScreenMode
+
+
+
+
+

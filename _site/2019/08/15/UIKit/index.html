@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>iOS-UIKit - Atomix</title>
+
+	<link rel="shortcut icon" href="/styles/images/favicon.jpg">
+	<link rel="icon" href="/styles/images/favicon.jpg">
+
+	<link rel="stylesheet" href="/styles/css/index.css">
+	<link rel="stylesheet" href="/styles/css/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/styles/css/syntax.css">
+	<link rel="canonical" href="/2019/08/15/UIKit/">
+	<link rel="alternate" type="application/rss+xml" title="Atomix" href="/feed.xml">
+	
+	<meta name="keywords" content="iOS-UIKit, Atomix, Atomix">
+	<meta name="description" content="Atomix">
+
+	<script src="/styles/js/jquery.min.js"></script>
+	<!--[if lt IE 9]>
+    	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  	<![endif]-->
+  	<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "//hm.baidu.com/hm.js?624f97ab37fd73fbedc7929427ca95ea";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+  	<style type="text/css">
+	  	.docs-content{
+	  		margin-bottom: 10px;
+	  	}
+  	</style>
+</head>
+
+  <body class="index">
+
+    <header class="navbar navbar-inverse navbar-fixed-top docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand">
+        <img src="/styles/images/logo.png">
+      </a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">    
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/categories/">Category</a>
+        </li>
+        <li>
+          <a href="/tag">Index</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+            <a><span id="busuanzi_container_site_pv">总访问量<span id="busuanzi_value_site_pv"></span>次</span></a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">关于<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a rel="nofollow" target="_blank" href="https://github.com/louishwh/">Github</a></li>
+            <li><a rel="nofollow" target="_blank" href="">关于作者</a></li>
+            <li><a rel="nofollow" href="/books">我的书单</a></li>
+            <li class="divider"></li>
+            <li><a rel="nofollow" target="_blank" href="https://github.com/luoyan35714/LessOrMore.git">本项目</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+    <div class="docs-header" id="content">
+  <div class="container">
+  	
+  		<!--
+		    <h1>iOS-UIKit</h1>
+		    <p>Post on Aug 15, 2019 by <a href="/about">louis han</a></p>
+		-->
+		    <h1>Seeking truth from facts.</h1>
+    
+  </div>
+</div>
+    
+      
+<div class="banner">
+  <div class="container">
+  	
+    	<a href="/categories/#【iOS】-ref">【iOS】</a>	/
+    	<a href="/tag/#【移动端】-ref">【移动端】</a>
+    
+  </div>
+</div>
+
+    
+
+    <div class="container docs-container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="sidebar hidden-print" role="complementary">
+        <div id="navigation">
+  <h1>目录</h1>
+  <ul class="nav sidenav">
+  </ul>
+  <div style="height: 200px;width: 200px;">
+    <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async"> 
+    </script>
+  </div>
+</div>
+
+ 
+      </div>
+    </div>
+    <div class="col-md-9" role="main">
+      <div class="panel docs-content">
+        <div class="wrapper">
+            <header class="post-header">
+              <h1 class="post-title">iOS-UIKit</h1>
+              <!--
+                <p class="post-meta">Aug 15, 2019</p>
+              -->
+              <div class="meta">Posted on <span class="postdate">Aug 15, 2019</span> By <a target="_blank" href="http://localhost:4000">louis han</a></div>
+              <br />
+            </header>
+            <article class="post-content">
+              <p><a href="https://developer.apple.com/documentation/uikit">Apple官网-UIKit</a></p>
+
+<p><a href="https://developer.apple.com/documentation/uikit/views_and_controls?changes=latest_major">Views and Controls</a></p>
+
+<ul>
+  <li>
+    <p>UIView and Controls</p>
+
+    <ul>
+      <li>Container Views
+        <ul>
+          <li>Collection Views</li>
+          <li>Table Views</li>
+          <li>UIStackView</li>
+          <li>UIScrollView</li>
+        </ul>
+      </li>
+      <li>Content Views
+        <ul>
+          <li>UIActivityIndicatorView</li>
+          <li>UIImageView</li>
+          <li>UIPickerView</li>
+          <li>UIProgressView</li>
+          <li><del>UIWebView</del></li>
+        </ul>
+      </li>
+      <li>Controls
+        <ul>
+          <li>UIControl</li>
+          <li>UIButton</li>
+          <li>UIDatePicker</li>
+          <li>UIPageControl</li>
+          <li>UISegmentedControl</li>
+          <li>UISlider</li>
+          <li>UIStepper</li>
+          <li>UISwitch</li>
+        </ul>
+      </li>
+      <li>Text Views
+        <ul>
+          <li>UILabel</li>
+          <li>UITextField</li>
+          <li>UITextView</li>
+          <li>UISearchTextField</li>
+          <li>UISearchToken</li>
+        </ul>
+      </li>
+      <li>Visual Effects
+        <ul>
+          <li>UIVisualEffect</li>
+          <li>UIVisualEffectView</li>
+          <li>UIVibrancyEffect</li>
+          <li>UIBlurEffect</li>
+        </ul>
+      </li>
+      <li>Bars
+        <ul>
+          <li>UIBarItem</li>
+          <li>UIBarButtonItem</li>
+          <li>UIBarButtonItemGroup</li>
+          <li>UINavigationBar</li>
+          <li>UISearchBar</li>
+          <li>UIToolbar</li>
+          <li>UITabBar</li>
+          <li>UITabBarItem</li>
+          <li>UIBarPositioning</li>
+          <li>UIBarPositioningDelegate</li>
+        </ul>
+      </li>
+      <li>Content Viewer
+        <ul>
+          <li>UILargeContentViewerInteraction</li>
+        </ul>
+      </li>
+      <li>Related Types
+        <ul>
+          <li>UIOffset</li>
+          <li>UIEdgeInsets</li>
+          <li>NSDirectionalEdgeInsets</li>
+          <li>NSDirectionalRectEdge</li>
+          <li>NSRectAlignment</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>View Controllers</p>
+    <ul>
+      <li>Custom View Controllers
+        <ul>
+          <li>UIViewController</li>
+          <li>UITableViewController</li>
+          <li>UICollectionViewController
+            <ul>
+              <li>UIContentContainer</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>Split View Interface
+        <ul>
+          <li>UISplitViewController</li>
+        </ul>
+      </li>
+      <li>Navigation Interface
+        <ul>
+          <li>UINavigationController</li>
+          <li>UINavigationBar</li>
+          <li>UINavigationItem</li>
+        </ul>
+      </li>
+      <li>Page View Interface
+        <ul>
+          <li>UIPageViewController</li>
+        </ul>
+      </li>
+      <li>Tab View Interface
+        <ul>
+          <li>UITabBarController</li>
+          <li>UITabBar</li>
+          <li>UITabBarItem</li>
+        </ul>
+      </li>
+      <li>Search Interface
+        <ul>
+          <li>UISearchContainerViewController</li>
+          <li>UISearchController</li>
+          <li>UISearchBar</li>
+        </ul>
+      </li>
+      <li>Images and Video
+        <ul>
+          <li>UIImagePickerController</li>
+          <li>UIVideoEditorController</li>
+        </ul>
+      </li>
+      <li>Document Previewing
+        <ul>
+          <li>UIDocumentInteractionController</li>
+        </ul>
+      </li>
+      <li>iCloud Sharing
+        <ul>
+          <li>UICloudSharingController</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+ 	- Activities Interface
+ 		- UIActivityViewController
+ 		- UIActivityItemProvider
+ 		- UIActivityItemSource
+ 		- UIActivity
+
+ 	- Font Picker
+ 		- UIFontPickerViewController
+ 		- UIFontPickerViewController.Configuration
+
+ 	- Word Lookup
+ 		- UIReferenceLibraryViewController
+
+ 	- Printer Picker
+ 		- UIPrinterPickerController
+
+<ul>
+  <li>View Layout
+    <ul>
+      <li>First Steps
+        <ul>
+          <li>UIStackView</li>
+        </ul>
+      </li>
+      <li>Constraints
+        <ul>
+          <li>NSLayoutConstraint</li>
+        </ul>
+      </li>
+      <li>Layout Guides
+        <ul>
+          <li>UILayoutGuide</li>
+          <li>NSLayoutDimension</li>
+        </ul>
+      </li>
+      <li>Anchors
+        <ul>
+          <li>NSLayoutAnchor</li>
+          <li>NSLayoutXAxisAnchor</li>
+          <li>NSLayoutYAxisAnchor</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Appearance Customization(外观定制)
+    <ul>
+      <li>
+        <p>Dark Mode</p>
+      </li>
+      <li>Navigation Bar Appearance
+        <ul>
+          <li>UINavigationBarAppearance</li>
+        </ul>
+      </li>
+      <li>Toolbar Appearance
+        <ul>
+          <li>UIToolbarAppearance</li>
+        </ul>
+      </li>
+      <li>Tab Bar Appearance
+        <ul>
+          <li>UITabBarAppearance</li>
+          <li>UITabBarItemAppearance</li>
+          <li>UITabBarItemStateAppearance</li>
+        </ul>
+      </li>
+      <li>Shared Appearance
+        <ul>
+          <li>UIBarAppearance</li>
+          <li>UIBarButtonItemAppearance</li>
+          <li>UIBarButtonItemStateAppearance</li>
+        </ul>
+      </li>
+      <li>Appearance Proxies
+        <ul>
+          <li>UIAppearance</li>
+          <li>UIAppearanceContainer</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Animation and Haptics
+    <ul>
+      <li>
+        <p>Content Animations</p>
+      </li>
+      <li>
+        <p>Physics-Based Animations</p>
+      </li>
+      <li>
+        <p>Parallax Effects(视差影响)</p>
+      </li>
+      <li>
+        <p>Haptic Feedback</p>
+        <ul>
+          <li>UIFeedbackGenerator</li>
+          <li>UIImpactFeedbackGenerator</li>
+          <li>UINotificationFeedbackGenerator</li>
+          <li>UISelectionFeedbackGenerator</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Windows and Screens
+    <ul>
+      <li>Windows
+        <ul>
+          <li>UIWidow</li>
+          <li>UICoordinateSpace</li>
+        </ul>
+      </li>
+      <li>Popovers
+        <ul>
+          <li>UIPopoverPresentationController</li>
+          <li>UIPopoverBackgroundView</li>
+          <li>UIPopoverBackgroundViewMethods</li>
+        </ul>
+      </li>
+      <li>Alerts
+        <ul>
+          <li>UIAlertController</li>
+          <li>UIAlertAction</li>
+        </ul>
+      </li>
+      <li>Screens
+        <ul>
+          <li>UIScreen</li>
+          <li>UIScreenMode</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+
+            </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+    <footer class="footer" role="contentinfo">
+	<div class="container">
+		<p class="copyright">Copyright &copy; 2014-2019 <a href=""><code>louis han</code></a>.</p>
+		<p>Powered by <a href="http://jekyllrb.com">Jekyll</a>, themed from <a href="http://lesscss.cn/">Less</a>, refactored by <a href="http://www.sincerehwh.cn/">Sincere Han</a></p>
+	</div>
+</footer>
+
+<script src="/styles/js/jquery.min.js"></script>
+<script src="/styles/js/bootstrap.min.js"></script>
+<script src="/styles/js/holder.min.js"></script>
+<script src="/styles/js/lessismore.js"></script>
+<script src="/styles/js/application.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  </body>
+</html>

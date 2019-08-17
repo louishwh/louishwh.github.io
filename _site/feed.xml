@@ -5,9 +5,337 @@
     <description>Seeking truth from facts.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 14 Aug 2019 21:05:52 +0800</pubDate>
-    <lastBuildDate>Wed, 14 Aug 2019 21:05:52 +0800</lastBuildDate>
+    <pubDate>Sat, 17 Aug 2019 09:58:56 +0800</pubDate>
+    <lastBuildDate>Sat, 17 Aug 2019 09:58:56 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>CoreAnimation</title>
+        <description>
+</description>
+        <pubDate>Sat, 17 Aug 2019 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/08/17/CoreAnimation/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/08/17/CoreAnimation/</guid>
+        
+        <category>【移动端】</category>
+        
+        
+        <category>【iOS】</category>
+        
+      </item>
+    
+      <item>
+        <title>CoreData</title>
+        <description>
+</description>
+        <pubDate>Fri, 16 Aug 2019 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/08/16/CoreData/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/08/16/CoreData/</guid>
+        
+        <category>【移动端】</category>
+        
+        
+        <category>【iOS】</category>
+        
+      </item>
+    
+      <item>
+        <title>iOS-UIKit</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/documentation/uikit&quot;&gt;Apple官网-UIKit&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/documentation/uikit/views_and_controls?changes=latest_major&quot;&gt;Views and Controls&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;UIView and Controls&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;Container Views
+        &lt;ul&gt;
+          &lt;li&gt;Collection Views&lt;/li&gt;
+          &lt;li&gt;Table Views&lt;/li&gt;
+          &lt;li&gt;UIStackView&lt;/li&gt;
+          &lt;li&gt;UIScrollView&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Content Views
+        &lt;ul&gt;
+          &lt;li&gt;UIActivityIndicatorView&lt;/li&gt;
+          &lt;li&gt;UIImageView&lt;/li&gt;
+          &lt;li&gt;UIPickerView&lt;/li&gt;
+          &lt;li&gt;UIProgressView&lt;/li&gt;
+          &lt;li&gt;&lt;del&gt;UIWebView&lt;/del&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Controls
+        &lt;ul&gt;
+          &lt;li&gt;UIControl&lt;/li&gt;
+          &lt;li&gt;UIButton&lt;/li&gt;
+          &lt;li&gt;UIDatePicker&lt;/li&gt;
+          &lt;li&gt;UIPageControl&lt;/li&gt;
+          &lt;li&gt;UISegmentedControl&lt;/li&gt;
+          &lt;li&gt;UISlider&lt;/li&gt;
+          &lt;li&gt;UIStepper&lt;/li&gt;
+          &lt;li&gt;UISwitch&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Text Views
+        &lt;ul&gt;
+          &lt;li&gt;UILabel&lt;/li&gt;
+          &lt;li&gt;UITextField&lt;/li&gt;
+          &lt;li&gt;UITextView&lt;/li&gt;
+          &lt;li&gt;UISearchTextField&lt;/li&gt;
+          &lt;li&gt;UISearchToken&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Visual Effects
+        &lt;ul&gt;
+          &lt;li&gt;UIVisualEffect&lt;/li&gt;
+          &lt;li&gt;UIVisualEffectView&lt;/li&gt;
+          &lt;li&gt;UIVibrancyEffect&lt;/li&gt;
+          &lt;li&gt;UIBlurEffect&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Bars
+        &lt;ul&gt;
+          &lt;li&gt;UIBarItem&lt;/li&gt;
+          &lt;li&gt;UIBarButtonItem&lt;/li&gt;
+          &lt;li&gt;UIBarButtonItemGroup&lt;/li&gt;
+          &lt;li&gt;UINavigationBar&lt;/li&gt;
+          &lt;li&gt;UISearchBar&lt;/li&gt;
+          &lt;li&gt;UIToolbar&lt;/li&gt;
+          &lt;li&gt;UITabBar&lt;/li&gt;
+          &lt;li&gt;UITabBarItem&lt;/li&gt;
+          &lt;li&gt;UIBarPositioning&lt;/li&gt;
+          &lt;li&gt;UIBarPositioningDelegate&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Content Viewer
+        &lt;ul&gt;
+          &lt;li&gt;UILargeContentViewerInteraction&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Related Types
+        &lt;ul&gt;
+          &lt;li&gt;UIOffset&lt;/li&gt;
+          &lt;li&gt;UIEdgeInsets&lt;/li&gt;
+          &lt;li&gt;NSDirectionalEdgeInsets&lt;/li&gt;
+          &lt;li&gt;NSDirectionalRectEdge&lt;/li&gt;
+          &lt;li&gt;NSRectAlignment&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;View Controllers&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Custom View Controllers
+        &lt;ul&gt;
+          &lt;li&gt;UIViewController&lt;/li&gt;
+          &lt;li&gt;UITableViewController&lt;/li&gt;
+          &lt;li&gt;UICollectionViewController
+            &lt;ul&gt;
+              &lt;li&gt;UIContentContainer&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Split View Interface
+        &lt;ul&gt;
+          &lt;li&gt;UISplitViewController&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Navigation Interface
+        &lt;ul&gt;
+          &lt;li&gt;UINavigationController&lt;/li&gt;
+          &lt;li&gt;UINavigationBar&lt;/li&gt;
+          &lt;li&gt;UINavigationItem&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Page View Interface
+        &lt;ul&gt;
+          &lt;li&gt;UIPageViewController&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Tab View Interface
+        &lt;ul&gt;
+          &lt;li&gt;UITabBarController&lt;/li&gt;
+          &lt;li&gt;UITabBar&lt;/li&gt;
+          &lt;li&gt;UITabBarItem&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Search Interface
+        &lt;ul&gt;
+          &lt;li&gt;UISearchContainerViewController&lt;/li&gt;
+          &lt;li&gt;UISearchController&lt;/li&gt;
+          &lt;li&gt;UISearchBar&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Images and Video
+        &lt;ul&gt;
+          &lt;li&gt;UIImagePickerController&lt;/li&gt;
+          &lt;li&gt;UIVideoEditorController&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Document Previewing
+        &lt;ul&gt;
+          &lt;li&gt;UIDocumentInteractionController&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;iCloud Sharing
+        &lt;ul&gt;
+          &lt;li&gt;UICloudSharingController&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+ 	- Activities Interface
+ 		- UIActivityViewController
+ 		- UIActivityItemProvider
+ 		- UIActivityItemSource
+ 		- UIActivity
+
+ 	- Font Picker
+ 		- UIFontPickerViewController
+ 		- UIFontPickerViewController.Configuration
+
+ 	- Word Lookup
+ 		- UIReferenceLibraryViewController
+
+ 	- Printer Picker
+ 		- UIPrinterPickerController
+
+&lt;ul&gt;
+  &lt;li&gt;View Layout
+    &lt;ul&gt;
+      &lt;li&gt;First Steps
+        &lt;ul&gt;
+          &lt;li&gt;UIStackView&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Constraints
+        &lt;ul&gt;
+          &lt;li&gt;NSLayoutConstraint&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Layout Guides
+        &lt;ul&gt;
+          &lt;li&gt;UILayoutGuide&lt;/li&gt;
+          &lt;li&gt;NSLayoutDimension&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Anchors
+        &lt;ul&gt;
+          &lt;li&gt;NSLayoutAnchor&lt;/li&gt;
+          &lt;li&gt;NSLayoutXAxisAnchor&lt;/li&gt;
+          &lt;li&gt;NSLayoutYAxisAnchor&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Appearance Customization(外观定制)
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;Dark Mode&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Navigation Bar Appearance
+        &lt;ul&gt;
+          &lt;li&gt;UINavigationBarAppearance&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Toolbar Appearance
+        &lt;ul&gt;
+          &lt;li&gt;UIToolbarAppearance&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Tab Bar Appearance
+        &lt;ul&gt;
+          &lt;li&gt;UITabBarAppearance&lt;/li&gt;
+          &lt;li&gt;UITabBarItemAppearance&lt;/li&gt;
+          &lt;li&gt;UITabBarItemStateAppearance&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Shared Appearance
+        &lt;ul&gt;
+          &lt;li&gt;UIBarAppearance&lt;/li&gt;
+          &lt;li&gt;UIBarButtonItemAppearance&lt;/li&gt;
+          &lt;li&gt;UIBarButtonItemStateAppearance&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Appearance Proxies
+        &lt;ul&gt;
+          &lt;li&gt;UIAppearance&lt;/li&gt;
+          &lt;li&gt;UIAppearanceContainer&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Animation and Haptics
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;Content Animations&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Physics-Based Animations&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Parallax Effects(视差影响)&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Haptic Feedback&lt;/p&gt;
+        &lt;ul&gt;
+          &lt;li&gt;UIFeedbackGenerator&lt;/li&gt;
+          &lt;li&gt;UIImpactFeedbackGenerator&lt;/li&gt;
+          &lt;li&gt;UINotificationFeedbackGenerator&lt;/li&gt;
+          &lt;li&gt;UISelectionFeedbackGenerator&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Windows and Screens
+    &lt;ul&gt;
+      &lt;li&gt;Windows
+        &lt;ul&gt;
+          &lt;li&gt;UIWidow&lt;/li&gt;
+          &lt;li&gt;UICoordinateSpace&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Popovers
+        &lt;ul&gt;
+          &lt;li&gt;UIPopoverPresentationController&lt;/li&gt;
+          &lt;li&gt;UIPopoverBackgroundView&lt;/li&gt;
+          &lt;li&gt;UIPopoverBackgroundViewMethods&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Alerts
+        &lt;ul&gt;
+          &lt;li&gt;UIAlertController&lt;/li&gt;
+          &lt;li&gt;UIAlertAction&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Screens
+        &lt;ul&gt;
+          &lt;li&gt;UIScreen&lt;/li&gt;
+          &lt;li&gt;UIScreenMode&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Thu, 15 Aug 2019 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/08/15/UIKit/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/08/15/UIKit/</guid>
+        
+        <category>【移动端】</category>
+        
+        
+        <category>【iOS】</category>
+        
+      </item>
     
       <item>
         <title>Foundation</title>
@@ -46,7 +374,6 @@
   &lt;/li&gt;
   &lt;li&gt;XML
     &lt;ul&gt;
-      &lt;li&gt;NSXMLNode&lt;/li&gt;
       &lt;li&gt;NSXMLParser&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
@@ -244,6 +571,13 @@
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;nsproxy&quot;&gt;NSProxy&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- [NSProxy1](https://blog.csdn.net/shubinniu/article/details/80895450)
+- [消息转发](https://blog.csdn.net/liyanjun201/article/details/82620485)
+- [NSProxy1](https://juejin.im/post/5afbca7bf265da0b8c25251d)
+
+- NSProxy可以帮助Objective-C间接的实现多重继承的功能。
+- OC 中一个类只有一个父类, 这就是单一继承, 但是我们可以用协议和 NSProxy 实现多继承
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 </description>
         <pubDate>Wed, 14 Aug 2019 00:00:00 +0800</pubDate>
@@ -1392,128 +1726,6 @@
         
         
         <category>【方法论】</category>
-        
-      </item>
-    
-      <item>
-        <title>iOS砸壳</title>
-        <description>&lt;h3 id=&quot;砸壳是什么&quot;&gt;砸壳是什么？&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;软件脱壳
-    &lt;ul&gt;
-      &lt;li&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;砸壳原理
-    &lt;ul&gt;
-      &lt;li&gt;应用加壳&lt;/li&gt;
-      &lt;li&gt;应用砸壳
-        &lt;ol&gt;
-          &lt;li&gt;静态砸壳
-            &lt;ul&gt;
-              &lt;li&gt;需要知道壳应用的加密算法和逻辑后，对不运行的应用程序解密&lt;/li&gt;
-              &lt;li&gt;难度大&lt;/li&gt;
-              &lt;li&gt;很容易在破解后被改变&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;动态砸壳
-            &lt;ul&gt;
-              &lt;li&gt;从运行的进程内存空间中的可执行程序映像入手&lt;/li&gt;
-              &lt;li&gt;将内存中的内容进行转储处理后实现脱壳处理&lt;/li&gt;
-              &lt;li&gt;相对简单，且越过加密技术&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ol&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;iOS应用运行原理
-    &lt;ul&gt;
-      &lt;li&gt;应用壳&lt;/li&gt;
-      &lt;li&gt;MachO&lt;/li&gt;
-      &lt;li&gt;DYLD&lt;/li&gt;
-      &lt;li&gt;共享缓存库
-        &lt;ul&gt;
-          &lt;li&gt;动态库&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;砸壳的工具&quot;&gt;砸壳的工具&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;http://www.i-funbox.com/&quot;&gt;iFunBox&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Clutch
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;https://github.com/KJCracks/Clutch/releases&quot;&gt;Clutch-Github&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://www.jianshu.com/p/ab79a8a641dc&quot;&gt;介绍文件&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://www.jianshu.com/p/b2f2e6575e0c&quot;&gt;dumpdecrypted&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://www.jianshu.com/p/12407c198ff0&quot;&gt;frida-iOS-dump&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.hopperapp.com/&quot;&gt;Hopper&lt;/a&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;https://www.jianshu.com/p/b6737504c71e&quot;&gt;Hopper&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.jianshu.com/p/b6737504c71e&quot;&gt;软件&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;引申问题&quot;&gt;引申问题&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;iOS/MacOS的内核了解？&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;相对安全：破解的成本 &amp;gt; 破解后的收获&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
-        <pubDate>Sat, 06 Jul 2019 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/07/06/iOS%E7%A0%B8%E5%A3%B3/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/07/06/iOS%E7%A0%B8%E5%A3%B3/</guid>
-        
-        <category>【编程语言】</category>
-        
-        
-        <category>【技术】</category>
-        
-      </item>
-    
-      <item>
-        <title>Gitlab&amp;runner</title>
-        <description>
-</description>
-        <pubDate>Mon, 24 Jun 2019 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/06/24/Gitlab&Runner/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/06/24/Gitlab&Runner/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Libra项目</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://libra.org/zh-CN/white-paper/#how-to-get-involved&quot;&gt;Libra白皮书&lt;/a&gt;
-&lt;a href=&quot;https://developers.libra.org/&quot;&gt;Libra安装&lt;/a&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Thu, 20 Jun 2019 21:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/06/20/Libra%E9%A1%B9%E7%9B%AE/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/06/20/Libra%E9%A1%B9%E7%9B%AE/</guid>
-        
-        <category>六月</category>
-        
-        
-        <category>【解读】</category>
         
       </item>
     

@@ -9,7 +9,6 @@ tag: 【移动端】
 [参考一](https://www.jianshu.com/p/495f5f8045ee)
 [参考二](https://www.cnblogs.com/kenshincui/p/3885689.html)
 
-
 ### NSObject
 
 - 值类型:
@@ -32,7 +31,6 @@ tag: 【移动端】
 	- NSValueTransformer
 
 - XML
-	- NSXMLNode
 	- NSXMLParser
 
 - Strings
@@ -161,6 +159,13 @@ tag: 【移动端】
 
 
 ### NSProxy
+	- [NSProxy1](https://blog.csdn.net/shubinniu/article/details/80895450)
+	- [消息转发](https://blog.csdn.net/liyanjun201/article/details/82620485)
+	- [NSProxy1](https://juejin.im/post/5afbca7bf265da0b8c25251d)
+
+	- NSProxy可以帮助Objective-C间接的实现多重继承的功能。
+	- OC 中一个类只有一个父类, 这就是单一继承, 但是我们可以用协议和 NSProxy 实现多继承
+
 
 
 
