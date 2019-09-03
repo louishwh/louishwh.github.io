@@ -5,9 +5,148 @@
     <description>Seeking truth from facts.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 17 Aug 2019 09:59:30 +0800</pubDate>
-    <lastBuildDate>Sat, 17 Aug 2019 09:59:30 +0800</lastBuildDate>
+    <pubDate>Wed, 21 Aug 2019 09:33:38 +0800</pubDate>
+    <lastBuildDate>Wed, 21 Aug 2019 09:33:38 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>架构与设计模式</title>
+        <description>&lt;h4 id=&quot;依赖&quot;&gt;依赖&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.jianshu.com/p/e5c69c7b8c00&quot;&gt;设计模式&lt;/a&gt;
+&lt;a href=&quot;https://www.jianshu.com/p/7b5ca753ed6a&quot;&gt;iOS开发&lt;/a&gt;
+&lt;a href=&quot;https://github.com/BohdanOrlov/iOS-Developer-Roadmap&quot;&gt;iOS技能树&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;索引&quot;&gt;索引&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;设计的六大原则&lt;/li&gt;
+  &lt;li&gt;架构的目的与目标&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+&lt;h3 id=&quot;设计的七大原则&quot;&gt;设计的七大原则&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;S&lt;/td&gt;
+      &lt;td&gt;Single Responsibility Principle&lt;/td&gt;
+      &lt;td&gt;单一职责原则&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;O&lt;/td&gt;
+      &lt;td&gt;Open Close Principle&lt;/td&gt;
+      &lt;td&gt;开闭原则&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;L&lt;/td&gt;
+      &lt;td&gt;Liskov Substitution Principle&lt;/td&gt;
+      &lt;td&gt;里氏替换原则&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;I&lt;/td&gt;
+      &lt;td&gt;Interface Segregation Principle&lt;/td&gt;
+      &lt;td&gt;接口隔离原则&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;D&lt;/td&gt;
+      &lt;td&gt;Dependence Inversion Principle&lt;/td&gt;
+      &lt;td&gt;依赖倒置原则&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;L&lt;/td&gt;
+      &lt;td&gt;Law Of Demeter&lt;/td&gt;
+      &lt;td&gt;迪米特法则&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;C&lt;/td&gt;
+      &lt;td&gt;Composite/Aggregate Reuse Principle&lt;/td&gt;
+      &lt;td&gt;CARP组合/聚合复用原则&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;⚠️ 面向对象SOLID原则&lt;/p&gt;
+
+&lt;h4 id=&quot;单一职责原则&quot;&gt;单一职责原则&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;一个类只承担一个职责&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;开闭原则&quot;&gt;开闭原则&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;对软件实体的改动，最好用扩展而非修改的方式。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;里氏替换原则&quot;&gt;里氏替换原则&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;子类可以扩展父类的方法，但不应该复写父类的方法。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;接口隔离原则&quot;&gt;接口隔离原则&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;对象不应被强迫依赖它不使用的方法.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;依赖倒置原则&quot;&gt;依赖倒置原则&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;面向接口编程，提取出事务的本质和共性。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;迪米特法则&quot;&gt;迪米特法则&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;一个对象应该对其他对象保持最少的了解，实现低耦合、高内聚。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;组合聚合复用原则&quot;&gt;组合/聚合复用原则&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;就是说要少用继承，多用合成关系来实现。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;h3 id=&quot;架构的目的与目标&quot;&gt;架构的目的与目标&lt;/h3&gt;
+
+&lt;hr /&gt;
+&lt;h3 id=&quot;架构的设计方法和步骤&quot;&gt;架构的设计方法和步骤&lt;/h3&gt;
+
+&lt;hr /&gt;
+&lt;h3 id=&quot;常用的架构&quot;&gt;常用的架构&lt;/h3&gt;
+
+&lt;h4 id=&quot;mvc&quot;&gt;MVC&lt;/h4&gt;
+
+&lt;h4 id=&quot;mvvm&quot;&gt;MVVM&lt;/h4&gt;
+
+&lt;h4 id=&quot;viper&quot;&gt;VIPER&lt;/h4&gt;
+
+&lt;h4 id=&quot;mvp&quot;&gt;MVP&lt;/h4&gt;
+
+</description>
+        <pubDate>Tue, 20 Aug 2019 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/08/20/%E6%9E%B6%E6%9E%84%E4%B8%8E%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/08/20/%E6%9E%B6%E6%9E%84%E4%B8%8E%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</guid>
+        
+        <category>【移动端】</category>
+        
+        
+        <category>【iOS】</category>
+        
+      </item>
+    
+      <item>
+        <title>CoreData</title>
+        <description>
+</description>
+        <pubDate>Sun, 18 Aug 2019 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/08/18/CoreData/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/08/18/CoreData/</guid>
+        
+        <category>【移动端】</category>
+        
+        
+        <category>【iOS】</category>
+        
+      </item>
     
       <item>
         <title>CoreAnimation</title>
@@ -1495,316 +1634,6 @@
         
         
         <category>【iOS】</category>
-        
-      </item>
-    
-      <item>
-        <title>如何学习一门编程语言？</title>
-        <description>&lt;blockquote&gt;
-  &lt;p&gt;先学习几门，然后总结，实践与理论相结合。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;最近几年学会了几门编程语言：&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;C&lt;/li&gt;
-  &lt;li&gt;Objective-C&lt;/li&gt;
-  &lt;li&gt;C++&lt;/li&gt;
-  &lt;li&gt;Java&lt;/li&gt;
-  &lt;li&gt;Swift&lt;/li&gt;
-  &lt;li&gt;Kotlin&lt;/li&gt;
-  &lt;li&gt;Go&lt;/li&gt;
-  &lt;li&gt;Python&lt;/li&gt;
-  &lt;li&gt;Rust&lt;/li&gt;
-  &lt;li&gt;Ada&lt;/li&gt;
-  &lt;li&gt;…&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;编程语言层次&quot;&gt;编程语言层次&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;h5 id=&quot;你学习编程的目的&quot;&gt;你学习编程的目的？：&lt;/h5&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;编程就是为了解决问题&lt;/p&gt;
-    &lt;/blockquote&gt;
-    &lt;ul&gt;
-      &lt;li&gt;成为一名黑客？&lt;/li&gt;
-      &lt;li&gt;成为一名架构师？
-        &lt;ul&gt;
-          &lt;li&gt;前端有木有？
-            &lt;ul&gt;
-              &lt;li&gt;Vue有木有？&lt;/li&gt;
-              &lt;li&gt;React有木有？&lt;/li&gt;
-              &lt;li&gt;Angular有木有？&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;后端有木有？
-            &lt;ul&gt;
-              &lt;li&gt;PHP有木有？&lt;/li&gt;
-              &lt;li&gt;Java有木有？
-                &lt;ul&gt;
-                  &lt;li&gt;SpringBoot有木有？
-                    &lt;ul&gt;
-                      &lt;li&gt;netty?&lt;/li&gt;
-                      &lt;li&gt;jetty?&lt;/li&gt;
-                    &lt;/ul&gt;
-                  &lt;/li&gt;
-                &lt;/ul&gt;
-              &lt;/li&gt;
-              &lt;li&gt;Python有木有？
-                &lt;ul&gt;
-                  &lt;li&gt;Django?&lt;/li&gt;
-                  &lt;li&gt;Flask?&lt;/li&gt;
-                  &lt;li&gt;Tornado?&lt;/li&gt;
-                &lt;/ul&gt;
-              &lt;/li&gt;
-              &lt;li&gt;数据持久化有木有？
-                &lt;ul&gt;
-                  &lt;li&gt;Mysql?&lt;/li&gt;
-                  &lt;li&gt;Oracle&lt;/li&gt;
-                  &lt;li&gt;&lt;/li&gt;
-                &lt;/ul&gt;
-              &lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;移动端有木有？
-            &lt;ul&gt;
-              &lt;li&gt;Android有木有？&lt;/li&gt;
-              &lt;li&gt;iOS有木有？
-                &lt;ul&gt;
-                  &lt;li&gt;MVC?&lt;/li&gt;
-                  &lt;li&gt;MVVM?
-                    &lt;ul&gt;
-                      &lt;li&gt;RxSwift?&lt;/li&gt;
-                    &lt;/ul&gt;
-                  &lt;/li&gt;
-                  &lt;li&gt;MVP?&lt;/li&gt;
-                &lt;/ul&gt;
-              &lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-
-    &lt;blockquote&gt;
-      &lt;p&gt;目的决定态度，态度决定高度。&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;h5 id=&quot;基础环境&quot;&gt;基础环境：&lt;/h5&gt;
-    &lt;ol&gt;
-      &lt;li&gt;安装语言的开发环境（编译器、解释器、IDE）&lt;/li&gt;
-      &lt;li&gt;选一个适合自己的编辑器
-        &lt;ul&gt;
-          &lt;li&gt;&lt;a href=&quot;http://www.gnu.org/software/emacs/&quot;&gt;Emacs&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;https://www.vim.org/&quot;&gt;Vim&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;https://www.sublimetext.com/3&quot;&gt;Sublime&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;https://code.visualstudio.com/&quot;&gt;VScode&lt;/a&gt;
-            &lt;blockquote&gt;
-              &lt;p&gt;最好选一款编辑器用到很溜&lt;/p&gt;
-            &lt;/blockquote&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;h5 id=&quot;语法层面&quot;&gt;语法层面：&lt;/h5&gt;
-    &lt;ul&gt;
-      &lt;li&gt;面向过程编程
-        &lt;ol&gt;
-          &lt;li&gt;关键字&lt;/li&gt;
-          &lt;li&gt;代码规范&lt;/li&gt;
-          &lt;li&gt;数据类型&lt;/li&gt;
-          &lt;li&gt;运算符&lt;/li&gt;
-          &lt;li&gt;流程控制&lt;/li&gt;
-          &lt;li&gt;函数&lt;/li&gt;
-        &lt;/ol&gt;
-      &lt;/li&gt;
-      &lt;li&gt;面向对象编程
-        &lt;ol&gt;
-          &lt;li&gt;类&lt;/li&gt;
-          &lt;li&gt;封装&lt;/li&gt;
-          &lt;li&gt;继承&lt;/li&gt;
-          &lt;li&gt;多态&lt;/li&gt;
-        &lt;/ol&gt;
-      &lt;/li&gt;
-      &lt;li&gt;函数式编程
-        &lt;ol&gt;
-          &lt;li&gt;高阶函数&lt;/li&gt;
-          &lt;li&gt;Map、reduce、filter&lt;/li&gt;
-        &lt;/ol&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;h5 id=&quot;设计模式&quot;&gt;设计模式：&lt;/h5&gt;
-    &lt;ul&gt;
-      &lt;li&gt;可参考书籍：
-        &lt;ul&gt;
-          &lt;li&gt;《Head First设计模式》&lt;/li&gt;
-          &lt;li&gt;《23种设计模式》&lt;/li&gt;
-          &lt;li&gt;《图解设计模式》&lt;/li&gt;
-          &lt;li&gt;《Swift设计模式》&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;创建型
-        &lt;ul&gt;
-          &lt;li&gt;单例模式&lt;/li&gt;
-          &lt;li&gt;工厂模式&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;结构型
-        &lt;ul&gt;
-          &lt;li&gt;门面模式&lt;/li&gt;
-          &lt;li&gt;代理模式&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;行为型
-        &lt;ul&gt;
-          &lt;li&gt;观察者模式&lt;/li&gt;
-          &lt;li&gt;命令模式&lt;/li&gt;
-          &lt;li&gt;模版模式&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;h5 id=&quot;架构设计&quot;&gt;架构设计：&lt;/h5&gt;
-    &lt;ul&gt;
-      &lt;li&gt;可参考书籍：
-        &lt;ul&gt;
-          &lt;li&gt;《从零开始学架构》&lt;/li&gt;
-          &lt;li&gt;《聊聊架构》&lt;/li&gt;
-          &lt;li&gt;《架构即未来》&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;开发人员架构设计
-        &lt;ul&gt;
-          &lt;li&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;软件架构
-  -
-        &lt;ul&gt;
-          &lt;li&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;通用架构
-  -
-        &lt;ul&gt;
-          &lt;li&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-</description>
-        <pubDate>Sat, 06 Jul 2019 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/07/06/%E5%A6%82%E4%BD%95%E5%AD%A6%E4%B9%A0%E4%B8%80%E9%97%A8%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/07/06/%E5%A6%82%E4%BD%95%E5%AD%A6%E4%B9%A0%E4%B8%80%E9%97%A8%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/</guid>
-        
-        <category>【编程语言】</category>
-        
-        
-        <category>【方法论】</category>
-        
-      </item>
-    
-      <item>
-        <title>iOS砸壳</title>
-        <description>&lt;h3 id=&quot;砸壳是什么&quot;&gt;砸壳是什么？&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;软件脱壳
-    &lt;ul&gt;
-      &lt;li&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;砸壳原理
-    &lt;ul&gt;
-      &lt;li&gt;应用加壳&lt;/li&gt;
-      &lt;li&gt;应用砸壳
-        &lt;ol&gt;
-          &lt;li&gt;静态砸壳
-            &lt;ul&gt;
-              &lt;li&gt;需要知道壳应用的加密算法和逻辑后，对不运行的应用程序解密&lt;/li&gt;
-              &lt;li&gt;难度大&lt;/li&gt;
-              &lt;li&gt;很容易在破解后被改变&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;动态砸壳
-            &lt;ul&gt;
-              &lt;li&gt;从运行的进程内存空间中的可执行程序映像入手&lt;/li&gt;
-              &lt;li&gt;将内存中的内容进行转储处理后实现脱壳处理&lt;/li&gt;
-              &lt;li&gt;相对简单，且越过加密技术&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ol&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;iOS应用运行原理
-    &lt;ul&gt;
-      &lt;li&gt;应用壳&lt;/li&gt;
-      &lt;li&gt;MachO&lt;/li&gt;
-      &lt;li&gt;DYLD&lt;/li&gt;
-      &lt;li&gt;共享缓存库
-        &lt;ul&gt;
-          &lt;li&gt;动态库&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;砸壳的工具&quot;&gt;砸壳的工具&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;http://www.i-funbox.com/&quot;&gt;iFunBox&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Clutch
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;https://github.com/KJCracks/Clutch/releases&quot;&gt;Clutch-Github&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://www.jianshu.com/p/ab79a8a641dc&quot;&gt;介绍文件&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://www.jianshu.com/p/b2f2e6575e0c&quot;&gt;dumpdecrypted&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://www.jianshu.com/p/12407c198ff0&quot;&gt;frida-iOS-dump&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.hopperapp.com/&quot;&gt;Hopper&lt;/a&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;https://www.jianshu.com/p/b6737504c71e&quot;&gt;Hopper&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.jianshu.com/p/b6737504c71e&quot;&gt;软件&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;引申问题&quot;&gt;引申问题&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;iOS/MacOS的内核了解？&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;相对安全：破解的成本 &amp;gt; 破解后的收获&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
-        <pubDate>Sat, 06 Jul 2019 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/07/06/iOS%E7%A0%B8%E5%A3%B3/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/07/06/iOS%E7%A0%B8%E5%A3%B3/</guid>
-        
-        <category>【编程语言】</category>
-        
-        
-        <category>【技术】</category>
         
       </item>
     
