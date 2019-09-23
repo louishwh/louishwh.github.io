@@ -39,7 +39,8 @@ tag: 【后端】
 			- Container的Engine获取请求, 交给Host
 				- Host获取请求, 交给Context
 					- Context获取请求, 匹配Servlet,交给Servlet
-						- 构造HttpServletRequest, HttpServletResponse				- Context返回HttpServletResponse给Host
+						- 构造HttpServletRequest, HttpServletResponse				
+					- Context返回HttpServletResponse给Host
 				- Host返回HttpServletResponse给Engine
 			- Engine返回HttpServletResponse给Connector
 	- Connector返回HttpServletResponse给Browser
