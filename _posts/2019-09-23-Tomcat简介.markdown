@@ -16,7 +16,7 @@ tag: 【后端】
 
 #### Tomcat结构
 
-![/images/2019-09-23-tomcat结构.png](/images/2019-09-23-tomcat结构)
+![/images/2019-09-23-tomcat结构.png](/images/2019-09-23-tomcat结构.png)
 
 - Service
 	- Connector
