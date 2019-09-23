@@ -35,3 +35,16 @@ tag: 【后端】
 [RabbitMQ](https://www.rabbitmq.com/api-guide.html)
 
 [RxJava](https://blog.csdn.net/likuangren/article/details/79171285)
+
+
+[Swagger](https://blog.csdn.net/u014231523/article/details/76522486)
+[Swagger](https://blog.csdn.net/wyb880501/article/details/79576784)
+
+[OkHttp](https://blog.csdn.net/u013651026/article/details/79738059)
+
+
+[服务发现](https://blog.csdn.net/zhaipengfei1231/article/details/81317556)
+[权限管理](https://blog.csdn.net/wzj_110/article/details/81590472)
+
+
+
