@@ -1,0 +1,50 @@
+---
+layout: post
+title: Tomcat简介
+date: 2019-09-23 00:00:00 +0800
+categories: 【Tomcat】
+tag: 【后端】
+---
+
+
+### 阐述的内容
+
+1. Tomcat结构图
+2. Tomcat启动过程
+3. Tomcat请求处理过程
+
+
+#### Tomcat结构
+
+![/images/2019-09-23-tomcat结构.png](/images/2019-09-23-tomcat结构)
+
+- Service
+	- Connector
+		- Container
+			- Engine
+				- Host
+					- Context
+						- Wrapper: 对应一个Servlet Class
+
+#### Tomcat启动过程
+
+
+
+#### Tomcat请求处理过程
+
+- 本机端口获取数据, Connector获取
+	- Connector: 监听端口的TCP连接请求 
+		- 创建Request和Response
+		- 产生一个线程把请求传递给Container.Engine
+			- Container的Engine获取请求, 交给Host
+				- Host获取请求, 交给Context
+					- Context获取请求, 匹配Servlet,交给Servlet
+						- 构造HttpServletRequest, HttpServletResponse				- Context返回HttpServletResponse给Host
+				- Host返回HttpServletResponse给Engine
+			- Engine返回HttpServletResponse给Connector
+	- Connector返回HttpServletResponse给Browser
+
+
+
+
+
