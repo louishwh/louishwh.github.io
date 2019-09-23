@@ -14,7 +14,7 @@ tag: 【后端】
 3. Tomcat请求处理过程
 
 
-#### Tomcat结构
+#### 1. Tomcat结构
 
 ![/images/2019-09-23-tomcat结构.png](/images/2019-09-23-tomcat结构.png)
 
@@ -26,11 +26,11 @@ tag: 【后端】
 					- Context
 						- Wrapper: 对应一个Servlet Class
 
-#### Tomcat启动过程
+#### 2. Tomcat启动过程
 
 
 
-#### Tomcat请求处理过程
+#### 3. Tomcat请求处理过程
 
 - 本机端口获取数据, Connector获取
 	- Connector: 监听端口的TCP连接请求 
