@@ -6,6 +6,11 @@ categories: 【Tomcat】
 tag: 【后端】
 ---
 
+[Tomcat源码](https://github.com/apache/tomcat)
+
+
+[阅读Tomcat源码](https://yq.aliyun.com/articles/663198)
+[Tomcat架构](https://blog.csdn.net/w1992wishes/article/details/79242797)
 
 ### 阐述的内容
 
