@@ -1,0 +1,60 @@
+---
+layout: post
+title: Swift
+date: 2019-10-04 10:00:00 +0800
+categories: 【后端】
+tag: 【架构师】
+---
+
+
+![/images/2019-10-04Jvm后端.png](/images/2019-10-04Jvm后端.png)
+
+网关
+    - Nginx
+        - Kong
+服务器
+    - Tomcat
+    - Netty
+    - Jetty
+缓冲
+    - RocketMQ
+    - RabbitMQ
+[缓存]((https://www.cnblogs.com/panchanggui/p/9503666.html))
+    - CDN
+    - Ehcache
+    - Guava Cache
+    - Redis
+    - Memcached
+编程语言
+    - Java ✅
+    - Kotlin ✅
+    - Groovy ✅
+    - Scala ✅
+    - Clojure
+    - Jython(python)
+    - JRuby (ruby)
+    - Ceylon
+    - Eta
+    - Haxe
+持久化
+    - MySQL
+    - MongoDB
+    - PostgreSQL
+编程工具
+    - 编辑器
+        - InteliJ IDEA
+        - Eclipse
+        - Vim
+        - Emacs
+    - 运行环境
+        - JVM
+    - 框架
+        - Spring
+        - SpringBoot
+        - SprngCloud
+        - Dropwizard
+        - Dubbo
+    - 依赖管理工具
+        - Ant
+        - Maven
+        - Gradle
