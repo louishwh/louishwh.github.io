@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Swift
+title: JVM系后端知识框架
 date: 2019-10-04 10:00:00 +0800
 categories: 【后端】
 tag: 【架构师】
@@ -9,23 +9,23 @@ tag: 【架构师】
 
 ![/images/2019-10-04Jvm后端.png](/images/2019-10-04Jvm后端.png)
 
-网关
+- 网关
     - Nginx
         - Kong
-服务器
+- 服务器
     - Tomcat
     - Netty
     - Jetty
-缓冲
+- 缓冲
     - RocketMQ
     - RabbitMQ
-[缓存]((https://www.cnblogs.com/panchanggui/p/9503666.html))
+- [缓存]((https://www.cnblogs.com/panchanggui/p/9503666.html))
     - CDN
     - Ehcache
     - Guava Cache
     - Redis
     - Memcached
-编程语言
+- 编程语言
     - Java ✅
     - Kotlin ✅
     - Groovy ✅
@@ -36,11 +36,11 @@ tag: 【架构师】
     - Ceylon
     - Eta
     - Haxe
-持久化
+- 持久化
     - MySQL
     - MongoDB
     - PostgreSQL
-编程工具
+- 编程工具
     - 编辑器
         - InteliJ IDEA
         - Eclipse
