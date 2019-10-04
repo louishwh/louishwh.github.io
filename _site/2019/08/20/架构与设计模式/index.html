@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>架构与设计模式 - Atomix</title>
+
+	<link rel="shortcut icon" href="/styles/images/favicon.jpg">
+	<link rel="icon" href="/styles/images/favicon.jpg">
+
+	<link rel="stylesheet" href="/styles/css/index.css">
+	<link rel="stylesheet" href="/styles/css/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/styles/css/syntax.css">
+	<link rel="canonical" href="/2019/08/20/%E6%9E%B6%E6%9E%84%E4%B8%8E%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">
+	<link rel="alternate" type="application/rss+xml" title="Atomix" href="/feed.xml">
+	
+	<meta name="keywords" content="架构与设计模式, Atomix, Atomix">
+	<meta name="description" content="Atomix">
+
+	<script src="/styles/js/jquery.min.js"></script>
+	<!--[if lt IE 9]>
+    	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  	<![endif]-->
+  	<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "//hm.baidu.com/hm.js?624f97ab37fd73fbedc7929427ca95ea";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+  	<style type="text/css">
+	  	.docs-content{
+	  		margin-bottom: 10px;
+	  	}
+  	</style>
+</head>
+
+  <body class="index">
+
+    <header class="navbar navbar-inverse navbar-fixed-top docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand">
+        <img src="/styles/images/logo.png">
+      </a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">    
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/categories/">Category</a>
+        </li>
+        <li>
+          <a href="/tag">Index</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+            <a><span id="busuanzi_container_site_pv">总访问量<span id="busuanzi_value_site_pv"></span>次</span></a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">关于<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a rel="nofollow" target="_blank" href="https://github.com/louishwh/">Github</a></li>
+            <li><a rel="nofollow" target="_blank" href="">关于作者</a></li>
+            <li><a rel="nofollow" href="/books">我的书单</a></li>
+            <li class="divider"></li>
+            <li><a rel="nofollow" target="_blank" href="https://github.com/luoyan35714/LessOrMore.git">本项目</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+    <div class="docs-header" id="content">
+  <div class="container">
+  	
+  		<!--
+		    <h1>架构与设计模式</h1>
+		    <p>Post on Aug 20, 2019 by <a href="/about">louis han</a></p>
+		-->
+		    <h1>Seeking truth from facts.</h1>
+    
+  </div>
+</div>
+    
+      
+<div class="banner">
+  <div class="container">
+  	
+    	<a href="/categories/#【iOS】-ref">【iOS】</a>	/
+    	<a href="/tag/#【移动端】-ref">【移动端】</a>
+    
+  </div>
+</div>
+
+    
+
+    <div class="container docs-container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="sidebar hidden-print" role="complementary">
+        <div id="navigation">
+  <h1>目录</h1>
+  <ul class="nav sidenav">
+  </ul>
+  <div style="height: 200px;width: 200px;">
+    <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async"> 
+    </script>
+  </div>
+</div>
+
+ 
+      </div>
+    </div>
+    <div class="col-md-9" role="main">
+      <div class="panel docs-content">
+        <div class="wrapper">
+            <header class="post-header">
+              <h1 class="post-title">架构与设计模式</h1>
+              <!--
+                <p class="post-meta">Aug 20, 2019</p>
+              -->
+              <div class="meta">Posted on <span class="postdate">Aug 20, 2019</span> By <a target="_blank" href="http://localhost:4000">louis han</a></div>
+              <br />
+            </header>
+            <article class="post-content">
+              <h4 id="依赖">依赖</h4>
+<p><a href="https://www.jianshu.com/p/e5c69c7b8c00">设计模式</a>
+<a href="https://www.jianshu.com/p/7b5ca753ed6a">iOS开发</a>
+<a href="https://github.com/BohdanOrlov/iOS-Developer-Roadmap">iOS技能树</a></p>
+
+<h2 id="索引">索引</h2>
+
+<ol>
+  <li>设计的六大原则</li>
+  <li>架构的目的与目标</li>
+  <li></li>
+</ol>
+
+<hr />
+<h3 id="设计的七大原则">设计的七大原则</h3>
+
+<table>
+  <tbody>
+    <tr>
+      <td>S</td>
+      <td>Single Responsibility Principle</td>
+      <td>单一职责原则</td>
+    </tr>
+    <tr>
+      <td>O</td>
+      <td>Open Close Principle</td>
+      <td>开闭原则</td>
+    </tr>
+    <tr>
+      <td>L</td>
+      <td>Liskov Substitution Principle</td>
+      <td>里氏替换原则</td>
+    </tr>
+    <tr>
+      <td>I</td>
+      <td>Interface Segregation Principle</td>
+      <td>接口隔离原则</td>
+    </tr>
+    <tr>
+      <td>D</td>
+      <td>Dependence Inversion Principle</td>
+      <td>依赖倒置原则</td>
+    </tr>
+    <tr>
+      <td>L</td>
+      <td>Law Of Demeter</td>
+      <td>迪米特法则</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>Composite/Aggregate Reuse Principle</td>
+      <td>CARP组合/聚合复用原则</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>⚠️ 面向对象SOLID原则</p>
+
+<h4 id="单一职责原则">单一职责原则</h4>
+<ul>
+  <li>一个类只承担一个职责</li>
+</ul>
+
+<h4 id="开闭原则">开闭原则</h4>
+<ul>
+  <li>对软件实体的改动，最好用扩展而非修改的方式。</li>
+</ul>
+
+<h4 id="里氏替换原则">里氏替换原则</h4>
+<ul>
+  <li>子类可以扩展父类的方法，但不应该复写父类的方法。</li>
+</ul>
+
+<h4 id="接口隔离原则">接口隔离原则</h4>
+<ul>
+  <li>对象不应被强迫依赖它不使用的方法.</li>
+</ul>
+
+<h4 id="依赖倒置原则">依赖倒置原则</h4>
+<ul>
+  <li>面向接口编程，提取出事务的本质和共性。</li>
+</ul>
+
+<h4 id="迪米特法则">迪米特法则</h4>
+<ul>
+  <li>一个对象应该对其他对象保持最少的了解，实现低耦合、高内聚。</li>
+</ul>
+
+<h4 id="组合聚合复用原则">组合/聚合复用原则</h4>
+<ul>
+  <li>就是说要少用继承，多用合成关系来实现。</li>
+</ul>
+
+<hr />
+<h3 id="架构的目的与目标">架构的目的与目标</h3>
+
+<hr />
+<h3 id="架构的设计方法和步骤">架构的设计方法和步骤</h3>
+
+<hr />
+<h3 id="常用的架构">常用的架构</h3>
+
+<h4 id="mvc">MVC</h4>
+
+<h4 id="mvvm">MVVM</h4>
+
+<h4 id="viper">VIPER</h4>
+
+<h4 id="mvp">MVP</h4>
+
+
+            </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+    <footer class="footer" role="contentinfo">
+	<div class="container">
+		<p class="copyright">Copyright &copy; 2014-2019 <a href=""><code>louis han</code></a>.</p>
+		<p>Powered by <a href="http://jekyllrb.com">Jekyll</a>, themed from <a href="http://lesscss.cn/">Less</a>, refactored by <a href="http://www.sincerehwh.cn/">Sincere Han</a></p>
+	</div>
+</footer>
+
+<script src="/styles/js/jquery.min.js"></script>
+<script src="/styles/js/bootstrap.min.js"></script>
+<script src="/styles/js/holder.min.js"></script>
+<script src="/styles/js/lessismore.js"></script>
+<script src="/styles/js/application.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  </body>
+</html>

@@ -5,35 +5,1027 @@
     <description>Seeking truth from facts.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-<<<<<<< HEAD
-    <pubDate>Thu, 20 Jun 2019 09:38:13 +0800</pubDate>
-    <lastBuildDate>Thu, 20 Jun 2019 09:38:13 +0800</lastBuildDate>
+    <pubDate>Wed, 21 Aug 2019 09:33:38 +0800</pubDate>
+    <lastBuildDate>Wed, 21 Aug 2019 09:33:38 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
-        <title>Web API的设计与开发</title>
-        <description>
+        <title>架构与设计模式</title>
+        <description>&lt;h4 id=&quot;依赖&quot;&gt;依赖&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.jianshu.com/p/e5c69c7b8c00&quot;&gt;设计模式&lt;/a&gt;
+&lt;a href=&quot;https://www.jianshu.com/p/7b5ca753ed6a&quot;&gt;iOS开发&lt;/a&gt;
+&lt;a href=&quot;https://github.com/BohdanOrlov/iOS-Developer-Roadmap&quot;&gt;iOS技能树&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;索引&quot;&gt;索引&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;设计的六大原则&lt;/li&gt;
+  &lt;li&gt;架构的目的与目标&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+&lt;h3 id=&quot;设计的七大原则&quot;&gt;设计的七大原则&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;S&lt;/td&gt;
+      &lt;td&gt;Single Responsibility Principle&lt;/td&gt;
+      &lt;td&gt;单一职责原则&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;O&lt;/td&gt;
+      &lt;td&gt;Open Close Principle&lt;/td&gt;
+      &lt;td&gt;开闭原则&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;L&lt;/td&gt;
+      &lt;td&gt;Liskov Substitution Principle&lt;/td&gt;
+      &lt;td&gt;里氏替换原则&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;I&lt;/td&gt;
+      &lt;td&gt;Interface Segregation Principle&lt;/td&gt;
+      &lt;td&gt;接口隔离原则&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;D&lt;/td&gt;
+      &lt;td&gt;Dependence Inversion Principle&lt;/td&gt;
+      &lt;td&gt;依赖倒置原则&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;L&lt;/td&gt;
+      &lt;td&gt;Law Of Demeter&lt;/td&gt;
+      &lt;td&gt;迪米特法则&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;C&lt;/td&gt;
+      &lt;td&gt;Composite/Aggregate Reuse Principle&lt;/td&gt;
+      &lt;td&gt;CARP组合/聚合复用原则&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;⚠️ 面向对象SOLID原则&lt;/p&gt;
+
+&lt;h4 id=&quot;单一职责原则&quot;&gt;单一职责原则&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;一个类只承担一个职责&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;开闭原则&quot;&gt;开闭原则&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;对软件实体的改动，最好用扩展而非修改的方式。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;里氏替换原则&quot;&gt;里氏替换原则&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;子类可以扩展父类的方法，但不应该复写父类的方法。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;接口隔离原则&quot;&gt;接口隔离原则&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;对象不应被强迫依赖它不使用的方法.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;依赖倒置原则&quot;&gt;依赖倒置原则&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;面向接口编程，提取出事务的本质和共性。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;迪米特法则&quot;&gt;迪米特法则&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;一个对象应该对其他对象保持最少的了解，实现低耦合、高内聚。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;组合聚合复用原则&quot;&gt;组合/聚合复用原则&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;就是说要少用继承，多用合成关系来实现。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;h3 id=&quot;架构的目的与目标&quot;&gt;架构的目的与目标&lt;/h3&gt;
+
+&lt;hr /&gt;
+&lt;h3 id=&quot;架构的设计方法和步骤&quot;&gt;架构的设计方法和步骤&lt;/h3&gt;
+
+&lt;hr /&gt;
+&lt;h3 id=&quot;常用的架构&quot;&gt;常用的架构&lt;/h3&gt;
+
+&lt;h4 id=&quot;mvc&quot;&gt;MVC&lt;/h4&gt;
+
+&lt;h4 id=&quot;mvvm&quot;&gt;MVVM&lt;/h4&gt;
+
+&lt;h4 id=&quot;viper&quot;&gt;VIPER&lt;/h4&gt;
+
+&lt;h4 id=&quot;mvp&quot;&gt;MVP&lt;/h4&gt;
+
 </description>
-        <pubDate>Mon, 17 Jun 2019 21:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/06/17/Web-API%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%BC%80%E5%8F%91/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/06/17/Web-API%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%BC%80%E5%8F%91/</guid>
+        <pubDate>Tue, 20 Aug 2019 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/08/20/%E6%9E%B6%E6%9E%84%E4%B8%8E%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/08/20/%E6%9E%B6%E6%9E%84%E4%B8%8E%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</guid>
         
-        <category>六月</category>
-=======
-    <pubDate>Sun, 21 Jul 2019 23:05:13 +0800</pubDate>
-    <lastBuildDate>Sun, 21 Jul 2019 23:05:13 +0800</lastBuildDate>
-    <generator>Jekyll v3.8.5</generator>
+        <category>【移动端】</category>
+        
+        
+        <category>【iOS】</category>
+        
+      </item>
     
       <item>
-        <title>高阶Python玩法</title>
+        <title>CoreData</title>
         <description>
 </description>
-        <pubDate>Sun, 21 Jul 2019 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/07/21/%E9%AB%98%E9%98%B6Python/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/07/21/%E9%AB%98%E9%98%B6Python/</guid>
+        <pubDate>Sun, 18 Aug 2019 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/08/18/CoreData/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/08/18/CoreData/</guid>
+        
+        <category>【移动端】</category>
+        
+        
+        <category>【iOS】</category>
+        
+      </item>
+    
+      <item>
+        <title>CoreAnimation</title>
+        <description>
+</description>
+        <pubDate>Sat, 17 Aug 2019 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/08/17/CoreAnimation/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/08/17/CoreAnimation/</guid>
+        
+        <category>【移动端】</category>
+        
+        
+        <category>【iOS】</category>
+        
+      </item>
+    
+      <item>
+        <title>iOS-UIKit</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/documentation/uikit&quot;&gt;Apple官网-UIKit&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/documentation/uikit/views_and_controls?changes=latest_major&quot;&gt;Views and Controls&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;UIView and Controls&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;Container Views
+        &lt;ul&gt;
+          &lt;li&gt;Collection Views&lt;/li&gt;
+          &lt;li&gt;Table Views&lt;/li&gt;
+          &lt;li&gt;UIStackView&lt;/li&gt;
+          &lt;li&gt;UIScrollView&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Content Views
+        &lt;ul&gt;
+          &lt;li&gt;UIActivityIndicatorView&lt;/li&gt;
+          &lt;li&gt;UIImageView&lt;/li&gt;
+          &lt;li&gt;UIPickerView&lt;/li&gt;
+          &lt;li&gt;UIProgressView&lt;/li&gt;
+          &lt;li&gt;&lt;del&gt;UIWebView&lt;/del&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Controls
+        &lt;ul&gt;
+          &lt;li&gt;UIControl&lt;/li&gt;
+          &lt;li&gt;UIButton&lt;/li&gt;
+          &lt;li&gt;UIDatePicker&lt;/li&gt;
+          &lt;li&gt;UIPageControl&lt;/li&gt;
+          &lt;li&gt;UISegmentedControl&lt;/li&gt;
+          &lt;li&gt;UISlider&lt;/li&gt;
+          &lt;li&gt;UIStepper&lt;/li&gt;
+          &lt;li&gt;UISwitch&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Text Views
+        &lt;ul&gt;
+          &lt;li&gt;UILabel&lt;/li&gt;
+          &lt;li&gt;UITextField&lt;/li&gt;
+          &lt;li&gt;UITextView&lt;/li&gt;
+          &lt;li&gt;UISearchTextField&lt;/li&gt;
+          &lt;li&gt;UISearchToken&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Visual Effects
+        &lt;ul&gt;
+          &lt;li&gt;UIVisualEffect&lt;/li&gt;
+          &lt;li&gt;UIVisualEffectView&lt;/li&gt;
+          &lt;li&gt;UIVibrancyEffect&lt;/li&gt;
+          &lt;li&gt;UIBlurEffect&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Bars
+        &lt;ul&gt;
+          &lt;li&gt;UIBarItem&lt;/li&gt;
+          &lt;li&gt;UIBarButtonItem&lt;/li&gt;
+          &lt;li&gt;UIBarButtonItemGroup&lt;/li&gt;
+          &lt;li&gt;UINavigationBar&lt;/li&gt;
+          &lt;li&gt;UISearchBar&lt;/li&gt;
+          &lt;li&gt;UIToolbar&lt;/li&gt;
+          &lt;li&gt;UITabBar&lt;/li&gt;
+          &lt;li&gt;UITabBarItem&lt;/li&gt;
+          &lt;li&gt;UIBarPositioning&lt;/li&gt;
+          &lt;li&gt;UIBarPositioningDelegate&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Content Viewer
+        &lt;ul&gt;
+          &lt;li&gt;UILargeContentViewerInteraction&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Related Types
+        &lt;ul&gt;
+          &lt;li&gt;UIOffset&lt;/li&gt;
+          &lt;li&gt;UIEdgeInsets&lt;/li&gt;
+          &lt;li&gt;NSDirectionalEdgeInsets&lt;/li&gt;
+          &lt;li&gt;NSDirectionalRectEdge&lt;/li&gt;
+          &lt;li&gt;NSRectAlignment&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;View Controllers&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Custom View Controllers
+        &lt;ul&gt;
+          &lt;li&gt;UIViewController&lt;/li&gt;
+          &lt;li&gt;UITableViewController&lt;/li&gt;
+          &lt;li&gt;UICollectionViewController
+            &lt;ul&gt;
+              &lt;li&gt;UIContentContainer&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Split View Interface
+        &lt;ul&gt;
+          &lt;li&gt;UISplitViewController&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Navigation Interface
+        &lt;ul&gt;
+          &lt;li&gt;UINavigationController&lt;/li&gt;
+          &lt;li&gt;UINavigationBar&lt;/li&gt;
+          &lt;li&gt;UINavigationItem&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Page View Interface
+        &lt;ul&gt;
+          &lt;li&gt;UIPageViewController&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Tab View Interface
+        &lt;ul&gt;
+          &lt;li&gt;UITabBarController&lt;/li&gt;
+          &lt;li&gt;UITabBar&lt;/li&gt;
+          &lt;li&gt;UITabBarItem&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Search Interface
+        &lt;ul&gt;
+          &lt;li&gt;UISearchContainerViewController&lt;/li&gt;
+          &lt;li&gt;UISearchController&lt;/li&gt;
+          &lt;li&gt;UISearchBar&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Images and Video
+        &lt;ul&gt;
+          &lt;li&gt;UIImagePickerController&lt;/li&gt;
+          &lt;li&gt;UIVideoEditorController&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Document Previewing
+        &lt;ul&gt;
+          &lt;li&gt;UIDocumentInteractionController&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;iCloud Sharing
+        &lt;ul&gt;
+          &lt;li&gt;UICloudSharingController&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+ 	- Activities Interface
+ 		- UIActivityViewController
+ 		- UIActivityItemProvider
+ 		- UIActivityItemSource
+ 		- UIActivity
+
+ 	- Font Picker
+ 		- UIFontPickerViewController
+ 		- UIFontPickerViewController.Configuration
+
+ 	- Word Lookup
+ 		- UIReferenceLibraryViewController
+
+ 	- Printer Picker
+ 		- UIPrinterPickerController
+
+&lt;ul&gt;
+  &lt;li&gt;View Layout
+    &lt;ul&gt;
+      &lt;li&gt;First Steps
+        &lt;ul&gt;
+          &lt;li&gt;UIStackView&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Constraints
+        &lt;ul&gt;
+          &lt;li&gt;NSLayoutConstraint&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Layout Guides
+        &lt;ul&gt;
+          &lt;li&gt;UILayoutGuide&lt;/li&gt;
+          &lt;li&gt;NSLayoutDimension&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Anchors
+        &lt;ul&gt;
+          &lt;li&gt;NSLayoutAnchor&lt;/li&gt;
+          &lt;li&gt;NSLayoutXAxisAnchor&lt;/li&gt;
+          &lt;li&gt;NSLayoutYAxisAnchor&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Appearance Customization(外观定制)
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;Dark Mode&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Navigation Bar Appearance
+        &lt;ul&gt;
+          &lt;li&gt;UINavigationBarAppearance&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Toolbar Appearance
+        &lt;ul&gt;
+          &lt;li&gt;UIToolbarAppearance&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Tab Bar Appearance
+        &lt;ul&gt;
+          &lt;li&gt;UITabBarAppearance&lt;/li&gt;
+          &lt;li&gt;UITabBarItemAppearance&lt;/li&gt;
+          &lt;li&gt;UITabBarItemStateAppearance&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Shared Appearance
+        &lt;ul&gt;
+          &lt;li&gt;UIBarAppearance&lt;/li&gt;
+          &lt;li&gt;UIBarButtonItemAppearance&lt;/li&gt;
+          &lt;li&gt;UIBarButtonItemStateAppearance&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Appearance Proxies
+        &lt;ul&gt;
+          &lt;li&gt;UIAppearance&lt;/li&gt;
+          &lt;li&gt;UIAppearanceContainer&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Animation and Haptics
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;Content Animations&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Physics-Based Animations&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Parallax Effects(视差影响)&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Haptic Feedback&lt;/p&gt;
+        &lt;ul&gt;
+          &lt;li&gt;UIFeedbackGenerator&lt;/li&gt;
+          &lt;li&gt;UIImpactFeedbackGenerator&lt;/li&gt;
+          &lt;li&gt;UINotificationFeedbackGenerator&lt;/li&gt;
+          &lt;li&gt;UISelectionFeedbackGenerator&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Windows and Screens
+    &lt;ul&gt;
+      &lt;li&gt;Windows
+        &lt;ul&gt;
+          &lt;li&gt;UIWidow&lt;/li&gt;
+          &lt;li&gt;UICoordinateSpace&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Popovers
+        &lt;ul&gt;
+          &lt;li&gt;UIPopoverPresentationController&lt;/li&gt;
+          &lt;li&gt;UIPopoverBackgroundView&lt;/li&gt;
+          &lt;li&gt;UIPopoverBackgroundViewMethods&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Alerts
+        &lt;ul&gt;
+          &lt;li&gt;UIAlertController&lt;/li&gt;
+          &lt;li&gt;UIAlertAction&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Screens
+        &lt;ul&gt;
+          &lt;li&gt;UIScreen&lt;/li&gt;
+          &lt;li&gt;UIScreenMode&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Thu, 15 Aug 2019 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/08/15/UIKit/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/08/15/UIKit/</guid>
+        
+        <category>【移动端】</category>
+        
+        
+        <category>【iOS】</category>
+        
+      </item>
+    
+      <item>
+        <title>Foundation</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://www.jianshu.com/p/495f5f8045ee&quot;&gt;参考一&lt;/a&gt;
+&lt;a href=&quot;https://www.cnblogs.com/kenshincui/p/3885689.html&quot;&gt;参考二&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;nsobject&quot;&gt;NSObject&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;值类型:
+    &lt;ul&gt;
+      &lt;li&gt;NSAffineTransform&lt;/li&gt;
+      &lt;li&gt;NSCalendar&lt;/li&gt;
+      &lt;li&gt;NSCache&lt;/li&gt;
+      &lt;li&gt;NSValue
+        &lt;ul&gt;
+          &lt;li&gt;NSValue&lt;/li&gt;
+          &lt;li&gt;NSNumber&lt;/li&gt;
+          &lt;li&gt;NSDecimalNumber&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;NSData
+        &lt;ul&gt;
+          &lt;li&gt;NSMutableData&lt;/li&gt;
+          &lt;li&gt;NSPurgeableData&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;NSDate&lt;/li&gt;
+      &lt;li&gt;NSDateComponents&lt;/li&gt;
+      &lt;li&gt;NSDecimalNumberHandler&lt;/li&gt;
+      &lt;li&gt;NSLocale&lt;/li&gt;
+      &lt;li&gt;NSNull&lt;/li&gt;
+      &lt;li&gt;NSTimeZone&lt;/li&gt;
+      &lt;li&gt;NSValueTransformer&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;XML
+    &lt;ul&gt;
+      &lt;li&gt;NSXMLParser&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Strings
+    &lt;ul&gt;
+      &lt;li&gt;NSAttributedString&lt;/li&gt;
+      &lt;li&gt;NSCharacterSet&lt;/li&gt;
+      &lt;li&gt;NSString&lt;/li&gt;
+      &lt;li&gt;NSFormatter
+        &lt;ul&gt;
+          &lt;li&gt;NSDateFormatter&lt;/li&gt;
+          &lt;li&gt;NSNumberFormatter&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;NSScanner&lt;/li&gt;
+      &lt;li&gt;NSSortDescriptor&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Collections
+    &lt;ul&gt;
+      &lt;li&gt;NSArray
+        &lt;ul&gt;
+          &lt;li&gt;NSMutableArray&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;NSDictionary
+        &lt;ul&gt;
+          &lt;li&gt;NSMutableDictionary&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;NSNumerator
+        &lt;ul&gt;
+          &lt;li&gt;NSDirectoryEnumerator&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;NSHashTable&lt;/li&gt;
+      &lt;li&gt;NSIndexPath&lt;/li&gt;
+      &lt;li&gt;NSIndexSet
+        &lt;ul&gt;
+          &lt;li&gt;NSMutableIndexSet&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;NSMapTable&lt;/li&gt;
+      &lt;li&gt;NSPointerArray&lt;/li&gt;
+      &lt;li&gt;NSPointerFunctions&lt;/li&gt;
+      &lt;li&gt;NSSet
+        &lt;ul&gt;
+          &lt;li&gt;NSMutableSet&lt;/li&gt;
+          &lt;li&gt;NSCountedSet&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Predicates
+    &lt;ul&gt;
+      &lt;li&gt;NSExpression&lt;/li&gt;
+      &lt;li&gt;NSPredicate
+        &lt;ul&gt;
+          &lt;li&gt;NSComparisonPredicate&lt;/li&gt;
+          &lt;li&gt;NSCompoundPredicate&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Operating-System Services
+    &lt;ul&gt;
+      &lt;li&gt;NSError&lt;/li&gt;
+      &lt;li&gt;NSHost&lt;/li&gt;
+      &lt;li&gt;NSNetService&lt;/li&gt;
+      &lt;li&gt;NSNetServiceBrowser&lt;/li&gt;
+      &lt;li&gt;NSOrthography&lt;/li&gt;
+      &lt;li&gt;NSProcessInfo&lt;/li&gt;
+      &lt;li&gt;NSRunLoop&lt;/li&gt;
+      &lt;li&gt;NSSpeliServer&lt;/li&gt;
+      &lt;li&gt;NSTextCheckingResult&lt;/li&gt;
+      &lt;li&gt;NSTimer&lt;/li&gt;
+      &lt;li&gt;NSUserDefaults&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;File System
+    &lt;ul&gt;
+      &lt;li&gt;NSBundle&lt;/li&gt;
+      &lt;li&gt;NSFileHandler&lt;/li&gt;
+      &lt;li&gt;NSFileManager&lt;/li&gt;
+      &lt;li&gt;NSMetadataItem&lt;/li&gt;
+      &lt;li&gt;NSMetadataQuery&lt;/li&gt;
+      &lt;li&gt;NSMetadataQueryAttributeValueTuple&lt;/li&gt;
+      &lt;li&gt;NSMetadataQueryResuleGroup&lt;/li&gt;
+      &lt;li&gt;NSStream
+        &lt;ul&gt;
+          &lt;li&gt;NSInputStream&lt;/li&gt;
+          &lt;li&gt;NSOutputStream&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;URL
+    &lt;ul&gt;
+      &lt;li&gt;NSCachedURLResponse&lt;/li&gt;
+      &lt;li&gt;NSHTTPCookie&lt;/li&gt;
+      &lt;li&gt;NSHTTPCookieStorage&lt;/li&gt;
+      &lt;li&gt;NSURL&lt;/li&gt;
+      &lt;li&gt;NSURLAuthorizationChallenge&lt;/li&gt;
+      &lt;li&gt;NSURLCache&lt;/li&gt;
+      &lt;li&gt;NSURLSession&lt;/li&gt;
+      &lt;li&gt;NSURLCredential&lt;/li&gt;
+      &lt;li&gt;NSURLCredentialStorage&lt;/li&gt;
+      &lt;li&gt;NSURLDownload&lt;/li&gt;
+      &lt;li&gt;NSURLProtectionSpace&lt;/li&gt;
+      &lt;li&gt;NSURLProtocol&lt;/li&gt;
+      &lt;li&gt;NSURLRequest
+        &lt;ul&gt;
+          &lt;li&gt;NSMutableURLRequest&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;NSURLResponse
+        &lt;ul&gt;
+          &lt;li&gt;NSHTTPURLResponse&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Interprocess Communication
+    &lt;ul&gt;
+      &lt;li&gt;NSPipe&lt;/li&gt;
+      &lt;li&gt;NSPort
+        &lt;ul&gt;
+          &lt;li&gt;NSMachPort&lt;/li&gt;
+          &lt;li&gt;NSMessagePort&lt;/li&gt;
+          &lt;li&gt;NSSockerPort&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;NSPortMessage&lt;/li&gt;
+      &lt;li&gt;NSPortNameServer
+        &lt;ul&gt;
+          &lt;li&gt;NSMachBootstrapServer&lt;/li&gt;
+          &lt;li&gt;NSMessagePortNameServer&lt;/li&gt;
+          &lt;li&gt;NSSockerPortNameServer&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Locking-Threading
+    &lt;ul&gt;
+      &lt;li&gt;NSConditionLock&lt;/li&gt;
+      &lt;li&gt;NSDistributedLock&lt;/li&gt;
+      &lt;li&gt;NSLock&lt;/li&gt;
+      &lt;li&gt;NSOperation
+        &lt;ul&gt;
+          &lt;li&gt;NSBlockOperation&lt;/li&gt;
+          &lt;li&gt;NSInvocationOperation&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;NSOperationQueue&lt;/li&gt;
+      &lt;li&gt;NSRecursiveLock&lt;/li&gt;
+      &lt;li&gt;NSTask&lt;/li&gt;
+      &lt;li&gt;NSThread&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Notifications
+    &lt;ul&gt;
+      &lt;li&gt;NSNotification&lt;/li&gt;
+      &lt;li&gt;NSNotificationCenter
+        &lt;ul&gt;
+          &lt;li&gt;NSNotificationQueue&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Archiving and Serialization
+    &lt;ul&gt;
+      &lt;li&gt;NSCoder
+        &lt;ul&gt;
+          &lt;li&gt;NSArchiver&lt;/li&gt;
+          &lt;li&gt;NSKeyedArchiver&lt;/li&gt;
+          &lt;li&gt;NSKeyedUnArchiver&lt;/li&gt;
+          &lt;li&gt;NSPortCoder&lt;/li&gt;
+          &lt;li&gt;NSUnarchiver&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;NSPropertyListSerialization&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Objective-C Language Service
+    &lt;ul&gt;
+      &lt;li&gt;NSSeertionHandler&lt;/li&gt;
+      &lt;li&gt;NSAutoreleasePool&lt;/li&gt;
+      &lt;li&gt;NSClassDescription&lt;/li&gt;
+      &lt;li&gt;NSException&lt;/li&gt;
+      &lt;li&gt;NSInvocation&lt;/li&gt;
+      &lt;li&gt;NSMethodSignature&lt;/li&gt;
+      &lt;li&gt;NSUndoManager&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;nsproxy&quot;&gt;NSProxy&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- [NSProxy1](https://blog.csdn.net/shubinniu/article/details/80895450)
+- [消息转发](https://blog.csdn.net/liyanjun201/article/details/82620485)
+- [NSProxy1](https://juejin.im/post/5afbca7bf265da0b8c25251d)
+
+- NSProxy可以帮助Objective-C间接的实现多重继承的功能。
+- OC 中一个类只有一个父类, 这就是单一继承, 但是我们可以用协议和 NSProxy 实现多继承
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+</description>
+        <pubDate>Wed, 14 Aug 2019 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/08/14/Foundation/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/08/14/Foundation/</guid>
+        
+        <category>【移动端】</category>
+        
+        
+        <category>【iOS】</category>
+        
+      </item>
+    
+      <item>
+        <title>iOS系统框架</title>
+        <description>&lt;h4 id=&quot;apple系统框架&quot;&gt;&lt;a href=&quot;https://developer.apple.com/documentation/&quot;&gt;Apple系统框架&lt;/a&gt;&lt;/h4&gt;
+
+&lt;h3 id=&quot;ios系统层级&quot;&gt;iOS系统层级&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;可触摸层（Cocoa Touch Layer）&lt;/li&gt;
+  &lt;li&gt;媒体层（Media Layer）&lt;/li&gt;
+  &lt;li&gt;核心服务层（Core Services Layer）&lt;/li&gt;
+  &lt;li&gt;核心系统层（Core OS Layer）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/iOS系统层级1.jpg&quot; alt=&quot;iOS系统层级&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;各层的详情&quot;&gt;各层的详情&lt;/h3&gt;
+
+&lt;hr /&gt;
+&lt;ul&gt;
+  &lt;li&gt;Cocoa Touch Layer
+    &lt;ul&gt;
+      &lt;li&gt;UIKit（界面相关）&lt;/li&gt;
+      &lt;li&gt;EventKit（日历事件提醒等）&lt;/li&gt;
+      &lt;li&gt;Notification Center（通知中心）&lt;/li&gt;
+      &lt;li&gt;MapKit（地图显示）&lt;/li&gt;
+      &lt;li&gt;Address Book（联系人）&lt;/li&gt;
+      &lt;li&gt;iAd（广告）&lt;/li&gt;
+      &lt;li&gt;Message UI（邮件与SMS显示）&lt;/li&gt;
+      &lt;li&gt;PushKit（iOS8新push机制）&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Media Layer&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;图像引擎
+        &lt;ul&gt;
+          &lt;li&gt;Core Graphics&lt;/li&gt;
+          &lt;li&gt;Core Image&lt;/li&gt;
+          &lt;li&gt;Core Animation&lt;/li&gt;
+          &lt;li&gt;OpenGL ES&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;音频引擎
+        &lt;ul&gt;
+          &lt;li&gt;Core Audio&lt;/li&gt;
+          &lt;li&gt;AV Foundation&lt;/li&gt;
+          &lt;li&gt;OpenAL&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;视频引擎
+        &lt;ul&gt;
+          &lt;li&gt;AV Foundation&lt;/li&gt;
+          &lt;li&gt;Core Media）&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;ul&gt;
+  &lt;li&gt;Core Services Layer
+    &lt;ul&gt;
+      &lt;li&gt;CFNetwork（网络访问）&lt;/li&gt;
+      &lt;li&gt;CoreData（数据存储）&lt;/li&gt;
+      &lt;li&gt;CoreLocation（定位功能）&lt;/li&gt;
+      &lt;li&gt;CoreMotion（重力加速度，陀螺仪）&lt;/li&gt;
+      &lt;li&gt;Foundation（基础功能如NSString）&lt;/li&gt;
+      &lt;li&gt;Webkit（浏览器引擎）&lt;/li&gt;
+      &lt;li&gt;JavaScript（JavaScript引擎）&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;ul&gt;
+  &lt;li&gt;Core OS Layer
+    &lt;ul&gt;
+      &lt;li&gt;操作系统内核服务（BSD sockets、I/O访问、内存申请、文件系统、数学计算等）&lt;/li&gt;
+      &lt;li&gt;本地认证（指纹识别验证等）&lt;/li&gt;
+      &lt;li&gt;安全（提供管理证书、公钥、密钥等的接口）&lt;/li&gt;
+      &lt;li&gt;加速 (执行数学、大数字以及DSP运算,这些接口iOS设备硬件相匹配）&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/iOS系统层级2.png&quot; alt=&quot;iOS系统层级&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;很重要的几个框架&quot;&gt;很重要的几个框架&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Foundation
+    &lt;ul&gt;
+      &lt;li&gt;为所有的应用程序提供基本系统服务&lt;/li&gt;
+      &lt;li&gt;你的应用程序，UIKit是建立在Foundation框架上面的。&lt;/li&gt;
+      &lt;li&gt;Foundation框架是用Objective-C对Core Foundation框架里许多特性的封装。&lt;/li&gt;
+      &lt;li&gt;使用Foundation可以:
+        &lt;ul&gt;
+          &lt;li&gt;创建和管理集合，比如：数组和字典&lt;/li&gt;
+          &lt;li&gt;访问存储在应用程序里的图片和其它资源&lt;/li&gt;
+          &lt;li&gt;创建和管理字符串&lt;/li&gt;
+          &lt;li&gt;提交和接收通知&lt;/li&gt;
+          &lt;li&gt;创建日期和时间对象&lt;/li&gt;
+          &lt;li&gt;自动发现IP网络上的设备&lt;/li&gt;
+          &lt;li&gt;操作URL流&lt;/li&gt;
+          &lt;li&gt;执行异步代码&lt;/li&gt;
+          &lt;li&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;UIKit
+    &lt;ul&gt;
+      &lt;li&gt;框架提供创建基于触摸用户界面的类&lt;/li&gt;
+      &lt;li&gt;所有的iOS应用程序都基于UIKit，你不能是应用程序脱离这个框架。&lt;/li&gt;
+      &lt;li&gt;UIKit提供了在屏幕上绘制的机制，捕获事件，和创建通用用户界面元素。&lt;/li&gt;
+      &lt;li&gt;UIKit也通过管理显示在屏幕上的组件来组织复杂的项目。&lt;/li&gt;
+      &lt;li&gt;使用UIKit可以：
+        &lt;ul&gt;
+          &lt;li&gt;构建和管理你的用户界面&lt;/li&gt;
+          &lt;li&gt;捕获触摸和基于移动的事件&lt;/li&gt;
+          &lt;li&gt;呈现文字和web内容&lt;/li&gt;
+          &lt;li&gt;优化你的多任务程序&lt;/li&gt;
+          &lt;li&gt;创建定制的用户界面元素&lt;/li&gt;
+          &lt;li&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;CoreData
+    &lt;ul&gt;
+      &lt;li&gt;框架管着理应用程序数据模型&lt;/li&gt;
+      &lt;li&gt;Core Data提供对象的管理，使用CoreData，你可以创建模型对象，并管理这些对象。&lt;/li&gt;
+      &lt;li&gt;你管理这些对象间的联系并修改数据。&lt;/li&gt;
+      &lt;li&gt;CoreData提供的内建SQLlite技术可以高效的管理数据。&lt;/li&gt;
+      &lt;li&gt;使用Core Data可以：
+        &lt;ul&gt;
+          &lt;li&gt;在库里存储和接收对象&lt;/li&gt;
+          &lt;li&gt;提供基本的undo/redo&lt;/li&gt;
+          &lt;li&gt;自动验证属性值&lt;/li&gt;
+          &lt;li&gt;过滤、分组和优化内存中的数据&lt;/li&gt;
+          &lt;li&gt;用[NSFetchedResultsController]管理表视图中的结果&lt;/li&gt;
+          &lt;li&gt;支持基于文档的应用程序&lt;/li&gt;
+          &lt;li&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Core Graphics框架帮助你创建图形
+    &lt;ul&gt;
+      &lt;li&gt;高质量的图形对于所有的iOS应用程序都是很重要的。&lt;/li&gt;
+      &lt;li&gt;在iOS中最简单且最快捷的创建图形的方式是使用UIKit框架提供的基于预渲染图形的视图和控件，然后让UIKit和iOS完成绘制。&lt;/li&gt;
+      &lt;li&gt;当你需要创建复杂的图形时，Core Graphics则提供了更底层的库来帮助你。&lt;/li&gt;
+      &lt;li&gt;使用Core Graphics可以：
+        &lt;ul&gt;
+          &lt;li&gt;创建基于路径的绘图&lt;/li&gt;
+          &lt;li&gt;抗锯齿渲染&lt;/li&gt;
+          &lt;li&gt;添加梯度、图片和颜色&lt;/li&gt;
+          &lt;li&gt;Use coordinate-space transformations.&lt;/li&gt;
+          &lt;li&gt;创建、显示和分析PDF文档&lt;/li&gt;
+          &lt;li&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Core Animation允许你创建高级的动画和虚拟效果
+    &lt;ul&gt;
+      &lt;li&gt;UIKit提供建立在Core Animation之上的动画。&lt;/li&gt;
+      &lt;li&gt;如果你需要比UIKit能力更高级的功能，可以直接使用Core Animation。&lt;/li&gt;
+      &lt;li&gt;Core Animation接口包含在QuartzCore框架里。&lt;/li&gt;
+      &lt;li&gt;使用Core Animation可以创建嵌套的对象，并且可以对它们操作、旋转、缩放和转换。&lt;/li&gt;
+      &lt;li&gt;使用Core animation，你可以创建动态的用户界面而不用使用更底层的图形API，如OpenGL ES。&lt;/li&gt;
+      &lt;li&gt;使用Core Animation可以：
+        &lt;ul&gt;
+          &lt;li&gt;创建定制动画&lt;/li&gt;
+          &lt;li&gt;添加定时函数和图形&lt;/li&gt;
+          &lt;li&gt;支持帧动画&lt;/li&gt;
+          &lt;li&gt;Specify graphical layout constraints.&lt;/li&gt;
+          &lt;li&gt;Group multiple-layer changes into anatomic update.&lt;/li&gt;
+          &lt;li&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;OpenGL ES 框架提供2D和3D绘图工具
+    &lt;ul&gt;
+      &lt;li&gt;OpenGL ES支持2D和3D绘图，Apple的OpenGL ES实现通过硬件提供了高速的全屏游戏式的应用程序。&lt;/li&gt;
+      &lt;li&gt;使用OpenGL ES可以：
+        &lt;ul&gt;
+          &lt;li&gt;创建2D和3D图形&lt;/li&gt;
+          &lt;li&gt;创建更复杂的图形，比如数据虚拟化、模拟飞行，或者视频游戏&lt;/li&gt;
+          &lt;li&gt;访问底层图形设备&lt;/li&gt;
+          &lt;li&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;这些构成了iOS/MacOS的骨架
+是最大层次的架构&lt;/p&gt;
+&lt;/blockquote&gt;
+
+</description>
+        <pubDate>Tue, 13 Aug 2019 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/08/13/iOS%E7%B3%BB%E7%BB%9F%E6%A1%86%E6%9E%B6/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/08/13/iOS%E7%B3%BB%E7%BB%9F%E6%A1%86%E6%9E%B6/</guid>
+        
+        <category>【移动端】</category>
+        
+        
+        <category>【iOS】</category>
+        
+      </item>
+    
+      <item>
+        <title>《去中心化应用》</title>
+        <description>&lt;h4 id=&quot;索引&quot;&gt;索引&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;什么是去中心化应用?&lt;/li&gt;
+  &lt;li&gt;去中心化生态系统&lt;/li&gt;
+  &lt;li&gt;怎么创建你的去中心化应用?&lt;/li&gt;
+  &lt;li&gt;实例OpenBazazaar?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;什么是去中心化应用&quot;&gt;什么是去中心化应用?&lt;/h3&gt;
+
+&lt;h4 id=&quot;1-应用的分类&quot;&gt;1. 应用的分类&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;集中式&lt;/li&gt;
+  &lt;li&gt;分布式&lt;/li&gt;
+  &lt;li&gt;去中心化&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;能够达成去中心化共识的应用软件才是真正的革新成果.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;2-去中心化应用dapp的4个特征&quot;&gt;2. 去中心化应用(dapp)的4个特征&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;开源
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://www.gnu.org/philosophy/free-sw.zh-cn.html&quot;&gt;自由软件&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;⚠️ 很多国内的程序猿对开源完全没概念,这一块要重点理解一下&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;内部货币
+  -
+    &lt;ul&gt;
+      &lt;li&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;去中心化共识
+  -
+    &lt;ul&gt;
+      &lt;li&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;没有中心失效点
+  -
+    &lt;ul&gt;
+      &lt;li&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;3-去中心化应用的历史&quot;&gt;3. 去中心化应用的历史&lt;/h4&gt;
+
+&lt;h3 id=&quot;去中心化生态系统&quot;&gt;去中心化生态系统&lt;/h3&gt;
+
+&lt;h3 id=&quot;怎么创建你的去中心化应用&quot;&gt;怎么创建你的去中心化应用?&lt;/h3&gt;
+
+&lt;h3 id=&quot;实例openbazazaar&quot;&gt;实例OpenBazazaar?&lt;/h3&gt;
+</description>
+        <pubDate>Tue, 30 Jul 2019 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/07/30/%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E5%BA%94%E7%94%A8/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/07/30/%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E5%BA%94%E7%94%A8/</guid>
+        
+        <category>【书籍】</category>
+        
+        
+        <category>【区块链】</category>
+        
+      </item>
+    
+      <item>
+        <title>Swift</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;世界上没有最好的编程语言，就像世界上没有最好的人一样。&lt;/p&gt;
+
+  &lt;p&gt;如果你想知道一门编程语言的优劣，那就去学会它。&lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+</description>
+        <pubDate>Sun, 28 Jul 2019 10:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/07/28/Swift/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/07/28/Swift/</guid>
         
         <category>【编程语言】</category>
->>>>>>> ca15ae821ae8c3ae3e2916cc2eb4d2cdef10dfba
         
         
         <category>【读书】</category>
@@ -41,14 +1033,6 @@
       </item>
     
       <item>
-<<<<<<< HEAD
-        <title>百度XuperChain</title>
-        <description>
-</description>
-        <pubDate>Sun, 16 Jun 2019 18:50:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/06/16/%E7%99%BE%E5%BA%A6XuperChain/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/06/16/%E7%99%BE%E5%BA%A6XuperChain/</guid>
-=======
         <title>Kotlin</title>
         <description>&lt;blockquote&gt;
   &lt;p&gt;世界上没有最好的编程语言，就像世界上没有最好的人一样。&lt;/p&gt;
@@ -616,9 +1600,9 @@
 &lt;/ol&gt;
 
 </description>
-        <pubDate>Sat, 06 Jul 2019 10:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/07/06/Kotlin/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/07/06/Kotlin/</guid>
+        <pubDate>Sun, 21 Jul 2019 10:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/07/21/Kotlin/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/07/21/Kotlin/</guid>
         
         <category>【编程语言】</category>
         
@@ -653,710 +1637,5 @@
         
       </item>
     
-      <item>
-        <title>Web API的设计与开发</title>
-        <description>
-</description>
-        <pubDate>Mon, 17 Jun 2019 21:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/06/17/Web-API%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%BC%80%E5%8F%91/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/06/17/Web-API%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%BC%80%E5%8F%91/</guid>
->>>>>>> ca15ae821ae8c3ae3e2916cc2eb4d2cdef10dfba
-        
-        <category>六月</category>
-        
-        
-<<<<<<< HEAD
-        <category>【区块链】</category>
-=======
-        <category>【读书】</category>
->>>>>>> ca15ae821ae8c3ae3e2916cc2eb4d2cdef10dfba
-        
-      </item>
-    
-      <item>
-<<<<<<< HEAD
-        <title>Python高级玩法</title>
-        <description>
-</description>
-        <pubDate>Sun, 16 Jun 2019 15:50:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/06/16/Python%E9%AB%98%E7%BA%A7%E7%8E%A9%E6%B3%95/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/06/16/Python%E9%AB%98%E7%BA%A7%E7%8E%A9%E6%B3%95/</guid>
-=======
-        <title>百度XuperChain</title>
-        <description>
-</description>
-        <pubDate>Sun, 16 Jun 2019 18:50:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/06/16/%E7%99%BE%E5%BA%A6XuperChain/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/06/16/%E7%99%BE%E5%BA%A6XuperChain/</guid>
->>>>>>> ca15ae821ae8c3ae3e2916cc2eb4d2cdef10dfba
-        
-        <category>六月</category>
-        
-        
-<<<<<<< HEAD
-        <category>【教程】</category>
-=======
-        <category>【区块链】</category>
->>>>>>> ca15ae821ae8c3ae3e2916cc2eb4d2cdef10dfba
-        
-      </item>
-    
-      <item>
-        <title>CentOS-Docker-Nginx-Web</title>
-        <description>&lt;h3 id=&quot;问题定位&quot;&gt;问题定位&lt;/h3&gt;
-
-&lt;h4 id=&quot;问题描述&quot;&gt;问题描述：&lt;/h4&gt;
-&lt;ol&gt;
-  &lt;li&gt;最近部门部门各个系统的URL又更新了，原本浏览器就已经存的地址废除了。&lt;/li&gt;
-  &lt;li&gt;所有人的地址都要更新地址：产品、前端、后端。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;解决方案&quot;&gt;解决方案：&lt;/h4&gt;
-&lt;ol&gt;
-  &lt;li&gt;搭建一个小网站：包含需要的网址(URL资源中心)&lt;/li&gt;
-  &lt;li&gt;配置简单的域名&lt;/li&gt;
-  &lt;li&gt;更新部署方便&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;需要资源&quot;&gt;需要资源：&lt;/h4&gt;
-&lt;ol&gt;
-  &lt;li&gt;前端小伙一枚（自己不想写前端界面）&lt;/li&gt;
-  &lt;li&gt;服务器一台（可以要一台云主机）&lt;/li&gt;
-  &lt;li&gt;域名一枚（内网的DNS）&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;流程解析&quot;&gt;流程解析&lt;/h3&gt;
-
-&lt;h4 id=&quot;整体流程&quot;&gt;整体流程&lt;/h4&gt;
-&lt;ol&gt;
-  &lt;li&gt;给前端小伙说了目的（他也很支持）&lt;/li&gt;
-  &lt;li&gt;大致画了简单的草图（简单草稿那种）&lt;/li&gt;
-  &lt;li&gt;他搞定了界面：大概20分钟：主要是找URL花了较多时间&lt;/li&gt;
-  &lt;li&gt;自己上传到公开的gitee仓库&lt;/li&gt;
-  &lt;li&gt;我找李子要服务器：10分钟&lt;/li&gt;
-  &lt;li&gt;安装Docker&lt;/li&gt;
-  &lt;li&gt;拉Nginx镜像&lt;/li&gt;
-  &lt;li&gt;启动容器：挂载文件&lt;/li&gt;
-  &lt;li&gt;排查Server 500的错误(docker装vim)&lt;/li&gt;
-  &lt;li&gt;愉快的成功了，小伙伴们分享😊&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h4 id=&quot;前端界面vuejs&quot;&gt;前端界面（Vue.js）&lt;/h4&gt;
-&lt;p&gt;这个没学过，估计不难，最近优先学后端架构。&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h4 id=&quot;安装dockercentos&quot;&gt;安装Docker（CentOS）&lt;/h4&gt;
-&lt;p&gt;网上找到了这个&lt;a href=&quot;https://www.cnblogs.com/yufeng218/p/8370670.html&quot;&gt;教程很不错👍&lt;/a&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;查看内核版本（内核版本&amp;gt;3.10）：
-    &lt;blockquote&gt;
-      &lt;p&gt;uname -r&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;更新yum包(root权限)：
-    &lt;blockquote&gt;
-      &lt;p&gt;sudo yum update&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;卸载旧版本（可选）：
-    &lt;blockquote&gt;
-      &lt;p&gt;sudo yum remove docker  docker-common docker-selinux docker-engine&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;安装需要的软件包（yum-util提供yum-config-manager功能，另外两个是devicemapper驱动依赖的）
-    &lt;blockquote&gt;
-      &lt;p&gt;sudo yum install -y yum-utils device-mapper-persistent-data lvm2&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;设置yum源
-    &lt;blockquote&gt;
-      &lt;p&gt;sudo yum-config-manager -‌-add-repo https://download.docker.com/linux/centos/docker-ce.repo&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;查看所有仓库中所有docker版本，并选择特定版本安装
-    &lt;blockquote&gt;
-      &lt;p&gt;yum list docker-ce -‌-showduplicates&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;安装docker
-    &lt;blockquote&gt;
-      &lt;p&gt;sudo yum install docker-ce  # repo中默认只开启stable仓库，故这里安装的是最新稳定版17.12.0&lt;/p&gt;
-
-      &lt;p&gt;sudo yum install &lt;FQPN&gt;  # 例如：sudo yum install docker-ce-17.12.0.ce&lt;/FQPN&gt;&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;启动并加入开机启动
-    &lt;blockquote&gt;
-      &lt;p&gt;sudo systemctl start docker&lt;/p&gt;
-
-      &lt;p&gt;sudo systemctl enable docker&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;验证安装是否成功(有client和service两部分表示docker安装启动都成功了)
-    &lt;blockquote&gt;
-      &lt;p&gt;docker version&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h4 id=&quot;docker拉取nginx镜像配置nginx&quot;&gt;Docker拉取Nginx镜像，配置Nginx&lt;/h4&gt;
-&lt;p&gt;找的教程，一步一步来就能解决&lt;a href=&quot;https://www.cnblogs.combingo1024/p/9022890.html&quot;&gt;教程很全，不过有坑&lt;/a&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;拉取镜像
-    &lt;blockquote&gt;
-      &lt;p&gt;docker pull nginx&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;创建挂载目录
-    &lt;blockquote&gt;
-      &lt;p&gt;mkdir -p /data/nginx/{conf,conf.d,html,logs}&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;安装vim
-    &lt;blockquote&gt;
-      &lt;p&gt;yum install vim&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;配置文件&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;blockquote&gt;
-  &lt;h6 id=&quot;vim-dataconfnginxconf&quot;&gt;vim /data/conf/nginx.conf&lt;/h6&gt;
-
-  &lt;p&gt;user  nginx;&lt;/p&gt;
-
-  &lt;p&gt;worker_processes  1;&lt;/p&gt;
-
-  &lt;p&gt;error_log  /var/log/nginx/error.log warn;&lt;/p&gt;
-
-  &lt;p&gt;pid        /var/run/nginx.pid;&lt;/p&gt;
-
-  &lt;p&gt;events {&lt;/p&gt;
-
-  &lt;p&gt;   worker_connections  1024;&lt;/p&gt;
-
-  &lt;p&gt;}&lt;/p&gt;
-
-  &lt;p&gt;http {&lt;/p&gt;
-
-  &lt;p&gt;  include       /etc/nginx/mime.types;&lt;/p&gt;
-
-  &lt;p&gt;  default_type  application/octet-stream;&lt;/p&gt;
-
-  &lt;p&gt;  log_format  main  ‘$remote_addr - $remote_user [$time_local] “$request” ‘&lt;/p&gt;
-
-  &lt;p&gt;     ‘$status $body_bytes_sent “$http_referer” ‘&lt;/p&gt;
-
-  &lt;p&gt;      ‘“$http_user_agent” “$http_x_forwarded_for”’;&lt;/p&gt;
-
-  &lt;p&gt;   access_log  /var/log/nginx/access.log  main;&lt;/p&gt;
-
-  &lt;p&gt;   sendfile        on;&lt;/p&gt;
-
-  &lt;p&gt;   #tcp_nopush     on;&lt;/p&gt;
-
-  &lt;p&gt;   keepalive_timeout  65;&lt;/p&gt;
-
-  &lt;p&gt;   #gzip  on;&lt;/p&gt;
-
-  &lt;p&gt;   include /etc/nginx/conf.d/*.conf;&lt;/p&gt;
-
-  &lt;p&gt;}&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;h6 id=&quot;vim-dataconfnginxconf-1&quot;&gt;vim /data/conf/nginx.conf&lt;/h6&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;server {&lt;/p&gt;
-
-  &lt;p&gt;listen       80;&lt;/p&gt;
-
-  &lt;p&gt;server_name  localhost;&lt;/p&gt;
-
-  &lt;p&gt;location / {&lt;/p&gt;
-
-  &lt;p&gt;   root   /usr/share/nginx/html;&lt;/p&gt;
-
-  &lt;p&gt;   index  index.html index.htm;&lt;/p&gt;
-
-  &lt;p&gt;   autoindex  on;&lt;/p&gt;
-
-  &lt;p&gt;  }&lt;/p&gt;
-
-  &lt;p&gt;error_page   500 502 503 504  /50x.html;&lt;/p&gt;
-
-  &lt;p&gt;location = /50x.html {&lt;/p&gt;
-
-  &lt;p&gt;   root /usr/share/nginx/html;&lt;/p&gt;
-
-  &lt;p&gt;   }&lt;/p&gt;
-
-  &lt;p&gt;}&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h4 id=&quot;整体流程-1&quot;&gt;整体流程&lt;/h4&gt;
-&lt;p&gt;将容器中nginx的80端口映射到本地的80端口&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;docker run –name nginx81 -d -p 80:80&lt;/p&gt;
-
-  &lt;p&gt;   -v /data/nginx/html:/usr/share/nginx/html&lt;/p&gt;
-
-  &lt;p&gt;   -v /data/nginx/conf/nginx.conf:/etc/nginx/nginx.conf&lt;/p&gt;
-
-  &lt;p&gt;   -v /data/nginx/logs:/var/log/nginx&lt;/p&gt;
-
-  &lt;p&gt;   -v /data/nginx/conf.d:/etc/nginx/conf.d&lt;/p&gt;
-
-  &lt;p&gt;   -d nginx:latest&lt;/p&gt;
-
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h4 id=&quot;问题解析&quot;&gt;问题解析&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;nginx配置注意事项：
-    &lt;blockquote&gt;
-      &lt;p&gt;nginx配置的资源地址必须是容器内部的地址，即映射的内部地址&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;nginx错误定位：
-    &lt;blockquote&gt;
-      &lt;p&gt;在容器内查看错误日志：&lt;/p&gt;
-
-      &lt;p&gt;tail -f  error.log&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;docker命令：
-    &lt;blockquote&gt;
-      &lt;p&gt;docker -p 宿主机端口：容器内端口 -v 宿主机文件路径：容器文件路径 -d 启动的镜像&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;整个过程大致花了一个小时：
-    &lt;blockquote&gt;
-      &lt;p&gt;主要耗时在：nginx的配置错误导致一直报500的错误(重定向错误)&lt;/p&gt;
-
-      &lt;p&gt;问题定位不清楚，一直在纠结在挂载文件上(实际上是nginx的配置问题)&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-</description>
-        <pubDate>Sat, 15 Jun 2019 21:50:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/06/15/CentOS-Docker-Nginx-Web/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/06/15/CentOS-Docker-Nginx-Web/</guid>
-        
-        <category>六月</category>
-        
-        
-        <category>【小记】</category>
-        
-      </item>
-    
-      <item>
-        <title>Rust的Web框架：Actix</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://actix.rs/&quot;&gt;Rust的Web框架：Actix&lt;/a&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Sun, 26 May 2019 21:50:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/05/26/Rust-Actix/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/05/26/Rust-Actix/</guid>
-        
-        <category>Rust</category>
-        
-        
-        <category>【后端框架】</category>
-        
-      </item>
-    
-      <item>
-        <title>Rust初识</title>
-        <description>&lt;p&gt;程序员不应该拘泥于编程语言和框架，进化才是王道。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://rustlang-cn.org/office/rust/book/getting-started/ch01-03-hello-cargo.html&quot;&gt;学习网站🐂&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;rust语言的作用和领域&quot;&gt;Rust语言的作用和领域？&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Rust 的低开销非常适合嵌入式编程&lt;/li&gt;
-  &lt;li&gt;Rust 可以构建强大的 Web 应用程序&lt;/li&gt;
-  &lt;li&gt;Rust 适用于构建分布式在线服务&lt;/li&gt;
-  &lt;li&gt;Rust 适合创建功能强大的跨平台命令行工具&lt;/li&gt;
-  &lt;li&gt;Rust 拥有新的开发工具和更好的 IDE 支持&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;还有很多好处，你有什么理由不学习？&lt;/p&gt;
-
-&lt;h3 id=&quot;安装&quot;&gt;安装&lt;/h3&gt;
-
-&lt;h5 id=&quot;linux和macos用户&quot;&gt;Linux和MacOS用户：&lt;/h5&gt;
-&lt;blockquote&gt;
-  &lt;table&gt;
-    &lt;tbody&gt;
-      &lt;tr&gt;
-        &lt;td&gt;curl https://sh.rustup.rs -sSf&lt;/td&gt;
-        &lt;td&gt;sh&lt;/td&gt;
-      &lt;/tr&gt;
-    &lt;/tbody&gt;
-  &lt;/table&gt;
-
-  &lt;p&gt;source $HOME/.cargo/env&lt;/p&gt;
-
-  &lt;p&gt;export PATH=”$HOME/.cargo/bin:$PATH”
-⚠️ 如果你愿意，可在运行前下载并检查该脚本&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h5 id=&quot;更新和卸载&quot;&gt;更新和卸载：&lt;/h5&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;rustup update 			// 更新&lt;/p&gt;
-
-  &lt;p&gt;rustup self uninstall 	// 卸载&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h5 id=&quot;编译与运行&quot;&gt;编译与运行：&lt;/h5&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;rustc –version 			// 查看版本&lt;/p&gt;
-
-  &lt;p&gt;rust *.rs 				// 编译&lt;/p&gt;
-
-  &lt;p&gt;./main 					// 运行&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h5 id=&quot;项目管理&quot;&gt;项目管理&lt;/h5&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;cargo new PROJECT_NAME 	// 生成新项目&lt;/p&gt;
-
-  &lt;p&gt;cargo build PROJECT_NAME	// 编译项目&lt;/p&gt;
-
-  &lt;p&gt;cargo build –release		// 发布（release）构建&lt;/p&gt;
-
-  &lt;p&gt;cargo run PROJECT_NAME	// 运行项目&lt;/p&gt;
-
-  &lt;p&gt;cargo check 				// 检查项目：速度快&lt;/p&gt;
-&lt;/blockquote&gt;
-
-</description>
-        <pubDate>Sun, 12 May 2019 09:50:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/05/12/Rust%E5%88%9D%E8%AF%86/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/05/12/Rust%E5%88%9D%E8%AF%86/</guid>
-        
-        <category>Rust</category>
-        
-        
-        <category>【编程语言】</category>
-        
-      </item>
-    
-      <item>
-        <title>金融与量化分析</title>
-        <description>&lt;h4 id=&quot;股票&quot;&gt;股票：&lt;/h4&gt;
-&lt;ol&gt;
-  &lt;li&gt;股份公司发给出资人的凭证，股票持有者就是股份公司的股东&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;股票面值和市值&quot;&gt;股票面值和市值&lt;/h4&gt;
-&lt;ol&gt;
-  &lt;li&gt;面值是票面金额&lt;/li&gt;
-  &lt;li&gt;市值是市场价值&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;上市ipo&quot;&gt;上市|IPO：&lt;/h4&gt;
-&lt;ol&gt;
-  &lt;li&gt;企业通过证券交易所公开向社会增发股票以募集资金&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;股票的作用&quot;&gt;股票的作用：&lt;/h4&gt;
-&lt;ol&gt;
-  &lt;li&gt;出资证明、证明股东身份、对公司经营发表意见&lt;/li&gt;
-  &lt;li&gt;公司分红、交易获利&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;股票分类&quot;&gt;股票分类&lt;/h4&gt;
-
-&lt;p&gt;按照业绩分类：&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;蓝筹股：资本雄厚、信誉优良的公司的股票&lt;/li&gt;
-  &lt;li&gt;绩优股：业绩优良的公司的股票&lt;/li&gt;
-  &lt;li&gt;ST股：特别处理的股票，连续亏损或每股净资产低于股票面值&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;按照上市地区分类：&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;A股：中国大陆上市，人民币认购买卖（T+1，涨跌幅10%）&lt;/li&gt;
-  &lt;li&gt;B股：中国大陆上市，外币认购买卖（T+1， T+3）&lt;/li&gt;
-  &lt;li&gt;H股：中国香港上市（T+0,涨跌不设限制）&lt;/li&gt;
-  &lt;li&gt;N股：美国纽约上市&lt;/li&gt;
-  &lt;li&gt;S股：新加坡上市&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;股票市场构成&quot;&gt;股票市场构成&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;上市公司&lt;/li&gt;
-  &lt;li&gt;投资者&lt;/li&gt;
-  &lt;li&gt;证监会、证券业协会、交易所&lt;/li&gt;
-  &lt;li&gt;证券中介机构&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;交易所：&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;上海证券交易所：
-    &lt;blockquote&gt;
-      &lt;ul&gt;
-        &lt;li&gt;主板（沪指）&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;深圳证券交易所：
-    &lt;blockquote&gt;
-      &lt;ul&gt;
-        &lt;li&gt;主板：大型成熟企业（深成指）&lt;/li&gt;
-        &lt;li&gt;中小板：经营规模较小&lt;/li&gt;
-        &lt;li&gt;创业板：处于成长期的创业企业&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;影响股价的因素&quot;&gt;影响股价的因素&lt;/h4&gt;
-&lt;ol&gt;
-  &lt;li&gt;市场内部因素：买卖房力量&lt;/li&gt;
-  &lt;li&gt;基本面因素：公司的营收状况&lt;/li&gt;
-  &lt;li&gt;政策因素&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;股票买卖a&quot;&gt;股票买卖（A）&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;委托买卖股票&lt;/li&gt;
-  &lt;li&gt;股票交易日：&lt;/li&gt;
-  &lt;li&gt;股票交易时间：
-    &lt;blockquote&gt;
-      &lt;ul&gt;
-        &lt;li&gt;9:15-9:25: 开盘集合竞价时间（定开盘价）&lt;/li&gt;
-        &lt;li&gt;9:30-11:30：前市，连续竞价时间&lt;/li&gt;
-        &lt;li&gt;13:00-15:00: 后市，连续竞价时间&lt;/li&gt;
-        &lt;li&gt;14:57-15:00: 深交所收盘集合竞价时间&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;T+1交易制度：
-    &lt;blockquote&gt;
-      &lt;ul&gt;
-        &lt;li&gt;股票买入后当天不能卖出，下一个交易日才能卖出&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;金融分析&quot;&gt;金融分析&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;基本面分析
-    &lt;blockquote&gt;
-      &lt;ul&gt;
-        &lt;li&gt;宏观经济面分析：国家财政政策、货币政策&lt;/li&gt;
-        &lt;li&gt;行业分析&lt;/li&gt;
-        &lt;li&gt;公司分析：财务数据、业绩报告&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;技术面分析
-    &lt;blockquote&gt;
-      &lt;ul&gt;
-        &lt;li&gt;K线&lt;/li&gt;
-        &lt;li&gt;平均线&lt;/li&gt;
-        &lt;li&gt;KDJ&lt;/li&gt;
-        &lt;li&gt;MACD&lt;/li&gt;
-        &lt;li&gt;….&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;金融量化投资&quot;&gt;金融量化投资&lt;/h4&gt;
-&lt;ol&gt;
-  &lt;li&gt;量化投资：计算机用数学模型去实践投资理念&lt;/li&gt;
-  &lt;li&gt;量化投资的优势：
-    &lt;blockquote&gt;
-      &lt;ul&gt;
-        &lt;li&gt;避免主观情绪、人性弱点、认知偏差，选择更加客观&lt;/li&gt;
-        &lt;li&gt;多角度的观察、多层次的模型&lt;/li&gt;
-        &lt;li&gt;即使跟踪市场变化，不断发现新的统计模型，寻找交易机会&lt;/li&gt;
-        &lt;li&gt;在决定投资策略后，能通过回测验证其结果&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;量化策略&quot;&gt;量化策略&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;通过固定的逻辑来分析、判断和决策，自动的进行交易&lt;/li&gt;
-  &lt;li&gt;核心内容；
-    &lt;blockquote&gt;
-      &lt;ul&gt;
-        &lt;li&gt;选股&lt;/li&gt;
-        &lt;li&gt;选时&lt;/li&gt;
-        &lt;li&gt;仓位管理&lt;/li&gt;
-        &lt;li&gt;止盈止损&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;策略的周期
-    &lt;blockquote&gt;
-      &lt;ul&gt;
-        &lt;li&gt;产生想法&lt;/li&gt;
-        &lt;li&gt;实现策略：Julia-Python&lt;/li&gt;
-        &lt;li&gt;检验策略：回测-模拟交易&lt;/li&gt;
-        &lt;li&gt;实盘交易&lt;/li&gt;
-        &lt;li&gt;优化策略-采用新策略&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;输入：
-    &lt;blockquote&gt;
-      &lt;ul&gt;
-        &lt;li&gt;行情数据&lt;/li&gt;
-        &lt;li&gt;财务数据&lt;/li&gt;
-        &lt;li&gt;自定义数据&lt;/li&gt;
-        &lt;li&gt;投资经验&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;策略：
-    &lt;blockquote&gt;
-      &lt;ul&gt;
-        &lt;li&gt;选股&lt;/li&gt;
-        &lt;li&gt;择时&lt;/li&gt;
-        &lt;li&gt;仓位管理&lt;/li&gt;
-        &lt;li&gt;止盈止损&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;输出
-    &lt;blockquote&gt;
-      &lt;ul&gt;
-        &lt;li&gt;买入信号&lt;/li&gt;
-        &lt;li&gt;卖出信号&lt;/li&gt;
-        &lt;li&gt;交易费用&lt;/li&gt;
-        &lt;li&gt;收益&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;量化投资与python&quot;&gt;量化投资与Python&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;选择：Excel、SAS、R、Python、Julia&lt;/li&gt;
-  &lt;li&gt;numpy:高性能科学计算与数据分析的基础包
-    &lt;blockquote&gt;
-      &lt;ul&gt;
-        &lt;li&gt;ndarray:&lt;/li&gt;
-        &lt;li&gt;高阶函数&lt;/li&gt;
-        &lt;li&gt;磁盘读写工具&lt;/li&gt;
-        &lt;li&gt;线性代数、随机数生成、傅立叶变换&lt;/li&gt;
-        &lt;li&gt;集成C/C++&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;pandas:&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;numpy&quot;&gt;numpy&lt;/h4&gt;
-&lt;ol&gt;
-  &lt;li&gt;创建: ndarry&lt;/li&gt;
-  &lt;li&gt;多维数组&lt;/li&gt;
-  &lt;li&gt;常用属性：
-    &lt;blockquote&gt;
-      &lt;ul&gt;
-        &lt;li&gt;T：数组的转置&lt;/li&gt;
-        &lt;li&gt;dtype：元素的类型&lt;/li&gt;
-        &lt;li&gt;size： 元素个数&lt;/li&gt;
-        &lt;li&gt;ndim: 维数&lt;/li&gt;
-        &lt;li&gt;shape: 维度大小&lt;/li&gt;
-        &lt;li&gt;astype: 类型转换&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;blockquote&gt;
-  &lt;ul&gt;
-    &lt;li&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/blockquote&gt;
-
-</description>
-        <pubDate>Wed, 08 May 2019 01:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/05/08/%E9%87%91%E8%9E%8D%E4%B8%8E%E9%87%8F%E5%8C%96%E6%8A%95%E8%B5%84/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/05/08/%E9%87%91%E8%9E%8D%E4%B8%8E%E9%87%8F%E5%8C%96%E6%8A%95%E8%B5%84/</guid>
-        
-        <category>五月</category>
-        
-        
-        <category>【量化】</category>
-        
-      </item>
-    
-      <item>
-        <title>WayKi公链技术</title>
-        <description>&lt;p&gt;学习资料汇总&lt;/p&gt;
-</description>
-        <pubDate>Thu, 28 Mar 2019 23:30:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/03/28/WayKi%E5%85%AC%E9%93%BE%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/03/28/WayKi%E5%85%AC%E9%93%BE%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/</guid>
-        
-        <category>三月</category>
-        
-        
-        <category>【Wayki】</category>
-        
-      </item>
-    
-<<<<<<< HEAD
-      <item>
-        <title>量子公链技术</title>
-        <description>
-</description>
-        <pubDate>Thu, 28 Mar 2019 23:30:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/03/28/%E9%87%8F%E5%AD%90%E5%85%AC%E9%93%BE%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/03/28/%E9%87%8F%E5%AD%90%E5%85%AC%E9%93%BE%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/</guid>
-        
-        <category>三月</category>
-        
-        
-        <category>【QUTM】</category>
-        
-      </item>
-    
-      <item>
-        <title>【理论】P2P网络内容传输技术</title>
-        <description>
-</description>
-        <pubDate>Wed, 27 Mar 2019 23:55:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/03/27/P2P%E7%BD%91%E7%BB%9C%E5%86%85%E5%AE%B9%E4%BC%A0%E8%BE%93%E6%8A%80%E6%9C%AF/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/03/27/P2P%E7%BD%91%E7%BB%9C%E5%86%85%E5%AE%B9%E4%BC%A0%E8%BE%93%E6%8A%80%E6%9C%AF/</guid>
-        
-        <category>三月</category>
-        
-        
-        <category>【P2P】</category>
-        
-      </item>
-    
-=======
->>>>>>> ca15ae821ae8c3ae3e2916cc2eb4d2cdef10dfba
   </channel>
 </rss>
