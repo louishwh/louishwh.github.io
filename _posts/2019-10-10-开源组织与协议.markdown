@@ -55,6 +55,8 @@ tag: 【编程常识】
 - [引用](https://blog.csdn.net/qwertyuiop_123abc/article/details/82110221#BSD%E5%BC%80%E6%BA%90%E5%8D%8F%E8%AE%AE%EF%BC%88original%20BSD%20license%E3%80%81FreeBSD%20license%E3%80%81Original%20BSD%20license%EF%BC%89)
 
 ### BSD
+- [Original BSD license](http://www.fsf.org/licensing/licenses/index_html#OriginalBSD)
+- [FreeBSD license](http://www.freebsd.org/copyright/freebsd-license.html)
 
 BSD开源协议是一个给于使用者很大自由的协议。基本上使用者可以”为所欲为”,可以自由的使用，修改源代码，也可以将修改后的代码作为开源或者专有软件再发布。
 
