@@ -1,0 +1,44 @@
+---
+layout: post
+title: redis源码阅读
+date: 2019-10-10 10:00:00 +0800
+categories: 【Redis】
+tag: 【源码阅读】
+---
+
+## 概要
+
+
+## 学习方法
+- [Redis源码分析](https://blog.csdn.net/nawenqiang/article/details/78461031)
+
+- [如何阅读 Redis 源码1](http://blog.huangz.me/diary/2014/how-to-read-redis-source-code.html)
+
+- [如何阅读 Redis 源码2](https://redissrc.readthedocs.io/en/latest/datastruct/sds.html)
+
+
+## 架构设计
+
+
+## 代码结构
+
+- 字符串
+
+- 字典
+
+- 链表
+
+
+
+
+
+
+
+## 资料参考
+
+- [Redis官网](https://redis.io/)
+- [Redis架构](https://www.cnblogs.com/panpanwelcome/p/8483725.html)
+- [Redis架构相关原理](https://www.jianshu.com/p/6ec58693ee21)
+- [Redis主题架构](https://blog.51cto.com/13902811/2294162)
+- [Redis数据结构](https://www.runoob.com/w3cnote/redis-intro-data-structure.html)
+- 
