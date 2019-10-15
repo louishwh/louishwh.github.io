@@ -16,6 +16,9 @@ tag: 【源码阅读】
 
 - [如何阅读 Redis 源码2](https://redissrc.readthedocs.io/en/latest/datastruct/sds.html)
 
+- [源码解析](https://redissrc.readthedocs.io/en/latest/#id3)
+- [注释代码](git@gitee.com:klearner/redis.git)
+
 
 ## 架构设计
 
