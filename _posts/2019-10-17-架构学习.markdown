@@ -1,0 +1,15 @@
+---
+layout: post
+title: 架构学习资料
+date: 2019-10-10 10:00:00 +0800
+categories: 【架构图】
+tag: 【软件架构】
+---
+
+## 概要
+
+- [总的概述](https://mp.weixin.qq.com/s/XI2rMdeswhHStFcm7NFRPQ)
+	- [C4模型](https://c4model.com/)
+		- [软件C4模型](https://www.infoq.cn/article/C4-architecture-model/)
+	- [软件架构图艺术](https://www.infoq.cn/article/crafting-architectural-diagrams/)
+	- [敏捷宣言](http://agilemanifesto.org/)
