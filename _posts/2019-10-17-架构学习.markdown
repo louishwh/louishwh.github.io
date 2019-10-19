@@ -1,9 +1,9 @@
 ---
 layout: post
 title: 架构学习资料
-date: 2019-10-10 10:00:00 +0800
-categories: 【架构图】
-tag: 【软件架构】
+date: 2019-10-17 10:00:00 +0800
+categories: 【软件架构】
+tag: 【必备技能】
 ---
 
 ## 概要

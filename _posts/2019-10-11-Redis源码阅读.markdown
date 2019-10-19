@@ -2,8 +2,8 @@
 layout: post
 title: redis源码阅读
 date: 2019-10-10 10:00:00 +0800
-categories: 【Redis】
-tag: 【源码阅读】
+categories: 【源码阅读】
+tag: 【必备技能】
 ---
 
 ## 概要

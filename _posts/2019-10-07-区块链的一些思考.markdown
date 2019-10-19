@@ -2,8 +2,8 @@
 layout: post
 title: 区块链的一些思考
 date: 2019-09-24 00:00:00 +0800
-categories: 【价值思考】
-tag: 【区块链】
+categories: 【区块链】
+tag: 【思考】
 ---
 
 
