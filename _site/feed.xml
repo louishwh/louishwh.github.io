@@ -2,12 +2,741 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title></title>
-    <description>Seeking truth from facts.</description>
+    <description>Atomix</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 21 Aug 2019 09:33:38 +0800</pubDate>
-    <lastBuildDate>Wed, 21 Aug 2019 09:33:38 +0800</lastBuildDate>
+    <pubDate>Sat, 19 Oct 2019 10:24:43 +0800</pubDate>
+    <lastBuildDate>Sat, 19 Oct 2019 10:24:43 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>深入理解操作系统</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/images/2019-10-19-深入理解操作系统.jpg&quot; alt=&quot;深入理解操作系统&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 19 Oct 2019 10:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/10/19/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F1/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/10/19/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F1/</guid>
+        
+        <category>【读书】</category>
+        
+        
+        <category>【操作系统】</category>
+        
+      </item>
+    
+      <item>
+        <title>架构学习资料</title>
+        <description>&lt;h2 id=&quot;概要&quot;&gt;概要&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s/XI2rMdeswhHStFcm7NFRPQ&quot;&gt;总的概述&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://c4model.com/&quot;&gt;C4模型&lt;/a&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;https://www.infoq.cn/article/C4-architecture-model/&quot;&gt;软件C4模型&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://www.infoq.cn/article/crafting-architectural-diagrams/&quot;&gt;软件架构图艺术&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://agilemanifesto.org/&quot;&gt;敏捷宣言&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Thu, 17 Oct 2019 10:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/10/17/%E6%9E%B6%E6%9E%84%E5%AD%A6%E4%B9%A0/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/10/17/%E6%9E%B6%E6%9E%84%E5%AD%A6%E4%B9%A0/</guid>
+        
+        <category>【必备技能】</category>
+        
+        
+        <category>【软件架构】</category>
+        
+      </item>
+    
+      <item>
+        <title>redis源码阅读</title>
+        <description>&lt;h2 id=&quot;概要&quot;&gt;概要&lt;/h2&gt;
+
+&lt;h2 id=&quot;学习方法&quot;&gt;学习方法&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/nawenqiang/article/details/78461031&quot;&gt;Redis源码分析&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://blog.huangz.me/diary/2014/how-to-read-redis-source-code.html&quot;&gt;如何阅读 Redis 源码1&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://redissrc.readthedocs.io/en/latest/datastruct/sds.html&quot;&gt;如何阅读 Redis 源码2&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://redissrc.readthedocs.io/en/latest/#id3&quot;&gt;源码解析&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;git@gitee.com:klearner/redis.git&quot;&gt;注释代码&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;架构设计&quot;&gt;架构设计&lt;/h2&gt;
+
+&lt;h2 id=&quot;代码结构&quot;&gt;代码结构&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;字符串&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;字典&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;链表&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;资料参考&quot;&gt;资料参考&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://redis.io/&quot;&gt;Redis官网&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.cnblogs.com/panpanwelcome/p/8483725.html&quot;&gt;Redis架构&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.jianshu.com/p/6ec58693ee21&quot;&gt;Redis架构相关原理&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.51cto.com/13902811/2294162&quot;&gt;Redis主题架构&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.runoob.com/w3cnote/redis-intro-data-structure.html&quot;&gt;Redis数据结构&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Thu, 10 Oct 2019 10:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/10/10/Redis%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/10/10/Redis%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB/</guid>
+        
+        <category>【必备技能】</category>
+        
+        
+        <category>【源码阅读】</category>
+        
+      </item>
+    
+      <item>
+        <title>开源组织和协议</title>
+        <description>&lt;h2 id=&quot;开源基金会&quot;&gt;开源基金会&lt;/h2&gt;
+
+&lt;h3 id=&quot;linux基金会&quot;&gt;&lt;a href=&quot;https://www.linuxfoundation.org/&quot;&gt;Linux基金会&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://linuxfoundation.cn/projects/&quot;&gt;开源项目&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;http://live-lforg.pantheonsite.io/projects/linux/&quot;&gt;linux&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://kubernetes.io/&quot;&gt;kubernetes&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/jaegertracing/jaeger&quot;&gt;JAEGER&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://www.hyperledger.org/&quot;&gt;hyperledger&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://nodejs.org/en/&quot;&gt;nodejs&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://xenproject.org/&quot;&gt;Xen project&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://www.odpi.org/&quot;&gt;ODPi&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;openstack基金会&quot;&gt;&lt;a href=&quot;https://www.openstack.org/foundation/&quot;&gt;OpenStack基金会&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.csdn.net/chengqiuming/article/details/79303254&quot;&gt;开源项目&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;apache基金会&quot;&gt;&lt;a href=&quot;https://www.apache.org/index.html&quot;&gt;Apache基金会&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.apache.org/index.html#news&quot;&gt;开源项目&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;http://activemq.apache.org/&quot;&gt;ActiveMQ&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://ant.apache.org/&quot;&gt;Ant&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://cassandra.apache.org/&quot;&gt;Cassandra&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://cordova.apache.org/&quot;&gt;Cordova&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://couchdb.apache.org/&quot;&gt;CouchDB&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://dubbo.apache.org/en-us/&quot;&gt;Dubbo&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://flume.apache.org/&quot;&gt;Flume&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://groovy.apache.org/&quot;&gt;Groovy&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://hadoop.apache.org/&quot;&gt;Hadoop&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://hive.apache.org/&quot;&gt;Hive&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://hbase.apache.org/&quot;&gt;HBase&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://jmeter.apache.org/&quot;&gt;Jmeter&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://kafka.apache.org/&quot;&gt;Kafka&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://kylin.apache.org/&quot;&gt;Kylin&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://maven.apache.org/&quot;&gt;Maven&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://netbeans.apache.org/&quot;&gt;NetBeans&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://pdfbox.apache.org/&quot;&gt;Perl&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://rocketmq.apache.org/&quot;&gt;RocketMQ&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://tomcat.apache.org/&quot;&gt;Tomcat&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://zookeeper.apache.org/&quot;&gt;Zookeeper&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;自由软件基金会fsf&quot;&gt;&lt;a href=&quot;https://www.fsf.org/&quot;&gt;自由软件基金会(FSF)&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gnu.org/gnu/thegnuproject.html&quot;&gt;GNU计划&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;h2 id=&quot;开源协议&quot;&gt;&lt;a href=&quot;https://www.oschina.net/question/12_2664&quot;&gt;开源协议&lt;/a&gt;&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.csdn.net/qwertyuiop_123abc/article/details/82110221#BSD%E5%BC%80%E6%BA%90%E5%8D%8F%E8%AE%AE%EF%BC%88original%20BSD%20license%E3%80%81FreeBSD%20license%E3%80%81Original%20BSD%20license%EF%BC%89&quot;&gt;引用&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;bsd&quot;&gt;BSD&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.fsf.org/licensing/licenses/index_html#OriginalBSD&quot;&gt;Original BSD license&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.freebsd.org/copyright/freebsd-license.html&quot;&gt;FreeBSD license&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;BSD开源协议是一个给于使用者很大自由的协议。基本上使用者可以”为所欲为”,可以自由的使用，修改源代码，也可以将修改后的代码作为开源或者专有软件再发布。&lt;/p&gt;
+
+&lt;p&gt;但”为所欲为”的前提当你发布使用了BSD协议的代码，或则以BSD协议代码为基础做二次开发自己的产品时，需要满足三个条件：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;如果再发布的产品中包含源代码，则在源代码中必须带有原来代码中的BSD协议。&lt;/li&gt;
+  &lt;li&gt;如果再发布的只是二进制类库/软件，则需要在类库软件的文档和版权声明中包含原来代码中的BSD协议。&lt;/li&gt;
+  &lt;li&gt;不可以用开源代码的作者/机构名字和原来产品的名字做市场推广。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;BSD 代码鼓励代码共享，但需要尊重代码作者的著作权。BSD由于允许使用者修改和重新发布代码，也允许使用或在BSD代码上开发商业软件发布和销售，因此是对 商业集成很友好的协议。而很多的公司企业在选用开源产品的时候都首选BSD协议，因为可以完全控制这些第三方的代码，在必要的时候可以修改或者二次开发。&lt;/p&gt;
+
+&lt;h3 id=&quot;apache&quot;&gt;Apache&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.apache.org/licenses/LICENSE-2.0&quot;&gt;Apache2.0&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.apache.org/LICENSE-1.1&quot;&gt;Apache1.1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.apache.org/LICENSE-1.0&quot;&gt;Apache2.0&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Apache Licence是著名的非盈利开源组织Apache采用的协议。该协议和BSD类似，同样鼓励代码共享和尊重原作者的著作权，同样允许代码修改，再发布（作为开源或商业软件）。需要满足的条件也和BSD类似：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;需要给代码的用户一份Apache Licence&lt;/li&gt;
+  &lt;li&gt;如果你修改了代码，需要再被修改的文件中说明。&lt;/li&gt;
+  &lt;li&gt;在延伸的代码中（修改和有源代码衍生的代码中）需要带有原来代码中的协议，商标，专利声明和其他原来作者规定需要包含的说明。&lt;/li&gt;
+  &lt;li&gt;如果再发布的产品中包含一个Notice文件，则在Notice文件中需要带有Apache Licence。你可以在Notice中增加自己的许可，但不可以表现为对Apache Licence构成更改。
+Apache Licence也是对商业应用友好的许可。使用者也可以在需要的时候修改代码来满足需要并作为开源或商业产品发布/销售。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;gplgnu-general-public-license&quot;&gt;GPL（GNU General Public License）&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.fsf.org/licensing/licenses/gpl.html&quot;&gt;GPL&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;我们很熟悉的Linux就是采用了GPL。GPL协议和BSD, Apache Licence等鼓励代码重用的许可很不一样。GPL的出发点是代码的开源/免费使用和引用/修改/衍生代码的开源/免费使用，但不允许修改后和衍生的代 码做为闭源的商业软件发布和销售。这也就是为什么我们能用免费的各种linux，包括商业公司的linux和linux上各种各样的由个人，组织，以及商 业软件公司开发的免费软件了。&lt;/p&gt;
+
+&lt;p&gt;GPL协议的主要内容是只要在一个软件中使用(”使用”指类库引用，修改后的代码或者衍生代码)GPL 协议的产品，则该软件产品必须也采用GPL协议，既必须也是开源和免费。这就是所谓的”传染性”。GPL协议的产品作为一个单独的产品使用没有任何问题，还可以享受免费的优势。&lt;/p&gt;
+
+&lt;p&gt;由于GPL严格要求使用了GPL类库的软件产品必须使用GPL协议，对于使用GPL协议的开源代码，商业软件或者对代码有保密要求的部门就不适合集成/采用作为类库和二次开发的基础。&lt;/p&gt;
+
+&lt;p&gt;其它细节如再发布的时候需要伴随GPL协议等和BSD/Apache等类似。&lt;/p&gt;
+
+&lt;h3 id=&quot;lgplgnu-lesser-general-public-license&quot;&gt;LGPL（GNU Lesser General Public License）&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.fsf.org/licensing/licenses/lgpl.html&quot;&gt;LGPL&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;LGPL是GPL的一个为主要为类库使用设计的开源协议。和GPL要求任何使用/修改/衍生之GPL类库的的软件必须采用GPL协议不同。LGPL 允许商业软件通过类库引用(link)方式使用LGPL类库而不需要开源商业软件的代码。这使得采用LGPL协议的开源代码可以被商业软件作为类库引用并 发布和销售。&lt;/p&gt;
+
+&lt;p&gt;但是如果修改LGPL协议的代码或者衍生，则所有修改的代码，涉及修改部分的额外代码和衍生的代码都必须采用LGPL协议。因此LGPL协议的开源 代码很适合作为第三方类库被商业软件引用，但不适合希望以LGPL协议代码为基础，通过修改和衍生的方式做二次开发的商业软件采用。&lt;/p&gt;
+
+&lt;p&gt;GPL/LGPL都保障原作者的知识产权，避免有人利用开源代码复制并开发类似的产品&lt;/p&gt;
+
+&lt;h3 id=&quot;mitmit&quot;&gt;MIT（MIT）&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.opensource.org/licenses/mit-license.php&quot;&gt;MIT&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;MIT是和BSD一样宽范的许可协议,作者只想保留版权,而无任何其他了限制.也就是说,你必须在你的发行版里包含原许可协议的声明,无论你是以二进制发布的还是以源代码发布的.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;开源不等于免费，开源也不等于没有约束。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+</description>
+        <pubDate>Thu, 10 Oct 2019 10:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/10/10/%E5%BC%80%E6%BA%90%E7%BB%84%E7%BB%87%E4%B8%8E%E5%8D%8F%E8%AE%AE/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/10/10/%E5%BC%80%E6%BA%90%E7%BB%84%E7%BB%87%E4%B8%8E%E5%8D%8F%E8%AE%AE/</guid>
+        
+        <category>【编程常识】</category>
+        
+        
+        <category>【编程常识】</category>
+        
+      </item>
+    
+      <item>
+        <title>JVM系后端知识框架</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/images/2019-10-04Jvm后端.png&quot; alt=&quot;/images/2019-10-04Jvm后端.png&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;网关
+    &lt;ul&gt;
+      &lt;li&gt;Nginx
+        &lt;ul&gt;
+          &lt;li&gt;Kong&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;服务器
+    &lt;ul&gt;
+      &lt;li&gt;Tomcat&lt;/li&gt;
+      &lt;li&gt;Netty&lt;/li&gt;
+      &lt;li&gt;Jetty&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;缓冲
+    &lt;ul&gt;
+      &lt;li&gt;RocketMQ&lt;/li&gt;
+      &lt;li&gt;RabbitMQ&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;(https://www.cnblogs.com/panchanggui/p/9503666.html)&quot;&gt;缓存&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;CDN&lt;/li&gt;
+      &lt;li&gt;Ehcache&lt;/li&gt;
+      &lt;li&gt;Guava Cache&lt;/li&gt;
+      &lt;li&gt;Redis&lt;/li&gt;
+      &lt;li&gt;Memcached&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;编程语言
+    &lt;ul&gt;
+      &lt;li&gt;Java ✅&lt;/li&gt;
+      &lt;li&gt;Kotlin ✅&lt;/li&gt;
+      &lt;li&gt;Groovy ✅&lt;/li&gt;
+      &lt;li&gt;Scala ✅&lt;/li&gt;
+      &lt;li&gt;Clojure&lt;/li&gt;
+      &lt;li&gt;Jython(python)&lt;/li&gt;
+      &lt;li&gt;JRuby (ruby)&lt;/li&gt;
+      &lt;li&gt;Ceylon&lt;/li&gt;
+      &lt;li&gt;Eta&lt;/li&gt;
+      &lt;li&gt;Haxe&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;持久化
+    &lt;ul&gt;
+      &lt;li&gt;MySQL&lt;/li&gt;
+      &lt;li&gt;MongoDB&lt;/li&gt;
+      &lt;li&gt;PostgreSQL&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;编程工具
+    &lt;ul&gt;
+      &lt;li&gt;编辑器
+        &lt;ul&gt;
+          &lt;li&gt;InteliJ IDEA&lt;/li&gt;
+          &lt;li&gt;Eclipse&lt;/li&gt;
+          &lt;li&gt;Vim&lt;/li&gt;
+          &lt;li&gt;Emacs&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;运行环境
+        &lt;ul&gt;
+          &lt;li&gt;JVM&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;框架
+        &lt;ul&gt;
+          &lt;li&gt;Spring&lt;/li&gt;
+          &lt;li&gt;SpringBoot&lt;/li&gt;
+          &lt;li&gt;SprngCloud&lt;/li&gt;
+          &lt;li&gt;Dropwizard&lt;/li&gt;
+          &lt;li&gt;Dubbo&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;依赖管理工具
+        &lt;ul&gt;
+          &lt;li&gt;Ant&lt;/li&gt;
+          &lt;li&gt;Maven&lt;/li&gt;
+          &lt;li&gt;Gradle&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Fri, 04 Oct 2019 10:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/10/04/JVM%E7%B3%BB%E5%90%8E%E7%AB%AF%E7%9F%A5%E8%AF%86%E6%A1%86%E6%9E%B6/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/10/04/JVM%E7%B3%BB%E5%90%8E%E7%AB%AF%E7%9F%A5%E8%AF%86%E6%A1%86%E6%9E%B6/</guid>
+        
+        <category>【必备技能】</category>
+        
+        
+        <category>【软件架构】</category>
+        
+      </item>
+    
+      <item>
+        <title>Q4源码阅读计划</title>
+        <description>&lt;h2 id=&quot;目标&quot;&gt;目标&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;时间节点:
+    &lt;ul&gt;
+      &lt;li&gt;2019-10.1~2019.12.31&lt;/li&gt;
+      &lt;li&gt;40-44周&lt;/li&gt;
+      &lt;li&gt;45-48周&lt;/li&gt;
+      &lt;li&gt;49-53周&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;完成项目的整体认识
+    &lt;ul&gt;
+      &lt;li&gt;Redis(c)
+        &lt;ul&gt;
+          &lt;li&gt;架构图&lt;/li&gt;
+          &lt;li&gt;文件架构图&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;MySQL(c)
+  -
+        &lt;ul&gt;
+          &lt;li&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Nginx(c)
+  -
+        &lt;ul&gt;
+          &lt;li&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Tomcat(Java)
+  -
+        &lt;ul&gt;
+          &lt;li&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Netty(Java)
+  -
+        &lt;ul&gt;
+          &lt;li&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;工具掌握
+    &lt;ul&gt;
+      &lt;li&gt;编辑器 &amp;amp; IDE
+        &lt;ul&gt;
+          &lt;li&gt;CLion&lt;/li&gt;
+          &lt;li&gt;InteliJ IDEA&lt;/li&gt;
+          &lt;li&gt;Vim&lt;/li&gt;
+          &lt;li&gt;VS Code&lt;/li&gt;
+          &lt;li&gt;Sublime Text&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Tue, 01 Oct 2019 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/10/01/Q4%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB%E8%AE%A1%E5%88%92/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/10/01/Q4%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB%E8%AE%A1%E5%88%92/</guid>
+        
+        <category>【源码阅读】</category>
+        
+        
+        <category>【计划】</category>
+        
+      </item>
+    
+      <item>
+        <title>区块链的一些思考</title>
+        <description>&lt;h3 id=&quot;区块链的功能&quot;&gt;区块链的功能&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;去中心化
+    &lt;ul&gt;
+      &lt;li&gt;通过很多功能全面的节点组网&lt;/li&gt;
+      &lt;li&gt;部分的死亡不足以导致整体死亡&lt;/li&gt;
+      &lt;li&gt;类似人体的细胞、组织、器官与生命体的关系&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;公开性
+    &lt;ul&gt;
+      &lt;li&gt;全面功能的节点亦即数据和功能的包含性&lt;/li&gt;
+      &lt;li&gt;每一个节点即可获得所有的数据和程序副本&lt;/li&gt;
+      &lt;li&gt;类似细胞核一样, 所有的功能均含有, 选择性使用&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;透明性
+    &lt;ul&gt;
+      &lt;li&gt;完整数据和程序的可获得性, 决定所有的规则透明&lt;/li&gt;
+      &lt;li&gt;每个个体均可获取明确的规则&lt;/li&gt;
+      &lt;li&gt;类似神经递质与激素,规则明晰&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;不可篡改性
+    &lt;ul&gt;
+      &lt;li&gt;不是不能篡改, 是很难去篡改所有的数据&lt;/li&gt;
+      &lt;li&gt;因为分布式特性, 需要改就需要付出很大&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;应该对群体的价值&quot;&gt;应该对群体的价值&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;集合性
+    &lt;ul&gt;
+      &lt;li&gt;可以使用零散的资源组网构建大的资源池&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;分散性
+    &lt;ul&gt;
+      &lt;li&gt;资源分散分布, 有更可靠的活性&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;唯一性
+    &lt;ul&gt;
+      &lt;li&gt;这个基于认可来获得, 需要群体支持, 俗称共识&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;实际对群体的价值&quot;&gt;实际对群体的价值&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;欺骗性
+    &lt;ul&gt;
+      &lt;li&gt;在你的生活中, 有与没有区块链并不影响&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;劫掠性
+    &lt;ul&gt;
+      &lt;li&gt;大庄做市, 散户被收割&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;黑洞性
+    &lt;ul&gt;
+      &lt;li&gt;可以用来吃掉全球的债务&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;赌博性
+    &lt;ul&gt;
+      &lt;li&gt;提供了新型的赌博工具&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;对区块链未来的预测&quot;&gt;对区块链未来的预测&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;成为债务赤字的黑洞&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;在金融领域的唯一性载体&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;我如何从中获取机会&quot;&gt;我如何从中获取机会?&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+        <pubDate>Tue, 24 Sep 2019 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/09/24/%E5%8C%BA%E5%9D%97%E9%93%BE%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%9D%E8%80%83/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/09/24/%E5%8C%BA%E5%9D%97%E9%93%BE%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%9D%E8%80%83/</guid>
+        
+        <category>【思考】</category>
+        
+        
+        <category>【区块链】</category>
+        
+      </item>
+    
+      <item>
+        <title>SpringBoot工具集</title>
+        <description>&lt;h3 id=&quot;阐述的内容&quot;&gt;阐述的内容&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.cnblogs.com/hongdada/p/9179053.html&quot;&gt;参数校验&lt;/a&gt;
+&lt;a href=&quot;https://www.cnblogs.com/albert1024/articles/8436270.html&quot;&gt;参数校验&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;###################################### tomcat ######################################
+&lt;a href=&quot;https://blog.csdn.net/feng2qing/article/details/60968548&quot;&gt;Tomcat本地配置&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/yangsnow_rain_wind/article/details/80049506&quot;&gt;Tomcat初始化和启动过程&lt;/a&gt;
+&lt;a href=&quot;https://blog.csdn.net/zzg19950824/article/details/79433735&quot;&gt;Tomcat流程&lt;/a&gt;
+&lt;a href=&quot;https://blog.csdn.net/yangsnow_rain_wind/article/details/80064945&quot;&gt;Tomcat处理请求流程&lt;/a&gt;
+&lt;a href=&quot;https://blog.csdn.net/subuser/article/details/49763415&quot;&gt;Tomcat源码阅读&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;###################################### SpringBoot ######################################&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/andy_zhang2007/article/details/85039143&quot;&gt;SpringBoot web处理流程&lt;/a&gt;
+&lt;a href=&quot;https://www.jianshu.com/p/0ac921cf829e&quot;&gt;SpingBoot处理WebFlux流程&lt;/a&gt;
+&lt;a href=&quot;https://blog.csdn.net/jiangzeyin_/article/details/81094258&quot;&gt;接口实现自定义返回数据类型&lt;/a&gt;
+&lt;a href=&quot;https://www.hellojava.com/a/45272.html&quot;&gt;基于RequestBodyAdvice和ResponseBodyAdvice实现参数加解密&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/qq1404510094/article/details/80577555&quot;&gt;Java注解&lt;/a&gt;
+&lt;a href=&quot;https://www.cnblogs.com/shamo89/p/6707898.html&quot;&gt;Mysql连接太多&lt;/a&gt;
+&lt;a href=&quot;https://www.jb51.net/article/163370.htm&quot;&gt;Mysql连接太多&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.cnblogs.com/doit8791/p/7759806.html&quot;&gt;java消息队列&lt;/a&gt;
+&lt;a href=&quot;https://www.rabbitmq.com/api-guide.html&quot;&gt;RabbitMQ&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/likuangren/article/details/79171285&quot;&gt;RxJava&lt;/a&gt;
+&lt;a href=&quot;https://www.cnblogs.com/caolaoshi/p/7824748.html&quot;&gt;java static{}&lt;/a&gt;
+&lt;a href=&quot;https://blog.csdn.net/qq_22339457/article/details/82386545&quot;&gt;Java synchronized&lt;/a&gt;
+&lt;a href=&quot;https://www.cnblogs.com/blog-Aevin/p/9302678.html&quot;&gt;Java volatile&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/u014231523/article/details/76522486&quot;&gt;Swagger&lt;/a&gt;
+&lt;a href=&quot;https://blog.csdn.net/wyb880501/article/details/79576784&quot;&gt;Swagger&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/u013651026/article/details/79738059&quot;&gt;OkHttp&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/zhaipengfei1231/article/details/81317556&quot;&gt;服务发现&lt;/a&gt;
+&lt;a href=&quot;https://blog.csdn.net/wzj_110/article/details/81590472&quot;&gt;权限管理&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;###################################### Jetty ######################################&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.cnblogs.com/guxia/p/8076099.html&quot;&gt;jetty与Tomcat对比&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;######## Java工程师&lt;/p&gt;
+
+&lt;p&gt;https://blog.csdn.net/u013551462/article/details/50956090&lt;/p&gt;
+
+&lt;h3 id=&quot;dou&quot;&gt;Dou&lt;/h3&gt;
+&lt;p&gt;http://dubbo.apache.org/en-us/&lt;/p&gt;
+
+&lt;h3 id=&quot;service-mesh&quot;&gt;Service Mesh&lt;/h3&gt;
+&lt;p&gt;https://www.jianshu.com/p/e23e3e74538e
+https://www.cnblogs.com/williamjie/p/9497435.html&lt;/p&gt;
+
+&lt;h3 id=&quot;openjdk&quot;&gt;OpenJDK&lt;/h3&gt;
+&lt;p&gt;https://www.cnblogs.com/zhaojingyu/p/8888934.html&lt;/p&gt;
+
+&lt;h3 id=&quot;helidon&quot;&gt;Helidon&lt;/h3&gt;
+&lt;p&gt;https://juejin.im/post/5b99300af265da0ace211d22&lt;/p&gt;
+
+&lt;h3 id=&quot;apache基金会&quot;&gt;apache基金会&lt;/h3&gt;
+&lt;p&gt;https://projects.apache.org/projects.html?language&lt;/p&gt;
+
+&lt;h3 id=&quot;gnu&quot;&gt;GNU&lt;/h3&gt;
+&lt;p&gt;https://baike.baidu.com/item/GNU%E8%AE%A1%E5%88%92/981157?fr=aladdin
+http://gcc.gnu.org/&lt;/p&gt;
+
+&lt;h3 id=&quot;前端框架&quot;&gt;前端框架&lt;/h3&gt;
+&lt;p&gt;https://youzan.github.io/vant/#/zh-CN/intro&lt;/p&gt;
+
+&lt;h3 id=&quot;rust&quot;&gt;Rust&lt;/h3&gt;
+&lt;p&gt;https://rocket.rs/
+https://actix.rs/
+https://gotham.rs/
+https://larder.io/blog/larder-links-09-rust-web-frameworks/
+https://www.jdon.com/50236
+https://www.jdon.com/tags/28556
+Rocket: https://www.jianshu.com/nb/23051136
+数据库连接: https://diesel.rs/guides/getting-started/&lt;/p&gt;
+
+&lt;h4 id=&quot;webasm&quot;&gt;WebASM&lt;/h4&gt;
+
+</description>
+        <pubDate>Tue, 24 Sep 2019 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/09/24/SpringBoot%E5%B7%A5%E5%85%B7%E9%9B%86/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/09/24/SpringBoot%E5%B7%A5%E5%85%B7%E9%9B%86/</guid>
+        
+        <category>【后端】</category>
+        
+        
+        <category>【SpringBoot】</category>
+        
+      </item>
+    
+      <item>
+        <title>Tomcat简介</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://github.com/apache/tomcat&quot;&gt;Tomcat源码&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://yq.aliyun.com/articles/663198&quot;&gt;阅读Tomcat源码&lt;/a&gt;
+&lt;a href=&quot;https://blog.csdn.net/w1992wishes/article/details/79242797&quot;&gt;Tomcat架构&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;阐述的内容&quot;&gt;阐述的内容&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Tomcat结构图&lt;/li&gt;
+  &lt;li&gt;Tomcat启动过程&lt;/li&gt;
+  &lt;li&gt;Tomcat请求处理过程&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;1-tomcat结构&quot;&gt;1. Tomcat结构&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/2019-09-23-tomcat结构.png&quot; alt=&quot;/images/2019-09-23-tomcat结构.png&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Service
+    &lt;ul&gt;
+      &lt;li&gt;Connector
+        &lt;ul&gt;
+          &lt;li&gt;Container
+            &lt;ul&gt;
+              &lt;li&gt;Engine
+                &lt;ul&gt;
+                  &lt;li&gt;Host
+                    &lt;ul&gt;
+                      &lt;li&gt;Context
+                        &lt;ul&gt;
+                          &lt;li&gt;Wrapper: 对应一个Servlet Class&lt;/li&gt;
+                        &lt;/ul&gt;
+                      &lt;/li&gt;
+                    &lt;/ul&gt;
+                  &lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;2-tomcat启动过程&quot;&gt;2. Tomcat启动过程&lt;/h4&gt;
+
+&lt;h4 id=&quot;3-tomcat请求处理过程&quot;&gt;3. Tomcat请求处理过程&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;本机端口获取数据, Connector获取
+    &lt;ul&gt;
+      &lt;li&gt;Connector: 监听端口的TCP连接请求
+        &lt;ul&gt;
+          &lt;li&gt;创建Request和Response&lt;/li&gt;
+          &lt;li&gt;产生一个线程把请求传递给Container.Engine
+            &lt;ul&gt;
+              &lt;li&gt;Container的Engine获取请求, 交给Host
+                &lt;ul&gt;
+                  &lt;li&gt;Host获取请求, 交给Context
+                    &lt;ul&gt;
+                      &lt;li&gt;Context获取请求, 匹配Servlet,交给Servlet
+                        &lt;ul&gt;
+                          &lt;li&gt;构造HttpServletRequest, HttpServletResponse&lt;/li&gt;
+                        &lt;/ul&gt;
+                      &lt;/li&gt;
+                      &lt;li&gt;Context返回HttpServletResponse给Host&lt;/li&gt;
+                    &lt;/ul&gt;
+                  &lt;/li&gt;
+                  &lt;li&gt;Host返回HttpServletResponse给Engine&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+              &lt;li&gt;Engine返回HttpServletResponse给Connector&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Connector返回HttpServletResponse给Browser&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Mon, 23 Sep 2019 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/09/23/Tomcat%E7%AE%80%E4%BB%8B/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/09/23/Tomcat%E7%AE%80%E4%BB%8B/</guid>
+        
+        <category>【后端】</category>
+        
+        
+        <category>【Tomcat】</category>
+        
+      </item>
     
       <item>
         <title>架构与设计模式</title>
@@ -127,1510 +856,6 @@
         <guid isPermaLink="true">http://localhost:4000/2019/08/20/%E6%9E%B6%E6%9E%84%E4%B8%8E%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</guid>
         
         <category>【移动端】</category>
-        
-        
-        <category>【iOS】</category>
-        
-      </item>
-    
-      <item>
-        <title>CoreData</title>
-        <description>
-</description>
-        <pubDate>Sun, 18 Aug 2019 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/08/18/CoreData/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/08/18/CoreData/</guid>
-        
-        <category>【移动端】</category>
-        
-        
-        <category>【iOS】</category>
-        
-      </item>
-    
-      <item>
-        <title>CoreAnimation</title>
-        <description>
-</description>
-        <pubDate>Sat, 17 Aug 2019 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/08/17/CoreAnimation/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/08/17/CoreAnimation/</guid>
-        
-        <category>【移动端】</category>
-        
-        
-        <category>【iOS】</category>
-        
-      </item>
-    
-      <item>
-        <title>iOS-UIKit</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/documentation/uikit&quot;&gt;Apple官网-UIKit&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/documentation/uikit/views_and_controls?changes=latest_major&quot;&gt;Views and Controls&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;UIView and Controls&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;Container Views
-        &lt;ul&gt;
-          &lt;li&gt;Collection Views&lt;/li&gt;
-          &lt;li&gt;Table Views&lt;/li&gt;
-          &lt;li&gt;UIStackView&lt;/li&gt;
-          &lt;li&gt;UIScrollView&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Content Views
-        &lt;ul&gt;
-          &lt;li&gt;UIActivityIndicatorView&lt;/li&gt;
-          &lt;li&gt;UIImageView&lt;/li&gt;
-          &lt;li&gt;UIPickerView&lt;/li&gt;
-          &lt;li&gt;UIProgressView&lt;/li&gt;
-          &lt;li&gt;&lt;del&gt;UIWebView&lt;/del&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Controls
-        &lt;ul&gt;
-          &lt;li&gt;UIControl&lt;/li&gt;
-          &lt;li&gt;UIButton&lt;/li&gt;
-          &lt;li&gt;UIDatePicker&lt;/li&gt;
-          &lt;li&gt;UIPageControl&lt;/li&gt;
-          &lt;li&gt;UISegmentedControl&lt;/li&gt;
-          &lt;li&gt;UISlider&lt;/li&gt;
-          &lt;li&gt;UIStepper&lt;/li&gt;
-          &lt;li&gt;UISwitch&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Text Views
-        &lt;ul&gt;
-          &lt;li&gt;UILabel&lt;/li&gt;
-          &lt;li&gt;UITextField&lt;/li&gt;
-          &lt;li&gt;UITextView&lt;/li&gt;
-          &lt;li&gt;UISearchTextField&lt;/li&gt;
-          &lt;li&gt;UISearchToken&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Visual Effects
-        &lt;ul&gt;
-          &lt;li&gt;UIVisualEffect&lt;/li&gt;
-          &lt;li&gt;UIVisualEffectView&lt;/li&gt;
-          &lt;li&gt;UIVibrancyEffect&lt;/li&gt;
-          &lt;li&gt;UIBlurEffect&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Bars
-        &lt;ul&gt;
-          &lt;li&gt;UIBarItem&lt;/li&gt;
-          &lt;li&gt;UIBarButtonItem&lt;/li&gt;
-          &lt;li&gt;UIBarButtonItemGroup&lt;/li&gt;
-          &lt;li&gt;UINavigationBar&lt;/li&gt;
-          &lt;li&gt;UISearchBar&lt;/li&gt;
-          &lt;li&gt;UIToolbar&lt;/li&gt;
-          &lt;li&gt;UITabBar&lt;/li&gt;
-          &lt;li&gt;UITabBarItem&lt;/li&gt;
-          &lt;li&gt;UIBarPositioning&lt;/li&gt;
-          &lt;li&gt;UIBarPositioningDelegate&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Content Viewer
-        &lt;ul&gt;
-          &lt;li&gt;UILargeContentViewerInteraction&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Related Types
-        &lt;ul&gt;
-          &lt;li&gt;UIOffset&lt;/li&gt;
-          &lt;li&gt;UIEdgeInsets&lt;/li&gt;
-          &lt;li&gt;NSDirectionalEdgeInsets&lt;/li&gt;
-          &lt;li&gt;NSDirectionalRectEdge&lt;/li&gt;
-          &lt;li&gt;NSRectAlignment&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;View Controllers&lt;/p&gt;
-    &lt;ul&gt;
-      &lt;li&gt;Custom View Controllers
-        &lt;ul&gt;
-          &lt;li&gt;UIViewController&lt;/li&gt;
-          &lt;li&gt;UITableViewController&lt;/li&gt;
-          &lt;li&gt;UICollectionViewController
-            &lt;ul&gt;
-              &lt;li&gt;UIContentContainer&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Split View Interface
-        &lt;ul&gt;
-          &lt;li&gt;UISplitViewController&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Navigation Interface
-        &lt;ul&gt;
-          &lt;li&gt;UINavigationController&lt;/li&gt;
-          &lt;li&gt;UINavigationBar&lt;/li&gt;
-          &lt;li&gt;UINavigationItem&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Page View Interface
-        &lt;ul&gt;
-          &lt;li&gt;UIPageViewController&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Tab View Interface
-        &lt;ul&gt;
-          &lt;li&gt;UITabBarController&lt;/li&gt;
-          &lt;li&gt;UITabBar&lt;/li&gt;
-          &lt;li&gt;UITabBarItem&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Search Interface
-        &lt;ul&gt;
-          &lt;li&gt;UISearchContainerViewController&lt;/li&gt;
-          &lt;li&gt;UISearchController&lt;/li&gt;
-          &lt;li&gt;UISearchBar&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Images and Video
-        &lt;ul&gt;
-          &lt;li&gt;UIImagePickerController&lt;/li&gt;
-          &lt;li&gt;UIVideoEditorController&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Document Previewing
-        &lt;ul&gt;
-          &lt;li&gt;UIDocumentInteractionController&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;iCloud Sharing
-        &lt;ul&gt;
-          &lt;li&gt;UICloudSharingController&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
- 	- Activities Interface
- 		- UIActivityViewController
- 		- UIActivityItemProvider
- 		- UIActivityItemSource
- 		- UIActivity
-
- 	- Font Picker
- 		- UIFontPickerViewController
- 		- UIFontPickerViewController.Configuration
-
- 	- Word Lookup
- 		- UIReferenceLibraryViewController
-
- 	- Printer Picker
- 		- UIPrinterPickerController
-
-&lt;ul&gt;
-  &lt;li&gt;View Layout
-    &lt;ul&gt;
-      &lt;li&gt;First Steps
-        &lt;ul&gt;
-          &lt;li&gt;UIStackView&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Constraints
-        &lt;ul&gt;
-          &lt;li&gt;NSLayoutConstraint&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Layout Guides
-        &lt;ul&gt;
-          &lt;li&gt;UILayoutGuide&lt;/li&gt;
-          &lt;li&gt;NSLayoutDimension&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Anchors
-        &lt;ul&gt;
-          &lt;li&gt;NSLayoutAnchor&lt;/li&gt;
-          &lt;li&gt;NSLayoutXAxisAnchor&lt;/li&gt;
-          &lt;li&gt;NSLayoutYAxisAnchor&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Appearance Customization(外观定制)
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;p&gt;Dark Mode&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Navigation Bar Appearance
-        &lt;ul&gt;
-          &lt;li&gt;UINavigationBarAppearance&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Toolbar Appearance
-        &lt;ul&gt;
-          &lt;li&gt;UIToolbarAppearance&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Tab Bar Appearance
-        &lt;ul&gt;
-          &lt;li&gt;UITabBarAppearance&lt;/li&gt;
-          &lt;li&gt;UITabBarItemAppearance&lt;/li&gt;
-          &lt;li&gt;UITabBarItemStateAppearance&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Shared Appearance
-        &lt;ul&gt;
-          &lt;li&gt;UIBarAppearance&lt;/li&gt;
-          &lt;li&gt;UIBarButtonItemAppearance&lt;/li&gt;
-          &lt;li&gt;UIBarButtonItemStateAppearance&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Appearance Proxies
-        &lt;ul&gt;
-          &lt;li&gt;UIAppearance&lt;/li&gt;
-          &lt;li&gt;UIAppearanceContainer&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Animation and Haptics
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;p&gt;Content Animations&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;Physics-Based Animations&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;Parallax Effects(视差影响)&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;Haptic Feedback&lt;/p&gt;
-        &lt;ul&gt;
-          &lt;li&gt;UIFeedbackGenerator&lt;/li&gt;
-          &lt;li&gt;UIImpactFeedbackGenerator&lt;/li&gt;
-          &lt;li&gt;UINotificationFeedbackGenerator&lt;/li&gt;
-          &lt;li&gt;UISelectionFeedbackGenerator&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Windows and Screens
-    &lt;ul&gt;
-      &lt;li&gt;Windows
-        &lt;ul&gt;
-          &lt;li&gt;UIWidow&lt;/li&gt;
-          &lt;li&gt;UICoordinateSpace&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Popovers
-        &lt;ul&gt;
-          &lt;li&gt;UIPopoverPresentationController&lt;/li&gt;
-          &lt;li&gt;UIPopoverBackgroundView&lt;/li&gt;
-          &lt;li&gt;UIPopoverBackgroundViewMethods&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Alerts
-        &lt;ul&gt;
-          &lt;li&gt;UIAlertController&lt;/li&gt;
-          &lt;li&gt;UIAlertAction&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Screens
-        &lt;ul&gt;
-          &lt;li&gt;UIScreen&lt;/li&gt;
-          &lt;li&gt;UIScreenMode&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-</description>
-        <pubDate>Thu, 15 Aug 2019 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/08/15/UIKit/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/08/15/UIKit/</guid>
-        
-        <category>【移动端】</category>
-        
-        
-        <category>【iOS】</category>
-        
-      </item>
-    
-      <item>
-        <title>Foundation</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://www.jianshu.com/p/495f5f8045ee&quot;&gt;参考一&lt;/a&gt;
-&lt;a href=&quot;https://www.cnblogs.com/kenshincui/p/3885689.html&quot;&gt;参考二&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;nsobject&quot;&gt;NSObject&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;值类型:
-    &lt;ul&gt;
-      &lt;li&gt;NSAffineTransform&lt;/li&gt;
-      &lt;li&gt;NSCalendar&lt;/li&gt;
-      &lt;li&gt;NSCache&lt;/li&gt;
-      &lt;li&gt;NSValue
-        &lt;ul&gt;
-          &lt;li&gt;NSValue&lt;/li&gt;
-          &lt;li&gt;NSNumber&lt;/li&gt;
-          &lt;li&gt;NSDecimalNumber&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;NSData
-        &lt;ul&gt;
-          &lt;li&gt;NSMutableData&lt;/li&gt;
-          &lt;li&gt;NSPurgeableData&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;NSDate&lt;/li&gt;
-      &lt;li&gt;NSDateComponents&lt;/li&gt;
-      &lt;li&gt;NSDecimalNumberHandler&lt;/li&gt;
-      &lt;li&gt;NSLocale&lt;/li&gt;
-      &lt;li&gt;NSNull&lt;/li&gt;
-      &lt;li&gt;NSTimeZone&lt;/li&gt;
-      &lt;li&gt;NSValueTransformer&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;XML
-    &lt;ul&gt;
-      &lt;li&gt;NSXMLParser&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Strings
-    &lt;ul&gt;
-      &lt;li&gt;NSAttributedString&lt;/li&gt;
-      &lt;li&gt;NSCharacterSet&lt;/li&gt;
-      &lt;li&gt;NSString&lt;/li&gt;
-      &lt;li&gt;NSFormatter
-        &lt;ul&gt;
-          &lt;li&gt;NSDateFormatter&lt;/li&gt;
-          &lt;li&gt;NSNumberFormatter&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;NSScanner&lt;/li&gt;
-      &lt;li&gt;NSSortDescriptor&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Collections
-    &lt;ul&gt;
-      &lt;li&gt;NSArray
-        &lt;ul&gt;
-          &lt;li&gt;NSMutableArray&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;NSDictionary
-        &lt;ul&gt;
-          &lt;li&gt;NSMutableDictionary&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;NSNumerator
-        &lt;ul&gt;
-          &lt;li&gt;NSDirectoryEnumerator&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;NSHashTable&lt;/li&gt;
-      &lt;li&gt;NSIndexPath&lt;/li&gt;
-      &lt;li&gt;NSIndexSet
-        &lt;ul&gt;
-          &lt;li&gt;NSMutableIndexSet&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;NSMapTable&lt;/li&gt;
-      &lt;li&gt;NSPointerArray&lt;/li&gt;
-      &lt;li&gt;NSPointerFunctions&lt;/li&gt;
-      &lt;li&gt;NSSet
-        &lt;ul&gt;
-          &lt;li&gt;NSMutableSet&lt;/li&gt;
-          &lt;li&gt;NSCountedSet&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Predicates
-    &lt;ul&gt;
-      &lt;li&gt;NSExpression&lt;/li&gt;
-      &lt;li&gt;NSPredicate
-        &lt;ul&gt;
-          &lt;li&gt;NSComparisonPredicate&lt;/li&gt;
-          &lt;li&gt;NSCompoundPredicate&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Operating-System Services
-    &lt;ul&gt;
-      &lt;li&gt;NSError&lt;/li&gt;
-      &lt;li&gt;NSHost&lt;/li&gt;
-      &lt;li&gt;NSNetService&lt;/li&gt;
-      &lt;li&gt;NSNetServiceBrowser&lt;/li&gt;
-      &lt;li&gt;NSOrthography&lt;/li&gt;
-      &lt;li&gt;NSProcessInfo&lt;/li&gt;
-      &lt;li&gt;NSRunLoop&lt;/li&gt;
-      &lt;li&gt;NSSpeliServer&lt;/li&gt;
-      &lt;li&gt;NSTextCheckingResult&lt;/li&gt;
-      &lt;li&gt;NSTimer&lt;/li&gt;
-      &lt;li&gt;NSUserDefaults&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;File System
-    &lt;ul&gt;
-      &lt;li&gt;NSBundle&lt;/li&gt;
-      &lt;li&gt;NSFileHandler&lt;/li&gt;
-      &lt;li&gt;NSFileManager&lt;/li&gt;
-      &lt;li&gt;NSMetadataItem&lt;/li&gt;
-      &lt;li&gt;NSMetadataQuery&lt;/li&gt;
-      &lt;li&gt;NSMetadataQueryAttributeValueTuple&lt;/li&gt;
-      &lt;li&gt;NSMetadataQueryResuleGroup&lt;/li&gt;
-      &lt;li&gt;NSStream
-        &lt;ul&gt;
-          &lt;li&gt;NSInputStream&lt;/li&gt;
-          &lt;li&gt;NSOutputStream&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;URL
-    &lt;ul&gt;
-      &lt;li&gt;NSCachedURLResponse&lt;/li&gt;
-      &lt;li&gt;NSHTTPCookie&lt;/li&gt;
-      &lt;li&gt;NSHTTPCookieStorage&lt;/li&gt;
-      &lt;li&gt;NSURL&lt;/li&gt;
-      &lt;li&gt;NSURLAuthorizationChallenge&lt;/li&gt;
-      &lt;li&gt;NSURLCache&lt;/li&gt;
-      &lt;li&gt;NSURLSession&lt;/li&gt;
-      &lt;li&gt;NSURLCredential&lt;/li&gt;
-      &lt;li&gt;NSURLCredentialStorage&lt;/li&gt;
-      &lt;li&gt;NSURLDownload&lt;/li&gt;
-      &lt;li&gt;NSURLProtectionSpace&lt;/li&gt;
-      &lt;li&gt;NSURLProtocol&lt;/li&gt;
-      &lt;li&gt;NSURLRequest
-        &lt;ul&gt;
-          &lt;li&gt;NSMutableURLRequest&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;NSURLResponse
-        &lt;ul&gt;
-          &lt;li&gt;NSHTTPURLResponse&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Interprocess Communication
-    &lt;ul&gt;
-      &lt;li&gt;NSPipe&lt;/li&gt;
-      &lt;li&gt;NSPort
-        &lt;ul&gt;
-          &lt;li&gt;NSMachPort&lt;/li&gt;
-          &lt;li&gt;NSMessagePort&lt;/li&gt;
-          &lt;li&gt;NSSockerPort&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;NSPortMessage&lt;/li&gt;
-      &lt;li&gt;NSPortNameServer
-        &lt;ul&gt;
-          &lt;li&gt;NSMachBootstrapServer&lt;/li&gt;
-          &lt;li&gt;NSMessagePortNameServer&lt;/li&gt;
-          &lt;li&gt;NSSockerPortNameServer&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Locking-Threading
-    &lt;ul&gt;
-      &lt;li&gt;NSConditionLock&lt;/li&gt;
-      &lt;li&gt;NSDistributedLock&lt;/li&gt;
-      &lt;li&gt;NSLock&lt;/li&gt;
-      &lt;li&gt;NSOperation
-        &lt;ul&gt;
-          &lt;li&gt;NSBlockOperation&lt;/li&gt;
-          &lt;li&gt;NSInvocationOperation&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;NSOperationQueue&lt;/li&gt;
-      &lt;li&gt;NSRecursiveLock&lt;/li&gt;
-      &lt;li&gt;NSTask&lt;/li&gt;
-      &lt;li&gt;NSThread&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Notifications
-    &lt;ul&gt;
-      &lt;li&gt;NSNotification&lt;/li&gt;
-      &lt;li&gt;NSNotificationCenter
-        &lt;ul&gt;
-          &lt;li&gt;NSNotificationQueue&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Archiving and Serialization
-    &lt;ul&gt;
-      &lt;li&gt;NSCoder
-        &lt;ul&gt;
-          &lt;li&gt;NSArchiver&lt;/li&gt;
-          &lt;li&gt;NSKeyedArchiver&lt;/li&gt;
-          &lt;li&gt;NSKeyedUnArchiver&lt;/li&gt;
-          &lt;li&gt;NSPortCoder&lt;/li&gt;
-          &lt;li&gt;NSUnarchiver&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;NSPropertyListSerialization&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Objective-C Language Service
-    &lt;ul&gt;
-      &lt;li&gt;NSSeertionHandler&lt;/li&gt;
-      &lt;li&gt;NSAutoreleasePool&lt;/li&gt;
-      &lt;li&gt;NSClassDescription&lt;/li&gt;
-      &lt;li&gt;NSException&lt;/li&gt;
-      &lt;li&gt;NSInvocation&lt;/li&gt;
-      &lt;li&gt;NSMethodSignature&lt;/li&gt;
-      &lt;li&gt;NSUndoManager&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;nsproxy&quot;&gt;NSProxy&lt;/h3&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- [NSProxy1](https://blog.csdn.net/shubinniu/article/details/80895450)
-- [消息转发](https://blog.csdn.net/liyanjun201/article/details/82620485)
-- [NSProxy1](https://juejin.im/post/5afbca7bf265da0b8c25251d)
-
-- NSProxy可以帮助Objective-C间接的实现多重继承的功能。
-- OC 中一个类只有一个父类, 这就是单一继承, 但是我们可以用协议和 NSProxy 实现多继承
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-</description>
-        <pubDate>Wed, 14 Aug 2019 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/08/14/Foundation/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/08/14/Foundation/</guid>
-        
-        <category>【移动端】</category>
-        
-        
-        <category>【iOS】</category>
-        
-      </item>
-    
-      <item>
-        <title>iOS系统框架</title>
-        <description>&lt;h4 id=&quot;apple系统框架&quot;&gt;&lt;a href=&quot;https://developer.apple.com/documentation/&quot;&gt;Apple系统框架&lt;/a&gt;&lt;/h4&gt;
-
-&lt;h3 id=&quot;ios系统层级&quot;&gt;iOS系统层级&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;可触摸层（Cocoa Touch Layer）&lt;/li&gt;
-  &lt;li&gt;媒体层（Media Layer）&lt;/li&gt;
-  &lt;li&gt;核心服务层（Core Services Layer）&lt;/li&gt;
-  &lt;li&gt;核心系统层（Core OS Layer）&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/iOS系统层级1.jpg&quot; alt=&quot;iOS系统层级&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;各层的详情&quot;&gt;各层的详情&lt;/h3&gt;
-
-&lt;hr /&gt;
-&lt;ul&gt;
-  &lt;li&gt;Cocoa Touch Layer
-    &lt;ul&gt;
-      &lt;li&gt;UIKit（界面相关）&lt;/li&gt;
-      &lt;li&gt;EventKit（日历事件提醒等）&lt;/li&gt;
-      &lt;li&gt;Notification Center（通知中心）&lt;/li&gt;
-      &lt;li&gt;MapKit（地图显示）&lt;/li&gt;
-      &lt;li&gt;Address Book（联系人）&lt;/li&gt;
-      &lt;li&gt;iAd（广告）&lt;/li&gt;
-      &lt;li&gt;Message UI（邮件与SMS显示）&lt;/li&gt;
-      &lt;li&gt;PushKit（iOS8新push机制）&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Media Layer&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;图像引擎
-        &lt;ul&gt;
-          &lt;li&gt;Core Graphics&lt;/li&gt;
-          &lt;li&gt;Core Image&lt;/li&gt;
-          &lt;li&gt;Core Animation&lt;/li&gt;
-          &lt;li&gt;OpenGL ES&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;音频引擎
-        &lt;ul&gt;
-          &lt;li&gt;Core Audio&lt;/li&gt;
-          &lt;li&gt;AV Foundation&lt;/li&gt;
-          &lt;li&gt;OpenAL&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;视频引擎
-        &lt;ul&gt;
-          &lt;li&gt;AV Foundation&lt;/li&gt;
-          &lt;li&gt;Core Media）&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-&lt;ul&gt;
-  &lt;li&gt;Core Services Layer
-    &lt;ul&gt;
-      &lt;li&gt;CFNetwork（网络访问）&lt;/li&gt;
-      &lt;li&gt;CoreData（数据存储）&lt;/li&gt;
-      &lt;li&gt;CoreLocation（定位功能）&lt;/li&gt;
-      &lt;li&gt;CoreMotion（重力加速度，陀螺仪）&lt;/li&gt;
-      &lt;li&gt;Foundation（基础功能如NSString）&lt;/li&gt;
-      &lt;li&gt;Webkit（浏览器引擎）&lt;/li&gt;
-      &lt;li&gt;JavaScript（JavaScript引擎）&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-&lt;ul&gt;
-  &lt;li&gt;Core OS Layer
-    &lt;ul&gt;
-      &lt;li&gt;操作系统内核服务（BSD sockets、I/O访问、内存申请、文件系统、数学计算等）&lt;/li&gt;
-      &lt;li&gt;本地认证（指纹识别验证等）&lt;/li&gt;
-      &lt;li&gt;安全（提供管理证书、公钥、密钥等的接口）&lt;/li&gt;
-      &lt;li&gt;加速 (执行数学、大数字以及DSP运算,这些接口iOS设备硬件相匹配）&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/iOS系统层级2.png&quot; alt=&quot;iOS系统层级&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;很重要的几个框架&quot;&gt;很重要的几个框架&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Foundation
-    &lt;ul&gt;
-      &lt;li&gt;为所有的应用程序提供基本系统服务&lt;/li&gt;
-      &lt;li&gt;你的应用程序，UIKit是建立在Foundation框架上面的。&lt;/li&gt;
-      &lt;li&gt;Foundation框架是用Objective-C对Core Foundation框架里许多特性的封装。&lt;/li&gt;
-      &lt;li&gt;使用Foundation可以:
-        &lt;ul&gt;
-          &lt;li&gt;创建和管理集合，比如：数组和字典&lt;/li&gt;
-          &lt;li&gt;访问存储在应用程序里的图片和其它资源&lt;/li&gt;
-          &lt;li&gt;创建和管理字符串&lt;/li&gt;
-          &lt;li&gt;提交和接收通知&lt;/li&gt;
-          &lt;li&gt;创建日期和时间对象&lt;/li&gt;
-          &lt;li&gt;自动发现IP网络上的设备&lt;/li&gt;
-          &lt;li&gt;操作URL流&lt;/li&gt;
-          &lt;li&gt;执行异步代码&lt;/li&gt;
-          &lt;li&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;UIKit
-    &lt;ul&gt;
-      &lt;li&gt;框架提供创建基于触摸用户界面的类&lt;/li&gt;
-      &lt;li&gt;所有的iOS应用程序都基于UIKit，你不能是应用程序脱离这个框架。&lt;/li&gt;
-      &lt;li&gt;UIKit提供了在屏幕上绘制的机制，捕获事件，和创建通用用户界面元素。&lt;/li&gt;
-      &lt;li&gt;UIKit也通过管理显示在屏幕上的组件来组织复杂的项目。&lt;/li&gt;
-      &lt;li&gt;使用UIKit可以：
-        &lt;ul&gt;
-          &lt;li&gt;构建和管理你的用户界面&lt;/li&gt;
-          &lt;li&gt;捕获触摸和基于移动的事件&lt;/li&gt;
-          &lt;li&gt;呈现文字和web内容&lt;/li&gt;
-          &lt;li&gt;优化你的多任务程序&lt;/li&gt;
-          &lt;li&gt;创建定制的用户界面元素&lt;/li&gt;
-          &lt;li&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;CoreData
-    &lt;ul&gt;
-      &lt;li&gt;框架管着理应用程序数据模型&lt;/li&gt;
-      &lt;li&gt;Core Data提供对象的管理，使用CoreData，你可以创建模型对象，并管理这些对象。&lt;/li&gt;
-      &lt;li&gt;你管理这些对象间的联系并修改数据。&lt;/li&gt;
-      &lt;li&gt;CoreData提供的内建SQLlite技术可以高效的管理数据。&lt;/li&gt;
-      &lt;li&gt;使用Core Data可以：
-        &lt;ul&gt;
-          &lt;li&gt;在库里存储和接收对象&lt;/li&gt;
-          &lt;li&gt;提供基本的undo/redo&lt;/li&gt;
-          &lt;li&gt;自动验证属性值&lt;/li&gt;
-          &lt;li&gt;过滤、分组和优化内存中的数据&lt;/li&gt;
-          &lt;li&gt;用[NSFetchedResultsController]管理表视图中的结果&lt;/li&gt;
-          &lt;li&gt;支持基于文档的应用程序&lt;/li&gt;
-          &lt;li&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Core Graphics框架帮助你创建图形
-    &lt;ul&gt;
-      &lt;li&gt;高质量的图形对于所有的iOS应用程序都是很重要的。&lt;/li&gt;
-      &lt;li&gt;在iOS中最简单且最快捷的创建图形的方式是使用UIKit框架提供的基于预渲染图形的视图和控件，然后让UIKit和iOS完成绘制。&lt;/li&gt;
-      &lt;li&gt;当你需要创建复杂的图形时，Core Graphics则提供了更底层的库来帮助你。&lt;/li&gt;
-      &lt;li&gt;使用Core Graphics可以：
-        &lt;ul&gt;
-          &lt;li&gt;创建基于路径的绘图&lt;/li&gt;
-          &lt;li&gt;抗锯齿渲染&lt;/li&gt;
-          &lt;li&gt;添加梯度、图片和颜色&lt;/li&gt;
-          &lt;li&gt;Use coordinate-space transformations.&lt;/li&gt;
-          &lt;li&gt;创建、显示和分析PDF文档&lt;/li&gt;
-          &lt;li&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Core Animation允许你创建高级的动画和虚拟效果
-    &lt;ul&gt;
-      &lt;li&gt;UIKit提供建立在Core Animation之上的动画。&lt;/li&gt;
-      &lt;li&gt;如果你需要比UIKit能力更高级的功能，可以直接使用Core Animation。&lt;/li&gt;
-      &lt;li&gt;Core Animation接口包含在QuartzCore框架里。&lt;/li&gt;
-      &lt;li&gt;使用Core Animation可以创建嵌套的对象，并且可以对它们操作、旋转、缩放和转换。&lt;/li&gt;
-      &lt;li&gt;使用Core animation，你可以创建动态的用户界面而不用使用更底层的图形API，如OpenGL ES。&lt;/li&gt;
-      &lt;li&gt;使用Core Animation可以：
-        &lt;ul&gt;
-          &lt;li&gt;创建定制动画&lt;/li&gt;
-          &lt;li&gt;添加定时函数和图形&lt;/li&gt;
-          &lt;li&gt;支持帧动画&lt;/li&gt;
-          &lt;li&gt;Specify graphical layout constraints.&lt;/li&gt;
-          &lt;li&gt;Group multiple-layer changes into anatomic update.&lt;/li&gt;
-          &lt;li&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;OpenGL ES 框架提供2D和3D绘图工具
-    &lt;ul&gt;
-      &lt;li&gt;OpenGL ES支持2D和3D绘图，Apple的OpenGL ES实现通过硬件提供了高速的全屏游戏式的应用程序。&lt;/li&gt;
-      &lt;li&gt;使用OpenGL ES可以：
-        &lt;ul&gt;
-          &lt;li&gt;创建2D和3D图形&lt;/li&gt;
-          &lt;li&gt;创建更复杂的图形，比如数据虚拟化、模拟飞行，或者视频游戏&lt;/li&gt;
-          &lt;li&gt;访问底层图形设备&lt;/li&gt;
-          &lt;li&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;这些构成了iOS/MacOS的骨架
-是最大层次的架构&lt;/p&gt;
-&lt;/blockquote&gt;
-
-</description>
-        <pubDate>Tue, 13 Aug 2019 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/08/13/iOS%E7%B3%BB%E7%BB%9F%E6%A1%86%E6%9E%B6/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/08/13/iOS%E7%B3%BB%E7%BB%9F%E6%A1%86%E6%9E%B6/</guid>
-        
-        <category>【移动端】</category>
-        
-        
-        <category>【iOS】</category>
-        
-      </item>
-    
-      <item>
-        <title>《去中心化应用》</title>
-        <description>&lt;h4 id=&quot;索引&quot;&gt;索引&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;什么是去中心化应用?&lt;/li&gt;
-  &lt;li&gt;去中心化生态系统&lt;/li&gt;
-  &lt;li&gt;怎么创建你的去中心化应用?&lt;/li&gt;
-  &lt;li&gt;实例OpenBazazaar?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;什么是去中心化应用&quot;&gt;什么是去中心化应用?&lt;/h3&gt;
-
-&lt;h4 id=&quot;1-应用的分类&quot;&gt;1. 应用的分类&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;集中式&lt;/li&gt;
-  &lt;li&gt;分布式&lt;/li&gt;
-  &lt;li&gt;去中心化&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;能够达成去中心化共识的应用软件才是真正的革新成果.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h4 id=&quot;2-去中心化应用dapp的4个特征&quot;&gt;2. 去中心化应用(dapp)的4个特征&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;开源
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;https://www.gnu.org/philosophy/free-sw.zh-cn.html&quot;&gt;自由软件&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;/li&gt;
-      &lt;li&gt;⚠️ 很多国内的程序猿对开源完全没概念,这一块要重点理解一下&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;内部货币
-  -
-    &lt;ul&gt;
-      &lt;li&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;去中心化共识
-  -
-    &lt;ul&gt;
-      &lt;li&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;没有中心失效点
-  -
-    &lt;ul&gt;
-      &lt;li&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;3-去中心化应用的历史&quot;&gt;3. 去中心化应用的历史&lt;/h4&gt;
-
-&lt;h3 id=&quot;去中心化生态系统&quot;&gt;去中心化生态系统&lt;/h3&gt;
-
-&lt;h3 id=&quot;怎么创建你的去中心化应用&quot;&gt;怎么创建你的去中心化应用?&lt;/h3&gt;
-
-&lt;h3 id=&quot;实例openbazazaar&quot;&gt;实例OpenBazazaar?&lt;/h3&gt;
-</description>
-        <pubDate>Tue, 30 Jul 2019 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/07/30/%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E5%BA%94%E7%94%A8/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/07/30/%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E5%BA%94%E7%94%A8/</guid>
-        
-        <category>【书籍】</category>
-        
-        
-        <category>【区块链】</category>
-        
-      </item>
-    
-      <item>
-        <title>Swift</title>
-        <description>&lt;blockquote&gt;
-  &lt;p&gt;世界上没有最好的编程语言，就像世界上没有最好的人一样。&lt;/p&gt;
-
-  &lt;p&gt;如果你想知道一门编程语言的优劣，那就去学会它。&lt;/p&gt;
-
-&lt;/blockquote&gt;
-
-</description>
-        <pubDate>Sun, 28 Jul 2019 10:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/07/28/Swift/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/07/28/Swift/</guid>
-        
-        <category>【编程语言】</category>
-        
-        
-        <category>【读书】</category>
-        
-      </item>
-    
-      <item>
-        <title>Kotlin</title>
-        <description>&lt;blockquote&gt;
-  &lt;p&gt;世界上没有最好的编程语言，就像世界上没有最好的人一样。&lt;/p&gt;
-
-  &lt;p&gt;如果你想知道一门编程语言的优劣，那就去学会它。&lt;/p&gt;
-
-&lt;/blockquote&gt;
-
-&lt;p&gt;用Kotlin也快一年，最近总觉的对它熟悉又陌生,不由的重新学习一下这门语言。&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-&lt;h4 id=&quot;这门语言最舒服的地方&quot;&gt;这门语言最舒服的地方&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;可空类型：判空的代码省了&lt;/li&gt;
-  &lt;li&gt;when，强大的分支结构：已知的编程语言中最强&lt;/li&gt;
-  &lt;li&gt;if，可以做为表达式： 不用再另外生命变量&lt;/li&gt;
-  &lt;li&gt;object，语法层面的单例&lt;/li&gt;
-  &lt;li&gt;闭包，很实用&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt; &lt;/p&gt;
-&lt;h3 id=&quot;整体介绍&quot;&gt;整体介绍&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;开发工具
-    &lt;ul&gt;
-      &lt;li&gt;Intellij IDEA:&lt;/li&gt;
-      &lt;li&gt;Sublime Text:&lt;/li&gt;
-      &lt;li&gt;Vscode:&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;面向过程
-    &lt;ul&gt;
-      &lt;li&gt;基本语法和规范
-        &lt;ul&gt;
-          &lt;li&gt;变量
-            &lt;blockquote&gt;
-              &lt;ul&gt;
-                &lt;li&gt;var a = “hello”&lt;/li&gt;
-              &lt;/ul&gt;
-            &lt;/blockquote&gt;
-          &lt;/li&gt;
-          &lt;li&gt;常量
-            &lt;blockquote&gt;
-              &lt;ul&gt;
-                &lt;li&gt;val a = “name”  // 运行期常量&lt;/li&gt;
-                &lt;li&gt;const val co = “常量” //编译器常量,只能用于顶层常量或对象中的常量声明，只能是String和基础数据类型&lt;/li&gt;
-              &lt;/ul&gt;
-            &lt;/blockquote&gt;
-          &lt;/li&gt;
-          &lt;li&gt;注释
-            &lt;blockquote&gt;
-              &lt;ul&gt;
-                &lt;li&gt;// 单行注释&lt;/li&gt;
-                &lt;li&gt;/* 块注释 */&lt;/li&gt;
-                &lt;li&gt;/* /&lt;em&gt;嵌套注释&lt;/em&gt;/ */&lt;/li&gt;
-              &lt;/ul&gt;
-            &lt;/blockquote&gt;
-            &lt;ul&gt;
-              &lt;li&gt;文件注释
-                &lt;blockquote&gt;
-                  &lt;ul&gt;
-                    &lt;li&gt;版权信息&lt;/li&gt;
-                    &lt;li&gt;许可信息&lt;/li&gt;
-                    &lt;li&gt;描述&lt;/li&gt;
-                    &lt;li&gt;历史版本&lt;/li&gt;
-                  &lt;/ul&gt;
-                &lt;/blockquote&gt;
-              &lt;/li&gt;
-              &lt;li&gt;文档注释: 公开SDK
-                &lt;ul&gt;
-                  &lt;li&gt;Kdoc
-                    &lt;blockquote&gt;
-                      &lt;ul&gt;
-                        &lt;li&gt;@author&lt;/li&gt;
-                        &lt;li&gt;@deprecated&lt;/li&gt;
-                        &lt;li&gt;@param&lt;/li&gt;
-                        &lt;li&gt;@return&lt;/li&gt;
-                        &lt;li&gt;@version&lt;/li&gt;
-                      &lt;/ul&gt;
-                    &lt;/blockquote&gt;
-                  &lt;/li&gt;
-                &lt;/ul&gt;
-              &lt;/li&gt;
-              &lt;li&gt;代码注释: 阅读源码参考&lt;/li&gt;
-              &lt;li&gt;地标注释: IDE提供的功能
-                &lt;ul&gt;
-                  &lt;li&gt;//TODO: 代码未完成&lt;/li&gt;
-                  &lt;li&gt;//FIXME: 代码错误，待修正&lt;/li&gt;
-                &lt;/ul&gt;
-              &lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;命名规范
-            &lt;ul&gt;
-              &lt;li&gt;包名: 全小写，可用点分割&lt;/li&gt;
-              &lt;li&gt;类名、接口: 大驼峰&lt;/li&gt;
-              &lt;li&gt;文件名: 大驼峰&lt;/li&gt;
-              &lt;li&gt;变量名: 小驼峰&lt;/li&gt;
-              &lt;li&gt;编译器常量: 全大写，可以加下划线&lt;/li&gt;
-              &lt;li&gt;函数名: 小驼峰&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;代码排版
-            &lt;ul&gt;
-              &lt;li&gt;空行
-                &lt;ul&gt;
-                  &lt;li&gt;代码注释之后（除尾端注释）&lt;/li&gt;
-                  &lt;li&gt;函数内第一条语句之前&lt;/li&gt;
-                  &lt;li&gt;一个函数内部两个逻辑段&lt;/li&gt;
-                  &lt;li&gt;类声明或接口声明之间&lt;/li&gt;
-                &lt;/ul&gt;
-              &lt;/li&gt;
-              &lt;li&gt;空格
-                &lt;ul&gt;
-                  &lt;li&gt;赋值符号&lt;/li&gt;
-                  &lt;li&gt;二元运算符&lt;/li&gt;
-                  &lt;li&gt;小括号前后&lt;/li&gt;
-                  &lt;li&gt;函数参数之间&lt;/li&gt;
-                  &lt;li&gt;类继承，接口实现&lt;/li&gt;
-                  &lt;li&gt;lambda表达式大括号左右&lt;/li&gt;
-                &lt;/ul&gt;
-              &lt;/li&gt;
-              &lt;li&gt;缩紧
-                &lt;ul&gt;
-                  &lt;li&gt;4个空格&lt;/li&gt;
-                &lt;/ul&gt;
-              &lt;/li&gt;
-              &lt;li&gt;断行
-                &lt;ul&gt;
-                  &lt;li&gt;逗号后，运算符前&lt;/li&gt;
-                  &lt;li&gt;类声明时&lt;/li&gt;
-                &lt;/ul&gt;
-              &lt;/li&gt;
-              &lt;li&gt;省略
-                &lt;ul&gt;
-                  &lt;li&gt;分号&lt;/li&gt;
-                  &lt;li&gt;省略Unit&lt;/li&gt;
-                  &lt;li&gt;lambda参数&lt;/li&gt;
-                &lt;/ul&gt;
-              &lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;数据类型
-        &lt;ul&gt;
-          &lt;li&gt;整数
-            &lt;ul&gt;
-              &lt;li&gt;Byte
-                &lt;ul&gt;
-                  &lt;li&gt;8位&lt;/li&gt;
-                  &lt;li&gt;-128～127&lt;/li&gt;
-                &lt;/ul&gt;
-              &lt;/li&gt;
-              &lt;li&gt;Short
-                &lt;ul&gt;
-                  &lt;li&gt;16位&lt;/li&gt;
-                  &lt;li&gt;-2 ^ 15 ~ 2 ^ 15 - 1&lt;/li&gt;
-                &lt;/ul&gt;
-              &lt;/li&gt;
-              &lt;li&gt;Int
-                &lt;ul&gt;
-                  &lt;li&gt;32位&lt;/li&gt;
-                  &lt;li&gt;-2 ^ 31 ~ 2 ^ 31 -1&lt;/li&gt;
-                &lt;/ul&gt;
-              &lt;/li&gt;
-              &lt;li&gt;Long
-                &lt;ul&gt;
-                  &lt;li&gt;64位&lt;/li&gt;
-                  &lt;li&gt;-2 ^ 63 ~ 2 ^ 63 -1&lt;/li&gt;
-                &lt;/ul&gt;
-              &lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;浮点数
-            &lt;ul&gt;
-              &lt;li&gt;Float
-                &lt;ul&gt;
-                  &lt;li&gt;32位&lt;/li&gt;
-                  &lt;li&gt;3.0F&lt;/li&gt;
-                &lt;/ul&gt;
-              &lt;/li&gt;
-              &lt;li&gt;Double
-                &lt;ul&gt;
-                  &lt;li&gt;64位&lt;/li&gt;
-                  &lt;li&gt;默认小数为double&lt;/li&gt;
-                &lt;/ul&gt;
-              &lt;/li&gt;
-              &lt;li&gt;科学计数
-                &lt;blockquote&gt;
-                  &lt;ul&gt;
-                    &lt;li&gt;3.14e15&lt;/li&gt;
-                  &lt;/ul&gt;
-                &lt;/blockquote&gt;
-              &lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;字符类型
-            &lt;ul&gt;
-              &lt;li&gt;Kotlin字符采用双字节Unicode编码（16位）&lt;/li&gt;
-              &lt;li&gt;可以使用16进制表示
-                &lt;blockquote&gt;
-                  &lt;ul&gt;
-                    &lt;li&gt;val a = ‘A’&lt;/li&gt;
-                    &lt;li&gt;val b = ‘\u0041’&lt;/li&gt;
-                    &lt;li&gt;val c = ‘码’&lt;/li&gt;
-                  &lt;/ul&gt;
-                &lt;/blockquote&gt;
-              &lt;/li&gt;
-              &lt;li&gt;制表符
-                &lt;blockquote&gt;
-                  &lt;ul&gt;
-                    &lt;li&gt;\t  \u0009 Tab&lt;/li&gt;
-                    &lt;li&gt;\n  \u000a 换行&lt;/li&gt;
-                    &lt;li&gt;\r  \u000d 回车&lt;/li&gt;
-                    &lt;li&gt;&quot;  \u0022 双引号&lt;/li&gt;
-                    &lt;li&gt;'  \u0027 单引号&lt;/li&gt;
-                    &lt;li&gt;\  \u005c 反斜线&lt;/li&gt;
-                    &lt;li&gt;$  \u0024 美元符号&lt;/li&gt;
-                    &lt;li&gt;\b  \u0008 退格&lt;/li&gt;
-                  &lt;/ul&gt;
-                &lt;/blockquote&gt;
-              &lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;布尔类型
-            &lt;ul&gt;
-              &lt;li&gt;true&lt;/li&gt;
-              &lt;li&gt;false&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;数据类型之间的转换
-            &lt;ul&gt;
-              &lt;li&gt;toXXX(): 转换函数&lt;/li&gt;
-              &lt;li&gt;⚠️ 大范围转小范围会存在进度丢失的风险&lt;/li&gt;
-              &lt;li&gt;隐式转换优先度: double &amp;gt; float &amp;gt; Long &amp;gt; Int&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;可空类型
-            &lt;ul&gt;
-              &lt;li&gt;防止空指针异常&lt;/li&gt;
-              &lt;li&gt;可空运算
-                &lt;ul&gt;
-                  &lt;li&gt;安全调用运算 ?.&lt;/li&gt;
-                  &lt;li&gt;as?&lt;/li&gt;
-                  &lt;li&gt;Elvis运算符 ?:&lt;/li&gt;
-                  &lt;li&gt;非空断言!!&lt;/li&gt;
-                  &lt;li&gt;let&lt;/li&gt;
-                &lt;/ul&gt;
-              &lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;字符串类型
-            &lt;ul&gt;
-              &lt;li&gt;普通字符串&lt;/li&gt;
-              &lt;li&gt;原始字符串
-                &lt;ul&gt;
-                  &lt;li&gt;可以包含任何字符，不能包含转移字符&lt;/li&gt;
-                  &lt;li&gt;== 判断两个对象内容是否相等&lt;/li&gt;
-                &lt;/ul&gt;
-              &lt;/li&gt;
-              &lt;li&gt;不可变字符串
-                &lt;ul&gt;
-                  &lt;li&gt;&lt;/li&gt;
-                &lt;/ul&gt;
-              &lt;/li&gt;
-              &lt;li&gt;字符串操作
-                &lt;ul&gt;
-                  &lt;li&gt;拼接
-                    &lt;ul&gt;
-                      &lt;li&gt;a + b&lt;/li&gt;
-                    &lt;/ul&gt;
-                  &lt;/li&gt;
-                  &lt;li&gt;模版
-                    &lt;ul&gt;
-                      &lt;li&gt;$x&lt;/li&gt;
-                    &lt;/ul&gt;
-                  &lt;/li&gt;
-                  &lt;li&gt;查找
-                    &lt;ul&gt;
-                      &lt;li&gt;indexOf: 从x开始往后查&lt;/li&gt;
-                      &lt;li&gt;lastIndexOf: 从x开始由后向前查&lt;/li&gt;
-                    &lt;/ul&gt;
-                  &lt;/li&gt;
-                  &lt;li&gt;比较
-                    &lt;ul&gt;
-                      &lt;li&gt;相等&lt;/li&gt;
-                      &lt;li&gt;比较大小&lt;/li&gt;
-                      &lt;li&gt;比较前后缀&lt;/li&gt;
-                    &lt;/ul&gt;
-                  &lt;/li&gt;
-                  &lt;li&gt;字符串截取
-                    &lt;ul&gt;
-                      &lt;li&gt;区间截取: 左闭右开区间&lt;/li&gt;
-                    &lt;/ul&gt;
-                  &lt;/li&gt;
-                &lt;/ul&gt;
-              &lt;/li&gt;
-              &lt;li&gt;可变字符串
-                &lt;ul&gt;
-                  &lt;li&gt;StringBuilder&lt;/li&gt;
-                  &lt;li&gt;追加&lt;/li&gt;
-                  &lt;li&gt;插入&lt;/li&gt;
-                  &lt;li&gt;删除&lt;/li&gt;
-                  &lt;li&gt;替换&lt;/li&gt;
-                &lt;/ul&gt;
-              &lt;/li&gt;
-              &lt;li&gt;正则表达式
-                &lt;ul&gt;
-                  &lt;li&gt;Regex&lt;/li&gt;
-                  &lt;li&gt;字符串匹配
-                    &lt;blockquote&gt;
-                      &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Regex(&quot;&quot;&quot;&quot;\d+&quot;&quot;&quot;).matchs(&quot;1233&quot;)&lt;/code&gt;&lt;/p&gt;
-                    &lt;/blockquote&gt;
-                  &lt;/li&gt;
-                  &lt;li&gt;字符串查找
-                    &lt;blockquote&gt;
-                      &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Regex(&quot;&quot;&quot;&quot;\d+&quot;&quot;&quot;).find(&quot;1233&quot;)&lt;/code&gt;&lt;/p&gt;
-                    &lt;/blockquote&gt;
-                  &lt;/li&gt;
-                  &lt;li&gt;字符串替换
-                    &lt;blockquote&gt;
-                      &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Regex(&quot;&quot;&quot;\d+&quot;&quot;&quot;).replace(&quot;123mmm&quot;, &quot;&quot;)&lt;/code&gt;&lt;/p&gt;
-                    &lt;/blockquote&gt;
-                  &lt;/li&gt;
-                  &lt;li&gt;字符串分割
-                    &lt;blockquote&gt;
-                      &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Regex(&quot;&quot;&quot;\d+&quot;&quot;&quot;).split(&quot;123mmm&quot;)&lt;/code&gt;&lt;/p&gt;
-                    &lt;/blockquote&gt;
-                  &lt;/li&gt;
-                &lt;/ul&gt;
-              &lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;运算符
-        &lt;ul&gt;
-          &lt;li&gt;算术运算符
-            &lt;ul&gt;
-              &lt;li&gt;一元运算符
-                &lt;ul&gt;
-                  &lt;li&gt;取反符号: &lt;code class=&quot;highlighter-rouge&quot;&gt;-a&lt;/code&gt;&lt;/li&gt;
-                  &lt;li&gt;自加: &lt;code class=&quot;highlighter-rouge&quot;&gt;++&lt;/code&gt;&lt;/li&gt;
-                  &lt;li&gt;自减: &lt;code class=&quot;highlighter-rouge&quot;&gt;--&lt;/code&gt;&lt;/li&gt;
-                &lt;/ul&gt;
-              &lt;/li&gt;
-              &lt;li&gt;二元运算符
-                &lt;ul&gt;
-                  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;a + b&lt;/code&gt;&lt;/li&gt;
-                  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;a - b&lt;/code&gt;&lt;/li&gt;
-                  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;a * b&lt;/code&gt;&lt;/li&gt;
-                  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;a / b&lt;/code&gt;&lt;/li&gt;
-                  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;a % b&lt;/code&gt;&lt;/li&gt;
-                &lt;/ul&gt;
-              &lt;/li&gt;
-              &lt;li&gt;算术赋值运算符
-                &lt;ul&gt;
-                  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;a += 1&lt;/code&gt;&lt;/li&gt;
-                  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;a -= 1&lt;/code&gt;&lt;/li&gt;
-                  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;a *= 2&lt;/code&gt;&lt;/li&gt;
-                  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;a /= 2&lt;/code&gt;&lt;/li&gt;
-                  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;a %= 2&lt;/code&gt;&lt;/li&gt;
-                &lt;/ul&gt;
-              &lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;关系运算符
-            &lt;ul&gt;
-              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;== 、&amp;gt;、&amp;lt;、&amp;gt;=、&amp;lt;= 、===、!==&lt;/code&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;逻辑运算符
-            &lt;ul&gt;
-              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;amp;&amp;amp;、|| &lt;/code&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;位运算符
-            &lt;ul&gt;
-              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;inv 位反&lt;/code&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;and 位与&lt;/code&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;or  位或&lt;/code&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;xor 位异或&lt;/code&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;shr 有符号右移&lt;/code&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;shl 左移&lt;/code&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ushr 无符号右移&lt;/code&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;其他运算符
-            &lt;ul&gt;
-              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Class A : B()、()、[]、.=、?、?.、?:、!!、::、..、-&amp;gt; 、* &lt;/code&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;运算符优先级（从高到低）
-            &lt;ul&gt;
-              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;()&lt;/code&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;++ 、-- 、 . 、 ?. 、？&lt;/code&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-、 + 、 ++ 、-- 、！&lt;/code&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;:、as、as?&lt;/code&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;* 、 / 、%&lt;/code&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;+、-&lt;/code&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;..&lt;/code&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;中缀运算符&lt;/code&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Elvis运算符 ?:&lt;/code&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;in、!in、is、!is&lt;/code&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;、&amp;gt;、&amp;lt;=、&amp;gt;=&lt;/code&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;==、!=、===、!==&lt;/code&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;amp;&amp;amp;&lt;/code&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;|| &lt;/code&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;=、+=、-=、*= 、/= 、%= &lt;/code&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;控制流
-        &lt;ul&gt;
-          &lt;li&gt;if
-            &lt;blockquote&gt;
-              &lt;ul&gt;
-                &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;if(true) a = 1&lt;/code&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;val a = if(true) &quot;&quot; else null&lt;/code&gt;&lt;/li&gt;
-              &lt;/ul&gt;
-            &lt;/blockquote&gt;
-          &lt;/li&gt;
-          &lt;li&gt;when
-            &lt;blockquote&gt;
-              &lt;ul&gt;
-                &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;when() {} &lt;/code&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;val a = when(name)&lt;/code&gt;&lt;/li&gt;
-              &lt;/ul&gt;
-            &lt;/blockquote&gt;
-          &lt;/li&gt;
-          &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;while {}&lt;/code&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;do {} while&lt;/code&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;for () {}&lt;/code&gt;&lt;/li&gt;
-          &lt;li&gt;break
-            &lt;blockquote&gt;
-              &lt;ul&gt;
-                &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;label@ for (x in 0..8) {&lt;/code&gt;&lt;/li&gt;
-                &lt;li&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;for (y in 0..8) {&lt;/code&gt;&lt;/li&gt;
-                &lt;li&gt;  &lt;code class=&quot;highlighter-rouge&quot;&gt;if (x == y ) {&lt;/code&gt;&lt;/li&gt;
-                &lt;li&gt;   &lt;code class=&quot;highlighter-rouge&quot;&gt;break@label&lt;/code&gt;&lt;/li&gt;
-                &lt;li&gt;  &lt;code class=&quot;highlighter-rouge&quot;&gt;}&lt;/code&gt;&lt;/li&gt;
-                &lt;li&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;}&lt;/code&gt;&lt;/li&gt;
-              &lt;/ul&gt;
-            &lt;/blockquote&gt;
-          &lt;/li&gt;
-          &lt;li&gt;continue
-            &lt;blockquote&gt;
-              &lt;ul&gt;
-                &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;label@ for (x in 0..8) {&lt;/code&gt;&lt;/li&gt;
-                &lt;li&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;for (y in 0..8) {&lt;/code&gt;&lt;/li&gt;
-                &lt;li&gt;  &lt;code class=&quot;highlighter-rouge&quot;&gt;if (x == y ) {&lt;/code&gt;&lt;/li&gt;
-                &lt;li&gt;   &lt;code class=&quot;highlighter-rouge&quot;&gt;continue@label&lt;/code&gt;&lt;/li&gt;
-                &lt;li&gt;  &lt;code class=&quot;highlighter-rouge&quot;&gt;}&lt;/code&gt;&lt;/li&gt;
-                &lt;li&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;}&lt;/code&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;}&lt;/code&gt;&lt;/li&gt;
-              &lt;/ul&gt;
-            &lt;/blockquote&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;函数
-        &lt;ul&gt;
-          &lt;li&gt;函数声明&lt;/li&gt;
-          &lt;li&gt;命名参数
-            &lt;blockquote&gt;
-              &lt;ul&gt;
-                &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;fun add(a: Int, b: Int): Int {&lt;/code&gt;&lt;/li&gt;
-                &lt;li&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;return a + b&lt;/code&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;}&lt;/code&gt;&lt;/li&gt;
-              &lt;/ul&gt;
-            &lt;/blockquote&gt;
-          &lt;/li&gt;
-          &lt;li&gt;默认参数
-            &lt;blockquote&gt;
-              &lt;ul&gt;
-                &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;fun add(a: Int, b: Int, c: Int = 1): Int {&lt;/code&gt;&lt;/li&gt;
-                &lt;li&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;return a + b + c &lt;/code&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;}&lt;/code&gt;&lt;/li&gt;
-              &lt;/ul&gt;
-            &lt;/blockquote&gt;
-          &lt;/li&gt;
-          &lt;li&gt;可变参数
-            &lt;blockquote&gt;
-              &lt;ul&gt;
-                &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;fun add(vararg numbers: Int): Int {&lt;/code&gt;&lt;/li&gt;
-                &lt;li&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;var total = 0.0&lt;/code&gt;&lt;/li&gt;
-                &lt;li&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;for (number in numbers) {&lt;/code&gt;&lt;/li&gt;
-                &lt;li&gt;  &lt;code class=&quot;highlighter-rouge&quot;&gt;total += number &lt;/code&gt;&lt;/li&gt;
-                &lt;li&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;}&lt;/code&gt;&lt;/li&gt;
-                &lt;li&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;return total&lt;/code&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;}&lt;/code&gt;&lt;/li&gt;
-              &lt;/ul&gt;
-            &lt;/blockquote&gt;
-          &lt;/li&gt;
-          &lt;li&gt;表达式函数
-            &lt;blockquote&gt;
-              &lt;ul&gt;
-                &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;fun area(x: Int, y: Int) = x * y&lt;/code&gt;&lt;/li&gt;
-              &lt;/ul&gt;
-            &lt;/blockquote&gt;
-          &lt;/li&gt;
-          &lt;li&gt;局部函数
-            &lt;blockquote&gt;
-              &lt;ul&gt;
-                &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;fun func() {&lt;/code&gt;&lt;/li&gt;
-                &lt;li&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;fun func() {&lt;/code&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;/li&gt;
-                &lt;li&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;}&lt;/code&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;}&lt;/code&gt;&lt;/li&gt;
-              &lt;/ul&gt;
-            &lt;/blockquote&gt;
-          &lt;/li&gt;
-          &lt;li&gt;匿名函数
-            &lt;blockquote&gt;
-              &lt;ul&gt;
-                &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;val oneF = fun(x: Int, y:Int): Int = x * y&lt;/code&gt;&lt;/li&gt;
-              &lt;/ul&gt;
-            &lt;/blockquote&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;面向对象
-    &lt;ul&gt;
-      &lt;li&gt;类&lt;/li&gt;
-      &lt;li&gt;封装&lt;/li&gt;
-      &lt;li&gt;继承&lt;/li&gt;
-      &lt;li&gt;多态&lt;/li&gt;
-      &lt;li&gt;抽象类/接口&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;函数式编程
-    &lt;ul&gt;
-      &lt;li&gt;高阶函数&lt;/li&gt;
-      &lt;li&gt;Lambda&lt;/li&gt;
-      &lt;li&gt;闭包&lt;/li&gt;
-      &lt;li&gt;内联函数&lt;/li&gt;
-      &lt;li&gt;范型&lt;/li&gt;
-      &lt;li&gt;数据容器&lt;/li&gt;
-      &lt;li&gt;函数式API&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;通用模式
-    &lt;ul&gt;
-      &lt;li&gt;异常处理&lt;/li&gt;
-      &lt;li&gt;线程&lt;/li&gt;
-      &lt;li&gt;协程&lt;/li&gt;
-      &lt;li&gt;I/O&lt;/li&gt;
-      &lt;li&gt;文件管理&lt;/li&gt;
-      &lt;li&gt;网络编程&lt;/li&gt;
-      &lt;li&gt;GUI编程&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Java特性
-    &lt;ul&gt;
-      &lt;li&gt;反射&lt;/li&gt;
-      &lt;li&gt;注解&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-</description>
-        <pubDate>Sun, 21 Jul 2019 10:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/07/21/Kotlin/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/07/21/Kotlin/</guid>
-        
-        <category>【编程语言】</category>
-        
-        
-        <category>【读书】</category>
-        
-      </item>
-    
-      <item>
-        <title>Apple那些事</title>
-        <description>&lt;h3 id=&quot;证书申请那些事&quot;&gt;证书申请那些事&lt;/h3&gt;
-
-&lt;h3 id=&quot;打包那些事&quot;&gt;打包那些事&lt;/h3&gt;
-
-&lt;h3 id=&quot;苹果资源那些事&quot;&gt;苹果资源那些事&lt;/h3&gt;
-
-&lt;h3 id=&quot;你可能不知的关于苹果的事&quot;&gt;你可能不知的关于苹果的事&lt;/h3&gt;
-
-&lt;h3 id=&quot;对苹果的敬仰&quot;&gt;对苹果的敬仰&lt;/h3&gt;
-
-&lt;h3 id=&quot;对苹果的惋惜&quot;&gt;对苹果的惋惜&lt;/h3&gt;
-
-</description>
-        <pubDate>Sat, 06 Jul 2019 08:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/07/06/Apple%E9%82%A3%E4%BA%9B%E4%BA%8B/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/07/06/Apple%E9%82%A3%E4%BA%9B%E4%BA%8B/</guid>
-        
-        <category>【方法】</category>
         
         
         <category>【iOS】</category>
