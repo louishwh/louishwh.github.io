@@ -5,8 +5,8 @@
     <description>Atomix</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 26 Oct 2019 16:03:00 +0800</pubDate>
-    <lastBuildDate>Sat, 26 Oct 2019 16:03:00 +0800</lastBuildDate>
+    <pubDate>Sat, 26 Oct 2019 16:07:25 +0800</pubDate>
+    <lastBuildDate>Sat, 26 Oct 2019 16:07:25 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -53,35 +53,6 @@
         
         
         <category>【操作系统】</category>
-        
-      </item>
-    
-      <item>
-        <title>架构学习资料</title>
-        <description>&lt;h2 id=&quot;概要&quot;&gt;概要&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s/XI2rMdeswhHStFcm7NFRPQ&quot;&gt;总的概述&lt;/a&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;https://c4model.com/&quot;&gt;C4模型&lt;/a&gt;
-        &lt;ul&gt;
-          &lt;li&gt;&lt;a href=&quot;https://www.infoq.cn/article/C4-architecture-model/&quot;&gt;软件C4模型&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://www.infoq.cn/article/crafting-architectural-diagrams/&quot;&gt;软件架构图艺术&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;http://agilemanifesto.org/&quot;&gt;敏捷宣言&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Thu, 17 Oct 2019 10:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/10/17/%E6%9E%B6%E6%9E%84%E5%AD%A6%E4%B9%A0/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/10/17/%E6%9E%B6%E6%9E%84%E5%AD%A6%E4%B9%A0/</guid>
-        
-        <category>【必备技能】</category>
-        
-        
-        <category>【软件架构】</category>
         
       </item>
     
@@ -291,6 +262,35 @@ Apache Licence也是对商业应用友好的许可。使用者也可以在需要
       </item>
     
       <item>
+        <title>架构学习资料</title>
+        <description>&lt;h2 id=&quot;概要&quot;&gt;概要&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s/XI2rMdeswhHStFcm7NFRPQ&quot;&gt;总的概述&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://c4model.com/&quot;&gt;C4模型&lt;/a&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;https://www.infoq.cn/article/C4-architecture-model/&quot;&gt;软件C4模型&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://www.infoq.cn/article/crafting-architectural-diagrams/&quot;&gt;软件架构图艺术&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://agilemanifesto.org/&quot;&gt;敏捷宣言&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Wed, 09 Oct 2019 10:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/10/09/%E6%9E%B6%E6%9E%84%E5%AD%A6%E4%B9%A0/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/10/09/%E6%9E%B6%E6%9E%84%E5%AD%A6%E4%B9%A0/</guid>
+        
+        <category>【必备技能】</category>
+        
+        
+        <category>【软件架构】</category>
+        
+      </item>
+    
+      <item>
         <title>JVM系后端知识框架</title>
         <description>&lt;p&gt;&lt;img src=&quot;/images/2019-10-04Jvm后端.png&quot; alt=&quot;/images/2019-10-04Jvm后端.png&quot; /&gt;&lt;/p&gt;
 
@@ -394,7 +394,7 @@ Apache Licence也是对商业应用友好的许可。使用者也可以在需要
       </item>
     
       <item>
-        <title>Q4源码阅读计划</title>
+        <title>《源码阅读计划》</title>
         <description>&lt;h2 id=&quot;目标&quot;&gt;目标&lt;/h2&gt;
 
 &lt;ul&gt;
@@ -457,8 +457,8 @@ Apache Licence也是对商业应用友好的许可。使用者也可以在需要
 
 </description>
         <pubDate>Tue, 01 Oct 2019 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/10/01/Q4%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB%E8%AE%A1%E5%88%92/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/10/01/Q4%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB%E8%AE%A1%E5%88%92/</guid>
+        <link>http://localhost:4000/2019/10/01/%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB%E8%AE%A1%E5%88%92/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/10/01/%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB%E8%AE%A1%E5%88%92/</guid>
         
         <category>【源码阅读】</category>
         
