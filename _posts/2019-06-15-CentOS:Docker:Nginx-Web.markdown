@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  CentOS-Docker-Nginx-Web
+title:  CentOS:Docker:Nginx-Web
 date: 2019-06-15 21:50:00 +0800
 categories: 【小记】
 tag: 六月

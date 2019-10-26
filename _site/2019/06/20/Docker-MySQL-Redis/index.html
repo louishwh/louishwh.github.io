@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Docker:MySQL、Redis - 人码合一</title>
+
+	<link rel="shortcut icon" href="/styles/images/favicon.png">
+	<link rel="icon" href="/styles/images/favicon.png">
+
+	<link rel="stylesheet" href="/styles/css/index.css">
+	<link rel="stylesheet" href="/styles/css/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/styles/css/syntax.css">
+	<link rel="canonical" href="/2019/06/20/Docker-MySQL-Redis/">
+	<link rel="alternate" type="application/rss+xml" title="人码合一" href="/feed.xml">
+	
+	<meta name="keywords" content="Docker:MySQL、Redis, 人码合一, Atomix">
+	<meta name="description" content="Atomix">
+
+	<script src="/styles/js/jquery.min.js"></script>
+	<!--[if lt IE 9]>
+    	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  	<![endif]-->
+  	<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "//hm.baidu.com/hm.js?624f97ab37fd73fbedc7929427ca95ea";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+  	<style type="text/css">
+	  	.docs-content{
+	  		margin-bottom: 10px;
+	  	}
+  	</style>
+</head>
+
+  <body class="index">
+
+    <header class="navbar navbar-inverse navbar-fixed-top docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand">
+        <img src="/styles/images/logo.png">
+      </a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">    
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/categories/">Category</a>
+        </li>
+        <li>
+          <a href="/tag">Index</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+            <a><span id="busuanzi_container_site_pv">总访问量<span id="busuanzi_value_site_pv"></span>次</span></a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">关于<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a rel="nofollow" target="_blank" href="https://github.com/louishwh/">Github</a></li>
+            <li><a rel="nofollow" target="_blank" href="">关于作者</a></li>
+            <li><a rel="nofollow" href="/books">我的书单</a></li>
+            <li class="divider"></li>
+            <li><a rel="nofollow" target="_blank" href="https://github.com/luoyan35714/LessOrMore.git">本项目</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+    <div class="docs-header" id="content">
+  <div class="container">
+  	
+  		<!--
+		    <h1>Docker:MySQL、Redis</h1>
+		    <p>Post on Jun 20, 2019 by <a href="/about">louis han</a></p>
+		-->
+		    <h1>Seeking truth from facts.</h1>
+    
+  </div>
+</div>
+    
+      
+<div class="banner">
+  <div class="container">
+  	
+    	<a href="/categories/#【工具使用】-ref">【工具使用】</a>	/
+    	<a href="/tag/#【Docker】-ref">【Docker】</a>
+    
+  </div>
+</div>
+
+    
+
+    <div class="container docs-container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="sidebar hidden-print" role="complementary">
+        <div id="navigation">
+  <h1>目录</h1>
+  <ul class="nav sidenav">
+  </ul>
+  <div style="height: 200px;width: 200px;">
+    <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async"> 
+    </script>
+  </div>
+</div>
+
+ 
+      </div>
+    </div>
+    <div class="col-md-9" role="main">
+      <div class="panel docs-content">
+        <div class="wrapper">
+            <header class="post-header">
+              <h1 class="post-title">Docker:MySQL、Redis</h1>
+              <!--
+                <p class="post-meta">Jun 20, 2019</p>
+              -->
+              <div class="meta">Posted on <span class="postdate">Jun 20, 2019</span> By <a target="_blank" href="http://localhost:4000">louis han</a></div>
+              <br />
+            </header>
+            <article class="post-content">
+              <h2 id="mysql安装">MySQL安装</h2>
+<p><a href="https://www.runoob.com/docker/docker-install-redis.html">1</a>
+<a href="https://www.jianshu.com/p/a21be1a99b49">2</a>
+<a href="https://www.cnblogs.com/2016024291-/p/9045548.html">3</a></p>
+
+<ol>
+  <li>镜像拉取
+    <blockquote>
+      <p>docker pull mysql:5.6</p>
+    </blockquote>
+  </li>
+  <li>启动容器
+    <blockquote>
+      <p>docker run -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456</p>
+
+      <p>  -v $PWD/conf:/etc/mysql/conf.d</p>
+
+      <p>  -v $PWD/data:/var/lib/mysql</p>
+
+      <p>  -v $PWD/logs:/logs</p>
+
+      <p>  –name test_mysql mysql:5.6</p>
+    </blockquote>
+  </li>
+  <li>参数说明:
+    <blockquote>
+      <p>-d 让容器在后台运行</p>
+
+      <p>-p 3306:3306 将容器的 3306 端口映射到主机的 3306 端口</p>
+
+      <p>-e 设置环境变量，这里是设置mysql的root用户的初始密码，这个必须设置</p>
+
+      <p>-v $PWD/conf:/etc/mysql/conf.d 将主机当前目录下的 conf/my.cnf 挂载到容器的 /etc/mysql/my.cnf</p>
+
+      <p>-v $PWD/data:/var/lib/mysql 
+将主机当前目录下的data目录挂载到容器的 /var/lib/mysql</p>
+
+      <p>-v $PWD/logs:/logs 将主机当前目录下的 logs 目录挂载到容器的 /logs</p>
+
+      <p>–name 容器的名字，随便取，但是必须唯一</p>
+    </blockquote>
+  </li>
+  <li>远程访问
+    <blockquote>
+      <p>阿里云需要添加安全组</p>
+    </blockquote>
+  </li>
+</ol>
+
+<h2 id="redis安装"><a href="https://www.runoob.com/docker/docker-install-redis.html">Redis安装</a></h2>
+
+<ol>
+  <li>拉取镜像
+    <blockquote>
+      <p>docker pull redis</p>
+    </blockquote>
+  </li>
+  <li>创建文件
+    <blockquote>
+      <p>新建文件夹: mkdir redis</p>
+
+      <p>文件夹下建redis.conf</p>
+    </blockquote>
+  </li>
+  <li>配置文件添加配置信息
+    <blockquote>
+      <p>以下两线之间为配置信息</p>
+    </blockquote>
+  </li>
+  <li>运行容器
+    <blockquote>
+      <p>docker run -p 6379:6379</p>
+
+      <p>  –name redis</p>
+
+      <p>  -v $PWD/redis.conf:/root/redis/redis.conf</p>
+
+      <p>  -v $PWD/data:/root/redis/data</p>
+
+      <p>  -d redis redis-server</p>
+    </blockquote>
+  </li>
+  <li>远程访问
+    <blockquote>
+      <p>阿里云需要添加安全组</p>
+    </blockquote>
+  </li>
+</ol>
+
+<hr />
+
+<p>#修改为守护模式</p>
+
+<p>daemonize yes</p>
+
+<p>#设置进程锁文件</p>
+
+<p>pidfile redis/redis.pid</p>
+
+<p>#端口</p>
+
+<p>port 6379</p>
+
+<p>#客户端超时时间</p>
+
+<p>timeout 300</p>
+
+<p>#日志级别</p>
+
+<p>loglevel debug</p>
+
+<p>#日志文件位置</p>
+
+<p>logfile redis/log-redis.log</p>
+
+<p>#设置数据库的数量，默认数据库为0，可以使用SELECT <dbid>命令在连接上指定数据库id</dbid></p>
+
+<p>databases 8</p>
+
+<p>##指定在多长时间内，有多少次更新操作，就将数据同步到数据文件，可以多个条件配合</p>
+
+<p>#save <seconds> <changes></changes></seconds></p>
+
+<p>#Redis默认配置文件中提供了三个条件：</p>
+
+<p>save 900 1</p>
+
+<p>save 300 10</p>
+
+<p>save 60 10000</p>
+
+<p>#指定存储至本地数据库时是否压缩数据，默认为yes，Redis采用LZF压缩，如果为了节省CPU时间，</p>
+
+<p>#可以关闭该#选项，但会导致数据库文件变的巨大</p>
+
+<p>rdbcompression yes</p>
+
+<p>#指定本地数据库文件名</p>
+
+<p>dbfilename dump.rdb</p>
+
+<p>#指定本地数据库路径</p>
+
+<p>dir redis/db/</p>
+
+<p>#指定是否在每次更新操作后进行日志记录，Redis在默认情况下是异步的把数据写入磁盘，如果不开启，可能</p>
+
+<p>#会在断电时导致一段时间内的数据丢失。因为redis本身同步数据文件是按上面save条件来同步的，所以有</p>
+
+<p>#的数据会在一段时间内只存在于内存中</p>
+
+<p>appendonly no</p>
+
+<p>#指定更新日志条件，共有3个可选值：</p>
+
+<p>#no：表示等操作系统进行数据缓存同步到磁盘（快）</p>
+
+<p>#always：表示每次更新操作后手动调用fsync()将数据写到磁盘（慢，安全）</p>
+
+<p>#everysec：表示每秒同步一次（折衷，默认值）</p>
+
+<p>appendfsync everysec</p>
+
+<p>#redis配置外网访问：</p>
+
+<p>protected-mode no</p>
+
+<p>#配置密码
+requirepass password</p>
+
+<hr />
+
+
+            </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+    <footer class="footer" role="contentinfo">
+	<div class="container">
+		<p class="copyright">Copyright &copy; 2014-2019 <a href=""><code>louis han</code></a>.</p>
+		<p>Powered by <a href="http://jekyllrb.com">Jekyll</a>, themed from <a href="http://lesscss.cn/">Less</a>, refactored by <a href="http://www.sincerehwh.cn/">Sincere Han</a></p>
+	</div>
+</footer>
+
+<script src="/styles/js/jquery.min.js"></script>
+<script src="/styles/js/bootstrap.min.js"></script>
+<script src="/styles/js/holder.min.js"></script>
+<script src="/styles/js/lessismore.js"></script>
+<script src="/styles/js/application.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  </body>
+</html>

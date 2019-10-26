@@ -5,13 +5,45 @@
     <description>Atomix</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 19 Oct 2019 10:24:43 +0800</pubDate>
-    <lastBuildDate>Sat, 19 Oct 2019 10:24:43 +0800</lastBuildDate>
+    <pubDate>Sat, 26 Oct 2019 15:59:15 +0800</pubDate>
+    <lastBuildDate>Sat, 26 Oct 2019 15:59:15 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
-        <title>深入理解操作系统</title>
+        <title>深入理解操作系统2</title>
+        <description>&lt;ol&gt;
+  &lt;li&gt;进制转换
+    &lt;ul&gt;
+      &lt;li&gt;2进制 🏁&lt;/li&gt;
+      &lt;li&gt;8进制 🏁&lt;/li&gt;
+      &lt;li&gt;10进制 🏁&lt;/li&gt;
+      &lt;li&gt;12进制&lt;/li&gt;
+      &lt;li&gt;16进制 🏁&lt;/li&gt;
+      &lt;li&gt;20进制&lt;/li&gt;
+      &lt;li&gt;60进制&lt;/li&gt;
+      &lt;li&gt;100进制&lt;/li&gt;
+      &lt;li&gt;365进制&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+        <pubDate>Sun, 20 Oct 2019 10:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/10/20/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F2/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/10/20/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F2/</guid>
+        
+        <category>【读书】</category>
+        
+        
+        <category>【操作系统】</category>
+        
+      </item>
+    
+      <item>
+        <title>深入理解操作系统1</title>
         <description>&lt;p&gt;&lt;img src=&quot;/images/2019-10-19-深入理解操作系统.jpg&quot; alt=&quot;深入理解操作系统&quot; /&gt;&lt;/p&gt;
+
 </description>
         <pubDate>Sat, 19 Oct 2019 10:00:00 +0800</pubDate>
         <link>http://localhost:4000/2019/10/19/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F1/</link>
@@ -735,130 +767,6 @@ Rocket: https://www.jianshu.com/nb/23051136
         
         
         <category>【Tomcat】</category>
-        
-      </item>
-    
-      <item>
-        <title>架构与设计模式</title>
-        <description>&lt;h4 id=&quot;依赖&quot;&gt;依赖&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.jianshu.com/p/e5c69c7b8c00&quot;&gt;设计模式&lt;/a&gt;
-&lt;a href=&quot;https://www.jianshu.com/p/7b5ca753ed6a&quot;&gt;iOS开发&lt;/a&gt;
-&lt;a href=&quot;https://github.com/BohdanOrlov/iOS-Developer-Roadmap&quot;&gt;iOS技能树&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;索引&quot;&gt;索引&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;设计的六大原则&lt;/li&gt;
-  &lt;li&gt;架构的目的与目标&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;hr /&gt;
-&lt;h3 id=&quot;设计的七大原则&quot;&gt;设计的七大原则&lt;/h3&gt;
-
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;S&lt;/td&gt;
-      &lt;td&gt;Single Responsibility Principle&lt;/td&gt;
-      &lt;td&gt;单一职责原则&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;O&lt;/td&gt;
-      &lt;td&gt;Open Close Principle&lt;/td&gt;
-      &lt;td&gt;开闭原则&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;L&lt;/td&gt;
-      &lt;td&gt;Liskov Substitution Principle&lt;/td&gt;
-      &lt;td&gt;里氏替换原则&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;I&lt;/td&gt;
-      &lt;td&gt;Interface Segregation Principle&lt;/td&gt;
-      &lt;td&gt;接口隔离原则&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;D&lt;/td&gt;
-      &lt;td&gt;Dependence Inversion Principle&lt;/td&gt;
-      &lt;td&gt;依赖倒置原则&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;L&lt;/td&gt;
-      &lt;td&gt;Law Of Demeter&lt;/td&gt;
-      &lt;td&gt;迪米特法则&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;C&lt;/td&gt;
-      &lt;td&gt;Composite/Aggregate Reuse Principle&lt;/td&gt;
-      &lt;td&gt;CARP组合/聚合复用原则&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;⚠️ 面向对象SOLID原则&lt;/p&gt;
-
-&lt;h4 id=&quot;单一职责原则&quot;&gt;单一职责原则&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;一个类只承担一个职责&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;开闭原则&quot;&gt;开闭原则&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;对软件实体的改动，最好用扩展而非修改的方式。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;里氏替换原则&quot;&gt;里氏替换原则&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;子类可以扩展父类的方法，但不应该复写父类的方法。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;接口隔离原则&quot;&gt;接口隔离原则&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;对象不应被强迫依赖它不使用的方法.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;依赖倒置原则&quot;&gt;依赖倒置原则&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;面向接口编程，提取出事务的本质和共性。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;迪米特法则&quot;&gt;迪米特法则&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;一个对象应该对其他对象保持最少的了解，实现低耦合、高内聚。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;组合聚合复用原则&quot;&gt;组合/聚合复用原则&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;就是说要少用继承，多用合成关系来实现。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-&lt;h3 id=&quot;架构的目的与目标&quot;&gt;架构的目的与目标&lt;/h3&gt;
-
-&lt;hr /&gt;
-&lt;h3 id=&quot;架构的设计方法和步骤&quot;&gt;架构的设计方法和步骤&lt;/h3&gt;
-
-&lt;hr /&gt;
-&lt;h3 id=&quot;常用的架构&quot;&gt;常用的架构&lt;/h3&gt;
-
-&lt;h4 id=&quot;mvc&quot;&gt;MVC&lt;/h4&gt;
-
-&lt;h4 id=&quot;mvvm&quot;&gt;MVVM&lt;/h4&gt;
-
-&lt;h4 id=&quot;viper&quot;&gt;VIPER&lt;/h4&gt;
-
-&lt;h4 id=&quot;mvp&quot;&gt;MVP&lt;/h4&gt;
-
-</description>
-        <pubDate>Tue, 20 Aug 2019 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/08/20/%E6%9E%B6%E6%9E%84%E4%B8%8E%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/08/20/%E6%9E%B6%E6%9E%84%E4%B8%8E%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</guid>
-        
-        <category>【移动端】</category>
-        
-        
-        <category>【iOS】</category>
         
       </item>
     
