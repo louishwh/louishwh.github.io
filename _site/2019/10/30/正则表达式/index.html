@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>正则表达式 - 人码合一</title>
+
+	<link rel="shortcut icon" href="/styles/images/favicon.png">
+	<link rel="icon" href="/styles/images/favicon.png">
+
+	<link rel="stylesheet" href="/styles/css/index.css">
+	<link rel="stylesheet" href="/styles/css/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/styles/css/syntax.css">
+	<link rel="canonical" href="/2019/10/30/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">
+	<link rel="alternate" type="application/rss+xml" title="人码合一" href="/feed.xml">
+	
+	<meta name="keywords" content="正则表达式, 人码合一, Atomix">
+	<meta name="description" content="Atomix">
+
+	<script src="/styles/js/jquery.min.js"></script>
+	<!--[if lt IE 9]>
+    	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  	<![endif]-->
+  	<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "//hm.baidu.com/hm.js?624f97ab37fd73fbedc7929427ca95ea";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+  	<style type="text/css">
+	  	.docs-content{
+	  		margin-bottom: 10px;
+	  	}
+  	</style>
+</head>
+
+  <body class="index">
+
+    <header class="navbar navbar-inverse navbar-fixed-top docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand">
+        <img src="/styles/images/logo.png">
+      </a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">    
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/categories/">Category</a>
+        </li>
+        <li>
+          <a href="/tag">Index</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+            <a><span id="busuanzi_container_site_pv">总访问量<span id="busuanzi_value_site_pv"></span>次</span></a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">关于<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a rel="nofollow" target="_blank" href="https://github.com/louishwh/">Github</a></li>
+            <li><a rel="nofollow" target="_blank" href="">关于作者</a></li>
+            <li><a rel="nofollow" href="/books">我的书单</a></li>
+            <li class="divider"></li>
+            <li><a rel="nofollow" target="_blank" href="https://github.com/luoyan35714/LessOrMore.git">本项目</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+    <div class="docs-header" id="content">
+  <div class="container">
+  	
+  		<!--
+		    <h1>正则表达式</h1>
+		    <p>Post on Oct 30, 2019 by <a href="/about">louis han</a></p>
+		-->
+		    <h1>Seeking truth from facts.</h1>
+    
+  </div>
+</div>
+    
+      
+<div class="banner">
+  <div class="container">
+  	
+    	<a href="/categories/#【编程常识】-ref">【编程常识】</a>	/
+    	<a href="/tag/#【工具】-ref">【工具】</a>
+    
+  </div>
+</div>
+
+    
+
+    <div class="container docs-container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="sidebar hidden-print" role="complementary">
+        <div id="navigation">
+  <h1>目录</h1>
+  <ul class="nav sidenav">
+  </ul>
+  <div style="height: 200px;width: 200px;">
+    <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async"> 
+    </script>
+  </div>
+</div>
+
+ 
+      </div>
+    </div>
+    <div class="col-md-9" role="main">
+      <div class="panel docs-content">
+        <div class="wrapper">
+            <header class="post-header">
+              <h1 class="post-title">正则表达式</h1>
+              <!--
+                <p class="post-meta">Oct 30, 2019</p>
+              -->
+              <div class="meta">Posted on <span class="postdate">Oct 30, 2019</span> By <a target="_blank" href="http://localhost:4000">louis han</a></div>
+              <br />
+            </header>
+            <article class="post-content">
+              <blockquote>
+  <p><a href="https://www.runoob.com/regexp/regexp-intro.html">参考文档1</a></p>
+
+</blockquote>
+
+<h3 id="本文解决四个问题">本文解决四个问题</h3>
+<ol>
+  <li>正则表达式能够干什么?</li>
+  <li>正则表达式怎么用?</li>
+  <li>有哪些常用的正则实际例子?</li>
+  <li>正则在Python、Swift、Kotlin中的使用方法?</li>
+</ol>
+
+<h3 id="正则表达式能够干什么">正则表达式能够干什么?</h3>
+<ol>
+  <li>数据验证
+    <ul>
+      <li>字符串是否具有固定的格式</li>
+      <li>例如: 身份证号、手机号、邮箱、信用卡、BTC地址等</li>
+    </ul>
+  </li>
+  <li>文本替换
+    <ul>
+      <li>识别出字符串内的特定文本, 删除或替换这些文本.</li>
+      <li>例如: 将html中的标签全部去除</li>
+    </ul>
+  </li>
+  <li>提取子字符串
+    <ul>
+      <li>识别出符合特定文本, 并提取出来</li>
+      <li>获取网页中的所有URL、手机号、邮箱</li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="正则表达式怎么用">正则表达式怎么用?</h3>
+
+<ul>
+  <li>字符类型
+    <ul>
+      <li>普通字符
+        <ul>
+          <li>非打印字符</li>
+        </ul>
+      </li>
+      <li>特殊字符
+        <ul>
+          <li>特殊
+            <ul>
+              <li>() 标记一个子表达式的开始和结束位置。子表达式可以获取供以后使用。要匹配这些字符，请使用 ( 和 )。</li>
+              <li>. 匹配除换行符 \n 之外的任何单字符。要匹配 . ，请使用 . 。</li>
+              <li>[ 标记一个中括号表达式的开始。要匹配 [，请使用 [。</li>
+              <li>\ 将下一个字符标记为或特殊字符、或原义字符、或向后引用、或八进制转义符。</li>
+              <li>|	指明两项之间的一个选择。要匹配 |，请使用 \ |。</li>
+            </ul>
+          </li>
+          <li>限定符
+            <ul>
+              <li>含义: 指定正则表达式的一个给定组件必须要出现多少次才能满足匹配</li>
+              <li><code class="highlighter-rouge">*</code> 匹配前面的子表达式零次或多次。</li>
+              <li><code class="highlighter-rouge">+</code> 匹配前面的子表达式一次或多次。</li>
+              <li><code class="highlighter-rouge">?</code> 匹配前面的子表达式零次或一次。</li>
+              <li><code class="highlighter-rouge">{n}</code> n是一个非负整数。匹配确定的 n 次。</li>
+              <li><code class="highlighter-rouge">{n,}</code> n是一个非负整数。至少匹配n 次。</li>
+              <li><code class="highlighter-rouge">{n,m}</code> m和n均为非负整数，其中n &lt;= m。最少匹配 n 次且最多匹配 m 次。</li>
+              <li>⚠️ <code class="highlighter-rouge">*、+</code> 限定符都是贪婪的, 在它们的后面加上一个?就可以实现非贪婪或最小匹配。</li>
+            </ul>
+          </li>
+          <li>定位符
+            <ul>
+              <li>含义: 定位符使您能够将正则表达式固定到行首或行尾。</li>
+              <li>^ 匹配输入字符串开始的位置。</li>
+              <li>$ 匹配输入字符串结尾的位置。</li>
+              <li>\b 匹配一个单词边界，即字与空格间的位置。</li>
+              <li>\B 非单词边界匹配。</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>运算符优先级
+    <ul>
+      <li>\	转义符</li>
+      <li>(), (?:), (?=), []			圆括号和方括号</li>
+      <li>*, +, ?, {n}, {n,}, {n,m}	  	限定符</li>
+      <li>^, $, \任何元字符、任何字符    	定位点和序列</li>
+      <li>|								替换，”或”操作</li>
+    </ul>
+  </li>
+  <li>规则
+    <ul>
+      <li>基本模式匹配
+        <ul>
+          <li>^ $</li>
+        </ul>
+      </li>
+      <li>字符簇
+        <ul>
+          <li>[[:alpha:]]	任何字母</li>
+          <li>[[:digit:]]	任何数字</li>
+          <li>[[:alnum:]]	任何字母和数字</li>
+          <li>[[:space:]]	任何空白字符</li>
+          <li>[[:upper:]]	任何大写字母</li>
+          <li>[[:lower:]]	任何小写字母</li>
+          <li>[[:punct:]]	任何标点符号</li>
+          <li>[[:xdigit:]]	任何16进制的数字，相当于[0-9a-fA-F]</li>
+        </ul>
+      </li>
+      <li>确定重复出现
+        <ul>
+          <li>特殊字符 * 与 {0,} 是相等的，它们都代表着 0 个或多个前面的内容 。</li>
+          <li>所有包含一个以上的字母、数字或下划线的字符串
+            <ul>
+              <li><code class="highlighter-rouge">^[a-zA-Z0-9_]{1,}$</code></li>
+            </ul>
+          </li>
+          <li>所有的正整数
+            <ul>
+              <li><code class="highlighter-rouge">^[1-9][0-9]{0,}$</code></li>
+            </ul>
+          </li>
+          <li>所有的整数
+            <ul>
+              <li><code class="highlighter-rouge">^\-{0,1}[0-9]{1,}$</code></li>
+            </ul>
+          </li>
+          <li>所有的浮点数
+            <ul>
+              <li><code class="highlighter-rouge">^[-]?[0-9]+\.?[0-9]+$</code></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="3-有哪些常用的正则实际例子">3. 有哪些常用的正则实际例子?</h3>
+<ul>
+  <li>匹配双字节汉字:
+    <ul>
+      <li><code class="highlighter-rouge">[^u4e00-u9fa5]</code></li>
+    </ul>
+  </li>
+  <li>匹配中文字符
+    <ul>
+      <li><code class="highlighter-rouge">[u4e00-u9fa5]</code></li>
+    </ul>
+  </li>
+  <li>匹配HTML标记:
+    <ul>
+      <li><code class="highlighter-rouge">&lt;(S*?)[^&gt;]*&gt;.*?|&lt;.*? /&gt;</code></li>
+    </ul>
+  </li>
+  <li>匹配HTML标签:
+    <ul>
+      <li><code class="highlighter-rouge">&lt;/?[a-zA-Z]+[^&gt;&lt;]*&gt;</code></li>
+    </ul>
+  </li>
+  <li>匹配空白行:
+    <ul>
+      <li><code class="highlighter-rouge">ns*r</code></li>
+    </ul>
+  </li>
+  <li>匹配首尾空白字符
+    <ul>
+      <li><code class="highlighter-rouge">^s*|s*$</code></li>
+    </ul>
+  </li>
+  <li>匹配Email地址
+    <ul>
+      <li><code class="highlighter-rouge">w+([-+.]w+)*@w+([-.]w+)*.w+([-.]w+)*</code></li>
+    </ul>
+  </li>
+  <li>匹配网址URL的正则表达式：
+    <ul>
+      <li><code class="highlighter-rouge">http://([w-]+.)+[w-]+(/[w- ./?%&amp;=]*)?</code></li>
+    </ul>
+  </li>
+  <li>匹配国内电话号码：
+    <ul>
+      <li><code class="highlighter-rouge">[0-9]{3}-[0-9]{8}|[0-9]{4}-[0-9]{7}</code></li>
+    </ul>
+  </li>
+  <li>匹配ip地址：
+    <ul>
+      <li><code class="highlighter-rouge">[1-2]?[0-9]{1,2}.[1-2]?[0-9]{1,2}.[1-2]?[0-9]{1,2}.[1-2]?[0-9]{1,2}</code></li>
+    </ul>
+  </li>
+  <li>匹配26个英文字母字符串
+    <ul>
+      <li>^[A-Za-z]+$　</li>
+    </ul>
+  </li>
+  <li>验证一年的12个月
+    <ul>
+      <li><code class="highlighter-rouge">^(0?[1-9]|1[0-2])$</code></li>
+    </ul>
+  </li>
+  <li>验证一个月的31天：
+    <ul>
+      <li><code class="highlighter-rouge">^((0?[1-9])|((1|2)[0-9])|30|31)$</code></li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="4-pythonswiftkotlin中的使用">4. Python、Swift、Kotlin中的使用</h3>
+
+<ul>
+  <li>Python:
+    <blockquote>
+      <p>import re</p>
+
+      <p>re.match( r’&lt;/?[a-zA-Z]+[^&gt;&lt;]*&gt;’, line, re.M | re.I)</p>
+
+      <p>re.findall(“&lt;/?[a-zA-Z]+[^&gt;&lt;]*&gt;”, “123444-1222”)</p>
+
+      <p>re.compile(“&lt;/?[a-zA-Z]+[^&gt;&lt;]*&gt;”).sub(‘replace string’, “origin string”)</p>
+    </blockquote>
+  </li>
+  <li>Kotlin:
+    <blockquote>
+      <p>Regex(“&lt;/?[a-zA-Z]+[^&gt;&lt;]*&gt;”).matches(“string”)</p>
+
+      <p>Regex(“&lt;/?[a-zA-Z]+[^&gt;&lt;]*&gt;”).findAll(“&lt;p&gt;&lt;/p&gt;”)</p>
+
+      <p>Regex(“&lt;/?[a-zA-Z]+[^&gt;&lt;]*&gt;”).replace(“new string”, “replace string”)</p>
+    </blockquote>
+  </li>
+  <li>Swift:
+    <blockquote>
+      <p>var string = “origin string”</p>
+
+      <p>let pattern = “&lt;/?[a-zA-Z]+[^&gt;&lt;]*&gt;”</p>
+
+      <p>let regex = try? NSRegularExpression(pattern: pattern, options: [])</p>
+
+      <p>if let results = regex?.matches(in: acount, options: [], range: NSRange(location: 0, length: acount.count)), results.count != 0 {</p>
+
+      <p>  for result in results{</p>
+
+      <p>     let string = (acount as NSString).substring(with: result.range)</p>
+
+      <p>   }</p>
+
+      <p>}</p>
+    </blockquote>
+  </li>
+</ul>
+
+<blockquote>
+  <p>正则不难很有用, 能积累点最好.</p>
+</blockquote>
+
+
+            </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+    <footer class="footer" role="contentinfo">
+	<div class="container">
+		<p class="copyright">Copyright &copy; 2014-2019 <a href=""><code>louis han</code></a>.</p>
+		<p>Powered by <a href="http://jekyllrb.com">Jekyll</a>, themed from <a href="http://lesscss.cn/">Less</a>, refactored by <a href="http://www.sincerehwh.cn/">Sincere Han</a></p>
+	</div>
+</footer>
+
+<script src="/styles/js/jquery.min.js"></script>
+<script src="/styles/js/bootstrap.min.js"></script>
+<script src="/styles/js/holder.min.js"></script>
+<script src="/styles/js/lessismore.js"></script>
+<script src="/styles/js/application.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  </body>
+</html>

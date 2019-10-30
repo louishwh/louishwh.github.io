@@ -5,9 +5,278 @@
     <description>Atomix</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 26 Oct 2019 16:09:38 +0800</pubDate>
-    <lastBuildDate>Sat, 26 Oct 2019 16:09:38 +0800</lastBuildDate>
+    <pubDate>Wed, 30 Oct 2019 19:49:36 +0800</pubDate>
+    <lastBuildDate>Wed, 30 Oct 2019 19:49:36 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>正则表达式</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;https://www.runoob.com/regexp/regexp-intro.html&quot;&gt;参考文档1&lt;/a&gt;&lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;本文解决四个问题&quot;&gt;本文解决四个问题&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;正则表达式能够干什么?&lt;/li&gt;
+  &lt;li&gt;正则表达式怎么用?&lt;/li&gt;
+  &lt;li&gt;有哪些常用的正则实际例子?&lt;/li&gt;
+  &lt;li&gt;正则在Python、Swift、Kotlin中的使用方法?&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;正则表达式能够干什么&quot;&gt;正则表达式能够干什么?&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;数据验证
+    &lt;ul&gt;
+      &lt;li&gt;字符串是否具有固定的格式&lt;/li&gt;
+      &lt;li&gt;例如: 身份证号、手机号、邮箱、信用卡、BTC地址等&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;文本替换
+    &lt;ul&gt;
+      &lt;li&gt;识别出字符串内的特定文本, 删除或替换这些文本.&lt;/li&gt;
+      &lt;li&gt;例如: 将html中的标签全部去除&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;提取子字符串
+    &lt;ul&gt;
+      &lt;li&gt;识别出符合特定文本, 并提取出来&lt;/li&gt;
+      &lt;li&gt;获取网页中的所有URL、手机号、邮箱&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;正则表达式怎么用&quot;&gt;正则表达式怎么用?&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;字符类型
+    &lt;ul&gt;
+      &lt;li&gt;普通字符
+        &lt;ul&gt;
+          &lt;li&gt;非打印字符&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;特殊字符
+        &lt;ul&gt;
+          &lt;li&gt;特殊
+            &lt;ul&gt;
+              &lt;li&gt;() 标记一个子表达式的开始和结束位置。子表达式可以获取供以后使用。要匹配这些字符，请使用 ( 和 )。&lt;/li&gt;
+              &lt;li&gt;. 匹配除换行符 \n 之外的任何单字符。要匹配 . ，请使用 . 。&lt;/li&gt;
+              &lt;li&gt;[ 标记一个中括号表达式的开始。要匹配 [，请使用 [。&lt;/li&gt;
+              &lt;li&gt;\ 将下一个字符标记为或特殊字符、或原义字符、或向后引用、或八进制转义符。&lt;/li&gt;
+              &lt;li&gt;|	指明两项之间的一个选择。要匹配 |，请使用 \ |。&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;限定符
+            &lt;ul&gt;
+              &lt;li&gt;含义: 指定正则表达式的一个给定组件必须要出现多少次才能满足匹配&lt;/li&gt;
+              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;*&lt;/code&gt; 匹配前面的子表达式零次或多次。&lt;/li&gt;
+              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;+&lt;/code&gt; 匹配前面的子表达式一次或多次。&lt;/li&gt;
+              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;?&lt;/code&gt; 匹配前面的子表达式零次或一次。&lt;/li&gt;
+              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;{n}&lt;/code&gt; n是一个非负整数。匹配确定的 n 次。&lt;/li&gt;
+              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;{n,}&lt;/code&gt; n是一个非负整数。至少匹配n 次。&lt;/li&gt;
+              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;{n,m}&lt;/code&gt; m和n均为非负整数，其中n &amp;lt;= m。最少匹配 n 次且最多匹配 m 次。&lt;/li&gt;
+              &lt;li&gt;⚠️ &lt;code class=&quot;highlighter-rouge&quot;&gt;*、+&lt;/code&gt; 限定符都是贪婪的, 在它们的后面加上一个?就可以实现非贪婪或最小匹配。&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;定位符
+            &lt;ul&gt;
+              &lt;li&gt;含义: 定位符使您能够将正则表达式固定到行首或行尾。&lt;/li&gt;
+              &lt;li&gt;^ 匹配输入字符串开始的位置。&lt;/li&gt;
+              &lt;li&gt;$ 匹配输入字符串结尾的位置。&lt;/li&gt;
+              &lt;li&gt;\b 匹配一个单词边界，即字与空格间的位置。&lt;/li&gt;
+              &lt;li&gt;\B 非单词边界匹配。&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;运算符优先级
+    &lt;ul&gt;
+      &lt;li&gt;\	转义符&lt;/li&gt;
+      &lt;li&gt;(), (?:), (?=), []			圆括号和方括号&lt;/li&gt;
+      &lt;li&gt;*, +, ?, {n}, {n,}, {n,m}	  	限定符&lt;/li&gt;
+      &lt;li&gt;^, $, \任何元字符、任何字符    	定位点和序列&lt;/li&gt;
+      &lt;li&gt;|								替换，”或”操作&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;规则
+    &lt;ul&gt;
+      &lt;li&gt;基本模式匹配
+        &lt;ul&gt;
+          &lt;li&gt;^ $&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;字符簇
+        &lt;ul&gt;
+          &lt;li&gt;[[:alpha:]]	任何字母&lt;/li&gt;
+          &lt;li&gt;[[:digit:]]	任何数字&lt;/li&gt;
+          &lt;li&gt;[[:alnum:]]	任何字母和数字&lt;/li&gt;
+          &lt;li&gt;[[:space:]]	任何空白字符&lt;/li&gt;
+          &lt;li&gt;[[:upper:]]	任何大写字母&lt;/li&gt;
+          &lt;li&gt;[[:lower:]]	任何小写字母&lt;/li&gt;
+          &lt;li&gt;[[:punct:]]	任何标点符号&lt;/li&gt;
+          &lt;li&gt;[[:xdigit:]]	任何16进制的数字，相当于[0-9a-fA-F]&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;确定重复出现
+        &lt;ul&gt;
+          &lt;li&gt;特殊字符 * 与 {0,} 是相等的，它们都代表着 0 个或多个前面的内容 。&lt;/li&gt;
+          &lt;li&gt;所有包含一个以上的字母、数字或下划线的字符串
+            &lt;ul&gt;
+              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;^[a-zA-Z0-9_]{1,}$&lt;/code&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;所有的正整数
+            &lt;ul&gt;
+              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;^[1-9][0-9]{0,}$&lt;/code&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;所有的整数
+            &lt;ul&gt;
+              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;^\-{0,1}[0-9]{1,}$&lt;/code&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;所有的浮点数
+            &lt;ul&gt;
+              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;^[-]?[0-9]+\.?[0-9]+$&lt;/code&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;3-有哪些常用的正则实际例子&quot;&gt;3. 有哪些常用的正则实际例子?&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;匹配双字节汉字:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;[^u4e00-u9fa5]&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;匹配中文字符
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;[u4e00-u9fa5]&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;匹配HTML标记:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;(S*?)[^&amp;gt;]*&amp;gt;.*?|&amp;lt;.*? /&amp;gt;&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;匹配HTML标签:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;/?[a-zA-Z]+[^&amp;gt;&amp;lt;]*&amp;gt;&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;匹配空白行:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ns*r&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;匹配首尾空白字符
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;^s*|s*$&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;匹配Email地址
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;w+([-+.]w+)*@w+([-.]w+)*.w+([-.]w+)*&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;匹配网址URL的正则表达式：
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;http://([w-]+.)+[w-]+(/[w- ./?%&amp;amp;=]*)?&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;匹配国内电话号码：
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;[0-9]{3}-[0-9]{8}|[0-9]{4}-[0-9]{7}&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;匹配ip地址：
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;[1-2]?[0-9]{1,2}.[1-2]?[0-9]{1,2}.[1-2]?[0-9]{1,2}.[1-2]?[0-9]{1,2}&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;匹配26个英文字母字符串
+    &lt;ul&gt;
+      &lt;li&gt;^[A-Za-z]+$　&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;验证一年的12个月
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;^(0?[1-9]|1[0-2])$&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;验证一个月的31天：
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;^((0?[1-9])|((1|2)[0-9])|30|31)$&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;4-pythonswiftkotlin中的使用&quot;&gt;4. Python、Swift、Kotlin中的使用&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Python:
+    &lt;blockquote&gt;
+      &lt;p&gt;import re&lt;/p&gt;
+
+      &lt;p&gt;re.match( r’&amp;lt;/?[a-zA-Z]+[^&amp;gt;&amp;lt;]*&amp;gt;’, line, re.M | re.I)&lt;/p&gt;
+
+      &lt;p&gt;re.findall(“&amp;lt;/?[a-zA-Z]+[^&amp;gt;&amp;lt;]*&amp;gt;”, “123444-1222”)&lt;/p&gt;
+
+      &lt;p&gt;re.compile(“&amp;lt;/?[a-zA-Z]+[^&amp;gt;&amp;lt;]*&amp;gt;”).sub(‘replace string’, “origin string”)&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Kotlin:
+    &lt;blockquote&gt;
+      &lt;p&gt;Regex(“&amp;lt;/?[a-zA-Z]+[^&amp;gt;&amp;lt;]*&amp;gt;”).matches(“string”)&lt;/p&gt;
+
+      &lt;p&gt;Regex(“&amp;lt;/?[a-zA-Z]+[^&amp;gt;&amp;lt;]*&amp;gt;”).findAll(“&amp;lt;p&amp;gt;&amp;lt;/p&amp;gt;”)&lt;/p&gt;
+
+      &lt;p&gt;Regex(“&amp;lt;/?[a-zA-Z]+[^&amp;gt;&amp;lt;]*&amp;gt;”).replace(“new string”, “replace string”)&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Swift:
+    &lt;blockquote&gt;
+      &lt;p&gt;var string = “origin string”&lt;/p&gt;
+
+      &lt;p&gt;let pattern = “&amp;lt;/?[a-zA-Z]+[^&amp;gt;&amp;lt;]*&amp;gt;”&lt;/p&gt;
+
+      &lt;p&gt;let regex = try? NSRegularExpression(pattern: pattern, options: [])&lt;/p&gt;
+
+      &lt;p&gt;if let results = regex?.matches(in: acount, options: [], range: NSRange(location: 0, length: acount.count)), results.count != 0 {&lt;/p&gt;
+
+      &lt;p&gt;  for result in results{&lt;/p&gt;
+
+      &lt;p&gt;     let string = (acount as NSString).substring(with: result.range)&lt;/p&gt;
+
+      &lt;p&gt;   }&lt;/p&gt;
+
+      &lt;p&gt;}&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;正则不难很有用, 能积累点最好.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+</description>
+        <pubDate>Wed, 30 Oct 2019 10:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/10/30/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/10/30/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</guid>
+        
+        <category>【工具】</category>
+        
+        
+        <category>【编程常识】</category>
+        
+      </item>
     
       <item>
         <title>深入理解操作系统2</title>
@@ -671,102 +940,6 @@ Rocket: https://www.jianshu.com/nb/23051136
         
         
         <category>【SpringBoot】</category>
-        
-      </item>
-    
-      <item>
-        <title>Tomcat简介</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://github.com/apache/tomcat&quot;&gt;Tomcat源码&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://yq.aliyun.com/articles/663198&quot;&gt;阅读Tomcat源码&lt;/a&gt;
-&lt;a href=&quot;https://blog.csdn.net/w1992wishes/article/details/79242797&quot;&gt;Tomcat架构&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;阐述的内容&quot;&gt;阐述的内容&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Tomcat结构图&lt;/li&gt;
-  &lt;li&gt;Tomcat启动过程&lt;/li&gt;
-  &lt;li&gt;Tomcat请求处理过程&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;1-tomcat结构&quot;&gt;1. Tomcat结构&lt;/h4&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/2019-09-23-tomcat结构.png&quot; alt=&quot;/images/2019-09-23-tomcat结构.png&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Service
-    &lt;ul&gt;
-      &lt;li&gt;Connector
-        &lt;ul&gt;
-          &lt;li&gt;Container
-            &lt;ul&gt;
-              &lt;li&gt;Engine
-                &lt;ul&gt;
-                  &lt;li&gt;Host
-                    &lt;ul&gt;
-                      &lt;li&gt;Context
-                        &lt;ul&gt;
-                          &lt;li&gt;Wrapper: 对应一个Servlet Class&lt;/li&gt;
-                        &lt;/ul&gt;
-                      &lt;/li&gt;
-                    &lt;/ul&gt;
-                  &lt;/li&gt;
-                &lt;/ul&gt;
-              &lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;2-tomcat启动过程&quot;&gt;2. Tomcat启动过程&lt;/h4&gt;
-
-&lt;h4 id=&quot;3-tomcat请求处理过程&quot;&gt;3. Tomcat请求处理过程&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;本机端口获取数据, Connector获取
-    &lt;ul&gt;
-      &lt;li&gt;Connector: 监听端口的TCP连接请求
-        &lt;ul&gt;
-          &lt;li&gt;创建Request和Response&lt;/li&gt;
-          &lt;li&gt;产生一个线程把请求传递给Container.Engine
-            &lt;ul&gt;
-              &lt;li&gt;Container的Engine获取请求, 交给Host
-                &lt;ul&gt;
-                  &lt;li&gt;Host获取请求, 交给Context
-                    &lt;ul&gt;
-                      &lt;li&gt;Context获取请求, 匹配Servlet,交给Servlet
-                        &lt;ul&gt;
-                          &lt;li&gt;构造HttpServletRequest, HttpServletResponse&lt;/li&gt;
-                        &lt;/ul&gt;
-                      &lt;/li&gt;
-                      &lt;li&gt;Context返回HttpServletResponse给Host&lt;/li&gt;
-                    &lt;/ul&gt;
-                  &lt;/li&gt;
-                  &lt;li&gt;Host返回HttpServletResponse给Engine&lt;/li&gt;
-                &lt;/ul&gt;
-              &lt;/li&gt;
-              &lt;li&gt;Engine返回HttpServletResponse给Connector&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Connector返回HttpServletResponse给Browser&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-</description>
-        <pubDate>Mon, 23 Sep 2019 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/09/23/Tomcat%E7%AE%80%E4%BB%8B/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/09/23/Tomcat%E7%AE%80%E4%BB%8B/</guid>
-        
-        <category>【后端】</category>
-        
-        
-        <category>【Tomcat】</category>
         
       </item>
     
