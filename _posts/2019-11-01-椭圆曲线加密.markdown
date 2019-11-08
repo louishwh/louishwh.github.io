@@ -1,0 +1,18 @@
+---
+layout: post
+title: 椭圆曲线加解密算法
+date: 2019-11-01 10:00:00 +0800
+categories: 【密码学】
+tag: 【工具】
+---
+
+### 参考资料 
+- [数学原理](https://www.jianshu.com/p/e41bc1eb1d81)
+
+
+### 名称解释
+- 椭圆曲线加密算法，即: Elliptic Curve Cryptography，简称ECC
+	- 基于椭圆曲线数学理论实现的一种非对称加密算法。
+	- 椭圆曲线在密码学中的使用，是1985年由Neal Koblitz和Victor Miller分别独立提出的。
+- 椭圆曲线签名算法，即: ECDSA
+
