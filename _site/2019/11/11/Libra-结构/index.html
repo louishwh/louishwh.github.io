@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Libra结构 - 人码合一</title>
+
+	<link rel="shortcut icon" href="/styles/images/favicon.png">
+	<link rel="icon" href="/styles/images/favicon.png">
+
+	<link rel="stylesheet" href="/styles/css/index.css">
+	<link rel="stylesheet" href="/styles/css/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/styles/css/syntax.css">
+	<link rel="canonical" href="/2019/11/11/Libra-%E7%BB%93%E6%9E%84/">
+	<link rel="alternate" type="application/rss+xml" title="人码合一" href="/feed.xml">
+	
+	<meta name="keywords" content="Libra结构, 人码合一, Atomix">
+	<meta name="description" content="Atomix">
+
+	<script src="/styles/js/jquery.min.js"></script>
+	<!--[if lt IE 9]>
+    	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  	<![endif]-->
+  	<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "//hm.baidu.com/hm.js?624f97ab37fd73fbedc7929427ca95ea";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+  	<style type="text/css">
+	  	.docs-content{
+	  		margin-bottom: 10px;
+	  	}
+  	</style>
+</head>
+
+  <body class="index">
+
+    <header class="navbar navbar-inverse navbar-fixed-top docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand">
+        <img src="/styles/images/logo.png">
+      </a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">    
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/categories/">Category</a>
+        </li>
+        <li>
+          <a href="/tag">Index</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+            <a><span id="busuanzi_container_site_pv">总访问量<span id="busuanzi_value_site_pv"></span>次</span></a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">关于<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a rel="nofollow" target="_blank" href="https://github.com/louishwh/">Github</a></li>
+            <li><a rel="nofollow" target="_blank" href="">关于作者</a></li>
+            <li><a rel="nofollow" href="/books">我的书单</a></li>
+            <li class="divider"></li>
+            <li><a rel="nofollow" target="_blank" href="https://github.com/luoyan35714/LessOrMore.git">本项目</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+    <div class="docs-header" id="content">
+  <div class="container">
+  	
+  		<!--
+		    <h1>Libra结构</h1>
+		    <p>Post on Nov 11, 2019 by <a href="/about">louis han</a></p>
+		-->
+		    <h1>Seeking truth from facts.</h1>
+    
+  </div>
+</div>
+    
+      
+<div class="banner">
+  <div class="container">
+  	
+    	<a href="/categories/#【区块链】-ref">【区块链】</a>	/
+    	<a href="/tag/#【Libra】-ref">【Libra】</a>
+    
+  </div>
+</div>
+
+    
+
+    <div class="container docs-container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="sidebar hidden-print" role="complementary">
+        <div id="navigation">
+  <h1>目录</h1>
+  <ul class="nav sidenav">
+  </ul>
+  <div style="height: 200px;width: 200px;">
+    <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async"> 
+    </script>
+  </div>
+</div>
+
+ 
+      </div>
+    </div>
+    <div class="col-md-9" role="main">
+      <div class="panel docs-content">
+        <div class="wrapper">
+            <header class="post-header">
+              <h1 class="post-title">Libra结构</h1>
+              <!--
+                <p class="post-meta">Nov 11, 2019</p>
+              -->
+              <div class="meta">Posted on <span class="postdate">Nov 11, 2019</span> By <a target="_blank" href="http://localhost:4000">louis han</a></div>
+              <br />
+            </header>
+            <article class="post-content">
+              <h3 id="文件结构">文件结构</h3>
+
+<ul>
+  <li>admission_control
+    <ul>
+      <li>Libra的公共API接口，它用于接收来自客户端的公共gRPC请求</li>
+      <li>准入控制（AC）处理于来自客户的两种类型的请求
+        <ul>
+          <li>
+            <ol>
+              <li>提交交易: 向关联的验证器提交交易
+                <ul>
+                  <li>验证过程</li>
+                </ul>
+                <ul>
+                  <li>首先检查交易签名</li>
+                  <li>然后由vm_validator验证交易</li>
+                  <li>✅ 通过所有验证
+                    <ul>
+                      <li>发送到内存池
+                        <ul>
+                          <li>提交成功</li>
+                          <li>提交失败</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ol>
+          </li>
+          <li>
+            <ol>
+              <li>更新最新分布式账本 - 查询存储，例如帐户状态，交易日志，验证等
+                <ul>
+                  <li>请求将直接传递到存储进行查询</li>
+                </ul>
+              </li>
+            </ol>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>benchmark
+    <ul>
+      <li>Libra的公共API接口，它用于接收来自客户端的公共gRPC请求</li>
+    </ul>
+  </li>
+  <li>client
+    <ul>
+      <li>RPC客户端上的Rust的封装</li>
+    </ul>
+  </li>
+  <li>
+    <p>common</p>
+  </li>
+  <li>
+    <p>config</p>
+  </li>
+  <li>consensus
+    <ul>
+      <li>共识协议组件使用LibraBFT共识协议进行状态机复制。</li>
+      <li>共识组件主要在 Actor 程序模块中实现
+        <ul>
+          <li>使用消息传递在不同的子组件之间进行通信</li>
+          <li>tokio 框架用作任务运行时</li>
+          <li>共识数据结构 BlockStore
+            <ul>
+              <li>TxnManager 是内存池组件的接口，支持拉取交易以及删除已提交的交易。</li>
+              <li>StateComputer 是访问执行组件的接口。</li>
+              <li>BlockStore 维护提议块树，块执行，投票，仲裁证书和持久存储。</li>
+              <li>EventProcessor 负责处理各个事件。</li>
+              <li>Pacemaker 负责共识协议的活跃性。</li>
+              <li>SafetyRules 负责共识协议的安全性。</li>
+            </ul>
+          </li>
+          <li>所有共识消息都由其创建者签名，并由其接收者验证。</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>contributing</li>
+  <li>crypto
+    <ul>
+      <li>加密组件承载我们在Libra中使用的关于加密所有实现：散列，签名和密钥派生/生成。</li>
+      <li>Libra 使用几种密码算法:
+        <ul>
+          <li>SHA-3 作为主要的哈希函数。</li>
+          <li>X25519 用于密钥交换。</li>
+          <li>Ed25519 用于签名。</li>
+          <li>HKDF: 基于HMAC的Extract-and-Expand密钥衍生函数（HKDF），基于 RFC 5869。</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>docker</li>
+  <li>documentation</li>
+  <li>executor
+    <ul>
+      <li>执行组件的主要实现</li>
+    </ul>
+  </li>
+  <li>language
+    <ul>
+      <li>vm
+        <ul>
+          <li>虚拟机 (VM), 它包含字节码格式、字节码解释器和执行交易块的基础设施。</li>
+        </ul>
+      </li>
+      <li>bytecode_verifier
+        <ul>
+          <li>字节码验证器, 其中包含一个静态分析工具，用于拒绝无效的Move字节码。</li>
+        </ul>
+      </li>
+      <li>IR： intermediate representation
+        <ul>
+          <li>Move中间层表示编译器, 它将可读的程序文本编译成Move字节码.</li>
+        </ul>
+      </li>
+      <li>stdlib
+        <ul>
+          <li>标准库, 其中包含 LibraAccount 和 LibraCoin 等核心系统模块的Move IR代码。</li>
+        </ul>
+      </li>
+      <li>functional_tests
+        <ul>
+          <li>一些测试 ，用于虚拟机，字节码验证程序和编译器。</li>
+        </ul>
+      </li>
+      <li>compiler
+        <ul>
+          <li>Move IR编译器将Move IR编译为其字节码表示形式。</li>
+          <li>bytecode verifier: 验证编译后的字节码的语义。</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>libra-node</li>
+  <li>libra-swarm</li>
+  <li>mempool
+    <ul>
+      <li>准入控制（AC）模块将交易发送到内存池(Mempool)</li>
+      <li>在共识模块提交之前，内存池将会把交易保留一段时间</li>
+      <li>共识模块从内存池获取交易，内存池不会将交易推向共识</li>
+    </ul>
+  </li>
+  <li>network
+    <ul>
+      <li>网络组件向验证器的其他组件提供点对点网络服务。
+        <ul>
+          <li>RPC, 用于远程过程调用</li>
+          <li>DirectSend, 用于向单个接收方发送“即发即忘”样式的消息</li>
+        </ul>
+      </li>
+      <li>网络组件使用
+        <ul>
+          <li>Multiaddr ：用于对等寻址的方案。</li>
+          <li>TCP ：用于可靠传输。</li>
+          <li>Noise ：用于身份验证和点对点加密。</li>
+          <li>Yamux ：在单个链接上多路复用子流（substreams）。</li>
+          <li>推送类型的 gossip ：用于对节点发现。</li>
+        </ul>
+      </li>
+      <li>网络组件中的不同子组件:
+        <ul>
+          <li>NetworkProvider
+            <ul>
+              <li>向客户端公开网络API。</li>
+            </ul>
+          </li>
+          <li>Peer Manager 
+  — 侦听入链接及主动连接网络上的其他对等节点。</li>
+          <li>Connectivity Manager
+            <ul>
+              <li>当且仅当它是符合条件的网络成员时，才能确保我们保持与节点的连接。</li>
+            </ul>
+          </li>
+          <li>Discovery
+  — 使用推送式来发现新的节点并更新现有节点的地址。</li>
+          <li>Health Checker 
+  — 执行定期活动探测以确保对等/连接的健康状况。</li>
+          <li>Direct Send 
+  — 允许向/从远程对等节点发送/接收消息。</li>
+          <li>RPC 
+  — 允许向/从其他对等节点发送/接收RPC。</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>rust-toolchain</li>
+  <li>scripts</li>
+  <li>state-synchronizer</li>
+  <li>storage
+    <ul>
+      <li>存储模块为Libra区块链上的所有数据集以及Libra Core内部使用的必要数据提供可靠和高效的持久存储。</li>
+      <li>存储模块目的:
+        <ul>
+          <li>
+            <ol>
+              <li>保留区块链数据，特别是验证方通过共识协议达成一致的交易及其输出。</li>
+            </ol>
+          </li>
+          <li>
+            <ol>
+              <li>为任何查询提供一个带有Merkle证明的响应，该查询要求部分区块链数据。</li>
+            </ol>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>target</li>
+  <li>terraform</li>
+  <li>testsuite</li>
+  <li>types</li>
+  <li>vm-validator</li>
+</ul>
+
+            </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+    <footer class="footer" role="contentinfo">
+	<div class="container">
+		<p class="copyright">Copyright &copy; 2014-2019 <a href=""><code>louis han</code></a>.</p>
+		<p>Powered by <a href="http://jekyllrb.com">Jekyll</a>, themed from <a href="http://lesscss.cn/">Less</a>, refactored by <a href="http://www.sincerehwh.cn/">Sincere Han</a></p>
+	</div>
+</footer>
+
+<script src="/styles/js/jquery.min.js"></script>
+<script src="/styles/js/bootstrap.min.js"></script>
+<script src="/styles/js/holder.min.js"></script>
+<script src="/styles/js/lessismore.js"></script>
+<script src="/styles/js/application.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  </body>
+</html>

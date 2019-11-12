@@ -5,9 +5,290 @@
     <description>Atomix</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 30 Oct 2019 19:49:36 +0800</pubDate>
-    <lastBuildDate>Wed, 30 Oct 2019 19:49:36 +0800</lastBuildDate>
+    <pubDate>Tue, 12 Nov 2019 16:34:21 +0800</pubDate>
+    <lastBuildDate>Tue, 12 Nov 2019 16:34:21 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>Libra结构</title>
+        <description>&lt;h3 id=&quot;文件结构&quot;&gt;文件结构&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;admission_control
+    &lt;ul&gt;
+      &lt;li&gt;Libra的公共API接口，它用于接收来自客户端的公共gRPC请求&lt;/li&gt;
+      &lt;li&gt;准入控制（AC）处理于来自客户的两种类型的请求
+        &lt;ul&gt;
+          &lt;li&gt;
+            &lt;ol&gt;
+              &lt;li&gt;提交交易: 向关联的验证器提交交易
+                &lt;ul&gt;
+                  &lt;li&gt;验证过程&lt;/li&gt;
+                &lt;/ul&gt;
+                &lt;ul&gt;
+                  &lt;li&gt;首先检查交易签名&lt;/li&gt;
+                  &lt;li&gt;然后由vm_validator验证交易&lt;/li&gt;
+                  &lt;li&gt;✅ 通过所有验证
+                    &lt;ul&gt;
+                      &lt;li&gt;发送到内存池
+                        &lt;ul&gt;
+                          &lt;li&gt;提交成功&lt;/li&gt;
+                          &lt;li&gt;提交失败&lt;/li&gt;
+                        &lt;/ul&gt;
+                      &lt;/li&gt;
+                    &lt;/ul&gt;
+                  &lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+            &lt;/ol&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;ol&gt;
+              &lt;li&gt;更新最新分布式账本 - 查询存储，例如帐户状态，交易日志，验证等
+                &lt;ul&gt;
+                  &lt;li&gt;请求将直接传递到存储进行查询&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+            &lt;/ol&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;benchmark
+    &lt;ul&gt;
+      &lt;li&gt;Libra的公共API接口，它用于接收来自客户端的公共gRPC请求&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;client
+    &lt;ul&gt;
+      &lt;li&gt;RPC客户端上的Rust的封装&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;common&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;config&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;consensus
+    &lt;ul&gt;
+      &lt;li&gt;共识协议组件使用LibraBFT共识协议进行状态机复制。&lt;/li&gt;
+      &lt;li&gt;共识组件主要在 Actor 程序模块中实现
+        &lt;ul&gt;
+          &lt;li&gt;使用消息传递在不同的子组件之间进行通信&lt;/li&gt;
+          &lt;li&gt;tokio 框架用作任务运行时&lt;/li&gt;
+          &lt;li&gt;共识数据结构 BlockStore
+            &lt;ul&gt;
+              &lt;li&gt;TxnManager 是内存池组件的接口，支持拉取交易以及删除已提交的交易。&lt;/li&gt;
+              &lt;li&gt;StateComputer 是访问执行组件的接口。&lt;/li&gt;
+              &lt;li&gt;BlockStore 维护提议块树，块执行，投票，仲裁证书和持久存储。&lt;/li&gt;
+              &lt;li&gt;EventProcessor 负责处理各个事件。&lt;/li&gt;
+              &lt;li&gt;Pacemaker 负责共识协议的活跃性。&lt;/li&gt;
+              &lt;li&gt;SafetyRules 负责共识协议的安全性。&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;所有共识消息都由其创建者签名，并由其接收者验证。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;contributing&lt;/li&gt;
+  &lt;li&gt;crypto
+    &lt;ul&gt;
+      &lt;li&gt;加密组件承载我们在Libra中使用的关于加密所有实现：散列，签名和密钥派生/生成。&lt;/li&gt;
+      &lt;li&gt;Libra 使用几种密码算法:
+        &lt;ul&gt;
+          &lt;li&gt;SHA-3 作为主要的哈希函数。&lt;/li&gt;
+          &lt;li&gt;X25519 用于密钥交换。&lt;/li&gt;
+          &lt;li&gt;Ed25519 用于签名。&lt;/li&gt;
+          &lt;li&gt;HKDF: 基于HMAC的Extract-and-Expand密钥衍生函数（HKDF），基于 RFC 5869。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;docker&lt;/li&gt;
+  &lt;li&gt;documentation&lt;/li&gt;
+  &lt;li&gt;executor
+    &lt;ul&gt;
+      &lt;li&gt;执行组件的主要实现&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;language
+    &lt;ul&gt;
+      &lt;li&gt;vm
+        &lt;ul&gt;
+          &lt;li&gt;虚拟机 (VM), 它包含字节码格式、字节码解释器和执行交易块的基础设施。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;bytecode_verifier
+        &lt;ul&gt;
+          &lt;li&gt;字节码验证器, 其中包含一个静态分析工具，用于拒绝无效的Move字节码。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;IR： intermediate representation
+        &lt;ul&gt;
+          &lt;li&gt;Move中间层表示编译器, 它将可读的程序文本编译成Move字节码.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;stdlib
+        &lt;ul&gt;
+          &lt;li&gt;标准库, 其中包含 LibraAccount 和 LibraCoin 等核心系统模块的Move IR代码。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;functional_tests
+        &lt;ul&gt;
+          &lt;li&gt;一些测试 ，用于虚拟机，字节码验证程序和编译器。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;compiler
+        &lt;ul&gt;
+          &lt;li&gt;Move IR编译器将Move IR编译为其字节码表示形式。&lt;/li&gt;
+          &lt;li&gt;bytecode verifier: 验证编译后的字节码的语义。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;libra-node&lt;/li&gt;
+  &lt;li&gt;libra-swarm&lt;/li&gt;
+  &lt;li&gt;mempool
+    &lt;ul&gt;
+      &lt;li&gt;准入控制（AC）模块将交易发送到内存池(Mempool)&lt;/li&gt;
+      &lt;li&gt;在共识模块提交之前，内存池将会把交易保留一段时间&lt;/li&gt;
+      &lt;li&gt;共识模块从内存池获取交易，内存池不会将交易推向共识&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;network
+    &lt;ul&gt;
+      &lt;li&gt;网络组件向验证器的其他组件提供点对点网络服务。
+        &lt;ul&gt;
+          &lt;li&gt;RPC, 用于远程过程调用&lt;/li&gt;
+          &lt;li&gt;DirectSend, 用于向单个接收方发送“即发即忘”样式的消息&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;网络组件使用
+        &lt;ul&gt;
+          &lt;li&gt;Multiaddr ：用于对等寻址的方案。&lt;/li&gt;
+          &lt;li&gt;TCP ：用于可靠传输。&lt;/li&gt;
+          &lt;li&gt;Noise ：用于身份验证和点对点加密。&lt;/li&gt;
+          &lt;li&gt;Yamux ：在单个链接上多路复用子流（substreams）。&lt;/li&gt;
+          &lt;li&gt;推送类型的 gossip ：用于对节点发现。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;网络组件中的不同子组件:
+        &lt;ul&gt;
+          &lt;li&gt;NetworkProvider
+            &lt;ul&gt;
+              &lt;li&gt;向客户端公开网络API。&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Peer Manager 
+  — 侦听入链接及主动连接网络上的其他对等节点。&lt;/li&gt;
+          &lt;li&gt;Connectivity Manager
+            &lt;ul&gt;
+              &lt;li&gt;当且仅当它是符合条件的网络成员时，才能确保我们保持与节点的连接。&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Discovery
+  — 使用推送式来发现新的节点并更新现有节点的地址。&lt;/li&gt;
+          &lt;li&gt;Health Checker 
+  — 执行定期活动探测以确保对等/连接的健康状况。&lt;/li&gt;
+          &lt;li&gt;Direct Send 
+  — 允许向/从远程对等节点发送/接收消息。&lt;/li&gt;
+          &lt;li&gt;RPC 
+  — 允许向/从其他对等节点发送/接收RPC。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;rust-toolchain&lt;/li&gt;
+  &lt;li&gt;scripts&lt;/li&gt;
+  &lt;li&gt;state-synchronizer&lt;/li&gt;
+  &lt;li&gt;storage
+    &lt;ul&gt;
+      &lt;li&gt;存储模块为Libra区块链上的所有数据集以及Libra Core内部使用的必要数据提供可靠和高效的持久存储。&lt;/li&gt;
+      &lt;li&gt;存储模块目的:
+        &lt;ul&gt;
+          &lt;li&gt;
+            &lt;ol&gt;
+              &lt;li&gt;保留区块链数据，特别是验证方通过共识协议达成一致的交易及其输出。&lt;/li&gt;
+            &lt;/ol&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;ol&gt;
+              &lt;li&gt;为任何查询提供一个带有Merkle证明的响应，该查询要求部分区块链数据。&lt;/li&gt;
+            &lt;/ol&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;target&lt;/li&gt;
+  &lt;li&gt;terraform&lt;/li&gt;
+  &lt;li&gt;testsuite&lt;/li&gt;
+  &lt;li&gt;types&lt;/li&gt;
+  &lt;li&gt;vm-validator&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Mon, 11 Nov 2019 12:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/11/11/Libra-%E7%BB%93%E6%9E%84/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/11/11/Libra-%E7%BB%93%E6%9E%84/</guid>
+        
+        <category>【Libra】</category>
+        
+        
+        <category>【区块链】</category>
+        
+      </item>
+    
+      <item>
+        <title>Rust标准库</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;https://doc.rust-lang.org/std/&quot;&gt;参考一&lt;/a&gt;
+&lt;a href=&quot;https://blog.csdn.net/bbdxf/article/details/87890128&quot;&gt;参考二&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+</description>
+        <pubDate>Wed, 06 Nov 2019 12:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/11/06/Rust%E6%A0%87%E5%87%86%E5%BA%93/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/11/06/Rust%E6%A0%87%E5%87%86%E5%BA%93/</guid>
+        
+        <category>【Rust】</category>
+        
+        
+        <category>【编程语言】</category>
+        
+      </item>
+    
+      <item>
+        <title>椭圆曲线加解密算法</title>
+        <description>&lt;h3 id=&quot;参考资料&quot;&gt;参考资料&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.jianshu.com/p/e41bc1eb1d81&quot;&gt;数学原理&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;名称解释&quot;&gt;名称解释&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;椭圆曲线加密算法，即: Elliptic Curve Cryptography，简称ECC
+    &lt;ul&gt;
+      &lt;li&gt;基于椭圆曲线数学理论实现的一种非对称加密算法。&lt;/li&gt;
+      &lt;li&gt;椭圆曲线在密码学中的使用，是1985年由Neal Koblitz和Victor Miller分别独立提出的。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;椭圆曲线签名算法，即: ECDSA&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Fri, 01 Nov 2019 10:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/11/01/%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF%E5%8A%A0%E5%AF%86/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/11/01/%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF%E5%8A%A0%E5%AF%86/</guid>
+        
+        <category>【工具】</category>
+        
+        
+        <category>【密码学】</category>
+        
+      </item>
     
       <item>
         <title>正则表达式</title>
@@ -659,287 +940,6 @@ Apache Licence也是对商业应用友好的许可。使用者也可以在需要
         
         
         <category>【软件架构】</category>
-        
-      </item>
-    
-      <item>
-        <title>《源码阅读计划》</title>
-        <description>&lt;h2 id=&quot;目标&quot;&gt;目标&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;时间节点:
-    &lt;ul&gt;
-      &lt;li&gt;2019-10.1~2019.12.31&lt;/li&gt;
-      &lt;li&gt;40-44周&lt;/li&gt;
-      &lt;li&gt;45-48周&lt;/li&gt;
-      &lt;li&gt;49-53周&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;完成项目的整体认识
-    &lt;ul&gt;
-      &lt;li&gt;Redis(c)
-        &lt;ul&gt;
-          &lt;li&gt;架构图&lt;/li&gt;
-          &lt;li&gt;文件架构图&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;MySQL(c)
-  -
-        &lt;ul&gt;
-          &lt;li&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Nginx(c)
-  -
-        &lt;ul&gt;
-          &lt;li&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Tomcat(Java)
-  -
-        &lt;ul&gt;
-          &lt;li&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Netty(Java)
-  -
-        &lt;ul&gt;
-          &lt;li&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;工具掌握
-    &lt;ul&gt;
-      &lt;li&gt;编辑器 &amp;amp; IDE
-        &lt;ul&gt;
-          &lt;li&gt;CLion&lt;/li&gt;
-          &lt;li&gt;InteliJ IDEA&lt;/li&gt;
-          &lt;li&gt;Vim&lt;/li&gt;
-          &lt;li&gt;VS Code&lt;/li&gt;
-          &lt;li&gt;Sublime Text&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-</description>
-        <pubDate>Tue, 01 Oct 2019 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/10/01/%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB%E8%AE%A1%E5%88%92/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/10/01/%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB%E8%AE%A1%E5%88%92/</guid>
-        
-        <category>【源码阅读】</category>
-        
-        
-        <category>【计划】</category>
-        
-      </item>
-    
-      <item>
-        <title>区块链的一些思考</title>
-        <description>&lt;h3 id=&quot;区块链的功能&quot;&gt;区块链的功能&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;去中心化
-    &lt;ul&gt;
-      &lt;li&gt;通过很多功能全面的节点组网&lt;/li&gt;
-      &lt;li&gt;部分的死亡不足以导致整体死亡&lt;/li&gt;
-      &lt;li&gt;类似人体的细胞、组织、器官与生命体的关系&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;公开性
-    &lt;ul&gt;
-      &lt;li&gt;全面功能的节点亦即数据和功能的包含性&lt;/li&gt;
-      &lt;li&gt;每一个节点即可获得所有的数据和程序副本&lt;/li&gt;
-      &lt;li&gt;类似细胞核一样, 所有的功能均含有, 选择性使用&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;透明性
-    &lt;ul&gt;
-      &lt;li&gt;完整数据和程序的可获得性, 决定所有的规则透明&lt;/li&gt;
-      &lt;li&gt;每个个体均可获取明确的规则&lt;/li&gt;
-      &lt;li&gt;类似神经递质与激素,规则明晰&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;不可篡改性
-    &lt;ul&gt;
-      &lt;li&gt;不是不能篡改, 是很难去篡改所有的数据&lt;/li&gt;
-      &lt;li&gt;因为分布式特性, 需要改就需要付出很大&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;应该对群体的价值&quot;&gt;应该对群体的价值&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;集合性
-    &lt;ul&gt;
-      &lt;li&gt;可以使用零散的资源组网构建大的资源池&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;分散性
-    &lt;ul&gt;
-      &lt;li&gt;资源分散分布, 有更可靠的活性&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;唯一性
-    &lt;ul&gt;
-      &lt;li&gt;这个基于认可来获得, 需要群体支持, 俗称共识&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;实际对群体的价值&quot;&gt;实际对群体的价值&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;欺骗性
-    &lt;ul&gt;
-      &lt;li&gt;在你的生活中, 有与没有区块链并不影响&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;劫掠性
-    &lt;ul&gt;
-      &lt;li&gt;大庄做市, 散户被收割&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;黑洞性
-    &lt;ul&gt;
-      &lt;li&gt;可以用来吃掉全球的债务&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;赌博性
-    &lt;ul&gt;
-      &lt;li&gt;提供了新型的赌博工具&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;对区块链未来的预测&quot;&gt;对区块链未来的预测&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;成为债务赤字的黑洞&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;在金融领域的唯一性载体&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;我如何从中获取机会&quot;&gt;我如何从中获取机会?&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-</description>
-        <pubDate>Tue, 24 Sep 2019 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/09/24/%E5%8C%BA%E5%9D%97%E9%93%BE%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%9D%E8%80%83/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/09/24/%E5%8C%BA%E5%9D%97%E9%93%BE%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%9D%E8%80%83/</guid>
-        
-        <category>【思考】</category>
-        
-        
-        <category>【区块链】</category>
-        
-      </item>
-    
-      <item>
-        <title>SpringBoot工具集</title>
-        <description>&lt;h3 id=&quot;阐述的内容&quot;&gt;阐述的内容&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.cnblogs.com/hongdada/p/9179053.html&quot;&gt;参数校验&lt;/a&gt;
-&lt;a href=&quot;https://www.cnblogs.com/albert1024/articles/8436270.html&quot;&gt;参数校验&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;###################################### tomcat ######################################
-&lt;a href=&quot;https://blog.csdn.net/feng2qing/article/details/60968548&quot;&gt;Tomcat本地配置&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/yangsnow_rain_wind/article/details/80049506&quot;&gt;Tomcat初始化和启动过程&lt;/a&gt;
-&lt;a href=&quot;https://blog.csdn.net/zzg19950824/article/details/79433735&quot;&gt;Tomcat流程&lt;/a&gt;
-&lt;a href=&quot;https://blog.csdn.net/yangsnow_rain_wind/article/details/80064945&quot;&gt;Tomcat处理请求流程&lt;/a&gt;
-&lt;a href=&quot;https://blog.csdn.net/subuser/article/details/49763415&quot;&gt;Tomcat源码阅读&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;###################################### SpringBoot ######################################&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/andy_zhang2007/article/details/85039143&quot;&gt;SpringBoot web处理流程&lt;/a&gt;
-&lt;a href=&quot;https://www.jianshu.com/p/0ac921cf829e&quot;&gt;SpingBoot处理WebFlux流程&lt;/a&gt;
-&lt;a href=&quot;https://blog.csdn.net/jiangzeyin_/article/details/81094258&quot;&gt;接口实现自定义返回数据类型&lt;/a&gt;
-&lt;a href=&quot;https://www.hellojava.com/a/45272.html&quot;&gt;基于RequestBodyAdvice和ResponseBodyAdvice实现参数加解密&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/qq1404510094/article/details/80577555&quot;&gt;Java注解&lt;/a&gt;
-&lt;a href=&quot;https://www.cnblogs.com/shamo89/p/6707898.html&quot;&gt;Mysql连接太多&lt;/a&gt;
-&lt;a href=&quot;https://www.jb51.net/article/163370.htm&quot;&gt;Mysql连接太多&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.cnblogs.com/doit8791/p/7759806.html&quot;&gt;java消息队列&lt;/a&gt;
-&lt;a href=&quot;https://www.rabbitmq.com/api-guide.html&quot;&gt;RabbitMQ&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/likuangren/article/details/79171285&quot;&gt;RxJava&lt;/a&gt;
-&lt;a href=&quot;https://www.cnblogs.com/caolaoshi/p/7824748.html&quot;&gt;java static{}&lt;/a&gt;
-&lt;a href=&quot;https://blog.csdn.net/qq_22339457/article/details/82386545&quot;&gt;Java synchronized&lt;/a&gt;
-&lt;a href=&quot;https://www.cnblogs.com/blog-Aevin/p/9302678.html&quot;&gt;Java volatile&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/u014231523/article/details/76522486&quot;&gt;Swagger&lt;/a&gt;
-&lt;a href=&quot;https://blog.csdn.net/wyb880501/article/details/79576784&quot;&gt;Swagger&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/u013651026/article/details/79738059&quot;&gt;OkHttp&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/zhaipengfei1231/article/details/81317556&quot;&gt;服务发现&lt;/a&gt;
-&lt;a href=&quot;https://blog.csdn.net/wzj_110/article/details/81590472&quot;&gt;权限管理&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;###################################### Jetty ######################################&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.cnblogs.com/guxia/p/8076099.html&quot;&gt;jetty与Tomcat对比&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;######## Java工程师&lt;/p&gt;
-
-&lt;p&gt;https://blog.csdn.net/u013551462/article/details/50956090&lt;/p&gt;
-
-&lt;h3 id=&quot;dou&quot;&gt;Dou&lt;/h3&gt;
-&lt;p&gt;http://dubbo.apache.org/en-us/&lt;/p&gt;
-
-&lt;h3 id=&quot;service-mesh&quot;&gt;Service Mesh&lt;/h3&gt;
-&lt;p&gt;https://www.jianshu.com/p/e23e3e74538e
-https://www.cnblogs.com/williamjie/p/9497435.html&lt;/p&gt;
-
-&lt;h3 id=&quot;openjdk&quot;&gt;OpenJDK&lt;/h3&gt;
-&lt;p&gt;https://www.cnblogs.com/zhaojingyu/p/8888934.html&lt;/p&gt;
-
-&lt;h3 id=&quot;helidon&quot;&gt;Helidon&lt;/h3&gt;
-&lt;p&gt;https://juejin.im/post/5b99300af265da0ace211d22&lt;/p&gt;
-
-&lt;h3 id=&quot;apache基金会&quot;&gt;apache基金会&lt;/h3&gt;
-&lt;p&gt;https://projects.apache.org/projects.html?language&lt;/p&gt;
-
-&lt;h3 id=&quot;gnu&quot;&gt;GNU&lt;/h3&gt;
-&lt;p&gt;https://baike.baidu.com/item/GNU%E8%AE%A1%E5%88%92/981157?fr=aladdin
-http://gcc.gnu.org/&lt;/p&gt;
-
-&lt;h3 id=&quot;前端框架&quot;&gt;前端框架&lt;/h3&gt;
-&lt;p&gt;https://youzan.github.io/vant/#/zh-CN/intro&lt;/p&gt;
-
-&lt;h3 id=&quot;rust&quot;&gt;Rust&lt;/h3&gt;
-&lt;p&gt;https://rocket.rs/
-https://actix.rs/
-https://gotham.rs/
-https://larder.io/blog/larder-links-09-rust-web-frameworks/
-https://www.jdon.com/50236
-https://www.jdon.com/tags/28556
-Rocket: https://www.jianshu.com/nb/23051136
-数据库连接: https://diesel.rs/guides/getting-started/&lt;/p&gt;
-
-&lt;h4 id=&quot;webasm&quot;&gt;WebASM&lt;/h4&gt;
-
-</description>
-        <pubDate>Tue, 24 Sep 2019 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/09/24/SpringBoot%E5%B7%A5%E5%85%B7%E9%9B%86/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/09/24/SpringBoot%E5%B7%A5%E5%85%B7%E9%9B%86/</guid>
-        
-        <category>【后端】</category>
-        
-        
-        <category>【SpringBoot】</category>
         
       </item>
     
