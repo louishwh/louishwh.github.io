@@ -20,6 +20,8 @@ tag: 【RSA加密】
 
 - [Python-RSA](https://stuvel.eu/python-rsa-doc/usage.html#generating-keys)
 
+- [引用](https://blog.csdn.net/gulang03/article/details/81175854)
+
 
 #### 过程梳理
 - 1. 随机取两个素数数: P、Q
