@@ -6,7 +6,7 @@ categories: 【非对称加密】
 tag: 【RSA加密】
 ---
 
-### 参考文章
+#### 参考文章
 
 - [非对称加密](https://baike.baidu.com/item/%E9%9D%9E%E5%AF%B9%E7%A7%B0%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95/1208652?fr=aladdin)
 - [RSA数学原理](https://www.jianshu.com/p/ca659dbc6f46)
@@ -19,3 +19,23 @@ tag: 【RSA加密】
 - [互质数](https://baike.baidu.com/item/%E4%BA%92%E8%B4%A8%E6%95%B0/6147106?fr=aladdin)
 
 - [Python-RSA](https://stuvel.eu/python-rsa-doc/usage.html#generating-keys)
+
+
+#### 过程梳理
+- 1. 随机取两个素数数: P、Q
+- 2. 计算素数的最小公倍数: m = P * Q 
+- 3. 计算欧拉数: eular = (p -1 ) * (q - 1)
+	- 3.1 计算加密指数 e
+		- 3.1.1 生成公钥
+	- 3.2 计算模反元素
+		- 3.2.1 生成私钥
+- 4. 模幂运算
+	- 密文
+	- 明文
+
+#### 数学知识
+
+1. 素数
+2. 最小公倍数
+3. 欧拉函数
+4. 幂运算
