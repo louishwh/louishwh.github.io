@@ -1,0 +1,12 @@
+---
+layout: post
+title: Rust标准库
+date: 2019-11-06 12:00:00 +0800
+categories: 【编程语言】
+tag: 【Rust】
+---
+
+> [参考一](https://doc.rust-lang.org/std/)
+> [参考二](https://blog.csdn.net/bbdxf/article/details/87890128)
+
+
