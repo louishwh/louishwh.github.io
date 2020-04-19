@@ -1,0 +1,90 @@
+I"�<p><img src="/images/2019-10-04Jvm后端.png" alt="/images/2019-10-04Jvm后端.png" /></p>
+
+<ul>
+  <li>网关
+    <ul>
+      <li>Nginx
+        <ul>
+          <li>Kong</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>服务器
+    <ul>
+      <li>Tomcat</li>
+      <li>Netty</li>
+      <li>Jetty</li>
+    </ul>
+  </li>
+  <li>缓冲
+    <ul>
+      <li>RocketMQ</li>
+      <li>RabbitMQ</li>
+    </ul>
+  </li>
+  <li><a href="(https://www.cnblogs.com/panchanggui/p/9503666.html)">缓存</a>
+    <ul>
+      <li>CDN</li>
+      <li>Ehcache</li>
+      <li>Guava Cache</li>
+      <li>Redis</li>
+      <li>Memcached</li>
+    </ul>
+  </li>
+  <li>编程语言
+    <ul>
+      <li>Java ✅</li>
+      <li>Kotlin ✅</li>
+      <li>Groovy ✅</li>
+      <li>Scala ✅</li>
+      <li>Clojure</li>
+      <li>Jython(python)</li>
+      <li>JRuby (ruby)</li>
+      <li>Ceylon</li>
+      <li>Eta</li>
+      <li>Haxe</li>
+    </ul>
+  </li>
+  <li>持久化
+    <ul>
+      <li>MySQL</li>
+      <li>MongoDB</li>
+      <li>PostgreSQL</li>
+    </ul>
+  </li>
+  <li>编程工具
+    <ul>
+      <li>编辑器
+        <ul>
+          <li>InteliJ IDEA</li>
+          <li>Eclipse</li>
+          <li>Vim</li>
+          <li>Emacs</li>
+        </ul>
+      </li>
+      <li>运行环境
+        <ul>
+          <li>JVM</li>
+        </ul>
+      </li>
+      <li>框架
+        <ul>
+          <li>Spring</li>
+          <li>SpringBoot</li>
+          <li>SprngCloud</li>
+          <li>Dropwizard</li>
+          <li>Dubbo</li>
+        </ul>
+      </li>
+      <li>依赖管理工具
+        <ul>
+          <li>Ant</li>
+          <li>Maven</li>
+          <li>Gradle</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+:ET

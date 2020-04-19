@@ -1,0 +1,83 @@
+I"	<p><a href="https://github.com/apache/tomcat">Tomcat源码</a></p>
+
+<p><a href="https://yq.aliyun.com/articles/663198">阅读Tomcat源码</a>
+<a href="https://blog.csdn.net/w1992wishes/article/details/79242797">Tomcat架构</a></p>
+
+<h3 id="阐述的内容">阐述的内容</h3>
+
+<ol>
+  <li>Tomcat结构图</li>
+  <li>Tomcat启动过程</li>
+  <li>Tomcat请求处理过程</li>
+</ol>
+
+<h4 id="1-tomcat结构">1. Tomcat结构</h4>
+
+<p><img src="/images/2019-09-23-tomcat结构.png" alt="/images/2019-09-23-tomcat结构.png" /></p>
+
+<ul>
+  <li>Service
+    <ul>
+      <li>Connector
+        <ul>
+          <li>Container
+            <ul>
+              <li>Engine
+                <ul>
+                  <li>Host
+                    <ul>
+                      <li>Context
+                        <ul>
+                          <li>Wrapper: 对应一个Servlet Class</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="2-tomcat启动过程">2. Tomcat启动过程</h4>
+
+<h4 id="3-tomcat请求处理过程">3. Tomcat请求处理过程</h4>
+
+<ul>
+  <li>本机端口获取数据, Connector获取
+    <ul>
+      <li>Connector: 监听端口的TCP连接请求
+        <ul>
+          <li>创建Request和Response</li>
+          <li>产生一个线程把请求传递给Container.Engine
+            <ul>
+              <li>Container的Engine获取请求, 交给Host
+                <ul>
+                  <li>Host获取请求, 交给Context
+                    <ul>
+                      <li>Context获取请求, 匹配Servlet,交给Servlet
+                        <ul>
+                          <li>构造HttpServletRequest, HttpServletResponse</li>
+                        </ul>
+                      </li>
+                      <li>Context返回HttpServletResponse给Host</li>
+                    </ul>
+                  </li>
+                  <li>Host返回HttpServletResponse给Engine</li>
+                </ul>
+              </li>
+              <li>Engine返回HttpServletResponse给Connector</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>Connector返回HttpServletResponse给Browser</li>
+    </ul>
+  </li>
+</ul>
+
+:ET

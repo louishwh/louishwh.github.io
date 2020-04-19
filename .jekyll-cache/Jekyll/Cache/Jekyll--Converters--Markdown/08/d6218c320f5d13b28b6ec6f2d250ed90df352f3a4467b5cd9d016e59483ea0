@@ -1,0 +1,68 @@
+I"�<h4 id="参考文章">参考文章</h4>
+
+<ul>
+  <li><a href="https://baike.baidu.com/item/%E9%9D%9E%E5%AF%B9%E7%A7%B0%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95/1208652?fr=aladdin">非对称加密</a></li>
+  <li><a href="https://www.jianshu.com/p/ca659dbc6f46">RSA数学原理</a></li>
+  <li><a href="https://baike.baidu.com/item/RSA%E7%AE%97%E6%B3%95/263310?fromtitle=RSA&amp;fromid=210678&amp;fr=aladdin">RSA算法</a></li>
+  <li><a href="https://blog.csdn.net/gulang03/article/details/81176133">RSA原理</a></li>
+  <li><a href="https://blog.csdn.net/jijianshuai/article/details/80582187">RSA原理</a></li>
+  <li>
+    <p><a href="https://www.cnblogs.com/NathanYang/p/9182929.html">RSA原理</a></p>
+  </li>
+  <li><a href="https://baike.baidu.com/item/%E6%AC%A7%E6%8B%89%E5%87%BD%E6%95%B0/1944850?fr=aladdin">欧拉函数</a></li>
+  <li>
+    <p><a href="https://baike.baidu.com/item/%E4%BA%92%E8%B4%A8%E6%95%B0/6147106?fr=aladdin">互质数</a></p>
+  </li>
+  <li>
+    <p><a href="https://stuvel.eu/python-rsa-doc/usage.html#generating-keys">Python-RSA</a></p>
+  </li>
+  <li><a href="https://blog.csdn.net/gulang03/article/details/81175854">引用</a></li>
+</ul>
+
+<h4 id="过程梳理">过程梳理</h4>
+<ul>
+  <li>
+    <ol>
+      <li>随机取两个素数数: P、Q</li>
+    </ol>
+  </li>
+  <li>
+    <ol>
+      <li>计算素数的最小公倍数: m = P * Q</li>
+    </ol>
+  </li>
+  <li>
+    <ol>
+      <li>计算欧拉数: eular = (p -1 ) * (q - 1)
+        <ul>
+          <li>3.1 计算加密指数 e</li>
+        </ul>
+        <ul>
+          <li>3.1.1 生成公钥
+    - 3.2 计算模反元素</li>
+          <li>3.2.1 生成私钥</li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+  <li>
+    <ol>
+      <li>模幂运算
+        <ul>
+          <li>密文</li>
+          <li>明文</li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+</ul>
+
+<h4 id="数学知识">数学知识</h4>
+
+<ol>
+  <li>素数</li>
+  <li>最小公倍数</li>
+  <li>欧拉函数</li>
+  <li>幂运算</li>
+</ol>
+:ET

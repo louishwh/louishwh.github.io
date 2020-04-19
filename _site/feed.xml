@@ -5,9 +5,164 @@
     <description>Atomix</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 12 Nov 2019 16:34:21 +0800</pubDate>
-    <lastBuildDate>Tue, 12 Nov 2019 16:34:21 +0800</lastBuildDate>
-    <generator>Jekyll v3.8.5</generator>
+    <pubDate>Sat, 04 Apr 2020 08:32:28 +0800</pubDate>
+    <lastBuildDate>Sat, 04 Apr 2020 08:32:28 +0800</lastBuildDate>
+    <generator>Jekyll v4.0.0</generator>
+    
+      <item>
+        <title>Golang</title>
+        <description>&lt;h3 id=&quot;go基础啊&quot;&gt;GO基础啊&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/Unknwon/go-fundamental-programming&quot;&gt;基础语法&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/unknwon/the-way-to-go_ZH_CN/blob/master/eBook/directory.md&quot;&gt;入门指南&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://gowalker.org/&quot;&gt;Go开源项目&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Mon, 09 Dec 2019 10:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/12/09/Golang%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/12/09/Golang%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/</guid>
+        
+        <category>Golang</category>
+        
+        
+        <category>【编程语言】</category>
+        
+      </item>
+    
+      <item>
+        <title>RSA加密技术</title>
+        <description>&lt;h3 id=&quot;参考文章&quot;&gt;参考文章&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;cnblogs.com/pcheng/p/9629621.html&quot;&gt;RSA加密技术1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Tue, 19 Nov 2019 10:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/11/19/RSA%E5%8A%A0%E5%AF%86/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/11/19/RSA%E5%8A%A0%E5%AF%86/</guid>
+        
+        <category>【加密】</category>
+        
+        
+        <category>【编程常识】</category>
+        
+      </item>
+    
+      <item>
+        <title>RSA加密</title>
+        <description>&lt;h4 id=&quot;参考文章&quot;&gt;参考文章&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://baike.baidu.com/item/%E9%9D%9E%E5%AF%B9%E7%A7%B0%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95/1208652?fr=aladdin&quot;&gt;非对称加密&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.jianshu.com/p/ca659dbc6f46&quot;&gt;RSA数学原理&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://baike.baidu.com/item/RSA%E7%AE%97%E6%B3%95/263310?fromtitle=RSA&amp;amp;fromid=210678&amp;amp;fr=aladdin&quot;&gt;RSA算法&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.csdn.net/gulang03/article/details/81176133&quot;&gt;RSA原理&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.csdn.net/jijianshuai/article/details/80582187&quot;&gt;RSA原理&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.cnblogs.com/NathanYang/p/9182929.html&quot;&gt;RSA原理&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://baike.baidu.com/item/%E6%AC%A7%E6%8B%89%E5%87%BD%E6%95%B0/1944850?fr=aladdin&quot;&gt;欧拉函数&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://baike.baidu.com/item/%E4%BA%92%E8%B4%A8%E6%95%B0/6147106?fr=aladdin&quot;&gt;互质数&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://stuvel.eu/python-rsa-doc/usage.html#generating-keys&quot;&gt;Python-RSA&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.csdn.net/gulang03/article/details/81175854&quot;&gt;引用&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;过程梳理&quot;&gt;过程梳理&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;ol&gt;
+      &lt;li&gt;随机取两个素数数: P、Q&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;ol&gt;
+      &lt;li&gt;计算素数的最小公倍数: m = P * Q&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;ol&gt;
+      &lt;li&gt;计算欧拉数: eular = (p -1 ) * (q - 1)
+        &lt;ul&gt;
+          &lt;li&gt;3.1 计算加密指数 e&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;ul&gt;
+          &lt;li&gt;3.1.1 生成公钥
+    - 3.2 计算模反元素&lt;/li&gt;
+          &lt;li&gt;3.2.1 生成私钥&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;ol&gt;
+      &lt;li&gt;模幂运算
+        &lt;ul&gt;
+          &lt;li&gt;密文&lt;/li&gt;
+          &lt;li&gt;明文&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;数学知识&quot;&gt;数学知识&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;素数&lt;/li&gt;
+  &lt;li&gt;最小公倍数&lt;/li&gt;
+  &lt;li&gt;欧拉函数&lt;/li&gt;
+  &lt;li&gt;幂运算&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Mon, 18 Nov 2019 12:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/11/18/RSA%E5%8A%A0%E5%AF%86/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/11/18/RSA%E5%8A%A0%E5%AF%86/</guid>
+        
+        <category>【RSA加密】</category>
+        
+        
+        <category>【非对称加密】</category>
+        
+      </item>
+    
+      <item>
+        <title>算法指南</title>
+        <description>&lt;h3 id=&quot;算法类型&quot;&gt;算法类型&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.csdn.net/qq_38918259/article/details/80480194&quot;&gt;重要的几个算法&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://kb.cnblogs.com/page/210687/&quot;&gt;10大基础算法-1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.csdn.net/zkl99999/article/details/51093174&quot;&gt;10大基础算法-2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;压缩算法&quot;&gt;&lt;a href=&quot;https://baike.baidu.com/item/%E5%8E%8B%E7%BC%A9%E7%AE%97%E6%B3%95/2762648?fr=aladdin&quot;&gt;压缩算法&lt;/a&gt;&lt;/h3&gt;
+
+&lt;h4 id=&quot;工具&quot;&gt;工具&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/alexcrichton/rust-compress&quot;&gt;压缩算法-Rust&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/richox/orz&quot;&gt;压缩工具&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.csdn.net/pansaky/article/details/90641343&quot;&gt;ZIP压缩算法原理解析&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;思想&quot;&gt;思想&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.csdn.net/qq_38607741/article/details/78555330&quot;&gt;最基本5种算法思想&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Mon, 18 Nov 2019 10:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/11/18/%E7%AE%97%E6%B3%95/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/11/18/%E7%AE%97%E6%B3%95/</guid>
+        
+        <category>【算法】</category>
+        
+        
+        <category>【编程常识】</category>
+        
+      </item>
     
       <item>
         <title>Libra结构</title>
@@ -603,343 +758,6 @@
         
         
         <category>【操作系统】</category>
-        
-      </item>
-    
-      <item>
-        <title>redis源码阅读</title>
-        <description>&lt;h2 id=&quot;概要&quot;&gt;概要&lt;/h2&gt;
-
-&lt;h2 id=&quot;学习方法&quot;&gt;学习方法&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/nawenqiang/article/details/78461031&quot;&gt;Redis源码分析&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;http://blog.huangz.me/diary/2014/how-to-read-redis-source-code.html&quot;&gt;如何阅读 Redis 源码1&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://redissrc.readthedocs.io/en/latest/datastruct/sds.html&quot;&gt;如何阅读 Redis 源码2&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://redissrc.readthedocs.io/en/latest/#id3&quot;&gt;源码解析&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;git@gitee.com:klearner/redis.git&quot;&gt;注释代码&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;架构设计&quot;&gt;架构设计&lt;/h2&gt;
-
-&lt;h2 id=&quot;代码结构&quot;&gt;代码结构&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;字符串&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;字典&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;链表&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;资料参考&quot;&gt;资料参考&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://redis.io/&quot;&gt;Redis官网&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.cnblogs.com/panpanwelcome/p/8483725.html&quot;&gt;Redis架构&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.jianshu.com/p/6ec58693ee21&quot;&gt;Redis架构相关原理&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://blog.51cto.com/13902811/2294162&quot;&gt;Redis主题架构&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.runoob.com/w3cnote/redis-intro-data-structure.html&quot;&gt;Redis数据结构&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Thu, 10 Oct 2019 10:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/10/10/Redis%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/10/10/Redis%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB/</guid>
-        
-        <category>【必备技能】</category>
-        
-        
-        <category>【源码阅读】</category>
-        
-      </item>
-    
-      <item>
-        <title>开源组织和协议</title>
-        <description>&lt;h2 id=&quot;开源基金会&quot;&gt;开源基金会&lt;/h2&gt;
-
-&lt;h3 id=&quot;linux基金会&quot;&gt;&lt;a href=&quot;https://www.linuxfoundation.org/&quot;&gt;Linux基金会&lt;/a&gt;&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://linuxfoundation.cn/projects/&quot;&gt;开源项目&lt;/a&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;http://live-lforg.pantheonsite.io/projects/linux/&quot;&gt;linux&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://kubernetes.io/&quot;&gt;kubernetes&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://github.com/jaegertracing/jaeger&quot;&gt;JAEGER&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://www.hyperledger.org/&quot;&gt;hyperledger&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://nodejs.org/en/&quot;&gt;nodejs&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://xenproject.org/&quot;&gt;Xen project&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://www.odpi.org/&quot;&gt;ODPi&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;openstack基金会&quot;&gt;&lt;a href=&quot;https://www.openstack.org/foundation/&quot;&gt;OpenStack基金会&lt;/a&gt;&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://blog.csdn.net/chengqiuming/article/details/79303254&quot;&gt;开源项目&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;apache基金会&quot;&gt;&lt;a href=&quot;https://www.apache.org/index.html&quot;&gt;Apache基金会&lt;/a&gt;&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.apache.org/index.html#news&quot;&gt;开源项目&lt;/a&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;http://activemq.apache.org/&quot;&gt;ActiveMQ&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;http://ant.apache.org/&quot;&gt;Ant&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;http://cassandra.apache.org/&quot;&gt;Cassandra&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://cordova.apache.org/&quot;&gt;Cordova&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://couchdb.apache.org/&quot;&gt;CouchDB&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;http://dubbo.apache.org/en-us/&quot;&gt;Dubbo&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;http://flume.apache.org/&quot;&gt;Flume&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;http://groovy.apache.org/&quot;&gt;Groovy&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;http://hadoop.apache.org/&quot;&gt;Hadoop&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;http://hive.apache.org/&quot;&gt;Hive&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;http://hbase.apache.org/&quot;&gt;HBase&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;http://jmeter.apache.org/&quot;&gt;Jmeter&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;http://kafka.apache.org/&quot;&gt;Kafka&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;http://kylin.apache.org/&quot;&gt;Kylin&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;http://maven.apache.org/&quot;&gt;Maven&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;http://netbeans.apache.org/&quot;&gt;NetBeans&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://pdfbox.apache.org/&quot;&gt;Perl&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;http://rocketmq.apache.org/&quot;&gt;RocketMQ&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;http://tomcat.apache.org/&quot;&gt;Tomcat&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;http://zookeeper.apache.org/&quot;&gt;Zookeeper&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;自由软件基金会fsf&quot;&gt;&lt;a href=&quot;https://www.fsf.org/&quot;&gt;自由软件基金会(FSF)&lt;/a&gt;&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.gnu.org/gnu/thegnuproject.html&quot;&gt;GNU计划&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-&lt;h2 id=&quot;开源协议&quot;&gt;&lt;a href=&quot;https://www.oschina.net/question/12_2664&quot;&gt;开源协议&lt;/a&gt;&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://blog.csdn.net/qwertyuiop_123abc/article/details/82110221#BSD%E5%BC%80%E6%BA%90%E5%8D%8F%E8%AE%AE%EF%BC%88original%20BSD%20license%E3%80%81FreeBSD%20license%E3%80%81Original%20BSD%20license%EF%BC%89&quot;&gt;引用&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;bsd&quot;&gt;BSD&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.fsf.org/licensing/licenses/index_html#OriginalBSD&quot;&gt;Original BSD license&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.freebsd.org/copyright/freebsd-license.html&quot;&gt;FreeBSD license&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;BSD开源协议是一个给于使用者很大自由的协议。基本上使用者可以”为所欲为”,可以自由的使用，修改源代码，也可以将修改后的代码作为开源或者专有软件再发布。&lt;/p&gt;
-
-&lt;p&gt;但”为所欲为”的前提当你发布使用了BSD协议的代码，或则以BSD协议代码为基础做二次开发自己的产品时，需要满足三个条件：&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;如果再发布的产品中包含源代码，则在源代码中必须带有原来代码中的BSD协议。&lt;/li&gt;
-  &lt;li&gt;如果再发布的只是二进制类库/软件，则需要在类库软件的文档和版权声明中包含原来代码中的BSD协议。&lt;/li&gt;
-  &lt;li&gt;不可以用开源代码的作者/机构名字和原来产品的名字做市场推广。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;BSD 代码鼓励代码共享，但需要尊重代码作者的著作权。BSD由于允许使用者修改和重新发布代码，也允许使用或在BSD代码上开发商业软件发布和销售，因此是对 商业集成很友好的协议。而很多的公司企业在选用开源产品的时候都首选BSD协议，因为可以完全控制这些第三方的代码，在必要的时候可以修改或者二次开发。&lt;/p&gt;
-
-&lt;h3 id=&quot;apache&quot;&gt;Apache&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.apache.org/licenses/LICENSE-2.0&quot;&gt;Apache2.0&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.apache.org/LICENSE-1.1&quot;&gt;Apache1.1&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.apache.org/LICENSE-1.0&quot;&gt;Apache2.0&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Apache Licence是著名的非盈利开源组织Apache采用的协议。该协议和BSD类似，同样鼓励代码共享和尊重原作者的著作权，同样允许代码修改，再发布（作为开源或商业软件）。需要满足的条件也和BSD类似：&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;需要给代码的用户一份Apache Licence&lt;/li&gt;
-  &lt;li&gt;如果你修改了代码，需要再被修改的文件中说明。&lt;/li&gt;
-  &lt;li&gt;在延伸的代码中（修改和有源代码衍生的代码中）需要带有原来代码中的协议，商标，专利声明和其他原来作者规定需要包含的说明。&lt;/li&gt;
-  &lt;li&gt;如果再发布的产品中包含一个Notice文件，则在Notice文件中需要带有Apache Licence。你可以在Notice中增加自己的许可，但不可以表现为对Apache Licence构成更改。
-Apache Licence也是对商业应用友好的许可。使用者也可以在需要的时候修改代码来满足需要并作为开源或商业产品发布/销售。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;gplgnu-general-public-license&quot;&gt;GPL（GNU General Public License）&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.fsf.org/licensing/licenses/gpl.html&quot;&gt;GPL&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;我们很熟悉的Linux就是采用了GPL。GPL协议和BSD, Apache Licence等鼓励代码重用的许可很不一样。GPL的出发点是代码的开源/免费使用和引用/修改/衍生代码的开源/免费使用，但不允许修改后和衍生的代 码做为闭源的商业软件发布和销售。这也就是为什么我们能用免费的各种linux，包括商业公司的linux和linux上各种各样的由个人，组织，以及商 业软件公司开发的免费软件了。&lt;/p&gt;
-
-&lt;p&gt;GPL协议的主要内容是只要在一个软件中使用(”使用”指类库引用，修改后的代码或者衍生代码)GPL 协议的产品，则该软件产品必须也采用GPL协议，既必须也是开源和免费。这就是所谓的”传染性”。GPL协议的产品作为一个单独的产品使用没有任何问题，还可以享受免费的优势。&lt;/p&gt;
-
-&lt;p&gt;由于GPL严格要求使用了GPL类库的软件产品必须使用GPL协议，对于使用GPL协议的开源代码，商业软件或者对代码有保密要求的部门就不适合集成/采用作为类库和二次开发的基础。&lt;/p&gt;
-
-&lt;p&gt;其它细节如再发布的时候需要伴随GPL协议等和BSD/Apache等类似。&lt;/p&gt;
-
-&lt;h3 id=&quot;lgplgnu-lesser-general-public-license&quot;&gt;LGPL（GNU Lesser General Public License）&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.fsf.org/licensing/licenses/lgpl.html&quot;&gt;LGPL&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;LGPL是GPL的一个为主要为类库使用设计的开源协议。和GPL要求任何使用/修改/衍生之GPL类库的的软件必须采用GPL协议不同。LGPL 允许商业软件通过类库引用(link)方式使用LGPL类库而不需要开源商业软件的代码。这使得采用LGPL协议的开源代码可以被商业软件作为类库引用并 发布和销售。&lt;/p&gt;
-
-&lt;p&gt;但是如果修改LGPL协议的代码或者衍生，则所有修改的代码，涉及修改部分的额外代码和衍生的代码都必须采用LGPL协议。因此LGPL协议的开源 代码很适合作为第三方类库被商业软件引用，但不适合希望以LGPL协议代码为基础，通过修改和衍生的方式做二次开发的商业软件采用。&lt;/p&gt;
-
-&lt;p&gt;GPL/LGPL都保障原作者的知识产权，避免有人利用开源代码复制并开发类似的产品&lt;/p&gt;
-
-&lt;h3 id=&quot;mitmit&quot;&gt;MIT（MIT）&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.opensource.org/licenses/mit-license.php&quot;&gt;MIT&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;MIT是和BSD一样宽范的许可协议,作者只想保留版权,而无任何其他了限制.也就是说,你必须在你的发行版里包含原许可协议的声明,无论你是以二进制发布的还是以源代码发布的.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;开源不等于免费，开源也不等于没有约束。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-</description>
-        <pubDate>Thu, 10 Oct 2019 10:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/10/10/%E5%BC%80%E6%BA%90%E7%BB%84%E7%BB%87%E4%B8%8E%E5%8D%8F%E8%AE%AE/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/10/10/%E5%BC%80%E6%BA%90%E7%BB%84%E7%BB%87%E4%B8%8E%E5%8D%8F%E8%AE%AE/</guid>
-        
-        <category>【编程常识】</category>
-        
-        
-        <category>【编程常识】</category>
-        
-      </item>
-    
-      <item>
-        <title>架构学习资料</title>
-        <description>&lt;h2 id=&quot;概要&quot;&gt;概要&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s/XI2rMdeswhHStFcm7NFRPQ&quot;&gt;总的概述&lt;/a&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;https://c4model.com/&quot;&gt;C4模型&lt;/a&gt;
-        &lt;ul&gt;
-          &lt;li&gt;&lt;a href=&quot;https://www.infoq.cn/article/C4-architecture-model/&quot;&gt;软件C4模型&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://www.infoq.cn/article/crafting-architectural-diagrams/&quot;&gt;软件架构图艺术&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;http://agilemanifesto.org/&quot;&gt;敏捷宣言&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Wed, 09 Oct 2019 10:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/10/09/%E6%9E%B6%E6%9E%84%E5%AD%A6%E4%B9%A0/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/10/09/%E6%9E%B6%E6%9E%84%E5%AD%A6%E4%B9%A0/</guid>
-        
-        <category>【必备技能】</category>
-        
-        
-        <category>【软件架构】</category>
-        
-      </item>
-    
-      <item>
-        <title>JVM系后端知识框架</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/images/2019-10-04Jvm后端.png&quot; alt=&quot;/images/2019-10-04Jvm后端.png&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;网关
-    &lt;ul&gt;
-      &lt;li&gt;Nginx
-        &lt;ul&gt;
-          &lt;li&gt;Kong&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;服务器
-    &lt;ul&gt;
-      &lt;li&gt;Tomcat&lt;/li&gt;
-      &lt;li&gt;Netty&lt;/li&gt;
-      &lt;li&gt;Jetty&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;缓冲
-    &lt;ul&gt;
-      &lt;li&gt;RocketMQ&lt;/li&gt;
-      &lt;li&gt;RabbitMQ&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;(https://www.cnblogs.com/panchanggui/p/9503666.html)&quot;&gt;缓存&lt;/a&gt;
-    &lt;ul&gt;
-      &lt;li&gt;CDN&lt;/li&gt;
-      &lt;li&gt;Ehcache&lt;/li&gt;
-      &lt;li&gt;Guava Cache&lt;/li&gt;
-      &lt;li&gt;Redis&lt;/li&gt;
-      &lt;li&gt;Memcached&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;编程语言
-    &lt;ul&gt;
-      &lt;li&gt;Java ✅&lt;/li&gt;
-      &lt;li&gt;Kotlin ✅&lt;/li&gt;
-      &lt;li&gt;Groovy ✅&lt;/li&gt;
-      &lt;li&gt;Scala ✅&lt;/li&gt;
-      &lt;li&gt;Clojure&lt;/li&gt;
-      &lt;li&gt;Jython(python)&lt;/li&gt;
-      &lt;li&gt;JRuby (ruby)&lt;/li&gt;
-      &lt;li&gt;Ceylon&lt;/li&gt;
-      &lt;li&gt;Eta&lt;/li&gt;
-      &lt;li&gt;Haxe&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;持久化
-    &lt;ul&gt;
-      &lt;li&gt;MySQL&lt;/li&gt;
-      &lt;li&gt;MongoDB&lt;/li&gt;
-      &lt;li&gt;PostgreSQL&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;编程工具
-    &lt;ul&gt;
-      &lt;li&gt;编辑器
-        &lt;ul&gt;
-          &lt;li&gt;InteliJ IDEA&lt;/li&gt;
-          &lt;li&gt;Eclipse&lt;/li&gt;
-          &lt;li&gt;Vim&lt;/li&gt;
-          &lt;li&gt;Emacs&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;运行环境
-        &lt;ul&gt;
-          &lt;li&gt;JVM&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;框架
-        &lt;ul&gt;
-          &lt;li&gt;Spring&lt;/li&gt;
-          &lt;li&gt;SpringBoot&lt;/li&gt;
-          &lt;li&gt;SprngCloud&lt;/li&gt;
-          &lt;li&gt;Dropwizard&lt;/li&gt;
-          &lt;li&gt;Dubbo&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;依赖管理工具
-        &lt;ul&gt;
-          &lt;li&gt;Ant&lt;/li&gt;
-          &lt;li&gt;Maven&lt;/li&gt;
-          &lt;li&gt;Gradle&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Fri, 04 Oct 2019 10:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/10/04/JVM%E7%B3%BB%E5%90%8E%E7%AB%AF%E7%9F%A5%E8%AF%86%E6%A1%86%E6%9E%B6/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/10/04/JVM%E7%B3%BB%E5%90%8E%E7%AB%AF%E7%9F%A5%E8%AF%86%E6%A1%86%E6%9E%B6/</guid>
-        
-        <category>【必备技能】</category>
-        
-        
-        <category>【软件架构】</category>
         
       </item>
     

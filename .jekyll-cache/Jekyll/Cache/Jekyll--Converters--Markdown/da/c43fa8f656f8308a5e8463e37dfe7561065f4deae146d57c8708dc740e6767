@@ -1,0 +1,111 @@
+I"�	<h4 id="依赖">依赖</h4>
+<p><a href="https://www.jianshu.com/p/e5c69c7b8c00">设计模式</a>
+<a href="https://www.jianshu.com/p/7b5ca753ed6a">iOS开发</a>
+<a href="https://github.com/BohdanOrlov/iOS-Developer-Roadmap">iOS技能树</a></p>
+
+<h2 id="索引">索引</h2>
+
+<ol>
+  <li>设计的六大原则</li>
+  <li>架构的目的与目标</li>
+  <li></li>
+</ol>
+
+<hr />
+<h3 id="设计的七大原则">设计的七大原则</h3>
+
+<table>
+  <tbody>
+    <tr>
+      <td>S</td>
+      <td>Single Responsibility Principle</td>
+      <td>单一职责原则</td>
+    </tr>
+    <tr>
+      <td>O</td>
+      <td>Open Close Principle</td>
+      <td>开闭原则</td>
+    </tr>
+    <tr>
+      <td>L</td>
+      <td>Liskov Substitution Principle</td>
+      <td>里氏替换原则</td>
+    </tr>
+    <tr>
+      <td>I</td>
+      <td>Interface Segregation Principle</td>
+      <td>接口隔离原则</td>
+    </tr>
+    <tr>
+      <td>D</td>
+      <td>Dependence Inversion Principle</td>
+      <td>依赖倒置原则</td>
+    </tr>
+    <tr>
+      <td>L</td>
+      <td>Law Of Demeter</td>
+      <td>迪米特法则</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>Composite/Aggregate Reuse Principle</td>
+      <td>CARP组合/聚合复用原则</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>⚠️ 面向对象SOLID原则</p>
+
+<h4 id="单一职责原则">单一职责原则</h4>
+<ul>
+  <li>一个类只承担一个职责</li>
+</ul>
+
+<h4 id="开闭原则">开闭原则</h4>
+<ul>
+  <li>对软件实体的改动，最好用扩展而非修改的方式。</li>
+</ul>
+
+<h4 id="里氏替换原则">里氏替换原则</h4>
+<ul>
+  <li>子类可以扩展父类的方法，但不应该复写父类的方法。</li>
+</ul>
+
+<h4 id="接口隔离原则">接口隔离原则</h4>
+<ul>
+  <li>对象不应被强迫依赖它不使用的方法.</li>
+</ul>
+
+<h4 id="依赖倒置原则">依赖倒置原则</h4>
+<ul>
+  <li>面向接口编程，提取出事务的本质和共性。</li>
+</ul>
+
+<h4 id="迪米特法则">迪米特法则</h4>
+<ul>
+  <li>一个对象应该对其他对象保持最少的了解，实现低耦合、高内聚。</li>
+</ul>
+
+<h4 id="组合聚合复用原则">组合/聚合复用原则</h4>
+<ul>
+  <li>就是说要少用继承，多用合成关系来实现。</li>
+</ul>
+
+<hr />
+<h3 id="架构的目的与目标">架构的目的与目标</h3>
+
+<hr />
+<h3 id="架构的设计方法和步骤">架构的设计方法和步骤</h3>
+
+<hr />
+<h3 id="常用的架构">常用的架构</h3>
+
+<h4 id="mvc">MVC</h4>
+
+<h4 id="mvvm">MVVM</h4>
+
+<h4 id="viper">VIPER</h4>
+
+<h4 id="mvp">MVP</h4>
+
+:ET

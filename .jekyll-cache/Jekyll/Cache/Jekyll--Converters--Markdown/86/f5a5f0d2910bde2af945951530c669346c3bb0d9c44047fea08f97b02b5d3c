@@ -1,0 +1,243 @@
+I"�<h4 id="股票">股票：</h4>
+<ol>
+  <li>股份公司发给出资人的凭证，股票持有者就是股份公司的股东</li>
+</ol>
+
+<h4 id="股票面值和市值">股票面值和市值</h4>
+<ol>
+  <li>面值是票面金额</li>
+  <li>市值是市场价值</li>
+</ol>
+
+<h4 id="上市ipo">上市|IPO：</h4>
+<ol>
+  <li>企业通过证券交易所公开向社会增发股票以募集资金</li>
+</ol>
+
+<h4 id="股票的作用">股票的作用：</h4>
+<ol>
+  <li>出资证明、证明股东身份、对公司经营发表意见</li>
+  <li>公司分红、交易获利</li>
+</ol>
+
+<h4 id="股票分类">股票分类</h4>
+
+<p>按照业绩分类：</p>
+<ol>
+  <li>蓝筹股：资本雄厚、信誉优良的公司的股票</li>
+  <li>绩优股：业绩优良的公司的股票</li>
+  <li>ST股：特别处理的股票，连续亏损或每股净资产低于股票面值</li>
+</ol>
+
+<p>按照上市地区分类：</p>
+<ol>
+  <li>A股：中国大陆上市，人民币认购买卖（T+1，涨跌幅10%）</li>
+  <li>B股：中国大陆上市，外币认购买卖（T+1， T+3）</li>
+  <li>H股：中国香港上市（T+0,涨跌不设限制）</li>
+  <li>N股：美国纽约上市</li>
+  <li>S股：新加坡上市</li>
+</ol>
+
+<h4 id="股票市场构成">股票市场构成</h4>
+
+<ol>
+  <li>上市公司</li>
+  <li>投资者</li>
+  <li>证监会、证券业协会、交易所</li>
+  <li>证券中介机构</li>
+</ol>
+
+<p>交易所：</p>
+<ol>
+  <li>上海证券交易所：
+    <blockquote>
+      <ul>
+        <li>主板（沪指）</li>
+      </ul>
+    </blockquote>
+  </li>
+  <li>深圳证券交易所：
+    <blockquote>
+      <ul>
+        <li>主板：大型成熟企业（深成指）</li>
+        <li>中小板：经营规模较小</li>
+        <li>创业板：处于成长期的创业企业</li>
+      </ul>
+    </blockquote>
+  </li>
+</ol>
+
+<h4 id="影响股价的因素">影响股价的因素</h4>
+<ol>
+  <li>市场内部因素：买卖房力量</li>
+  <li>基本面因素：公司的营收状况</li>
+  <li>政策因素</li>
+</ol>
+
+<h4 id="股票买卖a">股票买卖（A）</h4>
+
+<ol>
+  <li>委托买卖股票</li>
+  <li>股票交易日：</li>
+  <li>股票交易时间：
+    <blockquote>
+      <ul>
+        <li>9:15-9:25: 开盘集合竞价时间（定开盘价）</li>
+        <li>9:30-11:30：前市，连续竞价时间</li>
+        <li>13:00-15:00: 后市，连续竞价时间</li>
+        <li>14:57-15:00: 深交所收盘集合竞价时间</li>
+      </ul>
+    </blockquote>
+  </li>
+  <li>T+1交易制度：
+    <blockquote>
+      <ul>
+        <li>股票买入后当天不能卖出，下一个交易日才能卖出</li>
+      </ul>
+    </blockquote>
+  </li>
+</ol>
+
+<h4 id="金融分析">金融分析</h4>
+
+<ol>
+  <li>基本面分析
+    <blockquote>
+      <ul>
+        <li>宏观经济面分析：国家财政政策、货币政策</li>
+        <li>行业分析</li>
+        <li>公司分析：财务数据、业绩报告</li>
+      </ul>
+    </blockquote>
+  </li>
+  <li>技术面分析
+    <blockquote>
+      <ul>
+        <li>K线</li>
+        <li>平均线</li>
+        <li>KDJ</li>
+        <li>MACD</li>
+        <li>….</li>
+      </ul>
+    </blockquote>
+  </li>
+</ol>
+
+<h4 id="金融量化投资">金融量化投资</h4>
+<ol>
+  <li>量化投资：计算机用数学模型去实践投资理念</li>
+  <li>量化投资的优势：
+    <blockquote>
+      <ul>
+        <li>避免主观情绪、人性弱点、认知偏差，选择更加客观</li>
+        <li>多角度的观察、多层次的模型</li>
+        <li>即使跟踪市场变化，不断发现新的统计模型，寻找交易机会</li>
+        <li>在决定投资策略后，能通过回测验证其结果</li>
+      </ul>
+    </blockquote>
+  </li>
+</ol>
+
+<h4 id="量化策略">量化策略</h4>
+
+<ol>
+  <li>通过固定的逻辑来分析、判断和决策，自动的进行交易</li>
+  <li>核心内容；
+    <blockquote>
+      <ul>
+        <li>选股</li>
+        <li>选时</li>
+        <li>仓位管理</li>
+        <li>止盈止损</li>
+      </ul>
+    </blockquote>
+  </li>
+  <li>策略的周期
+    <blockquote>
+      <ul>
+        <li>产生想法</li>
+        <li>实现策略：Julia-Python</li>
+        <li>检验策略：回测-模拟交易</li>
+        <li>实盘交易</li>
+        <li>优化策略-采用新策略</li>
+      </ul>
+    </blockquote>
+  </li>
+</ol>
+
+<ul>
+  <li>输入：
+    <blockquote>
+      <ul>
+        <li>行情数据</li>
+        <li>财务数据</li>
+        <li>自定义数据</li>
+        <li>投资经验</li>
+      </ul>
+    </blockquote>
+  </li>
+  <li>策略：
+    <blockquote>
+      <ul>
+        <li>选股</li>
+        <li>择时</li>
+        <li>仓位管理</li>
+        <li>止盈止损</li>
+      </ul>
+    </blockquote>
+  </li>
+  <li>输出
+    <blockquote>
+      <ul>
+        <li>买入信号</li>
+        <li>卖出信号</li>
+        <li>交易费用</li>
+        <li>收益</li>
+      </ul>
+    </blockquote>
+  </li>
+</ul>
+
+<h4 id="量化投资与python">量化投资与Python</h4>
+
+<ol>
+  <li>选择：Excel、SAS、R、Python、Julia</li>
+  <li>numpy:高性能科学计算与数据分析的基础包
+    <blockquote>
+      <ul>
+        <li>ndarray:</li>
+        <li>高阶函数</li>
+        <li>磁盘读写工具</li>
+        <li>线性代数、随机数生成、傅立叶变换</li>
+        <li>集成C/C++</li>
+      </ul>
+    </blockquote>
+  </li>
+  <li>pandas:</li>
+</ol>
+
+<h4 id="numpy">numpy</h4>
+<ol>
+  <li>创建: ndarry</li>
+  <li>多维数组</li>
+  <li>常用属性：
+    <blockquote>
+      <ul>
+        <li>T：数组的转置</li>
+        <li>dtype：元素的类型</li>
+        <li>size： 元素个数</li>
+        <li>ndim: 维数</li>
+        <li>shape: 维度大小</li>
+        <li>astype: 类型转换</li>
+      </ul>
+    </blockquote>
+  </li>
+</ol>
+
+<blockquote>
+  <ul>
+    <li></li>
+  </ul>
+</blockquote>
+
+:ET

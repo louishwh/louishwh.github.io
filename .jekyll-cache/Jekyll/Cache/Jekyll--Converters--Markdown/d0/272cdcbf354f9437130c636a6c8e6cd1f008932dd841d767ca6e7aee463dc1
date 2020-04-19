@@ -1,0 +1,48 @@
+I"�<ol>
+  <li>网络分层结构</li>
+  <li>协议简介</li>
+  <li>网络延伸知识</li>
+  <li>网络分析工具</li>
+</ol>
+
+<h2 id="网络的分层结构">网络的分层结构：</h2>
+
+<p><img src="/images/2019-02-09网络结构.png" alt="/images/2019-02-09网络结构.png" /></p>
+
+<h2 id="协议简介">协议简介</h2>
+
+<p><img src="/images/2019-02-09各层协议.png" alt="/images/2019-02-09各层协议.png" /></p>
+
+<h2 id="网络延伸知识">网络延伸知识</h2>
+
+<ol>
+  <li>无线网络和移动网络
+    <ul>
+      <li>Wifi</li>
+      <li>蜂窝网</li>
+    </ul>
+  </li>
+  <li>多媒体网络
+    <ul>
+      <li>流视频</li>
+      <li>IP语音</li>
+      <li>实时会话</li>
+    </ul>
+  </li>
+  <li>网络安全
+    <ul>
+      <li>密码学</li>
+      <li>SSL</li>
+      <li>IPsec/VPN</li>
+      <li>防火墙</li>
+    </ul>
+  </li>
+  <li>网络管理
+    <ul>
+      <li>SMI</li>
+      <li>MIB</li>
+      <li>SNMP</li>
+    </ul>
+  </li>
+</ol>
+:ET

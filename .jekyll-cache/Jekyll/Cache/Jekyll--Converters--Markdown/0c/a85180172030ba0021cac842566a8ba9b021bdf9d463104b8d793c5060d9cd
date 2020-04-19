@@ -1,0 +1,254 @@
+I"B<h3 id="内容概要">内容概要</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- 介绍
+- 编译
+- 文件结构介绍
+- 基本操作
+</code></pre></div></div>
+
+<h4 id="介绍">介绍</h4>
+
+<p>XuperUion是超级链体系下的第一个开源项目，是构建超级联盟网络的底层方案。</p>
+
+<ul>
+  <li>
+    <p>核心特点</p>
+
+    <ul>
+      <li>高性能
+        <ul>
+          <li>原创的XuperModel模型，真正实现了智能合约的并发执行和验证。</li>
+          <li>TDPOS算法确保大规模节点下的快速共识。</li>
+          <li>使用AOT加速的WASM虚拟机，合约运行速度接近native程序。</li>
+        </ul>
+      </li>
+      <li>更安全
+        <ul>
+          <li>多私钥保护的账户体系。</li>
+          <li>鉴权支持权重累计、集合运算等灵活的策略。</li>
+        </ul>
+      </li>
+      <li>易扩展
+        <ul>
+          <li>鲁棒的P2P网络，支持广域网超大规模节点。</li>
+          <li>底层账本支持分叉管理，自动收敛一致性，实现真正全球化部署。</li>
+          <li>多语言开发智能合约</li>
+          <li>通过原创的XuperBridge技术，可插拔多语言虚拟机。</li>
+        </ul>
+      </li>
+      <li>高灵活性
+        <ul>
+          <li>可插拔、插件化的设计使得用户可以方便选择适合自己业务场景的解决方案。</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="编译">编译</h4>
+
+<ol>
+  <li>系统配置
+    <ul>
+      <li>操作系统：支持Linux以及Mac OS</li>
+      <li>开发语言：Go 1.12.x及以上</li>
+      <li>编译器：GCC 4.8.x及以上</li>
+      <li>版本控制工具：Git</li>
+    </ul>
+  </li>
+  <li>获取代码
+    <blockquote>
+      <p>git clone https://github.com/xuperchain/xuperunion</p>
+    </blockquote>
+  </li>
+  <li>生成执行文件
+    <blockquote>
+      <p>cd xuperunion</p>
+
+      <p>make</p>
+    </blockquote>
+  </li>
+  <li>编译完成
+    <ul>
+      <li>在output文件夹内部</li>
+    </ul>
+  </li>
+</ol>
+
+<h4 id="文件结构介绍">文件结构介绍</h4>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>output
+│
+├── conf  	// 创始的共识采用tdpos模式，指定单一地址有权利出块
+│  	│
+│   ├── plugins.conf 		// 插件的配置信息
+│  	│
+│   ├── xchain.yaml.   		// xchain服务的配置信息
+│  	│
+│   └── xchain.yaml.sample 	// 防止冲突，部署时根据需要修改端口号
+│  	
+│  	
+├── contractCall.sh
+│
+├── createAccount.sh
+│
+├── data  // 数据的存放目录,创世块信息，以及共识和合约的样例
+│   │
+│   ├── blockchain	// 账本目录
+│   │   │
+│   │   └── xuper
+│   │       ├── ledger
+│   │       │   ├── 000001.log
+│   │       │   │
+│   │       │   ├── CURRENT
+│   │       │   │
+│   │       │   ├── LOCK
+│   │       │   │
+│   │       │   ├── LOG
+│   │       │   │
+│   │       │   └── MANIFEST-000000
+│   │       │   
+│   │       ├── utxoVM
+│   │       │   │
+│   │       │   ├── 000001.log
+│   │       │   │
+│   │       │   ├── CURRENT
+│   │       │   │
+│   │       │   ├── LOCK
+│   │       │   │
+│   │       │   ├── LOG
+│   │       │   │
+│   │       │   └── MANIFEST-000000
+│   │       │  	
+│   │       └── xuper.json
+│   │   	
+│   ├── config	// 创始的共识采用tdpos模式，指定单一地址有权利出块
+│   │  	│  	
+│   │   ├── decay_demo.json
+│   │  	│  	
+│   │   ├── pmroot.json
+│   │  	│  	
+│   │   ├── pow.json
+│   │  	│  	
+│   │   ├── root_demo.json
+│   │  	│  	
+│   │   └── xuper.json
+│   │  	
+│   │  	
+│   ├── keys // 此节点的地址，唯一性
+│   │  	│  	
+│   │   ├── address
+│   │  	│  	
+│   │   ├── private.key
+│   │  	│  	
+│   │   └── public.key
+│   │  	
+│   └── netkeys // 此节点的网络标识ID，唯一性
+│      	│  	
+│       └── net_private.key
+│   
+│   
+├── deployContract.sh
+│   
+│   
+├── dump_chain
+│   
+│   
+├── logs  // 程序日志目录
+│   │  	
+│   ├── pluginmgr.log
+│   │  	
+│   ├── pluginmgr.log.wf
+│   │  	
+│   ├── xchain.log
+│   │  	
+│   └── xchain.log.wf
+│   
+│   
+├── plugins	// so的存放目录
+│   │   
+│   ├── consensus
+│   │   │   
+│   │   ├── consensus-pow.so.1.0.0
+│   │   │   
+│   │   ├── consensus-single.so.1.0.0
+│   │   │   
+│   │   └── consensus-tdpos.so.1.0.0
+│   │   
+│   ├── contract
+│   │   
+│   ├── crypto
+│   │   │   
+│   │   └── crypto-default.so.1.0.0
+│   │   
+│   └── kv
+│       │   
+│       ├── kv-badger.so.1.0.0
+│       │   
+│       ├── kv-ldb-multi.so.1.0.0
+│       │   
+│       └── kv-ldb-single.so.1.0.0
+│   
+│   
+├── testnet.conf
+│       
+├── transfer.sh
+│       
+├── wasm2c	// wasm工具
+│       	
+├── xchain  // 服务的二进制文件
+│       
+└── xchain-cli	// 客户端工具
+</code></pre></div></div>
+
+<h4 id="链的操作">链的操作</h4>
+
+<ol>
+  <li>创建链
+    <blockquote>
+      <p>./xchain-cli createChain</p>
+    </blockquote>
+  </li>
+  <li>启动服务
+    <blockquote>
+      <p>nohup ./xchain &amp;</p>
+    </blockquote>
+  </li>
+  <li>观察区块
+    <blockquote>
+      <p>./xchain-cli status -H 127.0.0.1:37101</p>
+    </blockquote>
+  </li>
+  <li>创建账号
+    <blockquote>
+      <p>./xchain-cli account newkeys –output data/accounts/louis</p>
+    </blockquote>
+  </li>
+  <li>创建合约账号
+    <blockquote>
+      <p>./xchain-cli account new –desc account.des
+合约内容如下:
+<code class="highlighter-rouge">
+ {
+ "module_name": "xkernel",
+ "method_name": "NewAccount",
+ "args" : {
+     "account_name": "1111111111111111",  //说明：16位数字组成的字符串
+     "acl": "{
+     		\"pm\": {\"rule\": 1,\"acceptValue\": 0.6},
+     		\"aksWeight\": {\"AK1\": 0.3,\"AK2\": 0.3}}"
+ }
+ }</code></p>
+    </blockquote>
+  </li>
+  <li></li>
+</ol>
+
+<h4 id="资源链接">资源链接</h4>
+
+<p><a href="https://xchain.baidu.com/">官网</a>
+<a href="https://xuperchain.baidu.com/whitepaper">白皮书</a>
+<a href="https://github.com/xuperchain/xuperunion">Github</a>
+<a href="https://github.com/xuperchain/xuperunion/blob/master/CONTRIBUTING_CN.md">贡献指南</a></p>
+
+:ET

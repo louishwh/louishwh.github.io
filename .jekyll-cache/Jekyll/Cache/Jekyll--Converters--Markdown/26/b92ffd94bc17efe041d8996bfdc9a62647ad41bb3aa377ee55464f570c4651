@@ -1,0 +1,203 @@
+I"�<blockquote>
+  <p>先学习几门，然后总结，实践与理论相结合。</p>
+</blockquote>
+
+<p>最近几年学会了几门编程语言：</p>
+<ul>
+  <li>C</li>
+  <li>Objective-C</li>
+  <li>C++</li>
+  <li>Java</li>
+  <li>Swift</li>
+  <li>Kotlin</li>
+  <li>Go</li>
+  <li>Python</li>
+  <li>Rust</li>
+  <li>Ada</li>
+  <li>…</li>
+</ul>
+
+<h4 id="编程语言层次">编程语言层次</h4>
+
+<ol>
+  <li>
+    <h5 id="你学习编程的目的">你学习编程的目的？：</h5>
+    <blockquote>
+      <p>编程就是为了解决问题</p>
+    </blockquote>
+    <ul>
+      <li>成为一名黑客？</li>
+      <li>成为一名架构师？
+        <ul>
+          <li>前端有木有？
+            <ul>
+              <li>Vue有木有？</li>
+              <li>React有木有？</li>
+              <li>Angular有木有？</li>
+            </ul>
+          </li>
+          <li>后端有木有？
+            <ul>
+              <li>PHP有木有？</li>
+              <li>Java有木有？
+                <ul>
+                  <li>SpringBoot有木有？
+                    <ul>
+                      <li>netty?</li>
+                      <li>jetty?</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>Python有木有？
+                <ul>
+                  <li>Django?</li>
+                  <li>Flask?</li>
+                  <li>Tornado?</li>
+                </ul>
+              </li>
+              <li>数据持久化有木有？
+                <ul>
+                  <li>Mysql?</li>
+                  <li>Oracle</li>
+                  <li></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>移动端有木有？
+            <ul>
+              <li>Android有木有？</li>
+              <li>iOS有木有？
+                <ul>
+                  <li>MVC?</li>
+                  <li>MVVM?
+                    <ul>
+                      <li>RxSwift?</li>
+                    </ul>
+                  </li>
+                  <li>MVP?</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <blockquote>
+      <p>目的决定态度，态度决定高度。</p>
+    </blockquote>
+  </li>
+  <li>
+    <h5 id="基础环境">基础环境：</h5>
+    <ol>
+      <li>安装语言的开发环境（编译器、解释器、IDE）</li>
+      <li>选一个适合自己的编辑器
+        <ul>
+          <li><a href="http://www.gnu.org/software/emacs/">Emacs</a></li>
+          <li><a href="https://www.vim.org/">Vim</a></li>
+          <li><a href="https://www.sublimetext.com/3">Sublime</a></li>
+          <li><a href="https://code.visualstudio.com/">VScode</a>
+            <blockquote>
+              <p>最好选一款编辑器用到很溜</p>
+            </blockquote>
+          </li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+  <li>
+    <h5 id="语法层面">语法层面：</h5>
+    <ul>
+      <li>面向过程编程
+        <ol>
+          <li>关键字</li>
+          <li>代码规范</li>
+          <li>数据类型</li>
+          <li>运算符</li>
+          <li>流程控制</li>
+          <li>函数</li>
+        </ol>
+      </li>
+      <li>面向对象编程
+        <ol>
+          <li>类</li>
+          <li>封装</li>
+          <li>继承</li>
+          <li>多态</li>
+        </ol>
+      </li>
+      <li>函数式编程
+        <ol>
+          <li>高阶函数</li>
+          <li>Map、reduce、filter</li>
+        </ol>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <h5 id="设计模式">设计模式：</h5>
+    <ul>
+      <li>可参考书籍：
+        <ul>
+          <li>《Head First设计模式》</li>
+          <li>《23种设计模式》</li>
+          <li>《图解设计模式》</li>
+          <li>《Swift设计模式》</li>
+        </ul>
+      </li>
+      <li>创建型
+        <ul>
+          <li>单例模式</li>
+          <li>工厂模式</li>
+        </ul>
+      </li>
+      <li>结构型
+        <ul>
+          <li>门面模式</li>
+          <li>代理模式</li>
+        </ul>
+      </li>
+      <li>行为型
+        <ul>
+          <li>观察者模式</li>
+          <li>命令模式</li>
+          <li>模版模式</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <h5 id="架构设计">架构设计：</h5>
+    <ul>
+      <li>可参考书籍：
+        <ul>
+          <li>《从零开始学架构》</li>
+          <li>《聊聊架构》</li>
+          <li>《架构即未来》</li>
+        </ul>
+      </li>
+      <li>开发人员架构设计
+        <ul>
+          <li></li>
+          <li></li>
+        </ul>
+      </li>
+      <li>软件架构
+  -
+        <ul>
+          <li></li>
+        </ul>
+      </li>
+      <li>通用架构
+  -
+        <ul>
+          <li></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+:ET

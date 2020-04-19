@@ -1,0 +1,22 @@
+I"�<h3 id="算法类型">算法类型</h3>
+<ul>
+  <li><a href="https://blog.csdn.net/qq_38918259/article/details/80480194">重要的几个算法</a></li>
+  <li><a href="https://kb.cnblogs.com/page/210687/">10大基础算法-1</a></li>
+  <li><a href="https://blog.csdn.net/zkl99999/article/details/51093174">10大基础算法-2</a></li>
+</ul>
+
+<h3 id="压缩算法"><a href="https://baike.baidu.com/item/%E5%8E%8B%E7%BC%A9%E7%AE%97%E6%B3%95/2762648?fr=aladdin">压缩算法</a></h3>
+
+<h4 id="工具">工具</h4>
+<ul>
+  <li><a href="https://github.com/alexcrichton/rust-compress">压缩算法-Rust</a></li>
+  <li><a href="https://github.com/richox/orz">压缩工具</a></li>
+  <li><a href="https://blog.csdn.net/pansaky/article/details/90641343">ZIP压缩算法原理解析</a></li>
+</ul>
+
+<h3 id="思想">思想</h3>
+<ul>
+  <li><a href="https://blog.csdn.net/qq_38607741/article/details/78555330">最基本5种算法思想</a></li>
+</ul>
+
+:ET

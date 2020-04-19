@@ -1,0 +1,17 @@
+I"<h3 id="参考资料">参考资料</h3>
+<ul>
+  <li><a href="https://www.jianshu.com/p/e41bc1eb1d81">数学原理</a></li>
+</ul>
+
+<h3 id="名称解释">名称解释</h3>
+<ul>
+  <li>椭圆曲线加密算法，即: Elliptic Curve Cryptography，简称ECC
+    <ul>
+      <li>基于椭圆曲线数学理论实现的一种非对称加密算法。</li>
+      <li>椭圆曲线在密码学中的使用，是1985年由Neal Koblitz和Victor Miller分别独立提出的。</li>
+    </ul>
+  </li>
+  <li>椭圆曲线签名算法，即: ECDSA</li>
+</ul>
+
+:ET

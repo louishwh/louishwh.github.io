@@ -1,0 +1,50 @@
+I"�<h2 id="eos合约开发">EOS合约开发：</h2>
+
+<h3 id="eos-studio-ceo-phil">EOS studio CEO： Phil</h3>
+
+<p>EOS账号体系：</p>
+<ul>
+  <li>私钥/公钥匙</li>
+  <li>账号： 公钥+系统合约 -&gt; 注册账号</li>
+  <li>owner: 最高权限可以改activate</li>
+  <li>activate:</li>
+  <li>账号： 占用4Kb资源 (测试网发合约免费)</li>
+  <li>C++17</li>
+  <li>CPU资源：需要抵押代币： 72小时后退回（逐渐退回）</li>
+  <li></li>
+</ul>
+
+<h3 id="eos-节点搭建与维护-eospark-cto-specer">EOS 节点搭建与维护： EOSPark CTO: Specer</h3>
+
+<ul>
+  <li>切换道对应Tag再编译</li>
+  <li>设置-s
+    <blockquote>
+      <p>./eosio_build.sh -s EOS</p>
+    </blockquote>
+  </li>
+  <li>mongo插件： 避免开history插件： 节省内存</li>
+</ul>
+
+<p>节点配置：
++
++</p>
+<ul>
+  <li></li>
+</ul>
+
+<h3 id="eosshenzhen-cto-sheldon">EOSshenzhen CTO: Sheldon</h3>
+<ul>
+  <li><a href="developer.eos.io">EOS官网</a></li>
+  <li><a href="battles.eos.io">EOS游戏</a></li>
+  <li>Develope Telegram</li>
+  <li>github.com/eosio</li>
+  <li>eos.cdt</li>
+  <li>eosio.contract</li>
+  <li>eos-card-game-repo</li>
+  <li>bancor</li>
+  <li>eosio.token 学习发币</li>
+  <li>boscore.io(BPFT)</li>
+  <li></li>
+</ul>
+:ET

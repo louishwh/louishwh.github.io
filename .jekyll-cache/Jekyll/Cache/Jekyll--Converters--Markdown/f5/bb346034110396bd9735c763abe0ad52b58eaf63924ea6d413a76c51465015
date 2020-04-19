@@ -1,0 +1,285 @@
+I"�<p><a href="https://developer.apple.com/documentation/uikit">Apple官网-UIKit</a></p>
+
+<p><a href="https://developer.apple.com/documentation/uikit/views_and_controls?changes=latest_major">Views and Controls</a></p>
+
+<ul>
+  <li>
+    <p>UIView and Controls</p>
+
+    <ul>
+      <li>Container Views
+        <ul>
+          <li>Collection Views</li>
+          <li>Table Views</li>
+          <li>UIStackView</li>
+          <li>UIScrollView</li>
+        </ul>
+      </li>
+      <li>Content Views
+        <ul>
+          <li>UIActivityIndicatorView</li>
+          <li>UIImageView</li>
+          <li>UIPickerView</li>
+          <li>UIProgressView</li>
+          <li><del>UIWebView</del></li>
+        </ul>
+      </li>
+      <li>Controls
+        <ul>
+          <li>UIControl</li>
+          <li>UIButton</li>
+          <li>UIDatePicker</li>
+          <li>UIPageControl</li>
+          <li>UISegmentedControl</li>
+          <li>UISlider</li>
+          <li>UIStepper</li>
+          <li>UISwitch</li>
+        </ul>
+      </li>
+      <li>Text Views
+        <ul>
+          <li>UILabel</li>
+          <li>UITextField</li>
+          <li>UITextView</li>
+          <li>UISearchTextField</li>
+          <li>UISearchToken</li>
+        </ul>
+      </li>
+      <li>Visual Effects
+        <ul>
+          <li>UIVisualEffect</li>
+          <li>UIVisualEffectView</li>
+          <li>UIVibrancyEffect</li>
+          <li>UIBlurEffect</li>
+        </ul>
+      </li>
+      <li>Bars
+        <ul>
+          <li>UIBarItem</li>
+          <li>UIBarButtonItem</li>
+          <li>UIBarButtonItemGroup</li>
+          <li>UINavigationBar</li>
+          <li>UISearchBar</li>
+          <li>UIToolbar</li>
+          <li>UITabBar</li>
+          <li>UITabBarItem</li>
+          <li>UIBarPositioning</li>
+          <li>UIBarPositioningDelegate</li>
+        </ul>
+      </li>
+      <li>Content Viewer
+        <ul>
+          <li>UILargeContentViewerInteraction</li>
+        </ul>
+      </li>
+      <li>Related Types
+        <ul>
+          <li>UIOffset</li>
+          <li>UIEdgeInsets</li>
+          <li>NSDirectionalEdgeInsets</li>
+          <li>NSDirectionalRectEdge</li>
+          <li>NSRectAlignment</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>View Controllers</p>
+    <ul>
+      <li>Custom View Controllers
+        <ul>
+          <li>UIViewController</li>
+          <li>UITableViewController</li>
+          <li>UICollectionViewController
+            <ul>
+              <li>UIContentContainer</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>Split View Interface
+        <ul>
+          <li>UISplitViewController</li>
+        </ul>
+      </li>
+      <li>Navigation Interface
+        <ul>
+          <li>UINavigationController</li>
+          <li>UINavigationBar</li>
+          <li>UINavigationItem</li>
+        </ul>
+      </li>
+      <li>Page View Interface
+        <ul>
+          <li>UIPageViewController</li>
+        </ul>
+      </li>
+      <li>Tab View Interface
+        <ul>
+          <li>UITabBarController</li>
+          <li>UITabBar</li>
+          <li>UITabBarItem</li>
+        </ul>
+      </li>
+      <li>Search Interface
+        <ul>
+          <li>UISearchContainerViewController</li>
+          <li>UISearchController</li>
+          <li>UISearchBar</li>
+        </ul>
+      </li>
+      <li>Images and Video
+        <ul>
+          <li>UIImagePickerController</li>
+          <li>UIVideoEditorController</li>
+        </ul>
+      </li>
+      <li>Document Previewing
+        <ul>
+          <li>UIDocumentInteractionController</li>
+        </ul>
+      </li>
+      <li>iCloud Sharing
+        <ul>
+          <li>UICloudSharingController</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+ 	- Activities Interface
+ 		- UIActivityViewController
+ 		- UIActivityItemProvider
+ 		- UIActivityItemSource
+ 		- UIActivity
+
+ 	- Font Picker
+ 		- UIFontPickerViewController
+ 		- UIFontPickerViewController.Configuration
+
+ 	- Word Lookup
+ 		- UIReferenceLibraryViewController
+
+ 	- Printer Picker
+ 		- UIPrinterPickerController
+
+<ul>
+  <li>View Layout
+    <ul>
+      <li>First Steps
+        <ul>
+          <li>UIStackView</li>
+        </ul>
+      </li>
+      <li>Constraints
+        <ul>
+          <li>NSLayoutConstraint</li>
+        </ul>
+      </li>
+      <li>Layout Guides
+        <ul>
+          <li>UILayoutGuide</li>
+          <li>NSLayoutDimension</li>
+        </ul>
+      </li>
+      <li>Anchors
+        <ul>
+          <li>NSLayoutAnchor</li>
+          <li>NSLayoutXAxisAnchor</li>
+          <li>NSLayoutYAxisAnchor</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Appearance Customization(外观定制)
+    <ul>
+      <li>
+        <p>Dark Mode</p>
+      </li>
+      <li>Navigation Bar Appearance
+        <ul>
+          <li>UINavigationBarAppearance</li>
+        </ul>
+      </li>
+      <li>Toolbar Appearance
+        <ul>
+          <li>UIToolbarAppearance</li>
+        </ul>
+      </li>
+      <li>Tab Bar Appearance
+        <ul>
+          <li>UITabBarAppearance</li>
+          <li>UITabBarItemAppearance</li>
+          <li>UITabBarItemStateAppearance</li>
+        </ul>
+      </li>
+      <li>Shared Appearance
+        <ul>
+          <li>UIBarAppearance</li>
+          <li>UIBarButtonItemAppearance</li>
+          <li>UIBarButtonItemStateAppearance</li>
+        </ul>
+      </li>
+      <li>Appearance Proxies
+        <ul>
+          <li>UIAppearance</li>
+          <li>UIAppearanceContainer</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Animation and Haptics
+    <ul>
+      <li>
+        <p>Content Animations</p>
+      </li>
+      <li>
+        <p>Physics-Based Animations</p>
+      </li>
+      <li>
+        <p>Parallax Effects(视差影响)</p>
+      </li>
+      <li>
+        <p>Haptic Feedback</p>
+        <ul>
+          <li>UIFeedbackGenerator</li>
+          <li>UIImpactFeedbackGenerator</li>
+          <li>UINotificationFeedbackGenerator</li>
+          <li>UISelectionFeedbackGenerator</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Windows and Screens
+    <ul>
+      <li>Windows
+        <ul>
+          <li>UIWidow</li>
+          <li>UICoordinateSpace</li>
+        </ul>
+      </li>
+      <li>Popovers
+        <ul>
+          <li>UIPopoverPresentationController</li>
+          <li>UIPopoverBackgroundView</li>
+          <li>UIPopoverBackgroundViewMethods</li>
+        </ul>
+      </li>
+      <li>Alerts
+        <ul>
+          <li>UIAlertController</li>
+          <li>UIAlertAction</li>
+        </ul>
+      </li>
+      <li>Screens
+        <ul>
+          <li>UIScreen</li>
+          <li>UIScreenMode</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+:ET

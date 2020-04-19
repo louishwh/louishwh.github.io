@@ -1,0 +1,61 @@
+I"�<h2 id="目标">目标</h2>
+
+<ul>
+  <li>时间节点:
+    <ul>
+      <li>2019-10.1~2019.12.31</li>
+      <li>40-44周</li>
+      <li>45-48周</li>
+      <li>49-53周</li>
+    </ul>
+  </li>
+  <li>完成项目的整体认识
+    <ul>
+      <li>Redis(c)
+        <ul>
+          <li>架构图</li>
+          <li>文件架构图</li>
+        </ul>
+      </li>
+      <li>MySQL(c)
+  -
+        <ul>
+          <li></li>
+        </ul>
+      </li>
+      <li>Nginx(c)
+  -
+        <ul>
+          <li></li>
+        </ul>
+      </li>
+      <li>Tomcat(Java)
+  -
+        <ul>
+          <li></li>
+        </ul>
+      </li>
+      <li>Netty(Java)
+  -
+        <ul>
+          <li></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>工具掌握
+    <ul>
+      <li>编辑器 &amp; IDE
+        <ul>
+          <li>CLion</li>
+          <li>InteliJ IDEA</li>
+          <li>Vim</li>
+          <li>VS Code</li>
+          <li>Sublime Text</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+:ET
