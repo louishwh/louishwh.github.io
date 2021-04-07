@@ -56,22 +56,21 @@ tag: 编程
 6. 对于一些异步加载的页面怎么处理？
 	- ##### 方案一：splash
 		- docker 启动一个 Splash 代理服务：
-			
 			- ``` docker run -it -p 8050:8050 --rm scrapinghub/splash ```
 		- settings 配置：
-			```
+			- ```
 			SPLASH_URL = 'http://host:port'
 			DUPEFILTER_CLASS = 'scrapy_splash.SplashAwareDupeFilter'	
 			HTTPCACHE_STORAGE = 'scrapy_splash.SplashAwareFSCacheStorage'
-    	SPIDER_MIDDLEWARES = {
-         'scrapy_splash.SplashDeduplicateArgsMiddleware': 100,
-      }	
-      DOWNLOADER_MIDDLEWARES = {  
-         'scrapy_splash.SplashCookiesMiddleware': 723,
-         'scrapy_splash.SplashMiddleware': 725,
-         'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware': 810
-      }
-      ```
+    		SPIDER_MIDDLEWARES = {
+         		'scrapy_splash.SplashDeduplicateArgsMiddleware': 100,
+      		}	
+      		DOWNLOADER_MIDDLEWARES = {  
+         		'scrapy_splash.SplashCookiesMiddleware': 723,
+         		'scrapy_splash.SplashMiddleware': 725,
+         		'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware': 810
+      		}
+      		```
 		- python 导入依赖
 			```pip3 install scrapy-splash```
 		- Spider 中引入
@@ -83,15 +82,16 @@ tag: 编程
 
 	- ##### 方案二：selenium
 		- python 导入依赖
-			```pip3 install selenium```
+			- ```pip3 install selenium```
 		- 配置 custom_settings：	
-			```
+			- ```
        		'DOWNLOADER_MIDDLEWARES': {
             	'ht_msg.middlewares.SeleniumDownloadMiddleware': 500
         	}
         	```
 
 		- 创建中间件
+			- 
 			```
 			from selenium.webdriver.chrome.options import Options
 			from selenium import webdriver
@@ -112,7 +112,7 @@ tag: 编程
                	source = self.driver.page_source
                	url = self.driver.current_url
                	return HtmlResponse(url=url, body=source, request=request, encoding="utf-8")
-      ```
+      		```
 
 
 
