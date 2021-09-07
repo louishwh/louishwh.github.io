@@ -1,0 +1,42 @@
+I"�<h3 id="需求介绍">需求介绍</h3>
+<ul>
+  <li>从网页上下载数据</li>
+  <li>将数据根据模版生成图片</li>
+  <li>最后打包成一个app</li>
+</ul>
+
+<h3 id="工具库">工具库</h3>
+<ul>
+  <li>拉取数据
+    <ul>
+      <li>requests</li>
+    </ul>
+  </li>
+  <li>解析网页
+    <ul>
+      <li>BeautifulSoup4</li>
+    </ul>
+  </li>
+  <li>图片处理
+    <ul>
+      <li>Pillow</li>
+    </ul>
+  </li>
+  <li>打包app
+    <ul>
+      <li>
+        <table>
+          <tbody>
+            <tr>
+              <td>py2app</td>
+              <td>pyinstaller</td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="大致代码">大致代码</h3>
+:ET

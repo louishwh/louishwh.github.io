@@ -2,12 +2,691 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title></title>
-    <description>Atomix</description>
+    <description>hwh</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 04 Apr 2020 08:32:28 +0800</pubDate>
-    <lastBuildDate>Sat, 04 Apr 2020 08:32:28 +0800</lastBuildDate>
+    <pubDate>Tue, 07 Sep 2021 23:30:37 +0800</pubDate>
+    <lastBuildDate>Tue, 07 Sep 2021 23:30:37 +0800</lastBuildDate>
     <generator>Jekyll v4.0.0</generator>
+    
+      <item>
+        <title>Python技能树</title>
+        <description>&lt;h2 id=&quot;问题的提出与解决&quot;&gt;问题的提出与解决&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;为什么用Python？
+    &lt;ul&gt;
+      &lt;li&gt;快：开发快、学习快&lt;/li&gt;
+      &lt;li&gt;简：简单易用&lt;/li&gt;
+      &lt;li&gt;多：工具库多&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Python能用来干什么？
+    &lt;ul&gt;
+      &lt;li&gt;数据爬取&lt;/li&gt;
+      &lt;li&gt;自动化运维&lt;/li&gt;
+      &lt;li&gt;自动化测试&lt;/li&gt;
+      &lt;li&gt;Web开发&lt;/li&gt;
+      &lt;li&gt;数据分析&lt;/li&gt;
+      &lt;li&gt;常用PC客户端&lt;/li&gt;
+      &lt;li&gt;很多常用的工具…
+        &lt;ul&gt;
+          &lt;li&gt;你能想象的…&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Python开发者应该具备的技能？
+    &lt;ul&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;什么人需要Python开发者这样的角色？
+ -
+    &lt;ul&gt;
+      &lt;li&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;参考的文件&quot;&gt;参考的文件&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Tue, 07 Sep 2021 21:30:00 +0800</pubDate>
+        <link>http://localhost:4000/2021/09/07/Python/</link>
+        <guid isPermaLink="true">http://localhost:4000/2021/09/07/Python/</guid>
+        
+        <category>编程</category>
+        
+        
+        <category>【语言使用】</category>
+        
+      </item>
+    
+      <item>
+        <title>Scrapy使用教程</title>
+        <description>&lt;h2 id=&quot;执行过程&quot;&gt;执行过程&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;逻辑过程
+    &lt;pre&gt;&lt;code class=&quot;language-mermaid&quot;&gt;  graph LR
+  A[URL]--&amp;gt;B[Request]
+  B[Request]--&amp;gt;C[Response]
+  C[Response]--&amp;gt;D[Item]
+  D[Item]--&amp;gt;E[More]
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;代码执行过程: 我代码中用到的地方
+    &lt;pre&gt;&lt;code class=&quot;language-mermaid&quot;&gt;  graph LR
+  A[Spider.start_requests]--&amp;gt;B[Middleware.process_request]
+  B[Middleware.process_request]--&amp;gt;C[Spider.parse]
+  C[Spider.parse]--&amp;gt;D[Pipeline.process_item]
+  D[Pipeline.process_item]--&amp;gt;E[MySQL]
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;问提的与解决&quot;&gt;问提的与解决&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;start_urls只能配置一个数组，如果我想动态配置爬取的源头怎么办？&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;重写 Spider 的 start_requests 函数，在里面设置请求&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;如果我通过请求结果，发起新的请求怎么写？&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;直接在结果里面通过 yield发起请求&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;如果我通过请求结果发起新的请求，怎么处理新的响应结果？
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;在Spider里新增需要的处理的函数，配置 response 参数即可。&lt;/p&gt;
+
+        &lt;ul&gt;
+          &lt;li&gt;
+            &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;yield scrapy.Request(next_page, callback=self.parse_new)&lt;/code&gt;&lt;/p&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;def parse_new(self, response, **kwargs)&lt;/code&gt;&lt;/p&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;如何把发起请求时候的参数传递到响应结果？
+    &lt;ul&gt;
+      &lt;li&gt;通过 Request 的 meta 参数，传输一个字典过去。&lt;/li&gt;
+      &lt;li&gt;通过 response.meta 拿到你存入的值。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;如何给Spdier配置特点的中间件(middleware)、管道(pipelines)？
+    &lt;ul&gt;
+      &lt;li&gt;custom_settings
+        &lt;ul&gt;
+          &lt;li&gt;ITEM_PIPELINES&lt;/li&gt;
+          &lt;li&gt;SPIDER_MIDDLEWARES&lt;/li&gt;
+          &lt;li&gt;DOWNLOADER_MIDDLEWARES&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;对于一些异步加载的页面怎么处理？
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;h5 id=&quot;方案一splash&quot;&gt;方案一：splash&lt;/h5&gt;
+        &lt;ul&gt;
+          &lt;li&gt;docker 启动一个 Splash 代理服务：
+            &lt;ul&gt;
+              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;docker run -it -p 8050:8050 --rm scrapinghub/splash&lt;/code&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;settings 配置：
+            &lt;ul&gt;
+              &lt;li&gt;
+                &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  SPLASH_URL = 'http://host:port'
+  DUPEFILTER_CLASS = 'scrapy_splash.SplashAwareDupeFilter'	
+  HTTPCACHE_STORAGE = 'scrapy_splash.SplashAwareFSCacheStorage'
+ 		SPIDER_MIDDLEWARES = {
+   		'scrapy_splash.SplashDeduplicateArgsMiddleware': 100,
+}	
+DOWNLOADER_MIDDLEWARES = {  
+   		'scrapy_splash.SplashCookiesMiddleware': 723,
+   		'scrapy_splash.SplashMiddleware': 725,
+   		'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware': 810
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;                &lt;/div&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;python 导入依赖
+  &lt;code class=&quot;highlighter-rouge&quot;&gt;pip3 install scrapy-splash&lt;/code&gt;&lt;/li&gt;
+          &lt;li&gt;Spider 中引入
+  &lt;code class=&quot;highlighter-rouge&quot;&gt;from scrapy_splash import SplashRequest&lt;/code&gt;&lt;/li&gt;
+          &lt;li&gt;请求替换
+            &lt;ul&gt;
+              &lt;li&gt;从：&lt;code class=&quot;highlighter-rouge&quot;&gt;scrapy.Request(stock_url, self.parse, meta=params, dont_filter=True)&lt;/code&gt;&lt;/li&gt;
+              &lt;li&gt;到：&lt;code class=&quot;highlighter-rouge&quot;&gt;SplashRequest(url, self.parse, meta=params, args={'wait': 0.5})&lt;/code&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;parse正常解析结果即可&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;h5 id=&quot;方案二selenium&quot;&gt;方案二：selenium&lt;/h5&gt;
+        &lt;ul&gt;
+          &lt;li&gt;python 导入依赖
+            &lt;ul&gt;
+              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;pip3 install selenium&lt;/code&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;配置 custom_settings：
+            &lt;ul&gt;
+              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
+ 		'DOWNLOADER_MIDDLEWARES': {
+  	'ht_msg.middlewares.SeleniumDownloadMiddleware': 500
+  	}
+  	&lt;/code&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;创建中间件
+            &lt;ul&gt;
+              &lt;li&gt;```
+  from selenium.webdriver.chrome.options import Options
+  from selenium import webdriver
+  from scrapy.http import HtmlResponse&lt;/li&gt;
+            &lt;/ul&gt;
+
+            &lt;p&gt;class SeleniumDownloadMiddleware(object):
+  	  def &lt;strong&gt;init&lt;/strong&gt;(self):
+     	chrome_options = Options()
+     	chrome_options.add_argument(‘–headless’)
+     	chrome_options.add_argument(‘–disable-gpu’)
+     	chrome_options.add_argument(“window-size=1024,768”)
+     	chrome_options.add_argument(“–no-sandbox”)
+     	self.driver = webdriver.Chrome(chrome_options=chrome_options)&lt;/p&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+
+  	  def process_request(self, request, spider):
+        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;     	self.driver.get(request.url)
+     	time.sleep(12)
+     	source = self.driver.page_source
+     	url = self.driver.current_url
+     	return HtmlResponse(url=url, body=source, request=request, encoding=&quot;utf-8&quot;)
+	```
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;未完待续&quot;&gt;未完待续…..&lt;/h3&gt;
+
+&lt;h3 id=&quot;参考的文件&quot;&gt;参考的文件&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;scrapy:
+    &lt;ul&gt;
+      &lt;li&gt;文档
+        &lt;ul&gt;
+          &lt;li&gt;https://doc.scrapy.org/en/latest/topics/request-response.html#response-objects&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;教程
+        &lt;ul&gt;
+          &lt;li&gt;https://geek-docs.com/scrapy/scrapy-tutorials/scrapy-css-grammar.html&lt;/li&gt;
+          &lt;li&gt;https://www.jianshu.com/p/df9c0d1e9087&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;多种方案：爬取动态JS
+        &lt;ul&gt;
+          &lt;li&gt;https://zhuanlan.zhihu.com/p/130867872&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;splash教程
+        &lt;ul&gt;
+          &lt;li&gt;https://splash.readthedocs.io/en/stable/&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;配置可变的start_urls
+        &lt;ul&gt;
+          &lt;li&gt;https://blog.csdn.net/sirobot/article/details/105360486&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;splash
+        &lt;ul&gt;
+          &lt;li&gt;https://github.com/scrapy-plugins/scrapy-splash&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;xpath/css
+        &lt;ul&gt;
+          &lt;li&gt;https://zhuanlan.zhihu.com/p/65143300&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;不同spider配置不同的pipline:
+        &lt;ul&gt;
+          &lt;li&gt;https://blog.csdn.net/peiwang245/article/details/100071316&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;response传递参数：
+        &lt;ul&gt;
+          &lt;li&gt;https://blog.csdn.net/killeri/article/details/80255500&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;spider的setting优先级
+        &lt;ul&gt;
+          &lt;li&gt;https://blog.csdn.net/he_ranly/article/details/85092065&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;中间件的区别
+        &lt;ul&gt;
+          &lt;li&gt;https://www.jianshu.com/p/3a9a385b9483&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;scrapy部署
+    &lt;ul&gt;
+      &lt;li&gt;APscheduler
+        &lt;ul&gt;
+          &lt;li&gt;https://apscheduler.readthedocs.io/en/latest/&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;subprocess
+        &lt;ul&gt;
+          &lt;li&gt;https://www.runoob.com/w3cnote/python3-subprocess.html&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;APscheduler+scarpy
+        &lt;ul&gt;
+          &lt;li&gt;https://apscheduler.readthedocs.io/en/latest/userguide.html&lt;/li&gt;
+          &lt;li&gt;https://www.cnblogs.com/jdbc2nju/p/9563761.html&lt;/li&gt;
+          &lt;li&gt;https://www.jianshu.com/p/c37c46de3168&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Wed, 07 Apr 2021 10:50:00 +0800</pubDate>
+        <link>http://localhost:4000/2021/04/07/scrapy/</link>
+        <guid isPermaLink="true">http://localhost:4000/2021/04/07/scrapy/</guid>
+        
+        <category>编程</category>
+        
+        
+        <category>【工具使用】</category>
+        
+      </item>
+    
+      <item>
+        <title>Rxswift</title>
+        <description>
+</description>
+        <pubDate>Thu, 18 Mar 2021 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2021/03/18/RxSwift/</link>
+        <guid isPermaLink="true">http://localhost:4000/2021/03/18/RxSwift/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>记忆技术</title>
+        <description>&lt;h3 id=&quot;背景&quot;&gt;背景&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;记忆力还算不错&lt;/li&gt;
+  &lt;li&gt;记忆文字和数字速度有些慢&lt;/li&gt;
+  &lt;li&gt;急需提升的办法&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;解决方案&quot;&gt;解决方案&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;看到广告超级记忆课程
+    &lt;ul&gt;
+      &lt;li&gt;觉得理论还站的住&lt;/li&gt;
+      &lt;li&gt;有新方法可以试试
+        &lt;ul&gt;
+          &lt;li&gt;理论可行就是实践&lt;/li&gt;
+          &lt;li&gt;无非就是试错成本&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;学习方法
+    &lt;ul&gt;
+      &lt;li&gt;先看大概&lt;/li&gt;
+      &lt;li&gt;分段练习&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;理论基础&quot;&gt;理论基础&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;人的进化历程
+    &lt;ul&gt;
+      &lt;li&gt;视觉信息
+        &lt;ul&gt;
+          &lt;li&gt;大脑最擅长处理&lt;/li&gt;
+          &lt;li&gt;视觉生物都擅长&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;语言信息
+        &lt;ul&gt;
+          &lt;li&gt;随着语言诞生&lt;/li&gt;
+          &lt;li&gt;应该有几万年&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;文字信息
+        &lt;ul&gt;
+          &lt;li&gt;人类自创的符号系统&lt;/li&gt;
+          &lt;li&gt;大脑不擅长直接存储&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;数字信息
+        &lt;ul&gt;
+          &lt;li&gt;较为高级的抽象概念&lt;/li&gt;
+          &lt;li&gt;大脑也不擅长直接存储&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;信息处理的流程
+    &lt;ul&gt;
+      &lt;li&gt;获取信息
+        &lt;ul&gt;
+          &lt;li&gt;信息分类
+            &lt;ul&gt;
+              &lt;li&gt;图片&lt;/li&gt;
+              &lt;li&gt;声音&lt;/li&gt;
+              &lt;li&gt;文字&lt;/li&gt;
+              &lt;li&gt;数字&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;获取方式
+            &lt;ul&gt;
+              &lt;li&gt;看&lt;/li&gt;
+              &lt;li&gt;听&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;处理信息
+        &lt;ul&gt;
+          &lt;li&gt;化繁为简&lt;/li&gt;
+          &lt;li&gt;转换图片&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;存储信息
+        &lt;ul&gt;
+          &lt;li&gt;四大记忆方法
+            &lt;ul&gt;
+              &lt;li&gt;定位桩
+                &lt;ul&gt;
+                  &lt;li&gt;大脑图书馆&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+              &lt;li&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;提取信息
+        &lt;ul&gt;
+          &lt;li&gt;通过线索&lt;/li&gt;
+          &lt;li&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;自我的实践&quot;&gt;自我的实践&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;定位桩练习
+    &lt;ul&gt;
+      &lt;li&gt;先构建定位桩系统
+        &lt;ul&gt;
+          &lt;li&gt;看过的电影
+            &lt;ul&gt;
+              &lt;li&gt;哈尔的移动城堡&lt;/li&gt;
+              &lt;li&gt;天空之城&lt;/li&gt;
+              &lt;li&gt;⚠️
+                &lt;ul&gt;
+                  &lt;li&gt;一定要很熟悉&lt;/li&gt;
+                  &lt;li&gt;这些电影我都是看过十遍以上，剧情熟悉&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;走过的路
+            &lt;ul&gt;
+              &lt;li&gt;小学&lt;/li&gt;
+              &lt;li&gt;初中&lt;/li&gt;
+              &lt;li&gt;高中&lt;/li&gt;
+              &lt;li&gt;大学&lt;/li&gt;
+              &lt;li&gt;⚠️
+                &lt;ul&gt;
+                  &lt;li&gt;担心混淆了以前的记忆&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;未完待续&quot;&gt;未完待续………..&lt;/h3&gt;
+
+</description>
+        <pubDate>Sun, 21 Feb 2021 10:50:00 +0800</pubDate>
+        <link>http://localhost:4000/2021/02/21/%E8%AE%B0%E5%BF%86%E6%8A%80%E6%9C%AF/</link>
+        <guid isPermaLink="true">http://localhost:4000/2021/02/21/%E8%AE%B0%E5%BF%86%E6%8A%80%E6%9C%AF/</guid>
+        
+        <category>记忆</category>
+        
+        
+        <category>【基础能力】</category>
+        
+      </item>
+    
+      <item>
+        <title>Python图片处理到打包app</title>
+        <description>&lt;h3 id=&quot;需求介绍&quot;&gt;需求介绍&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;从网页上下载数据&lt;/li&gt;
+  &lt;li&gt;将数据根据模版生成图片&lt;/li&gt;
+  &lt;li&gt;最后打包成一个app&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;工具库&quot;&gt;工具库&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;拉取数据
+    &lt;ul&gt;
+      &lt;li&gt;requests&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;解析网页
+    &lt;ul&gt;
+      &lt;li&gt;BeautifulSoup4&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;图片处理
+    &lt;ul&gt;
+      &lt;li&gt;Pillow&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;打包app
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;table&gt;
+          &lt;tbody&gt;
+            &lt;tr&gt;
+              &lt;td&gt;py2app&lt;/td&gt;
+              &lt;td&gt;pyinstaller&lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;大致代码&quot;&gt;大致代码&lt;/h3&gt;
+</description>
+        <pubDate>Sun, 14 Feb 2021 10:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2021/02/14/Python%E5%9B%BE%E7%89%87%E5%A4%84%E7%90%86%E5%88%B0%E6%89%93%E5%8C%85app/</link>
+        <guid isPermaLink="true">http://localhost:4000/2021/02/14/Python%E5%9B%BE%E7%89%87%E5%A4%84%E7%90%86%E5%88%B0%E6%89%93%E5%8C%85app/</guid>
+        
+        <category>Python</category>
+        
+        
+        <category>【图片处理】</category>
+        
+      </item>
+    
+      <item>
+        <title>Mac游戏BombSquad</title>
+        <description>&lt;h3 id=&quot;很早之前玩过的游戏&quot;&gt;很早之前玩过的游戏&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;16年的时候玩过的游戏&lt;/li&gt;
+  &lt;li&gt;最近想起来找到了，玩的很逗。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;mac下载&quot;&gt;Mac下载&lt;/h4&gt;
+&lt;ol&gt;
+  &lt;li&gt;Mac上AppStore登录美国区账号&lt;/li&gt;
+  &lt;li&gt;Mac上AppStore搜索：Mac游戏BombSquad（主机）&lt;/li&gt;
+  &lt;li&gt;iPhone搜索BombSquad Remote (手柄), 安卓版本的手柄也用&lt;/li&gt;
+  &lt;li&gt;Mac和iPhone连接到相同的wifi&lt;/li&gt;
+  &lt;li&gt;打开Mac版本&lt;/li&gt;
+  &lt;li&gt;打开iPhone版本，就会显示了&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;然后&quot;&gt;然后&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;愉快的和家人玩耍吧&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Fri, 12 Feb 2021 10:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2021/02/12/%E6%B8%B8%E6%88%8FBombSquad/</link>
+        <guid isPermaLink="true">http://localhost:4000/2021/02/12/%E6%B8%B8%E6%88%8FBombSquad/</guid>
+        
+        <category>Golang</category>
+        
+        
+        <category>【游戏】</category>
+        
+      </item>
+    
+      <item>
+        <title>如何系统学习编程</title>
+        <description>&lt;h4 id=&quot;编程的本质&quot;&gt;编程的本质？&lt;/h4&gt;
+&lt;p&gt;这些年一直在思考编程的本质，从不同层次做一些分析：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;过程分类
+    &lt;ul&gt;
+      &lt;li&gt;你想干什么
+        &lt;ul&gt;
+          &lt;li&gt;清楚界定你想干什么&lt;/li&gt;
+          &lt;li&gt;知道自己的目的是最重要的&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;对事件发生过程的分解与重组
+        &lt;ul&gt;
+          &lt;li&gt;分解你做的事情&lt;/li&gt;
+          &lt;li&gt;明确知道每一步&lt;/li&gt;
+          &lt;li&gt;把各个步骤组合在一起&lt;/li&gt;
+          &lt;li&gt;以最高效的方式去做事&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;与电脑的对话
+        &lt;ul&gt;
+          &lt;li&gt;你要明白电脑能干什么&lt;/li&gt;
+          &lt;li&gt;你要会用电脑的语言&lt;/li&gt;
+          &lt;li&gt;你要知道如何组织语言&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;传统分类
+    &lt;ul&gt;
+      &lt;li&gt;数据结构
+        &lt;ul&gt;
+          &lt;li&gt;数据的组织形式&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;算法
+        &lt;ul&gt;
+          &lt;li&gt;数据流动的过程&lt;/li&gt;
+          &lt;li&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;学习编程的指导思想&quot;&gt;学习编程的指导思想&lt;/h4&gt;
+
+&lt;p&gt;A. 实践第一&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;编程有很强的实操性&lt;/li&gt;
+  &lt;li&gt;结果快速反馈&lt;/li&gt;
+  &lt;li&gt;先写出一定量的程序再谈其他
+B. 精通其一&lt;/li&gt;
+  &lt;li&gt;先深入学习一门语言&lt;/li&gt;
+  &lt;li&gt;熟练使用一套工具链&lt;/li&gt;
+  &lt;li&gt;根据需求研究专门领域
+C. 分层学习&lt;/li&gt;
+  &lt;li&gt;根据现有的段位去深入升级
+    &lt;ol&gt;
+      &lt;li&gt;抄程序可以跑&lt;/li&gt;
+      &lt;li&gt;独立实现简单程序&lt;/li&gt;
+      &lt;li&gt;合作开发完善的系统&lt;/li&gt;
+      &lt;li&gt;开发高性能的系统&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;根据不同阶段的能力向下深入如下方面
+    &lt;ol&gt;
+      &lt;li&gt;编程语言&lt;/li&gt;
+      &lt;li&gt;操作系统&lt;/li&gt;
+      &lt;li&gt;网络&lt;/li&gt;
+      &lt;li&gt;领域特征&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;可以采取的具体过程&quot;&gt;可以采取的具体过程&lt;/h4&gt;
+
+&lt;p&gt;– 未完待续
+– 0x0361c51f5ad9482c69ad34a1b73719f8c9568bd6&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 26 Jan 2021 10:50:00 +0800</pubDate>
+        <link>http://localhost:4000/2021/01/26/%E5%A6%82%E4%BD%95%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0%E7%BC%96%E7%A8%8B/</link>
+        <guid isPermaLink="true">http://localhost:4000/2021/01/26/%E5%A6%82%E4%BD%95%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0%E7%BC%96%E7%A8%8B/</guid>
+        
+        
+        <category>【基础能力】</category>
+        
+      </item>
     
       <item>
         <title>Golang</title>
@@ -126,638 +805,6 @@
         
         
         <category>【非对称加密】</category>
-        
-      </item>
-    
-      <item>
-        <title>算法指南</title>
-        <description>&lt;h3 id=&quot;算法类型&quot;&gt;算法类型&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://blog.csdn.net/qq_38918259/article/details/80480194&quot;&gt;重要的几个算法&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://kb.cnblogs.com/page/210687/&quot;&gt;10大基础算法-1&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://blog.csdn.net/zkl99999/article/details/51093174&quot;&gt;10大基础算法-2&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;压缩算法&quot;&gt;&lt;a href=&quot;https://baike.baidu.com/item/%E5%8E%8B%E7%BC%A9%E7%AE%97%E6%B3%95/2762648?fr=aladdin&quot;&gt;压缩算法&lt;/a&gt;&lt;/h3&gt;
-
-&lt;h4 id=&quot;工具&quot;&gt;工具&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/alexcrichton/rust-compress&quot;&gt;压缩算法-Rust&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/richox/orz&quot;&gt;压缩工具&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://blog.csdn.net/pansaky/article/details/90641343&quot;&gt;ZIP压缩算法原理解析&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;思想&quot;&gt;思想&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://blog.csdn.net/qq_38607741/article/details/78555330&quot;&gt;最基本5种算法思想&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-</description>
-        <pubDate>Mon, 18 Nov 2019 10:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/11/18/%E7%AE%97%E6%B3%95/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/11/18/%E7%AE%97%E6%B3%95/</guid>
-        
-        <category>【算法】</category>
-        
-        
-        <category>【编程常识】</category>
-        
-      </item>
-    
-      <item>
-        <title>Libra结构</title>
-        <description>&lt;h3 id=&quot;文件结构&quot;&gt;文件结构&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;admission_control
-    &lt;ul&gt;
-      &lt;li&gt;Libra的公共API接口，它用于接收来自客户端的公共gRPC请求&lt;/li&gt;
-      &lt;li&gt;准入控制（AC）处理于来自客户的两种类型的请求
-        &lt;ul&gt;
-          &lt;li&gt;
-            &lt;ol&gt;
-              &lt;li&gt;提交交易: 向关联的验证器提交交易
-                &lt;ul&gt;
-                  &lt;li&gt;验证过程&lt;/li&gt;
-                &lt;/ul&gt;
-                &lt;ul&gt;
-                  &lt;li&gt;首先检查交易签名&lt;/li&gt;
-                  &lt;li&gt;然后由vm_validator验证交易&lt;/li&gt;
-                  &lt;li&gt;✅ 通过所有验证
-                    &lt;ul&gt;
-                      &lt;li&gt;发送到内存池
-                        &lt;ul&gt;
-                          &lt;li&gt;提交成功&lt;/li&gt;
-                          &lt;li&gt;提交失败&lt;/li&gt;
-                        &lt;/ul&gt;
-                      &lt;/li&gt;
-                    &lt;/ul&gt;
-                  &lt;/li&gt;
-                &lt;/ul&gt;
-              &lt;/li&gt;
-            &lt;/ol&gt;
-          &lt;/li&gt;
-          &lt;li&gt;
-            &lt;ol&gt;
-              &lt;li&gt;更新最新分布式账本 - 查询存储，例如帐户状态，交易日志，验证等
-                &lt;ul&gt;
-                  &lt;li&gt;请求将直接传递到存储进行查询&lt;/li&gt;
-                &lt;/ul&gt;
-              &lt;/li&gt;
-            &lt;/ol&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;benchmark
-    &lt;ul&gt;
-      &lt;li&gt;Libra的公共API接口，它用于接收来自客户端的公共gRPC请求&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;client
-    &lt;ul&gt;
-      &lt;li&gt;RPC客户端上的Rust的封装&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;common&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;config&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;consensus
-    &lt;ul&gt;
-      &lt;li&gt;共识协议组件使用LibraBFT共识协议进行状态机复制。&lt;/li&gt;
-      &lt;li&gt;共识组件主要在 Actor 程序模块中实现
-        &lt;ul&gt;
-          &lt;li&gt;使用消息传递在不同的子组件之间进行通信&lt;/li&gt;
-          &lt;li&gt;tokio 框架用作任务运行时&lt;/li&gt;
-          &lt;li&gt;共识数据结构 BlockStore
-            &lt;ul&gt;
-              &lt;li&gt;TxnManager 是内存池组件的接口，支持拉取交易以及删除已提交的交易。&lt;/li&gt;
-              &lt;li&gt;StateComputer 是访问执行组件的接口。&lt;/li&gt;
-              &lt;li&gt;BlockStore 维护提议块树，块执行，投票，仲裁证书和持久存储。&lt;/li&gt;
-              &lt;li&gt;EventProcessor 负责处理各个事件。&lt;/li&gt;
-              &lt;li&gt;Pacemaker 负责共识协议的活跃性。&lt;/li&gt;
-              &lt;li&gt;SafetyRules 负责共识协议的安全性。&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;所有共识消息都由其创建者签名，并由其接收者验证。&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;contributing&lt;/li&gt;
-  &lt;li&gt;crypto
-    &lt;ul&gt;
-      &lt;li&gt;加密组件承载我们在Libra中使用的关于加密所有实现：散列，签名和密钥派生/生成。&lt;/li&gt;
-      &lt;li&gt;Libra 使用几种密码算法:
-        &lt;ul&gt;
-          &lt;li&gt;SHA-3 作为主要的哈希函数。&lt;/li&gt;
-          &lt;li&gt;X25519 用于密钥交换。&lt;/li&gt;
-          &lt;li&gt;Ed25519 用于签名。&lt;/li&gt;
-          &lt;li&gt;HKDF: 基于HMAC的Extract-and-Expand密钥衍生函数（HKDF），基于 RFC 5869。&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;docker&lt;/li&gt;
-  &lt;li&gt;documentation&lt;/li&gt;
-  &lt;li&gt;executor
-    &lt;ul&gt;
-      &lt;li&gt;执行组件的主要实现&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;language
-    &lt;ul&gt;
-      &lt;li&gt;vm
-        &lt;ul&gt;
-          &lt;li&gt;虚拟机 (VM), 它包含字节码格式、字节码解释器和执行交易块的基础设施。&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;bytecode_verifier
-        &lt;ul&gt;
-          &lt;li&gt;字节码验证器, 其中包含一个静态分析工具，用于拒绝无效的Move字节码。&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;IR： intermediate representation
-        &lt;ul&gt;
-          &lt;li&gt;Move中间层表示编译器, 它将可读的程序文本编译成Move字节码.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;stdlib
-        &lt;ul&gt;
-          &lt;li&gt;标准库, 其中包含 LibraAccount 和 LibraCoin 等核心系统模块的Move IR代码。&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;functional_tests
-        &lt;ul&gt;
-          &lt;li&gt;一些测试 ，用于虚拟机，字节码验证程序和编译器。&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;compiler
-        &lt;ul&gt;
-          &lt;li&gt;Move IR编译器将Move IR编译为其字节码表示形式。&lt;/li&gt;
-          &lt;li&gt;bytecode verifier: 验证编译后的字节码的语义。&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;libra-node&lt;/li&gt;
-  &lt;li&gt;libra-swarm&lt;/li&gt;
-  &lt;li&gt;mempool
-    &lt;ul&gt;
-      &lt;li&gt;准入控制（AC）模块将交易发送到内存池(Mempool)&lt;/li&gt;
-      &lt;li&gt;在共识模块提交之前，内存池将会把交易保留一段时间&lt;/li&gt;
-      &lt;li&gt;共识模块从内存池获取交易，内存池不会将交易推向共识&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;network
-    &lt;ul&gt;
-      &lt;li&gt;网络组件向验证器的其他组件提供点对点网络服务。
-        &lt;ul&gt;
-          &lt;li&gt;RPC, 用于远程过程调用&lt;/li&gt;
-          &lt;li&gt;DirectSend, 用于向单个接收方发送“即发即忘”样式的消息&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;网络组件使用
-        &lt;ul&gt;
-          &lt;li&gt;Multiaddr ：用于对等寻址的方案。&lt;/li&gt;
-          &lt;li&gt;TCP ：用于可靠传输。&lt;/li&gt;
-          &lt;li&gt;Noise ：用于身份验证和点对点加密。&lt;/li&gt;
-          &lt;li&gt;Yamux ：在单个链接上多路复用子流（substreams）。&lt;/li&gt;
-          &lt;li&gt;推送类型的 gossip ：用于对节点发现。&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;网络组件中的不同子组件:
-        &lt;ul&gt;
-          &lt;li&gt;NetworkProvider
-            &lt;ul&gt;
-              &lt;li&gt;向客户端公开网络API。&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;Peer Manager 
-  — 侦听入链接及主动连接网络上的其他对等节点。&lt;/li&gt;
-          &lt;li&gt;Connectivity Manager
-            &lt;ul&gt;
-              &lt;li&gt;当且仅当它是符合条件的网络成员时，才能确保我们保持与节点的连接。&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;Discovery
-  — 使用推送式来发现新的节点并更新现有节点的地址。&lt;/li&gt;
-          &lt;li&gt;Health Checker 
-  — 执行定期活动探测以确保对等/连接的健康状况。&lt;/li&gt;
-          &lt;li&gt;Direct Send 
-  — 允许向/从远程对等节点发送/接收消息。&lt;/li&gt;
-          &lt;li&gt;RPC 
-  — 允许向/从其他对等节点发送/接收RPC。&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;rust-toolchain&lt;/li&gt;
-  &lt;li&gt;scripts&lt;/li&gt;
-  &lt;li&gt;state-synchronizer&lt;/li&gt;
-  &lt;li&gt;storage
-    &lt;ul&gt;
-      &lt;li&gt;存储模块为Libra区块链上的所有数据集以及Libra Core内部使用的必要数据提供可靠和高效的持久存储。&lt;/li&gt;
-      &lt;li&gt;存储模块目的:
-        &lt;ul&gt;
-          &lt;li&gt;
-            &lt;ol&gt;
-              &lt;li&gt;保留区块链数据，特别是验证方通过共识协议达成一致的交易及其输出。&lt;/li&gt;
-            &lt;/ol&gt;
-          &lt;/li&gt;
-          &lt;li&gt;
-            &lt;ol&gt;
-              &lt;li&gt;为任何查询提供一个带有Merkle证明的响应，该查询要求部分区块链数据。&lt;/li&gt;
-            &lt;/ol&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;target&lt;/li&gt;
-  &lt;li&gt;terraform&lt;/li&gt;
-  &lt;li&gt;testsuite&lt;/li&gt;
-  &lt;li&gt;types&lt;/li&gt;
-  &lt;li&gt;vm-validator&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Mon, 11 Nov 2019 12:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/11/11/Libra-%E7%BB%93%E6%9E%84/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/11/11/Libra-%E7%BB%93%E6%9E%84/</guid>
-        
-        <category>【Libra】</category>
-        
-        
-        <category>【区块链】</category>
-        
-      </item>
-    
-      <item>
-        <title>Rust标准库</title>
-        <description>&lt;blockquote&gt;
-  &lt;p&gt;&lt;a href=&quot;https://doc.rust-lang.org/std/&quot;&gt;参考一&lt;/a&gt;
-&lt;a href=&quot;https://blog.csdn.net/bbdxf/article/details/87890128&quot;&gt;参考二&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-</description>
-        <pubDate>Wed, 06 Nov 2019 12:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/11/06/Rust%E6%A0%87%E5%87%86%E5%BA%93/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/11/06/Rust%E6%A0%87%E5%87%86%E5%BA%93/</guid>
-        
-        <category>【Rust】</category>
-        
-        
-        <category>【编程语言】</category>
-        
-      </item>
-    
-      <item>
-        <title>椭圆曲线加解密算法</title>
-        <description>&lt;h3 id=&quot;参考资料&quot;&gt;参考资料&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.jianshu.com/p/e41bc1eb1d81&quot;&gt;数学原理&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;名称解释&quot;&gt;名称解释&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;椭圆曲线加密算法，即: Elliptic Curve Cryptography，简称ECC
-    &lt;ul&gt;
-      &lt;li&gt;基于椭圆曲线数学理论实现的一种非对称加密算法。&lt;/li&gt;
-      &lt;li&gt;椭圆曲线在密码学中的使用，是1985年由Neal Koblitz和Victor Miller分别独立提出的。&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;椭圆曲线签名算法，即: ECDSA&lt;/li&gt;
-&lt;/ul&gt;
-
-</description>
-        <pubDate>Fri, 01 Nov 2019 10:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/11/01/%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF%E5%8A%A0%E5%AF%86/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/11/01/%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF%E5%8A%A0%E5%AF%86/</guid>
-        
-        <category>【工具】</category>
-        
-        
-        <category>【密码学】</category>
-        
-      </item>
-    
-      <item>
-        <title>正则表达式</title>
-        <description>&lt;blockquote&gt;
-  &lt;p&gt;&lt;a href=&quot;https://www.runoob.com/regexp/regexp-intro.html&quot;&gt;参考文档1&lt;/a&gt;&lt;/p&gt;
-
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;本文解决四个问题&quot;&gt;本文解决四个问题&lt;/h3&gt;
-&lt;ol&gt;
-  &lt;li&gt;正则表达式能够干什么?&lt;/li&gt;
-  &lt;li&gt;正则表达式怎么用?&lt;/li&gt;
-  &lt;li&gt;有哪些常用的正则实际例子?&lt;/li&gt;
-  &lt;li&gt;正则在Python、Swift、Kotlin中的使用方法?&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;正则表达式能够干什么&quot;&gt;正则表达式能够干什么?&lt;/h3&gt;
-&lt;ol&gt;
-  &lt;li&gt;数据验证
-    &lt;ul&gt;
-      &lt;li&gt;字符串是否具有固定的格式&lt;/li&gt;
-      &lt;li&gt;例如: 身份证号、手机号、邮箱、信用卡、BTC地址等&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;文本替换
-    &lt;ul&gt;
-      &lt;li&gt;识别出字符串内的特定文本, 删除或替换这些文本.&lt;/li&gt;
-      &lt;li&gt;例如: 将html中的标签全部去除&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;提取子字符串
-    &lt;ul&gt;
-      &lt;li&gt;识别出符合特定文本, 并提取出来&lt;/li&gt;
-      &lt;li&gt;获取网页中的所有URL、手机号、邮箱&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;正则表达式怎么用&quot;&gt;正则表达式怎么用?&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;字符类型
-    &lt;ul&gt;
-      &lt;li&gt;普通字符
-        &lt;ul&gt;
-          &lt;li&gt;非打印字符&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;特殊字符
-        &lt;ul&gt;
-          &lt;li&gt;特殊
-            &lt;ul&gt;
-              &lt;li&gt;() 标记一个子表达式的开始和结束位置。子表达式可以获取供以后使用。要匹配这些字符，请使用 ( 和 )。&lt;/li&gt;
-              &lt;li&gt;. 匹配除换行符 \n 之外的任何单字符。要匹配 . ，请使用 . 。&lt;/li&gt;
-              &lt;li&gt;[ 标记一个中括号表达式的开始。要匹配 [，请使用 [。&lt;/li&gt;
-              &lt;li&gt;\ 将下一个字符标记为或特殊字符、或原义字符、或向后引用、或八进制转义符。&lt;/li&gt;
-              &lt;li&gt;|	指明两项之间的一个选择。要匹配 |，请使用 \ |。&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;限定符
-            &lt;ul&gt;
-              &lt;li&gt;含义: 指定正则表达式的一个给定组件必须要出现多少次才能满足匹配&lt;/li&gt;
-              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;*&lt;/code&gt; 匹配前面的子表达式零次或多次。&lt;/li&gt;
-              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;+&lt;/code&gt; 匹配前面的子表达式一次或多次。&lt;/li&gt;
-              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;?&lt;/code&gt; 匹配前面的子表达式零次或一次。&lt;/li&gt;
-              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;{n}&lt;/code&gt; n是一个非负整数。匹配确定的 n 次。&lt;/li&gt;
-              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;{n,}&lt;/code&gt; n是一个非负整数。至少匹配n 次。&lt;/li&gt;
-              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;{n,m}&lt;/code&gt; m和n均为非负整数，其中n &amp;lt;= m。最少匹配 n 次且最多匹配 m 次。&lt;/li&gt;
-              &lt;li&gt;⚠️ &lt;code class=&quot;highlighter-rouge&quot;&gt;*、+&lt;/code&gt; 限定符都是贪婪的, 在它们的后面加上一个?就可以实现非贪婪或最小匹配。&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;定位符
-            &lt;ul&gt;
-              &lt;li&gt;含义: 定位符使您能够将正则表达式固定到行首或行尾。&lt;/li&gt;
-              &lt;li&gt;^ 匹配输入字符串开始的位置。&lt;/li&gt;
-              &lt;li&gt;$ 匹配输入字符串结尾的位置。&lt;/li&gt;
-              &lt;li&gt;\b 匹配一个单词边界，即字与空格间的位置。&lt;/li&gt;
-              &lt;li&gt;\B 非单词边界匹配。&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;运算符优先级
-    &lt;ul&gt;
-      &lt;li&gt;\	转义符&lt;/li&gt;
-      &lt;li&gt;(), (?:), (?=), []			圆括号和方括号&lt;/li&gt;
-      &lt;li&gt;*, +, ?, {n}, {n,}, {n,m}	  	限定符&lt;/li&gt;
-      &lt;li&gt;^, $, \任何元字符、任何字符    	定位点和序列&lt;/li&gt;
-      &lt;li&gt;|								替换，”或”操作&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;规则
-    &lt;ul&gt;
-      &lt;li&gt;基本模式匹配
-        &lt;ul&gt;
-          &lt;li&gt;^ $&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;字符簇
-        &lt;ul&gt;
-          &lt;li&gt;[[:alpha:]]	任何字母&lt;/li&gt;
-          &lt;li&gt;[[:digit:]]	任何数字&lt;/li&gt;
-          &lt;li&gt;[[:alnum:]]	任何字母和数字&lt;/li&gt;
-          &lt;li&gt;[[:space:]]	任何空白字符&lt;/li&gt;
-          &lt;li&gt;[[:upper:]]	任何大写字母&lt;/li&gt;
-          &lt;li&gt;[[:lower:]]	任何小写字母&lt;/li&gt;
-          &lt;li&gt;[[:punct:]]	任何标点符号&lt;/li&gt;
-          &lt;li&gt;[[:xdigit:]]	任何16进制的数字，相当于[0-9a-fA-F]&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;确定重复出现
-        &lt;ul&gt;
-          &lt;li&gt;特殊字符 * 与 {0,} 是相等的，它们都代表着 0 个或多个前面的内容 。&lt;/li&gt;
-          &lt;li&gt;所有包含一个以上的字母、数字或下划线的字符串
-            &lt;ul&gt;
-              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;^[a-zA-Z0-9_]{1,}$&lt;/code&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;所有的正整数
-            &lt;ul&gt;
-              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;^[1-9][0-9]{0,}$&lt;/code&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;所有的整数
-            &lt;ul&gt;
-              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;^\-{0,1}[0-9]{1,}$&lt;/code&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;所有的浮点数
-            &lt;ul&gt;
-              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;^[-]?[0-9]+\.?[0-9]+$&lt;/code&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;3-有哪些常用的正则实际例子&quot;&gt;3. 有哪些常用的正则实际例子?&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;匹配双字节汉字:
-    &lt;ul&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;[^u4e00-u9fa5]&lt;/code&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;匹配中文字符
-    &lt;ul&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;[u4e00-u9fa5]&lt;/code&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;匹配HTML标记:
-    &lt;ul&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;(S*?)[^&amp;gt;]*&amp;gt;.*?|&amp;lt;.*? /&amp;gt;&lt;/code&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;匹配HTML标签:
-    &lt;ul&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;/?[a-zA-Z]+[^&amp;gt;&amp;lt;]*&amp;gt;&lt;/code&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;匹配空白行:
-    &lt;ul&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ns*r&lt;/code&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;匹配首尾空白字符
-    &lt;ul&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;^s*|s*$&lt;/code&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;匹配Email地址
-    &lt;ul&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;w+([-+.]w+)*@w+([-.]w+)*.w+([-.]w+)*&lt;/code&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;匹配网址URL的正则表达式：
-    &lt;ul&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;http://([w-]+.)+[w-]+(/[w- ./?%&amp;amp;=]*)?&lt;/code&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;匹配国内电话号码：
-    &lt;ul&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;[0-9]{3}-[0-9]{8}|[0-9]{4}-[0-9]{7}&lt;/code&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;匹配ip地址：
-    &lt;ul&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;[1-2]?[0-9]{1,2}.[1-2]?[0-9]{1,2}.[1-2]?[0-9]{1,2}.[1-2]?[0-9]{1,2}&lt;/code&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;匹配26个英文字母字符串
-    &lt;ul&gt;
-      &lt;li&gt;^[A-Za-z]+$　&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;验证一年的12个月
-    &lt;ul&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;^(0?[1-9]|1[0-2])$&lt;/code&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;验证一个月的31天：
-    &lt;ul&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;^((0?[1-9])|((1|2)[0-9])|30|31)$&lt;/code&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;4-pythonswiftkotlin中的使用&quot;&gt;4. Python、Swift、Kotlin中的使用&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Python:
-    &lt;blockquote&gt;
-      &lt;p&gt;import re&lt;/p&gt;
-
-      &lt;p&gt;re.match( r’&amp;lt;/?[a-zA-Z]+[^&amp;gt;&amp;lt;]*&amp;gt;’, line, re.M | re.I)&lt;/p&gt;
-
-      &lt;p&gt;re.findall(“&amp;lt;/?[a-zA-Z]+[^&amp;gt;&amp;lt;]*&amp;gt;”, “123444-1222”)&lt;/p&gt;
-
-      &lt;p&gt;re.compile(“&amp;lt;/?[a-zA-Z]+[^&amp;gt;&amp;lt;]*&amp;gt;”).sub(‘replace string’, “origin string”)&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Kotlin:
-    &lt;blockquote&gt;
-      &lt;p&gt;Regex(“&amp;lt;/?[a-zA-Z]+[^&amp;gt;&amp;lt;]*&amp;gt;”).matches(“string”)&lt;/p&gt;
-
-      &lt;p&gt;Regex(“&amp;lt;/?[a-zA-Z]+[^&amp;gt;&amp;lt;]*&amp;gt;”).findAll(“&amp;lt;p&amp;gt;&amp;lt;/p&amp;gt;”)&lt;/p&gt;
-
-      &lt;p&gt;Regex(“&amp;lt;/?[a-zA-Z]+[^&amp;gt;&amp;lt;]*&amp;gt;”).replace(“new string”, “replace string”)&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Swift:
-    &lt;blockquote&gt;
-      &lt;p&gt;var string = “origin string”&lt;/p&gt;
-
-      &lt;p&gt;let pattern = “&amp;lt;/?[a-zA-Z]+[^&amp;gt;&amp;lt;]*&amp;gt;”&lt;/p&gt;
-
-      &lt;p&gt;let regex = try? NSRegularExpression(pattern: pattern, options: [])&lt;/p&gt;
-
-      &lt;p&gt;if let results = regex?.matches(in: acount, options: [], range: NSRange(location: 0, length: acount.count)), results.count != 0 {&lt;/p&gt;
-
-      &lt;p&gt;  for result in results{&lt;/p&gt;
-
-      &lt;p&gt;     let string = (acount as NSString).substring(with: result.range)&lt;/p&gt;
-
-      &lt;p&gt;   }&lt;/p&gt;
-
-      &lt;p&gt;}&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;正则不难很有用, 能积累点最好.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-</description>
-        <pubDate>Wed, 30 Oct 2019 10:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/10/30/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/10/30/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</guid>
-        
-        <category>【工具】</category>
-        
-        
-        <category>【编程常识】</category>
-        
-      </item>
-    
-      <item>
-        <title>深入理解操作系统2</title>
-        <description>&lt;ol&gt;
-  &lt;li&gt;进制转换
-    &lt;ul&gt;
-      &lt;li&gt;2进制 🏁&lt;/li&gt;
-      &lt;li&gt;8进制 🏁&lt;/li&gt;
-      &lt;li&gt;10进制 🏁&lt;/li&gt;
-      &lt;li&gt;12进制&lt;/li&gt;
-      &lt;li&gt;16进制 🏁&lt;/li&gt;
-      &lt;li&gt;20进制&lt;/li&gt;
-      &lt;li&gt;60进制&lt;/li&gt;
-      &lt;li&gt;100进制&lt;/li&gt;
-      &lt;li&gt;365进制&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-</description>
-        <pubDate>Sun, 20 Oct 2019 10:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/10/20/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F2/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/10/20/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F2/</guid>
-        
-        <category>【读书】</category>
-        
-        
-        <category>【操作系统】</category>
-        
-      </item>
-    
-      <item>
-        <title>深入理解操作系统1</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/images/2019-10-19-深入理解操作系统.jpg&quot; alt=&quot;深入理解操作系统&quot; /&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Sat, 19 Oct 2019 10:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/10/19/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F1/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/10/19/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F1/</guid>
-        
-        <category>【读书】</category>
-        
-        
-        <category>【操作系统】</category>
         
       </item>
     

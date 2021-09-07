@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Scrapy使用教程 - 人码合一</title>
+
+	<link rel="shortcut icon" href="/styles/images/favicon.png">
+	<link rel="icon" href="/styles/images/favicon.png">
+
+	<link rel="stylesheet" href="/styles/css/index.css">
+	<link rel="stylesheet" href="/styles/css/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/styles/css/syntax.css">
+	<link rel="canonical" href="/2021/04/07/scrapy/">
+	<link rel="alternate" type="application/rss+xml" title="人码合一" href="/feed.xml">
+	
+	<meta name="keywords" content="Scrapy使用教程, 人码合一, hwh">
+	<meta name="description" content="hwh">
+
+	<script src="/styles/js/jquery.min.js"></script>
+	<!--[if lt IE 9]>
+    	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  	<![endif]-->
+  	<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "//hm.baidu.com/hm.js?624f97ab37fd73fbedc7929427ca95ea";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+  	<style type="text/css">
+	  	.docs-content{
+	  		margin-bottom: 10px;
+	  	}
+  	</style>
+</head>
+
+  <body class="index">
+
+    <header class="navbar navbar-inverse navbar-fixed-top docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand">
+        <img src="/styles/images/logo.png">
+      </a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">    
+        <li>
+          <a href="/">主页</a>
+        </li>
+        <li>
+          <a href="/categories/">分类</a>
+        </li>
+        <li>
+          <a href="/tag">索引</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+            <a><span id="busuanzi_container_site_pv">总访问量<span id="busuanzi_value_site_pv"></span>次</span></a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">关于<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a rel="nofollow" target="_blank" href="https://github.com/louishwh/">Github</a></li>
+            <li><a rel="nofollow" target="_blank" href="">关于作者</a></li>
+            <li><a rel="nofollow" href="/books">我的书单</a></li>
+            <li class="divider"></li>
+            <li><a rel="nofollow" target="_blank" href="https://github.com/luoyan35714/LessOrMore.git">本项目</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+    <div class="docs-header" id="content">
+  <div class="container">
+  	
+  		<!--
+		    <h1>Scrapy使用教程</h1>
+		    <p>Post on Apr 07, 2021 by <a href="/about">louis han</a></p>
+		-->
+		    <h1>实事求是</h1>
+    
+  </div>
+</div>
+    
+      
+<div class="banner">
+  <div class="container">
+  	
+    	<a href="/categories/#【工具使用】-ref">【工具使用】</a>	/
+    	<a href="/tag/#编程-ref">编程</a>
+    
+  </div>
+</div>
+
+    
+
+    <div class="container docs-container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="sidebar hidden-print" role="complementary">
+        <div id="navigation">
+  <h1>目录</h1>
+  <ul class="nav sidenav">
+  </ul>
+  <div style="height: 200px;width: 200px;">
+    <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async"> 
+    </script>
+  </div>
+</div>
+
+ 
+      </div>
+    </div>
+    <div class="col-md-9" role="main">
+      <div class="panel docs-content">
+        <div class="wrapper">
+            <header class="post-header">
+              <h1 class="post-title">Scrapy使用教程</h1>
+              <!--
+                <p class="post-meta">Apr 7, 2021</p>
+              -->
+              <div class="meta">发布时间 <span class="postdate">2021-04-07</span>  <a target="_blank" href="http://localhost:4000">louis han</a></div>
+              <br />
+            </header>
+            <article class="post-content">
+              <h2 id="执行过程">执行过程</h2>
+<ul>
+  <li>逻辑过程
+    <pre><code class="language-mermaid">  graph LR
+  A[URL]--&gt;B[Request]
+  B[Request]--&gt;C[Response]
+  C[Response]--&gt;D[Item]
+  D[Item]--&gt;E[More]
+</code></pre>
+  </li>
+  <li>代码执行过程: 我代码中用到的地方
+    <pre><code class="language-mermaid">  graph LR
+  A[Spider.start_requests]--&gt;B[Middleware.process_request]
+  B[Middleware.process_request]--&gt;C[Spider.parse]
+  C[Spider.parse]--&gt;D[Pipeline.process_item]
+  D[Pipeline.process_item]--&gt;E[MySQL]
+</code></pre>
+  </li>
+</ul>
+
+<h2 id="问提的与解决">问提的与解决</h2>
+
+<ol>
+  <li>start_urls只能配置一个数组，如果我想动态配置爬取的源头怎么办？</li>
+</ol>
+
+<ul>
+  <li>重写 Spider 的 start_requests 函数，在里面设置请求</li>
+</ul>
+
+<ol>
+  <li>如果我通过请求结果，发起新的请求怎么写？</li>
+</ol>
+
+<ul>
+  <li>直接在结果里面通过 yield发起请求</li>
+</ul>
+
+<ol>
+  <li>如果我通过请求结果发起新的请求，怎么处理新的响应结果？
+    <ul>
+      <li>
+        <p>在Spider里新增需要的处理的函数，配置 response 参数即可。</p>
+
+        <ul>
+          <li>
+            <p><code class="highlighter-rouge">yield scrapy.Request(next_page, callback=self.parse_new)</code></p>
+          </li>
+          <li>
+            <p><code class="highlighter-rouge">def parse_new(self, response, **kwargs)</code></p>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>如何把发起请求时候的参数传递到响应结果？
+    <ul>
+      <li>通过 Request 的 meta 参数，传输一个字典过去。</li>
+      <li>通过 response.meta 拿到你存入的值。</li>
+    </ul>
+  </li>
+  <li>如何给Spdier配置特点的中间件(middleware)、管道(pipelines)？
+    <ul>
+      <li>custom_settings
+        <ul>
+          <li>ITEM_PIPELINES</li>
+          <li>SPIDER_MIDDLEWARES</li>
+          <li>DOWNLOADER_MIDDLEWARES</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>对于一些异步加载的页面怎么处理？
+    <ul>
+      <li>
+        <h5 id="方案一splash">方案一：splash</h5>
+        <ul>
+          <li>docker 启动一个 Splash 代理服务：
+            <ul>
+              <li><code class="highlighter-rouge">docker run -it -p 8050:8050 --rm scrapinghub/splash</code></li>
+            </ul>
+          </li>
+          <li>settings 配置：
+            <ul>
+              <li>
+                <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  SPLASH_URL = 'http://host:port'
+  DUPEFILTER_CLASS = 'scrapy_splash.SplashAwareDupeFilter'	
+  HTTPCACHE_STORAGE = 'scrapy_splash.SplashAwareFSCacheStorage'
+ 		SPIDER_MIDDLEWARES = {
+   		'scrapy_splash.SplashDeduplicateArgsMiddleware': 100,
+}	
+DOWNLOADER_MIDDLEWARES = {  
+   		'scrapy_splash.SplashCookiesMiddleware': 723,
+   		'scrapy_splash.SplashMiddleware': 725,
+   		'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware': 810
+}
+</code></pre></div>                </div>
+              </li>
+            </ul>
+          </li>
+          <li>python 导入依赖
+  <code class="highlighter-rouge">pip3 install scrapy-splash</code></li>
+          <li>Spider 中引入
+  <code class="highlighter-rouge">from scrapy_splash import SplashRequest</code></li>
+          <li>请求替换
+            <ul>
+              <li>从：<code class="highlighter-rouge">scrapy.Request(stock_url, self.parse, meta=params, dont_filter=True)</code></li>
+              <li>到：<code class="highlighter-rouge">SplashRequest(url, self.parse, meta=params, args={'wait': 0.5})</code></li>
+            </ul>
+          </li>
+          <li>parse正常解析结果即可</li>
+        </ul>
+      </li>
+      <li>
+        <h5 id="方案二selenium">方案二：selenium</h5>
+        <ul>
+          <li>python 导入依赖
+            <ul>
+              <li><code class="highlighter-rouge">pip3 install selenium</code></li>
+            </ul>
+          </li>
+          <li>配置 custom_settings：
+            <ul>
+              <li><code class="highlighter-rouge">
+ 		'DOWNLOADER_MIDDLEWARES': {
+  	'ht_msg.middlewares.SeleniumDownloadMiddleware': 500
+  	}
+  	</code></li>
+            </ul>
+          </li>
+          <li>创建中间件
+            <ul>
+              <li>```
+  from selenium.webdriver.chrome.options import Options
+  from selenium import webdriver
+  from scrapy.http import HtmlResponse</li>
+            </ul>
+
+            <p>class SeleniumDownloadMiddleware(object):
+  	  def <strong>init</strong>(self):
+     	chrome_options = Options()
+     	chrome_options.add_argument(‘–headless’)
+     	chrome_options.add_argument(‘–disable-gpu’)
+     	chrome_options.add_argument(“window-size=1024,768”)
+     	chrome_options.add_argument(“–no-sandbox”)
+     	self.driver = webdriver.Chrome(chrome_options=chrome_options)</p>
+          </li>
+        </ul>
+
+  	  def process_request(self, request, spider):
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>     	self.driver.get(request.url)
+     	time.sleep(12)
+     	source = self.driver.page_source
+     	url = self.driver.current_url
+     	return HtmlResponse(url=url, body=source, request=request, encoding="utf-8")
+	```
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="未完待续">未完待续…..</h3>
+
+<h3 id="参考的文件">参考的文件</h3>
+
+<ul>
+  <li>scrapy:
+    <ul>
+      <li>文档
+        <ul>
+          <li>https://doc.scrapy.org/en/latest/topics/request-response.html#response-objects</li>
+        </ul>
+      </li>
+      <li>教程
+        <ul>
+          <li>https://geek-docs.com/scrapy/scrapy-tutorials/scrapy-css-grammar.html</li>
+          <li>https://www.jianshu.com/p/df9c0d1e9087</li>
+        </ul>
+      </li>
+      <li>多种方案：爬取动态JS
+        <ul>
+          <li>https://zhuanlan.zhihu.com/p/130867872</li>
+        </ul>
+      </li>
+      <li>splash教程
+        <ul>
+          <li>https://splash.readthedocs.io/en/stable/</li>
+        </ul>
+      </li>
+      <li>配置可变的start_urls
+        <ul>
+          <li>https://blog.csdn.net/sirobot/article/details/105360486</li>
+        </ul>
+      </li>
+      <li>splash
+        <ul>
+          <li>https://github.com/scrapy-plugins/scrapy-splash</li>
+        </ul>
+      </li>
+      <li>xpath/css
+        <ul>
+          <li>https://zhuanlan.zhihu.com/p/65143300</li>
+        </ul>
+      </li>
+      <li>不同spider配置不同的pipline:
+        <ul>
+          <li>https://blog.csdn.net/peiwang245/article/details/100071316</li>
+        </ul>
+      </li>
+      <li>response传递参数：
+        <ul>
+          <li>https://blog.csdn.net/killeri/article/details/80255500</li>
+        </ul>
+      </li>
+      <li>spider的setting优先级
+        <ul>
+          <li>https://blog.csdn.net/he_ranly/article/details/85092065</li>
+        </ul>
+      </li>
+      <li>中间件的区别
+        <ul>
+          <li>https://www.jianshu.com/p/3a9a385b9483</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>scrapy部署
+    <ul>
+      <li>APscheduler
+        <ul>
+          <li>https://apscheduler.readthedocs.io/en/latest/</li>
+        </ul>
+      </li>
+      <li>subprocess
+        <ul>
+          <li>https://www.runoob.com/w3cnote/python3-subprocess.html</li>
+        </ul>
+      </li>
+      <li>APscheduler+scarpy
+        <ul>
+          <li>https://apscheduler.readthedocs.io/en/latest/userguide.html</li>
+          <li>https://www.cnblogs.com/jdbc2nju/p/9563761.html</li>
+          <li>https://www.jianshu.com/p/c37c46de3168</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+            </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+    <footer class="footer" role="contentinfo">
+	<div class="container">
+		<p class="copyright">Copyright &copy; 2014-2021 <a href=""><code>louis han</code></a>.</p>
+		<p>Powered by <a href="http://jekyllrb.com">Jekyll</a>, themed from <a href="http://lesscss.cn/">Less</a>, refactored by <a href="http://www.sincerehwh.cn/">Sincere Han</a></p>
+	</div>
+</footer>
+
+<script src="/styles/js/jquery.min.js"></script>
+<script src="/styles/js/bootstrap.min.js"></script>
+<script src="/styles/js/holder.min.js"></script>
+<script src="/styles/js/lessismore.js"></script>
+<script src="/styles/js/application.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  </body>
+</html>
