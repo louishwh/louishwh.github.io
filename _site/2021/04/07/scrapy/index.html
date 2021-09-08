@@ -43,6 +43,7 @@
 
     <header class="navbar navbar-inverse navbar-fixed-top docs-nav" role="banner">
   <div class="container">
+
     <div class="navbar-header">
       <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
         <span class="icon-bar"></span>
@@ -53,6 +54,7 @@
         <img src="/styles/images/logo.png">
       </a>
     </div>
+
     <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
       <ul class="nav navbar-nav">    
         <li>
@@ -115,7 +117,7 @@
   <h1>目录</h1>
   <ul class="nav sidenav">
   </ul>
-  <div style="height: 200px;width: 200px;">
+  <div style="height: 200px;width: 150px;">
     <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async"> 
     </script>
   </div>
@@ -132,7 +134,7 @@
               <!--
                 <p class="post-meta">Apr 7, 2021</p>
               -->
-              <div class="meta">发布时间 <span class="postdate">2021-04-07</span>  <a target="_blank" href="http://localhost:4000">louis han</a></div>
+              <div class="meta">发布时间 <span class="postdate">2021-04-07</span>  <a target="_blank" href="http://www.louishwh.top">louis han</a></div>
               <br />
             </header>
             <article class="post-content">
@@ -182,10 +184,10 @@
 
         <ul>
           <li>
-            <p><code class="highlighter-rouge">yield scrapy.Request(next_page, callback=self.parse_new)</code></p>
+            <p><code class="language-plaintext highlighter-rouge">yield scrapy.Request(next_page, callback=self.parse_new)</code></p>
           </li>
           <li>
-            <p><code class="highlighter-rouge">def parse_new(self, response, **kwargs)</code></p>
+            <p><code class="language-plaintext highlighter-rouge">def parse_new(self, response, **kwargs)</code></p>
           </li>
         </ul>
       </li>
@@ -215,13 +217,13 @@
         <ul>
           <li>docker 启动一个 Splash 代理服务：
             <ul>
-              <li><code class="highlighter-rouge">docker run -it -p 8050:8050 --rm scrapinghub/splash</code></li>
+              <li><code class="language-plaintext highlighter-rouge">docker run -it -p 8050:8050 --rm scrapinghub/splash</code></li>
             </ul>
           </li>
           <li>settings 配置：
             <ul>
               <li>
-                <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  SPLASH_URL = 'http://host:port'
+                <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  SPLASH_URL = 'http://host:port'
   DUPEFILTER_CLASS = 'scrapy_splash.SplashAwareDupeFilter'	
   HTTPCACHE_STORAGE = 'scrapy_splash.SplashAwareFSCacheStorage'
  		SPIDER_MIDDLEWARES = {
@@ -237,13 +239,13 @@ DOWNLOADER_MIDDLEWARES = {
             </ul>
           </li>
           <li>python 导入依赖
-  <code class="highlighter-rouge">pip3 install scrapy-splash</code></li>
+  <code class="language-plaintext highlighter-rouge">pip3 install scrapy-splash</code></li>
           <li>Spider 中引入
-  <code class="highlighter-rouge">from scrapy_splash import SplashRequest</code></li>
+  <code class="language-plaintext highlighter-rouge">from scrapy_splash import SplashRequest</code></li>
           <li>请求替换
             <ul>
-              <li>从：<code class="highlighter-rouge">scrapy.Request(stock_url, self.parse, meta=params, dont_filter=True)</code></li>
-              <li>到：<code class="highlighter-rouge">SplashRequest(url, self.parse, meta=params, args={'wait': 0.5})</code></li>
+              <li>从：<code class="language-plaintext highlighter-rouge">scrapy.Request(stock_url, self.parse, meta=params, dont_filter=True)</code></li>
+              <li>到：<code class="language-plaintext highlighter-rouge">SplashRequest(url, self.parse, meta=params, args={'wait': 0.5})</code></li>
             </ul>
           </li>
           <li>parse正常解析结果即可</li>
@@ -254,12 +256,12 @@ DOWNLOADER_MIDDLEWARES = {
         <ul>
           <li>python 导入依赖
             <ul>
-              <li><code class="highlighter-rouge">pip3 install selenium</code></li>
+              <li><code class="language-plaintext highlighter-rouge">pip3 install selenium</code></li>
             </ul>
           </li>
           <li>配置 custom_settings：
             <ul>
-              <li><code class="highlighter-rouge">
+              <li><code class="language-plaintext highlighter-rouge">
  		'DOWNLOADER_MIDDLEWARES': {
   	'ht_msg.middlewares.SeleniumDownloadMiddleware': 500
   	}
@@ -286,7 +288,7 @@ DOWNLOADER_MIDDLEWARES = {
         </ul>
 
   	  def process_request(self, request, spider):
-        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>     	self.driver.get(request.url)
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>     	self.driver.get(request.url)
      	time.sleep(12)
      	source = self.driver.page_source
      	url = self.driver.current_url
