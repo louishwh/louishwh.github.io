@@ -8,8 +8,8 @@ github: https://github.com/louishwh/
 baseurl: ""
 description: ""
 meta_description: ""
-motto: 实事求是
-banner: 知行合一
+motto: 知行合一
+banner: 实事求是
 
 permalink: /:categories/:year/:month/:day/:title/
 permalink: /:year/:month/:day/:title/
