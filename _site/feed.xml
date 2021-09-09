@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title></title>
-    <description>hwh</description>
+    <description></description>
     <link>http://www.louishwh.top/</link>
     <atom:link href="http://www.louishwh.top/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 09 Sep 2021 23:12:31 +0800</pubDate>
-    <lastBuildDate>Thu, 09 Sep 2021 23:12:31 +0800</lastBuildDate>
+    <pubDate>Thu, 09 Sep 2021 23:33:48 +0800</pubDate>
+    <lastBuildDate>Thu, 09 Sep 2021 23:33:48 +0800</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
     
       <item>
         <title>这些年用过的编程语言</title>
-        <description>&lt;h3 id=&quot;这些年用过的编程语言&quot;&gt;这些年用过的编程语言&lt;/h3&gt;
+        <description>&lt;h3 id=&quot;自己的经历&quot;&gt;自己的经历&lt;/h3&gt;
 
-&lt;ol&gt;
+&lt;ul&gt;
   &lt;li&gt;VB
     &lt;ul&gt;
       &lt;li&gt;第一门接触的语言。记忆太久远了，只记得当时拖拽出的一个简单的程序。&lt;/li&gt;
@@ -98,24 +98,62 @@
       &lt;li&gt;后来跑去用Actix-web写了一个简单的网站。觉得自己跑偏了。&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;Go
+  &lt;li&gt;Go@2021
     &lt;ul&gt;
       &lt;li&gt;最近决定要学一下这个语言。&lt;/li&gt;
       &lt;li&gt;顺道复习一下C&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;Dart
+  &lt;li&gt;Dart@2021
     &lt;ul&gt;
       &lt;li&gt;后面Flutter会更广泛，节省人力，多端通吃&lt;/li&gt;
       &lt;li&gt;我的好奇心还是忍不住。&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ol&gt;
+&lt;/ul&gt;
 
-&lt;h3 id=&quot;一个快速入门一门语言的网站&quot;&gt;一个&lt;a href=&quot;https://learnxinyminutes.com/&quot;&gt;快速入门一门语言的网站&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;对学习编程语言的一些观点&quot;&gt;对学习编程语言的一些观点&lt;/h3&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;底层逻辑
+    &lt;ul&gt;
+      &lt;li&gt;这门语言主要解决哪一类问题&lt;/li&gt;
+      &lt;li&gt;这门语言擅长和不擅长的&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;默认掌握的一些知识
+    &lt;ul&gt;
+      &lt;li&gt;架构设计&lt;/li&gt;
+      &lt;li&gt;设计模式&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;目标导向
+    &lt;ul&gt;
+      &lt;li&gt;自己领域的语言学明白&lt;/li&gt;
+      &lt;li&gt;基础API&lt;/li&gt;
+      &lt;li&gt;开源库&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;个人觉得最好
+    &lt;ul&gt;
+      &lt;li&gt;学一下Python，解放生产力&lt;/li&gt;
+      &lt;li&gt;学一下Dart, 客户端&lt;/li&gt;
+      &lt;li&gt;学一下Go, 后端（并发&amp;amp;指针&amp;amp;编译优势）&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;学习路径
+    &lt;ul&gt;
+      &lt;li&gt;明确目的&lt;/li&gt;
+      &lt;li&gt;先会一门&lt;/li&gt;
+      &lt;li&gt;深入一门&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;一个快速入门一门语言的网站&quot;&gt;一个快速入门一门语言的网站&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://learnxinyminutes.com/&quot;&gt;Learn X in Y min&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 </description>

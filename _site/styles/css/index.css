@@ -5008,7 +5008,7 @@ button.close {
   padding: 0 5px;
 }
 .tooltip-inner {
-  max-width: 150px;
+  max-width: 200px;
   padding: 3px 8px;
   color: #ffffff;
   text-align: center;
