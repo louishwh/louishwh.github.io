@@ -36,7 +36,7 @@ tag: 工具箱
 2. Package Control: Install Package
 3. 看到左下脚：等号在左右移动（在加载仓库）
 4. 输入仓库名称即可
-⚠️ 安装插件可能需要科学上网工具
+⚠️ 安装插件可能需要VPN工具
 
 推荐仓库：
 > [markdown](https://blog.csdn.net/qq_20011607/article/details/81370236)
