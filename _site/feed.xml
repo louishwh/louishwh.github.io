@@ -5,9 +5,196 @@
     <description></description>
     <link>http://www.louishwh.top/</link>
     <atom:link href="http://www.louishwh.top/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 10 Sep 2021 23:52:45 +0800</pubDate>
-    <lastBuildDate>Fri, 10 Sep 2021 23:52:45 +0800</lastBuildDate>
+    <pubDate>Sun, 24 Oct 2021 20:17:18 +0800</pubDate>
+    <lastBuildDate>Sun, 24 Oct 2021 20:17:18 +0800</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
+    
+      <item>
+        <title>Maven</title>
+        <description>
+</description>
+        <pubDate>Sat, 23 Oct 2021 22:00:00 +0800</pubDate>
+        <link>http://www.louishwh.top/2021/10/23/Maven/</link>
+        <guid isPermaLink="true">http://www.louishwh.top/2021/10/23/Maven/</guid>
+        
+        <category>Java/Kotlin</category>
+        
+        
+        <category>代码管理工具</category>
+        
+      </item>
+    
+      <item>
+        <title>Cargo</title>
+        <description>
+</description>
+        <pubDate>Sun, 17 Oct 2021 22:00:00 +0800</pubDate>
+        <link>http://www.louishwh.top/2021/10/17/Cargo/</link>
+        <guid isPermaLink="true">http://www.louishwh.top/2021/10/17/Cargo/</guid>
+        
+        <category>Rust</category>
+        
+        
+        <category>代码管理工具</category>
+        
+      </item>
+    
+      <item>
+        <title>pip</title>
+        <description>
+</description>
+        <pubDate>Sat, 16 Oct 2021 22:00:00 +0800</pubDate>
+        <link>http://www.louishwh.top/2021/10/16/pip/</link>
+        <guid isPermaLink="true">http://www.louishwh.top/2021/10/16/pip/</guid>
+        
+        <category>Python</category>
+        
+        
+        <category>代码管理工具</category>
+        
+      </item>
+    
+      <item>
+        <title>gem</title>
+        <description>
+</description>
+        <pubDate>Sun, 10 Oct 2021 22:00:00 +0800</pubDate>
+        <link>http://www.louishwh.top/2021/10/10/gem/</link>
+        <guid isPermaLink="true">http://www.louishwh.top/2021/10/10/gem/</guid>
+        
+        <category>Ruby</category>
+        
+        
+        <category>代码管理工具</category>
+        
+      </item>
+    
+      <item>
+        <title>npm</title>
+        <description>
+</description>
+        <pubDate>Sat, 09 Oct 2021 22:00:00 +0800</pubDate>
+        <link>http://www.louishwh.top/2021/10/09/npm/</link>
+        <guid isPermaLink="true">http://www.louishwh.top/2021/10/09/npm/</guid>
+        
+        <category>Javascript</category>
+        
+        
+        <category>代码管理工具</category>
+        
+      </item>
+    
+      <item>
+        <title>Carthage</title>
+        <description>
+</description>
+        <pubDate>Sun, 03 Oct 2021 22:00:00 +0800</pubDate>
+        <link>http://www.louishwh.top/2021/10/03/Carthage/</link>
+        <guid isPermaLink="true">http://www.louishwh.top/2021/10/03/Carthage/</guid>
+        
+        <category>Swift</category>
+        
+        
+        <category>代码管理工具</category>
+        
+      </item>
+    
+      <item>
+        <title>CocoaPods</title>
+        <description>&lt;h4 id=&quot;官网&quot;&gt;&lt;a href=&quot;https://cocoapods.org/&quot;&gt;官网&lt;/a&gt;&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Swift 和 Objective-C Cocoa 项目的包管理工具&lt;/li&gt;
+  &lt;li&gt;iOS 开发的必备工具&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;安装&quot;&gt;安装&lt;/h4&gt;
+&lt;ol&gt;
+  &lt;li&gt;CocoaPods 是用 Ruby 构建的,可以用 macOS 上的默认 Ruby 进行安装&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo gem install cocoapods&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;⚠️ ERROR: While executing gem … (Gem::FilePermissionError).
+	You don’t have write permissions for the /usr/bin directory.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo gem install -n /usr/local/bin fastlane&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo gem install -n /usr/local/bin cocoapods&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;管理依赖&quot;&gt;&lt;a href=&quot;https://guides.cocoapods.org/syntax/podfile.html&quot;&gt;管理依赖&lt;/a&gt;&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;创建 Podfile 文件（XXXX.xcodeproj 所在文件夹）&lt;/li&gt;
+  &lt;li&gt;Podfile内容：&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;platform :ios, '10.0'
+use_frameworks!
+
+target 'Target Name' do
+  pod 'AFNetworking', '~&amp;gt; 2.6'
+  pod 'ORStackView', '~&amp;gt; 3.0'
+  pod 'SwiftyJSON', '~&amp;gt; 2.3'
+
+  target 'MyAppTests' do
+    inherit! :search_paths
+    pod 'OCMock', '~&amp;gt; 2.0.1'
+  end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    puts &quot;#{target.name}&quot;
+  end
+end
+
+end
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pod init&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pod install&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;创建cocoapods包&quot;&gt;&lt;a href=&quot;https://guides.cocoapods.org/syntax/podspec.html&quot;&gt;创建CocoaPods包&lt;/a&gt;&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pod spec create LouisProject
+edit Peanut.podspec
+pod spec lint Peanut.podspec
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Sat, 02 Oct 2021 22:00:00 +0800</pubDate>
+        <link>http://www.louishwh.top/2021/10/02/CocoaPods/</link>
+        <guid isPermaLink="true">http://www.louishwh.top/2021/10/02/CocoaPods/</guid>
+        
+        <category>Objective-C/Swift</category>
+        
+        
+        <category>代码管理工具</category>
+        
+      </item>
+    
+      <item>
+        <title>PicoNeo3初体验</title>
+        <description>&lt;h3 id=&quot;自己的经历&quot;&gt;自己的经历&lt;/h3&gt;
+
+&lt;h3 id=&quot;对学习编程语言的一些观点&quot;&gt;对学习编程语言的一些观点&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://learnxinyminutes.com/&quot;&gt;Learn X in Y min&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Sat, 11 Sep 2021 22:00:00 +0800</pubDate>
+        <link>http://www.louishwh.top/2021/09/11/Pico-Neo3%E5%88%9D%E4%BD%93%E9%AA%8C/</link>
+        <guid isPermaLink="true">http://www.louishwh.top/2021/09/11/Pico-Neo3%E5%88%9D%E4%BD%93%E9%AA%8C/</guid>
+        
+        <category>经历</category>
+        
+        
+        <category>【好奇心】</category>
+        
+      </item>
     
       <item>
         <title>暴富还是无奈？</title>
@@ -235,705 +422,6 @@
         <guid isPermaLink="true">http://www.louishwh.top/2021/09/09/%E8%BF%99%E4%BA%9B%E5%B9%B4%E7%94%A8%E8%BF%87%E7%9A%84%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/</guid>
         
         <category>经历</category>
-        
-        
-        <category>【编程语言】</category>
-        
-      </item>
-    
-      <item>
-        <title>Python技能树</title>
-        <description>&lt;h2 id=&quot;问题的提出与解决&quot;&gt;问题的提出与解决&lt;/h2&gt;
-&lt;ol&gt;
-  &lt;li&gt;为什么用Python？
-    &lt;ul&gt;
-      &lt;li&gt;快：开发快、学习快&lt;/li&gt;
-      &lt;li&gt;简：简单易用&lt;/li&gt;
-      &lt;li&gt;多：工具库多&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Python能用来干什么？
-    &lt;ul&gt;
-      &lt;li&gt;数据爬取&lt;/li&gt;
-      &lt;li&gt;自动化运维&lt;/li&gt;
-      &lt;li&gt;自动化测试&lt;/li&gt;
-      &lt;li&gt;Web开发&lt;/li&gt;
-      &lt;li&gt;数据分析&lt;/li&gt;
-      &lt;li&gt;常用PC客户端&lt;/li&gt;
-      &lt;li&gt;很多常用的工具…
-        &lt;ul&gt;
-          &lt;li&gt;你能想象的…&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Python开发者应该具备的技能？
-    &lt;ul&gt;
-      &lt;li&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;什么人需要Python开发者这样的角色？
- -
-    &lt;ul&gt;
-      &lt;li&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;参考的文件&quot;&gt;参考的文件&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Tue, 07 Sep 2021 21:30:00 +0800</pubDate>
-        <link>http://www.louishwh.top/2021/09/07/Python/</link>
-        <guid isPermaLink="true">http://www.louishwh.top/2021/09/07/Python/</guid>
-        
-        <category>编程</category>
-        
-        
-        <category>【语言使用】</category>
-        
-      </item>
-    
-      <item>
-        <title>Scrapy使用教程</title>
-        <description>&lt;h2 id=&quot;执行过程&quot;&gt;执行过程&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;逻辑过程
-    &lt;pre&gt;&lt;code class=&quot;language-mermaid&quot;&gt;  graph LR
-  A[URL]--&amp;gt;B[Request]
-  B[Request]--&amp;gt;C[Response]
-  C[Response]--&amp;gt;D[Item]
-  D[Item]--&amp;gt;E[More]
-&lt;/code&gt;&lt;/pre&gt;
-  &lt;/li&gt;
-  &lt;li&gt;代码执行过程: 我代码中用到的地方
-    &lt;pre&gt;&lt;code class=&quot;language-mermaid&quot;&gt;  graph LR
-  A[Spider.start_requests]--&amp;gt;B[Middleware.process_request]
-  B[Middleware.process_request]--&amp;gt;C[Spider.parse]
-  C[Spider.parse]--&amp;gt;D[Pipeline.process_item]
-  D[Pipeline.process_item]--&amp;gt;E[MySQL]
-&lt;/code&gt;&lt;/pre&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;问提的与解决&quot;&gt;问提的与解决&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;start_urls只能配置一个数组，如果我想动态配置爬取的源头怎么办？&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;重写 Spider 的 start_requests 函数，在里面设置请求&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;如果我通过请求结果，发起新的请求怎么写？&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;直接在结果里面通过 yield发起请求&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;如果我通过请求结果发起新的请求，怎么处理新的响应结果？
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;p&gt;在Spider里新增需要的处理的函数，配置 response 参数即可。&lt;/p&gt;
-
-        &lt;ul&gt;
-          &lt;li&gt;
-            &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;yield scrapy.Request(next_page, callback=self.parse_new)&lt;/code&gt;&lt;/p&gt;
-          &lt;/li&gt;
-          &lt;li&gt;
-            &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;def parse_new(self, response, **kwargs)&lt;/code&gt;&lt;/p&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;如何把发起请求时候的参数传递到响应结果？
-    &lt;ul&gt;
-      &lt;li&gt;通过 Request 的 meta 参数，传输一个字典过去。&lt;/li&gt;
-      &lt;li&gt;通过 response.meta 拿到你存入的值。&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;如何给Spdier配置特点的中间件(middleware)、管道(pipelines)？
-    &lt;ul&gt;
-      &lt;li&gt;custom_settings
-        &lt;ul&gt;
-          &lt;li&gt;ITEM_PIPELINES&lt;/li&gt;
-          &lt;li&gt;SPIDER_MIDDLEWARES&lt;/li&gt;
-          &lt;li&gt;DOWNLOADER_MIDDLEWARES&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;对于一些异步加载的页面怎么处理？
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;h5 id=&quot;方案一splash&quot;&gt;方案一：splash&lt;/h5&gt;
-        &lt;ul&gt;
-          &lt;li&gt;docker 启动一个 Splash 代理服务：
-            &lt;ul&gt;
-              &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker run -it -p 8050:8050 --rm scrapinghub/splash&lt;/code&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;settings 配置：
-            &lt;ul&gt;
-              &lt;li&gt;
-                &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  SPLASH_URL = 'http://host:port'
-  DUPEFILTER_CLASS = 'scrapy_splash.SplashAwareDupeFilter'	
-  HTTPCACHE_STORAGE = 'scrapy_splash.SplashAwareFSCacheStorage'
- 		SPIDER_MIDDLEWARES = {
-   		'scrapy_splash.SplashDeduplicateArgsMiddleware': 100,
-}	
-DOWNLOADER_MIDDLEWARES = {  
-   		'scrapy_splash.SplashCookiesMiddleware': 723,
-   		'scrapy_splash.SplashMiddleware': 725,
-   		'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware': 810
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;                &lt;/div&gt;
-              &lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;python 导入依赖
-  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pip3 install scrapy-splash&lt;/code&gt;&lt;/li&gt;
-          &lt;li&gt;Spider 中引入
-  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;from scrapy_splash import SplashRequest&lt;/code&gt;&lt;/li&gt;
-          &lt;li&gt;请求替换
-            &lt;ul&gt;
-              &lt;li&gt;从：&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;scrapy.Request(stock_url, self.parse, meta=params, dont_filter=True)&lt;/code&gt;&lt;/li&gt;
-              &lt;li&gt;到：&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SplashRequest(url, self.parse, meta=params, args={'wait': 0.5})&lt;/code&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;parse正常解析结果即可&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;h5 id=&quot;方案二selenium&quot;&gt;方案二：selenium&lt;/h5&gt;
-        &lt;ul&gt;
-          &lt;li&gt;python 导入依赖
-            &lt;ul&gt;
-              &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pip3 install selenium&lt;/code&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;配置 custom_settings：
-            &lt;ul&gt;
-              &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;
- 		'DOWNLOADER_MIDDLEWARES': {
-  	'ht_msg.middlewares.SeleniumDownloadMiddleware': 500
-  	}
-  	&lt;/code&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;创建中间件
-            &lt;ul&gt;
-              &lt;li&gt;```
-  from selenium.webdriver.chrome.options import Options
-  from selenium import webdriver
-  from scrapy.http import HtmlResponse&lt;/li&gt;
-            &lt;/ul&gt;
-
-            &lt;p&gt;class SeleniumDownloadMiddleware(object):
-  	  def &lt;strong&gt;init&lt;/strong&gt;(self):
-     	chrome_options = Options()
-     	chrome_options.add_argument(‘–headless’)
-     	chrome_options.add_argument(‘–disable-gpu’)
-     	chrome_options.add_argument(“window-size=1024,768”)
-     	chrome_options.add_argument(“–no-sandbox”)
-     	self.driver = webdriver.Chrome(chrome_options=chrome_options)&lt;/p&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-
-  	  def process_request(self, request, spider):
-        &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;     	self.driver.get(request.url)
-     	time.sleep(12)
-     	source = self.driver.page_source
-     	url = self.driver.current_url
-     	return HtmlResponse(url=url, body=source, request=request, encoding=&quot;utf-8&quot;)
-	```
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;未完待续&quot;&gt;未完待续…..&lt;/h3&gt;
-
-&lt;h3 id=&quot;参考的文件&quot;&gt;参考的文件&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;scrapy:
-    &lt;ul&gt;
-      &lt;li&gt;文档
-        &lt;ul&gt;
-          &lt;li&gt;https://doc.scrapy.org/en/latest/topics/request-response.html#response-objects&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;教程
-        &lt;ul&gt;
-          &lt;li&gt;https://geek-docs.com/scrapy/scrapy-tutorials/scrapy-css-grammar.html&lt;/li&gt;
-          &lt;li&gt;https://www.jianshu.com/p/df9c0d1e9087&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;多种方案：爬取动态JS
-        &lt;ul&gt;
-          &lt;li&gt;https://zhuanlan.zhihu.com/p/130867872&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;splash教程
-        &lt;ul&gt;
-          &lt;li&gt;https://splash.readthedocs.io/en/stable/&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;配置可变的start_urls
-        &lt;ul&gt;
-          &lt;li&gt;https://blog.csdn.net/sirobot/article/details/105360486&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;splash
-        &lt;ul&gt;
-          &lt;li&gt;https://github.com/scrapy-plugins/scrapy-splash&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;xpath/css
-        &lt;ul&gt;
-          &lt;li&gt;https://zhuanlan.zhihu.com/p/65143300&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;不同spider配置不同的pipline:
-        &lt;ul&gt;
-          &lt;li&gt;https://blog.csdn.net/peiwang245/article/details/100071316&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;response传递参数：
-        &lt;ul&gt;
-          &lt;li&gt;https://blog.csdn.net/killeri/article/details/80255500&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;spider的setting优先级
-        &lt;ul&gt;
-          &lt;li&gt;https://blog.csdn.net/he_ranly/article/details/85092065&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;中间件的区别
-        &lt;ul&gt;
-          &lt;li&gt;https://www.jianshu.com/p/3a9a385b9483&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;scrapy部署
-    &lt;ul&gt;
-      &lt;li&gt;APscheduler
-        &lt;ul&gt;
-          &lt;li&gt;https://apscheduler.readthedocs.io/en/latest/&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;subprocess
-        &lt;ul&gt;
-          &lt;li&gt;https://www.runoob.com/w3cnote/python3-subprocess.html&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;APscheduler+scarpy
-        &lt;ul&gt;
-          &lt;li&gt;https://apscheduler.readthedocs.io/en/latest/userguide.html&lt;/li&gt;
-          &lt;li&gt;https://www.cnblogs.com/jdbc2nju/p/9563761.html&lt;/li&gt;
-          &lt;li&gt;https://www.jianshu.com/p/c37c46de3168&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Wed, 07 Apr 2021 10:50:00 +0800</pubDate>
-        <link>http://www.louishwh.top/2021/04/07/scrapy/</link>
-        <guid isPermaLink="true">http://www.louishwh.top/2021/04/07/scrapy/</guid>
-        
-        <category>编程</category>
-        
-        
-        <category>【工具使用】</category>
-        
-      </item>
-    
-      <item>
-        <title>Rxswift</title>
-        <description>
-</description>
-        <pubDate>Thu, 18 Mar 2021 00:00:00 +0800</pubDate>
-        <link>http://www.louishwh.top/2021/03/18/RxSwift/</link>
-        <guid isPermaLink="true">http://www.louishwh.top/2021/03/18/RxSwift/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>记忆技术</title>
-        <description>&lt;h3 id=&quot;背景&quot;&gt;背景&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;记忆力还算不错&lt;/li&gt;
-  &lt;li&gt;记忆文字和数字速度有些慢&lt;/li&gt;
-  &lt;li&gt;急需提升的办法&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;解决方案&quot;&gt;解决方案&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;看到广告超级记忆课程
-    &lt;ul&gt;
-      &lt;li&gt;觉得理论还站的住&lt;/li&gt;
-      &lt;li&gt;有新方法可以试试
-        &lt;ul&gt;
-          &lt;li&gt;理论可行就是实践&lt;/li&gt;
-          &lt;li&gt;无非就是试错成本&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;学习方法
-    &lt;ul&gt;
-      &lt;li&gt;先看大概&lt;/li&gt;
-      &lt;li&gt;分段练习&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;理论基础&quot;&gt;理论基础&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;人的进化历程
-    &lt;ul&gt;
-      &lt;li&gt;视觉信息
-        &lt;ul&gt;
-          &lt;li&gt;大脑最擅长处理&lt;/li&gt;
-          &lt;li&gt;视觉生物都擅长&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;语言信息
-        &lt;ul&gt;
-          &lt;li&gt;随着语言诞生&lt;/li&gt;
-          &lt;li&gt;应该有几万年&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;文字信息
-        &lt;ul&gt;
-          &lt;li&gt;人类自创的符号系统&lt;/li&gt;
-          &lt;li&gt;大脑不擅长直接存储&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;数字信息
-        &lt;ul&gt;
-          &lt;li&gt;较为高级的抽象概念&lt;/li&gt;
-          &lt;li&gt;大脑也不擅长直接存储&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;信息处理的流程
-    &lt;ul&gt;
-      &lt;li&gt;获取信息
-        &lt;ul&gt;
-          &lt;li&gt;信息分类
-            &lt;ul&gt;
-              &lt;li&gt;图片&lt;/li&gt;
-              &lt;li&gt;声音&lt;/li&gt;
-              &lt;li&gt;文字&lt;/li&gt;
-              &lt;li&gt;数字&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;获取方式
-            &lt;ul&gt;
-              &lt;li&gt;看&lt;/li&gt;
-              &lt;li&gt;听&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;处理信息
-        &lt;ul&gt;
-          &lt;li&gt;化繁为简&lt;/li&gt;
-          &lt;li&gt;转换图片&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;存储信息
-        &lt;ul&gt;
-          &lt;li&gt;四大记忆方法
-            &lt;ul&gt;
-              &lt;li&gt;定位桩
-                &lt;ul&gt;
-                  &lt;li&gt;大脑图书馆&lt;/li&gt;
-                &lt;/ul&gt;
-              &lt;/li&gt;
-              &lt;li&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;提取信息
-        &lt;ul&gt;
-          &lt;li&gt;通过线索&lt;/li&gt;
-          &lt;li&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;自我的实践&quot;&gt;自我的实践&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;定位桩练习
-    &lt;ul&gt;
-      &lt;li&gt;先构建定位桩系统
-        &lt;ul&gt;
-          &lt;li&gt;看过的电影
-            &lt;ul&gt;
-              &lt;li&gt;哈尔的移动城堡&lt;/li&gt;
-              &lt;li&gt;天空之城&lt;/li&gt;
-              &lt;li&gt;⚠️
-                &lt;ul&gt;
-                  &lt;li&gt;一定要很熟悉&lt;/li&gt;
-                  &lt;li&gt;这些电影我都是看过十遍以上，剧情熟悉&lt;/li&gt;
-                &lt;/ul&gt;
-              &lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;走过的路
-            &lt;ul&gt;
-              &lt;li&gt;小学&lt;/li&gt;
-              &lt;li&gt;初中&lt;/li&gt;
-              &lt;li&gt;高中&lt;/li&gt;
-              &lt;li&gt;大学&lt;/li&gt;
-              &lt;li&gt;⚠️
-                &lt;ul&gt;
-                  &lt;li&gt;担心混淆了以前的记忆&lt;/li&gt;
-                &lt;/ul&gt;
-              &lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;未完待续&quot;&gt;未完待续………..&lt;/h3&gt;
-
-</description>
-        <pubDate>Sun, 21 Feb 2021 10:50:00 +0800</pubDate>
-        <link>http://www.louishwh.top/2021/02/21/%E8%AE%B0%E5%BF%86%E6%8A%80%E6%9C%AF/</link>
-        <guid isPermaLink="true">http://www.louishwh.top/2021/02/21/%E8%AE%B0%E5%BF%86%E6%8A%80%E6%9C%AF/</guid>
-        
-        <category>记忆</category>
-        
-        
-        <category>【基础能力】</category>
-        
-      </item>
-    
-      <item>
-        <title>Python图片处理到打包app</title>
-        <description>&lt;h3 id=&quot;需求介绍&quot;&gt;需求介绍&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;从网页上下载数据&lt;/li&gt;
-  &lt;li&gt;将数据根据模版生成图片&lt;/li&gt;
-  &lt;li&gt;最后打包成一个app&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;工具库&quot;&gt;工具库&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;拉取数据
-    &lt;ul&gt;
-      &lt;li&gt;requests&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;解析网页
-    &lt;ul&gt;
-      &lt;li&gt;BeautifulSoup4&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;图片处理
-    &lt;ul&gt;
-      &lt;li&gt;Pillow&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;打包app
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;table&gt;
-          &lt;tbody&gt;
-            &lt;tr&gt;
-              &lt;td&gt;py2app&lt;/td&gt;
-              &lt;td&gt;pyinstaller&lt;/td&gt;
-            &lt;/tr&gt;
-          &lt;/tbody&gt;
-        &lt;/table&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;大致代码&quot;&gt;大致代码&lt;/h3&gt;
-</description>
-        <pubDate>Sun, 14 Feb 2021 10:00:00 +0800</pubDate>
-        <link>http://www.louishwh.top/2021/02/14/Python%E5%9B%BE%E7%89%87%E5%A4%84%E7%90%86%E5%88%B0%E6%89%93%E5%8C%85app/</link>
-        <guid isPermaLink="true">http://www.louishwh.top/2021/02/14/Python%E5%9B%BE%E7%89%87%E5%A4%84%E7%90%86%E5%88%B0%E6%89%93%E5%8C%85app/</guid>
-        
-        <category>Python</category>
-        
-        
-        <category>【图片处理】</category>
-        
-      </item>
-    
-      <item>
-        <title>Mac游戏BombSquad</title>
-        <description>&lt;h3 id=&quot;很早之前玩过的游戏&quot;&gt;很早之前玩过的游戏&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;16年的时候玩过的游戏&lt;/li&gt;
-  &lt;li&gt;最近想起来找到了，玩的很逗。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;mac下载&quot;&gt;Mac下载&lt;/h4&gt;
-&lt;ol&gt;
-  &lt;li&gt;Mac上AppStore登录美国区账号&lt;/li&gt;
-  &lt;li&gt;Mac上AppStore搜索：Mac游戏BombSquad（主机）&lt;/li&gt;
-  &lt;li&gt;iPhone搜索BombSquad Remote (手柄), 安卓版本的手柄也用&lt;/li&gt;
-  &lt;li&gt;Mac和iPhone连接到相同的wifi&lt;/li&gt;
-  &lt;li&gt;打开Mac版本&lt;/li&gt;
-  &lt;li&gt;打开iPhone版本，就会显示了&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;然后&quot;&gt;然后&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;愉快的和家人玩耍吧&lt;/li&gt;
-&lt;/ul&gt;
-
-</description>
-        <pubDate>Fri, 12 Feb 2021 10:00:00 +0800</pubDate>
-        <link>http://www.louishwh.top/2021/02/12/%E6%B8%B8%E6%88%8FBombSquad/</link>
-        <guid isPermaLink="true">http://www.louishwh.top/2021/02/12/%E6%B8%B8%E6%88%8FBombSquad/</guid>
-        
-        <category>Golang</category>
-        
-        
-        <category>【游戏】</category>
-        
-      </item>
-    
-      <item>
-        <title>如何系统学习编程</title>
-        <description>&lt;h4 id=&quot;编程的本质&quot;&gt;编程的本质？&lt;/h4&gt;
-&lt;p&gt;这些年一直在思考编程的本质，从不同层次做一些分析：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;过程分类
-    &lt;ul&gt;
-      &lt;li&gt;你想干什么
-        &lt;ul&gt;
-          &lt;li&gt;清楚界定你想干什么&lt;/li&gt;
-          &lt;li&gt;知道自己的目的是最重要的&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;对事件发生过程的分解与重组
-        &lt;ul&gt;
-          &lt;li&gt;分解你做的事情&lt;/li&gt;
-          &lt;li&gt;明确知道每一步&lt;/li&gt;
-          &lt;li&gt;把各个步骤组合在一起&lt;/li&gt;
-          &lt;li&gt;以最高效的方式去做事&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;与电脑的对话
-        &lt;ul&gt;
-          &lt;li&gt;你要明白电脑能干什么&lt;/li&gt;
-          &lt;li&gt;你要会用电脑的语言&lt;/li&gt;
-          &lt;li&gt;你要知道如何组织语言&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;传统分类
-    &lt;ul&gt;
-      &lt;li&gt;数据结构
-        &lt;ul&gt;
-          &lt;li&gt;数据的组织形式&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;算法
-        &lt;ul&gt;
-          &lt;li&gt;数据流动的过程&lt;/li&gt;
-          &lt;li&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;学习编程的指导思想&quot;&gt;学习编程的指导思想&lt;/h4&gt;
-
-&lt;p&gt;A. 实践第一&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;编程有很强的实操性&lt;/li&gt;
-  &lt;li&gt;结果快速反馈&lt;/li&gt;
-  &lt;li&gt;先写出一定量的程序再谈其他
-B. 精通其一&lt;/li&gt;
-  &lt;li&gt;先深入学习一门语言&lt;/li&gt;
-  &lt;li&gt;熟练使用一套工具链&lt;/li&gt;
-  &lt;li&gt;根据需求研究专门领域
-C. 分层学习&lt;/li&gt;
-  &lt;li&gt;根据现有的段位去深入升级
-    &lt;ol&gt;
-      &lt;li&gt;抄程序可以跑&lt;/li&gt;
-      &lt;li&gt;独立实现简单程序&lt;/li&gt;
-      &lt;li&gt;合作开发完善的系统&lt;/li&gt;
-      &lt;li&gt;开发高性能的系统&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;根据不同阶段的能力向下深入如下方面
-    &lt;ol&gt;
-      &lt;li&gt;编程语言&lt;/li&gt;
-      &lt;li&gt;操作系统&lt;/li&gt;
-      &lt;li&gt;网络&lt;/li&gt;
-      &lt;li&gt;领域特征&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;可以采取的具体过程&quot;&gt;可以采取的具体过程&lt;/h4&gt;
-
-&lt;p&gt;– 未完待续
-– 0x0361c51f5ad9482c69ad34a1b73719f8c9568bd6&lt;/p&gt;
-
-</description>
-        <pubDate>Tue, 26 Jan 2021 10:50:00 +0800</pubDate>
-        <link>http://www.louishwh.top/2021/01/26/%E5%A6%82%E4%BD%95%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0%E7%BC%96%E7%A8%8B/</link>
-        <guid isPermaLink="true">http://www.louishwh.top/2021/01/26/%E5%A6%82%E4%BD%95%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0%E7%BC%96%E7%A8%8B/</guid>
-        
-        
-        <category>【基础能力】</category>
-        
-      </item>
-    
-      <item>
-        <title>Golang</title>
-        <description>&lt;h3 id=&quot;go基础啊&quot;&gt;GO基础啊&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/Unknwon/go-fundamental-programming&quot;&gt;基础语法&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/unknwon/the-way-to-go_ZH_CN/blob/master/eBook/directory.md&quot;&gt;入门指南&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://gowalker.org/&quot;&gt;Go开源项目&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Mon, 09 Dec 2019 10:00:00 +0800</pubDate>
-        <link>http://www.louishwh.top/2019/12/09/Golang%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/</link>
-        <guid isPermaLink="true">http://www.louishwh.top/2019/12/09/Golang%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/</guid>
-        
-        <category>Golang</category>
         
         
         <category>【编程语言】</category>

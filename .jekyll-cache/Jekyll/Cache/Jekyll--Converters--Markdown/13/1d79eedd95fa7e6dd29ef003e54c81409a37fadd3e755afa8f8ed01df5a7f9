@@ -1,0 +1,35 @@
+I"M<h4 id="官网"><a href="https://cocoapods.org/">官网</a></h4>
+<ul>
+  <li>Swift 和 Objective-C Cocoa 项目的包管理工具</li>
+  <li>iOS 开发的必备工具</li>
+</ul>
+
+<h4 id="安装">安装</h4>
+<ol>
+  <li>CocoaPods 是用 Ruby 构建的,可以用 macOS 上的默认 Ruby 进行安装</li>
+  <li><code class="language-plaintext highlighter-rouge">sudo gem install cocoapods</code></li>
+</ol>
+
+<p>⚠️ ERROR: While executing gem … (Gem::FilePermissionError).
+	You don’t have write permissions for the /usr/bin directory.</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">sudo gem install -n /usr/local/bin fastlane</code></li>
+  <li><code class="language-plaintext highlighter-rouge">sudo gem install -n /usr/local/bin cocoapods</code></li>
+</ul>
+
+<h4 id="管理依赖">管理依赖</h4>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">pod init</code></li>
+  <li><code class="language-plaintext highlighter-rouge">pod install</code></li>
+</ul>
+
+<p>####</p>
+<ul>
+  <li>```
+pod spec create Peanut</li>
+</ul>
+
+<p>pod spec lint Peanut.podspec</p>
+
+<p>```</p>
+:ET

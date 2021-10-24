@@ -1,0 +1,18 @@
+I"�<h3 id="官网"><a href="https://cocoapods.org/">官网</a></h3>
+<ul>
+  <li>Swift 和 Objective-C Cocoa 项目的包管理工具</li>
+  <li>iOS开发的必备工具</li>
+</ul>
+
+<h3 id="安装">安装</h3>
+<ul>
+  <li>
+    <p>默认需要Ruby的环境</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">sudo gem install cocoapods</code></p>
+  </li>
+</ul>
+
+<h3 id="使用">使用</h3>
+:ET
