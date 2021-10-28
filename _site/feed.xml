@@ -5,9 +5,39 @@
     <description></description>
     <link>http://www.louishwh.top/</link>
     <atom:link href="http://www.louishwh.top/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 24 Oct 2021 20:17:18 +0800</pubDate>
-    <lastBuildDate>Sun, 24 Oct 2021 20:17:18 +0800</lastBuildDate>
+    <pubDate>Tue, 26 Oct 2021 22:11:55 +0800</pubDate>
+    <lastBuildDate>Tue, 26 Oct 2021 22:11:55 +0800</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
+    
+      <item>
+        <title>包管理工具的总结</title>
+        <description>
+</description>
+        <pubDate>Sun, 24 Oct 2021 22:00:00 +0800</pubDate>
+        <link>http://www.louishwh.top/2021/10/24/%E5%8C%85%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7%E6%80%BB%E7%BB%93/</link>
+        <guid isPermaLink="true">http://www.louishwh.top/2021/10/24/%E5%8C%85%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7%E6%80%BB%E7%BB%93/</guid>
+        
+        <category>Java/Kotlin</category>
+        
+        
+        <category>代码管理工具</category>
+        
+      </item>
+    
+      <item>
+        <title>Gradle</title>
+        <description>
+</description>
+        <pubDate>Sun, 24 Oct 2021 22:00:00 +0800</pubDate>
+        <link>http://www.louishwh.top/2021/10/24/Gradle/</link>
+        <guid isPermaLink="true">http://www.louishwh.top/2021/10/24/Gradle/</guid>
+        
+        <category>Java/Kotlin</category>
+        
+        
+        <category>代码管理工具</category>
+        
+      </item>
     
       <item>
         <title>Maven</title>
@@ -193,238 +223,6 @@ pod spec lint Peanut.podspec
         
         
         <category>【好奇心】</category>
-        
-      </item>
-    
-      <item>
-        <title>暴富还是无奈？</title>
-        <description>&lt;h3 id=&quot;人的多重属性&quot;&gt;人的多重属性&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;精神基础
-    &lt;ul&gt;
-      &lt;li&gt;成长经历&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;社会基础
-    &lt;ul&gt;
-      &lt;li&gt;人际关系&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;经济基础
-    &lt;ul&gt;
-      &lt;li&gt;社会身份&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;在思考几个问题&quot;&gt;在思考几个问题&lt;/h3&gt;
-&lt;ol&gt;
-  &lt;li&gt;为什么有些人喜欢买彩票？&lt;/li&gt;
-  &lt;li&gt;为什么有些人喜欢买股票？&lt;/li&gt;
-  &lt;li&gt;为什么有些人喜欢买数字货币？&lt;/li&gt;
-  &lt;li&gt;为什么有些人喜欢去赌博？&lt;/li&gt;
-  &lt;li&gt;为什么人喜欢玩游戏？&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;为什么买彩票&quot;&gt;为什么买彩票？&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;买彩票的都是哪些人？&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;爱好：纯粹喜欢&lt;/li&gt;
-  &lt;li&gt;投机：以小搏大&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;为什么买股票&quot;&gt;为什么买股票？&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;买股票的都是哪些人？&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;为什么买数字货币&quot;&gt;为什么买数字货币？&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;买数字货币的都是哪些人？&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;为什么赌博&quot;&gt;为什么赌博？&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;赌博的都是哪些人？
-    &lt;ul&gt;
-      &lt;li&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://learnxinyminutes.com/&quot;&gt;Learn X in Y min&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-</description>
-        <pubDate>Fri, 10 Sep 2021 23:00:00 +0800</pubDate>
-        <link>http://www.louishwh.top/2021/09/10/%E5%B8%8C%E6%9C%9B%E6%88%96%E6%98%AF%E6%97%A0%E5%A5%88/</link>
-        <guid isPermaLink="true">http://www.louishwh.top/2021/09/10/%E5%B8%8C%E6%9C%9B%E6%88%96%E6%98%AF%E6%97%A0%E5%A5%88/</guid>
-        
-        <category>【随记】</category>
-        
-        
-        <category>【思考】</category>
-        
-      </item>
-    
-      <item>
-        <title>这些年用过的编程语言</title>
-        <description>&lt;h3 id=&quot;自己的经历&quot;&gt;自己的经历&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;VB
-    &lt;ul&gt;
-      &lt;li&gt;第一门接触的语言。记忆太久远了，只记得当时拖拽出的一个简单的程序。&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;C
-    &lt;ul&gt;
-      &lt;li&gt;指针指针还是指针&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Objective-C@2014
-    &lt;ul&gt;
-      &lt;li&gt;开始搞iOS是学的一门语言，作为C的超集开发还是不错的，中括号的语法&amp;amp;消息机制很独特。特立独行的一门语言。&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Python@2015
-    &lt;ul&gt;
-      &lt;li&gt;简单&amp;amp;方便&lt;/li&gt;
-      &lt;li&gt;15年的时候在中国大学MOOC看课程，偶然遇到的。&lt;/li&gt;
-      &lt;li&gt;现在经常用来爬数据、数据分析、做一些处理事情的小工具。&lt;/li&gt;
-      &lt;li&gt;2018年给公司的签名库添加了&lt;a href=&quot;https://pypi.org/project/wicc/&quot;&gt;Python版本&lt;/a&gt;。&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Perl@2015
-    &lt;ul&gt;
-      &lt;li&gt;处理文本的&lt;/li&gt;
-      &lt;li&gt;据说每年都有一个大赛，专门比赛最难看懂，挺有趣的操作&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;R@2016
-    &lt;ul&gt;
-      &lt;li&gt;16年接触的语言，公司需要做数据分析。&lt;/li&gt;
-      &lt;li&gt;当时研究了一段时间，包很多，但是性能确实不行。&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Swift@2017 ✨
-    &lt;ul&gt;
-      &lt;li&gt;虽然在16年接触过Swift, 不过3.0以前的版本确实改动太大。&lt;/li&gt;
-      &lt;li&gt;比OC用起来舒服多了&lt;/li&gt;
-      &lt;li&gt;Perfect框架可以写后端程序，不过觉得走偏了。&lt;/li&gt;
-      &lt;li&gt;SwiftUI如果能实现跨平台的话那就完美了&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Kotlin@2018 ✨
-    &lt;ul&gt;
-      &lt;li&gt;公司换了一个CTO, 带来了一套技术体系Kotlin+Gradle+Spring&lt;/li&gt;
-      &lt;li&gt;Kotlin和Java能百分之百的替换&lt;/li&gt;
-      &lt;li&gt;至今觉得Kotlin的when操作在这么多种语言中最方便，没有之一。&lt;/li&gt;
-      &lt;li&gt;只会Kotlin不会Java自己都觉得有点奇怪&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Java@2018 ✨
-    &lt;ul&gt;
-      &lt;li&gt;有点索然无味的编程语言，很适合大众。&lt;/li&gt;
-      &lt;li&gt;确实适合大型工程，不需要你写的多么精彩。&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Julia@2018
-    &lt;ul&gt;
-      &lt;li&gt;在学人工智能的时候听到的&lt;/li&gt;
-      &lt;li&gt;买了本Julia的书，看了几天&lt;/li&gt;
-      &lt;li&gt;据说很快，不过确实没怎么用过。&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;ADA@2019
-    &lt;ul&gt;
-      &lt;li&gt;这个比较意外，19年埃塞波音737MAX空难，据说是程序出了Bug.&lt;/li&gt;
-      &lt;li&gt;后来新闻里面提到该飞机的操作系统是ADA写的，出于好奇去官网下了编译器。&lt;/li&gt;
-      &lt;li&gt;简单写了几个Demo。&lt;/li&gt;
-      &lt;li&gt;挺想用ADA开发一个雷达，哈哈哈哈，想想而已。&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Lua@2019
-    &lt;ul&gt;
-      &lt;li&gt;公司的链上合约执行依赖于Lua的虚拟机，为了尝试写个合约，看了一段时间。&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Rust@2020
-    &lt;ul&gt;
-      &lt;li&gt;至今还记得刚开始调试时候的跑不起来囧态。&lt;/li&gt;
-      &lt;li&gt;想了解Libra项目，就去学了一下Rust去调试终端程序。&lt;/li&gt;
-      &lt;li&gt;后来跑去用Actix-web写了一个简单的网站。觉得自己跑偏了。&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Go@2021
-    &lt;ul&gt;
-      &lt;li&gt;最近决定要学一下这个语言。&lt;/li&gt;
-      &lt;li&gt;顺道复习一下C&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Dart@2021
-    &lt;ul&gt;
-      &lt;li&gt;后面Flutter会更广泛，节省人力，多端通吃&lt;/li&gt;
-      &lt;li&gt;我的好奇心还是忍不住。&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;对学习编程语言的一些观点&quot;&gt;对学习编程语言的一些观点&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;底层逻辑
-    &lt;ul&gt;
-      &lt;li&gt;这门语言主要解决哪一类问题&lt;/li&gt;
-      &lt;li&gt;这门语言擅长和不擅长的&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;默认掌握的一些知识
-    &lt;ul&gt;
-      &lt;li&gt;架构设计&lt;/li&gt;
-      &lt;li&gt;设计模式&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;目标导向
-    &lt;ul&gt;
-      &lt;li&gt;自己领域的语言学明白&lt;/li&gt;
-      &lt;li&gt;基础API&lt;/li&gt;
-      &lt;li&gt;开源库&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;个人觉得最好
-    &lt;ul&gt;
-      &lt;li&gt;学一下Python，解放生产力&lt;/li&gt;
-      &lt;li&gt;学一下Dart, 客户端&lt;/li&gt;
-      &lt;li&gt;学一下Go, 后端（并发&amp;amp;指针&amp;amp;编译优势）&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;学习路径
-    &lt;ul&gt;
-      &lt;li&gt;明确目的&lt;/li&gt;
-      &lt;li&gt;先会一门&lt;/li&gt;
-      &lt;li&gt;深入一门&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;一个快速入门一门语言的网站&quot;&gt;一个快速入门一门语言的网站&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://learnxinyminutes.com/&quot;&gt;Learn X in Y min&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-</description>
-        <pubDate>Thu, 09 Sep 2021 22:00:00 +0800</pubDate>
-        <link>http://www.louishwh.top/2021/09/09/%E8%BF%99%E4%BA%9B%E5%B9%B4%E7%94%A8%E8%BF%87%E7%9A%84%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/</link>
-        <guid isPermaLink="true">http://www.louishwh.top/2021/09/09/%E8%BF%99%E4%BA%9B%E5%B9%B4%E7%94%A8%E8%BF%87%E7%9A%84%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/</guid>
-        
-        <category>经历</category>
-        
-        
-        <category>【编程语言】</category>
         
       </item>
     
