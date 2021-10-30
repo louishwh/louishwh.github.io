@@ -5,9 +5,183 @@
     <description></description>
     <link>http://www.louishwh.top/</link>
     <atom:link href="http://www.louishwh.top/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 26 Oct 2021 22:11:55 +0800</pubDate>
-    <lastBuildDate>Tue, 26 Oct 2021 22:11:55 +0800</lastBuildDate>
+    <pubDate>Sat, 30 Oct 2021 16:59:00 +0800</pubDate>
+    <lastBuildDate>Sat, 30 Oct 2021 16:59:00 +0800</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
+    
+      <item>
+        <title>Raspberry-Pico</title>
+        <description>&lt;h3 id=&quot;开篇&quot;&gt;开篇&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;作为树莓派的收藏爱好者，买了Pico开发板和Raspberry 400
+    &lt;ul&gt;
+      &lt;li&gt;之前买的3B/3B+已经作为收藏品了，4B偶尔用一下&lt;/li&gt;
+      &lt;li&gt;Pico不了解想看看&lt;/li&gt;
+      &lt;li&gt;也一并买了Raspberry 400&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;前天晚上刚收到树莓派
+    &lt;ul&gt;
+      &lt;li&gt;Pico带焊接排针的开发板(34.49板+6.5壳)。&lt;/li&gt;
+      &lt;li&gt;Raspberry 400(480)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;清单&quot;&gt;清单&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;物品清单
+    &lt;ul&gt;
+      &lt;li&gt;Mac(PC也可)&lt;/li&gt;
+      &lt;li&gt;Pico开发板（有排针, ¥35）&lt;/li&gt;
+      &lt;li&gt;MicroUSB（要可传数据）&lt;/li&gt;
+      &lt;li&gt;面包线若干&lt;/li&gt;
+      &lt;li&gt;12864oled屏(¥30)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;软件清单
+    &lt;ul&gt;
+      &lt;li&gt;Pico驱动&lt;a href=&quot;https://micropython.org/download/rp2-pico/&quot;&gt;uf2&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;Pico开发工具&lt;a href=&quot;https://thonny.org/&quot;&gt;Thonny&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;图&quot;&gt;图&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Pico的GPIO串口图
+    &lt;ul&gt;
+      &lt;li&gt;&lt;img src=&quot;/images/2021-10-30-pico-gpio.png&quot; alt=&quot;/images/2021-10-30-pico-gpio.png&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;12864显示屏
+    &lt;ul&gt;
+      &lt;li&gt;&lt;img src=&quot;/images/2021-10-30-12864-image.png&quot; alt=&quot;/images/2021-10-30-12864-image.png&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;配置raspberry-pico&quot;&gt;配置Raspberry Pico&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.raspberrypi.com/documentation/microcontrollers/micropython.html&quot;&gt;官方教程&lt;/a&gt;
+    &lt;ol&gt;
+      &lt;li&gt;软件准备
+        &lt;ul&gt;
+          &lt;li&gt;下载并安装Thonny&lt;/li&gt;
+          &lt;li&gt;下载 MicroPython UF2 文件&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;硬件连接准备：
+        &lt;ul&gt;
+          &lt;li&gt;连好硬件&lt;/li&gt;
+          &lt;li&gt;点击Pico开关&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;找到可被系统识别的存储器：RPI-RP2
+        &lt;ul&gt;
+          &lt;li&gt;将 MicroPython UF2 文件拷贝到 RPI-RP2内&lt;/li&gt;
+          &lt;li&gt;RPI-RP2 会消失不见&lt;/li&gt;
+          &lt;li&gt;通过 Thonny 连接 Pico
+            &lt;ul&gt;
+              &lt;li&gt;工具 -&amp;gt; 设置 -&amp;gt; 解释器
+  &lt;img src=&quot;/images/2021-10-30-thonny_setting.png&quot; alt=&quot;/images/2021-10-30-thonny_setting.png&quot; /&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;代码编写：LED闪烁
+        &lt;ul&gt;
+          &lt;li&gt;创建文件 main.py&lt;/li&gt;
+          &lt;li&gt;录入代码：&lt;/li&gt;
+        &lt;/ul&gt;
+
+        &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; import time 
+ from machine import Pin
+
+ LED = Pin(25, Pin.OUT)
+
+ if __name__ == &quot;__main__&quot;:
+   while True:
+       LED.value(0)
+       time.sleep(0.1)
+       LED.value(1)
+       time.sleep(0.1)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li&gt;点击运行当前脚本
+        &lt;ul&gt;
+          &lt;li&gt;即可看到LED等在闪烁&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;使用12864oled屏幕
+        &lt;ul&gt;
+          &lt;li&gt;下载依赖文件&lt;a href=&quot;https://elijah.lanzoui.com/iJ13fpnq6je&quot;&gt;ssd1306.py&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;将ssd1306.py存入到Pico目录下：
+            &lt;ul&gt;
+              &lt;li&gt;连接上Pico, 文件另存，选中Pico即可&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;连接排线
+            &lt;ul&gt;
+              &lt;li&gt;1286 –&amp;gt; Pico&lt;/li&gt;
+              &lt;li&gt;GND –&amp;gt; GND&lt;/li&gt;
+              &lt;li&gt;VCC –&amp;gt; VCC&lt;/li&gt;
+              &lt;li&gt;SCL –&amp;gt; GPIO 0&lt;/li&gt;
+              &lt;li&gt;SDA –&amp;gt; GPIO 1&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;编写显示代码： main.py
+        &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;   from machine import SoftI2C, Pin
+   import time
+   from ssd1306 import SSD1306_I2C
+		
+   i2c = SoftI2C(scl=Pin(0), sda=Pin(1))
+   oled = SSD1306_I2C(128, 64, i2c)
+		
+   i = 0
+   oled.text(&quot;Hello,I am Pico!&quot;,10, 10)
+   oled.show()
+   while True:
+       oled.fill(0)
+       oled.show()
+       oled.text(&quot;{}&quot;.format(i),10, 10)
+       oled.show()
+       i += 1
+       time.sleep(1)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li&gt;点击运行当前脚本
+        &lt;ul&gt;
+          &lt;li&gt;即可看到时间跳动&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;总体感觉&quot;&gt;总体感觉&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;使用起来挺方便&lt;/li&gt;
+  &lt;li&gt;很适合中学生去搞DIY&lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+        <pubDate>Sat, 30 Oct 2021 10:00:00 +0800</pubDate>
+        <link>http://www.louishwh.top/2021/10/30/Raspberry-Pico/</link>
+        <guid isPermaLink="true">http://www.louishwh.top/2021/10/30/Raspberry-Pico/</guid>
+        
+        <category>Python</category>
+        
+        
+        <category>Raspberry</category>
+        
+      </item>
     
       <item>
         <title>包管理工具的总结</title>
@@ -201,28 +375,6 @@ pod spec lint Peanut.podspec
         
         
         <category>代码管理工具</category>
-        
-      </item>
-    
-      <item>
-        <title>PicoNeo3初体验</title>
-        <description>&lt;h3 id=&quot;自己的经历&quot;&gt;自己的经历&lt;/h3&gt;
-
-&lt;h3 id=&quot;对学习编程语言的一些观点&quot;&gt;对学习编程语言的一些观点&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://learnxinyminutes.com/&quot;&gt;Learn X in Y min&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-</description>
-        <pubDate>Sat, 11 Sep 2021 22:00:00 +0800</pubDate>
-        <link>http://www.louishwh.top/2021/09/11/Pico-Neo3%E5%88%9D%E4%BD%93%E9%AA%8C/</link>
-        <guid isPermaLink="true">http://www.louishwh.top/2021/09/11/Pico-Neo3%E5%88%9D%E4%BD%93%E9%AA%8C/</guid>
-        
-        <category>经历</category>
-        
-        
-        <category>【好奇心】</category>
         
       </item>
     

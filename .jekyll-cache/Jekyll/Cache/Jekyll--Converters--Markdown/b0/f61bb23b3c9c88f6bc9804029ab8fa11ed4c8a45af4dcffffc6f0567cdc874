@@ -1,0 +1,89 @@
+I"Q	<h3 id="开篇">开篇</h3>
+<ul>
+  <li>作为树莓派的收藏爱好者，买了Pico开发板和Raspberry 400
+    <ul>
+      <li>之前买的3B/3B+已经作为收藏品了，4B偶尔用一下</li>
+      <li>Pico不了解想看看</li>
+      <li>也一并买了Raspberry 400</li>
+    </ul>
+  </li>
+  <li>前天晚上刚收到树莓派
+    <ul>
+      <li>Pico带焊接排针的开发板(34.49板+6.5壳)。</li>
+      <li>Raspberry 400(480)</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="清单">清单</h3>
+<ul>
+  <li>物品清单
+    <ul>
+      <li>Mac(PC也可)</li>
+      <li>Pico开发板（有排针, ¥35）</li>
+      <li>MicroUSB（要可传数据）</li>
+      <li>面包线若干</li>
+      <li>1286 oled屏(¥30)</li>
+    </ul>
+  </li>
+  <li>软件清单
+    <ul>
+      <li>Pico驱动<a href="https://micropython.org/download/rp2-pico/"></a></li>
+      <li>Pico开发工具<a href="https://thonny.org/">Thonny</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="配置raspberry-pico">配置Raspberry Pico</h4>
+
+<ul>
+  <li><a href="https://www.raspberrypi.com/documentation/microcontrollers/micropython.html">官方教程</a>
+    <ol>
+      <li>软件准备
+        <ul>
+          <li>下载并安装Thonny</li>
+          <li>下载 MicroPython UF2 文件</li>
+        </ul>
+      </li>
+      <li>硬件连接准备：
+        <ul>
+          <li>连好硬件</li>
+          <li>点击Pico开关</li>
+        </ul>
+      </li>
+      <li>找到可被系统识别的存储器：RPI-RP2
+        <ul>
+          <li>将 MicroPython UF2 文件拷贝到 RPI-RP2内</li>
+          <li>RPI-RP2 会消失不见</li>
+          <li>通过 Thonny 连接 Pico
+            <ul>
+              <li>工具 -&gt; 设置 -&gt; 解释器
+  <img src="/images/2021-10-30-thonny_setting.png" alt="/images/2021-10-30-thonny_setting.png" /></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>代码编写
+        <ul>
+          <li>创建文件 main.py</li>
+          <li>录入代码：</li>
+        </ul>
+
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> import time 
+ from machine import Pin
+
+ LED = Pin(25, Pin.OUT)
+
+ if __name__ == "__main__":
+     while True:
+  	    LED.value(0)
+  	        time.sleep(0.1)
+  	        LED.value(1)
+  	        time.sleep(0.1)
+</code></pre></div>        </div>
+      </li>
+    </ol>
+  </li>
+</ul>
+
+:ET
