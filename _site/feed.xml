@@ -5,9 +5,163 @@
     <description></description>
     <link>http://www.louishwh.top/</link>
     <atom:link href="http://www.louishwh.top/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 30 Oct 2021 16:59:00 +0800</pubDate>
-    <lastBuildDate>Sat, 30 Oct 2021 16:59:00 +0800</lastBuildDate>
+    <pubDate>Tue, 07 Dec 2021 22:40:04 +0800</pubDate>
+    <lastBuildDate>Tue, 07 Dec 2021 22:40:04 +0800</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
+    
+      <item>
+        <title>数据库认知</title>
+        <description>
+&lt;hr /&gt;
+&lt;p&gt;layout: post
+title: 数据库的一些认识
+date: 2021-12-07 22:00:00 +0800
+categories: 存储工具
+tag: 数据库
+—&lt;/p&gt;
+
+&lt;h3 id=&quot;数据库的一些排名&quot;&gt;数据库的一些排名&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://db-engines.com/en/ranking&quot;&gt;DB-Engines&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Tue, 07 Dec 2021 00:00:00 +0800</pubDate>
+        <link>http://www.louishwh.top/2021/12/07/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%A4%E7%9F%A5/</link>
+        <guid isPermaLink="true">http://www.louishwh.top/2021/12/07/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%A4%E7%9F%A5/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Java工具—ip转地址</title>
+        <description>
+&lt;hr /&gt;
+&lt;p&gt;layout: post
+title: IP转地址
+date: 2021-12-06 10:00:00 +0800
+categories: JavaUtils
+tag: Java
+—&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/louishwh/java-utils.git&quot;&gt;【代码】&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;需求说明&quot;&gt;需求说明&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;之前服务端有个需求对IP作限制
+    &lt;ul&gt;
+      &lt;li&gt;大陆IP放过&lt;/li&gt;
+      &lt;li&gt;香港IP增加认证&lt;/li&gt;
+      &lt;li&gt;美国IP不能认证&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;对这个问题的思考
+    &lt;ol&gt;
+      &lt;li&gt;一个IP一个地址不现实
+        &lt;ul&gt;
+          &lt;li&gt;这个数据量太大了&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;应该是网段-供应商
+        &lt;ul&gt;
+          &lt;li&gt;通过供应商查询地址&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;实际的解决方案
+    &lt;ol&gt;
+      &lt;li&gt;GeoIP2 GeoLite2开源免费的数据库
+        &lt;ul&gt;
+          &lt;li&gt;https://www.maxmind.com/en/accounts/467533/geoip/downloads&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;通过纯真库
+        &lt;ul&gt;
+          &lt;li&gt;https://www.cz88.net/&lt;/li&gt;
+          &lt;li&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;通过一些IP网站的接口
+        &lt;ul&gt;
+          &lt;li&gt;比如：https://www.ip138.com/iplookup.asp?ip=122.196.203.216&amp;amp;action=2&lt;/li&gt;
+          &lt;li&gt;比如：https://tool.lu/ip/&lt;/li&gt;
+          &lt;li&gt;比如：https://ip.tool.chinaz.com/27.46.106.39&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;总结&quot;&gt;总结&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;这个数据库需要经常更新才比较准确
+    &lt;ul&gt;
+      &lt;li&gt;因为运营商的网段会变&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Mon, 06 Dec 2021 00:00:00 +0800</pubDate>
+        <link>http://www.louishwh.top/2021/12/06/Java%E5%B7%A5%E5%85%B7-IP%E8%BD%AC%E5%9C%B0%E5%9D%80/</link>
+        <guid isPermaLink="true">http://www.louishwh.top/2021/12/06/Java%E5%B7%A5%E5%85%B7-IP%E8%BD%AC%E5%9C%B0%E5%9D%80/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Java_图片生成</title>
+        <description>
+</description>
+        <pubDate>Sun, 14 Nov 2021 00:00:00 +0800</pubDate>
+        <link>http://www.louishwh.top/2021/11/14/Java_%E5%9B%BE%E7%89%87%E7%94%9F%E6%88%90/</link>
+        <guid isPermaLink="true">http://www.louishwh.top/2021/11/14/Java_%E5%9B%BE%E7%89%87%E7%94%9F%E6%88%90/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Java_图片处理</title>
+        <description>
+</description>
+        <pubDate>Sat, 13 Nov 2021 00:00:00 +0800</pubDate>
+        <link>http://www.louishwh.top/2021/11/13/Java_%E5%9B%BE%E7%89%87%E5%A4%84%E7%90%86/</link>
+        <guid isPermaLink="true">http://www.louishwh.top/2021/11/13/Java_%E5%9B%BE%E7%89%87%E5%A4%84%E7%90%86/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Java_人脸识别</title>
+        <description>
+&lt;hr /&gt;
+&lt;p&gt;layout: post
+title: IP转地址
+date: 2021-12-06 10:00:00 +0800
+categories: JavaUtils
+tag: Java
+—&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 07 Nov 2021 00:00:00 +0800</pubDate>
+        <link>http://www.louishwh.top/2021/11/07/Java_%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB/</link>
+        <guid isPermaLink="true">http://www.louishwh.top/2021/11/07/Java_%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Java_pdf工具</title>
+        <description>
+</description>
+        <pubDate>Sat, 06 Nov 2021 00:00:00 +0800</pubDate>
+        <link>http://www.louishwh.top/2021/11/06/Java_PDF%E5%B7%A5%E5%85%B7/</link>
+        <guid isPermaLink="true">http://www.louishwh.top/2021/11/06/Java_PDF%E5%B7%A5%E5%85%B7/</guid>
+        
+        
+      </item>
     
       <item>
         <title>Raspberry-Pico</title>
@@ -222,156 +376,6 @@
         <guid isPermaLink="true">http://www.louishwh.top/2021/10/23/Maven/</guid>
         
         <category>Java/Kotlin</category>
-        
-        
-        <category>代码管理工具</category>
-        
-      </item>
-    
-      <item>
-        <title>Cargo</title>
-        <description>
-</description>
-        <pubDate>Sun, 17 Oct 2021 22:00:00 +0800</pubDate>
-        <link>http://www.louishwh.top/2021/10/17/Cargo/</link>
-        <guid isPermaLink="true">http://www.louishwh.top/2021/10/17/Cargo/</guid>
-        
-        <category>Rust</category>
-        
-        
-        <category>代码管理工具</category>
-        
-      </item>
-    
-      <item>
-        <title>pip</title>
-        <description>
-</description>
-        <pubDate>Sat, 16 Oct 2021 22:00:00 +0800</pubDate>
-        <link>http://www.louishwh.top/2021/10/16/pip/</link>
-        <guid isPermaLink="true">http://www.louishwh.top/2021/10/16/pip/</guid>
-        
-        <category>Python</category>
-        
-        
-        <category>代码管理工具</category>
-        
-      </item>
-    
-      <item>
-        <title>gem</title>
-        <description>
-</description>
-        <pubDate>Sun, 10 Oct 2021 22:00:00 +0800</pubDate>
-        <link>http://www.louishwh.top/2021/10/10/gem/</link>
-        <guid isPermaLink="true">http://www.louishwh.top/2021/10/10/gem/</guid>
-        
-        <category>Ruby</category>
-        
-        
-        <category>代码管理工具</category>
-        
-      </item>
-    
-      <item>
-        <title>npm</title>
-        <description>
-</description>
-        <pubDate>Sat, 09 Oct 2021 22:00:00 +0800</pubDate>
-        <link>http://www.louishwh.top/2021/10/09/npm/</link>
-        <guid isPermaLink="true">http://www.louishwh.top/2021/10/09/npm/</guid>
-        
-        <category>Javascript</category>
-        
-        
-        <category>代码管理工具</category>
-        
-      </item>
-    
-      <item>
-        <title>Carthage</title>
-        <description>
-</description>
-        <pubDate>Sun, 03 Oct 2021 22:00:00 +0800</pubDate>
-        <link>http://www.louishwh.top/2021/10/03/Carthage/</link>
-        <guid isPermaLink="true">http://www.louishwh.top/2021/10/03/Carthage/</guid>
-        
-        <category>Swift</category>
-        
-        
-        <category>代码管理工具</category>
-        
-      </item>
-    
-      <item>
-        <title>CocoaPods</title>
-        <description>&lt;h4 id=&quot;官网&quot;&gt;&lt;a href=&quot;https://cocoapods.org/&quot;&gt;官网&lt;/a&gt;&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;Swift 和 Objective-C Cocoa 项目的包管理工具&lt;/li&gt;
-  &lt;li&gt;iOS 开发的必备工具&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;安装&quot;&gt;安装&lt;/h4&gt;
-&lt;ol&gt;
-  &lt;li&gt;CocoaPods 是用 Ruby 构建的,可以用 macOS 上的默认 Ruby 进行安装&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo gem install cocoapods&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;⚠️ ERROR: While executing gem … (Gem::FilePermissionError).
-	You don’t have write permissions for the /usr/bin directory.&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo gem install -n /usr/local/bin fastlane&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo gem install -n /usr/local/bin cocoapods&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;管理依赖&quot;&gt;&lt;a href=&quot;https://guides.cocoapods.org/syntax/podfile.html&quot;&gt;管理依赖&lt;/a&gt;&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;创建 Podfile 文件（XXXX.xcodeproj 所在文件夹）&lt;/li&gt;
-  &lt;li&gt;Podfile内容：&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;platform :ios, '10.0'
-use_frameworks!
-
-target 'Target Name' do
-  pod 'AFNetworking', '~&amp;gt; 2.6'
-  pod 'ORStackView', '~&amp;gt; 3.0'
-  pod 'SwiftyJSON', '~&amp;gt; 2.3'
-
-  target 'MyAppTests' do
-    inherit! :search_paths
-    pod 'OCMock', '~&amp;gt; 2.0.1'
-  end
-
-post_install do |installer|
-  installer.pods_project.targets.each do |target|
-    puts &quot;#{target.name}&quot;
-  end
-end
-
-end
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pod init&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pod install&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;创建cocoapods包&quot;&gt;&lt;a href=&quot;https://guides.cocoapods.org/syntax/podspec.html&quot;&gt;创建CocoaPods包&lt;/a&gt;&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pod spec create LouisProject
-edit Peanut.podspec
-pod spec lint Peanut.podspec
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-</description>
-        <pubDate>Sat, 02 Oct 2021 22:00:00 +0800</pubDate>
-        <link>http://www.louishwh.top/2021/10/02/CocoaPods/</link>
-        <guid isPermaLink="true">http://www.louishwh.top/2021/10/02/CocoaPods/</guid>
-        
-        <category>Objective-C/Swift</category>
         
         
         <category>代码管理工具</category>
