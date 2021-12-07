@@ -1,0 +1,63 @@
+I"�<h3 id="数据库的排名">数据库的排名</h3>
+
+<ul>
+  <li><a href="https://db-engines.com/en/ranking">DB-Engines</a>
+    <ul>
+      <li>此最权威</li>
+    </ul>
+  </li>
+  <li><a href="https://www.modb.pro/dbRank">墨天轮</a>
+    <ul>
+      <li></li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="现状的一些分析">现状的一些分析</h3>
+
+<ul>
+  <li>
+    <p>Oracle</p>
+  </li>
+  <li>
+    <p>MySQL/MariaDB</p>
+  </li>
+  <li>
+    <p>PostgreSQL</p>
+  </li>
+  <li>
+    <p>MongoDB</p>
+  </li>
+  <li>
+    <p>Redis</p>
+  </li>
+  <li>
+    <p>Elasticsearch</p>
+  </li>
+  <li>
+    <p>SQLite</p>
+  </li>
+</ul>
+
+<h3 id="自己真正玩过的">自己真正玩过的</h3>
+
+<ol>
+  <li>
+    <p>MySQL</p>
+  </li>
+  <li>
+    <p>PostgreSQL</p>
+  </li>
+  <li>
+    <p>MongoDB</p>
+  </li>
+  <li>
+    <p>Redis</p>
+  </li>
+  <li>
+    <p>SQLite</p>
+  </li>
+</ol>
+
+<h3 id="七周入门七数据库">七周入门七数据库</h3>
+:ET
