@@ -5,12 +5,12 @@
     <description></description>
     <link>http://www.louishwh.top/</link>
     <atom:link href="http://www.louishwh.top/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 07 Dec 2021 22:40:04 +0800</pubDate>
-    <lastBuildDate>Tue, 07 Dec 2021 22:40:04 +0800</lastBuildDate>
+    <pubDate>Tue, 07 Dec 2021 22:43:22 +0800</pubDate>
+    <lastBuildDate>Tue, 07 Dec 2021 22:43:22 +0800</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
     
       <item>
-        <title>数据库认知</title>
+        <title>数据库_认知</title>
         <description>
 &lt;hr /&gt;
 &lt;p&gt;layout: post
@@ -23,24 +23,28 @@ tag: 数据库
 &lt;h3 id=&quot;数据库的一些排名&quot;&gt;数据库的一些排名&lt;/h3&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://db-engines.com/en/ranking&quot;&gt;DB-Engines&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://db-engines.com/en/ranking&quot;&gt;DB-Engines&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;此最权威&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.modb.pro/dbRank&quot;&gt;墨天轮&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Tue, 07 Dec 2021 00:00:00 +0800</pubDate>
-        <link>http://www.louishwh.top/2021/12/07/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%A4%E7%9F%A5/</link>
-        <guid isPermaLink="true">http://www.louishwh.top/2021/12/07/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%A4%E7%9F%A5/</guid>
+        <pubDate>Sat, 04 Dec 2021 00:00:00 +0800</pubDate>
+        <link>http://www.louishwh.top/2021/12/04/%E6%95%B0%E6%8D%AE%E5%BA%93_%E8%AE%A4%E7%9F%A5/</link>
+        <guid isPermaLink="true">http://www.louishwh.top/2021/12/04/%E6%95%B0%E6%8D%AE%E5%BA%93_%E8%AE%A4%E7%9F%A5/</guid>
         
         
       </item>
     
       <item>
-        <title>Java工具—ip转地址</title>
+        <title>Java_ip转地址</title>
         <description>
 &lt;hr /&gt;
 &lt;p&gt;layout: post
-title: IP转地址
-date: 2021-12-06 10:00:00 +0800
+title: Java_IP转地址
+date: 2021-11-20 10:00:00 +0800
 categories: JavaUtils
 tag: Java
 —&lt;/p&gt;
@@ -104,9 +108,9 @@ tag: Java
   &lt;/li&gt;
 &lt;/ol&gt;
 </description>
-        <pubDate>Mon, 06 Dec 2021 00:00:00 +0800</pubDate>
-        <link>http://www.louishwh.top/2021/12/06/Java%E5%B7%A5%E5%85%B7-IP%E8%BD%AC%E5%9C%B0%E5%9D%80/</link>
-        <guid isPermaLink="true">http://www.louishwh.top/2021/12/06/Java%E5%B7%A5%E5%85%B7-IP%E8%BD%AC%E5%9C%B0%E5%9D%80/</guid>
+        <pubDate>Sat, 20 Nov 2021 00:00:00 +0800</pubDate>
+        <link>http://www.louishwh.top/2021/11/20/Java_IP%E8%BD%AC%E5%9C%B0%E5%9D%80/</link>
+        <guid isPermaLink="true">http://www.louishwh.top/2021/11/20/Java_IP%E8%BD%AC%E5%9C%B0%E5%9D%80/</guid>
         
         
       </item>
@@ -114,6 +118,14 @@ tag: Java
       <item>
         <title>Java_图片生成</title>
         <description>
+&lt;hr /&gt;
+&lt;p&gt;layout: post
+title: IP转地址
+date: 2021-11-20 10:00:00 +0800
+categories: JavaUtils
+tag: Java
+—&lt;/p&gt;
+
 </description>
         <pubDate>Sun, 14 Nov 2021 00:00:00 +0800</pubDate>
         <link>http://www.louishwh.top/2021/11/14/Java_%E5%9B%BE%E7%89%87%E7%94%9F%E6%88%90/</link>
@@ -138,12 +150,11 @@ tag: Java
         <description>
 &lt;hr /&gt;
 &lt;p&gt;layout: post
-title: IP转地址
-date: 2021-12-06 10:00:00 +0800
+title: Java_人脸识别
+date: 2021-11-07 23:00:00 +0800
 categories: JavaUtils
 tag: Java
 —&lt;/p&gt;
-
 </description>
         <pubDate>Sun, 07 Nov 2021 00:00:00 +0800</pubDate>
         <link>http://www.louishwh.top/2021/11/07/Java_%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB/</link>
@@ -153,13 +164,17 @@ tag: Java
       </item>
     
       <item>
-        <title>Java_pdf工具</title>
+        <title>Java_PDF工具</title>
         <description>
 </description>
-        <pubDate>Sat, 06 Nov 2021 00:00:00 +0800</pubDate>
+        <pubDate>Sat, 06 Nov 2021 23:00:00 +0800</pubDate>
         <link>http://www.louishwh.top/2021/11/06/Java_PDF%E5%B7%A5%E5%85%B7/</link>
         <guid isPermaLink="true">http://www.louishwh.top/2021/11/06/Java_PDF%E5%B7%A5%E5%85%B7/</guid>
         
+        <category>Java</category>
+        
+        
+        <category>JavaUtils</category>
         
       </item>
     
