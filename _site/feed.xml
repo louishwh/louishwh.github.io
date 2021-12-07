@@ -5,8 +5,8 @@
     <description></description>
     <link>http://www.louishwh.top/</link>
     <atom:link href="http://www.louishwh.top/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 07 Dec 2021 23:10:51 +0800</pubDate>
-    <lastBuildDate>Tue, 07 Dec 2021 23:10:51 +0800</lastBuildDate>
+    <pubDate>Tue, 07 Dec 2021 23:13:34 +0800</pubDate>
+    <lastBuildDate>Tue, 07 Dec 2021 23:13:34 +0800</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
     
       <item>
@@ -112,8 +112,121 @@
 
 </description>
         <pubDate>Tue, 07 Dec 2021 22:00:00 +0800</pubDate>
-        <link>http://www.louishwh.top/2021/12/07/%E6%95%B0%E6%8D%AE%E5%BA%93_%E8%AE%A4%E7%9F%A5/</link>
-        <guid isPermaLink="true">http://www.louishwh.top/2021/12/07/%E6%95%B0%E6%8D%AE%E5%BA%93_%E8%AE%A4%E7%9F%A5/</guid>
+        <link>http://www.louishwh.top/2021/12/07/%E6%9E%B6%E6%9E%84_%E6%9E%B6%E6%9E%84%E6%A8%A1%E5%BC%8F/</link>
+        <guid isPermaLink="true">http://www.louishwh.top/2021/12/07/%E6%9E%B6%E6%9E%84_%E6%9E%B6%E6%9E%84%E6%A8%A1%E5%BC%8F/</guid>
+        
+        <category>数据库</category>
+        
+        
+        <category>存储工具</category>
+        
+      </item>
+    
+      <item>
+        <title>数据库_排名</title>
+        <description>&lt;h3 id=&quot;数据库的排名&quot;&gt;数据库的排名&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://db-engines.com/en/ranking&quot;&gt;DB-Engines&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;此最权威&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.modb.pro/dbRank&quot;&gt;墨天轮&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;当前排名现状&quot;&gt;当前排名现状&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Oracle&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;MySQL&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Microsoft SQL Server&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;PostgreSQL&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;MongoDB&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Redis&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Elasticsearch&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;SQLite&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Microsoft Access&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Cassandra&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;MariaDB&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;七周七数据库提及的&quot;&gt;七周七数据库提及的&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;PostgreSQL&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Riak&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Apache HBase&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Apache CouchDB&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;MongoDB&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Neo4j&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Redis&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;自己真正玩过的&quot;&gt;自己真正玩过的&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;MySQL&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;PostgreSQL&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;MongoDB&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Redis&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;SQLite&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+        <pubDate>Tue, 07 Dec 2021 22:00:00 +0800</pubDate>
+        <link>http://www.louishwh.top/2021/12/07/%E6%95%B0%E6%8D%AE%E5%BA%93_%E6%8E%92%E5%90%8D/</link>
+        <guid isPermaLink="true">http://www.louishwh.top/2021/12/07/%E6%95%B0%E6%8D%AE%E5%BA%93_%E6%8E%92%E5%90%8D/</guid>
         
         <category>数据库</category>
         
@@ -453,21 +566,6 @@
         <pubDate>Sun, 24 Oct 2021 22:00:00 +0800</pubDate>
         <link>http://www.louishwh.top/2021/10/24/%E5%8C%85%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7%E6%80%BB%E7%BB%93/</link>
         <guid isPermaLink="true">http://www.louishwh.top/2021/10/24/%E5%8C%85%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7%E6%80%BB%E7%BB%93/</guid>
-        
-        <category>Java/Kotlin</category>
-        
-        
-        <category>代码管理工具</category>
-        
-      </item>
-    
-      <item>
-        <title>Gradle</title>
-        <description>
-</description>
-        <pubDate>Sun, 24 Oct 2021 22:00:00 +0800</pubDate>
-        <link>http://www.louishwh.top/2021/10/24/Gradle/</link>
-        <guid isPermaLink="true">http://www.louishwh.top/2021/10/24/Gradle/</guid>
         
         <category>Java/Kotlin</category>
         
