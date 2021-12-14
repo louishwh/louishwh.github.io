@@ -1,0 +1,47 @@
+I"�<h3 id="一-核心问题">一. 核心问题</h3>
+<ol>
+  <li>网站的性能怎么评估？
+    <ul>
+      <li>用户/开发/运维</li>
+      <li>网站性能指标有哪些？</li>
+      <li>如何得到性能的指标？</li>
+    </ul>
+  </li>
+  <li>网站的性能如何优化？
+    <ul>
+      <li>前端优化？</li>
+      <li>后端优化？</li>
+      <li>存储优化？</li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="二-网站性能的评估">二. 网站性能的评估</h3>
+
+<h4 id="1-不同视角">1. 不同视角</h4>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- 从用户：
+	1. 加载出频率
+	2. 加载的速度
+- 从开发：
+	1. 延迟
+	2. 吞吐量
+	3. 稳定性
+- 从运维
+	1. 硬件配置
+	2. 网络架构
+	3. 资源利用率：带宽/CPU/硬盘
+</code></pre></div></div>
+
+<h4 id="2-具体的指标">2. 具体的指标</h4>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- 响应时间 最重要‼️
+	- 应用执行一个操作的时间
+		- 打开网站 几秒
+		- 数据库查询有索引的数据 十几毫秒
+		- 
+- 并发数
+	- 
+- 吞吐量
+- 性能计数器
+</code></pre></div></div>
+
+:ET
