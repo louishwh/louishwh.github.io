@@ -5,9 +5,480 @@
     <description></description>
     <link>http://www.louishwh.top/</link>
     <atom:link href="http://www.louishwh.top/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 14 Dec 2021 22:52:31 +0800</pubDate>
-    <lastBuildDate>Tue, 14 Dec 2021 22:52:31 +0800</lastBuildDate>
+    <pubDate>Wed, 15 Dec 2021 23:32:56 +0800</pubDate>
+    <lastBuildDate>Wed, 15 Dec 2021 23:32:56 +0800</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
+    
+      <item>
+        <title>架构_Web高性能架构</title>
+        <description>&lt;h3 id=&quot;一-核心问题&quot;&gt;一. 核心问题&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;网站的性能怎么评估？
+    &lt;ul&gt;
+      &lt;li&gt;用户/开发/运维&lt;/li&gt;
+      &lt;li&gt;网站性能指标有哪些？&lt;/li&gt;
+      &lt;li&gt;如何得到性能的指标？&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;网站的性能如何优化？
+    &lt;ul&gt;
+      &lt;li&gt;前端优化？&lt;/li&gt;
+      &lt;li&gt;后端优化？&lt;/li&gt;
+      &lt;li&gt;存储优化？&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;二-网站性能的评估&quot;&gt;二. 网站性能的评估&lt;/h3&gt;
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;1-不同视角&quot;&gt;1. 不同视角&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;从用户：
+    &lt;ol&gt;
+      &lt;li&gt;加载出频率&lt;/li&gt;
+      &lt;li&gt;加载的速度&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;从开发：
+    &lt;ol&gt;
+      &lt;li&gt;延迟&lt;/li&gt;
+      &lt;li&gt;吞吐量&lt;/li&gt;
+      &lt;li&gt;稳定性&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;从运维
+    &lt;ol&gt;
+      &lt;li&gt;硬件配置&lt;/li&gt;
+      &lt;li&gt;网络架构&lt;/li&gt;
+      &lt;li&gt;资源利用率：带宽/CPU/硬盘&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;2-具体的指标&quot;&gt;2. 具体的指标&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;响应时间（系统的快慢）
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://colin-scott.github.io/personal_website/research/interactive_latency.html&quot;&gt;应用执行一个操作的时间&lt;/a&gt;
+        &lt;ul&gt;
+          &lt;li&gt;打开网站 几秒&lt;/li&gt;
+          &lt;li&gt;数据库查询有索引的数据 十几毫秒&lt;/li&gt;
+          &lt;li&gt;机械硬盘一次寻址定位 几毫秒&lt;/li&gt;
+          &lt;li&gt;从内存中读取1MB数据 几十微米&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;并发数（系统负载能力）
+    &lt;ul&gt;
+      &lt;li&gt;系统能够同时处理请求的数目
+        &lt;ul&gt;
+          &lt;li&gt;用户数 » 在线用户数 » 并发用户数&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;吞吐量（系统处理能力）
+    &lt;ul&gt;
+      &lt;li&gt;单位时间内系统处理的请求数量
+        &lt;ul&gt;
+          &lt;li&gt;TPS: 每秒事务数&lt;/li&gt;
+          &lt;li&gt;QPS: 每秒查询数&lt;/li&gt;
+          &lt;li&gt;HPS: 每秒请求数&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;性能计数器（操作系统/服务器性能的指标）
+    &lt;ul&gt;
+      &lt;li&gt;System Load（系统忙闲程度）
+        &lt;ul&gt;
+          &lt;li&gt;系统负载，正在被CPU和等待CPU执行的进程总数&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;对象与线程数&lt;/li&gt;
+      &lt;li&gt;CPU使用&lt;/li&gt;
+      &lt;li&gt;磁盘I/O&lt;/li&gt;
+      &lt;li&gt;网络I/O&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;3-性能测试方法&quot;&gt;3. 性能测试方法&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;性能测试：
+    &lt;ul&gt;
+      &lt;li&gt;测试是否达到最初的设计目标&lt;/li&gt;
+      &lt;li&gt;验证系统在资源可接受范围内能否达到性能预期&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;负载测试
+    &lt;ul&gt;
+      &lt;li&gt;对系统不断增加并发请求以增加系统压力，当系统的各项性能达到安全临界值&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;压力测试
+    &lt;ul&gt;
+      &lt;li&gt;获取系统的最大承受力&lt;/li&gt;
+      &lt;li&gt;在超过安全负载情况下，对系统继续施加压力，直到系统崩溃&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;稳定性测试
+    &lt;ul&gt;
+      &lt;li&gt;在一定条件下，对系统加载一定的业务压力&lt;/li&gt;
+      &lt;li&gt;使系统运行一段较长时间，以此检测系统是否稳定&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;性能测试报告
+    &lt;ul&gt;
+      &lt;li&gt;并法/响应/TPS/错误/Load/内存&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;三-网站性能的优化&quot;&gt;三. 网站性能的优化&lt;/h3&gt;
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;1-前端性能优化&quot;&gt;1. 前端性能优化&lt;/h4&gt;
+&lt;ol&gt;
+  &lt;li&gt;浏览器访问优化
+    &lt;ul&gt;
+      &lt;li&gt;减少HTTP请求&lt;/li&gt;
+      &lt;li&gt;使用浏览器缓存&lt;/li&gt;
+      &lt;li&gt;启用压缩
+        &lt;ul&gt;
+          &lt;li&gt;压缩对于服务器和浏览器产生一定的压力&lt;/li&gt;
+          &lt;li&gt;要权衡带宽和服务器资源&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;CSS居最上，JS居最下
+        &lt;ul&gt;
+          &lt;li&gt;CSS全部下载完才会对整个界面渲染&lt;/li&gt;
+          &lt;li&gt;浏览器加载JS后立即执行，可能会阻塞界面&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;减少Cookie传输
+        &lt;ul&gt;
+          &lt;li&gt;太大的Cookie影响数据传输&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;CDN加速
+    &lt;ul&gt;
+      &lt;li&gt;Content Distribute Network&lt;/li&gt;
+      &lt;li&gt;本质是将数据缓存中距离用户最近的地方&lt;/li&gt;
+      &lt;li&gt;一般用于缓存静态资源：图片、文件、CSS、Script、静态网页&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;反向代理
+    &lt;ul&gt;
+      &lt;li&gt;将用户请求转发到Web服务器集群&lt;/li&gt;
+      &lt;li&gt;可以通过配置缓存加速Web请求&lt;/li&gt;
+      &lt;li&gt;实现负载均衡功能 
+***&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;2-服务端性能优化&quot;&gt;2. 服务端性能优化&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;分布式缓存
+    &lt;ul&gt;
+      &lt;li&gt;缓存原理
+        &lt;ul&gt;
+          &lt;li&gt;网站优化优先考虑使用缓存&lt;/li&gt;
+          &lt;li&gt;缓存主要用来存放读写比很高、很少变化的数据&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;合理使用缓存
+        &lt;ul&gt;
+          &lt;li&gt;不恰当使用缓存的情况
+            &lt;ul&gt;
+              &lt;li&gt;频繁修改的数据&lt;/li&gt;
+              &lt;li&gt;没有热点的访问&lt;/li&gt;
+              &lt;li&gt;数据不一致与脏读&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;几个重要概念
+            &lt;ul&gt;
+              &lt;li&gt;缓存雪崩
+                &lt;ul&gt;
+                  &lt;li&gt;大规模缓存失效，导致数据库会因为不能承受压力而宕机&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+              &lt;li&gt;缓存预热：
+                &lt;ul&gt;
+                  &lt;li&gt;缓存系统重启时把热点数据加载好&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+              &lt;li&gt;缓存穿透：
+                &lt;ul&gt;
+                  &lt;li&gt;请求不存在的数据，由于不存在缓存，对数据库造成很大压力&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;分布式缓存架构
+        &lt;ul&gt;
+          &lt;li&gt;Redis
+            &lt;ul&gt;
+              &lt;li&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Memcached
+            &lt;ul&gt;
+              &lt;li&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;异步操作
+    &lt;ul&gt;
+      &lt;li&gt;消息队列
+        &lt;ul&gt;
+          &lt;li&gt;作用
+            &lt;ul&gt;
+              &lt;li&gt;削峰&lt;/li&gt;
+              &lt;li&gt;改善性能&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;常见
+            &lt;ul&gt;
+              &lt;li&gt;Kafka&lt;/li&gt;
+              &lt;li&gt;RocketMQ&lt;/li&gt;
+              &lt;li&gt;RabbitMQ&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;使用集群
+    &lt;ul&gt;
+      &lt;li&gt;负载均衡为一个应用构建由多台服务器组成的服务器集群&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;代码优化
+    &lt;ul&gt;
+      &lt;li&gt;多线程
+        &lt;ul&gt;
+          &lt;li&gt;IO阻塞/多CPU&lt;/li&gt;
+          &lt;li&gt;线程安全问题&lt;/li&gt;
+          &lt;li&gt;最佳启动线程数与CPU内核数量成正比&lt;/li&gt;
+          &lt;li&gt;最佳启动线程数与IO等待时间成正比&lt;/li&gt;
+          &lt;li&gt;计算型任务，线程数最多不超过CPU内核数&lt;/li&gt;
+          &lt;li&gt;任务需要等如磁盘操作、网络响应，启动多线程有助于提高任务&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;资源复用
+        &lt;ul&gt;
+          &lt;li&gt;单例&lt;/li&gt;
+          &lt;li&gt;对象池&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;数据结构
+        &lt;ul&gt;
+          &lt;li&gt;这个重要性不多言&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;垃圾回收
+        &lt;ul&gt;
+          &lt;li&gt;JVM
+            &lt;ul&gt;
+              &lt;li&gt;heap&lt;/li&gt;
+              &lt;li&gt;stack&lt;/li&gt;
+              &lt;li&gt;Young Genetation&lt;/li&gt;
+              &lt;li&gt;Old Genetation&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;3-存储性能优化&quot;&gt;3. 存储性能优化&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;SSD - HHD
+    &lt;ul&gt;
+      &lt;li&gt;Solid State Drives&lt;/li&gt;
+      &lt;li&gt;Hard Disk Drive&lt;/li&gt;
+      &lt;li&gt;对比参数：
+        &lt;ul&gt;
+          &lt;li&gt;读取速度&lt;/li&gt;
+          &lt;li&gt;抗震能力&lt;/li&gt;
+          &lt;li&gt;功耗&lt;/li&gt;
+          &lt;li&gt;噪声&lt;/li&gt;
+          &lt;li&gt;容量&lt;/li&gt;
+          &lt;li&gt;价格&lt;/li&gt;
+          &lt;li&gt;写入次数&lt;/li&gt;
+          &lt;li&gt;数据恢复&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;B+树 - LSM树
+    &lt;ul&gt;
+      &lt;li&gt;传统关系型数据库：B+树&lt;/li&gt;
+      &lt;li&gt;LSM树可以看作是一个N阶合并树&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;RAID - HDFS
+    &lt;ul&gt;
+      &lt;li&gt;RAID: 廉价磁盘冗余阵列&lt;/li&gt;
+      &lt;li&gt;HDFS: Hadoop分布式文件系统&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;四总结&quot;&gt;四。总结&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;性能优化的最终目的就是改善用户的体验&lt;/li&gt;
+  &lt;li&gt;性能优化也需要全面考虑
+    &lt;ul&gt;
+      &lt;li&gt;花费代价与获得的体验提升之间的平衡&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+        <pubDate>Wed, 15 Dec 2021 22:00:00 +0800</pubDate>
+        <link>http://www.louishwh.top/2021/12/15/%E6%9E%B6%E6%9E%84-Web%E9%AB%98%E6%80%A7%E8%83%BD%E6%9E%B6%E6%9E%84/</link>
+        <guid isPermaLink="true">http://www.louishwh.top/2021/12/15/%E6%9E%B6%E6%9E%84-Web%E9%AB%98%E6%80%A7%E8%83%BD%E6%9E%B6%E6%9E%84/</guid>
+        
+        <category>架构</category>
+        
+        
+        <category>服务端</category>
+        
+      </item>
+    
+      <item>
+        <title>架构_架构模式</title>
+        <description>&lt;h3 id=&quot;对架构的几点思考&quot;&gt;对架构的几点思考&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;大型网站问题的缘由？
+    &lt;ul&gt;
+      &lt;li&gt;核心模型
+        &lt;ul&gt;
+          &lt;li&gt;客户端 –&amp;gt; 服务端&lt;/li&gt;
+          &lt;li&gt;客户端 &amp;lt;– 服务端&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;问题点
+        &lt;ul&gt;
+          &lt;li&gt;客户端不断增长，甚至于可以达到亿级别&lt;/li&gt;
+          &lt;li&gt;如果想要实现后端服务的正常，需要成比例增加服务端的处理能力&lt;/li&gt;
+          &lt;li&gt;服务端的处理能力需要综合考量
+            &lt;ul&gt;
+              &lt;li&gt;带宽&lt;/li&gt;
+              &lt;li&gt;网卡&lt;/li&gt;
+              &lt;li&gt;CPU&lt;/li&gt;
+              &lt;li&gt;内存&lt;/li&gt;
+              &lt;li&gt;磁盘&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;架构的几个核心思想&quot;&gt;架构的几个核心思想&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;横向的拆分(分层)
+    &lt;ul&gt;
+      &lt;li&gt;系统的分层
+        &lt;ul&gt;
+          &lt;li&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;代码的分层
+        &lt;ul&gt;
+          &lt;li&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;纵向的拆分(分割)
+    &lt;ul&gt;
+      &lt;li&gt;服务的分割
+        &lt;ul&gt;
+          &lt;li&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;数据库的分割
+        &lt;ul&gt;
+          &lt;li&gt;分库/分表&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;分布式
+    &lt;ul&gt;
+      &lt;li&gt;分割后，把服务部署到多台服务器上&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;集群
+    &lt;ul&gt;
+      &lt;li&gt;相同功能的服务部署到多台服务上&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;缓存
+    &lt;ul&gt;
+      &lt;li&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;异步
+    &lt;ul&gt;
+      &lt;li&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;冗余
+    &lt;ul&gt;
+      &lt;li&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;自动化
+    &lt;ul&gt;
+      &lt;li&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;安全
+    &lt;ul&gt;
+      &lt;li&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Wed, 15 Dec 2021 22:00:00 +0800</pubDate>
+        <link>http://www.louishwh.top/2021/12/15/%E6%9E%B6%E6%9E%84-%E6%9E%B6%E6%9E%84%E6%A8%A1%E5%BC%8F/</link>
+        <guid isPermaLink="true">http://www.louishwh.top/2021/12/15/%E6%9E%B6%E6%9E%84-%E6%9E%B6%E6%9E%84%E6%A8%A1%E5%BC%8F/</guid>
+        
+        <category>架构</category>
+        
+        
+        <category>服务端</category>
+        
+      </item>
     
       <item>
         <title>架构_Web架构演化历程</title>
@@ -319,36 +790,6 @@
         <pubDate>Sun, 14 Nov 2021 23:00:00 +0800</pubDate>
         <link>http://www.louishwh.top/2021/11/14/Java_%E5%9B%BE%E7%89%87%E7%94%9F%E6%88%90/</link>
         <guid isPermaLink="true">http://www.louishwh.top/2021/11/14/Java_%E5%9B%BE%E7%89%87%E7%94%9F%E6%88%90/</guid>
-        
-        <category>Java</category>
-        
-        
-        <category>JavaUtils</category>
-        
-      </item>
-    
-      <item>
-        <title>Java_图片处理</title>
-        <description>
-</description>
-        <pubDate>Sat, 13 Nov 2021 23:00:00 +0800</pubDate>
-        <link>http://www.louishwh.top/2021/11/13/Java_%E5%9B%BE%E7%89%87%E5%A4%84%E7%90%86/</link>
-        <guid isPermaLink="true">http://www.louishwh.top/2021/11/13/Java_%E5%9B%BE%E7%89%87%E5%A4%84%E7%90%86/</guid>
-        
-        <category>Java</category>
-        
-        
-        <category>JavaUtils</category>
-        
-      </item>
-    
-      <item>
-        <title>Java_人脸识别</title>
-        <description>
-</description>
-        <pubDate>Sun, 07 Nov 2021 23:00:00 +0800</pubDate>
-        <link>http://www.louishwh.top/2021/11/07/Java_%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB/</link>
-        <guid isPermaLink="true">http://www.louishwh.top/2021/11/07/Java_%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB/</guid>
         
         <category>Java</category>
         
