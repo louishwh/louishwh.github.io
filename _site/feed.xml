@@ -5,13 +5,154 @@
     <description></description>
     <link>http://www.louishwh.top/</link>
     <atom:link href="http://www.louishwh.top/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 15 Dec 2021 23:32:56 +0800</pubDate>
-    <lastBuildDate>Wed, 15 Dec 2021 23:32:56 +0800</lastBuildDate>
+    <pubDate>Thu, 16 Dec 2021 21:59:28 +0800</pubDate>
+    <lastBuildDate>Thu, 16 Dec 2021 21:59:28 +0800</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
     
       <item>
+        <title>架构_Web高可用架构</title>
+        <description>&lt;h3 id=&quot;零-核心问题&quot;&gt;零. 核心问题&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;网站可用性如何衡量？
+    &lt;ul&gt;
+      &lt;li&gt;指标&lt;/li&gt;
+      &lt;li&gt;考核&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;如何设计高可用的系统？
+    &lt;ul&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;一-网站可用性的衡量&quot;&gt;一. 网站可用性的衡量&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;1-可用性度量&quot;&gt;1. 可用性度量&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;9的多少数量来衡量
+    &lt;ul&gt;
+      &lt;li&gt;90% 小于36天12小时&lt;/li&gt;
+      &lt;li&gt;99% 小于87小时36分钟&lt;/li&gt;
+      &lt;li&gt;99.9% 小于8小时46分钟&lt;/li&gt;
+      &lt;li&gt;99.99% 小于52分钟33秒&lt;/li&gt;
+      &lt;li&gt;99.999% 小于5分钟15秒&lt;/li&gt;
+      &lt;li&gt;99.9999% 小于31.5秒&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;2-可用性考核&quot;&gt;2. 可用性考核&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;数据和服务的冗余备份
+  -&lt;/li&gt;
+  &lt;li&gt;数据和服务的失效转移
+    &lt;ul&gt;
+      &lt;li&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;二-高可用的网站架构&quot;&gt;二. 高可用的网站架构&lt;/h3&gt;
+
+&lt;hr /&gt;
+&lt;h4 id=&quot;1-负载均衡进行无状态服务的失效转移&quot;&gt;1. 负载均衡进行无状态服务的失效转移&lt;/h4&gt;
+
+&lt;hr /&gt;
+&lt;h4 id=&quot;2-应用服务器集群的session管理&quot;&gt;2. 应用服务器集群的Session管理&lt;/h4&gt;
+
+&lt;h3 id=&quot;三-高可用的应用&quot;&gt;三. 高可用的应用&lt;/h3&gt;
+
+&lt;hr /&gt;
+&lt;h4 id=&quot;1-分级管理&quot;&gt;1. 分级管理&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;服务分级管理
+    &lt;ul&gt;
+      &lt;li&gt;核心应用和服务使用更好的配置&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;服务部署隔离
+    &lt;ul&gt;
+      &lt;li&gt;避免故障的连锁反应&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;h4 id=&quot;2-超时设置&quot;&gt;2. 超时设置&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;由于服务失去响应导致用户请求长时间得不到响应
+    &lt;ul&gt;
+      &lt;li&gt;同时还占用资源&lt;/li&gt;
+      &lt;li&gt;设置超时时间
+***
+        &lt;h4 id=&quot;3-异步调用&quot;&gt;3. 异步调用&lt;/h4&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;通过消息队列等异步方式，避免一个服务失败导致整个过程失败
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;hr /&gt;
+        &lt;h4 id=&quot;4-服务降级&quot;&gt;4. 服务降级&lt;/h4&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;访问高峰，服务因大量并发而性能下降，为保证核心应用和功能的正常运行
+    &lt;ul&gt;
+      &lt;li&gt;拒绝服务
+        &lt;ul&gt;
+          &lt;li&gt;拒绝低优先级应用的调用&lt;/li&gt;
+          &lt;li&gt;减少服务调用并发数&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;关闭功能
+        &lt;ul&gt;
+          &lt;li&gt;关闭部分不重要的服务&lt;/li&gt;
+          &lt;li&gt;节约系统开销，为重要的服务和功能让出资源&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;h4 id=&quot;5-幂等性设计&quot;&gt;5. 幂等性设计&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;服务重复调用和调用一次产生的结果相同
+    &lt;ul&gt;
+      &lt;li&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;四-高可用的服务&quot;&gt;四. 高可用的服务&lt;/h3&gt;
+
+&lt;h3 id=&quot;五-高可用的数据&quot;&gt;五. 高可用的数据&lt;/h3&gt;
+
+&lt;h3 id=&quot;六-高可用软件质量保证&quot;&gt;六. 高可用软件质量保证&lt;/h3&gt;
+
+</description>
+        <pubDate>Thu, 16 Dec 2021 21:00:00 +0800</pubDate>
+        <link>http://www.louishwh.top/2021/12/16/%E6%9E%B6%E6%9E%84-Web%E9%AB%98%E5%8F%AF%E7%94%A8%E6%9E%B6%E6%9E%84/</link>
+        <guid isPermaLink="true">http://www.louishwh.top/2021/12/16/%E6%9E%B6%E6%9E%84-Web%E9%AB%98%E5%8F%AF%E7%94%A8%E6%9E%B6%E6%9E%84/</guid>
+        
+        <category>架构</category>
+        
+        
+        <category>服务端</category>
+        
+      </item>
+    
+      <item>
         <title>架构_Web高性能架构</title>
-        <description>&lt;h3 id=&quot;一-核心问题&quot;&gt;一. 核心问题&lt;/h3&gt;
+        <description>&lt;h3 id=&quot;-核心问题&quot;&gt;. 核心问题&lt;/h3&gt;
 &lt;ol&gt;
   &lt;li&gt;网站的性能怎么评估？
     &lt;ul&gt;
@@ -29,7 +170,7 @@
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h3 id=&quot;二-网站性能的评估&quot;&gt;二. 网站性能的评估&lt;/h3&gt;
+&lt;h3 id=&quot;一-网站性能的评估&quot;&gt;一. 网站性能的评估&lt;/h3&gt;
 &lt;hr /&gt;
 
 &lt;h4 id=&quot;1-不同视角&quot;&gt;1. 不同视角&lt;/h4&gt;
@@ -142,7 +283,7 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;三-网站性能的优化&quot;&gt;三. 网站性能的优化&lt;/h3&gt;
+&lt;h3 id=&quot;二-网站性能的优化&quot;&gt;二. 网站性能的优化&lt;/h3&gt;
 &lt;hr /&gt;
 
 &lt;h4 id=&quot;1-前端性能优化&quot;&gt;1. 前端性能优化&lt;/h4&gt;
@@ -346,7 +487,7 @@
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h3 id=&quot;四总结&quot;&gt;四。总结&lt;/h3&gt;
+&lt;h3 id=&quot;三-总结&quot;&gt;三. 总结&lt;/h3&gt;
 
 &lt;ol&gt;
   &lt;li&gt;性能优化的最终目的就是改善用户的体验&lt;/li&gt;
@@ -469,9 +610,9 @@
   &lt;/li&gt;
 &lt;/ol&gt;
 </description>
-        <pubDate>Wed, 15 Dec 2021 22:00:00 +0800</pubDate>
-        <link>http://www.louishwh.top/2021/12/15/%E6%9E%B6%E6%9E%84-%E6%9E%B6%E6%9E%84%E6%A8%A1%E5%BC%8F/</link>
-        <guid isPermaLink="true">http://www.louishwh.top/2021/12/15/%E6%9E%B6%E6%9E%84-%E6%9E%B6%E6%9E%84%E6%A8%A1%E5%BC%8F/</guid>
+        <pubDate>Tue, 14 Dec 2021 22:00:00 +0800</pubDate>
+        <link>http://www.louishwh.top/2021/12/14/%E6%9E%B6%E6%9E%84-%E6%9E%B6%E6%9E%84%E6%A8%A1%E5%BC%8F/</link>
+        <guid isPermaLink="true">http://www.louishwh.top/2021/12/14/%E6%9E%B6%E6%9E%84-%E6%9E%B6%E6%9E%84%E6%A8%A1%E5%BC%8F/</guid>
         
         <category>架构</category>
         
@@ -775,21 +916,6 @@
         <pubDate>Sat, 20 Nov 2021 10:00:00 +0800</pubDate>
         <link>http://www.louishwh.top/2021/11/20/Java_IP%E8%BD%AC%E5%9C%B0%E5%9D%80/</link>
         <guid isPermaLink="true">http://www.louishwh.top/2021/11/20/Java_IP%E8%BD%AC%E5%9C%B0%E5%9D%80/</guid>
-        
-        <category>Java</category>
-        
-        
-        <category>JavaUtils</category>
-        
-      </item>
-    
-      <item>
-        <title>Java_图片生成</title>
-        <description>
-</description>
-        <pubDate>Sun, 14 Nov 2021 23:00:00 +0800</pubDate>
-        <link>http://www.louishwh.top/2021/11/14/Java_%E5%9B%BE%E7%89%87%E7%94%9F%E6%88%90/</link>
-        <guid isPermaLink="true">http://www.louishwh.top/2021/11/14/Java_%E5%9B%BE%E7%89%87%E7%94%9F%E6%88%90/</guid>
         
         <category>Java</category>
         
