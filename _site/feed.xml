@@ -5,8 +5,8 @@
     <description></description>
     <link>http://www.louishwh.top/</link>
     <atom:link href="http://www.louishwh.top/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 17 Dec 2021 21:21:49 +0800</pubDate>
-    <lastBuildDate>Fri, 17 Dec 2021 21:21:49 +0800</lastBuildDate>
+    <pubDate>Fri, 17 Dec 2021 21:35:28 +0800</pubDate>
+    <lastBuildDate>Fri, 17 Dec 2021 21:35:28 +0800</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
     
       <item>
@@ -159,28 +159,51 @@
 &lt;hr /&gt;
 &lt;h4 id=&quot;1-cap原理&quot;&gt;1. CAP原理&lt;/h4&gt;
 &lt;ul&gt;
-  &lt;li&gt;C: Consistency
+  &lt;li&gt;C: Consistency（数据一致性）
     &lt;ul&gt;
-      &lt;li&gt;数据一致性&lt;/li&gt;
-      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;多份副本数据不一致&lt;/li&gt;
+      &lt;li&gt;所有程序都能访问得到相同的数据&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;A: Availability
+  &lt;li&gt;A: Availability（数据可用性）
     &lt;ul&gt;
-      &lt;li&gt;数据可用性&lt;/li&gt;
-      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;多份副本其中某个损坏，需要将访问切换到可用的副本上&lt;/li&gt;
+      &lt;li&gt;任何时候程序能都可与读写访问&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;P: Partition Tolerance
+  &lt;li&gt;P: Partition Tolerance（分区耐受性）
     &lt;ul&gt;
-      &lt;li&gt;分区耐受性&lt;/li&gt;
-      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;系统可以跨网络分区线性伸缩&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
+  &lt;li&gt;大型王章通常选择AP,一定程度上放弃C
+    &lt;ul&gt;
+      &lt;li&gt;数据强一致性
+        &lt;ul&gt;
+          &lt;li&gt;各个副本的数据在物理存储中总是一致&lt;/li&gt;
+          &lt;li&gt;数据更新操作结果操作响应总是一致，不处于不确定状态&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;数据用户一致
+        &lt;ul&gt;
+          &lt;li&gt;各个副本的数据在物理存储中可能不一致&lt;/li&gt;
+          &lt;li&gt;终端用户访问，通过纠错和教研机制，可以确定一个一致且正确的数据&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;数据最终一致
+        &lt;ul&gt;
+          &lt;li&gt;各个副本的数据在物理存储中可能不一致&lt;/li&gt;
+          &lt;li&gt;终端用户访问，可能不一致&lt;/li&gt;
+          &lt;li&gt;但是经过一段时间的自我恢复和修正，数据最终会达成一致
+***
+            &lt;h4 id=&quot;2-数据备份&quot;&gt;2. 数据备份&lt;/h4&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;hr /&gt;
-&lt;h4 id=&quot;2-数据备份&quot;&gt;2. 数据备份&lt;/h4&gt;
 
 &lt;hr /&gt;
 &lt;h4 id=&quot;3-失效转移&quot;&gt;3. 失效转移&lt;/h4&gt;
