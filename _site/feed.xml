@@ -5,8 +5,8 @@
     <description></description>
     <link>http://www.louishwh.top/</link>
     <atom:link href="http://www.louishwh.top/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 16 Dec 2021 21:59:28 +0800</pubDate>
-    <lastBuildDate>Thu, 16 Dec 2021 21:59:28 +0800</lastBuildDate>
+    <pubDate>Fri, 17 Dec 2021 21:21:49 +0800</pubDate>
+    <lastBuildDate>Fri, 17 Dec 2021 21:21:49 +0800</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
     
       <item>
@@ -22,8 +22,8 @@
   &lt;/li&gt;
   &lt;li&gt;如何设计高可用的系统？
     &lt;ul&gt;
-      &lt;li&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;冗余&lt;/li&gt;
+      &lt;li&gt;失效转移&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
@@ -59,15 +59,37 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;二-高可用的网站架构&quot;&gt;二. 高可用的网站架构&lt;/h3&gt;
+&lt;h3 id=&quot;二-高可用的应用&quot;&gt;二. 高可用的应用&lt;/h3&gt;
 
 &lt;hr /&gt;
 &lt;h4 id=&quot;1-负载均衡进行无状态服务的失效转移&quot;&gt;1. 负载均衡进行无状态服务的失效转移&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;无状态，实现所有服务器完全对等&lt;/li&gt;
+  &lt;li&gt;失效转移，某一个出现问题能够及时剔除&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;hr /&gt;
 &lt;h4 id=&quot;2-应用服务器集群的session管理&quot;&gt;2. 应用服务器集群的Session管理&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;业务总是有状态的&lt;/li&gt;
+  &lt;li&gt;Session,多次请求使用的上下文对象
+    &lt;ol&gt;
+      &lt;li&gt;Session复制
+   	- 每台都备份一份：空间/带宽浪费较多&lt;/li&gt;
+      &lt;li&gt;Session绑定
+   	- 通过负载均衡将请求分发到同一台服务器
+   	- 一旦宕机就会导致无法完成业务处理&lt;/li&gt;
+      &lt;li&gt;利用Cookie存储Session
+   	- Cookie大小受限
+   	- 传输耗费性能
+   	- 浏览区关闭Cookie会导致不可用&lt;/li&gt;
+      &lt;li&gt;Session服务器
+   	- Session服务集群统一管理Session&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;h3 id=&quot;三-高可用的应用&quot;&gt;三. 高可用的应用&lt;/h3&gt;
+&lt;h3 id=&quot;三-高可用的服务&quot;&gt;三. 高可用的服务&lt;/h3&gt;
 
 &lt;hr /&gt;
 &lt;h4 id=&quot;1-分级管理&quot;&gt;1. 分级管理&lt;/h4&gt;
@@ -127,16 +149,43 @@
 &lt;ul&gt;
   &lt;li&gt;服务重复调用和调用一次产生的结果相同
     &lt;ul&gt;
+      &lt;li&gt;解决服务重复调用问题&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;四-高可用的数据&quot;&gt;四. 高可用的数据&lt;/h3&gt;
+
+&lt;hr /&gt;
+&lt;h4 id=&quot;1-cap原理&quot;&gt;1. CAP原理&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;C: Consistency
+    &lt;ul&gt;
+      &lt;li&gt;数据一致性&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;A: Availability
+    &lt;ul&gt;
+      &lt;li&gt;数据可用性&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;P: Partition Tolerance
+    &lt;ul&gt;
+      &lt;li&gt;分区耐受性&lt;/li&gt;
       &lt;li&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;四-高可用的服务&quot;&gt;四. 高可用的服务&lt;/h3&gt;
+&lt;hr /&gt;
+&lt;h4 id=&quot;2-数据备份&quot;&gt;2. 数据备份&lt;/h4&gt;
 
-&lt;h3 id=&quot;五-高可用的数据&quot;&gt;五. 高可用的数据&lt;/h3&gt;
+&lt;hr /&gt;
+&lt;h4 id=&quot;3-失效转移&quot;&gt;3. 失效转移&lt;/h4&gt;
 
-&lt;h3 id=&quot;六-高可用软件质量保证&quot;&gt;六. 高可用软件质量保证&lt;/h3&gt;
+&lt;h3 id=&quot;五-高可用软件质量保证&quot;&gt;五. 高可用软件质量保证&lt;/h3&gt;
 
 </description>
         <pubDate>Thu, 16 Dec 2021 21:00:00 +0800</pubDate>
