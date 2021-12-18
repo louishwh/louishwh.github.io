@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>数据库_RocksDB - 人码合一</title>
+	<title>架构_架构模式 - 人码合一</title>
 
 	<link rel="shortcut icon" href="/styles/images/favicon.png">
 	<link rel="icon" href="/styles/images/favicon.png">
@@ -13,10 +13,10 @@
 	<link rel="stylesheet" href="/styles/css/index.css">
 	<link rel="stylesheet" href="/styles/css/fontawesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="/styles/css/syntax.css">
-	<link rel="canonical" href="/2021/12/11/%E6%95%B0%E6%8D%AE%E5%BA%93_RocksDB/">
+	<link rel="canonical" href="/2021/12/11/%E6%9E%B6%E6%9E%84-%E6%9E%B6%E6%9E%84%E6%A8%A1%E5%BC%8F/">
 	<link rel="alternate" type="application/rss+xml" title="人码合一" href="/feed.xml">
 	
-	<meta name="keywords" content="数据库_RocksDB, 人码合一, ">
+	<meta name="keywords" content="架构_架构模式, 人码合一, ">
 	<meta name="description" content="">
 
 	<script src="/styles/js/jquery.min.js"></script>
@@ -89,7 +89,7 @@
   <div class="container">
   	
   		<!--
-		    <h1>数据库_RocksDB</h1>
+		    <h1>架构_架构模式</h1>
 		    <p>Post on Dec 11, 2021 by <a href="/about">louis han</a></p>
 		-->
 		    <h1>知行合一</h1>
@@ -101,8 +101,8 @@
 <div class="banner">
   <div class="container">
   	
-    	<a href="/categories/#RocksDB-ref">RocksDB</a>	/
-    	<a href="/tag/#数据库-ref">数据库</a>
+    	<a href="/categories/#服务端-ref">服务端</a>	/
+    	<a href="/tag/#架构-ref">架构</a>
     
   </div>
 </div>
@@ -131,7 +131,7 @@
       <div class="panel docs-content">
         <div class="wrapper">
             <header class="post-header">
-              <h1 class="post-title">数据库_RocksDB</h1>
+              <h1 class="post-title">架构_架构模式</h1>
               <!--
                 <p class="post-meta">Dec 11, 2021</p>
               -->
@@ -141,23 +141,103 @@
               <br />
             </header>
             <article class="post-content">
-              <h3 id="资源网站">资源网站</h3>
-<ul>
-  <li><a href="">官网</a></li>
-  <li><a href="">源码</a></li>
-  <li><a href="">例子</a></li>
-</ul>
+              <h3 id="对架构的几点思考">对架构的几点思考</h3>
 
-<h3 id="功能">功能</h3>
 <ol>
-  <li></li>
+  <li>大型网站问题的缘由？
+    <ul>
+      <li>核心模型
+        <ul>
+          <li>客户端 –&gt; 服务端</li>
+          <li>客户端 &lt;– 服务端</li>
+        </ul>
+      </li>
+      <li>问题点
+        <ul>
+          <li>客户端不断增长，甚至于可以达到亿级别</li>
+          <li>如果想要实现后端服务的正常，需要成比例增加服务端的处理能力</li>
+          <li>服务端的处理能力需要综合考量
+            <ul>
+              <li>带宽</li>
+              <li>网卡</li>
+              <li>CPU</li>
+              <li>内存</li>
+              <li>磁盘</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
 </ol>
 
-<h3 id="应用场景">应用场景</h3>
+<h3 id="架构的几个核心思想">架构的几个核心思想</h3>
 
-<h3 id="demo">Demo</h3>
-
-<h3 id="现成的方案">现成的方案</h3>
+<ol>
+  <li>横向的拆分(分层)
+    <ul>
+      <li>系统的分层
+        <ul>
+          <li></li>
+        </ul>
+      </li>
+      <li>代码的分层
+        <ul>
+          <li></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>纵向的拆分(分割)
+    <ul>
+      <li>服务的分割
+        <ul>
+          <li></li>
+        </ul>
+      </li>
+      <li>数据库的分割
+        <ul>
+          <li>分库/分表</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>分布式
+    <ul>
+      <li>分割后，把服务部署到多台服务器上</li>
+    </ul>
+  </li>
+  <li>集群
+    <ul>
+      <li>相同功能的服务部署到多台服务上</li>
+    </ul>
+  </li>
+  <li>缓存
+    <ul>
+      <li></li>
+    </ul>
+  </li>
+  <li>异步
+    <ul>
+      <li></li>
+    </ul>
+  </li>
+  <li>冗余
+    <ul>
+      <li></li>
+    </ul>
+  </li>
+  <li>自动化
+    <ul>
+      <li></li>
+    </ul>
+  </li>
+  <li>安全
+    <ul>
+      <li></li>
+    </ul>
+  </li>
+</ol>
 
             </article>
         </div>
