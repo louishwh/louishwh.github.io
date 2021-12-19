@@ -5,9 +5,408 @@
     <description></description>
     <link>http://www.louishwh.top/</link>
     <atom:link href="http://www.louishwh.top/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 18 Dec 2021 19:00:37 +0800</pubDate>
-    <lastBuildDate>Sat, 18 Dec 2021 19:00:37 +0800</lastBuildDate>
+    <pubDate>Sun, 19 Dec 2021 23:17:46 +0800</pubDate>
+    <lastBuildDate>Sun, 19 Dec 2021 23:17:46 +0800</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
+    
+      <item>
+        <title>架构_Web高可用架构</title>
+        <description>&lt;h2 id=&quot;零-核心问题&quot;&gt;零. 核心问题&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;网站可用性如何衡量？
+    &lt;ul&gt;
+      &lt;li&gt;指标&lt;/li&gt;
+      &lt;li&gt;考核&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;如何设计高可用的系统？
+    &lt;ul&gt;
+      &lt;li&gt;冗余&lt;/li&gt;
+      &lt;li&gt;失效转移&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;一-网站可用性的衡量&quot;&gt;一. 网站可用性的衡量&lt;/h2&gt;
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;1-可用性度量&quot;&gt;1. 可用性度量&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;9的多少数量来衡量
+    &lt;ul&gt;
+      &lt;li&gt;90% 小于36天12小时&lt;/li&gt;
+      &lt;li&gt;99% 小于87小时36分钟&lt;/li&gt;
+      &lt;li&gt;99.9% 小于8小时46分钟&lt;/li&gt;
+      &lt;li&gt;99.99% 小于52分钟33秒&lt;/li&gt;
+      &lt;li&gt;99.999% 小于5分钟15秒&lt;/li&gt;
+      &lt;li&gt;99.9999% 小于31.5秒&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;h4 id=&quot;2-可用性考核&quot;&gt;2. 可用性考核&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;数据和服务的冗余备份&lt;/li&gt;
+  &lt;li&gt;数据和服务的失效转移&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;二-高可用的应用&quot;&gt;二. 高可用的应用&lt;/h2&gt;
+
+&lt;hr /&gt;
+&lt;h4 id=&quot;1-负载均衡进行无状态服务的失效转移&quot;&gt;1. 负载均衡进行无状态服务的失效转移&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;无状态，实现所有服务器完全对等&lt;/li&gt;
+  &lt;li&gt;失效转移，某一个出现问题能够及时剔除&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;h4 id=&quot;2-应用服务器集群的session管理&quot;&gt;2. 应用服务器集群的Session管理&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;业务总是有状态的&lt;/li&gt;
+  &lt;li&gt;Session,多次请求使用的上下文对象
+    &lt;ol&gt;
+      &lt;li&gt;Session复制
+   	- 每台都备份一份
+   		- 空间/带宽浪费较多&lt;/li&gt;
+      &lt;li&gt;Session绑定
+   	- 通过负载均衡将请求分发到同一台服务器
+   	- 一旦宕机就会导致无法完成业务处理&lt;/li&gt;
+      &lt;li&gt;利用Cookie存储Session
+   	- Cookie大小受限
+   	- 传输耗费性能
+   	- 浏览区关闭Cookie会导致不可用&lt;/li&gt;
+      &lt;li&gt;Session服务器
+   	- Session服务集群统一管理Session&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;三-高可用的服务&quot;&gt;三. 高可用的服务&lt;/h2&gt;
+
+&lt;hr /&gt;
+&lt;h4 id=&quot;1-分级管理&quot;&gt;1. 分级管理&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;服务分级管理
+    &lt;ul&gt;
+      &lt;li&gt;核心应用和服务使用更好的配置&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;服务部署隔离
+    &lt;ul&gt;
+      &lt;li&gt;避免故障的连锁反应&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;h4 id=&quot;2-超时设置&quot;&gt;2. 超时设置&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;由于服务失去响应导致用户请求长时间得不到响应
+    &lt;ul&gt;
+      &lt;li&gt;占用资源&lt;/li&gt;
+      &lt;li&gt;设置超时时间及时释放资源&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;h4 id=&quot;3-异步调用&quot;&gt;3. 异步调用&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;通过消息队列等异步方式，避免一个服务失败导致整个过程失败
+    &lt;ul&gt;
+      &lt;li&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;h4 id=&quot;4-服务降级&quot;&gt;4. 服务降级&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;访问高峰，服务因大量并发而性能下降，为保证核心应用和功能的正常运行
+    &lt;ul&gt;
+      &lt;li&gt;拒绝服务
+        &lt;ul&gt;
+          &lt;li&gt;拒绝低优先级应用的调用&lt;/li&gt;
+          &lt;li&gt;减少服务调用并发数&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;关闭功能
+        &lt;ul&gt;
+          &lt;li&gt;关闭部分不重要的服务&lt;/li&gt;
+          &lt;li&gt;节约系统开销，为重要的服务和功能让出资源&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;h4 id=&quot;5-幂等性设计&quot;&gt;5. 幂等性设计&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;服务重复调用和调用一次产生的结果相同
+    &lt;ul&gt;
+      &lt;li&gt;解决服务重复调用问题&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;四-高可用的数据&quot;&gt;四. 高可用的数据&lt;/h2&gt;
+
+&lt;hr /&gt;
+&lt;h4 id=&quot;1-cap原理&quot;&gt;1. CAP原理&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;C: Consistency（数据一致性）
+    &lt;ul&gt;
+      &lt;li&gt;多份副本数据不一致&lt;/li&gt;
+      &lt;li&gt;所有程序都能访问得到相同的数据&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;A: Availability（数据可用性）
+    &lt;ul&gt;
+      &lt;li&gt;多份副本其中某个损坏，需要将访问切换到可用的副本上&lt;/li&gt;
+      &lt;li&gt;任何时候程序能都可与读写访问&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;P: Partition Tolerance（分区耐受性）
+    &lt;ul&gt;
+      &lt;li&gt;系统可以跨网络分区线性伸缩&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;大型网站通常选择AP,一定程度上放弃C
+    &lt;ul&gt;
+      &lt;li&gt;数据强一致性
+        &lt;ul&gt;
+          &lt;li&gt;各个副本的数据在物理存储中总是一致&lt;/li&gt;
+          &lt;li&gt;数据更新操作结果操作响应总是一致，不处于不确定状态&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;数据用户一致
+        &lt;ul&gt;
+          &lt;li&gt;各个副本的数据在物理存储中可能不一致&lt;/li&gt;
+          &lt;li&gt;终端用户访问，通过纠错和教研机制，可以确定一个一致且正确的数据&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;数据最终一致
+        &lt;ul&gt;
+          &lt;li&gt;各个副本的数据在物理存储中可能不一致&lt;/li&gt;
+          &lt;li&gt;终端用户访问，可能不一致&lt;/li&gt;
+          &lt;li&gt;但是经过一段时间的自我恢复和修正，数据最终会达成一致&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;h4 id=&quot;2-数据备份&quot;&gt;2. 数据备份&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;冷备份
+    &lt;ul&gt;
+      &lt;li&gt;缺点
+        &lt;ul&gt;
+          &lt;li&gt;不能保证数据一致性&lt;/li&gt;
+          &lt;li&gt;备份结束时间后更新的数据会丢失&lt;/li&gt;
+          &lt;li&gt;不能保证可用性，恢复时间较长&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;优点
+        &lt;ul&gt;
+          &lt;li&gt;可靠性高，有效&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;热备份
+    &lt;ul&gt;
+      &lt;li&gt;异步热备
+        &lt;ul&gt;
+          &lt;li&gt;操作成功保证写入一个成功，其他副本的写入异步完成&lt;/li&gt;
+          &lt;li&gt;分为主存储服务器和从服务器&lt;/li&gt;
+          &lt;li&gt;正常情况下只连接主存储器&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;同步热备
+        &lt;ul&gt;
+          &lt;li&gt;多分数据副本的写入操作同步完成&lt;/li&gt;
+          &lt;li&gt;存储服务器没有主从之分&lt;/li&gt;
+          &lt;li&gt;性能由最慢那台决定&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;实践中通常做法
+        &lt;ul&gt;
+          &lt;li&gt;写操作只访问Master数据库&lt;/li&gt;
+          &lt;li&gt;读操作只访问Slave数据库&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;h4 id=&quot;3-失效转移&quot;&gt;3. 失效转移&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;失效确认
+    &lt;ul&gt;
+      &lt;li&gt;心跳检测&lt;/li&gt;
+      &lt;li&gt;访问失败报告&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;访问转移
+    &lt;ul&gt;
+      &lt;li&gt;对等服务器&lt;/li&gt;
+      &lt;li&gt;不对等服务器&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;数据恢复
+    &lt;ul&gt;
+      &lt;li&gt;部分服务宕机时，数据存储的副本减少，必须将副本的数量恢复到系统设定的值&lt;/li&gt;
+      &lt;li&gt;系统从正常的服务复制数据&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;五-高可用软件质量保证&quot;&gt;五. 高可用软件质量保证&lt;/h2&gt;
+&lt;hr /&gt;
+&lt;h4 id=&quot;1-网站发布&quot;&gt;1. 网站发布&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;关闭服务器集群中的一小部分&lt;/li&gt;
+  &lt;li&gt;发布过的服务可以立即访问&lt;/li&gt;
+  &lt;li&gt;整个发布过程不影响用户使用&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;h4 id=&quot;2-自动化测试&quot;&gt;2. 自动化测试&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Selenium
+    &lt;ul&gt;
+      &lt;li&gt;功能测试&lt;/li&gt;
+      &lt;li&gt;浏览器兼容测试&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;h4 id=&quot;3-预发布验证&quot;&gt;3. 预发布验证&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;避免环境不一致导致上线异常&lt;/li&gt;
+  &lt;li&gt;通过预发布服务器进行预发布验证&lt;/li&gt;
+  &lt;li&gt;与线上的唯一不同是没有配置在负载均衡服务器上&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;h4 id=&quot;4-代码控制&quot;&gt;4. 代码控制&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;主干开发，分支发布
+    &lt;ul&gt;
+      &lt;li&gt;主干代码反应目前整体应用的状态一目了然，便于管理和控制&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;分支开发，主干发布
+    &lt;ul&gt;
+      &lt;li&gt;当前主要使用的方式&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;h4 id=&quot;5-自动化发布&quot;&gt;5. 自动化发布&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;基于规则驱动的流程&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;h4 id=&quot;6-灰度发布ab测试&quot;&gt;6. 灰度发布（AB测试）&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;将服务器分成若干部分&lt;/li&gt;
+  &lt;li&gt;每天只发布一部分服务器&lt;/li&gt;
+  &lt;li&gt;观察运行稳定没有问题&lt;/li&gt;
+  &lt;li&gt;如果发现问题回滚已发布的服务器&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;六-网站运行监控&quot;&gt;六. 网站运行监控&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;不允许没有监控的系统上线&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;h4 id=&quot;1-监控数据采集&quot;&gt;1. 监控数据采集&lt;/h4&gt;
+&lt;ol&gt;
+  &lt;li&gt;用户行为日志收集
+    &lt;ul&gt;
+      &lt;li&gt;服务端日志&lt;/li&gt;
+      &lt;li&gt;客户端日志&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;服务器性能监控
+    &lt;ul&gt;
+      &lt;li&gt;收集服务器性能指标&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;运行数据报告
+    &lt;ul&gt;
+      &lt;li&gt;监控具体业务场景相关的技术和业务
+        &lt;ul&gt;
+          &lt;li&gt;平均响应延迟时间&lt;/li&gt;
+          &lt;li&gt;邮件数目&lt;/li&gt;
+          &lt;li&gt;缓存命中率&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+&lt;h4 id=&quot;2-监控管理&quot;&gt;2. 监控管理&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;根据监控数据进行
+    &lt;ul&gt;
+      &lt;li&gt;风险预警&lt;/li&gt;
+      &lt;li&gt;负载调整&lt;/li&gt;
+      &lt;li&gt;最大化资源利用&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;系统报警
+    &lt;ul&gt;
+      &lt;li&gt;配置警报阀值&lt;/li&gt;
+      &lt;li&gt;设置警报系统&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;失效转移
+    &lt;ul&gt;
+      &lt;li&gt;警报系统通知应用进行失效转移&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;自动优雅降级
+    &lt;ul&gt;
+      &lt;li&gt;访问高峰时，主动关闭部分功能&lt;/li&gt;
+      &lt;li&gt;确保资源用在核心功能的访问上&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+&lt;h2 id=&quot;总结&quot;&gt;总结&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;先求生存&lt;/li&gt;
+  &lt;li&gt;再求发展&lt;/li&gt;
+  &lt;li&gt;追求高概率稳定性&lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+        <pubDate>Sat, 18 Dec 2021 21:00:00 +0800</pubDate>
+        <link>http://www.louishwh.top/2021/12/18/%E6%9E%B6%E6%9E%84-Web%E9%AB%98%E5%8F%AF%E7%94%A8%E6%9E%B6%E6%9E%84/</link>
+        <guid isPermaLink="true">http://www.louishwh.top/2021/12/18/%E6%9E%B6%E6%9E%84-Web%E9%AB%98%E5%8F%AF%E7%94%A8%E6%9E%B6%E6%9E%84/</guid>
+        
+        <category>架构</category>
+        
+        
+        <category>服务端</category>
+        
+      </item>
     
       <item>
         <title>架构_Web高性能架构</title>
@@ -630,21 +1029,6 @@
         <pubDate>Sun, 07 Nov 2021 23:00:00 +0800</pubDate>
         <link>http://www.louishwh.top/2021/11/07/Java_%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB/</link>
         <guid isPermaLink="true">http://www.louishwh.top/2021/11/07/Java_%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB/</guid>
-        
-        <category>Java</category>
-        
-        
-        <category>JavaUtils</category>
-        
-      </item>
-    
-      <item>
-        <title>Java_PDF工具</title>
-        <description>
-</description>
-        <pubDate>Sat, 06 Nov 2021 23:00:00 +0800</pubDate>
-        <link>http://www.louishwh.top/2021/11/06/Java_PDF%E5%B7%A5%E5%85%B7/</link>
-        <guid isPermaLink="true">http://www.louishwh.top/2021/11/06/Java_PDF%E5%B7%A5%E5%85%B7/</guid>
         
         <category>Java</category>
         
