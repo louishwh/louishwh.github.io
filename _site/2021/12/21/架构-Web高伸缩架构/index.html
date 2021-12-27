@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>架构_Web高伸缩架构人码合一</title>
+
+	<link rel="shortcut icon" href="/styles/images/favicon.png">
+	<link rel="icon" href="/styles/images/favicon.png">
+
+	<link rel="stylesheet" href="/styles/css/index.css">
+	<link rel="stylesheet" href="/styles/css/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/styles/css/syntax.css">
+	<link rel="canonical" href="/2021/12/21/%E6%9E%B6%E6%9E%84-Web%E9%AB%98%E4%BC%B8%E7%BC%A9%E6%9E%B6%E6%9E%84/">
+	<link rel="alternate" type="application/rss+xml" title="人码合一" href="/feed.xml">
+	
+	<meta name="keywords" content="架构_Web高伸缩架构, 人码合一, ">
+	<meta name="description" content="">
+
+	<!-- <script src="/styles/js/jquery.min.js"></script> -->
+	<!--[if lt IE 9]>
+    	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  	<![endif]-->
+<!--   	<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "//hm.baidu.com/hm.js?624f97ab37fd73fbedc7929427ca95ea";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script> -->
+  	<style type="text/css">
+	  	.docs-content{
+	  		margin-bottom: 10px;
+	  	}
+  	</style>
+</head>
+
+  <body class="index">
+
+    <header class="navbar navbar-inverse navbar-fixed-top docs-nav" role="banner">
+  <div class="container">
+
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+     <!--  <a href="/" class="navbar-brand">
+        <img src="/styles/images/logo.png">
+      </a> -->
+
+    </div>
+
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">    
+         <li>
+          <a href="https://github.com/louishwh//">louishwh</a>
+        </li>
+        <li>
+          <a href="/">主页</a>
+        </li>
+        <li>
+          <a href="/categories/">分类</a>
+        </li>
+        <li>
+          <a href="/tag">索引</a>
+        </li>
+        <li>
+          <a href="/level">分级</a>
+        </li>
+      </ul>
+
+      <!-- <ul class="nav navbar-nav navbar-right">
+        <li>
+            <a><span id="busuanzi_container_site_pv">总访问量<span id="busuanzi_value_site_pv"></span>次</span></a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">关于<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a rel="nofollow" target="_blank" href="https://github.com/louishwh/">Github</a></li>
+            <li><a rel="nofollow" target="_blank" href="">关于作者</a></li>
+            <li><a rel="nofollow" href="/books">我的书单</a></li>
+            <li class="divider"></li>
+            <li><a rel="nofollow" target="_blank" href="https://github.com/luoyan35714/LessOrMore.git">本项目</a></li>
+          </ul>
+        </li>
+      </ul> -->
+
+
+    </nav>
+  </div>
+</header>
+    <!-- <div class="docs-header" id="content"> -->
+  <!-- <div class="container"> -->
+  	<!--  -->
+  		<!-- 
+		    <h1>架构_Web高伸缩架构</h1>
+		    <p>Post on Dec 21, 2021 by <a href="/about">louis han</a></p>
+		 -->
+		    <!-- <h1>知行合一</h1> -->
+    <!--  -->
+  <!-- </div> -->
+<!-- </div> -->
+    
+      <!-- 
+<div class="banner">
+  <div class="container">
+  	
+    	<a href="/categories/#服务端-ref">服务端</a>	/
+    	<a href="/tag/#架构-ref">架构</a>
+    
+  </div>
+</div> -->
+
+    
+
+    <div class="container docs-container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="sidebar hidden-print" role="complementary">
+        <div id="navigation">
+  <h2>目录</h2>
+  <ul class="nav sidenav">
+  </ul>
+  <div style="height: 200px;width: 150px;">
+    <!-- script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async"> 
+    <!-- </script>  -->
+
+  </div>
+</div>
+
+ 
+      </div>
+    </div>
+    
+    <div class="col-md-9" role="main">
+      <div class="panel docs-content">
+        <div class="wrapper">
+            <header class="post-header">
+              <h1 class="post-title">架构_Web高伸缩架构</h1>
+              <!--
+                <p class="post-meta">Dec 21, 2021</p>
+              -->
+              <div class="meta"> <span class="postdate">2021-12-21-(2)-PM:355</span>  
+                <!-- <a target="_blank" href="http://www.louishwh.top">louis han</a> -->
+              </div>
+              <br />
+            </header>
+            <article class="post-content">
+              <h2 id="零-核心问题">零. 核心问题</h2>
+<ol>
+  <li>什么是高伸缩性？
+    <ul>
+      <li>仅通过改变部署的服务器数量就可以扩大或缩小网站的处理能力</li>
+    </ul>
+  </li>
+  <li>如何实现高伸缩性？
+    <ul>
+      <li>功能物理分离</li>
+      <li>集群
+        <ul>
+          <li>应用服务器集群</li>
+          <li>数据服务器集群</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="一-伸缩性设计">一. 伸缩性设计</h2>
+<hr />
+
+<h4 id="网站架构伸缩性设计">网站架构伸缩性设计</h4>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. 不同功能进行物理分离实现伸缩
+	- 纵向分离
+		- 将业务处理流程上的不同部分分离部署，实现系统伸缩性
+	- 横向分离
+		- 将不同的业务员模块分离部署，实现系统伸缩性
+
+2. 单一功能通过集群规模实现伸缩
+	- 应用服务器集群
+	- 数据服务器集群
+		- 缓存数据服务器集群
+		- 存储数据服务器集群
+</code></pre></div></div>
+
+<h2 id="二-服务器集群的伸缩性设计">二. 服务器集群的伸缩性设计</h2>
+
+<ol>
+  <li>HTTP重定向负载均衡
+    <ul>
+      <li>利用HTTP重定向协议实现负载均衡</li>
+      <li>优点
+        <ul>
+          <li>简单</li>
+        </ul>
+      </li>
+      <li>缺点
+        <ul>
+          <li>浏览器需要请求两次服务器才能完成一次访问</li>
+          <li>重定向服务器可能成为瓶颈</li>
+          <li>重定向可能被搜索引擎判断为SEO作弊</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>DNS域名解析负载均衡
+    <ul>
+      <li>域名解请求会根据负载均衡算法计算出一个不同的IP地址返回</li>
+      <li>优点
+        <ul>
+          <li>省掉了网站管理维护负载均衡服务器</li>
+          <li>可以将域名解析成距离用户地理最近的一个服务器地址</li>
+        </ul>
+      </li>
+      <li>缺点
+        <ul>
+          <li>由于DNS的多级缓存，导致修改后生效事件较长</li>
+          <li>DNS负载均衡控制权在域名服务那里，网站无法对其作更多的改善</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>反向代理负载均衡
+    <ul>
+      <li>在HTTP协议层面转发请求，应用层负载均衡</li>
+      <li>优点
+        <ul>
+          <li>部署简单</li>
+        </ul>
+      </li>
+      <li>缺点
+        <ul>
+          <li>性能可能成为瓶颈</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>IP负载均衡
+    <ul>
+      <li>在网络层通过修改目标地址进行负载均衡</li>
+      <li>优点
+        <ul>
+          <li>IP负载均衡在内核进程完成数据分发，较反向发力负载均衡有更好的处理性能</li>
+        </ul>
+      </li>
+      <li>缺点
+        <ul>
+          <li>集群的最大响应数据吞吐量受制于负载均衡服务器的网卡带宽</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>数据链路层负载均衡
+    <ul>
+      <li>三角传输模式</li>
+      <li>负载均衡数据分发过程中不修改IP地址，只修改目的mac地址</li>
+      <li>目前使用最广的负载均衡手段</li>
+    </ul>
+  </li>
+  <li>负载均衡算法
+    <ul>
+      <li>轮询（Round Robin）</li>
+      <li>加权轮询（Weighted Round Robin）</li>
+      <li>随机（Random）</li>
+      <li>最少连接（Least Connections）</li>
+      <li>源地址散列（Source Hashing）
+        <ul>
+          <li>对IP做Hash计算，得到应用服务器，实现同一个请求总在同一个服务器上处理</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="三-分布式缓存集群的伸缩性设计">三. 分布式缓存集群的伸缩性设计</h2>
+
+<ol>
+  <li>Memcached分布式缓存集群的访问模型
+    <ul>
+      <li>应用程序 -&gt; Memcached API</li>
+      <li>Memcached API -&gt; 通信模块 -&gt; Memcached服务器</li>
+      <li>Memcached API -&gt; 路由算法 -&gt; 服务器列表</li>
+    </ul>
+  </li>
+  <li>Memcached分布式缓存集群的伸缩性挑战
+    <ul>
+      <li>扩容</li>
+    </ul>
+  </li>
+  <li>分布式缓存的一致性Hash算法
+    <ul>
+      <li>一致性Hash环</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="四-数据存储服务器集群的伸缩性设计">四. 数据存储服务器集群的伸缩性设计</h2>
+
+<ol>
+  <li>关系数据库集群的伸缩性设计
+    <ul>
+      <li>主从读写分离</li>
+      <li>分库分表</li>
+      <li>分片
+        <ul>
+          <li>Amoeba</li>
+          <li>Cobar</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>NoSQL数据库的伸缩性设计
+    <ul>
+      <li>HBase</li>
+      <li>Redis</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="五-总结">五. 总结</h2>
+<ol>
+  <li>伸缩架构本身的设计是简单的</li>
+  <li>当与可用性、正确性、性能等耦合到一起，伸缩性就复杂了</li>
+  <li>综合考虑团队的知识储备和结构、管理层的战略愿景和规划</li>
+</ol>
+
+<h3 id="六-tips">六. Tips</h3>
+<ol>
+  <li>只有遇不到的问题，没有解决不了的问题</li>
+  <li>高手之所以是高手，因为遇到了棘手的问题，并解决了</li>
+</ol>
+
+
+            </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+    <footer class="footer" role="contentinfo">
+	<div class="container">
+		<p class="copyright">版权 &copy; 2018-2021 <a href=""><code>louis han</code></a>.</p>
+		<p>自 <a href="http://jekyllrb.com"> Jekyll </a>的<a href="http://lesscss.cn/"> Less </a>主题重构产生。</p>
+	</div>
+</footer>
+
+<script src="/styles/js/jquery.min.js"></script>
+<script src="/styles/js/bootstrap.min.js"></script>
+<script src="/styles/js/holder.min.js"></script>
+<script src="/styles/js/lessismore.js"></script>
+<script src="/styles/js/application.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  </body>
+</html>

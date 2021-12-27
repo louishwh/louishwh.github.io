@@ -5,9 +5,229 @@
     <description></description>
     <link>http://www.louishwh.top/</link>
     <atom:link href="http://www.louishwh.top/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 19 Dec 2021 23:17:46 +0800</pubDate>
-    <lastBuildDate>Sun, 19 Dec 2021 23:17:46 +0800</lastBuildDate>
+    <pubDate>Mon, 27 Dec 2021 22:06:53 +0800</pubDate>
+    <lastBuildDate>Mon, 27 Dec 2021 22:06:53 +0800</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
+    
+      <item>
+        <title>架构 Web高安全架构</title>
+        <description>
+</description>
+        <pubDate>Mon, 27 Dec 2021 00:00:00 +0800</pubDate>
+        <link>http://www.louishwh.top/2021/12/27/%E6%9E%B6%E6%9E%84-Web%E9%AB%98%E5%AE%89%E5%85%A8%E6%9E%B6%E6%9E%84/</link>
+        <guid isPermaLink="true">http://www.louishwh.top/2021/12/27/%E6%9E%B6%E6%9E%84-Web%E9%AB%98%E5%AE%89%E5%85%A8%E6%9E%B6%E6%9E%84/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>架构 Web可拓展架构</title>
+        <description>
+</description>
+        <pubDate>Fri, 24 Dec 2021 00:00:00 +0800</pubDate>
+        <link>http://www.louishwh.top/2021/12/24/%E6%9E%B6%E6%9E%84-Web%E5%8F%AF%E6%8B%93%E5%B1%95%E6%9E%B6%E6%9E%84/</link>
+        <guid isPermaLink="true">http://www.louishwh.top/2021/12/24/%E6%9E%B6%E6%9E%84-Web%E5%8F%AF%E6%8B%93%E5%B1%95%E6%9E%B6%E6%9E%84/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>架构_Web高伸缩架构</title>
+        <description>&lt;h2 id=&quot;零-核心问题&quot;&gt;零. 核心问题&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;什么是高伸缩性？
+    &lt;ul&gt;
+      &lt;li&gt;仅通过改变部署的服务器数量就可以扩大或缩小网站的处理能力&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;如何实现高伸缩性？
+    &lt;ul&gt;
+      &lt;li&gt;功能物理分离&lt;/li&gt;
+      &lt;li&gt;集群
+        &lt;ul&gt;
+          &lt;li&gt;应用服务器集群&lt;/li&gt;
+          &lt;li&gt;数据服务器集群&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;一-伸缩性设计&quot;&gt;一. 伸缩性设计&lt;/h2&gt;
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;网站架构伸缩性设计&quot;&gt;网站架构伸缩性设计&lt;/h4&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1. 不同功能进行物理分离实现伸缩
+	- 纵向分离
+		- 将业务处理流程上的不同部分分离部署，实现系统伸缩性
+	- 横向分离
+		- 将不同的业务员模块分离部署，实现系统伸缩性
+
+2. 单一功能通过集群规模实现伸缩
+	- 应用服务器集群
+	- 数据服务器集群
+		- 缓存数据服务器集群
+		- 存储数据服务器集群
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;二-服务器集群的伸缩性设计&quot;&gt;二. 服务器集群的伸缩性设计&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;HTTP重定向负载均衡
+    &lt;ul&gt;
+      &lt;li&gt;利用HTTP重定向协议实现负载均衡&lt;/li&gt;
+      &lt;li&gt;优点
+        &lt;ul&gt;
+          &lt;li&gt;简单&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;缺点
+        &lt;ul&gt;
+          &lt;li&gt;浏览器需要请求两次服务器才能完成一次访问&lt;/li&gt;
+          &lt;li&gt;重定向服务器可能成为瓶颈&lt;/li&gt;
+          &lt;li&gt;重定向可能被搜索引擎判断为SEO作弊&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;DNS域名解析负载均衡
+    &lt;ul&gt;
+      &lt;li&gt;域名解请求会根据负载均衡算法计算出一个不同的IP地址返回&lt;/li&gt;
+      &lt;li&gt;优点
+        &lt;ul&gt;
+          &lt;li&gt;省掉了网站管理维护负载均衡服务器&lt;/li&gt;
+          &lt;li&gt;可以将域名解析成距离用户地理最近的一个服务器地址&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;缺点
+        &lt;ul&gt;
+          &lt;li&gt;由于DNS的多级缓存，导致修改后生效事件较长&lt;/li&gt;
+          &lt;li&gt;DNS负载均衡控制权在域名服务那里，网站无法对其作更多的改善&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;反向代理负载均衡
+    &lt;ul&gt;
+      &lt;li&gt;在HTTP协议层面转发请求，应用层负载均衡&lt;/li&gt;
+      &lt;li&gt;优点
+        &lt;ul&gt;
+          &lt;li&gt;部署简单&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;缺点
+        &lt;ul&gt;
+          &lt;li&gt;性能可能成为瓶颈&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;IP负载均衡
+    &lt;ul&gt;
+      &lt;li&gt;在网络层通过修改目标地址进行负载均衡&lt;/li&gt;
+      &lt;li&gt;优点
+        &lt;ul&gt;
+          &lt;li&gt;IP负载均衡在内核进程完成数据分发，较反向发力负载均衡有更好的处理性能&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;缺点
+        &lt;ul&gt;
+          &lt;li&gt;集群的最大响应数据吞吐量受制于负载均衡服务器的网卡带宽&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;数据链路层负载均衡
+    &lt;ul&gt;
+      &lt;li&gt;三角传输模式&lt;/li&gt;
+      &lt;li&gt;负载均衡数据分发过程中不修改IP地址，只修改目的mac地址&lt;/li&gt;
+      &lt;li&gt;目前使用最广的负载均衡手段&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;负载均衡算法
+    &lt;ul&gt;
+      &lt;li&gt;轮询（Round Robin）&lt;/li&gt;
+      &lt;li&gt;加权轮询（Weighted Round Robin）&lt;/li&gt;
+      &lt;li&gt;随机（Random）&lt;/li&gt;
+      &lt;li&gt;最少连接（Least Connections）&lt;/li&gt;
+      &lt;li&gt;源地址散列（Source Hashing）
+        &lt;ul&gt;
+          &lt;li&gt;对IP做Hash计算，得到应用服务器，实现同一个请求总在同一个服务器上处理&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;三-分布式缓存集群的伸缩性设计&quot;&gt;三. 分布式缓存集群的伸缩性设计&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Memcached分布式缓存集群的访问模型
+    &lt;ul&gt;
+      &lt;li&gt;应用程序 -&amp;gt; Memcached API&lt;/li&gt;
+      &lt;li&gt;Memcached API -&amp;gt; 通信模块 -&amp;gt; Memcached服务器&lt;/li&gt;
+      &lt;li&gt;Memcached API -&amp;gt; 路由算法 -&amp;gt; 服务器列表&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Memcached分布式缓存集群的伸缩性挑战
+    &lt;ul&gt;
+      &lt;li&gt;扩容&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;分布式缓存的一致性Hash算法
+    &lt;ul&gt;
+      &lt;li&gt;一致性Hash环&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;四-数据存储服务器集群的伸缩性设计&quot;&gt;四. 数据存储服务器集群的伸缩性设计&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;关系数据库集群的伸缩性设计
+    &lt;ul&gt;
+      &lt;li&gt;主从读写分离&lt;/li&gt;
+      &lt;li&gt;分库分表&lt;/li&gt;
+      &lt;li&gt;分片
+        &lt;ul&gt;
+          &lt;li&gt;Amoeba&lt;/li&gt;
+          &lt;li&gt;Cobar&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;NoSQL数据库的伸缩性设计
+    &lt;ul&gt;
+      &lt;li&gt;HBase&lt;/li&gt;
+      &lt;li&gt;Redis&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;五-总结&quot;&gt;五. 总结&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;伸缩架构本身的设计是简单的&lt;/li&gt;
+  &lt;li&gt;当与可用性、正确性、性能等耦合到一起，伸缩性就复杂了&lt;/li&gt;
+  &lt;li&gt;综合考虑团队的知识储备和结构、管理层的战略愿景和规划&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;六-tips&quot;&gt;六. Tips&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;只有遇不到的问题，没有解决不了的问题&lt;/li&gt;
+  &lt;li&gt;高手之所以是高手，因为遇到了棘手的问题，并解决了&lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+        <pubDate>Tue, 21 Dec 2021 21:00:00 +0800</pubDate>
+        <link>http://www.louishwh.top/2021/12/21/%E6%9E%B6%E6%9E%84-Web%E9%AB%98%E4%BC%B8%E7%BC%A9%E6%9E%B6%E6%9E%84/</link>
+        <guid isPermaLink="true">http://www.louishwh.top/2021/12/21/%E6%9E%B6%E6%9E%84-Web%E9%AB%98%E4%BC%B8%E7%BC%A9%E6%9E%B6%E6%9E%84/</guid>
+        
+        <category>架构</category>
+        
+        
+        <category>服务端</category>
+        
+      </item>
     
       <item>
         <title>架构_Web高可用架构</title>
@@ -984,51 +1204,6 @@
         <pubDate>Sat, 20 Nov 2021 10:00:00 +0800</pubDate>
         <link>http://www.louishwh.top/2021/11/20/Java_IP%E8%BD%AC%E5%9C%B0%E5%9D%80/</link>
         <guid isPermaLink="true">http://www.louishwh.top/2021/11/20/Java_IP%E8%BD%AC%E5%9C%B0%E5%9D%80/</guid>
-        
-        <category>Java</category>
-        
-        
-        <category>JavaUtils</category>
-        
-      </item>
-    
-      <item>
-        <title>Java_图片生成</title>
-        <description>
-</description>
-        <pubDate>Sun, 14 Nov 2021 23:00:00 +0800</pubDate>
-        <link>http://www.louishwh.top/2021/11/14/Java_%E5%9B%BE%E7%89%87%E7%94%9F%E6%88%90/</link>
-        <guid isPermaLink="true">http://www.louishwh.top/2021/11/14/Java_%E5%9B%BE%E7%89%87%E7%94%9F%E6%88%90/</guid>
-        
-        <category>Java</category>
-        
-        
-        <category>JavaUtils</category>
-        
-      </item>
-    
-      <item>
-        <title>Java_图片处理</title>
-        <description>
-</description>
-        <pubDate>Sat, 13 Nov 2021 23:00:00 +0800</pubDate>
-        <link>http://www.louishwh.top/2021/11/13/Java_%E5%9B%BE%E7%89%87%E5%A4%84%E7%90%86/</link>
-        <guid isPermaLink="true">http://www.louishwh.top/2021/11/13/Java_%E5%9B%BE%E7%89%87%E5%A4%84%E7%90%86/</guid>
-        
-        <category>Java</category>
-        
-        
-        <category>JavaUtils</category>
-        
-      </item>
-    
-      <item>
-        <title>Java_人脸识别</title>
-        <description>
-</description>
-        <pubDate>Sun, 07 Nov 2021 23:00:00 +0800</pubDate>
-        <link>http://www.louishwh.top/2021/11/07/Java_%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB/</link>
-        <guid isPermaLink="true">http://www.louishwh.top/2021/11/07/Java_%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB/</guid>
         
         <category>Java</category>
         
