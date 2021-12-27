@@ -5,8 +5,8 @@
     <description></description>
     <link>http://www.louishwh.top/</link>
     <atom:link href="http://www.louishwh.top/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 27 Dec 2021 22:06:53 +0800</pubDate>
-    <lastBuildDate>Mon, 27 Dec 2021 22:06:53 +0800</lastBuildDate>
+    <pubDate>Mon, 27 Dec 2021 22:07:30 +0800</pubDate>
+    <lastBuildDate>Mon, 27 Dec 2021 22:07:30 +0800</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
     
       <item>
@@ -57,18 +57,34 @@
 &lt;hr /&gt;
 
 &lt;h4 id=&quot;网站架构伸缩性设计&quot;&gt;网站架构伸缩性设计&lt;/h4&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1. 不同功能进行物理分离实现伸缩
-	- 纵向分离
-		- 将业务处理流程上的不同部分分离部署，实现系统伸缩性
-	- 横向分离
-		- 将不同的业务员模块分离部署，实现系统伸缩性
 
-2. 单一功能通过集群规模实现伸缩
-	- 应用服务器集群
-	- 数据服务器集群
-		- 缓存数据服务器集群
-		- 存储数据服务器集群
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ol&gt;
+  &lt;li&gt;不同功能进行物理分离实现伸缩
+    &lt;ul&gt;
+      &lt;li&gt;纵向分离
+        &lt;ul&gt;
+          &lt;li&gt;将业务处理流程上的不同部分分离部署，实现系统伸缩性&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;横向分离
+        &lt;ul&gt;
+          &lt;li&gt;将不同的业务员模块分离部署，实现系统伸缩性&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;单一功能通过集群规模实现伸缩
+    &lt;ul&gt;
+      &lt;li&gt;应用服务器集群&lt;/li&gt;
+      &lt;li&gt;数据服务器集群
+        &lt;ul&gt;
+          &lt;li&gt;缓存数据服务器集群&lt;/li&gt;
+          &lt;li&gt;存储数据服务器集群&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;h2 id=&quot;二-服务器集群的伸缩性设计&quot;&gt;二. 服务器集群的伸缩性设计&lt;/h2&gt;
 
