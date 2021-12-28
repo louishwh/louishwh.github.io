@@ -5,8 +5,8 @@
     <description></description>
     <link>http://www.louishwh.top/</link>
     <atom:link href="http://www.louishwh.top/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 27 Dec 2021 22:42:53 +0800</pubDate>
-    <lastBuildDate>Mon, 27 Dec 2021 22:42:53 +0800</lastBuildDate>
+    <pubDate>Tue, 28 Dec 2021 21:57:38 +0800</pubDate>
+    <lastBuildDate>Tue, 28 Dec 2021 21:57:38 +0800</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
     
       <item>
@@ -83,15 +83,255 @@
           &lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
+      &lt;li&gt;CSRF攻击
+        &lt;ul&gt;
+          &lt;li&gt;定义
+            &lt;ul&gt;
+              &lt;li&gt;通过跨站请求，以合法用户的身份进行非法操作&lt;/li&gt;
+              &lt;li&gt;利用浏览器的Cookie或服务器Session策略盗取用户身份&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;防范
+            &lt;ol&gt;
+              &lt;li&gt;表单Token&lt;/li&gt;
+              &lt;li&gt;验证码&lt;/li&gt;
+              &lt;li&gt;Referer check&lt;/li&gt;
+            &lt;/ol&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;其他的攻击和漏洞
+        &lt;ol&gt;
+          &lt;li&gt;Error Code&lt;/li&gt;
+          &lt;li&gt;HTML注释&lt;/li&gt;
+          &lt;li&gt;文件上传&lt;/li&gt;
+          &lt;li&gt;路径遍历
+            &lt;ul&gt;
+              &lt;li&gt;定义
+                &lt;ul&gt;
+                  &lt;li&gt;在请求的URL中使用相对路径，遍历系统为开放的目录和文件&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+              &lt;li&gt;防范
+                &lt;ul&gt;
+                  &lt;li&gt;将JS、CSS等资源文件部署在独立服务器、使用独立域名&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Web应用防火墙
+        &lt;ul&gt;
+          &lt;li&gt;ModeSecurity&lt;/li&gt;
+          &lt;li&gt;SiteShell&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Web安全漏洞扫描
+        &lt;ul&gt;
+          &lt;li&gt;查漏补缺&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
     &lt;/ol&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h2 id=&quot;二-信息加密技术及密钥安全管理&quot;&gt;二. 信息加密技术及密钥安全管理&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;单向散列加密
+    &lt;ul&gt;
+      &lt;li&gt;定义
+        &lt;ul&gt;
+          &lt;li&gt;通过对不同输入的不同长度的信息做散列计算，得到固定长度的输出&lt;/li&gt;
+          &lt;li&gt;计算的过程时单向的，不能通过固定长度的输出计算出输入信息&lt;/li&gt;
+          &lt;li&gt;输入的任何细微变化都会导致输出的完全不同&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;作用
+        &lt;ul&gt;
+          &lt;li&gt;密码加密保护&lt;/li&gt;
+          &lt;li&gt;生成信息摘要&lt;/li&gt;
+          &lt;li&gt;计算具有高离散程度的随机数&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;常用算法
+        &lt;ul&gt;
+          &lt;li&gt;MD5&lt;/li&gt;
+          &lt;li&gt;SHA&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;常用的操作
+        &lt;ul&gt;
+          &lt;li&gt;加盐&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;破解的手段
+        &lt;ul&gt;
+          &lt;li&gt;彩虹表&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;对称加密
+    &lt;ul&gt;
+      &lt;li&gt;定义
+        &lt;ul&gt;
+          &lt;li&gt;加密和解密使用同一个密钥&lt;/li&gt;
+          &lt;li&gt;明文 + 密钥 + 加密算法 -&amp;gt; 密文&lt;/li&gt;
+          &lt;li&gt;密文 + 密钥 + 解密算法 -&amp;gt; 明文&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;优点
+        &lt;ul&gt;
+          &lt;li&gt;效率高，适合大量数据加密&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;缺点
+        &lt;ul&gt;
+          &lt;li&gt;要使用同一个密钥，不方便远程通信&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;常用算法
+        &lt;ul&gt;
+          &lt;li&gt;DES&lt;/li&gt;
+          &lt;li&gt;RC&lt;/li&gt;
+          &lt;li&gt;AES&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;非对称加密
+    &lt;ul&gt;
+      &lt;li&gt;定义
+        &lt;ul&gt;
+          &lt;li&gt;A公钥 + A私钥&lt;/li&gt;
+          &lt;li&gt;B公钥 + B私钥&lt;/li&gt;
+          &lt;li&gt;明文 + B公钥 + 加密算法 -&amp;gt; 密文&lt;/li&gt;
+          &lt;li&gt;密文 + B私钥 + 解开算法 -&amp;gt; 明文&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;作用
+        &lt;ul&gt;
+          &lt;li&gt;信息安全传输&lt;/li&gt;
+          &lt;li&gt;数字签名&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;优点
+        &lt;ul&gt;
+          &lt;li&gt;能够实现非安全传输通道的信息传输&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;缺点
+        &lt;ul&gt;
+          &lt;li&gt;比较耗费性能，通常与对称加密结合使用&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;常用算法
+        &lt;ul&gt;
+          &lt;li&gt;RSA&lt;/li&gt;
+          &lt;li&gt;ECC&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;密钥安全管理
+    &lt;ul&gt;
+      &lt;li&gt;方案一
+        &lt;ul&gt;
+          &lt;li&gt;算法+密钥+独立服务器方案&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;方案二
+        &lt;ul&gt;
+          &lt;li&gt;算法 + 应用系统&lt;/li&gt;
+          &lt;li&gt;密钥 + 独立服务器&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;核心理念
+        &lt;ul&gt;
+          &lt;li&gt;每个服务器专人负责管理&lt;/li&gt;
+          &lt;li&gt;没人能查看完整的密钥信息&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;h2 id=&quot;三-信息过滤与反垃圾&quot;&gt;三. 信息过滤与反垃圾&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;文本匹配
+    &lt;ul&gt;
+      &lt;li&gt;Tire算法&lt;/li&gt;
+      &lt;li&gt;多级Hash表&lt;/li&gt;
+      &lt;li&gt;降噪预处理&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;分类算法
+    &lt;ul&gt;
+      &lt;li&gt;贝叶斯分类算法&lt;/li&gt;
+      &lt;li&gt;TAN算法&lt;/li&gt;
+      &lt;li&gt;ARCS算法&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;黑名单
+    &lt;ul&gt;
+      &lt;li&gt;布隆过滤器&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;h2 id=&quot;四-风险控制&quot;&gt;四. 风险控制&lt;/h2&gt;
+&lt;h2 id=&quot;四-电子商务风险控制&quot;&gt;四. 电子商务风险控制&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;风险
+    &lt;ul&gt;
+      &lt;li&gt;账户风险
+        &lt;ul&gt;
+          &lt;li&gt;账户被盗用&lt;/li&gt;
+          &lt;li&gt;恶意注册&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;买家风险
+        &lt;ul&gt;
+          &lt;li&gt;恶意下单占库存&lt;/li&gt;
+          &lt;li&gt;黄牛抢购&lt;/li&gt;
+          &lt;li&gt;欺诈退款&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;卖家风险
+        &lt;ul&gt;
+          &lt;li&gt;欺诈&lt;/li&gt;
+          &lt;li&gt;违禁&lt;/li&gt;
+          &lt;li&gt;侵权&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;风控
+    &lt;ul&gt;
+      &lt;li&gt;规则引擎
+        &lt;ul&gt;
+          &lt;li&gt;将业务规则和规则处理逻辑分离&lt;/li&gt;
+          &lt;li&gt;业务规则有运营人员编辑，实时更新&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;统计模型
+        &lt;ul&gt;
+          &lt;li&gt;训练分类算法/机器学习算法&lt;/li&gt;
+          &lt;li&gt;通过模型模糊识别&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;五-总结&quot;&gt;五. 总结&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;世界没有绝对的安全&lt;/li&gt;
+  &lt;li&gt;网站通过提高攻击的门槛来实现&lt;/li&gt;
+  &lt;li&gt;理性上，使攻击者的攻击收益远小于付出&lt;/li&gt;
+&lt;/ol&gt;
 
 </description>
         <pubDate>Mon, 27 Dec 2021 21:00:00 +0800</pubDate>
