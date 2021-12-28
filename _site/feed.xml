@@ -5,8 +5,8 @@
     <description></description>
     <link>http://www.louishwh.top/</link>
     <atom:link href="http://www.louishwh.top/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 28 Dec 2021 21:57:42 +0800</pubDate>
-    <lastBuildDate>Tue, 28 Dec 2021 21:57:42 +0800</lastBuildDate>
+    <pubDate>Tue, 28 Dec 2021 22:13:42 +0800</pubDate>
+    <lastBuildDate>Tue, 28 Dec 2021 22:13:42 +0800</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
     
       <item>
@@ -358,7 +358,6 @@
   &lt;li&gt;如何实现可拓展性？
     &lt;ul&gt;
       &lt;li&gt;系统架构设计层面的开闭原则&lt;/li&gt;
-      &lt;li&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
@@ -367,7 +366,20 @@
 
 &lt;h2 id=&quot;二-利用分布式消息队列降低系统耦合性&quot;&gt;二. 利用分布式消息队列降低系统耦合性&lt;/h2&gt;
 
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;事件驱动架构&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;分布式消息队列&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
 &lt;h2 id=&quot;三-利用分布式服务构建可复用的业务平台&quot;&gt;三. 利用分布式服务构建可复用的业务平台&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;h2 id=&quot;四-可拓展的数据结构&quot;&gt;四. 可拓展的数据结构&lt;/h2&gt;
 
