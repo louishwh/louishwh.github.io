@@ -5,8 +5,8 @@
     <description></description>
     <link>http://www.louishwh.top/</link>
     <atom:link href="http://www.louishwh.top/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 01 Jan 2022 12:06:05 +0800</pubDate>
-    <lastBuildDate>Sat, 01 Jan 2022 12:06:05 +0800</lastBuildDate>
+    <pubDate>Sat, 01 Jan 2022 22:24:21 +0800</pubDate>
+    <lastBuildDate>Sat, 01 Jan 2022 22:24:21 +0800</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
     
       <item>
@@ -50,6 +50,7 @@
 
 &lt;h3 id=&quot;服务端的技能点&quot;&gt;服务端的技能点&lt;/h3&gt;
 
+&lt;hr /&gt;
 &lt;ul&gt;
   &lt;li&gt;计算机常识(必须懂得的概念)
     &lt;ul&gt;
@@ -61,14 +62,18 @@
       &lt;li&gt;内容
         &lt;ul&gt;
           &lt;li&gt;算法+数据结构&lt;/li&gt;
-          &lt;li&gt;编码&lt;/li&gt;
           &lt;li&gt;操作系统&lt;/li&gt;
           &lt;li&gt;数据库&lt;/li&gt;
           &lt;li&gt;网络&lt;/li&gt;
+          &lt;li&gt;编码&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;ul&gt;
   &lt;li&gt;编程语言(必须深入了解一种)
     &lt;ul&gt;
       &lt;li&gt;常见的选择
@@ -130,6 +135,11 @@
       &lt;/li&gt;
       &lt;li&gt;一些观点
         &lt;ol&gt;
+          &lt;li&gt;编程语言本身就是一组实现了的数据结构和算法的结合体
+            &lt;ul&gt;
+              &lt;li&gt;编程范式是构建和执行代码的思想&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
           &lt;li&gt;编程语言本身各有千秋
             &lt;ul&gt;
               &lt;li&gt;编程范式的支持&lt;/li&gt;
@@ -142,13 +152,16 @@
             &lt;ul&gt;
               &lt;li&gt;接纳不同，不设限制&lt;/li&gt;
               &lt;li&gt;用其所长，发挥价值&lt;/li&gt;
-              &lt;li&gt;&lt;/li&gt;
             &lt;/ul&gt;
           &lt;/li&gt;
         &lt;/ol&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;ul&gt;
   &lt;li&gt;Web框架
     &lt;ul&gt;
       &lt;li&gt;语言自成体系
@@ -259,9 +272,11 @@
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;数据库&lt;/p&gt;
+&lt;/ul&gt;
 
+&lt;hr /&gt;
+&lt;ul&gt;
+  &lt;li&gt;数据库
     &lt;ul&gt;
       &lt;li&gt;关系数据库
         &lt;ul&gt;
@@ -281,16 +296,26 @@
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;ul&gt;
   &lt;li&gt;操作系统
     &lt;ul&gt;
       &lt;li&gt;开发环境
         &lt;ul&gt;
           &lt;li&gt;Windows&lt;/li&gt;
           &lt;li&gt;MacOS&lt;/li&gt;
-          &lt;li&gt;Linux
+          &lt;li&gt;Linux(还有很多)
             &lt;ul&gt;
-              &lt;li&gt;&lt;a href=&quot;https://ubuntu.com/&quot;&gt;Ubuntu&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href=&quot;https://www.kali.org/docs/&quot;&gt;Kali 侧重于Web安全&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://ubuntu.com/&quot;&gt;Ubuntu&lt;/a&gt;
+                &lt;ul&gt;
+                  &lt;li&gt;&lt;a href=&quot;htts://Elementaryos.org&quot;&gt;Elementaryos&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href=&quot;http://linuxmint.com/&quot;&gt;Linuxmint&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://www.kali.org/docs/&quot;&gt;Kali(侧重Web安全)&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://manjaro.org/&quot;&gt;Manjaro&lt;/a&gt;&lt;/li&gt;
             &lt;/ul&gt;
           &lt;/li&gt;
         &lt;/ul&gt;
@@ -300,9 +325,71 @@
           &lt;li&gt;&lt;a href=&quot;https://ubuntu.com/&quot;&gt;Ubuntu server&lt;/a&gt;&lt;/li&gt;
           &lt;li&gt;&lt;a href=&quot;https://www.centos.org/&quot;&gt;CentOS&lt;/a&gt;&lt;/li&gt;
           &lt;li&gt;&lt;a href=&quot;https://www.debian.org/&quot;&gt;Deban&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;&quot;&gt;Unix&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Unix&quot;&gt;Unix&lt;/a&gt;
+            &lt;ul&gt;
+              &lt;li&gt;&lt;a href=&quot;https://www.freebsd.org/&quot;&gt;Unix—FreeBSD&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://www.unix.com/&quot;&gt;Unix—Forums&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;ul&gt;
+  &lt;li&gt;网络工具
+    &lt;ul&gt;
+      &lt;li&gt;应用层协议
+        &lt;ul&gt;
+          &lt;li&gt;DNS:解析域名&lt;/li&gt;
+          &lt;li&gt;SMTP:邮件发送&lt;/li&gt;
+          &lt;li&gt;POP3:邮件接收&lt;/li&gt;
+          &lt;li&gt;MQTT&lt;/li&gt;
+          &lt;li&gt;HTTP&lt;/li&gt;
+          &lt;li&gt;FTP&lt;/li&gt;
+          &lt;li&gt;P2P&lt;/li&gt;
+          &lt;li&gt;SSH&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;传输层协议
+        &lt;ul&gt;
+          &lt;li&gt;UDP&lt;/li&gt;
+          &lt;li&gt;TCP&lt;/li&gt;
+          &lt;li&gt;SPX&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;网络层协议
+        &lt;ul&gt;
+          &lt;li&gt;IP&lt;/li&gt;
+          &lt;li&gt;IPX&lt;/li&gt;
+          &lt;li&gt;RIP&lt;/li&gt;
+          &lt;li&gt;OSPF&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;数据链路层
+        &lt;ul&gt;
+          &lt;li&gt;SDLC&lt;/li&gt;
+          &lt;li&gt;HDLC&lt;/li&gt;
+          &lt;li&gt;PPP&lt;/li&gt;
+          &lt;li&gt;STP&lt;/li&gt;
+          &lt;li&gt;帧中继&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;服务端需要架构加持&quot;&gt;服务端需要架构加持&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;/2021/12/04/架构-架构思维框架/index.html&quot;&gt;Web架构思维框架&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;/2021/12/15/架构-Web高性能架构/index.html&quot;&gt;Web高性能架构&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;/2021/12/18/架构-Web高可用架构/index.html&quot;&gt;Web高可用架构&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;/2021/12/21/架构-Web高伸缩架构/index.html&quot;&gt;Web高伸缩架构&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;/2021/12/24/架构-Web可拓展架构/index.html&quot;&gt;Web可拓展架构&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;/2021/12/27/架构-Web高安全架构/index.html&quot;&gt;Web高安全架构&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
@@ -1963,8 +2050,8 @@
         <description>
 </description>
         <pubDate>Sun, 05 Dec 2021 22:00:00 +0800</pubDate>
-        <link>http://www.louishwh.top/2021/12/05/%E6%9E%B6%E6%9E%84_%E6%BC%94%E5%8C%96%E5%8E%86%E7%A8%8B/</link>
-        <guid isPermaLink="true">http://www.louishwh.top/2021/12/05/%E6%9E%B6%E6%9E%84_%E6%BC%94%E5%8C%96%E5%8E%86%E7%A8%8B/</guid>
+        <link>http://www.louishwh.top/2021/12/05/%E6%9E%B6%E6%9E%84-%E6%BC%94%E5%8C%96%E5%8E%86%E7%A8%8B/</link>
+        <guid isPermaLink="true">http://www.louishwh.top/2021/12/05/%E6%9E%B6%E6%9E%84-%E6%BC%94%E5%8C%96%E5%8E%86%E7%A8%8B/</guid>
         
         <category>架构</category>
         
