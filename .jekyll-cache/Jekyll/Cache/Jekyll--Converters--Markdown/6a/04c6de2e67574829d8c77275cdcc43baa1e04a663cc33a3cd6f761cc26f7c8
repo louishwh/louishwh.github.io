@@ -1,0 +1,68 @@
+I"�<h3 id="java的工具链">Java的工具链</h3>
+
+<ol>
+  <li>开发工具
+    <ul>
+      <li>Java IDE
+        <ul>
+          <li><a href="https://www.jetbrains.com/idea/">IntelliJ IDEA</a></li>
+          <li><a href="https://www.eclipse.org/downloads/">Eclipse IDE</a></li>
+          <li><a href="https://netbeans.org/">NetBeans</a></li>
+        </ul>
+      </li>
+      <li>编辑器
+        <ul>
+          <li><a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
+          <li><a href="http://www.sublimetext.com/">Sublime Text</a></li>
+          <li><a href="https://notepad-plus-plus.org/">Notepad++(Windows)</a></li>
+          <li><a href="https://www.editplus.com/">EditPlus</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>开发环境
+    <ul>
+      <li>JDK（Java Development Kit）
+        <ul>
+          <li><a href="www.oracle.com">Oracle JDK(JRL-个人研究)</a></li>
+          <li><a href="http://openjdk.java.net/">Open JDK(GPL V2-可商用)</a></li>
+        </ul>
+      </li>
+      <li>Java的三大类
+        <ul>
+          <li>Java ME (Java Micro Edition)
+            <ul>
+              <li>针对小型设备</li>
+            </ul>
+          </li>
+          <li>Jave EE (Java enterprise edition)
+            <ul>
+              <li>SE = ME + 其他类库</li>
+            </ul>
+          </li>
+          <li>Java EE (Java Standard Edition)
+            <ul>
+              <li>EE = SE + 企业级应用类</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="https://www.java.com/en/download/help/release_changes.html">Java版本</a>
+        <ul>
+          <li>Java8(LTS)</li>
+          <li>Java9</li>
+          <li>Java10</li>
+          <li>Java11(LTS)</li>
+          <li>Java12</li>
+          <li>Java13</li>
+          <li>Java14</li>
+          <li>Java15</li>
+          <li>Java16</li>
+          <li>Java17(LTS) &lt;— 当前版本</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+:ET

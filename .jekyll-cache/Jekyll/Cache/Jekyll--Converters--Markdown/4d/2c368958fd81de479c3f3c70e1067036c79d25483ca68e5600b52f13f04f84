@@ -1,0 +1,50 @@
+I"�<h3 id="java的工具链">Java的工具链</h3>
+
+<ol>
+  <li>开发工具
+    <ul>
+      <li>Java IDE
+        <ul>
+          <li><a href="https://www.jetbrains.com/idea/">IntelliJ IDEA</a></li>
+          <li><a href="https://www.eclipse.org/downloads/">Eclipse IDE</a></li>
+          <li><a href="https://netbeans.org/">NetBeans</a></li>
+        </ul>
+      </li>
+      <li>编辑器
+        <ul>
+          <li><a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
+          <li><a href="http://www.sublimetext.com/">Sublime Text</a></li>
+          <li><a href="https://notepad-plus-plus.org/">Notepad++(Windows)</a></li>
+          <li><a href="https://www.editplus.com/">EditPlus</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>开发环境
+    <ul>
+      <li>JDK（Java Development Kit）
+        <ul>
+          <li><a href="www.oracle.com">Oracle JDK(JRL-个人研究)</a></li>
+          <li><a href="http://openjdk.java.net/">Open JDK(GPL V2-可商用)</a></li>
+        </ul>
+      </li>
+      <li>Java
+        <ul>
+          <li>J2ME(Java 2 Micro Edition)</li>
+          <li>J2SE(Java 2 enterprise edition)
+            <ul>
+              <li>J2SE = J2ME +</li>
+            </ul>
+          </li>
+          <li>J2EE(Java 2 Standard Edition)
+            <ul>
+              <li>J2EE = J2SE + 企业级应用类()</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+:ET

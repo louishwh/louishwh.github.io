@@ -5,9 +5,91 @@
     <description></description>
     <link>http://www.louishwh.top/</link>
     <atom:link href="http://www.louishwh.top/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 01 Jan 2022 22:24:21 +0800</pubDate>
-    <lastBuildDate>Sat, 01 Jan 2022 22:24:21 +0800</lastBuildDate>
+    <pubDate>Sat, 01 Jan 2022 22:53:53 +0800</pubDate>
+    <lastBuildDate>Sat, 01 Jan 2022 22:53:53 +0800</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
+    
+      <item>
+        <title>Java技能点</title>
+        <description>&lt;h3 id=&quot;java的工具链&quot;&gt;Java的工具链&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;开发工具
+    &lt;ul&gt;
+      &lt;li&gt;Java IDE
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;https://www.jetbrains.com/idea/&quot;&gt;IntelliJ IDEA&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://www.eclipse.org/downloads/&quot;&gt;Eclipse IDE&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://netbeans.org/&quot;&gt;NetBeans&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;编辑器
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;https://code.visualstudio.com/&quot;&gt;Visual Studio Code&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;http://www.sublimetext.com/&quot;&gt;Sublime Text&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://notepad-plus-plus.org/&quot;&gt;Notepad++(Windows)&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://www.editplus.com/&quot;&gt;EditPlus&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;开发环境
+    &lt;ul&gt;
+      &lt;li&gt;JDK（Java Development Kit）
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;www.oracle.com&quot;&gt;Oracle JDK(JRL-个人研究)&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;http://openjdk.java.net/&quot;&gt;Open JDK(GPL V2-可商用)&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Java的三大类
+        &lt;ul&gt;
+          &lt;li&gt;Java ME (Java Micro Edition)
+            &lt;ul&gt;
+              &lt;li&gt;针对小型设备&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Jave EE (Java enterprise edition)
+            &lt;ul&gt;
+              &lt;li&gt;SE = ME + 其他类库&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Java EE (Java Standard Edition)
+            &lt;ul&gt;
+              &lt;li&gt;EE = SE + 企业级应用类&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://www.java.com/en/download/help/release_changes.html&quot;&gt;Java版本&lt;/a&gt;
+        &lt;ul&gt;
+          &lt;li&gt;Java8(LTS)&lt;/li&gt;
+          &lt;li&gt;Java9&lt;/li&gt;
+          &lt;li&gt;Java10&lt;/li&gt;
+          &lt;li&gt;Java11(LTS)&lt;/li&gt;
+          &lt;li&gt;Java12&lt;/li&gt;
+          &lt;li&gt;Java13&lt;/li&gt;
+          &lt;li&gt;Java14&lt;/li&gt;
+          &lt;li&gt;Java15&lt;/li&gt;
+          &lt;li&gt;Java16&lt;/li&gt;
+          &lt;li&gt;Java17(LTS) &amp;lt;— 当前版本&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+        <pubDate>Sat, 01 Jan 2022 09:00:00 +0800</pubDate>
+        <link>http://www.louishwh.top/2022/01/01/Java%E5%9F%BA%E7%A1%80/</link>
+        <guid isPermaLink="true">http://www.louishwh.top/2022/01/01/Java%E5%9F%BA%E7%A1%80/</guid>
+        
+        <category>Java</category>
+        
+        
+        <category>服务端</category>
+        
+      </item>
     
       <item>
         <title>服务端技能点</title>
@@ -2037,21 +2119,6 @@
         <pubDate>Sat, 11 Dec 2021 22:00:00 +0800</pubDate>
         <link>http://www.louishwh.top/2021/12/11/%E6%9E%B6%E6%9E%84-%E6%9E%B6%E6%9E%84%E6%A8%A1%E5%BC%8F/</link>
         <guid isPermaLink="true">http://www.louishwh.top/2021/12/11/%E6%9E%B6%E6%9E%84-%E6%9E%B6%E6%9E%84%E6%A8%A1%E5%BC%8F/</guid>
-        
-        <category>架构</category>
-        
-        
-        <category>服务端</category>
-        
-      </item>
-    
-      <item>
-        <title>架构_Web架构演化历程</title>
-        <description>
-</description>
-        <pubDate>Sun, 05 Dec 2021 22:00:00 +0800</pubDate>
-        <link>http://www.louishwh.top/2021/12/05/%E6%9E%B6%E6%9E%84-%E6%BC%94%E5%8C%96%E5%8E%86%E7%A8%8B/</link>
-        <guid isPermaLink="true">http://www.louishwh.top/2021/12/05/%E6%9E%B6%E6%9E%84-%E6%BC%94%E5%8C%96%E5%8E%86%E7%A8%8B/</guid>
         
         <category>架构</category>
         
