@@ -1,161 +1,5 @@
-<!DOCTYPE html>
-<html>
+I"�&<h3 id="服务端的比对">服务端的比对</h3>
 
-  <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>服务端技能点人码合一</title>
-
-	<link rel="shortcut icon" href="/styles/images/favicon.png">
-	<link rel="icon" href="/styles/images/favicon.png">
-
-	<link rel="stylesheet" href="/styles/css/index.css">
-	<link rel="stylesheet" href="/styles/css/fontawesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="/styles/css/syntax.css">
-	<link rel="canonical" href="/2022/01/01/%E6%9C%8D%E5%8A%A1%E7%AB%AF%E6%8A%80%E8%83%BD%E7%82%B9/">
-	<link rel="alternate" type="application/rss+xml" title="人码合一" href="/feed.xml">
-	
-	<meta name="keywords" content="服务端技能点, 人码合一, ">
-	<meta name="description" content="">
-
-	<!-- <script src="/styles/js/jquery.min.js"></script> -->
-	<!--[if lt IE 9]>
-    	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  	<![endif]-->
-<!--   	<script>
-		var _hmt = _hmt || [];
-		(function() {
-		  var hm = document.createElement("script");
-		  hm.src = "//hm.baidu.com/hm.js?624f97ab37fd73fbedc7929427ca95ea";
-		  var s = document.getElementsByTagName("script")[0]; 
-		  s.parentNode.insertBefore(hm, s);
-		})();
-	</script> -->
-  	<style type="text/css">
-	  	.docs-content{
-	  		margin-bottom: 10px;
-	  	}
-  	</style>
-</head>
-
-  <body class="index">
-
-    <header class="navbar navbar-inverse navbar-fixed-top docs-nav" role="banner">
-  <div class="container">
-
-    <div class="navbar-header">
-      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      
-     <!--  <a href="/" class="navbar-brand">
-        <img src="/styles/images/logo.png">
-      </a> -->
-
-    </div>
-
-    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-      <ul class="nav navbar-nav">    
-         <li>
-          <a href="https://github.com/louishwh//">louishwh</a>
-        </li>
-        <li>
-          <a href="/">主页</a>
-        </li>
-        <li>
-          <a href="/categories/">分类</a>
-        </li>
-        <li>
-          <a href="/tag">索引</a>
-        </li>
-        <li>
-          <a href="/level">分级</a>
-        </li>
-      </ul>
-
-      <!-- <ul class="nav navbar-nav navbar-right">
-        <li>
-            <a><span id="busuanzi_container_site_pv">总访问量<span id="busuanzi_value_site_pv"></span>次</span></a>
-        </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">关于<b class="caret"></b></a>
-          <ul class="dropdown-menu">
-            <li><a rel="nofollow" target="_blank" href="https://github.com/louishwh/">Github</a></li>
-            <li><a rel="nofollow" target="_blank" href="">关于作者</a></li>
-            <li><a rel="nofollow" href="/books">我的书单</a></li>
-            <li class="divider"></li>
-            <li><a rel="nofollow" target="_blank" href="https://github.com/luoyan35714/LessOrMore.git">本项目</a></li>
-          </ul>
-        </li>
-      </ul> -->
-
-
-    </nav>
-  </div>
-</header>
-    <!-- <div class="docs-header" id="content"> -->
-  <!-- <div class="container"> -->
-  	<!--  -->
-  		<!-- 
-		    <h1>服务端技能点</h1>
-		    <p>Post on Jan 01, 2022 by <a href="/about">louis han</a></p>
-		 -->
-		    <!-- <h1>知行合一</h1> -->
-    <!--  -->
-  <!-- </div> -->
-<!-- </div> -->
-    
-      <!-- 
-<div class="banner">
-  <div class="container">
-  	
-    	<a href="/categories/#服务端-ref">服务端</a>	/
-    	<a href="/tag/#总结-ref">总结</a>
-    
-  </div>
-</div> -->
-
-    
-
-    <div class="container docs-container">
-  <div class="row">
-    <div class="col-md-3">
-      <div class="sidebar hidden-print" role="complementary">
-        <div id="navigation">
-  <h2>目录</h2>
-  <ul class="nav sidenav">
-  </ul>
-  <div style="height: 200px;width: 150px;">
-    <!-- script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async"> 
-    <!-- </script>  -->
-
-  </div>
-</div>
-
- 
-      </div>
-    </div>
-    
-    <div class="col-md-9" role="main">
-      <div class="panel docs-content">
-        <div class="wrapper">
-            <header class="post-header">
-              <h1 class="post-title">服务端技能点</h1>
-              <!--
-                <p class="post-meta">Jan 1, 2022</p>
-              -->
-              <div class="meta"> <span class="postdate">2022-01-01-(6)-AM:001</span>  
-                <!-- <a target="_blank" href="http://www.louishwh.top">louis han</a> -->
-              </div>
-              <br />
-            </header>
-            <article class="post-content">
-              <h3 id="服务端的比对">服务端的比对</h3>
-
-<hr />
 <ul>
   <li>Web框架性能排名
     <ul>
@@ -170,25 +14,6 @@
     </ol>
   </li>
 </ul>
-
-<hr />
-<ul>
-  <li>数据库排行榜
-    <ul>
-      <li><a href="https://db-engines.com/en/ranking">DB-Engines</a></li>
-      <li><a href="https://www.modb.pro/dbRank">墨天轮</a></li>
-    </ul>
-  </li>
-  <li>一些观点
-    <ol>
-      <li>优先把MySQL或PostgreSQL搞明白</li>
-      <li>Nosql可以深入研究一下Redis和HBase</li>
-      <li>当然根据自身需求学习：能用(80%)-&gt;用好(20%)-&gt;用到极致(4%)-&gt;自制(0.8%)</li>
-    </ol>
-  </li>
-</ul>
-
-<hr />
 
 <h3 id="服务端的技能点">服务端的技能点</h3>
 
@@ -401,10 +226,14 @@
       </li>
     </ul>
   </li>
-  <li>
-    <p>数据库</p>
-
+  <li>数据库
     <ul>
+      <li>数据库排行榜
+        <ul>
+          <li><a href="https://db-engines.com/en/ranking">DB-Engines</a></li>
+          <li><a href="https://www.modb.pro/dbRank">墨天轮</a></li>
+        </ul>
+      </li>
       <li>关系数据库
         <ul>
           <li><a href="https://github.com/mysql">MySQL</a></li>
@@ -425,52 +254,11 @@
   </li>
   <li>操作系统
     <ul>
-      <li>开发环境
-        <ul>
-          <li>Windows</li>
-          <li>MacOS</li>
-          <li>Linux
-            <ul>
-              <li><a href="https://ubuntu.com/">Ubuntu</a></li>
-              <li><a href="https://www.kali.org/docs/">Kali 侧重于Web安全</a></li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      <li>部署环境(不仅限于此)
-        <ul>
-          <li><a href="https://ubuntu.com/">Ubuntu server</a></li>
-          <li><a href="https://www.centos.org/">CentOS</a></li>
-          <li><a href="https://www.debian.org/">Deban</a></li>
-          <li><a href="">Unix</a></li>
-        </ul>
-      </li>
+      <li>Ubuntu</li>
+      <li>CentOS</li>
     </ul>
   </li>
+  <li></li>
 </ul>
 
-
-            </article>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-    
-    <footer class="footer" role="contentinfo">
-	<div class="container">
-		<p class="copyright">版权 &copy; 2018-2022 <a href=""><code>louis han</code></a>.</p>
-		<p>自 <a href="http://jekyllrb.com"> Jekyll </a>的<a href="http://lesscss.cn/"> Less </a>主题重构产生。</p>
-	</div>
-</footer>
-
-<script src="/styles/js/jquery.min.js"></script>
-<script src="/styles/js/bootstrap.min.js"></script>
-<script src="/styles/js/holder.min.js"></script>
-<script src="/styles/js/lessismore.js"></script>
-<script src="/styles/js/application.js"></script>
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-  </body>
-</html>
+:ET

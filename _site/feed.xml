@@ -5,14 +5,15 @@
     <description></description>
     <link>http://www.louishwh.top/</link>
     <atom:link href="http://www.louishwh.top/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 01 Jan 2022 10:54:54 +0800</pubDate>
-    <lastBuildDate>Sat, 01 Jan 2022 10:54:54 +0800</lastBuildDate>
+    <pubDate>Sat, 01 Jan 2022 12:06:05 +0800</pubDate>
+    <lastBuildDate>Sat, 01 Jan 2022 12:06:05 +0800</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
     
       <item>
         <title>服务端技能点</title>
         <description>&lt;h3 id=&quot;服务端的比对&quot;&gt;服务端的比对&lt;/h3&gt;
 
+&lt;hr /&gt;
 &lt;ul&gt;
   &lt;li&gt;Web框架性能排名
     &lt;ul&gt;
@@ -23,10 +24,29 @@
     &lt;ol&gt;
       &lt;li&gt;Web框架性能有差，学习曲线、熟练程度、团队技能要求也有差&lt;/li&gt;
       &lt;li&gt;在兴趣和好奇下可以去追求极致的性能&lt;/li&gt;
-      &lt;li&gt;在业务和发展下要追求可控制性、可延续性和稳定性&lt;/li&gt;
+      &lt;li&gt;在业务和发展下要追求稳定性、可用性、安全性和性能的平衡&lt;/li&gt;
     &lt;/ol&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;ul&gt;
+  &lt;li&gt;数据库排行榜
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://db-engines.com/en/ranking&quot;&gt;DB-Engines&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://www.modb.pro/dbRank&quot;&gt;墨天轮&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;一些观点
+    &lt;ol&gt;
+      &lt;li&gt;优先把MySQL或PostgreSQL搞明白&lt;/li&gt;
+      &lt;li&gt;Nosql可以深入研究一下Redis和HBase&lt;/li&gt;
+      &lt;li&gt;当然根据自身需求学习：能用(80%)-&amp;gt;用好(20%)-&amp;gt;用到极致(4%)-&amp;gt;自制(0.8%)&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
 
 &lt;h3 id=&quot;服务端的技能点&quot;&gt;服务端的技能点&lt;/h3&gt;
 
@@ -51,58 +71,81 @@
   &lt;/li&gt;
   &lt;li&gt;编程语言(必须深入了解一种)
     &lt;ul&gt;
-      &lt;li&gt;Java/Kotlin(推荐👍)
+      &lt;li&gt;常见的选择
         &lt;ul&gt;
-          &lt;li&gt;技术体系完善&lt;/li&gt;
-          &lt;li&gt;岗位最多&lt;/li&gt;
+          &lt;li&gt;Java/Kotlin(推荐👍)
+            &lt;ul&gt;
+              &lt;li&gt;技术体系完善&lt;/li&gt;
+              &lt;li&gt;岗位最多&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Go(推荐👍)
+            &lt;ul&gt;
+              &lt;li&gt;编译速度天下第一☝️&lt;/li&gt;
+              &lt;li&gt;并发简单易用且高效&lt;/li&gt;
+              &lt;li&gt;生态也不错&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Python(推荐👍)
+            &lt;ul&gt;
+              &lt;li&gt;强大的第三方库资源&lt;/li&gt;
+              &lt;li&gt;语法简洁&lt;/li&gt;
+              &lt;li&gt;性能不够，C++来凑&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;.NET&lt;/li&gt;
+          &lt;li&gt;C/C++
+            &lt;ul&gt;
+              &lt;li&gt;速度天下第一&lt;/li&gt;
+              &lt;li&gt;适合对于性能要求很高的系统&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Rust
+            &lt;ul&gt;
+              &lt;li&gt;性能接近C/C++&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Node
+            &lt;ul&gt;
+              &lt;li&gt;优势在于密集IO&lt;/li&gt;
+              &lt;li&gt;在较高的并发和尽可能的节省内存&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;PHP
+            &lt;ul&gt;
+              &lt;li&gt;小站用的比较多&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Ruby
+            &lt;ul&gt;
+              &lt;li&gt;国外用的比较多&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Swift
+            &lt;ul&gt;
+              &lt;li&gt;⚠️ 纯粹为iOSer们自娱自乐&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
-      &lt;li&gt;Go(推荐👍)
-        &lt;ul&gt;
-          &lt;li&gt;编译速度天下第一☝️&lt;/li&gt;
-          &lt;li&gt;并发简单易用且高效&lt;/li&gt;
-          &lt;li&gt;生态也不错&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Python(推荐👍)
-        &lt;ul&gt;
-          &lt;li&gt;强大的第三方库资源&lt;/li&gt;
-          &lt;li&gt;语法简洁&lt;/li&gt;
-          &lt;li&gt;性能不够，C++来凑&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;.NET&lt;/li&gt;
-      &lt;li&gt;C/C++
-        &lt;ul&gt;
-          &lt;li&gt;速度天下第一&lt;/li&gt;
-          &lt;li&gt;适合对于性能要求很高的系统&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Rust
-        &lt;ul&gt;
-          &lt;li&gt;性能接近C/C++&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Node
-        &lt;ul&gt;
-          &lt;li&gt;优势在于密集IO&lt;/li&gt;
-          &lt;li&gt;在较高的并发和尽可能的节省内存&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;PHP
-        &lt;ul&gt;
-          &lt;li&gt;小站用的比较多&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Ruby
-        &lt;ul&gt;
-          &lt;li&gt;国外用的应该比较多&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Swift
-        &lt;ul&gt;
-          &lt;li&gt;看看就得了&lt;/li&gt;
-        &lt;/ul&gt;
+      &lt;li&gt;一些观点
+        &lt;ol&gt;
+          &lt;li&gt;编程语言本身各有千秋
+            &lt;ul&gt;
+              &lt;li&gt;编程范式的支持&lt;/li&gt;
+              &lt;li&gt;性能差异&lt;/li&gt;
+              &lt;li&gt;语言生态差异&lt;/li&gt;
+              &lt;li&gt;学习曲线差异&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;学习的意见
+            &lt;ul&gt;
+              &lt;li&gt;接纳不同，不设限制&lt;/li&gt;
+              &lt;li&gt;用其所长，发挥价值&lt;/li&gt;
+              &lt;li&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ol&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
@@ -115,16 +158,27 @@
               &lt;li&gt;&lt;a href=&quot;https://spring.io/&quot;&gt;Spring系列&lt;/a&gt;
                 &lt;ul&gt;
                   &lt;li&gt;Spring 是核心引擎&lt;/li&gt;
-                  &lt;li&gt;&lt;a href=&quot;https://spring.io/projects/spring-framework&quot;&gt;Spring MVC&lt;/a&gt; 是基于Spring的MVC框架&lt;/li&gt;
-                  &lt;li&gt;&lt;a href=&quot;https://spring.io/projects/spring-boot&quot;&gt;Spring Boot&lt;/a&gt; 是Spring下的一组开发包(包含Spring MVC)&lt;/li&gt;
-                  &lt;li&gt;&lt;a href=&quot;https://spring.io/projects/spring-cloud&quot;&gt;Sprint Cloud&lt;/a&gt; 是微服务解决方案(包含Spring Boot)&lt;/li&gt;
+                  &lt;li&gt;&lt;a href=&quot;https://spring.io/projects/spring-framework&quot;&gt;Spring MVC&lt;/a&gt;
+                    &lt;ul&gt;
+                      &lt;li&gt;基于Spring的MVC框架&lt;/li&gt;
+                    &lt;/ul&gt;
+                  &lt;/li&gt;
+                  &lt;li&gt;&lt;a href=&quot;https://spring.io/projects/spring-boot&quot;&gt;Spring Boot&lt;/a&gt;
+                    &lt;ul&gt;
+                      &lt;li&gt;Spring下的一组开发包(包含Spring MVC)&lt;/li&gt;
+                    &lt;/ul&gt;
+                  &lt;/li&gt;
+                  &lt;li&gt;&lt;a href=&quot;https://spring.io/projects/spring-cloud&quot;&gt;Sprint Cloud&lt;/a&gt;
+                    &lt;ul&gt;
+                      &lt;li&gt;微服务解决方案(包含Spring Boot)&lt;/li&gt;
+                    &lt;/ul&gt;
+                  &lt;/li&gt;
                   &lt;li&gt;&lt;a href=&quot;https://www.zhihu.com/question/64671972&quot;&gt;MVC &amp;amp; Boot&lt;/a&gt;&lt;/li&gt;
                   &lt;li&gt;&lt;a href=&quot;https://www.zhihu.com/question/280318988&quot;&gt;Boot &amp;amp; Cloud&lt;/a&gt;&lt;/li&gt;
                 &lt;/ul&gt;
               &lt;/li&gt;
               &lt;li&gt;&lt;a href=&quot;https://www.dropwizard.io/en/latest/&quot;&gt;Dropwizard&lt;/a&gt;
                 &lt;ul&gt;
-                  &lt;li&gt;了解不多&lt;/li&gt;
                   &lt;li&gt;&lt;a href=&quot;https://www.overops.com/blog/java-bootstrap-dropwizard-vs-spring-boot/&quot;&gt;可参考&lt;/a&gt;&lt;/li&gt;
                 &lt;/ul&gt;
               &lt;/li&gt;
@@ -205,6 +259,52 @@
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;数据库&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;关系数据库
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;https://github.com/mysql&quot;&gt;MySQL&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://github.com/postgres/postgres&quot;&gt;PostgreSQL&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;NoSQL
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis&quot;&gt;Redis&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://github.com/neo4j/neo4j&quot;&gt;Neo4j&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://github.com/apache/hbase&quot;&gt;HBase&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://github.com/elastic/elasticsearch&quot;&gt;Elasticsearch&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://github.com/google/leveldb&quot;&gt;LevelDB&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://github.com/facebook/rocksdb&quot;&gt;RocksDB(基于LevelDB)&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;操作系统
+    &lt;ul&gt;
+      &lt;li&gt;开发环境
+        &lt;ul&gt;
+          &lt;li&gt;Windows&lt;/li&gt;
+          &lt;li&gt;MacOS&lt;/li&gt;
+          &lt;li&gt;Linux
+            &lt;ul&gt;
+              &lt;li&gt;&lt;a href=&quot;https://ubuntu.com/&quot;&gt;Ubuntu&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://www.kali.org/docs/&quot;&gt;Kali 侧重于Web安全&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;部署环境(不仅限于此)
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;https://ubuntu.com/&quot;&gt;Ubuntu server&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://www.centos.org/&quot;&gt;CentOS&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://www.debian.org/&quot;&gt;Deban&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;&quot;&gt;Unix&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
 </description>
@@ -216,17 +316,6 @@
         
         
         <category>服务端</category>
-        
-      </item>
-    
-      <item>
-        <title>搭建_k8s</title>
-        <description>
-</description>
-        <pubDate>Sat, 01 Jan 2022 00:00:00 +0800</pubDate>
-        <link>http://www.louishwh.top/2022/01/01/%E6%90%AD%E5%BB%BA_K8s/</link>
-        <guid isPermaLink="true">http://www.louishwh.top/2022/01/01/%E6%90%AD%E5%BB%BA_K8s/</guid>
-        
         
       </item>
     
@@ -1861,6 +1950,21 @@
         <pubDate>Sat, 11 Dec 2021 22:00:00 +0800</pubDate>
         <link>http://www.louishwh.top/2021/12/11/%E6%9E%B6%E6%9E%84-%E6%9E%B6%E6%9E%84%E6%A8%A1%E5%BC%8F/</link>
         <guid isPermaLink="true">http://www.louishwh.top/2021/12/11/%E6%9E%B6%E6%9E%84-%E6%9E%B6%E6%9E%84%E6%A8%A1%E5%BC%8F/</guid>
+        
+        <category>架构</category>
+        
+        
+        <category>服务端</category>
+        
+      </item>
+    
+      <item>
+        <title>架构_Web架构演化历程</title>
+        <description>
+</description>
+        <pubDate>Sun, 05 Dec 2021 22:00:00 +0800</pubDate>
+        <link>http://www.louishwh.top/2021/12/05/%E6%9E%B6%E6%9E%84_%E6%BC%94%E5%8C%96%E5%8E%86%E7%A8%8B/</link>
+        <guid isPermaLink="true">http://www.louishwh.top/2021/12/05/%E6%9E%B6%E6%9E%84_%E6%BC%94%E5%8C%96%E5%8E%86%E7%A8%8B/</guid>
         
         <category>架构</category>
         
