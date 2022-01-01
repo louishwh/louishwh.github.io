@@ -5,9 +5,219 @@
     <description></description>
     <link>http://www.louishwh.top/</link>
     <atom:link href="http://www.louishwh.top/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 01 Jan 2022 08:34:44 +0800</pubDate>
-    <lastBuildDate>Sat, 01 Jan 2022 08:34:44 +0800</lastBuildDate>
+    <pubDate>Sat, 01 Jan 2022 10:54:54 +0800</pubDate>
+    <lastBuildDate>Sat, 01 Jan 2022 10:54:54 +0800</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
+    
+      <item>
+        <title>服务端技能点</title>
+        <description>&lt;h3 id=&quot;服务端的比对&quot;&gt;服务端的比对&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Web框架性能排名
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://www.techempower.com/benchmarks/#section=data-r19&amp;amp;hw=ph&amp;amp;test=fortune&quot;&gt;Web Framework Benchmarks&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;一些观点
+    &lt;ol&gt;
+      &lt;li&gt;Web框架性能有差，学习曲线、熟练程度、团队技能要求也有差&lt;/li&gt;
+      &lt;li&gt;在兴趣和好奇下可以去追求极致的性能&lt;/li&gt;
+      &lt;li&gt;在业务和发展下要追求可控制性、可延续性和稳定性&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;服务端的技能点&quot;&gt;服务端的技能点&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;计算机常识(必须懂得的概念)
+    &lt;ul&gt;
+      &lt;li&gt;定义
+        &lt;ul&gt;
+          &lt;li&gt;作为计算机从业人员，必须掌握的概念&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;内容
+        &lt;ul&gt;
+          &lt;li&gt;算法+数据结构&lt;/li&gt;
+          &lt;li&gt;编码&lt;/li&gt;
+          &lt;li&gt;操作系统&lt;/li&gt;
+          &lt;li&gt;数据库&lt;/li&gt;
+          &lt;li&gt;网络&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;编程语言(必须深入了解一种)
+    &lt;ul&gt;
+      &lt;li&gt;Java/Kotlin(推荐👍)
+        &lt;ul&gt;
+          &lt;li&gt;技术体系完善&lt;/li&gt;
+          &lt;li&gt;岗位最多&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Go(推荐👍)
+        &lt;ul&gt;
+          &lt;li&gt;编译速度天下第一☝️&lt;/li&gt;
+          &lt;li&gt;并发简单易用且高效&lt;/li&gt;
+          &lt;li&gt;生态也不错&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Python(推荐👍)
+        &lt;ul&gt;
+          &lt;li&gt;强大的第三方库资源&lt;/li&gt;
+          &lt;li&gt;语法简洁&lt;/li&gt;
+          &lt;li&gt;性能不够，C++来凑&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;.NET&lt;/li&gt;
+      &lt;li&gt;C/C++
+        &lt;ul&gt;
+          &lt;li&gt;速度天下第一&lt;/li&gt;
+          &lt;li&gt;适合对于性能要求很高的系统&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Rust
+        &lt;ul&gt;
+          &lt;li&gt;性能接近C/C++&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Node
+        &lt;ul&gt;
+          &lt;li&gt;优势在于密集IO&lt;/li&gt;
+          &lt;li&gt;在较高的并发和尽可能的节省内存&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;PHP
+        &lt;ul&gt;
+          &lt;li&gt;小站用的比较多&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Ruby
+        &lt;ul&gt;
+          &lt;li&gt;国外用的应该比较多&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Swift
+        &lt;ul&gt;
+          &lt;li&gt;看看就得了&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Web框架
+    &lt;ul&gt;
+      &lt;li&gt;语言自成体系
+        &lt;ul&gt;
+          &lt;li&gt;Java
+            &lt;ul&gt;
+              &lt;li&gt;&lt;a href=&quot;https://spring.io/&quot;&gt;Spring系列&lt;/a&gt;
+                &lt;ul&gt;
+                  &lt;li&gt;Spring 是核心引擎&lt;/li&gt;
+                  &lt;li&gt;&lt;a href=&quot;https://spring.io/projects/spring-framework&quot;&gt;Spring MVC&lt;/a&gt; 是基于Spring的MVC框架&lt;/li&gt;
+                  &lt;li&gt;&lt;a href=&quot;https://spring.io/projects/spring-boot&quot;&gt;Spring Boot&lt;/a&gt; 是Spring下的一组开发包(包含Spring MVC)&lt;/li&gt;
+                  &lt;li&gt;&lt;a href=&quot;https://spring.io/projects/spring-cloud&quot;&gt;Sprint Cloud&lt;/a&gt; 是微服务解决方案(包含Spring Boot)&lt;/li&gt;
+                  &lt;li&gt;&lt;a href=&quot;https://www.zhihu.com/question/64671972&quot;&gt;MVC &amp;amp; Boot&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href=&quot;https://www.zhihu.com/question/280318988&quot;&gt;Boot &amp;amp; Cloud&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://www.dropwizard.io/en/latest/&quot;&gt;Dropwizard&lt;/a&gt;
+                &lt;ul&gt;
+                  &lt;li&gt;了解不多&lt;/li&gt;
+                  &lt;li&gt;&lt;a href=&quot;https://www.overops.com/blog/java-bootstrap-dropwizard-vs-spring-boot/&quot;&gt;可参考&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://dev.to/speedwheel/top-6-web-frameworks-for-go-as-of-2017-34i&quot;&gt;Go&lt;/a&gt;
+            &lt;ul&gt;
+              &lt;li&gt;&lt;a href=&quot;https://github.com/astaxie/beego&quot;&gt;Beego&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://github.com/kataras/iris&quot;&gt;Iris&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://github.com/gin-gonic/gin&quot;&gt;Gin&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://github.com/labstack/echo&quot;&gt;Echo&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://github.com/revel/revel&quot;&gt;Revel&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://www.cnblogs.com/an-wen/p/11330834.html&quot;&gt;Python&lt;/a&gt;
+            &lt;ul&gt;
+              &lt;li&gt;&lt;a href=&quot;https://www.djangoproject.com/&quot;&gt;Django&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://www.tornadoweb.org/en/stable/&quot;&gt;Tornado&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://dormousehole.readthedocs.io/en/latest/&quot;&gt;Flask&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://twistedmatrix.com/trac/&quot;&gt;Twisted&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;p&gt;&lt;a href=&quot;https://www.zhihu.com/question/366937369&quot;&gt;.NET&lt;/a&gt;&lt;/p&gt;
+          &lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s?__biz=MzAxNDI5NzEzNg==&amp;amp;mid=2651164874&amp;amp;idx=1&amp;amp;sn=38efbfb036b5f667403d87a9d70bffb3&amp;amp;chksm=80644195b713c88368c88d73bd092c4132f1b6908b12036775cebef5edc9606fd08c14accf1e&amp;amp;scene=21#wechat_redirect&quot;&gt;C/C++&lt;/a&gt;
+            &lt;ul&gt;
+              &lt;li&gt;&lt;a href=&quot;https://github.com/facebook/proxygen&quot;&gt;Proxygen&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://github.com/ipkn/crow&quot;&gt;Crow&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://github.com/microsoft/cpprestsdk&quot;&gt;C++ REST SDK&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://github.com/an-tao/drogon&quot;&gt;Drogon&lt;/a&gt;
+                &lt;ul&gt;
+                  &lt;li&gt;这个现在还在性能榜第一☝️&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://github.com/oatpp/oatpp&quot;&gt;Oatpp&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://github.com/oktal/pistache/&quot;&gt;Pistache&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://github.com/matt-42/silicon/&quot;&gt;Silicon&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://github.com/civetweb/civetweb&quot;&gt;CivetWeb&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://www.rust-lang.org/&quot;&gt;Rust&lt;/a&gt;
+            &lt;ul&gt;
+              &lt;li&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/398232138&quot;&gt;Rust的Web生态&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://actix.rs/&quot;&gt;Actix&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://rocket.rs/&quot;&gt;Rocket&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://github.com/tokio-rs/axum&quot;&gt;Axum&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://nodejs.org&quot;&gt;Node.js&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/111015050&quot;&gt;PHP&lt;/a&gt;
+            &lt;ul&gt;
+              &lt;li&gt;&lt;a href=&quot;https://laravel.com/&quot;&gt;Laravel&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://www.excellentwebworld.com/codeigniter-development/&quot;&gt;CodeIgniter&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://symfony.com/&quot;&gt;Symfony&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://www.zend.com/&quot;&gt;Zend&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://www.yiiframework.com/&quot;&gt;YII2&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://www.excellentwebworld.com/cakephp-development/&quot;&gt;Cakephp&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;http://www.ruby-lang.org&quot;&gt;Ruby&lt;/a&gt;
+            &lt;ul&gt;
+              &lt;li&gt;&lt;a href=&quot;https://github.com/rails/rails&quot;&gt;Ruby on Rails&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://github.com/merb/merb&quot;&gt;Merb&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://github.com/camping/mab&quot;&gt;Camping&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://github.com/Ramaze/ramaze&quot;&gt;Ramaze&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://www.swift.org/&quot;&gt;Swift 看看就得了，权当尝试&lt;/a&gt;
+            &lt;ul&gt;
+              &lt;li&gt;&lt;a href=&quot;https://github.com/perfectlySoft/Perfect&quot;&gt;Perfect&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://github.com/vapor/Vapor&quot;&gt;Vapor&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://github.com/Kitura/Kitura&quot;&gt;Kitura&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://github.com/zewo/Zewo&quot;&gt;Zewo&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Sat, 01 Jan 2022 09:00:00 +0800</pubDate>
+        <link>http://www.louishwh.top/2022/01/01/%E6%9C%8D%E5%8A%A1%E7%AB%AF%E6%8A%80%E8%83%BD%E7%82%B9/</link>
+        <guid isPermaLink="true">http://www.louishwh.top/2022/01/01/%E6%9C%8D%E5%8A%A1%E7%AB%AF%E6%8A%80%E8%83%BD%E7%82%B9/</guid>
+        
+        <category>总结</category>
+        
+        
+        <category>服务端</category>
+        
+      </item>
     
       <item>
         <title>搭建_k8s</title>
@@ -1651,21 +1861,6 @@
         <pubDate>Sat, 11 Dec 2021 22:00:00 +0800</pubDate>
         <link>http://www.louishwh.top/2021/12/11/%E6%9E%B6%E6%9E%84-%E6%9E%B6%E6%9E%84%E6%A8%A1%E5%BC%8F/</link>
         <guid isPermaLink="true">http://www.louishwh.top/2021/12/11/%E6%9E%B6%E6%9E%84-%E6%9E%B6%E6%9E%84%E6%A8%A1%E5%BC%8F/</guid>
-        
-        <category>架构</category>
-        
-        
-        <category>服务端</category>
-        
-      </item>
-    
-      <item>
-        <title>架构_Web架构演化历程</title>
-        <description>
-</description>
-        <pubDate>Sun, 05 Dec 2021 22:00:00 +0800</pubDate>
-        <link>http://www.louishwh.top/2021/12/05/%E6%9E%B6%E6%9E%84_%E6%BC%94%E5%8C%96%E5%8E%86%E7%A8%8B/</link>
-        <guid isPermaLink="true">http://www.louishwh.top/2021/12/05/%E6%9E%B6%E6%9E%84_%E6%BC%94%E5%8C%96%E5%8E%86%E7%A8%8B/</guid>
         
         <category>架构</category>
         
