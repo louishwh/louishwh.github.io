@@ -5,8 +5,8 @@
     <description></description>
     <link>http://www.louishwh.top/</link>
     <atom:link href="http://www.louishwh.top/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 18 Jan 2022 22:52:15 +0800</pubDate>
-    <lastBuildDate>Tue, 18 Jan 2022 22:52:15 +0800</lastBuildDate>
+    <pubDate>Tue, 18 Jan 2022 22:53:21 +0800</pubDate>
+    <lastBuildDate>Tue, 18 Jan 2022 22:53:21 +0800</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
     
       <item>
@@ -25,7 +25,7 @@
       </item>
     
       <item>
-        <title>服务端@Java@标准库</title>
+        <title>服务端@Java@核心拓展库</title>
         <description>
 </description>
         <pubDate>Sat, 15 Jan 2022 21:00:00 +0800</pubDate>
@@ -40,7 +40,7 @@
       </item>
     
       <item>
-        <title>服务端@Java@标准库</title>
+        <title>服务端@Java@核心库</title>
         <description>&lt;h3 id=&quot;java标准库&quot;&gt;&lt;a href=&quot;https://docs.oracle.com/en/java/javase/index.html&quot;&gt;Java@标准库&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/javase/8/&quot;&gt;Java8@标准库&lt;/a&gt;&lt;/li&gt;
