@@ -5,8 +5,8 @@
     <description></description>
     <link>http://www.louishwh.top/</link>
     <atom:link href="http://www.louishwh.top/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 18 Jan 2022 22:53:48 +0800</pubDate>
-    <lastBuildDate>Tue, 18 Jan 2022 22:53:48 +0800</lastBuildDate>
+    <pubDate>Tue, 18 Jan 2022 22:55:08 +0800</pubDate>
+    <lastBuildDate>Tue, 18 Jan 2022 22:55:08 +0800</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
     
       <item>
@@ -415,111 +415,6 @@
       </item>
     
       <item>
-        <title>数据库@排名</title>
-        <description>&lt;h3 id=&quot;数据库的排名&quot;&gt;数据库的排名&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://db-engines.com/en/ranking&quot;&gt;DB-Engines&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.modb.pro/dbRank&quot;&gt;墨天轮&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;当前排名现状&quot;&gt;当前排名现状&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Oracle&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;MySQL&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Microsoft SQL Server&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;PostgreSQL&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;MongoDB&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Redis&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Elasticsearch&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;SQLite&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Microsoft Access&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Cassandra&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;MariaDB&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;七周七数据库提及的&quot;&gt;七周七数据库提及的&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;PostgreSQL&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Riak&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Apache HBase&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Apache CouchDB&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;MongoDB&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Neo4j&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Redis&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;自己真正玩过的&quot;&gt;自己真正玩过的&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;MySQL&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;PostgreSQL&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;MongoDB&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Redis&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;SQLite&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-</description>
-        <pubDate>Sun, 02 Jan 2022 08:00:00 +0800</pubDate>
-        <link>http://www.louishwh.top/2022/01/02/%E6%95%B0%E6%8D%AE%E5%BA%93@%E6%8E%92%E5%90%8D/</link>
-        <guid isPermaLink="true">http://www.louishwh.top/2022/01/02/%E6%95%B0%E6%8D%AE%E5%BA%93@%E6%8E%92%E5%90%8D/</guid>
-        
-        <category>【数据库】</category>
-        
-        
-        <category>【数据库】</category>
-        
-      </item>
-    
-      <item>
         <title>服务端@技能点</title>
         <description>&lt;h3 id=&quot;服务端的比对&quot;&gt;服务端的比对&lt;/h3&gt;
 
@@ -913,6 +808,111 @@
         
         
         <category>【服务端】</category>
+        
+      </item>
+    
+      <item>
+        <title>数据库@排名</title>
+        <description>&lt;h3 id=&quot;数据库的排名&quot;&gt;数据库的排名&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://db-engines.com/en/ranking&quot;&gt;DB-Engines&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.modb.pro/dbRank&quot;&gt;墨天轮&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;当前排名现状&quot;&gt;当前排名现状&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Oracle&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;MySQL&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Microsoft SQL Server&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;PostgreSQL&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;MongoDB&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Redis&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Elasticsearch&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;SQLite&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Microsoft Access&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Cassandra&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;MariaDB&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;七周七数据库提及的&quot;&gt;七周七数据库提及的&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;PostgreSQL&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Riak&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Apache HBase&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Apache CouchDB&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;MongoDB&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Neo4j&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Redis&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;自己真正玩过的&quot;&gt;自己真正玩过的&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;MySQL&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;PostgreSQL&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;MongoDB&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Redis&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;SQLite&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+        <pubDate>Sat, 01 Jan 2022 08:00:00 +0800</pubDate>
+        <link>http://www.louishwh.top/2022/01/01/%E6%95%B0%E6%8D%AE%E5%BA%93@%E6%8E%92%E5%90%8D/</link>
+        <guid isPermaLink="true">http://www.louishwh.top/2022/01/01/%E6%95%B0%E6%8D%AE%E5%BA%93@%E6%8E%92%E5%90%8D/</guid>
+        
+        <category>【数据库】</category>
+        
+        
+        <category>【数据库】</category>
         
       </item>
     
