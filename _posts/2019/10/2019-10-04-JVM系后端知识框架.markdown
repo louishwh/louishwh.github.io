@@ -2,8 +2,8 @@
 layout: post
 title: JVM系后端知识框架
 date: 2019-10-04 10:00:00 +0800
-categories: 【软件架构】
-tag: 【必备技能】
+categories: 【服务端】
+tag: 【Java】
 ---
 
 

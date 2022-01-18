@@ -5,8 +5,8 @@
     <description></description>
     <link>http://www.louishwh.top/</link>
     <atom:link href="http://www.louishwh.top/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 18 Jan 2022 12:44:09 +0800</pubDate>
-    <lastBuildDate>Tue, 18 Jan 2022 12:44:09 +0800</lastBuildDate>
+    <pubDate>Tue, 18 Jan 2022 15:37:42 +0800</pubDate>
+    <lastBuildDate>Tue, 18 Jan 2022 15:37:42 +0800</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
     
       <item>
@@ -17,10 +17,10 @@
         <link>http://www.louishwh.top/2022/01/16/ESP32%E5%88%9D%E4%BD%93%E9%AA%8C/</link>
         <guid isPermaLink="true">http://www.louishwh.top/2022/01/16/ESP32%E5%88%9D%E4%BD%93%E9%AA%8C/</guid>
         
-        <category>ESP</category>
+        <category>【ESP】</category>
         
         
-        <category>IOT</category>
+        <category>【物联网】</category>
         
       </item>
     
@@ -28,14 +28,29 @@
         <title>服务端@Java@标准库</title>
         <description>
 </description>
+        <pubDate>Sat, 15 Jan 2022 21:00:00 +0800</pubDate>
+        <link>http://www.louishwh.top/2022/01/15/%E6%9C%8D%E5%8A%A1%E7%AB%AF@Java@%E6%A0%B8%E5%BF%83%E6%8B%93%E5%B1%95%E5%BA%93/</link>
+        <guid isPermaLink="true">http://www.louishwh.top/2022/01/15/%E6%9C%8D%E5%8A%A1%E7%AB%AF@Java@%E6%A0%B8%E5%BF%83%E6%8B%93%E5%B1%95%E5%BA%93/</guid>
+        
+        <category>【Java】</category>
+        
+        
+        <category>【服务端】</category>
+        
+      </item>
+    
+      <item>
+        <title>服务端@Java@Spring</title>
+        <description>
+</description>
         <pubDate>Tue, 04 Jan 2022 21:00:00 +0800</pubDate>
-        <link>http://www.louishwh.top/2022/01/04/%E6%9C%8D%E5%8A%A1%E7%AB%AF@Java@%E6%A0%B8%E5%BF%83%E6%8B%93%E5%B1%95%E5%BA%93/</link>
-        <guid isPermaLink="true">http://www.louishwh.top/2022/01/04/%E6%9C%8D%E5%8A%A1%E7%AB%AF@Java@%E6%A0%B8%E5%BF%83%E6%8B%93%E5%B1%95%E5%BA%93/</guid>
+        <link>http://www.louishwh.top/2022/01/04/%E6%9C%8D%E5%8A%A1%E7%AB%AF@Java@Spring/</link>
+        <guid isPermaLink="true">http://www.louishwh.top/2022/01/04/%E6%9C%8D%E5%8A%A1%E7%AB%AF@Java@Spring/</guid>
         
-        <category>Java</category>
+        <category>【Java】</category>
         
         
-        <category>服务端</category>
+        <category>【服务端】</category>
         
       </item>
     
@@ -371,10 +386,10 @@
         <link>http://www.louishwh.top/2022/01/02/%E6%95%B0%E6%8D%AE%E5%BA%93_%E6%8E%92%E5%90%8D/</link>
         <guid isPermaLink="true">http://www.louishwh.top/2022/01/02/%E6%95%B0%E6%8D%AE%E5%BA%93_%E6%8E%92%E5%90%8D/</guid>
         
-        <category>数据库</category>
+        <category>【数据库】</category>
         
         
-        <category>存储工具</category>
+        <category>【数据库】</category>
         
       </item>
     
@@ -768,10 +783,10 @@
         <link>http://www.louishwh.top/2022/01/01/%E6%9C%8D%E5%8A%A1%E7%AB%AF@%E6%8A%80%E8%83%BD%E7%82%B9/</link>
         <guid isPermaLink="true">http://www.louishwh.top/2022/01/01/%E6%9C%8D%E5%8A%A1%E7%AB%AF@%E6%8A%80%E8%83%BD%E7%82%B9/</guid>
         
-        <category>总结</category>
+        <category>【架构】</category>
         
         
-        <category>服务端</category>
+        <category>【服务端】</category>
         
       </item>
     
@@ -1129,209 +1144,6 @@
         <pubDate>Mon, 27 Dec 2021 21:00:00 +0800</pubDate>
         <link>http://www.louishwh.top/2021/12/27/%E6%9E%B6%E6%9E%84-Web%E9%AB%98%E5%AE%89%E5%85%A8%E6%9E%B6%E6%9E%84/</link>
         <guid isPermaLink="true">http://www.louishwh.top/2021/12/27/%E6%9E%B6%E6%9E%84-Web%E9%AB%98%E5%AE%89%E5%85%A8%E6%9E%B6%E6%9E%84/</guid>
-        
-        <category>架构</category>
-        
-        
-        <category>服务端</category>
-        
-      </item>
-    
-      <item>
-        <title>架构_Web可拓展架构</title>
-        <description>&lt;h2 id=&quot;零-核心问题&quot;&gt;零. 核心问题&lt;/h2&gt;
-&lt;ol&gt;
-  &lt;li&gt;什么是可拓展性？
-    &lt;ul&gt;
-      &lt;li&gt;对现有系统影响最小的情况下，系统功能可持续拓展和提升的能力&lt;/li&gt;
-      &lt;li&gt;当系统增加新功能时，不需要对现有系统的结构和代码进行修改&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;如何实现可拓展性？
-    &lt;ul&gt;
-      &lt;li&gt;系统架构设计层面的开闭原则&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;一-构建可拓展的网站架构&quot;&gt;一. 构建可拓展的网站架构&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;低耦合
-    &lt;ul&gt;
-      &lt;li&gt;作用
-        &lt;ul&gt;
-          &lt;li&gt;系统更容易拓展&lt;/li&gt;
-          &lt;li&gt;模块更容易复用&lt;/li&gt;
-          &lt;li&gt;让开发过程和维护变得更加轻松和容易管理&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;将一个大系统切分为N个低耦合的子模块
-        &lt;ul&gt;
-          &lt;li&gt;包含横向的业务模块&lt;/li&gt;
-          &lt;li&gt;包含纵向的基础技术模块&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;对架构师的要求
-        &lt;ul&gt;
-          &lt;li&gt;专业的技术和经验&lt;/li&gt;
-          &lt;li&gt;对业务场景的理解&lt;/li&gt;
-          &lt;li&gt;对人性的把握、对世界的认知&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;模块化
-    &lt;ul&gt;
-      &lt;li&gt;作用
-        &lt;ul&gt;
-          &lt;li&gt;一组功能的集合&lt;/li&gt;
-          &lt;li&gt;提高系统的复用程度&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;二-利用分布式消息队列降低系统耦合性&quot;&gt;二. 利用分布式消息队列降低系统耦合性&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;事件驱动架构
-    &lt;ul&gt;
-      &lt;li&gt;定义：
-        &lt;ul&gt;
-          &lt;li&gt;在低耦合的模块之间传输事件消息，保持模块的松散耦合，并借助事件消息的通信完成模块间合作&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;典型实例
-        &lt;ul&gt;
-          &lt;li&gt;生产者-消费者模式&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;在大型网站中的使用
-        &lt;ul&gt;
-          &lt;li&gt;分布式消息队列&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;分布式消息队列
-    &lt;ul&gt;
-      &lt;li&gt;定义
-        &lt;ul&gt;
-          &lt;li&gt;先进先出的数据结构&lt;/li&gt;
-          &lt;li&gt;应用程序通过远程访问接口使用分布式消息队列，对消息存取操作&lt;/li&gt;
-          &lt;li&gt;实现分布式的异步调用&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;作用
-        &lt;ul&gt;
-          &lt;li&gt;伸缩性：类似无状态的服务器，扩容简单&lt;/li&gt;
-          &lt;li&gt;可用性：内存队列、磁盘存储、分布式&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;具体的方案
-        &lt;ul&gt;
-          &lt;li&gt;MySQL&lt;/li&gt;
-          &lt;li&gt;ActiveMQ&lt;/li&gt;
-          &lt;li&gt;RocketMQ&lt;/li&gt;
-          &lt;li&gt;Kafka&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;三-利用分布式服务构建可复用的业务平台&quot;&gt;三. 利用分布式服务构建可复用的业务平台&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;常见问题及方案
-    &lt;ol&gt;
-      &lt;li&gt;大型系统面临的问题
-        &lt;ol&gt;
-          &lt;li&gt;编译、部署困难&lt;/li&gt;
-          &lt;li&gt;代码分支管理困难&lt;/li&gt;
-          &lt;li&gt;数据库连接耗尽&lt;/li&gt;
-          &lt;li&gt;新增业务困难&lt;/li&gt;
-        &lt;/ol&gt;
-      &lt;/li&gt;
-      &lt;li&gt;解决方案
-        &lt;ol&gt;
-          &lt;li&gt;横向拆分
-            &lt;ul&gt;
-              &lt;li&gt;复用的业务拆分出来，独立部署
-                &lt;ul&gt;
-                  &lt;li&gt;新增业务只需要调用分布式服务，不依赖具体的模块代码&lt;/li&gt;
-                  &lt;li&gt;模块只要保证接口一致&lt;/li&gt;
-                &lt;/ul&gt;
-              &lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;纵向拆分
-            &lt;ul&gt;
-              &lt;li&gt;梳理业务&lt;/li&gt;
-              &lt;li&gt;剥离业务&lt;/li&gt;
-              &lt;li&gt;独立Web应用&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ol&gt;
-      &lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;WebService
-    &lt;ol&gt;
-      &lt;li&gt;Service Broker + UDDI&lt;/li&gt;
-      &lt;li&gt;Service Provider + WSDL&lt;/li&gt;
-      &lt;li&gt;Service Requester + SOAP&lt;/li&gt;
-      &lt;li&gt;缺点
-        &lt;ol&gt;
-          &lt;li&gt;臃肿的注册与发现机制&lt;/li&gt;
-          &lt;li&gt;低效的XML序列化手段&lt;/li&gt;
-          &lt;li&gt;开销较高的HTTP远程通信&lt;/li&gt;
-          &lt;li&gt;复杂的部署与维护手段&lt;/li&gt;
-        &lt;/ol&gt;
-      &lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;大型网站分布式服务的需求与特点
-    &lt;ol&gt;
-      &lt;li&gt;负载均衡&lt;/li&gt;
-      &lt;li&gt;失效转移&lt;/li&gt;
-      &lt;li&gt;高效的远程通信&lt;/li&gt;
-      &lt;li&gt;整合异构系统&lt;/li&gt;
-      &lt;li&gt;对应用最少的侵入&lt;/li&gt;
-      &lt;li&gt;版本控制&lt;/li&gt;
-      &lt;li&gt;实时监控&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;分布式服务框架设计
-    &lt;ul&gt;
-      &lt;li&gt;SOA(Service Oriented Architecture)
-        &lt;ul&gt;
-          &lt;li&gt;Thrift&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;开源实例
-        &lt;ul&gt;
-          &lt;li&gt;Dubbo&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;四-可拓展的数据结构&quot;&gt;四. 可拓展的数据结构&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;五-利用开发平台建设网站生态圈&quot;&gt;五. 利用开发平台建设网站生态圈&lt;/h2&gt;
-
-</description>
-        <pubDate>Fri, 24 Dec 2021 21:00:00 +0800</pubDate>
-        <link>http://www.louishwh.top/2021/12/24/%E6%9E%B6%E6%9E%84-Web%E5%8F%AF%E6%8B%93%E5%B1%95%E6%9E%B6%E6%9E%84/</link>
-        <guid isPermaLink="true">http://www.louishwh.top/2021/12/24/%E6%9E%B6%E6%9E%84-Web%E5%8F%AF%E6%8B%93%E5%B1%95%E6%9E%B6%E6%9E%84/</guid>
         
         <category>架构</category>
         

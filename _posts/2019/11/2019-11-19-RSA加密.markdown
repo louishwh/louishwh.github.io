@@ -2,7 +2,7 @@
 layout: post
 title: RSA加密技术
 date: 2019-11-19 10:00:00 +0800
-categories: 【编程常识】
+categories: 【密码学】
 tag: 【加密】
 ---
 

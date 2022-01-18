@@ -2,7 +2,7 @@
 layout: post
 title: RSA加密
 date: 2019-11-18 12:00:00 +0800
-categories: 【非对称加密】
+categories: 【密码学】
 tag: 【RSA加密】
 ---
 

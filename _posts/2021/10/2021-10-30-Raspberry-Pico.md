@@ -2,8 +2,8 @@
 layout: post
 title: Raspberry-Pico
 date: 2021-10-30 10:00:00 +0800
-categories: Raspberry
-tag: Python
+categories: 【物联网】
+tag: 【Python】
 ---
 
 
