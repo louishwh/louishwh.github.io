@@ -2,8 +2,8 @@
 layout: post
 title:  【原理】计算机网络1：梗概
 date:   2019-02-09 22:30:00 +0800
-categories: 网络
-tag: 基础知识
+categories: 【网络】
+tag: 【基础知识】
 ---
 
 1. 网络分层结构

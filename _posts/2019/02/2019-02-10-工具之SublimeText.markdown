@@ -3,7 +3,7 @@ layout: post
 title:  Sublime Text
 date:   2019-02-10 23:50:00 +0800
 categories: 【工具】
-tag: 工具箱
+tag: 【工具】
 ---
 
 ### 用Sublime Text的理由

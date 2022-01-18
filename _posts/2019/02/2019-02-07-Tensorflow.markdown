@@ -2,8 +2,8 @@
 layout: post
 title:  Tensorflow的使用
 date:   2019-01-28 20:00:00 +0800
-categories: 人工智能
-tag: 工具
+categories: 【人工智能】
+tag: 【Tensorflow】
 ---
 
 ## 目录
