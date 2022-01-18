@@ -1,0 +1,71 @@
+I"�<h3 id="java标准库"><a href="https://docs.oracle.com/en/java/javase/index.html">Java@标准库</a></h3>
+<ul>
+  <li><a href="https://docs.oracle.com/javase/8/">Java8@标准库</a></li>
+  <li><a href="https://docs.oracle.com/en/java/javase/11/core/java-core-libraries1.html">Java11@标准库</a></li>
+  <li><a href="https://docs.oracle.com/en/java/javase/17/core/java-core-libraries1.html">Java17@标准库</a></li>
+</ul>
+
+<h3 id="java17核心库">Java17@核心库</h3>
+
+<ol>
+  <li>序列化过滤
+    <ul>
+      <li>解决反序列化漏洞</li>
+      <li>Java序列化过滤器</li>
+      <li>过滤器工厂</li>
+      <li>Allow-Lists and Reject-Lists</li>
+      <li>基于模式的过滤器</li>
+      <li>自定义过滤器</li>
+      <li>设置过滤器工厂</li>
+      <li>内置的过滤器</li>
+      <li>日志过滤操作</li>
+    </ul>
+  </li>
+  <li>增强弃用
+    <ul>
+      <li>JDK中已弃用</li>
+      <li>如何弃用API</li>
+      <li>通知和警告</li>
+      <li>运行jdeprscan</li>
+    </ul>
+  </li>
+  <li>XML目录API
+ -
+    <ul>
+      <li></li>
+      <li></li>
+    </ul>
+  </li>
+  <li>创建不可修改的列表、集合和映射
+    <ul>
+      <li>用例</li>
+      <li>语法</li>
+      <li>创建集合的不可修改副本</li>
+      <li>从流中创建不可修改的集合</li>
+      <li>随机迭代顺序</li>
+      <li>不可修改的集合</li>
+      <li>空间效率</li>
+      <li>线程安全</li>
+    </ul>
+  </li>
+  <li>进程API
+    <ul>
+      <li>进程相关的类与接口</li>
+      <li>创建进程</li>
+      <li>获取进程信息</li>
+      <li>从进程重定向输出</li>
+      <li>用流过滤进程</li>
+      <li>当进程调用onExit方法终止时处理</li>
+      <li>控制对进程敏感信息的访问</li>
+    </ul>
+  </li>
+  <li>
+    <p>首选API</p>
+  </li>
+  <li>Java Logging Overview</li>
+  <li>Java NIO</li>
+  <li>Java Networking</li>
+  <li>Pseudorandom Number Generators</li>
+</ol>
+
+:ET

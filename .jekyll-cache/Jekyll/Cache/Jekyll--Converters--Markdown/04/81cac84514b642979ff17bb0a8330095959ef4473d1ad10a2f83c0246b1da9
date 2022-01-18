@@ -1,0 +1,43 @@
+I"`<h3 id="java标准库"><a href="https://docs.oracle.com/en/java/javase/index.html">Java@标准库</a></h3>
+<ul>
+  <li><a href="https://docs.oracle.com/javase/8/">Java8@标准库</a></li>
+  <li><a href="https://docs.oracle.com/en/java/javase/11/core/java-core-libraries1.html">Java11@标准库</a></li>
+  <li><a href="https://docs.oracle.com/en/java/javase/17/core/java-core-libraries1.html">Java17@标准库</a></li>
+</ul>
+
+<h3 id="java17核心库">Java17@核心库</h3>
+
+<ol>
+  <li>序列化过滤
+    <ul>
+      <li>Addressing Deserialization Vulnerabilities</li>
+      <li>Java Serialization Filters</li>
+      <li>Filter Factories</li>
+      <li>Allow-Lists and Reject-Lists</li>
+      <li>Creating Pattern-Based Filters</li>
+      <li>Creating Custom Filters</li>
+      <li>Setting a Filter Factory</li>
+      <li>Built-in Filters</li>
+      <li>Logging Filter Actions</li>
+    </ul>
+  </li>
+  <li>Enhanced Deprecation
+    <ul>
+      <li>Deprecation in the JDK</li>
+      <li>How to Deprecate APIs</li>
+      <li>Notifications and Warnings</li>
+      <li>Running jdeprscan</li>
+    </ul>
+  </li>
+  <li>
+    <p>XML Catalog API</p>
+  </li>
+  <li>Creating Unmodifiable Lists, Sets, and Maps</li>
+  <li>Process API</li>
+  <li>Preferences API</li>
+  <li>Java Logging Overview</li>
+  <li>Java NIO</li>
+  <li>Java Networking</li>
+  <li>Pseudorandom Number Generators</li>
+</ol>
+:ET

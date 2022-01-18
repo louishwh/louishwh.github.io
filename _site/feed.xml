@@ -5,8 +5,8 @@
     <description></description>
     <link>http://www.louishwh.top/</link>
     <atom:link href="http://www.louishwh.top/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 18 Jan 2022 15:39:23 +0800</pubDate>
-    <lastBuildDate>Tue, 18 Jan 2022 15:39:23 +0800</lastBuildDate>
+    <pubDate>Tue, 18 Jan 2022 22:52:15 +0800</pubDate>
+    <lastBuildDate>Tue, 18 Jan 2022 22:52:15 +0800</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
     
       <item>
@@ -48,11 +48,152 @@
   &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/en/java/javase/17/core/java-core-libraries1.html&quot;&gt;Java17@标准库&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;###&lt;/p&gt;
+&lt;h3 id=&quot;java17核心库&quot;&gt;Java17@核心库&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;序列化过滤
+    &lt;ul&gt;
+      &lt;li&gt;解决反序列化漏洞&lt;/li&gt;
+      &lt;li&gt;Java序列化过滤器&lt;/li&gt;
+      &lt;li&gt;过滤器工厂&lt;/li&gt;
+      &lt;li&gt;Allow-Lists and Reject-Lists&lt;/li&gt;
+      &lt;li&gt;基于模式的过滤器&lt;/li&gt;
+      &lt;li&gt;自定义过滤器&lt;/li&gt;
+      &lt;li&gt;设置过滤器工厂&lt;/li&gt;
+      &lt;li&gt;内置的过滤器&lt;/li&gt;
+      &lt;li&gt;日志过滤操作&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;增强弃用
+    &lt;ul&gt;
+      &lt;li&gt;JDK中已弃用&lt;/li&gt;
+      &lt;li&gt;如何弃用API&lt;/li&gt;
+      &lt;li&gt;通知和警告&lt;/li&gt;
+      &lt;li&gt;运行jdeprscan&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;XML目录API
+ -
+    &lt;ul&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;创建不可修改的列表、集合和映射
+    &lt;ul&gt;
+      &lt;li&gt;用例&lt;/li&gt;
+      &lt;li&gt;语法&lt;/li&gt;
+      &lt;li&gt;创建集合的不可修改副本&lt;/li&gt;
+      &lt;li&gt;从流中创建不可修改的集合&lt;/li&gt;
+      &lt;li&gt;随机迭代顺序&lt;/li&gt;
+      &lt;li&gt;不可修改的集合&lt;/li&gt;
+      &lt;li&gt;空间效率&lt;/li&gt;
+      &lt;li&gt;线程安全&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;进程API
+    &lt;ul&gt;
+      &lt;li&gt;进程相关的类与接口&lt;/li&gt;
+      &lt;li&gt;创建进程&lt;/li&gt;
+      &lt;li&gt;获取进程信息&lt;/li&gt;
+      &lt;li&gt;从进程重定向输出&lt;/li&gt;
+      &lt;li&gt;用流过滤进程&lt;/li&gt;
+      &lt;li&gt;当进程调用onExit方法终止时处理&lt;/li&gt;
+      &lt;li&gt;控制对进程敏感信息的访问&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;首选API
+    &lt;ul&gt;
+      &lt;li&gt;比较首选项API和其他机制&lt;/li&gt;
+      &lt;li&gt;用法说明&lt;/li&gt;
+      &lt;li&gt;设计常见问题&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Java日志概述
+    &lt;ul&gt;
+      &lt;li&gt;控制流程概述&lt;/li&gt;
+      &lt;li&gt;日志级别&lt;/li&gt;
+      &lt;li&gt;记录仪&lt;/li&gt;
+      &lt;li&gt;日志记录方法&lt;/li&gt;
+      &lt;li&gt;处理程序&lt;/li&gt;
+      &lt;li&gt;格式化程序&lt;/li&gt;
+      &lt;li&gt;日志管理器&lt;/li&gt;
+      &lt;li&gt;配置文件&lt;/li&gt;
+      &lt;li&gt;默认配置&lt;/li&gt;
+      &lt;li&gt;动态配置更新&lt;/li&gt;
+      &lt;li&gt;本地方法&lt;/li&gt;
+      &lt;li&gt;文档类型定义&lt;/li&gt;
+      &lt;li&gt;唯一的消息ID&lt;/li&gt;
+      &lt;li&gt;安全&lt;/li&gt;
+      &lt;li&gt;配置管理&lt;/li&gt;
+      &lt;li&gt;打包&lt;/li&gt;
+      &lt;li&gt;本地化&lt;/li&gt;
+      &lt;li&gt;远程访问和序列化&lt;/li&gt;
+      &lt;li&gt;实例&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Java NIO
+    &lt;ul&gt;
+      &lt;li&gt;Grep NIO Example&lt;/li&gt;
+      &lt;li&gt;Checksum NIO Example&lt;/li&gt;
+      &lt;li&gt;Time Query NIO Example&lt;/li&gt;
+      &lt;li&gt;Time Server NIO Example&lt;/li&gt;
+      &lt;li&gt;Non-Blocking Time Server NIO Example&lt;/li&gt;
+      &lt;li&gt;Internet Protocol and UNIX Domain Sockets NIO Example&lt;/li&gt;
+      &lt;li&gt;File NIO examples:
+        &lt;ul&gt;
+          &lt;li&gt;Chmod File NIO Example&lt;/li&gt;
+          &lt;li&gt;Copy File NIO Example&lt;/li&gt;
+          &lt;li&gt;Disk Usage File NIO Example&lt;/li&gt;
+          &lt;li&gt;User-Defined File Attributes File NIO Example&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Java Networking
+    &lt;ul&gt;
+      &lt;li&gt;Java网络API
+        &lt;ul&gt;
+          &lt;li&gt;java.net: Classes for implementing networking applications.&lt;/li&gt;
+          &lt;li&gt;java.net.http:
+            &lt;ul&gt;
+              &lt;li&gt;Contains the API for the HTTP Client, which provides high-level client interfaces to HTTP (versions 1.1 and 2) and low-level client interfaces to WebSocket instances.&lt;/li&gt;
+              &lt;li&gt;See Java HTTP Client for more information about this API, including videos and sample code.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;javax.net: Classes for creating sockets.&lt;/li&gt;
+          &lt;li&gt;javax.net.ssl: Secure socket classes.&lt;/li&gt;
+          &lt;li&gt;jdk.net: Platform specific socket options for the java.net and java.nio.channels socket classes.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;网络系统属性
+        &lt;ul&gt;
+          &lt;li&gt;Using the -D option of the java command&lt;/li&gt;
+          &lt;li&gt;Using the System.setProperty(String, String) method&lt;/li&gt;
+          &lt;li&gt;Specifying them in the $JAVA_HOME/conf/net.properties file. Note that you can specify only proxy-related properties in this file.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;伪随机数生成器
+    &lt;ul&gt;
+      &lt;li&gt;伪随机数发生器的特性&lt;/li&gt;
+      &lt;li&gt;用随机发生器接口生成伪随机数&lt;/li&gt;
+      &lt;li&gt;在多线程应用程序中生成伪随机数
+        &lt;ul&gt;
+          &lt;li&gt;动态创建新的生成器&lt;/li&gt;
+          &lt;li&gt;创建生成器流&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;选择伪随机数生成器算法&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
 </description>
         <pubDate>Tue, 04 Jan 2022 21:00:00 +0800</pubDate>
-        <link>http://www.louishwh.top/2022/01/04/%E6%9C%8D%E5%8A%A1%E7%AB%AF@Java@%E6%A0%87%E5%87%86%E5%BA%93/</link>
-        <guid isPermaLink="true">http://www.louishwh.top/2022/01/04/%E6%9C%8D%E5%8A%A1%E7%AB%AF@Java@%E6%A0%87%E5%87%86%E5%BA%93/</guid>
+        <link>http://www.louishwh.top/2022/01/04/%E6%9C%8D%E5%8A%A1%E7%AB%AF@Java@%E6%A0%B8%E5%BF%83%E5%BA%93/</link>
+        <guid isPermaLink="true">http://www.louishwh.top/2022/01/04/%E6%9C%8D%E5%8A%A1%E7%AB%AF@Java@%E6%A0%B8%E5%BF%83%E5%BA%93/</guid>
         
         <category>【Java】</category>
         
