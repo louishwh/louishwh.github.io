@@ -1,4 +1,4 @@
-I"�S<blockquote>
+I"�M<blockquote>
   <p>世界上没有最好的编程语言，就像世界上没有最好的人一样。</p>
 
   <p>如果你想知道一门编程语言的优劣，那就去学会它。</p>
@@ -311,22 +311,22 @@
                   <li>Regex</li>
                   <li>字符串匹配
                     <blockquote>
-                      <p><code class="language-plaintext highlighter-rouge">Regex(""""\d+""").matchs("1233")</code></p>
+                      <p><code class="highlighter-rouge">Regex(""""\d+""").matchs("1233")</code></p>
                     </blockquote>
                   </li>
                   <li>字符串查找
                     <blockquote>
-                      <p><code class="language-plaintext highlighter-rouge">Regex(""""\d+""").find("1233")</code></p>
+                      <p><code class="highlighter-rouge">Regex(""""\d+""").find("1233")</code></p>
                     </blockquote>
                   </li>
                   <li>字符串替换
                     <blockquote>
-                      <p><code class="language-plaintext highlighter-rouge">Regex("""\d+""").replace("123mmm", "")</code></p>
+                      <p><code class="highlighter-rouge">Regex("""\d+""").replace("123mmm", "")</code></p>
                     </blockquote>
                   </li>
                   <li>字符串分割
                     <blockquote>
-                      <p><code class="language-plaintext highlighter-rouge">Regex("""\d+""").split("123mmm")</code></p>
+                      <p><code class="highlighter-rouge">Regex("""\d+""").split("123mmm")</code></p>
                     </blockquote>
                   </li>
                 </ul>
@@ -341,74 +341,74 @@
             <ul>
               <li>一元运算符
                 <ul>
-                  <li>取反符号: <code class="language-plaintext highlighter-rouge">-a</code></li>
-                  <li>自加: <code class="language-plaintext highlighter-rouge">++</code></li>
-                  <li>自减: <code class="language-plaintext highlighter-rouge">--</code></li>
+                  <li>取反符号: <code class="highlighter-rouge">-a</code></li>
+                  <li>自加: <code class="highlighter-rouge">++</code></li>
+                  <li>自减: <code class="highlighter-rouge">--</code></li>
                 </ul>
               </li>
               <li>二元运算符
                 <ul>
-                  <li><code class="language-plaintext highlighter-rouge">a + b</code></li>
-                  <li><code class="language-plaintext highlighter-rouge">a - b</code></li>
-                  <li><code class="language-plaintext highlighter-rouge">a * b</code></li>
-                  <li><code class="language-plaintext highlighter-rouge">a / b</code></li>
-                  <li><code class="language-plaintext highlighter-rouge">a % b</code></li>
+                  <li><code class="highlighter-rouge">a + b</code></li>
+                  <li><code class="highlighter-rouge">a - b</code></li>
+                  <li><code class="highlighter-rouge">a * b</code></li>
+                  <li><code class="highlighter-rouge">a / b</code></li>
+                  <li><code class="highlighter-rouge">a % b</code></li>
                 </ul>
               </li>
               <li>算术赋值运算符
                 <ul>
-                  <li><code class="language-plaintext highlighter-rouge">a += 1</code></li>
-                  <li><code class="language-plaintext highlighter-rouge">a -= 1</code></li>
-                  <li><code class="language-plaintext highlighter-rouge">a *= 2</code></li>
-                  <li><code class="language-plaintext highlighter-rouge">a /= 2</code></li>
-                  <li><code class="language-plaintext highlighter-rouge">a %= 2</code></li>
+                  <li><code class="highlighter-rouge">a += 1</code></li>
+                  <li><code class="highlighter-rouge">a -= 1</code></li>
+                  <li><code class="highlighter-rouge">a *= 2</code></li>
+                  <li><code class="highlighter-rouge">a /= 2</code></li>
+                  <li><code class="highlighter-rouge">a %= 2</code></li>
                 </ul>
               </li>
             </ul>
           </li>
           <li>关系运算符
             <ul>
-              <li><code class="language-plaintext highlighter-rouge">== 、&gt;、&lt;、&gt;=、&lt;= 、===、!==</code></li>
+              <li><code class="highlighter-rouge">== 、&gt;、&lt;、&gt;=、&lt;= 、===、!==</code></li>
             </ul>
           </li>
           <li>逻辑运算符
             <ul>
-              <li><code class="language-plaintext highlighter-rouge">&amp;&amp;、|| </code></li>
+              <li><code class="highlighter-rouge">&amp;&amp;、|| </code></li>
             </ul>
           </li>
           <li>位运算符
             <ul>
-              <li><code class="language-plaintext highlighter-rouge">inv 位反</code></li>
-              <li><code class="language-plaintext highlighter-rouge">and 位与</code></li>
-              <li><code class="language-plaintext highlighter-rouge">or  位或</code></li>
-              <li><code class="language-plaintext highlighter-rouge">xor 位异或</code></li>
-              <li><code class="language-plaintext highlighter-rouge">shr 有符号右移</code></li>
-              <li><code class="language-plaintext highlighter-rouge">shl 左移</code></li>
-              <li><code class="language-plaintext highlighter-rouge">ushr 无符号右移</code></li>
+              <li><code class="highlighter-rouge">inv 位反</code></li>
+              <li><code class="highlighter-rouge">and 位与</code></li>
+              <li><code class="highlighter-rouge">or  位或</code></li>
+              <li><code class="highlighter-rouge">xor 位异或</code></li>
+              <li><code class="highlighter-rouge">shr 有符号右移</code></li>
+              <li><code class="highlighter-rouge">shl 左移</code></li>
+              <li><code class="highlighter-rouge">ushr 无符号右移</code></li>
             </ul>
           </li>
           <li>其他运算符
             <ul>
-              <li><code class="language-plaintext highlighter-rouge">Class A : B()、()、[]、.=、?、?.、?:、!!、::、..、-&gt; 、* </code></li>
+              <li><code class="highlighter-rouge">Class A : B()、()、[]、.=、?、?.、?:、!!、::、..、-&gt; 、* </code></li>
             </ul>
           </li>
           <li>运算符优先级（从高到低）
             <ul>
-              <li><code class="language-plaintext highlighter-rouge">()</code></li>
-              <li><code class="language-plaintext highlighter-rouge">++ 、-- 、 . 、 ?. 、？</code></li>
-              <li><code class="language-plaintext highlighter-rouge">-、 + 、 ++ 、-- 、！</code></li>
-              <li><code class="language-plaintext highlighter-rouge">:、as、as?</code></li>
-              <li><code class="language-plaintext highlighter-rouge">* 、 / 、%</code></li>
-              <li><code class="language-plaintext highlighter-rouge">+、-</code></li>
-              <li><code class="language-plaintext highlighter-rouge">..</code></li>
-              <li><code class="language-plaintext highlighter-rouge">中缀运算符</code></li>
-              <li><code class="language-plaintext highlighter-rouge">Elvis运算符 ?:</code></li>
-              <li><code class="language-plaintext highlighter-rouge">in、!in、is、!is</code></li>
-              <li><code class="language-plaintext highlighter-rouge">&lt;、&gt;、&lt;=、&gt;=</code></li>
-              <li><code class="language-plaintext highlighter-rouge">==、!=、===、!==</code></li>
-              <li><code class="language-plaintext highlighter-rouge">&amp;&amp;</code></li>
-              <li><code class="language-plaintext highlighter-rouge">|| </code></li>
-              <li><code class="language-plaintext highlighter-rouge">=、+=、-=、*= 、/= 、%= </code></li>
+              <li><code class="highlighter-rouge">()</code></li>
+              <li><code class="highlighter-rouge">++ 、-- 、 . 、 ?. 、？</code></li>
+              <li><code class="highlighter-rouge">-、 + 、 ++ 、-- 、！</code></li>
+              <li><code class="highlighter-rouge">:、as、as?</code></li>
+              <li><code class="highlighter-rouge">* 、 / 、%</code></li>
+              <li><code class="highlighter-rouge">+、-</code></li>
+              <li><code class="highlighter-rouge">..</code></li>
+              <li><code class="highlighter-rouge">中缀运算符</code></li>
+              <li><code class="highlighter-rouge">Elvis运算符 ?:</code></li>
+              <li><code class="highlighter-rouge">in、!in、is、!is</code></li>
+              <li><code class="highlighter-rouge">&lt;、&gt;、&lt;=、&gt;=</code></li>
+              <li><code class="highlighter-rouge">==、!=、===、!==</code></li>
+              <li><code class="highlighter-rouge">&amp;&amp;</code></li>
+              <li><code class="highlighter-rouge">|| </code></li>
+              <li><code class="highlighter-rouge">=、+=、-=、*= 、/= 、%= </code></li>
             </ul>
           </li>
         </ul>
@@ -418,44 +418,44 @@
           <li>if
             <blockquote>
               <ul>
-                <li><code class="language-plaintext highlighter-rouge">if(true) a = 1</code></li>
-                <li><code class="language-plaintext highlighter-rouge">val a = if(true) "" else null</code></li>
+                <li><code class="highlighter-rouge">if(true) a = 1</code></li>
+                <li><code class="highlighter-rouge">val a = if(true) "" else null</code></li>
               </ul>
             </blockquote>
           </li>
           <li>when
             <blockquote>
               <ul>
-                <li><code class="language-plaintext highlighter-rouge">when() {} </code></li>
-                <li><code class="language-plaintext highlighter-rouge">val a = when(name)</code></li>
+                <li><code class="highlighter-rouge">when() {} </code></li>
+                <li><code class="highlighter-rouge">val a = when(name)</code></li>
               </ul>
             </blockquote>
           </li>
-          <li><code class="language-plaintext highlighter-rouge">while {}</code></li>
-          <li><code class="language-plaintext highlighter-rouge">do {} while</code></li>
-          <li><code class="language-plaintext highlighter-rouge">for () {}</code></li>
+          <li><code class="highlighter-rouge">while {}</code></li>
+          <li><code class="highlighter-rouge">do {} while</code></li>
+          <li><code class="highlighter-rouge">for () {}</code></li>
           <li>break
             <blockquote>
               <ul>
-                <li><code class="language-plaintext highlighter-rouge">label@ for (x in 0..8) {</code></li>
-                <li> <code class="language-plaintext highlighter-rouge">for (y in 0..8) {</code></li>
-                <li>  <code class="language-plaintext highlighter-rouge">if (x == y ) {</code></li>
-                <li>   <code class="language-plaintext highlighter-rouge">break@label</code></li>
-                <li>  <code class="language-plaintext highlighter-rouge">}</code></li>
-                <li> <code class="language-plaintext highlighter-rouge">}</code></li>
+                <li><code class="highlighter-rouge">label@ for (x in 0..8) {</code></li>
+                <li> <code class="highlighter-rouge">for (y in 0..8) {</code></li>
+                <li>  <code class="highlighter-rouge">if (x == y ) {</code></li>
+                <li>   <code class="highlighter-rouge">break@label</code></li>
+                <li>  <code class="highlighter-rouge">}</code></li>
+                <li> <code class="highlighter-rouge">}</code></li>
               </ul>
             </blockquote>
           </li>
           <li>continue
             <blockquote>
               <ul>
-                <li><code class="language-plaintext highlighter-rouge">label@ for (x in 0..8) {</code></li>
-                <li> <code class="language-plaintext highlighter-rouge">for (y in 0..8) {</code></li>
-                <li>  <code class="language-plaintext highlighter-rouge">if (x == y ) {</code></li>
-                <li>   <code class="language-plaintext highlighter-rouge">continue@label</code></li>
-                <li>  <code class="language-plaintext highlighter-rouge">}</code></li>
-                <li> <code class="language-plaintext highlighter-rouge">}</code></li>
-                <li><code class="language-plaintext highlighter-rouge">}</code></li>
+                <li><code class="highlighter-rouge">label@ for (x in 0..8) {</code></li>
+                <li> <code class="highlighter-rouge">for (y in 0..8) {</code></li>
+                <li>  <code class="highlighter-rouge">if (x == y ) {</code></li>
+                <li>   <code class="highlighter-rouge">continue@label</code></li>
+                <li>  <code class="highlighter-rouge">}</code></li>
+                <li> <code class="highlighter-rouge">}</code></li>
+                <li><code class="highlighter-rouge">}</code></li>
               </ul>
             </blockquote>
           </li>
@@ -467,56 +467,56 @@
           <li>命名参数
             <blockquote>
               <ul>
-                <li><code class="language-plaintext highlighter-rouge">fun add(a: Int, b: Int): Int {</code></li>
-                <li> <code class="language-plaintext highlighter-rouge">return a + b</code></li>
-                <li><code class="language-plaintext highlighter-rouge">}</code></li>
+                <li><code class="highlighter-rouge">fun add(a: Int, b: Int): Int {</code></li>
+                <li> <code class="highlighter-rouge">return a + b</code></li>
+                <li><code class="highlighter-rouge">}</code></li>
               </ul>
             </blockquote>
           </li>
           <li>默认参数
             <blockquote>
               <ul>
-                <li><code class="language-plaintext highlighter-rouge">fun add(a: Int, b: Int, c: Int = 1): Int {</code></li>
-                <li> <code class="language-plaintext highlighter-rouge">return a + b + c </code></li>
-                <li><code class="language-plaintext highlighter-rouge">}</code></li>
+                <li><code class="highlighter-rouge">fun add(a: Int, b: Int, c: Int = 1): Int {</code></li>
+                <li> <code class="highlighter-rouge">return a + b + c </code></li>
+                <li><code class="highlighter-rouge">}</code></li>
               </ul>
             </blockquote>
           </li>
           <li>可变参数
             <blockquote>
               <ul>
-                <li><code class="language-plaintext highlighter-rouge">fun add(vararg numbers: Int): Int {</code></li>
-                <li> <code class="language-plaintext highlighter-rouge">var total = 0.0</code></li>
-                <li> <code class="language-plaintext highlighter-rouge">for (number in numbers) {</code></li>
-                <li>  <code class="language-plaintext highlighter-rouge">total += number </code></li>
-                <li> <code class="language-plaintext highlighter-rouge">}</code></li>
-                <li> <code class="language-plaintext highlighter-rouge">return total</code></li>
-                <li><code class="language-plaintext highlighter-rouge">}</code></li>
+                <li><code class="highlighter-rouge">fun add(vararg numbers: Int): Int {</code></li>
+                <li> <code class="highlighter-rouge">var total = 0.0</code></li>
+                <li> <code class="highlighter-rouge">for (number in numbers) {</code></li>
+                <li>  <code class="highlighter-rouge">total += number </code></li>
+                <li> <code class="highlighter-rouge">}</code></li>
+                <li> <code class="highlighter-rouge">return total</code></li>
+                <li><code class="highlighter-rouge">}</code></li>
               </ul>
             </blockquote>
           </li>
           <li>表达式函数
             <blockquote>
               <ul>
-                <li><code class="language-plaintext highlighter-rouge">fun area(x: Int, y: Int) = x * y</code></li>
+                <li><code class="highlighter-rouge">fun area(x: Int, y: Int) = x * y</code></li>
               </ul>
             </blockquote>
           </li>
           <li>局部函数
             <blockquote>
               <ul>
-                <li><code class="language-plaintext highlighter-rouge">fun func() {</code></li>
-                <li> <code class="language-plaintext highlighter-rouge">fun func() {</code></li>
+                <li><code class="highlighter-rouge">fun func() {</code></li>
+                <li> <code class="highlighter-rouge">fun func() {</code></li>
                 <li></li>
-                <li> <code class="language-plaintext highlighter-rouge">}</code></li>
-                <li><code class="language-plaintext highlighter-rouge">}</code></li>
+                <li> <code class="highlighter-rouge">}</code></li>
+                <li><code class="highlighter-rouge">}</code></li>
               </ul>
             </blockquote>
           </li>
           <li>匿名函数
             <blockquote>
               <ul>
-                <li><code class="language-plaintext highlighter-rouge">val oneF = fun(x: Int, y:Int): Int = x * y</code></li>
+                <li><code class="highlighter-rouge">val oneF = fun(x: Int, y:Int): Int = x * y</code></li>
               </ul>
             </blockquote>
           </li>

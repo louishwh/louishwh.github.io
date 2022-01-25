@@ -1,0 +1,25 @@
+I"�<h3 id="guava"><a href="https://github.com/google/guava">Guava</a></h3>
+
+<ol>
+  <li>基本工具 [Basic utilities]</li>
+  <li>集合[Collections]</li>
+  <li>缓存[Caches]</li>
+  <li>函数式风格[Functional idioms]</li>
+  <li>并发[Concurrency]</li>
+  <li>字符串处理[Strings]</li>
+  <li>原生类型[Primitives]</li>
+  <li>区间[Ranges]</li>
+  <li>I/O</li>
+  <li>散列[Hash]</li>
+  <li>事件总线[EventBus]</li>
+  <li>数学运算[Math]</li>
+  <li>反射[Reflection]</li>
+</ol>
+
+<h3 id="apache-commons"><a href="https://github.com/apache/commons-lang">Apache Commons</a></h3>
+<ol>
+  <li>Commons BeanUtils</li>
+  <li>Commons CLI
+3.</li>
+</ol>
+:ET

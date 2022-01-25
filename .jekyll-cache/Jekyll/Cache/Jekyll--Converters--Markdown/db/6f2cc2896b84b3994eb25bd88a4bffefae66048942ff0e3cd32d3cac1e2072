@@ -1,4 +1,4 @@
-I"A<h3 id="java标准库"><a href="https://docs.oracle.com/en/java/javase/index.html">Java@标准库</a></h3>
+I"Y<h3 id="java标准库"><a href="https://docs.oracle.com/en/java/javase/index.html">Java@标准库</a></h3>
 <ul>
   <li><a href="https://docs.oracle.com/javase/8/">Java8@标准库</a></li>
   <li><a href="https://docs.oracle.com/en/java/javase/11/core/java-core-libraries1.html">Java11@标准库</a></li>
@@ -91,43 +91,38 @@
   </li>
   <li>Java NIO
     <ul>
-      <li>Grep NIO Example</li>
-      <li>Checksum NIO Example</li>
-      <li>Time Query NIO Example</li>
-      <li>Time Server NIO Example</li>
-      <li>Non-Blocking Time Server NIO Example</li>
-      <li>Internet Protocol and UNIX Domain Sockets NIO Example</li>
-      <li>File NIO examples:
+      <li>Grep NIO</li>
+      <li>校验NIO示例</li>
+      <li>时间查询NIO示例</li>
+      <li>时间服务器NIO示例</li>
+      <li>非阻塞时间服务器NIO示例</li>
+      <li>Internet协议和UNIX域套接字NIO示例</li>
+      <li>文件NIO的例子:
         <ul>
-          <li>Chmod File NIO Example</li>
-          <li>Copy File NIO Example</li>
-          <li>Disk Usage File NIO Example</li>
-          <li>User-Defined File Attributes File NIO Example</li>
+          <li>Chmod文件NIO示例</li>
+          <li>Copy File NIO示例</li>
+          <li>磁盘占用率文件NIO示例</li>
+          <li>自定义文件属性文件NIO示例</li>
         </ul>
       </li>
     </ul>
   </li>
-  <li>Java Networking
+  <li>Java网络
     <ul>
       <li>Java网络API
         <ul>
-          <li>java.net: Classes for implementing networking applications.</li>
-          <li>java.net.http:
-            <ul>
-              <li>Contains the API for the HTTP Client, which provides high-level client interfaces to HTTP (versions 1.1 and 2) and low-level client interfaces to WebSocket instances.</li>
-              <li>See Java HTTP Client for more information about this API, including videos and sample code.</li>
-            </ul>
-          </li>
-          <li>javax.net: Classes for creating sockets.</li>
-          <li>javax.net.ssl: Secure socket classes.</li>
-          <li>jdk.net: Platform specific socket options for the java.net and java.nio.channels socket classes.</li>
+          <li>java.net: 实现网络应用的类库</li>
+          <li>java.net.http: HTTP Client/WebSocket</li>
+          <li>javax.net: 套接字的类库</li>
+          <li>javax.net.ssl: 安全套接字类库</li>
+          <li>jdk.net: 针对java.net和java.nio.channels的平台选项</li>
         </ul>
       </li>
       <li>网络系统属性
         <ul>
-          <li>Using the -D option of the java command</li>
-          <li>Using the System.setProperty(String, String) method</li>
-          <li>Specifying them in the $JAVA_HOME/conf/net.properties file. Note that you can specify only proxy-related properties in this file.</li>
+          <li>使用java命令的-D选项</li>
+          <li>使用System.setProperty(String, String)</li>
+          <li>在$JAVA_HOME/conf/net.properties中指定.注意，在此文件中只能指定与代理相关的属性。</li>
         </ul>
       </li>
     </ul>
