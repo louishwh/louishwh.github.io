@@ -1,4 +1,4 @@
-I"�<h3 id="开篇">开篇</h3>
+I"�<h3 id="开篇">开篇</h3>
 <ul>
   <li>作为树莓派的收藏爱好者，买了Pico开发板和Raspberry 400
     <ul>
@@ -85,7 +85,7 @@
           <li>录入代码：</li>
         </ul>
 
-        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> import time 
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> import time 
  from machine import Pin
 
  LED = Pin(25, Pin.OUT)
@@ -123,7 +123,7 @@
         </ul>
       </li>
       <li>编写显示代码： main.py
-        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   from machine import SoftI2C, Pin
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   from machine import SoftI2C, Pin
    import time
    from ssd1306 import SSD1306_I2C
 		
