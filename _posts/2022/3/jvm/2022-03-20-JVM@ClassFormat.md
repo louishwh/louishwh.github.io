@@ -6,6 +6,9 @@ categories: 【服务端】
 tag: 【Java】
 ---
 
+- [Java语言规范](https://docs.oracle.com/javase/specs/index.html)
+
+
 ### Class文件结构
 
 - magic 
@@ -119,7 +122,9 @@ tag: 【Java】
 - interfaces
 - filds_count
 - fields
+	- 
 - methods_count 
+	- 
 - method_info
 - attribute_count
 - attribute
