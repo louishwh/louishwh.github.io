@@ -129,4 +129,31 @@ tag: 【Java】
 - attribute_count
 - attribute
 
-### 
+### Class加载过程
+
+1. loading
+2. verification
+3. preparation
+4. resolution 
+5. initializing
+
+### 类加载器层次
+- 自顶而下：进行实际查找和加载child方向
+- 自底向上：惊醒检查该类是否已经加载parent方向
+
+- 加载层级
+	- Bootstrap
+		- 加载lib/rt.jar charset.jar等核心类：C++实现
+	- Extension
+		- 加载拓展jar包，jre/lib/ext/*.jar
+		- 或由-Djava.ext.dirs指定
+	- App
+		- 加载classpath指定内容
+	- Custom ClassLoader
+		- 自定义ClassLoader
+- 
+
+
+
+
+
