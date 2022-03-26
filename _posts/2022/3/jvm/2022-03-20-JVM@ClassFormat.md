@@ -141,16 +141,25 @@ tag: 【Java】
 - 自顶而下：进行实际查找和加载child方向
 - 自底向上：惊醒检查该类是否已经加载parent方向
 
-- 加载层级
+- 加载层级(Launcher源码)
 	- Bootstrap
 		- 加载lib/rt.jar charset.jar等核心类：C++实现
+		- sun.boot.class.path
 	- Extension
 		- 加载拓展jar包，jre/lib/ext/*.jar
 		- 或由-Djava.ext.dirs指定
+		- java.ext.dirs
 	- App
 		- 加载classpath指定内容
+		- java.class.path
 	- Custom ClassLoader
 		- 自定义ClassLoader
+- 加载机制
+	- 双亲委派
+		-
+	- 为什么用双亲委派？
+		- 主：安全机制
+		- 次：资源节约
 - 
 
 
