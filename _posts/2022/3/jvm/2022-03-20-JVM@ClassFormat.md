@@ -131,11 +131,25 @@ tag: 【Java】
 
 ### Class加载过程
 
-1. loading
-2. verification
-3. preparation
-4. resolution 
-5. initializing
+- load
+	- 
+- Link：静态变量赋默认值
+	1. Verification
+	2. Preparation
+		- 
+		- 
+	3. Resolution 
+		- 符号引用解析为直接引用
+		- 常量池里面的符号解析为指针、偏移量的内存的直接引用
+- Initializing
+	1. 调用类初始化代码
+
+### New对象的过程
+
+- 申请内存
+	- 赋默认值
+- 构造方法
+	- 设置初始值
 
 ### 类加载器层次
 - 自顶而下：进行实际查找和加载child方向
