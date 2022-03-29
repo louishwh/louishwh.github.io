@@ -175,10 +175,16 @@ tag: 【Java】
 		- 主：安全机制
 		- 次：资源节约
 
-### 常见
+### Java并发操作
+
+- Java并发内存模型
+	- Java线程--工作内存--Save和Load操作 <===> 主内存
+	- Java线程--工作内存--Save和Load操作 <===> 主内存
 
 - volatile
-	- JVM层面
+	- 字节码层面
+		- ACC_VOLATILE
+	- JVM层面： volatile内存区的读写都加屏障
 		- 写
 			- StoreStoreBarrier
 			- 写操作
@@ -187,7 +193,99 @@ tag: 【Java】
 			- LoadLoadBarrier
 			- 读操作
 			- LoadStoreBarrier
+	- OS和硬件层面
+		- https://blog.csdn.net/qq_26222859/article/details/52235930
+		- hsdis-HotSpot Dis Assembler
+			- windows lock指令实现
+
+- synchronized
+	- 字节码层面
+		- ACC_SYNCHRONIZED
+		- monitorenter
+		- monitorexit
+	- JVM层面
+		- C/C++调用了系统提供的同步机制
+		- 
+	- OS和硬件层面
+		- X86: lock comxchg xxx
+		- https://blog.csdn.net/21aspnet/article/details/88571740
+
+### JVM重排序规则
+
+- hanppens-before原则
+	- JLS17.4.5
+
+- as if serial
+	- 
+
+### 对象的内存布局
+
+- 对象的创建过程？
+	1. class loading
+	2. class linking()
+	3. class initializing
+	4. 申请对象内存
+	5. 成员变量赋默认值
+	6. 调用构造方法<init>
+		1. 成员变量顺序赋初始值
+		2. 执行构造方法语句
+
+- 对象在内存中的存储布局？ 
+	- 虚拟机配置
+	- 普通对象
+		1. 对象头 markword 8
+		2. ClassPointer指针
+		3. 实例数据
+			- 引用类型：-XX:+UseCompressedOops为4字节，不开启8字节
+				- ordinary object pointers
+		4. Padding对齐，8的倍数
+	- 数组对象
+		1. 对象头 markword 8
+		2. ClassPointer指针 
+			- -XX:+UseCompressedOops为4字节，不开启8字节
+		3. 数组长度：4字节
+		4. 数组数据
+		4. 对齐，8的倍数
+
+-  对象头具体包括什么？
+	- 通过JavaAgent机制获取
+		- Instrumentation
+			- getObjectSize
+	- markword
+		- 无锁态
+		- 轻量级锁
+		- 重量级锁
+		- GC标记
+		- 偏向锁
+
+- 对象怎么定位？
+	- 句柄池
+		- 间接指针: GC占优
+			- Object
+			- Class
+	- 直接指针: 执行占优
+		- Object 
+
+- 对象怎么分配？
 - 
+
+- 对象大小的实例
+	- new Object()对象占多少个字节？
+		- 16字节
+			- 对象头头8字节
+			- ClassPointer指针 4字节
+
+### Hotspot开启内存压缩的规则
+1. 4G以下，直接砍掉
+2. 4G-32G,默认开启内存压缩 ClassPointers Oops
+3. 32G，压缩无效，使用64位
+
+
+
+
+
+
+
 
 
 
