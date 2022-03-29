@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 服务端@Java@JVM
+title: 服务端@Java@JVM@ClassFormat
 date: 2022-03-20 09:00:00 +0800
 categories: 【服务端】
 tag: 【Java】
@@ -174,7 +174,21 @@ tag: 【Java】
 	- 为什么用双亲委派？
 		- 主：安全机制
 		- 次：资源节约
+
+### 常见
+
+- volatile
+	- JVM层面
+		- 写
+			- StoreStoreBarrier
+			- 写操作
+			- StoreLoadBarrier
+		- 读
+			- LoadLoadBarrier
+			- 读操作
+			- LoadStoreBarrier
 - 
+
 
 
 
