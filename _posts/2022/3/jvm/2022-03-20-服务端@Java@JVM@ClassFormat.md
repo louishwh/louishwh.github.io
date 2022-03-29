@@ -193,8 +193,7 @@ tag: 【Java】
 			- LoadLoadBarrier
 			- 读操作
 			- LoadStoreBarrier
-	- OS和硬件层面
-		- https://blog.csdn.net/qq_26222859/article/details/52235930
+	- [OS和硬件层面](https://blog.csdn.net/qq_26222859/article/details/52235930)
 		- hsdis-HotSpot Dis Assembler
 			- windows lock指令实现
 
@@ -206,9 +205,8 @@ tag: 【Java】
 	- JVM层面
 		- C/C++调用了系统提供的同步机制
 		- 
-	- OS和硬件层面
+	- [OS和硬件层面](https://blog.csdn.net/21aspnet/article/details/88571740)
 		- X86: lock comxchg xxx
-		- https://blog.csdn.net/21aspnet/article/details/88571740
 
 ### JVM重排序规则
 
@@ -259,6 +257,7 @@ tag: 【Java】
 		- 偏向锁
 
 - 对象怎么定位？
+	- [参考](https://blog.csdn.net/clover_lily/article/details/80095580)
 	- 句柄池
 		- 间接指针: GC占优
 			- Object
@@ -267,7 +266,7 @@ tag: 【Java】
 		- Object 
 
 - 对象怎么分配？
-- 
+	- GC相关内容
 
 - 对象大小的实例
 	- new Object()对象占多少个字节？
@@ -281,8 +280,31 @@ tag: 【Java】
 3. 32G，压缩无效，使用64位
 
 
+### JVM Runtime Data Area and JVM Instructions
 
+- Data Area 
+	- Program Counter
+		- 存放执行位置
+		- 虚拟机的运行类似while循环
+	- JVM stacks
+		1. Frame:栈桢
 
+	- Heap
+		- 
+	- Native Method stacks
+		- C/C++
+		- JNI
+	- Direct Memory
+		- NIO，zero copy
+		- JVM可以直接访问的内核的内存
+	- Method Area
+		- run-time constant pool 
+		
+		1. Perm Space(< 1.8)
+			- 
+		2. Meta Space(>=1.8)
+			- 
+		
 
 
 
