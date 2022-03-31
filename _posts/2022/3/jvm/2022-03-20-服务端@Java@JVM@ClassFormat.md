@@ -288,6 +288,11 @@ tag: 【Java】
 		- 虚拟机的运行类似while循环
 	- JVM stacks
 		1. Frame:栈桢
+			- Local Variable Table 
+			- Operated Stacks
+			- Dynamic Linking
+			- Return Address
+		2. 
 
 	- Heap
 		- 
@@ -299,7 +304,7 @@ tag: 【Java】
 		- JVM可以直接访问的内核的内存
 	- Method Area
 		- run-time constant pool 
-		
+
 		1. Perm Space(< 1.8)
 			- 
 		2. Meta Space(>=1.8)
