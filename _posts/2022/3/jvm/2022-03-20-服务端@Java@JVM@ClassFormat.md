@@ -306,12 +306,88 @@ tag: 【Java】
 		- JVM可以直接访问的内核的内存
 	- Method Area
 		- run-time constant pool 
+		- Content
+			1. Perm Space(< 1.8)
+				- 字符串常量位于此
+				- FGC不会清理
+				- 大小启动的时候指定，不能变
+			2. Meta Space(>=1.8)
+				- 字符串常量位于堆区
+				- 会触发FGC清理
+				- 不设定的话，最大就是物理内存
 
-		1. Perm Space(< 1.8)
+### JVM Instruction Set
+
+- store
+- load
+- pop
+- mul
+- sub
+- add 
+- invoke
+	- invokestatic
+	- invokevirtual
+		- 
+	- invokeinterface
+	- invokespecial
+		- 可以直接定位，不需要多台的方法
+			- private 方法
+			- 构造方法
+	- invokedynamic:最难
+		- lambda表达式
+		- 反射
+		- 其他动态语言：scala kotlin 
+		- CGLib ASM
+		- 动态产生的Class 
+
+### Garbage Collector GC turninig
+- 熟悉GC常用算法，熟悉常见垃圾收集器，具有实际JVM调优经验
+- Garbage
+	- 没有引用指向的对象
+	- 
+	- root searching
+		- GC roots
+			- 线程栈变量
+			- 静态变量
+			- 常量池
+			- JNI指针
+	- GC Algorithms
+		- Mark-Sweep
+			- 两次
 			- 
-		2. Meta Space(>=1.8)
+		- Copying
+			- 一次
 			- 
-		
+		- Mark-Compact
+			- 两次
+			- 
+- 堆内存逻辑分区（不适合不分代垃圾收集器）
+	- ⚠️
+		- 除了Epsilon ZGC Shenandoah 之外的GC都是使用逻辑分代模型
+		- G1是逻辑分代，物理不分代
+		- 除此之外不仅逻辑分代，而且物理分代
+	- 新生代： MinorGC/YGC
+		- eden: 8
+		- survivor: 1
+		- survivor: 1
+			- Copying
+		- 复制年龄超过限制时，进入old区。通过参数：-XX:MaxTenuringThreshold配置
+	- 老年代: MajorGC/FullGC
+		- 
+
+- 内存详解
+	- 栈上分配
+		- 线程私有小对象
+		- 无逃逸
+		- 支持标量替换
+		- 无需调整
+	- 线程本地分配TLAB
+		- 占用eden,默认1%
+		- 多线程的时候不用竞争eden就可以申请空间，提高效率
+		- 小对象
+		- 无需调整
+	- 老年代
+		- 
 
 
 
