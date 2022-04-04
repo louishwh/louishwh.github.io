@@ -292,7 +292,9 @@ tag: 【Java】
 			- Operated Stacks
 			- Dynamic Linking
 			- Return Address
-		2. 
+		2. 一个方法对应一个栈帧	
+			- 
+			- 
 
 	- Heap
 		- 
