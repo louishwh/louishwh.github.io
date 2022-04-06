@@ -387,7 +387,38 @@ tag: 【Java】
 		- 小对象
 		- 无需调整
 	- 老年代
-		- 
+		- 超过XX:MaxTenuringThreshold指定次数YGC
+			- Parallel Scavenge 15
+			- CMS 6
+			- G1 15
+		- 动态年龄
+			- s1->s2超过累加50%
+			- 把年龄最大的放入Old
+		- YGC期间 survivor区空间不够了，空间担保直接进入老年代
+
+- 常见的垃圾回收器
+	- 单线程
+		- Serial
+			- 安全点线程停止，
+			- 单CPU效率最高
+			- 虚拟机时Client模式的默认垃圾回收器
+			- 使用极少
+		- Serial Old
+			- 
+	- 多线程
+		- Parallel Scavenge(PS) + Parallel Old(PO)
+			- 吞吐量优先
+		- ParNew+CMS
+			- CMS：
+				- 开启了并发回收的过程
+				- CMS问题比较多
+					- 内存碎片
+					- 浮动垃圾
+			- 响应事件优先
+				- 
+	
+	- ZGC
+	- G1
 
 
 
