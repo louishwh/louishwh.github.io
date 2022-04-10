@@ -419,7 +419,34 @@ tag: 【Java】
 	
 	- ZGC
 	- G1
+- Remark阶段的算法
+	- 三色扫描算法
+		- 白 灰 黑
+	- 并发标记时
 
+### JVM调优 
+
+- -XX:+UseSerialGC
+	- Serial New + Serial Old
+	- 小型程序
+	- 默认情况下不会是这种选项，Hotspot会根据计算及配置和JDK版本自动选择收集器
+- -XX:+UseParNewGC 
+	- ParNew + SerialOld
+	- 很少用
+- -XX:UserConcMarkSweepGC
+	- ParNew + CMS + Serial Old
+- -XX:UseParallelGC
+	- Parallel Scavenge + Parallel Old 
+- -XX:UseParallelOldGC
+	- Parallel Scavenge + Parallel Old 
+- -XX:UseG1GC
+	- G1
+- Linux中默认
+- Linux 1.8 
+	- 1.8.0_181 默认 Copy MarkCompact
+	- 1.8.0_222 默认 PS + PO
+
+	
 
 
 
