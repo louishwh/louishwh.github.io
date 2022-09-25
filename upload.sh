@@ -2,6 +2,6 @@
 
 git add .
 git commit -m "update"
-git pull origin master 
-git push origin master
+git pull github master
+git push github master
 
