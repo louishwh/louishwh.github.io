@@ -1,4 +1,4 @@
-I"Q<h3 id="文章目录">文章目录</h3>
+I"�<h3 id="文章目录">文章目录</h3>
 <ol>
   <li>系统间通信</li>
   <li>为什么用消息队列？</li>
@@ -52,16 +52,12 @@
   <li>高可用-&gt; 集群</li>
 </ol>
 
-<h4 id="5-常用的一些消息队列">5. 常用的一些消息队列</h4>
+<h4 id="5-常用的消息队列产品">5. 常用的消息队列产品</h4>
 <ul>
-  <li>‼️Kafka
-    <ul>
-      <li></li>
-    </ul>
-  </li>
-  <li>RabbitMQ</li>
-  <li>RocketMQ</li>
-  <li>ActiveMQ</li>
+  <li><a href="https://kafka.apache.org/">‼️Kafka</a></li>
+  <li><a href="https://rabbitmq.com/">RabbitMQ</a></li>
+  <li><a href="https://github.com/apache/rocketmq">RocketMQ</a></li>
+  <li><a href="https://github.com/apache/activemq">ActiveMQ</a></li>
 </ul>
 
 :ET
