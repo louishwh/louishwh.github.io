@@ -1,0 +1,884 @@
+I"P<ul>
+  <li><a href="https://docs.oracle.com/javase/specs/index.html">Java语言规范</a></li>
+</ul>
+
+<h3 id="class文件结构">Class文件结构</h3>
+
+<ul>
+  <li>magic
+    <ul>
+      <li>CAFEBABE</li>
+    </ul>
+  </li>
+  <li>minor version
+    <ul>
+      <li></li>
+    </ul>
+  </li>
+  <li>major version
+    <ul>
+      <li></li>
+    </ul>
+  </li>
+  <li>constant_pool_count
+    <ul>
+      <li></li>
+    </ul>
+  </li>
+  <li>constant_pool
+    <ul>
+      <li>1 CONSTANT_Utf8_info
+        <ul>
+          <li>1字节
+            <ul>
+              <li>标识符</li>
+            </ul>
+          </li>
+          <li>length
+            <ul>
+              <li></li>
+            </ul>
+          </li>
+          <li>bytes
+            <ul>
+              <li></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>3 CONSTANT_Integer_info
+        <ul>
+          <li>4字节
+            <ul>
+              <li>Big-Endin(高位在前)</li>
+              <li>int</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>4 CONSTANT_Float_info
+        <ul>
+          <li>4字节
+            <ul>
+              <li>Big-Endin(高位在前)</li>
+              <li>float</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>5 CONSTANT_Long_info
+        <ul>
+          <li>8字节
+            <ul>
+              <li>Big-Endin(高位在前)</li>
+              <li>long</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>6 CONSTANT_Double_info
+        <ul>
+          <li>8字节
+            <ul>
+              <li>Big-Endin(高位在前)</li>
+              <li>double</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>7 CONSTANT_Class_info
+        <ul>
+          <li>2字节
+            <ul>
+              <li>指向类的全限定名项的索引</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>8 CONSTANT_String_info
+        <ul>
+          <li>2字节
+            <ul>
+              <li>指向字符串字面量的索引</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>9 CONSTANT_Fieldref_info
+        <ul>
+          <li>2字节
+            <ul>
+              <li>指向申明字段的类或者接口描述符</li>
+              <li>CONSTANT_Class_info的索引项</li>
+            </ul>
+          </li>
+          <li>2字节
+            <ul>
+              <li>指向字段描述符号</li>
+              <li>CONSTANT_NameAndType_info的索引项</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>10 CONSTANT_Methodref_info
+        <ul>
+          <li>2字节
+            <ul>
+              <li>指向声明方法的类或者接口描述符</li>
+              <li>CONSTANT_Class_info的索引项</li>
+            </ul>
+          </li>
+          <li>2字节
+            <ul>
+              <li>指向字段描述符号</li>
+              <li>CONSTANT_NameAndType_info的索引项</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>11 CONSTANT_InterfaceMethodref_info
+        <ul>
+          <li>2字节
+            <ul>
+              <li>指向声明方法的类或者接口描述符</li>
+              <li>CONSTANT_Class_info的索引项</li>
+            </ul>
+          </li>
+          <li>2字节
+            <ul>
+              <li>指向字段描述符号</li>
+              <li>CONSTANT_NameAndType_info的索引项</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>12 CONSTANT_NameAndType_info
+        <ul>
+          <li>2字节
+            <ul>
+              <li>指向该字段或方法名称常量项的索引</li>
+            </ul>
+          </li>
+          <li>2字节
+            <ul>
+              <li>指向该字段或方法描述符常量项的索引</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>15 CONSTANT_MethodHandle_info
+        <ul>
+          <li>1字节
+            <ul>
+              <li>reference_kind 1-9之间的值</li>
+              <li>决定了方法句柄的类型</li>
+              <li>方法句柄类型的值表示方法句柄的字节码行为</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>16 CONSTANT_MethodType_info
+        <ul>
+          <li>2字节
+            <ul>
+              <li>descriptor_index</li>
+              <li>指向Utf8_info结构表示的方法描述符</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>18 CONSTANT_InvokeDynamic_info
+        <ul>
+          <li>2字节
+            <ul>
+              <li>bootstrap_method_attr_index</li>
+              <li>当前Class文件中引导方法表的bootstrap_methods[] 数组的有效索引</li>
+            </ul>
+          </li>
+          <li>2字节
+            <ul>
+              <li>指向NameAndType_info表示的方法名和方法描述符</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>access_flags
+    <ul>
+      <li>ACC_PUBLIC 0x0001 是否是public</li>
+      <li>ACC_FINAL 0x0010 是否是final</li>
+      <li>ACC_SUPER 0x0020 必须为真</li>
+      <li>ACC_INTERFACE 0x0200 是否是接口</li>
+      <li>ACC_ABSTRACT 0x1000 接口或抽象类</li>
+      <li>ACC_SUNTHETIC 0x1000 编译器自动生成</li>
+      <li>ACC_ANNOTATION 0x2000</li>
+      <li>ACC_ENUM 0x4000</li>
+    </ul>
+  </li>
+  <li>this_class
+    <ul>
+      <li>当前类</li>
+    </ul>
+  </li>
+  <li>super_class
+    <ul>
+      <li>父类</li>
+    </ul>
+  </li>
+  <li>interface_count
+    <ul>
+      <li></li>
+    </ul>
+  </li>
+  <li>interfaces</li>
+  <li>filds_count</li>
+  <li>fields
+    <ul>
+      <li></li>
+    </ul>
+  </li>
+  <li>methods_count
+    <ul>
+      <li></li>
+    </ul>
+  </li>
+  <li>method_info</li>
+  <li>attribute_count</li>
+  <li>attribute</li>
+</ul>
+
+<h3 id="class加载过程">Class加载过程</h3>
+
+<ul>
+  <li>load
+    <ul>
+      <li></li>
+    </ul>
+  </li>
+  <li>Link：静态变量赋默认值
+    <ol>
+      <li>Verification</li>
+      <li>Preparation
+        <ul>
+          <li></li>
+          <li></li>
+        </ul>
+      </li>
+      <li>Resolution
+        <ul>
+          <li>符号引用解析为直接引用</li>
+          <li>常量池里面的符号解析为指针、偏移量的内存的直接引用</li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+  <li>Initializing
+    <ol>
+      <li>调用类初始化代码</li>
+    </ol>
+  </li>
+</ul>
+
+<h3 id="new对象的过程">New对象的过程</h3>
+
+<ul>
+  <li>申请内存
+    <ul>
+      <li>赋默认值</li>
+    </ul>
+  </li>
+  <li>构造方法
+    <ul>
+      <li>设置初始值</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="类加载器层次">类加载器层次</h3>
+<ul>
+  <li>自顶而下：进行实际查找和加载child方向</li>
+  <li>
+    <p>自底向上：惊醒检查该类是否已经加载parent方向</p>
+  </li>
+  <li>加载层级(Launcher源码)
+    <ul>
+      <li>Bootstrap
+        <ul>
+          <li>加载lib/rt.jar charset.jar等核心类：C++实现</li>
+          <li>sun.boot.class.path</li>
+        </ul>
+      </li>
+      <li>Extension
+        <ul>
+          <li>加载拓展jar包，jre/lib/ext/*.jar</li>
+          <li>或由-Djava.ext.dirs指定</li>
+          <li>java.ext.dirs</li>
+        </ul>
+      </li>
+      <li>App
+        <ul>
+          <li>加载classpath指定内容</li>
+          <li>java.class.path</li>
+        </ul>
+      </li>
+      <li>Custom ClassLoader
+        <ul>
+          <li>自定义ClassLoader</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>加载机制
+    <ul>
+      <li>双亲委派
+  -</li>
+      <li>为什么用双亲委派？
+        <ul>
+          <li>主：安全机制</li>
+          <li>次：资源节约</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="java并发操作">Java并发操作</h3>
+
+<ul>
+  <li>Java并发内存模型
+    <ul>
+      <li>Java线程–工作内存–Save和Load操作 &lt;===&gt; 主内存</li>
+      <li>Java线程–工作内存–Save和Load操作 &lt;===&gt; 主内存</li>
+    </ul>
+  </li>
+  <li>volatile
+    <ul>
+      <li>字节码层面
+        <ul>
+          <li>ACC_VOLATILE</li>
+        </ul>
+      </li>
+      <li>JVM层面： volatile内存区的读写都加屏障
+        <ul>
+          <li>写
+            <ul>
+              <li>StoreStoreBarrier</li>
+              <li>写操作</li>
+              <li>StoreLoadBarrier</li>
+            </ul>
+          </li>
+          <li>读
+            <ul>
+              <li>LoadLoadBarrier</li>
+              <li>读操作</li>
+              <li>LoadStoreBarrier</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="https://blog.csdn.net/qq_26222859/article/details/52235930">OS和硬件层面</a>
+        <ul>
+          <li>hsdis-HotSpot Dis Assembler
+            <ul>
+              <li>windows lock指令实现</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>synchronized
+    <ul>
+      <li>字节码层面
+        <ul>
+          <li>ACC_SYNCHRONIZED</li>
+          <li>monitorenter</li>
+          <li>monitorexit</li>
+        </ul>
+      </li>
+      <li>JVM层面
+        <ul>
+          <li>C/C++调用了系统提供的同步机制</li>
+          <li></li>
+        </ul>
+      </li>
+      <li><a href="https://blog.csdn.net/21aspnet/article/details/88571740">OS和硬件层面</a>
+        <ul>
+          <li>X86: lock comxchg xxx</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="jvm重排序规则">JVM重排序规则</h3>
+
+<ul>
+  <li>hanppens-before原则
+    <ul>
+      <li>JLS17.4.5</li>
+    </ul>
+  </li>
+  <li>as if serial
+    <ul>
+      <li></li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="对象的内存布局">对象的内存布局</h3>
+
+<ul>
+  <li>对象的创建过程？
+    <ol>
+      <li>class loading</li>
+      <li>class linking()</li>
+      <li>class initializing</li>
+      <li>申请对象内存</li>
+      <li>成员变量赋默认值</li>
+      <li>调用构造方法<init>
+</init>        <ol>
+          <li>成员变量顺序赋初始值</li>
+          <li>执行构造方法语句</li>
+        </ol>
+      </li>
+    </ol>
+  </li>
+  <li>对象在内存中的存储布局？
+    <ul>
+      <li>虚拟机配置</li>
+      <li>普通对象
+        <ol>
+          <li>对象头 markword 8</li>
+          <li>ClassPointer指针</li>
+          <li>实例数据
+            <ul>
+              <li>引用类型：-XX:+UseCompressedOops为4字节，不开启8字节
+                <ul>
+                  <li>ordinary object pointers</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>Padding对齐，8的倍数</li>
+        </ol>
+      </li>
+      <li>数组对象
+        <ol>
+          <li>对象头 markword 8</li>
+          <li>ClassPointer指针
+            <ul>
+              <li>-XX:+UseCompressedOops为4字节，不开启8字节</li>
+            </ul>
+          </li>
+          <li>数组长度：4字节</li>
+          <li>数组数据</li>
+          <li>对齐，8的倍数</li>
+        </ol>
+      </li>
+    </ul>
+  </li>
+  <li>对象头具体包括什么？
+    <ul>
+      <li>通过JavaAgent机制获取
+        <ul>
+          <li>Instrumentation
+            <ul>
+              <li>getObjectSize</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>markword
+        <ul>
+          <li>无锁态</li>
+          <li>轻量级锁</li>
+          <li>重量级锁</li>
+          <li>GC标记</li>
+          <li>偏向锁</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>对象怎么定位？
+    <ul>
+      <li><a href="https://blog.csdn.net/clover_lily/article/details/80095580">参考</a></li>
+      <li>句柄池
+        <ul>
+          <li>间接指针: GC占优
+            <ul>
+              <li>Object</li>
+              <li>Class</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>直接指针: 执行占优
+        <ul>
+          <li>Object</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>对象怎么分配？
+    <ul>
+      <li>GC相关内容</li>
+    </ul>
+  </li>
+  <li>对象大小的实例
+    <ul>
+      <li>new Object()对象占多少个字节？
+        <ul>
+          <li>16字节
+            <ul>
+              <li>对象头头8字节</li>
+              <li>ClassPointer指针 4字节</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="hotspot开启内存压缩的规则">Hotspot开启内存压缩的规则</h3>
+<ol>
+  <li>4G以下，直接砍掉</li>
+  <li>4G-32G,默认开启内存压缩 ClassPointers Oops</li>
+  <li>32G，压缩无效，使用64位</li>
+</ol>
+
+<h3 id="jvm-runtime-data-area-and-jvm-instructions">JVM Runtime Data Area and JVM Instructions</h3>
+
+<ul>
+  <li>Data Area
+    <ul>
+      <li>Program Counter
+        <ul>
+          <li>存放执行位置</li>
+          <li>虚拟机的运行类似while循环</li>
+        </ul>
+      </li>
+      <li>JVM stacks
+        <ol>
+          <li>Frame:栈桢
+            <ul>
+              <li>Local Variable Table</li>
+              <li>Operated Stacks</li>
+              <li>Dynamic Linking</li>
+              <li>Return Address</li>
+            </ul>
+          </li>
+          <li>一个方法对应一个栈帧
+            <ul>
+              <li></li>
+              <li></li>
+            </ul>
+          </li>
+        </ol>
+      </li>
+      <li>Heap
+        <ul>
+          <li></li>
+        </ul>
+      </li>
+      <li>Native Method stacks
+        <ul>
+          <li>C/C++</li>
+          <li>JNI</li>
+        </ul>
+      </li>
+      <li>Direct Memory
+        <ul>
+          <li>NIO，zero copy</li>
+          <li>JVM可以直接访问的内核的内存</li>
+        </ul>
+      </li>
+      <li>Method Area
+        <ul>
+          <li>run-time constant pool</li>
+          <li>Content
+            <ol>
+              <li>Perm Space(&lt; 1.8)
+                <ul>
+                  <li>字符串常量位于此</li>
+                  <li>FGC不会清理</li>
+                  <li>大小启动的时候指定，不能变</li>
+                </ul>
+              </li>
+              <li>Meta Space(&gt;=1.8)
+                <ul>
+                  <li>字符串常量位于堆区</li>
+                  <li>会触发FGC清理</li>
+                  <li>不设定的话，最大就是物理内存</li>
+                </ul>
+              </li>
+            </ol>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="jvm-instruction-set">JVM Instruction Set</h3>
+
+<ul>
+  <li>store</li>
+  <li>load</li>
+  <li>pop</li>
+  <li>mul</li>
+  <li>sub</li>
+  <li>add</li>
+  <li>invoke
+    <ul>
+      <li>invokestatic</li>
+      <li>invokevirtual
+        <ul>
+          <li></li>
+        </ul>
+      </li>
+      <li>invokeinterface</li>
+      <li>invokespecial
+        <ul>
+          <li>可以直接定位，不需要多台的方法
+            <ul>
+              <li>private 方法</li>
+              <li>构造方法</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>invokedynamic:最难
+        <ul>
+          <li>lambda表达式</li>
+          <li>反射</li>
+          <li>其他动态语言：scala kotlin</li>
+          <li>CGLib ASM</li>
+          <li>动态产生的Class</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="garbage-collector-gc-turninig">Garbage Collector GC turninig</h3>
+<ul>
+  <li>熟悉GC常用算法，熟悉常见垃圾收集器，具有实际JVM调优经验</li>
+  <li>Garbage
+    <ul>
+      <li>没有引用指向的对象</li>
+      <li></li>
+      <li>root searching
+        <ul>
+          <li>GC roots
+            <ul>
+              <li>线程栈变量</li>
+              <li>静态变量</li>
+              <li>常量池</li>
+              <li>JNI指针</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>GC Algorithms
+        <ul>
+          <li>Mark-Sweep
+            <ul>
+              <li>两次</li>
+              <li></li>
+            </ul>
+          </li>
+          <li>Copying
+            <ul>
+              <li>一次</li>
+              <li></li>
+            </ul>
+          </li>
+          <li>Mark-Compact
+            <ul>
+              <li>两次</li>
+              <li></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>堆内存逻辑分区（不适合不分代垃圾收集器）
+    <ul>
+      <li>⚠️
+        <ul>
+          <li>除了Epsilon ZGC Shenandoah 之外的GC都是使用逻辑分代模型</li>
+          <li>G1是逻辑分代，物理不分代</li>
+          <li>除此之外不仅逻辑分代，而且物理分代</li>
+        </ul>
+      </li>
+      <li>新生代： MinorGC/YGC
+        <ul>
+          <li>eden: 8</li>
+          <li>survivor: 1</li>
+          <li>survivor: 1
+            <ul>
+              <li>Copying</li>
+            </ul>
+          </li>
+          <li>复制年龄超过限制时，进入old区。通过参数：-XX:MaxTenuringThreshold配置</li>
+        </ul>
+      </li>
+      <li>老年代: MajorGC/FullGC
+        <ul>
+          <li></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>内存详解
+    <ul>
+      <li>栈上分配
+        <ul>
+          <li>线程私有小对象</li>
+          <li>无逃逸</li>
+          <li>支持标量替换</li>
+          <li>无需调整</li>
+        </ul>
+      </li>
+      <li>线程本地分配TLAB
+        <ul>
+          <li>占用eden,默认1%</li>
+          <li>多线程的时候不用竞争eden就可以申请空间，提高效率</li>
+          <li>小对象</li>
+          <li>无需调整</li>
+        </ul>
+      </li>
+      <li>老年代
+        <ul>
+          <li>超过XX:MaxTenuringThreshold指定次数YGC
+            <ul>
+              <li>Parallel Scavenge 15</li>
+              <li>CMS 6</li>
+              <li>G1 15</li>
+            </ul>
+          </li>
+          <li>动态年龄
+            <ul>
+              <li>s1-&gt;s2超过累加50%</li>
+              <li>把年龄最大的放入Old</li>
+            </ul>
+          </li>
+          <li>YGC期间 survivor区空间不够了，空间担保直接进入老年代</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>常见的垃圾回收器
+    <ul>
+      <li>单线程
+        <ul>
+          <li>Serial
+            <ul>
+              <li>安全点线程停止，</li>
+              <li>单CPU效率最高</li>
+              <li>虚拟机时Client模式的默认垃圾回收器</li>
+              <li>使用极少</li>
+            </ul>
+          </li>
+          <li>Serial Old
+            <ul>
+              <li></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>多线程
+        <ul>
+          <li>Parallel Scavenge(PS) + Parallel Old(PO)
+            <ul>
+              <li>吞吐量优先</li>
+            </ul>
+          </li>
+          <li>ParNew+CMS
+            <ul>
+              <li>CMS：
+                <ul>
+                  <li>开启了并发回收的过程</li>
+                  <li>CMS问题比较多
+                    <ul>
+                      <li>内存碎片</li>
+                      <li>浮动垃圾</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>响应事件优先
+                <ul>
+                  <li></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>ZGC</li>
+      <li>G1</li>
+    </ul>
+  </li>
+  <li>Remark阶段的算法
+    <ul>
+      <li>三色扫描算法
+        <ul>
+          <li>白 灰 黑</li>
+        </ul>
+      </li>
+      <li>并发标记时</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="jvm调优">JVM调优</h3>
+
+<ul>
+  <li>-XX:+UseSerialGC
+    <ul>
+      <li>Serial New + Serial Old</li>
+      <li>小型程序</li>
+      <li>默认情况下不会是这种选项，Hotspot会根据计算及配置和JDK版本自动选择收集器</li>
+    </ul>
+  </li>
+  <li>-XX:+UseParNewGC
+    <ul>
+      <li>ParNew + SerialOld</li>
+      <li>很少用</li>
+    </ul>
+  </li>
+  <li>-XX:UserConcMarkSweepGC
+    <ul>
+      <li>ParNew + CMS + Serial Old</li>
+    </ul>
+  </li>
+  <li>-XX:UseParallelGC
+    <ul>
+      <li>Parallel Scavenge + Parallel Old</li>
+    </ul>
+  </li>
+  <li>-XX:UseParallelOldGC
+    <ul>
+      <li>Parallel Scavenge + Parallel Old</li>
+    </ul>
+  </li>
+  <li>-XX:UseG1GC
+    <ul>
+      <li>G1</li>
+    </ul>
+  </li>
+  <li>Linux中默认</li>
+  <li>Linux 1.8
+    <ul>
+      <li>1.8.0_181 默认 Copy MarkCompact</li>
+      <li>1.8.0_222 默认 PS + PO</li>
+    </ul>
+  </li>
+</ul>
+
+:ET

@@ -3,28 +3,966 @@
   <channel>
     <title></title>
     <description></description>
-    <link>http://www.louishwh.top/</link>
-    <atom:link href="http://www.louishwh.top/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 06 Mar 2022 11:33:37 +0800</pubDate>
-    <lastBuildDate>Sun, 06 Mar 2022 11:33:37 +0800</lastBuildDate>
-    <generator>Jekyll v4.2.0</generator>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 25 Sep 2022 11:38:53 +0800</pubDate>
+    <lastBuildDate>Sun, 25 Sep 2022 11:38:53 +0800</lastBuildDate>
+    <generator>Jekyll v4.0.0</generator>
     
       <item>
-        <title>股票市场</title>
-        <description>
-&lt;hr /&gt;
-&lt;p&gt;layout: post
-title: 股票市场
-date: 2022-03-06 09:00:00 +0800
-categories: 【】
-tag: 【ESP】
-sources: 【股票】
-—&lt;/p&gt;
+        <title>消息队列之三/实践/Kafka</title>
+        <description>&lt;h3 id=&quot;常用的消息队列&quot;&gt;常用的消息队列&lt;/h3&gt;
 </description>
-        <pubDate>Sun, 06 Mar 2022 00:00:00 +0800</pubDate>
-        <link>http://www.louishwh.top/2022/03/06/%E8%82%A1%E7%A5%A8%E5%B8%82%E5%9C%BA/</link>
-        <guid isPermaLink="true">http://www.louishwh.top/2022/03/06/%E8%82%A1%E7%A5%A8%E5%B8%82%E5%9C%BA/</guid>
+        <pubDate>Sat, 24 Sep 2022 09:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2022/09/24/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97-%E5%AE%9E%E8%B7%B5-Kafka/</link>
+        <guid isPermaLink="true">http://localhost:4000/2022/09/24/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97-%E5%AE%9E%E8%B7%B5-Kafka/</guid>
         
+        <category>【消息队列】</category>
+        
+        
+        <category>【服务端-中间件】</category>
+        
+      </item>
+    
+      <item>
+        <title>消息队列之三/实践/RabbitMQ</title>
+        <description>&lt;h3 id=&quot;常用的消息队列&quot;&gt;常用的消息队列&lt;/h3&gt;
+</description>
+        <pubDate>Sat, 17 Sep 2022 09:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2022/09/17/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97-%E5%AE%9E%E8%B7%B5-RabbitMQ/</link>
+        <guid isPermaLink="true">http://localhost:4000/2022/09/17/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97-%E5%AE%9E%E8%B7%B5-RabbitMQ/</guid>
+        
+        <category>【消息队列】</category>
+        
+        
+        <category>【服务端-中间件】</category>
+        
+      </item>
+    
+      <item>
+        <title>消息队列之二/协议</title>
+        <description>&lt;h3 id=&quot;重要的几个协议&quot;&gt;重要的几个协议&lt;/h3&gt;
+</description>
+        <pubDate>Sat, 10 Sep 2022 09:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2022/09/10/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97-%E5%8D%8F%E8%AE%AE/</link>
+        <guid isPermaLink="true">http://localhost:4000/2022/09/10/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97-%E5%8D%8F%E8%AE%AE/</guid>
+        
+        <category>【消息队列】</category>
+        
+        
+        <category>【服务端-中间件】</category>
+        
+      </item>
+    
+      <item>
+        <title>消息队列之一/整体认识</title>
+        <description>&lt;h3 id=&quot;常用的消息队列&quot;&gt;常用的消息队列&lt;/h3&gt;
+</description>
+        <pubDate>Sat, 03 Sep 2022 09:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2022/09/03/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97-%E6%95%B4%E4%BD%93/</link>
+        <guid isPermaLink="true">http://localhost:4000/2022/09/03/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97-%E6%95%B4%E4%BD%93/</guid>
+        
+        <category>【消息队列】</category>
+        
+        
+        <category>【服务端-中间件】</category>
+        
+      </item>
+    
+      <item>
+        <title>服务端@Java@JVM@ClassFormat</title>
+        <description>&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/javase/specs/index.html&quot;&gt;Java语言规范&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;class文件结构&quot;&gt;Class文件结构&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;magic
+    &lt;ul&gt;
+      &lt;li&gt;CAFEBABE&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;minor version
+    &lt;ul&gt;
+      &lt;li&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;major version
+    &lt;ul&gt;
+      &lt;li&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;constant_pool_count
+    &lt;ul&gt;
+      &lt;li&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;constant_pool
+    &lt;ul&gt;
+      &lt;li&gt;1 CONSTANT_Utf8_info
+        &lt;ul&gt;
+          &lt;li&gt;1字节
+            &lt;ul&gt;
+              &lt;li&gt;标识符&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;length
+            &lt;ul&gt;
+              &lt;li&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;bytes
+            &lt;ul&gt;
+              &lt;li&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;3 CONSTANT_Integer_info
+        &lt;ul&gt;
+          &lt;li&gt;4字节
+            &lt;ul&gt;
+              &lt;li&gt;Big-Endin(高位在前)&lt;/li&gt;
+              &lt;li&gt;int&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;4 CONSTANT_Float_info
+        &lt;ul&gt;
+          &lt;li&gt;4字节
+            &lt;ul&gt;
+              &lt;li&gt;Big-Endin(高位在前)&lt;/li&gt;
+              &lt;li&gt;float&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;5 CONSTANT_Long_info
+        &lt;ul&gt;
+          &lt;li&gt;8字节
+            &lt;ul&gt;
+              &lt;li&gt;Big-Endin(高位在前)&lt;/li&gt;
+              &lt;li&gt;long&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;6 CONSTANT_Double_info
+        &lt;ul&gt;
+          &lt;li&gt;8字节
+            &lt;ul&gt;
+              &lt;li&gt;Big-Endin(高位在前)&lt;/li&gt;
+              &lt;li&gt;double&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;7 CONSTANT_Class_info
+        &lt;ul&gt;
+          &lt;li&gt;2字节
+            &lt;ul&gt;
+              &lt;li&gt;指向类的全限定名项的索引&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;8 CONSTANT_String_info
+        &lt;ul&gt;
+          &lt;li&gt;2字节
+            &lt;ul&gt;
+              &lt;li&gt;指向字符串字面量的索引&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;9 CONSTANT_Fieldref_info
+        &lt;ul&gt;
+          &lt;li&gt;2字节
+            &lt;ul&gt;
+              &lt;li&gt;指向申明字段的类或者接口描述符&lt;/li&gt;
+              &lt;li&gt;CONSTANT_Class_info的索引项&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;2字节
+            &lt;ul&gt;
+              &lt;li&gt;指向字段描述符号&lt;/li&gt;
+              &lt;li&gt;CONSTANT_NameAndType_info的索引项&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;10 CONSTANT_Methodref_info
+        &lt;ul&gt;
+          &lt;li&gt;2字节
+            &lt;ul&gt;
+              &lt;li&gt;指向声明方法的类或者接口描述符&lt;/li&gt;
+              &lt;li&gt;CONSTANT_Class_info的索引项&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;2字节
+            &lt;ul&gt;
+              &lt;li&gt;指向字段描述符号&lt;/li&gt;
+              &lt;li&gt;CONSTANT_NameAndType_info的索引项&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;11 CONSTANT_InterfaceMethodref_info
+        &lt;ul&gt;
+          &lt;li&gt;2字节
+            &lt;ul&gt;
+              &lt;li&gt;指向声明方法的类或者接口描述符&lt;/li&gt;
+              &lt;li&gt;CONSTANT_Class_info的索引项&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;2字节
+            &lt;ul&gt;
+              &lt;li&gt;指向字段描述符号&lt;/li&gt;
+              &lt;li&gt;CONSTANT_NameAndType_info的索引项&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;12 CONSTANT_NameAndType_info
+        &lt;ul&gt;
+          &lt;li&gt;2字节
+            &lt;ul&gt;
+              &lt;li&gt;指向该字段或方法名称常量项的索引&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;2字节
+            &lt;ul&gt;
+              &lt;li&gt;指向该字段或方法描述符常量项的索引&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;15 CONSTANT_MethodHandle_info
+        &lt;ul&gt;
+          &lt;li&gt;1字节
+            &lt;ul&gt;
+              &lt;li&gt;reference_kind 1-9之间的值&lt;/li&gt;
+              &lt;li&gt;决定了方法句柄的类型&lt;/li&gt;
+              &lt;li&gt;方法句柄类型的值表示方法句柄的字节码行为&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;16 CONSTANT_MethodType_info
+        &lt;ul&gt;
+          &lt;li&gt;2字节
+            &lt;ul&gt;
+              &lt;li&gt;descriptor_index&lt;/li&gt;
+              &lt;li&gt;指向Utf8_info结构表示的方法描述符&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;18 CONSTANT_InvokeDynamic_info
+        &lt;ul&gt;
+          &lt;li&gt;2字节
+            &lt;ul&gt;
+              &lt;li&gt;bootstrap_method_attr_index&lt;/li&gt;
+              &lt;li&gt;当前Class文件中引导方法表的bootstrap_methods[] 数组的有效索引&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;2字节
+            &lt;ul&gt;
+              &lt;li&gt;指向NameAndType_info表示的方法名和方法描述符&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;access_flags
+    &lt;ul&gt;
+      &lt;li&gt;ACC_PUBLIC 0x0001 是否是public&lt;/li&gt;
+      &lt;li&gt;ACC_FINAL 0x0010 是否是final&lt;/li&gt;
+      &lt;li&gt;ACC_SUPER 0x0020 必须为真&lt;/li&gt;
+      &lt;li&gt;ACC_INTERFACE 0x0200 是否是接口&lt;/li&gt;
+      &lt;li&gt;ACC_ABSTRACT 0x1000 接口或抽象类&lt;/li&gt;
+      &lt;li&gt;ACC_SUNTHETIC 0x1000 编译器自动生成&lt;/li&gt;
+      &lt;li&gt;ACC_ANNOTATION 0x2000&lt;/li&gt;
+      &lt;li&gt;ACC_ENUM 0x4000&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;this_class
+    &lt;ul&gt;
+      &lt;li&gt;当前类&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;super_class
+    &lt;ul&gt;
+      &lt;li&gt;父类&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;interface_count
+    &lt;ul&gt;
+      &lt;li&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;interfaces&lt;/li&gt;
+  &lt;li&gt;filds_count&lt;/li&gt;
+  &lt;li&gt;fields
+    &lt;ul&gt;
+      &lt;li&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;methods_count
+    &lt;ul&gt;
+      &lt;li&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;method_info&lt;/li&gt;
+  &lt;li&gt;attribute_count&lt;/li&gt;
+  &lt;li&gt;attribute&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;class加载过程&quot;&gt;Class加载过程&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;load
+    &lt;ul&gt;
+      &lt;li&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Link：静态变量赋默认值
+    &lt;ol&gt;
+      &lt;li&gt;Verification&lt;/li&gt;
+      &lt;li&gt;Preparation
+        &lt;ul&gt;
+          &lt;li&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Resolution
+        &lt;ul&gt;
+          &lt;li&gt;符号引用解析为直接引用&lt;/li&gt;
+          &lt;li&gt;常量池里面的符号解析为指针、偏移量的内存的直接引用&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Initializing
+    &lt;ol&gt;
+      &lt;li&gt;调用类初始化代码&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;new对象的过程&quot;&gt;New对象的过程&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;申请内存
+    &lt;ul&gt;
+      &lt;li&gt;赋默认值&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;构造方法
+    &lt;ul&gt;
+      &lt;li&gt;设置初始值&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;类加载器层次&quot;&gt;类加载器层次&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;自顶而下：进行实际查找和加载child方向&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;自底向上：惊醒检查该类是否已经加载parent方向&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;加载层级(Launcher源码)
+    &lt;ul&gt;
+      &lt;li&gt;Bootstrap
+        &lt;ul&gt;
+          &lt;li&gt;加载lib/rt.jar charset.jar等核心类：C++实现&lt;/li&gt;
+          &lt;li&gt;sun.boot.class.path&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Extension
+        &lt;ul&gt;
+          &lt;li&gt;加载拓展jar包，jre/lib/ext/*.jar&lt;/li&gt;
+          &lt;li&gt;或由-Djava.ext.dirs指定&lt;/li&gt;
+          &lt;li&gt;java.ext.dirs&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;App
+        &lt;ul&gt;
+          &lt;li&gt;加载classpath指定内容&lt;/li&gt;
+          &lt;li&gt;java.class.path&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Custom ClassLoader
+        &lt;ul&gt;
+          &lt;li&gt;自定义ClassLoader&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;加载机制
+    &lt;ul&gt;
+      &lt;li&gt;双亲委派
+  -&lt;/li&gt;
+      &lt;li&gt;为什么用双亲委派？
+        &lt;ul&gt;
+          &lt;li&gt;主：安全机制&lt;/li&gt;
+          &lt;li&gt;次：资源节约&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;java并发操作&quot;&gt;Java并发操作&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Java并发内存模型
+    &lt;ul&gt;
+      &lt;li&gt;Java线程–工作内存–Save和Load操作 &amp;lt;===&amp;gt; 主内存&lt;/li&gt;
+      &lt;li&gt;Java线程–工作内存–Save和Load操作 &amp;lt;===&amp;gt; 主内存&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;volatile
+    &lt;ul&gt;
+      &lt;li&gt;字节码层面
+        &lt;ul&gt;
+          &lt;li&gt;ACC_VOLATILE&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;JVM层面： volatile内存区的读写都加屏障
+        &lt;ul&gt;
+          &lt;li&gt;写
+            &lt;ul&gt;
+              &lt;li&gt;StoreStoreBarrier&lt;/li&gt;
+              &lt;li&gt;写操作&lt;/li&gt;
+              &lt;li&gt;StoreLoadBarrier&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;读
+            &lt;ul&gt;
+              &lt;li&gt;LoadLoadBarrier&lt;/li&gt;
+              &lt;li&gt;读操作&lt;/li&gt;
+              &lt;li&gt;LoadStoreBarrier&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://blog.csdn.net/qq_26222859/article/details/52235930&quot;&gt;OS和硬件层面&lt;/a&gt;
+        &lt;ul&gt;
+          &lt;li&gt;hsdis-HotSpot Dis Assembler
+            &lt;ul&gt;
+              &lt;li&gt;windows lock指令实现&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;synchronized
+    &lt;ul&gt;
+      &lt;li&gt;字节码层面
+        &lt;ul&gt;
+          &lt;li&gt;ACC_SYNCHRONIZED&lt;/li&gt;
+          &lt;li&gt;monitorenter&lt;/li&gt;
+          &lt;li&gt;monitorexit&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;JVM层面
+        &lt;ul&gt;
+          &lt;li&gt;C/C++调用了系统提供的同步机制&lt;/li&gt;
+          &lt;li&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://blog.csdn.net/21aspnet/article/details/88571740&quot;&gt;OS和硬件层面&lt;/a&gt;
+        &lt;ul&gt;
+          &lt;li&gt;X86: lock comxchg xxx&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;jvm重排序规则&quot;&gt;JVM重排序规则&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;hanppens-before原则
+    &lt;ul&gt;
+      &lt;li&gt;JLS17.4.5&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;as if serial
+    &lt;ul&gt;
+      &lt;li&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;对象的内存布局&quot;&gt;对象的内存布局&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;对象的创建过程？
+    &lt;ol&gt;
+      &lt;li&gt;class loading&lt;/li&gt;
+      &lt;li&gt;class linking()&lt;/li&gt;
+      &lt;li&gt;class initializing&lt;/li&gt;
+      &lt;li&gt;申请对象内存&lt;/li&gt;
+      &lt;li&gt;成员变量赋默认值&lt;/li&gt;
+      &lt;li&gt;调用构造方法&lt;init&gt;
+&lt;/init&gt;        &lt;ol&gt;
+          &lt;li&gt;成员变量顺序赋初始值&lt;/li&gt;
+          &lt;li&gt;执行构造方法语句&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;对象在内存中的存储布局？
+    &lt;ul&gt;
+      &lt;li&gt;虚拟机配置&lt;/li&gt;
+      &lt;li&gt;普通对象
+        &lt;ol&gt;
+          &lt;li&gt;对象头 markword 8&lt;/li&gt;
+          &lt;li&gt;ClassPointer指针&lt;/li&gt;
+          &lt;li&gt;实例数据
+            &lt;ul&gt;
+              &lt;li&gt;引用类型：-XX:+UseCompressedOops为4字节，不开启8字节
+                &lt;ul&gt;
+                  &lt;li&gt;ordinary object pointers&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Padding对齐，8的倍数&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+      &lt;li&gt;数组对象
+        &lt;ol&gt;
+          &lt;li&gt;对象头 markword 8&lt;/li&gt;
+          &lt;li&gt;ClassPointer指针
+            &lt;ul&gt;
+              &lt;li&gt;-XX:+UseCompressedOops为4字节，不开启8字节&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;数组长度：4字节&lt;/li&gt;
+          &lt;li&gt;数组数据&lt;/li&gt;
+          &lt;li&gt;对齐，8的倍数&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;对象头具体包括什么？
+    &lt;ul&gt;
+      &lt;li&gt;通过JavaAgent机制获取
+        &lt;ul&gt;
+          &lt;li&gt;Instrumentation
+            &lt;ul&gt;
+              &lt;li&gt;getObjectSize&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;markword
+        &lt;ul&gt;
+          &lt;li&gt;无锁态&lt;/li&gt;
+          &lt;li&gt;轻量级锁&lt;/li&gt;
+          &lt;li&gt;重量级锁&lt;/li&gt;
+          &lt;li&gt;GC标记&lt;/li&gt;
+          &lt;li&gt;偏向锁&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;对象怎么定位？
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://blog.csdn.net/clover_lily/article/details/80095580&quot;&gt;参考&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;句柄池
+        &lt;ul&gt;
+          &lt;li&gt;间接指针: GC占优
+            &lt;ul&gt;
+              &lt;li&gt;Object&lt;/li&gt;
+              &lt;li&gt;Class&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;直接指针: 执行占优
+        &lt;ul&gt;
+          &lt;li&gt;Object&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;对象怎么分配？
+    &lt;ul&gt;
+      &lt;li&gt;GC相关内容&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;对象大小的实例
+    &lt;ul&gt;
+      &lt;li&gt;new Object()对象占多少个字节？
+        &lt;ul&gt;
+          &lt;li&gt;16字节
+            &lt;ul&gt;
+              &lt;li&gt;对象头头8字节&lt;/li&gt;
+              &lt;li&gt;ClassPointer指针 4字节&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;hotspot开启内存压缩的规则&quot;&gt;Hotspot开启内存压缩的规则&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;4G以下，直接砍掉&lt;/li&gt;
+  &lt;li&gt;4G-32G,默认开启内存压缩 ClassPointers Oops&lt;/li&gt;
+  &lt;li&gt;32G，压缩无效，使用64位&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;jvm-runtime-data-area-and-jvm-instructions&quot;&gt;JVM Runtime Data Area and JVM Instructions&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Data Area
+    &lt;ul&gt;
+      &lt;li&gt;Program Counter
+        &lt;ul&gt;
+          &lt;li&gt;存放执行位置&lt;/li&gt;
+          &lt;li&gt;虚拟机的运行类似while循环&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;JVM stacks
+        &lt;ol&gt;
+          &lt;li&gt;Frame:栈桢
+            &lt;ul&gt;
+              &lt;li&gt;Local Variable Table&lt;/li&gt;
+              &lt;li&gt;Operated Stacks&lt;/li&gt;
+              &lt;li&gt;Dynamic Linking&lt;/li&gt;
+              &lt;li&gt;Return Address&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;一个方法对应一个栈帧
+            &lt;ul&gt;
+              &lt;li&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Heap
+        &lt;ul&gt;
+          &lt;li&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Native Method stacks
+        &lt;ul&gt;
+          &lt;li&gt;C/C++&lt;/li&gt;
+          &lt;li&gt;JNI&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Direct Memory
+        &lt;ul&gt;
+          &lt;li&gt;NIO，zero copy&lt;/li&gt;
+          &lt;li&gt;JVM可以直接访问的内核的内存&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Method Area
+        &lt;ul&gt;
+          &lt;li&gt;run-time constant pool&lt;/li&gt;
+          &lt;li&gt;Content
+            &lt;ol&gt;
+              &lt;li&gt;Perm Space(&amp;lt; 1.8)
+                &lt;ul&gt;
+                  &lt;li&gt;字符串常量位于此&lt;/li&gt;
+                  &lt;li&gt;FGC不会清理&lt;/li&gt;
+                  &lt;li&gt;大小启动的时候指定，不能变&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+              &lt;li&gt;Meta Space(&amp;gt;=1.8)
+                &lt;ul&gt;
+                  &lt;li&gt;字符串常量位于堆区&lt;/li&gt;
+                  &lt;li&gt;会触发FGC清理&lt;/li&gt;
+                  &lt;li&gt;不设定的话，最大就是物理内存&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+            &lt;/ol&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;jvm-instruction-set&quot;&gt;JVM Instruction Set&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;store&lt;/li&gt;
+  &lt;li&gt;load&lt;/li&gt;
+  &lt;li&gt;pop&lt;/li&gt;
+  &lt;li&gt;mul&lt;/li&gt;
+  &lt;li&gt;sub&lt;/li&gt;
+  &lt;li&gt;add&lt;/li&gt;
+  &lt;li&gt;invoke
+    &lt;ul&gt;
+      &lt;li&gt;invokestatic&lt;/li&gt;
+      &lt;li&gt;invokevirtual
+        &lt;ul&gt;
+          &lt;li&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;invokeinterface&lt;/li&gt;
+      &lt;li&gt;invokespecial
+        &lt;ul&gt;
+          &lt;li&gt;可以直接定位，不需要多台的方法
+            &lt;ul&gt;
+              &lt;li&gt;private 方法&lt;/li&gt;
+              &lt;li&gt;构造方法&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;invokedynamic:最难
+        &lt;ul&gt;
+          &lt;li&gt;lambda表达式&lt;/li&gt;
+          &lt;li&gt;反射&lt;/li&gt;
+          &lt;li&gt;其他动态语言：scala kotlin&lt;/li&gt;
+          &lt;li&gt;CGLib ASM&lt;/li&gt;
+          &lt;li&gt;动态产生的Class&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;garbage-collector-gc-turninig&quot;&gt;Garbage Collector GC turninig&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;熟悉GC常用算法，熟悉常见垃圾收集器，具有实际JVM调优经验&lt;/li&gt;
+  &lt;li&gt;Garbage
+    &lt;ul&gt;
+      &lt;li&gt;没有引用指向的对象&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;root searching
+        &lt;ul&gt;
+          &lt;li&gt;GC roots
+            &lt;ul&gt;
+              &lt;li&gt;线程栈变量&lt;/li&gt;
+              &lt;li&gt;静态变量&lt;/li&gt;
+              &lt;li&gt;常量池&lt;/li&gt;
+              &lt;li&gt;JNI指针&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;GC Algorithms
+        &lt;ul&gt;
+          &lt;li&gt;Mark-Sweep
+            &lt;ul&gt;
+              &lt;li&gt;两次&lt;/li&gt;
+              &lt;li&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Copying
+            &lt;ul&gt;
+              &lt;li&gt;一次&lt;/li&gt;
+              &lt;li&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Mark-Compact
+            &lt;ul&gt;
+              &lt;li&gt;两次&lt;/li&gt;
+              &lt;li&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;堆内存逻辑分区（不适合不分代垃圾收集器）
+    &lt;ul&gt;
+      &lt;li&gt;⚠️
+        &lt;ul&gt;
+          &lt;li&gt;除了Epsilon ZGC Shenandoah 之外的GC都是使用逻辑分代模型&lt;/li&gt;
+          &lt;li&gt;G1是逻辑分代，物理不分代&lt;/li&gt;
+          &lt;li&gt;除此之外不仅逻辑分代，而且物理分代&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;新生代： MinorGC/YGC
+        &lt;ul&gt;
+          &lt;li&gt;eden: 8&lt;/li&gt;
+          &lt;li&gt;survivor: 1&lt;/li&gt;
+          &lt;li&gt;survivor: 1
+            &lt;ul&gt;
+              &lt;li&gt;Copying&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;复制年龄超过限制时，进入old区。通过参数：-XX:MaxTenuringThreshold配置&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;老年代: MajorGC/FullGC
+        &lt;ul&gt;
+          &lt;li&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;内存详解
+    &lt;ul&gt;
+      &lt;li&gt;栈上分配
+        &lt;ul&gt;
+          &lt;li&gt;线程私有小对象&lt;/li&gt;
+          &lt;li&gt;无逃逸&lt;/li&gt;
+          &lt;li&gt;支持标量替换&lt;/li&gt;
+          &lt;li&gt;无需调整&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;线程本地分配TLAB
+        &lt;ul&gt;
+          &lt;li&gt;占用eden,默认1%&lt;/li&gt;
+          &lt;li&gt;多线程的时候不用竞争eden就可以申请空间，提高效率&lt;/li&gt;
+          &lt;li&gt;小对象&lt;/li&gt;
+          &lt;li&gt;无需调整&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;老年代
+        &lt;ul&gt;
+          &lt;li&gt;超过XX:MaxTenuringThreshold指定次数YGC
+            &lt;ul&gt;
+              &lt;li&gt;Parallel Scavenge 15&lt;/li&gt;
+              &lt;li&gt;CMS 6&lt;/li&gt;
+              &lt;li&gt;G1 15&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;动态年龄
+            &lt;ul&gt;
+              &lt;li&gt;s1-&amp;gt;s2超过累加50%&lt;/li&gt;
+              &lt;li&gt;把年龄最大的放入Old&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;YGC期间 survivor区空间不够了，空间担保直接进入老年代&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;常见的垃圾回收器
+    &lt;ul&gt;
+      &lt;li&gt;单线程
+        &lt;ul&gt;
+          &lt;li&gt;Serial
+            &lt;ul&gt;
+              &lt;li&gt;安全点线程停止，&lt;/li&gt;
+              &lt;li&gt;单CPU效率最高&lt;/li&gt;
+              &lt;li&gt;虚拟机时Client模式的默认垃圾回收器&lt;/li&gt;
+              &lt;li&gt;使用极少&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Serial Old
+            &lt;ul&gt;
+              &lt;li&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;多线程
+        &lt;ul&gt;
+          &lt;li&gt;Parallel Scavenge(PS) + Parallel Old(PO)
+            &lt;ul&gt;
+              &lt;li&gt;吞吐量优先&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;ParNew+CMS
+            &lt;ul&gt;
+              &lt;li&gt;CMS：
+                &lt;ul&gt;
+                  &lt;li&gt;开启了并发回收的过程&lt;/li&gt;
+                  &lt;li&gt;CMS问题比较多
+                    &lt;ul&gt;
+                      &lt;li&gt;内存碎片&lt;/li&gt;
+                      &lt;li&gt;浮动垃圾&lt;/li&gt;
+                    &lt;/ul&gt;
+                  &lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+              &lt;li&gt;响应事件优先
+                &lt;ul&gt;
+                  &lt;li&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;ZGC&lt;/li&gt;
+      &lt;li&gt;G1&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Remark阶段的算法
+    &lt;ul&gt;
+      &lt;li&gt;三色扫描算法
+        &lt;ul&gt;
+          &lt;li&gt;白 灰 黑&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;并发标记时&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;jvm调优&quot;&gt;JVM调优&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;-XX:+UseSerialGC
+    &lt;ul&gt;
+      &lt;li&gt;Serial New + Serial Old&lt;/li&gt;
+      &lt;li&gt;小型程序&lt;/li&gt;
+      &lt;li&gt;默认情况下不会是这种选项，Hotspot会根据计算及配置和JDK版本自动选择收集器&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;-XX:+UseParNewGC
+    &lt;ul&gt;
+      &lt;li&gt;ParNew + SerialOld&lt;/li&gt;
+      &lt;li&gt;很少用&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;-XX:UserConcMarkSweepGC
+    &lt;ul&gt;
+      &lt;li&gt;ParNew + CMS + Serial Old&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;-XX:UseParallelGC
+    &lt;ul&gt;
+      &lt;li&gt;Parallel Scavenge + Parallel Old&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;-XX:UseParallelOldGC
+    &lt;ul&gt;
+      &lt;li&gt;Parallel Scavenge + Parallel Old&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;-XX:UseG1GC
+    &lt;ul&gt;
+      &lt;li&gt;G1&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Linux中默认&lt;/li&gt;
+  &lt;li&gt;Linux 1.8
+    &lt;ul&gt;
+      &lt;li&gt;1.8.0_181 默认 Copy MarkCompact&lt;/li&gt;
+      &lt;li&gt;1.8.0_222 默认 PS + PO&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Sun, 20 Mar 2022 09:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2022/03/20/%E6%9C%8D%E5%8A%A1%E7%AB%AF@Java@JVM@ClassFormat/</link>
+        <guid isPermaLink="true">http://localhost:4000/2022/03/20/%E6%9C%8D%E5%8A%A1%E7%AB%AF@Java@JVM@ClassFormat/</guid>
+        
+        <category>【Java】</category>
+        
+        
+        <category>【服务端】</category>
         
       </item>
     
@@ -33,8 +971,8 @@ sources: 【股票】
         <description>
 </description>
         <pubDate>Mon, 31 Jan 2022 00:00:00 +0800</pubDate>
-        <link>http://www.louishwh.top/2022/01/31/%E6%9C%8D%E5%8A%A1%E7%AB%AF@Java@SpringBoot/</link>
-        <guid isPermaLink="true">http://www.louishwh.top/2022/01/31/%E6%9C%8D%E5%8A%A1%E7%AB%AF@Java@SpringBoot/</guid>
+        <link>http://localhost:4000/2022/01/31/%E6%9C%8D%E5%8A%A1%E7%AB%AF@Java@SpringBoot/</link>
+        <guid isPermaLink="true">http://localhost:4000/2022/01/31/%E6%9C%8D%E5%8A%A1%E7%AB%AF@Java@SpringBoot/</guid>
         
         
       </item>
@@ -44,8 +982,8 @@ sources: 【股票】
         <description>
 </description>
         <pubDate>Sat, 29 Jan 2022 21:00:00 +0800</pubDate>
-        <link>http://www.louishwh.top/2022/01/29/%E6%9C%8D%E5%8A%A1%E7%AB%AF@Java@Spring%E4%BD%93%E7%B3%BB/</link>
-        <guid isPermaLink="true">http://www.louishwh.top/2022/01/29/%E6%9C%8D%E5%8A%A1%E7%AB%AF@Java@Spring%E4%BD%93%E7%B3%BB/</guid>
+        <link>http://localhost:4000/2022/01/29/%E6%9C%8D%E5%8A%A1%E7%AB%AF@Java@Spring%E4%BD%93%E7%B3%BB/</link>
+        <guid isPermaLink="true">http://localhost:4000/2022/01/29/%E6%9C%8D%E5%8A%A1%E7%AB%AF@Java@Spring%E4%BD%93%E7%B3%BB/</guid>
         
         <category>【Java】</category>
         
@@ -71,8 +1009,8 @@ sources: 【股票】
 &lt;p&gt;###&lt;/p&gt;
 </description>
         <pubDate>Sat, 22 Jan 2022 21:00:00 +0800</pubDate>
-        <link>http://www.louishwh.top/2022/01/22/%E6%9C%8D%E5%8A%A1%E7%AB%AF@Java@Spring/</link>
-        <guid isPermaLink="true">http://www.louishwh.top/2022/01/22/%E6%9C%8D%E5%8A%A1%E7%AB%AF@Java@Spring/</guid>
+        <link>http://localhost:4000/2022/01/22/%E6%9C%8D%E5%8A%A1%E7%AB%AF@Java@Spring/</link>
+        <guid isPermaLink="true">http://localhost:4000/2022/01/22/%E6%9C%8D%E5%8A%A1%E7%AB%AF@Java@Spring/</guid>
         
         <category>【Java】</category>
         
@@ -86,8 +1024,8 @@ sources: 【股票】
         <description>
 </description>
         <pubDate>Sun, 16 Jan 2022 21:00:00 +0800</pubDate>
-        <link>http://www.louishwh.top/2022/01/16/ESP32%E5%88%9D%E4%BD%93%E9%AA%8C/</link>
-        <guid isPermaLink="true">http://www.louishwh.top/2022/01/16/ESP32%E5%88%9D%E4%BD%93%E9%AA%8C/</guid>
+        <link>http://localhost:4000/2022/01/16/ESP32%E5%88%9D%E4%BD%93%E9%AA%8C/</link>
+        <guid isPermaLink="true">http://localhost:4000/2022/01/16/ESP32%E5%88%9D%E4%BD%93%E9%AA%8C/</guid>
         
         <category>【ESP】</category>
         
@@ -138,885 +1076,13 @@ sources: 【股票】
 
 </description>
         <pubDate>Sat, 15 Jan 2022 21:00:00 +0800</pubDate>
-        <link>http://www.louishwh.top/2022/01/15/%E6%9C%8D%E5%8A%A1%E7%AB%AF@Java@%E6%A0%B8%E5%BF%83%E6%8B%93%E5%B1%95%E5%BA%93/</link>
-        <guid isPermaLink="true">http://www.louishwh.top/2022/01/15/%E6%9C%8D%E5%8A%A1%E7%AB%AF@Java@%E6%A0%B8%E5%BF%83%E6%8B%93%E5%B1%95%E5%BA%93/</guid>
+        <link>http://localhost:4000/2022/01/15/%E6%9C%8D%E5%8A%A1%E7%AB%AF@Java@%E6%A0%B8%E5%BF%83%E6%8B%93%E5%B1%95%E5%BA%93/</link>
+        <guid isPermaLink="true">http://localhost:4000/2022/01/15/%E6%9C%8D%E5%8A%A1%E7%AB%AF@Java@%E6%A0%B8%E5%BF%83%E6%8B%93%E5%B1%95%E5%BA%93/</guid>
         
         <category>【Java】</category>
         
         
         <category>【服务端】</category>
-        
-      </item>
-    
-      <item>
-        <title>服务端@Java@核心库</title>
-        <description>&lt;h3 id=&quot;java标准库&quot;&gt;&lt;a href=&quot;https://docs.oracle.com/en/java/javase/index.html&quot;&gt;Java@标准库&lt;/a&gt;&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/javase/8/&quot;&gt;Java8@标准库&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/en/java/javase/11/core/java-core-libraries1.html&quot;&gt;Java11@标准库&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/en/java/javase/17/core/java-core-libraries1.html&quot;&gt;Java17@标准库&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;java17核心库&quot;&gt;Java17@核心库&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;序列化过滤
-    &lt;ul&gt;
-      &lt;li&gt;解决反序列化漏洞&lt;/li&gt;
-      &lt;li&gt;Java序列化过滤器&lt;/li&gt;
-      &lt;li&gt;过滤器工厂&lt;/li&gt;
-      &lt;li&gt;Allow-Lists and Reject-Lists&lt;/li&gt;
-      &lt;li&gt;基于模式的过滤器&lt;/li&gt;
-      &lt;li&gt;自定义过滤器&lt;/li&gt;
-      &lt;li&gt;设置过滤器工厂&lt;/li&gt;
-      &lt;li&gt;内置的过滤器&lt;/li&gt;
-      &lt;li&gt;日志过滤操作&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;增强弃用
-    &lt;ul&gt;
-      &lt;li&gt;JDK中已弃用&lt;/li&gt;
-      &lt;li&gt;如何弃用API&lt;/li&gt;
-      &lt;li&gt;通知和警告&lt;/li&gt;
-      &lt;li&gt;运行jdeprscan&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;XML目录API
- -
-    &lt;ul&gt;
-      &lt;li&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;创建不可修改的列表、集合和映射
-    &lt;ul&gt;
-      &lt;li&gt;用例&lt;/li&gt;
-      &lt;li&gt;语法&lt;/li&gt;
-      &lt;li&gt;创建集合的不可修改副本&lt;/li&gt;
-      &lt;li&gt;从流中创建不可修改的集合&lt;/li&gt;
-      &lt;li&gt;随机迭代顺序&lt;/li&gt;
-      &lt;li&gt;不可修改的集合&lt;/li&gt;
-      &lt;li&gt;空间效率&lt;/li&gt;
-      &lt;li&gt;线程安全&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;进程API
-    &lt;ul&gt;
-      &lt;li&gt;进程相关的类与接口&lt;/li&gt;
-      &lt;li&gt;创建进程&lt;/li&gt;
-      &lt;li&gt;获取进程信息&lt;/li&gt;
-      &lt;li&gt;从进程重定向输出&lt;/li&gt;
-      &lt;li&gt;用流过滤进程&lt;/li&gt;
-      &lt;li&gt;当进程调用onExit方法终止时处理&lt;/li&gt;
-      &lt;li&gt;控制对进程敏感信息的访问&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;首选API
-    &lt;ul&gt;
-      &lt;li&gt;比较首选项API和其他机制&lt;/li&gt;
-      &lt;li&gt;用法说明&lt;/li&gt;
-      &lt;li&gt;设计常见问题&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Java日志概述
-    &lt;ul&gt;
-      &lt;li&gt;控制流程概述&lt;/li&gt;
-      &lt;li&gt;日志级别&lt;/li&gt;
-      &lt;li&gt;记录仪&lt;/li&gt;
-      &lt;li&gt;日志记录方法&lt;/li&gt;
-      &lt;li&gt;处理程序&lt;/li&gt;
-      &lt;li&gt;格式化程序&lt;/li&gt;
-      &lt;li&gt;日志管理器&lt;/li&gt;
-      &lt;li&gt;配置文件&lt;/li&gt;
-      &lt;li&gt;默认配置&lt;/li&gt;
-      &lt;li&gt;动态配置更新&lt;/li&gt;
-      &lt;li&gt;本地方法&lt;/li&gt;
-      &lt;li&gt;文档类型定义&lt;/li&gt;
-      &lt;li&gt;唯一的消息ID&lt;/li&gt;
-      &lt;li&gt;安全&lt;/li&gt;
-      &lt;li&gt;配置管理&lt;/li&gt;
-      &lt;li&gt;打包&lt;/li&gt;
-      &lt;li&gt;本地化&lt;/li&gt;
-      &lt;li&gt;远程访问和序列化&lt;/li&gt;
-      &lt;li&gt;实例&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Java NIO
-    &lt;ul&gt;
-      &lt;li&gt;Grep NIO&lt;/li&gt;
-      &lt;li&gt;校验NIO示例&lt;/li&gt;
-      &lt;li&gt;时间查询NIO示例&lt;/li&gt;
-      &lt;li&gt;时间服务器NIO示例&lt;/li&gt;
-      &lt;li&gt;非阻塞时间服务器NIO示例&lt;/li&gt;
-      &lt;li&gt;Internet协议和UNIX域套接字NIO示例&lt;/li&gt;
-      &lt;li&gt;文件NIO的例子:
-        &lt;ul&gt;
-          &lt;li&gt;Chmod文件NIO示例&lt;/li&gt;
-          &lt;li&gt;Copy File NIO示例&lt;/li&gt;
-          &lt;li&gt;磁盘占用率文件NIO示例&lt;/li&gt;
-          &lt;li&gt;自定义文件属性文件NIO示例&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Java网络
-    &lt;ul&gt;
-      &lt;li&gt;Java网络API
-        &lt;ul&gt;
-          &lt;li&gt;java.net: 实现网络应用的类库&lt;/li&gt;
-          &lt;li&gt;java.net.http: HTTP Client/WebSocket&lt;/li&gt;
-          &lt;li&gt;javax.net: 套接字的类库&lt;/li&gt;
-          &lt;li&gt;javax.net.ssl: 安全套接字类库&lt;/li&gt;
-          &lt;li&gt;jdk.net: 针对java.net和java.nio.channels的平台选项&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;网络系统属性
-        &lt;ul&gt;
-          &lt;li&gt;使用java命令的-D选项&lt;/li&gt;
-          &lt;li&gt;使用System.setProperty(String, String)&lt;/li&gt;
-          &lt;li&gt;在$JAVA_HOME/conf/net.properties中指定.注意，在此文件中只能指定与代理相关的属性。&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;伪随机数生成器
-    &lt;ul&gt;
-      &lt;li&gt;伪随机数发生器的特性&lt;/li&gt;
-      &lt;li&gt;用随机发生器接口生成伪随机数&lt;/li&gt;
-      &lt;li&gt;在多线程应用程序中生成伪随机数
-        &lt;ul&gt;
-          &lt;li&gt;动态创建新的生成器&lt;/li&gt;
-          &lt;li&gt;创建生成器流&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;选择伪随机数生成器算法&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-</description>
-        <pubDate>Tue, 04 Jan 2022 21:00:00 +0800</pubDate>
-        <link>http://www.louishwh.top/2022/01/04/%E6%9C%8D%E5%8A%A1%E7%AB%AF@Java@%E6%A0%B8%E5%BF%83%E5%BA%93/</link>
-        <guid isPermaLink="true">http://www.louishwh.top/2022/01/04/%E6%9C%8D%E5%8A%A1%E7%AB%AF@Java@%E6%A0%B8%E5%BF%83%E5%BA%93/</guid>
-        
-        <category>【Java】</category>
-        
-        
-        <category>【服务端】</category>
-        
-      </item>
-    
-      <item>
-        <title>服务端@Java</title>
-        <description>&lt;h3 id=&quot;java开发工具&quot;&gt;Java@开发工具&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;开发工具
-    &lt;ul&gt;
-      &lt;li&gt;Java IDE
-        &lt;ul&gt;
-          &lt;li&gt;&lt;a href=&quot;https://www.jetbrains.com/idea/&quot;&gt;IntelliJ IDEA&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;https://www.eclipse.org/downloads/&quot;&gt;Eclipse IDE&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;https://netbeans.org/&quot;&gt;NetBeans&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;编辑器
-        &lt;ul&gt;
-          &lt;li&gt;&lt;a href=&quot;https://code.visualstudio.com/&quot;&gt;Visual Studio Code&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;http://www.sublimetext.com/&quot;&gt;Sublime Text&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;https://notepad-plus-plus.org/&quot;&gt;Notepad++(Windows)&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;https://www.editplus.com/&quot;&gt;EditPlus&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;开发环境
-    &lt;ul&gt;
-      &lt;li&gt;JDK（Java Development Kit）
-        &lt;ul&gt;
-          &lt;li&gt;&lt;a href=&quot;www.oracle.com&quot;&gt;Oracle JDK(JRL-个人研究)&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;http://openjdk.java.net/&quot;&gt;Open JDK(GPL V2-可商用)&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Java的三大类
-        &lt;ul&gt;
-          &lt;li&gt;Java ME (Java Micro Edition)
-            &lt;ul&gt;
-              &lt;li&gt;针对小型设备&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;Jave EE (Java enterprise edition)
-            &lt;ul&gt;
-              &lt;li&gt;SE = ME + 其他类库&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;Java EE (Java Standard Edition)
-            &lt;ul&gt;
-              &lt;li&gt;EE = SE + 企业级应用类&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://www.java.com/en/download/help/release_changes.html&quot;&gt;Java版本&lt;/a&gt;
-        &lt;ul&gt;
-          &lt;li&gt;Java8(LTS)&lt;/li&gt;
-          &lt;li&gt;Java9&lt;/li&gt;
-          &lt;li&gt;Java10&lt;/li&gt;
-          &lt;li&gt;Java11(LTS)&lt;/li&gt;
-          &lt;li&gt;Java12&lt;/li&gt;
-          &lt;li&gt;Java13&lt;/li&gt;
-          &lt;li&gt;Java14&lt;/li&gt;
-          &lt;li&gt;Java15&lt;/li&gt;
-          &lt;li&gt;Java16&lt;/li&gt;
-          &lt;li&gt;Java17(LTS) &amp;lt;— 当前版本&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/javase/specs/index.html&quot;&gt;Java Virtual Machine(JVM)&lt;/a&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;https://www.oracle.com/java/technologies/javase/vmoptions-jsp.html&quot;&gt;HotSpot VM&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://www.oracle.com/middleware/technologies/jrockit/jrockit-mission-control.html&quot;&gt;JRockit VM&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://www.ibm.com/docs/en/sdk-java-technology/7?topic=i-j9-virtual-machine-jvm-2&quot;&gt;J9&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://harmony.apache.org/&quot;&gt;Harmony&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://www.azul.com/&quot;&gt;Azul VM&lt;/a&gt;
-        &lt;ul&gt;
-          &lt;li&gt;&lt;a href=&quot;https://www.zhihu.com/question/24938498?sort=created&quot;&gt;相关信息&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;java标准库&quot;&gt;&lt;a href=&quot;https://docs.oracle.com/en/java/javase/index.html&quot;&gt;Java@标准库&lt;/a&gt;&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/javase/8/&quot;&gt;Java8@标准库&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/en/java/javase/11/core/java-core-libraries1.html&quot;&gt;Java11@标准库&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/en/java/javase/17/core/java-core-libraries1.html&quot;&gt;Java17@标准库&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;java第三方库&quot;&gt;Java@第三方库&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;核心拓展库
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;https://github.com/google/guava&quot;&gt;Guava&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://github.com/apache/commons-lang&quot;&gt;Apache Commons&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Web库
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;https://github.com/spring-projects/spring-framework&quot;&gt;Spring&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;http://www.gwtproject.org/&quot;&gt;Google Web Toolkit&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://tapestry.apache.org/&quot;&gt;Tapestry&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;数据库
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;http://www.mybatis.org/mybatis-3/&quot;&gt;Mybatis&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://spring.io/projects/spring-framework&quot;&gt;Spring JDBC&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://spring.io/projects/spring-data&quot;&gt;Spring Data&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;http://hibernate.org/&quot;&gt;hibernate&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://github.com/p6spy/p6spy&quot;&gt;JDBC故障诊断库P6spy&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;日志
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;https://www.slf4j.org/&quot;&gt;SLF4J&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;http://logging.apache.org/log4j/2.x/&quot;&gt;Log4j&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;http://logback.qos.ch/&quot;&gt;Logback&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;数据解析
-    &lt;ul&gt;
-      &lt;li&gt;JSON
-        &lt;ul&gt;
-          &lt;li&gt;&lt;a href=&quot;https://github.com/FasterXML/jackson&quot;&gt;Jackson&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;https://github.com/google/gson&quot;&gt;Gson&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;https://github.com/alibaba/fastjson&quot;&gt;FastJson&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;HTML
-        &lt;ul&gt;
-          &lt;li&gt;&lt;a href=&quot;https://jsoup.org/&quot;&gt;jsoup&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;XML
-        &lt;ul&gt;
-          &lt;li&gt;&lt;a href=&quot;https://github.com/hunterhacker/jdom&quot;&gt;JDOM&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;https://github.com/dom4j/dom4j&quot;&gt;JDOM4J&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;http://xerces.apache.org/xerces-j/&quot;&gt;xerces&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;http://x-stream.github.io/download.html&quot;&gt;Xstream&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;序列化
-        &lt;ul&gt;
-          &lt;li&gt;&lt;a href=&quot;https://github.com/protocolbuffers/protobuf/tree/master/java&quot;&gt;Google Protocol Buffer&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;文档处理
-    &lt;ul&gt;
-      &lt;li&gt;Office文档处理
-        &lt;ul&gt;
-          &lt;li&gt;&lt;a href=&quot;https://github.com/junit-team/junit4&quot;&gt;Apache POI&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;https://github.com/plutext/docx4j&quot;&gt;docx4j&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;PDF
-        &lt;ul&gt;
-          &lt;li&gt;&lt;a href=&quot;https://itextpdf.com/en&quot;&gt;iText&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;https://pdfbox.apache.org/&quot;&gt;Apache PDF box&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;https://xmlgraphics.apache.org/fop/&quot;&gt;Apache FOP&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;单元测试
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;https://github.com/junit-team/junit4&quot;&gt;JUnit&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://github.com/mockito/mockito&quot;&gt;Mockito&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://github.com/powermock/powermock&quot;&gt;PowerMock&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;字节码库
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;http://www.javassist.org/&quot;&gt;javassist&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://github.com/cglib/cglib&quot;&gt;cglib&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;邮件API
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;&quot;&gt;javax.mail&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://commons.apache.org/proper/commons-email/download_email.cgi&quot;&gt;Apache Commons Email&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;网络库
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;https://netty.io/&quot;&gt;Netty&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://mina.apache.org/&quot;&gt;Apache MINA&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;Http
-        &lt;ul&gt;
-          &lt;li&gt;&lt;a href=&quot;https://hc.apache.org/httpclient-legacy/&quot;&gt;HttpClient&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;https://hc.apache.org/httpcomponents-core-4.4.x/index.html&quot;&gt;HttpCore&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;https://square.github.io/okhttp/&quot;&gt;Okhttp&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-</description>
-        <pubDate>Sun, 02 Jan 2022 09:00:00 +0800</pubDate>
-        <link>http://www.louishwh.top/2022/01/02/%E6%9C%8D%E5%8A%A1%E7%AB%AF@Java/</link>
-        <guid isPermaLink="true">http://www.louishwh.top/2022/01/02/%E6%9C%8D%E5%8A%A1%E7%AB%AF@Java/</guid>
-        
-        <category>【Java】</category>
-        
-        
-        <category>【服务端】</category>
-        
-      </item>
-    
-      <item>
-        <title>服务端@技能点</title>
-        <description>&lt;h3 id=&quot;服务端的比对&quot;&gt;服务端的比对&lt;/h3&gt;
-
-&lt;hr /&gt;
-&lt;ul&gt;
-  &lt;li&gt;Web框架性能排名
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;https://www.techempower.com/benchmarks/#section=data-r19&amp;amp;hw=ph&amp;amp;test=fortune&quot;&gt;Web Framework Benchmarks&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;一些观点
-    &lt;ol&gt;
-      &lt;li&gt;Web框架性能有差，学习曲线、熟练程度、团队技能要求也有差&lt;/li&gt;
-      &lt;li&gt;在兴趣和好奇下可以去追求极致的性能&lt;/li&gt;
-      &lt;li&gt;在业务和发展下要追求稳定性、可用性、安全性和性能的平衡&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-&lt;ul&gt;
-  &lt;li&gt;数据库排行榜
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;https://db-engines.com/en/ranking&quot;&gt;DB-Engines&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://www.modb.pro/dbRank&quot;&gt;墨天轮&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;一些观点
-    &lt;ol&gt;
-      &lt;li&gt;优先把MySQL或PostgreSQL搞明白&lt;/li&gt;
-      &lt;li&gt;Nosql可以深入研究一下Redis和HBase&lt;/li&gt;
-      &lt;li&gt;当然根据自身需求学习：能用(80%)-&amp;gt;用好(20%)-&amp;gt;用到极致(4%)-&amp;gt;自制(0.8%)&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&quot;服务端的技能点&quot;&gt;服务端的技能点&lt;/h3&gt;
-
-&lt;hr /&gt;
-&lt;ul&gt;
-  &lt;li&gt;计算机常识(必须懂得的概念)
-    &lt;ul&gt;
-      &lt;li&gt;定义
-        &lt;ul&gt;
-          &lt;li&gt;作为计算机从业人员，必须掌握的概念&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;内容
-        &lt;ul&gt;
-          &lt;li&gt;算法+数据结构&lt;/li&gt;
-          &lt;li&gt;操作系统&lt;/li&gt;
-          &lt;li&gt;数据库&lt;/li&gt;
-          &lt;li&gt;网络&lt;/li&gt;
-          &lt;li&gt;编码&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-&lt;ul&gt;
-  &lt;li&gt;编程语言(必须深入了解一种)
-    &lt;ul&gt;
-      &lt;li&gt;常见的选择
-        &lt;ul&gt;
-          &lt;li&gt;Java/Kotlin(推荐👍)
-            &lt;ul&gt;
-              &lt;li&gt;技术体系完善&lt;/li&gt;
-              &lt;li&gt;岗位最多&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;Go(推荐👍)
-            &lt;ul&gt;
-              &lt;li&gt;编译速度天下第一☝️&lt;/li&gt;
-              &lt;li&gt;并发简单易用且高效&lt;/li&gt;
-              &lt;li&gt;生态也不错&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;Python(推荐👍)
-            &lt;ul&gt;
-              &lt;li&gt;强大的第三方库资源&lt;/li&gt;
-              &lt;li&gt;语法简洁&lt;/li&gt;
-              &lt;li&gt;性能不够，C++来凑&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;.NET&lt;/li&gt;
-          &lt;li&gt;C/C++
-            &lt;ul&gt;
-              &lt;li&gt;速度天下第一&lt;/li&gt;
-              &lt;li&gt;适合对于性能要求很高的系统&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;Rust
-            &lt;ul&gt;
-              &lt;li&gt;性能接近C/C++&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;Node
-            &lt;ul&gt;
-              &lt;li&gt;优势在于密集IO&lt;/li&gt;
-              &lt;li&gt;在较高的并发和尽可能的节省内存&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;PHP
-            &lt;ul&gt;
-              &lt;li&gt;小站用的比较多&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;Ruby
-            &lt;ul&gt;
-              &lt;li&gt;国外用的比较多&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;Swift
-            &lt;ul&gt;
-              &lt;li&gt;⚠️ 纯粹为iOSer们自娱自乐&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;一些观点
-        &lt;ol&gt;
-          &lt;li&gt;编程语言本身就是一组实现了的数据结构和算法的结合体
-            &lt;ul&gt;
-              &lt;li&gt;编程范式是构建和执行代码的思想&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;编程语言本身各有千秋
-            &lt;ul&gt;
-              &lt;li&gt;编程范式的支持&lt;/li&gt;
-              &lt;li&gt;性能差异&lt;/li&gt;
-              &lt;li&gt;语言生态差异&lt;/li&gt;
-              &lt;li&gt;学习曲线差异&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;学习的意见
-            &lt;ul&gt;
-              &lt;li&gt;接纳不同，不设限制&lt;/li&gt;
-              &lt;li&gt;用其所长，发挥价值&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ol&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-&lt;ul&gt;
-  &lt;li&gt;Web框架
-    &lt;ul&gt;
-      &lt;li&gt;语言自成体系
-        &lt;ul&gt;
-          &lt;li&gt;Java
-            &lt;ul&gt;
-              &lt;li&gt;&lt;a href=&quot;https://spring.io/&quot;&gt;Spring系列&lt;/a&gt;
-                &lt;ul&gt;
-                  &lt;li&gt;Spring 是核心引擎&lt;/li&gt;
-                  &lt;li&gt;&lt;a href=&quot;https://spring.io/projects/spring-framework&quot;&gt;Spring MVC&lt;/a&gt;
-                    &lt;ul&gt;
-                      &lt;li&gt;基于Spring的MVC框架&lt;/li&gt;
-                    &lt;/ul&gt;
-                  &lt;/li&gt;
-                  &lt;li&gt;&lt;a href=&quot;https://spring.io/projects/spring-boot&quot;&gt;Spring Boot&lt;/a&gt;
-                    &lt;ul&gt;
-                      &lt;li&gt;Spring下的一组开发包(包含Spring MVC)&lt;/li&gt;
-                    &lt;/ul&gt;
-                  &lt;/li&gt;
-                  &lt;li&gt;&lt;a href=&quot;https://spring.io/projects/spring-cloud&quot;&gt;Sprint Cloud&lt;/a&gt;
-                    &lt;ul&gt;
-                      &lt;li&gt;微服务解决方案(包含Spring Boot)&lt;/li&gt;
-                    &lt;/ul&gt;
-                  &lt;/li&gt;
-                  &lt;li&gt;&lt;a href=&quot;https://www.zhihu.com/question/64671972&quot;&gt;MVC &amp;amp; Boot&lt;/a&gt;&lt;/li&gt;
-                  &lt;li&gt;&lt;a href=&quot;https://www.zhihu.com/question/280318988&quot;&gt;Boot &amp;amp; Cloud&lt;/a&gt;&lt;/li&gt;
-                &lt;/ul&gt;
-              &lt;/li&gt;
-              &lt;li&gt;&lt;a href=&quot;https://www.dropwizard.io/en/latest/&quot;&gt;Dropwizard&lt;/a&gt;
-                &lt;ul&gt;
-                  &lt;li&gt;&lt;a href=&quot;https://www.overops.com/blog/java-bootstrap-dropwizard-vs-spring-boot/&quot;&gt;可参考&lt;/a&gt;&lt;/li&gt;
-                &lt;/ul&gt;
-              &lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;https://dev.to/speedwheel/top-6-web-frameworks-for-go-as-of-2017-34i&quot;&gt;Go&lt;/a&gt;
-            &lt;ul&gt;
-              &lt;li&gt;&lt;a href=&quot;https://github.com/astaxie/beego&quot;&gt;Beego&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href=&quot;https://github.com/kataras/iris&quot;&gt;Iris&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href=&quot;https://github.com/gin-gonic/gin&quot;&gt;Gin&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href=&quot;https://github.com/labstack/echo&quot;&gt;Echo&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href=&quot;https://github.com/revel/revel&quot;&gt;Revel&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;https://www.cnblogs.com/an-wen/p/11330834.html&quot;&gt;Python&lt;/a&gt;
-            &lt;ul&gt;
-              &lt;li&gt;&lt;a href=&quot;https://www.djangoproject.com/&quot;&gt;Django&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href=&quot;https://www.tornadoweb.org/en/stable/&quot;&gt;Tornado&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href=&quot;https://dormousehole.readthedocs.io/en/latest/&quot;&gt;Flask&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href=&quot;https://twistedmatrix.com/trac/&quot;&gt;Twisted&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;
-            &lt;p&gt;&lt;a href=&quot;https://www.zhihu.com/question/366937369&quot;&gt;.NET&lt;/a&gt;&lt;/p&gt;
-          &lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s?__biz=MzAxNDI5NzEzNg==&amp;amp;mid=2651164874&amp;amp;idx=1&amp;amp;sn=38efbfb036b5f667403d87a9d70bffb3&amp;amp;chksm=80644195b713c88368c88d73bd092c4132f1b6908b12036775cebef5edc9606fd08c14accf1e&amp;amp;scene=21#wechat_redirect&quot;&gt;C/C++&lt;/a&gt;
-            &lt;ul&gt;
-              &lt;li&gt;&lt;a href=&quot;https://github.com/facebook/proxygen&quot;&gt;Proxygen&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href=&quot;https://github.com/ipkn/crow&quot;&gt;Crow&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href=&quot;https://github.com/microsoft/cpprestsdk&quot;&gt;C++ REST SDK&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href=&quot;https://github.com/an-tao/drogon&quot;&gt;Drogon&lt;/a&gt;
-                &lt;ul&gt;
-                  &lt;li&gt;这个现在还在性能榜第一☝️&lt;/li&gt;
-                &lt;/ul&gt;
-              &lt;/li&gt;
-              &lt;li&gt;&lt;a href=&quot;https://github.com/oatpp/oatpp&quot;&gt;Oatpp&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href=&quot;https://github.com/oktal/pistache/&quot;&gt;Pistache&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href=&quot;https://github.com/matt-42/silicon/&quot;&gt;Silicon&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href=&quot;https://github.com/civetweb/civetweb&quot;&gt;CivetWeb&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;https://www.rust-lang.org/&quot;&gt;Rust&lt;/a&gt;
-            &lt;ul&gt;
-              &lt;li&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/398232138&quot;&gt;Rust的Web生态&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href=&quot;https://actix.rs/&quot;&gt;Actix&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href=&quot;https://rocket.rs/&quot;&gt;Rocket&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href=&quot;https://github.com/tokio-rs/axum&quot;&gt;Axum&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;https://nodejs.org&quot;&gt;Node.js&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/111015050&quot;&gt;PHP&lt;/a&gt;
-            &lt;ul&gt;
-              &lt;li&gt;&lt;a href=&quot;https://laravel.com/&quot;&gt;Laravel&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href=&quot;https://www.excellentwebworld.com/codeigniter-development/&quot;&gt;CodeIgniter&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href=&quot;https://symfony.com/&quot;&gt;Symfony&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href=&quot;https://www.zend.com/&quot;&gt;Zend&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href=&quot;https://www.yiiframework.com/&quot;&gt;YII2&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href=&quot;https://www.excellentwebworld.com/cakephp-development/&quot;&gt;Cakephp&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;http://www.ruby-lang.org&quot;&gt;Ruby&lt;/a&gt;
-            &lt;ul&gt;
-              &lt;li&gt;&lt;a href=&quot;https://github.com/rails/rails&quot;&gt;Ruby on Rails&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href=&quot;https://github.com/merb/merb&quot;&gt;Merb&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href=&quot;https://github.com/camping/mab&quot;&gt;Camping&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href=&quot;https://github.com/Ramaze/ramaze&quot;&gt;Ramaze&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;https://www.swift.org/&quot;&gt;Swift 看看就得了，权当尝试&lt;/a&gt;
-            &lt;ul&gt;
-              &lt;li&gt;&lt;a href=&quot;https://github.com/perfectlySoft/Perfect&quot;&gt;Perfect&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href=&quot;https://github.com/vapor/Vapor&quot;&gt;Vapor&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href=&quot;https://github.com/Kitura/Kitura&quot;&gt;Kitura&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href=&quot;https://github.com/zewo/Zewo&quot;&gt;Zewo&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-&lt;ul&gt;
-  &lt;li&gt;数据库
-    &lt;ul&gt;
-      &lt;li&gt;关系数据库
-        &lt;ul&gt;
-          &lt;li&gt;&lt;a href=&quot;https://github.com/mysql&quot;&gt;MySQL&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;https://github.com/postgres/postgres&quot;&gt;PostgreSQL&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;NoSQL
-        &lt;ul&gt;
-          &lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis&quot;&gt;Redis&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;https://github.com/neo4j/neo4j&quot;&gt;Neo4j&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;https://github.com/apache/hbase&quot;&gt;HBase&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;https://github.com/elastic/elasticsearch&quot;&gt;Elasticsearch&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;https://github.com/google/leveldb&quot;&gt;LevelDB&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;https://github.com/facebook/rocksdb&quot;&gt;RocksDB(基于LevelDB)&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-&lt;ul&gt;
-  &lt;li&gt;操作系统
-    &lt;ul&gt;
-      &lt;li&gt;开发环境
-        &lt;ul&gt;
-          &lt;li&gt;Windows&lt;/li&gt;
-          &lt;li&gt;MacOS&lt;/li&gt;
-          &lt;li&gt;Linux(还有很多)
-            &lt;ul&gt;
-              &lt;li&gt;&lt;a href=&quot;https://ubuntu.com/&quot;&gt;Ubuntu&lt;/a&gt;
-                &lt;ul&gt;
-                  &lt;li&gt;&lt;a href=&quot;htts://Elementaryos.org&quot;&gt;Elementaryos&lt;/a&gt;&lt;/li&gt;
-                  &lt;li&gt;&lt;a href=&quot;http://linuxmint.com/&quot;&gt;Linuxmint&lt;/a&gt;&lt;/li&gt;
-                &lt;/ul&gt;
-              &lt;/li&gt;
-              &lt;li&gt;&lt;a href=&quot;https://www.kali.org/docs/&quot;&gt;Kali(侧重Web安全)&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href=&quot;https://manjaro.org/&quot;&gt;Manjaro&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;部署环境(不仅限于此)
-        &lt;ul&gt;
-          &lt;li&gt;&lt;a href=&quot;https://ubuntu.com/&quot;&gt;Ubuntu server&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;https://www.centos.org/&quot;&gt;CentOS&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;https://www.debian.org/&quot;&gt;Deban&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Unix&quot;&gt;Unix&lt;/a&gt;
-            &lt;ul&gt;
-              &lt;li&gt;&lt;a href=&quot;https://www.freebsd.org/&quot;&gt;Unix—FreeBSD&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href=&quot;https://www.unix.com/&quot;&gt;Unix—Forums&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-&lt;ul&gt;
-  &lt;li&gt;网络工具
-    &lt;ul&gt;
-      &lt;li&gt;应用层协议
-        &lt;ul&gt;
-          &lt;li&gt;DNS:解析域名&lt;/li&gt;
-          &lt;li&gt;SMTP:邮件发送&lt;/li&gt;
-          &lt;li&gt;POP3:邮件接收&lt;/li&gt;
-          &lt;li&gt;MQTT&lt;/li&gt;
-          &lt;li&gt;HTTP&lt;/li&gt;
-          &lt;li&gt;FTP&lt;/li&gt;
-          &lt;li&gt;P2P&lt;/li&gt;
-          &lt;li&gt;SSH&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;传输层协议
-        &lt;ul&gt;
-          &lt;li&gt;UDP&lt;/li&gt;
-          &lt;li&gt;TCP&lt;/li&gt;
-          &lt;li&gt;SPX&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;网络层协议
-        &lt;ul&gt;
-          &lt;li&gt;IP&lt;/li&gt;
-          &lt;li&gt;IPX&lt;/li&gt;
-          &lt;li&gt;RIP&lt;/li&gt;
-          &lt;li&gt;OSPF&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;数据链路层
-        &lt;ul&gt;
-          &lt;li&gt;SDLC&lt;/li&gt;
-          &lt;li&gt;HDLC&lt;/li&gt;
-          &lt;li&gt;PPP&lt;/li&gt;
-          &lt;li&gt;STP&lt;/li&gt;
-          &lt;li&gt;帧中继&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;服务端需要架构加持&quot;&gt;服务端需要架构加持&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;/2021/12/04/架构-架构思维框架/index.html&quot;&gt;Web架构思维框架&lt;/a&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;/2021/12/15/架构-Web高性能架构/index.html&quot;&gt;Web高性能架构&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;/2021/12/18/架构-Web高可用架构/index.html&quot;&gt;Web高可用架构&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;/2021/12/21/架构-Web高伸缩架构/index.html&quot;&gt;Web高伸缩架构&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;/2021/12/24/架构-Web可拓展架构/index.html&quot;&gt;Web可拓展架构&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;/2021/12/27/架构-Web高安全架构/index.html&quot;&gt;Web高安全架构&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-</description>
-        <pubDate>Sat, 01 Jan 2022 09:00:00 +0800</pubDate>
-        <link>http://www.louishwh.top/2022/01/01/%E6%9C%8D%E5%8A%A1%E7%AB%AF@%E6%8A%80%E8%83%BD%E7%82%B9/</link>
-        <guid isPermaLink="true">http://www.louishwh.top/2022/01/01/%E6%9C%8D%E5%8A%A1%E7%AB%AF@%E6%8A%80%E8%83%BD%E7%82%B9/</guid>
-        
-        <category>【架构】</category>
-        
-        
-        <category>【服务端】</category>
-        
-      </item>
-    
-      <item>
-        <title>数据库@排名</title>
-        <description>&lt;h3 id=&quot;数据库的排名&quot;&gt;数据库的排名&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://db-engines.com/en/ranking&quot;&gt;DB-Engines&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.modb.pro/dbRank&quot;&gt;墨天轮&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;当前排名现状&quot;&gt;当前排名现状&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Oracle&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;MySQL&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Microsoft SQL Server&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;PostgreSQL&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;MongoDB&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Redis&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Elasticsearch&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;SQLite&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Microsoft Access&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Cassandra&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;MariaDB&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;七周七数据库提及的&quot;&gt;七周七数据库提及的&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;PostgreSQL&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Riak&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Apache HBase&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Apache CouchDB&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;MongoDB&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Neo4j&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Redis&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;自己真正玩过的&quot;&gt;自己真正玩过的&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;MySQL&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;PostgreSQL&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;MongoDB&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Redis&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;SQLite&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-</description>
-        <pubDate>Sat, 01 Jan 2022 08:00:00 +0800</pubDate>
-        <link>http://www.louishwh.top/2022/01/01/%E6%95%B0%E6%8D%AE%E5%BA%93@%E6%8E%92%E5%90%8D/</link>
-        <guid isPermaLink="true">http://www.louishwh.top/2022/01/01/%E6%95%B0%E6%8D%AE%E5%BA%93@%E6%8E%92%E5%90%8D/</guid>
-        
-        <category>【数据库】</category>
-        
-        
-        <category>【数据库】</category>
         
       </item>
     

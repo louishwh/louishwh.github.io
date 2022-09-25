@@ -1,6 +1,6 @@
-I"{<h3 id="内容概要">内容概要</h3>
+I"B<h3 id="内容概要">内容概要</h3>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- 介绍
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- 介绍
 - 编译
 - 文件结构介绍
 - 基本操作
@@ -77,7 +77,7 @@
 
 <h4 id="文件结构介绍">文件结构介绍</h4>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>output
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>output
 │
 ├── conf  	// 创始的共识采用tdpos模式，指定单一地址有权利出块
 │  	│
@@ -228,7 +228,7 @@
     <blockquote>
       <p>./xchain-cli account new –desc account.des
 合约内容如下:
-<code class="language-plaintext highlighter-rouge">
+<code class="highlighter-rouge">
  {
  "module_name": "xkernel",
  "method_name": "NewAccount",
