@@ -8,6 +8,7 @@ layout: default
         {% include lefttree.html %} 
       </div>
     </div>
+    
     <div class="col-md-9" role="main">
       <div class="panel docs-content">
         <div class="wrapper">
@@ -16,7 +17,9 @@ layout: default
               <!--
                 <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
               -->
-              <div class="meta">发布时间 <span class="postdate">{{ page.date | date: "%Y-%m-%d" }}</span>  <a target="_blank" href="{{site.url}}">{{ site.author }}</a></div>
+              <div class="meta"> <span class="postdate">{{ page.date | date: "%Y-%m-%d-(%u)-%p:%j" }}</span>  
+                <!-- <a target="_blank" href="{{site.url}}">{{ site.author }}</a> -->
+              </div>
               <br />
             </header>
             <article class="post-content">

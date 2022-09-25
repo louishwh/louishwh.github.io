@@ -2,487 +2,842 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title></title>
-    <description>hwh</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 07 Sep 2021 23:30:37 +0800</pubDate>
-    <lastBuildDate>Tue, 07 Sep 2021 23:30:37 +0800</lastBuildDate>
-    <generator>Jekyll v4.0.0</generator>
+    <description></description>
+    <link>http://www.louishwh.top/</link>
+    <atom:link href="http://www.louishwh.top/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 06 Mar 2022 11:33:37 +0800</pubDate>
+    <lastBuildDate>Sun, 06 Mar 2022 11:33:37 +0800</lastBuildDate>
+    <generator>Jekyll v4.2.0</generator>
     
       <item>
-        <title>Python技能树</title>
-        <description>&lt;h2 id=&quot;问题的提出与解决&quot;&gt;问题的提出与解决&lt;/h2&gt;
+        <title>股票市场</title>
+        <description>
+&lt;hr /&gt;
+&lt;p&gt;layout: post
+title: 股票市场
+date: 2022-03-06 09:00:00 +0800
+categories: 【】
+tag: 【ESP】
+sources: 【股票】
+—&lt;/p&gt;
+</description>
+        <pubDate>Sun, 06 Mar 2022 00:00:00 +0800</pubDate>
+        <link>http://www.louishwh.top/2022/03/06/%E8%82%A1%E7%A5%A8%E5%B8%82%E5%9C%BA/</link>
+        <guid isPermaLink="true">http://www.louishwh.top/2022/03/06/%E8%82%A1%E7%A5%A8%E5%B8%82%E5%9C%BA/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>服务端@java@springboot</title>
+        <description>
+</description>
+        <pubDate>Mon, 31 Jan 2022 00:00:00 +0800</pubDate>
+        <link>http://www.louishwh.top/2022/01/31/%E6%9C%8D%E5%8A%A1%E7%AB%AF@Java@SpringBoot/</link>
+        <guid isPermaLink="true">http://www.louishwh.top/2022/01/31/%E6%9C%8D%E5%8A%A1%E7%AB%AF@Java@SpringBoot/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>服务端@Java@Spring体系</title>
+        <description>
+</description>
+        <pubDate>Sat, 29 Jan 2022 21:00:00 +0800</pubDate>
+        <link>http://www.louishwh.top/2022/01/29/%E6%9C%8D%E5%8A%A1%E7%AB%AF@Java@Spring%E4%BD%93%E7%B3%BB/</link>
+        <guid isPermaLink="true">http://www.louishwh.top/2022/01/29/%E6%9C%8D%E5%8A%A1%E7%AB%AF@Java@Spring%E4%BD%93%E7%B3%BB/</guid>
+        
+        <category>【Java】</category>
+        
+        
+        <category>【服务端】</category>
+        
+      </item>
+    
+      <item>
+        <title>服务端@Java@Spring</title>
+        <description>&lt;h3 id=&quot;spring核心架构&quot;&gt;Spring核心架构&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;AOP&lt;/li&gt;
+  &lt;li&gt;ORM&lt;/li&gt;
+  &lt;li&gt;Web&lt;/li&gt;
+  &lt;li&gt;Web MVC&lt;/li&gt;
+  &lt;li&gt;DAO&lt;/li&gt;
+  &lt;li&gt;Context&lt;/li&gt;
+  &lt;li&gt;Core&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;###&lt;/p&gt;
+</description>
+        <pubDate>Sat, 22 Jan 2022 21:00:00 +0800</pubDate>
+        <link>http://www.louishwh.top/2022/01/22/%E6%9C%8D%E5%8A%A1%E7%AB%AF@Java@Spring/</link>
+        <guid isPermaLink="true">http://www.louishwh.top/2022/01/22/%E6%9C%8D%E5%8A%A1%E7%AB%AF@Java@Spring/</guid>
+        
+        <category>【Java】</category>
+        
+        
+        <category>【服务端】</category>
+        
+      </item>
+    
+      <item>
+        <title>ESP32初体验</title>
+        <description>
+</description>
+        <pubDate>Sun, 16 Jan 2022 21:00:00 +0800</pubDate>
+        <link>http://www.louishwh.top/2022/01/16/ESP32%E5%88%9D%E4%BD%93%E9%AA%8C/</link>
+        <guid isPermaLink="true">http://www.louishwh.top/2022/01/16/ESP32%E5%88%9D%E4%BD%93%E9%AA%8C/</guid>
+        
+        <category>【ESP】</category>
+        
+        
+        <category>【物联网】</category>
+        
+      </item>
+    
+      <item>
+        <title>服务端@Java@核心拓展库</title>
+        <description>&lt;h3 id=&quot;guava&quot;&gt;&lt;a href=&quot;https://github.com/google/guava&quot;&gt;Guava&lt;/a&gt;&lt;/h3&gt;
+
 &lt;ol&gt;
-  &lt;li&gt;为什么用Python？
+  &lt;li&gt;基本工具 [Basic utilities]&lt;/li&gt;
+  &lt;li&gt;集合[Collections]&lt;/li&gt;
+  &lt;li&gt;缓存[Caches]&lt;/li&gt;
+  &lt;li&gt;函数式风格[Functional idioms]&lt;/li&gt;
+  &lt;li&gt;并发[Concurrency]&lt;/li&gt;
+  &lt;li&gt;字符串处理[Strings]&lt;/li&gt;
+  &lt;li&gt;原生类型[Primitives]&lt;/li&gt;
+  &lt;li&gt;区间[Ranges]&lt;/li&gt;
+  &lt;li&gt;I/O&lt;/li&gt;
+  &lt;li&gt;散列[Hash]&lt;/li&gt;
+  &lt;li&gt;事件总线[EventBus]&lt;/li&gt;
+  &lt;li&gt;数学运算[Math]&lt;/li&gt;
+  &lt;li&gt;反射[Reflection]&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;apache-commons&quot;&gt;&lt;a href=&quot;https://github.com/apache/commons-lang&quot;&gt;Apache Commons&lt;/a&gt;&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;Commons BeanUtils&lt;/li&gt;
+  &lt;li&gt;Commons CLI&lt;/li&gt;
+  &lt;li&gt;Commons Codec&lt;/li&gt;
+  &lt;li&gt;Commons Collections&lt;/li&gt;
+  &lt;li&gt;Commons Configuration&lt;/li&gt;
+  &lt;li&gt;Commons DbUtils&lt;/li&gt;
+  &lt;li&gt;Commons FileUpload&lt;/li&gt;
+  &lt;li&gt;Commons HttpClient&lt;/li&gt;
+  &lt;li&gt;Commons IO&lt;/li&gt;
+  &lt;li&gt;Commons JXPath&lt;/li&gt;
+  &lt;li&gt;Commons Lang&lt;/li&gt;
+  &lt;li&gt;Commons Logging&lt;/li&gt;
+  &lt;li&gt;Commons Math&lt;/li&gt;
+  &lt;li&gt;Commons Net&lt;/li&gt;
+  &lt;li&gt;Commons Validator&lt;/li&gt;
+  &lt;li&gt;Commons Virtual File System&lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+        <pubDate>Sat, 15 Jan 2022 21:00:00 +0800</pubDate>
+        <link>http://www.louishwh.top/2022/01/15/%E6%9C%8D%E5%8A%A1%E7%AB%AF@Java@%E6%A0%B8%E5%BF%83%E6%8B%93%E5%B1%95%E5%BA%93/</link>
+        <guid isPermaLink="true">http://www.louishwh.top/2022/01/15/%E6%9C%8D%E5%8A%A1%E7%AB%AF@Java@%E6%A0%B8%E5%BF%83%E6%8B%93%E5%B1%95%E5%BA%93/</guid>
+        
+        <category>【Java】</category>
+        
+        
+        <category>【服务端】</category>
+        
+      </item>
+    
+      <item>
+        <title>服务端@Java@核心库</title>
+        <description>&lt;h3 id=&quot;java标准库&quot;&gt;&lt;a href=&quot;https://docs.oracle.com/en/java/javase/index.html&quot;&gt;Java@标准库&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/javase/8/&quot;&gt;Java8@标准库&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/en/java/javase/11/core/java-core-libraries1.html&quot;&gt;Java11@标准库&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/en/java/javase/17/core/java-core-libraries1.html&quot;&gt;Java17@标准库&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;java17核心库&quot;&gt;Java17@核心库&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;序列化过滤
     &lt;ul&gt;
-      &lt;li&gt;快：开发快、学习快&lt;/li&gt;
-      &lt;li&gt;简：简单易用&lt;/li&gt;
-      &lt;li&gt;多：工具库多&lt;/li&gt;
+      &lt;li&gt;解决反序列化漏洞&lt;/li&gt;
+      &lt;li&gt;Java序列化过滤器&lt;/li&gt;
+      &lt;li&gt;过滤器工厂&lt;/li&gt;
+      &lt;li&gt;Allow-Lists and Reject-Lists&lt;/li&gt;
+      &lt;li&gt;基于模式的过滤器&lt;/li&gt;
+      &lt;li&gt;自定义过滤器&lt;/li&gt;
+      &lt;li&gt;设置过滤器工厂&lt;/li&gt;
+      &lt;li&gt;内置的过滤器&lt;/li&gt;
+      &lt;li&gt;日志过滤操作&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;Python能用来干什么？
+  &lt;li&gt;增强弃用
     &lt;ul&gt;
-      &lt;li&gt;数据爬取&lt;/li&gt;
-      &lt;li&gt;自动化运维&lt;/li&gt;
-      &lt;li&gt;自动化测试&lt;/li&gt;
-      &lt;li&gt;Web开发&lt;/li&gt;
-      &lt;li&gt;数据分析&lt;/li&gt;
-      &lt;li&gt;常用PC客户端&lt;/li&gt;
-      &lt;li&gt;很多常用的工具…
-        &lt;ul&gt;
-          &lt;li&gt;你能想象的…&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
+      &lt;li&gt;JDK中已弃用&lt;/li&gt;
+      &lt;li&gt;如何弃用API&lt;/li&gt;
+      &lt;li&gt;通知和警告&lt;/li&gt;
+      &lt;li&gt;运行jdeprscan&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;Python开发者应该具备的技能？
-    &lt;ul&gt;
-      &lt;li&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;什么人需要Python开发者这样的角色？
+  &lt;li&gt;XML目录API
  -
     &lt;ul&gt;
       &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;创建不可修改的列表、集合和映射
+    &lt;ul&gt;
+      &lt;li&gt;用例&lt;/li&gt;
+      &lt;li&gt;语法&lt;/li&gt;
+      &lt;li&gt;创建集合的不可修改副本&lt;/li&gt;
+      &lt;li&gt;从流中创建不可修改的集合&lt;/li&gt;
+      &lt;li&gt;随机迭代顺序&lt;/li&gt;
+      &lt;li&gt;不可修改的集合&lt;/li&gt;
+      &lt;li&gt;空间效率&lt;/li&gt;
+      &lt;li&gt;线程安全&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;进程API
+    &lt;ul&gt;
+      &lt;li&gt;进程相关的类与接口&lt;/li&gt;
+      &lt;li&gt;创建进程&lt;/li&gt;
+      &lt;li&gt;获取进程信息&lt;/li&gt;
+      &lt;li&gt;从进程重定向输出&lt;/li&gt;
+      &lt;li&gt;用流过滤进程&lt;/li&gt;
+      &lt;li&gt;当进程调用onExit方法终止时处理&lt;/li&gt;
+      &lt;li&gt;控制对进程敏感信息的访问&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;首选API
+    &lt;ul&gt;
+      &lt;li&gt;比较首选项API和其他机制&lt;/li&gt;
+      &lt;li&gt;用法说明&lt;/li&gt;
+      &lt;li&gt;设计常见问题&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Java日志概述
+    &lt;ul&gt;
+      &lt;li&gt;控制流程概述&lt;/li&gt;
+      &lt;li&gt;日志级别&lt;/li&gt;
+      &lt;li&gt;记录仪&lt;/li&gt;
+      &lt;li&gt;日志记录方法&lt;/li&gt;
+      &lt;li&gt;处理程序&lt;/li&gt;
+      &lt;li&gt;格式化程序&lt;/li&gt;
+      &lt;li&gt;日志管理器&lt;/li&gt;
+      &lt;li&gt;配置文件&lt;/li&gt;
+      &lt;li&gt;默认配置&lt;/li&gt;
+      &lt;li&gt;动态配置更新&lt;/li&gt;
+      &lt;li&gt;本地方法&lt;/li&gt;
+      &lt;li&gt;文档类型定义&lt;/li&gt;
+      &lt;li&gt;唯一的消息ID&lt;/li&gt;
+      &lt;li&gt;安全&lt;/li&gt;
+      &lt;li&gt;配置管理&lt;/li&gt;
+      &lt;li&gt;打包&lt;/li&gt;
+      &lt;li&gt;本地化&lt;/li&gt;
+      &lt;li&gt;远程访问和序列化&lt;/li&gt;
+      &lt;li&gt;实例&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Java NIO
+    &lt;ul&gt;
+      &lt;li&gt;Grep NIO&lt;/li&gt;
+      &lt;li&gt;校验NIO示例&lt;/li&gt;
+      &lt;li&gt;时间查询NIO示例&lt;/li&gt;
+      &lt;li&gt;时间服务器NIO示例&lt;/li&gt;
+      &lt;li&gt;非阻塞时间服务器NIO示例&lt;/li&gt;
+      &lt;li&gt;Internet协议和UNIX域套接字NIO示例&lt;/li&gt;
+      &lt;li&gt;文件NIO的例子:
+        &lt;ul&gt;
+          &lt;li&gt;Chmod文件NIO示例&lt;/li&gt;
+          &lt;li&gt;Copy File NIO示例&lt;/li&gt;
+          &lt;li&gt;磁盘占用率文件NIO示例&lt;/li&gt;
+          &lt;li&gt;自定义文件属性文件NIO示例&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Java网络
+    &lt;ul&gt;
+      &lt;li&gt;Java网络API
+        &lt;ul&gt;
+          &lt;li&gt;java.net: 实现网络应用的类库&lt;/li&gt;
+          &lt;li&gt;java.net.http: HTTP Client/WebSocket&lt;/li&gt;
+          &lt;li&gt;javax.net: 套接字的类库&lt;/li&gt;
+          &lt;li&gt;javax.net.ssl: 安全套接字类库&lt;/li&gt;
+          &lt;li&gt;jdk.net: 针对java.net和java.nio.channels的平台选项&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;网络系统属性
+        &lt;ul&gt;
+          &lt;li&gt;使用java命令的-D选项&lt;/li&gt;
+          &lt;li&gt;使用System.setProperty(String, String)&lt;/li&gt;
+          &lt;li&gt;在$JAVA_HOME/conf/net.properties中指定.注意，在此文件中只能指定与代理相关的属性。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;伪随机数生成器
+    &lt;ul&gt;
+      &lt;li&gt;伪随机数发生器的特性&lt;/li&gt;
+      &lt;li&gt;用随机发生器接口生成伪随机数&lt;/li&gt;
+      &lt;li&gt;在多线程应用程序中生成伪随机数
+        &lt;ul&gt;
+          &lt;li&gt;动态创建新的生成器&lt;/li&gt;
+          &lt;li&gt;创建生成器流&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;选择伪随机数生成器算法&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h3 id=&quot;参考的文件&quot;&gt;参考的文件&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;
 </description>
-        <pubDate>Tue, 07 Sep 2021 21:30:00 +0800</pubDate>
-        <link>http://localhost:4000/2021/09/07/Python/</link>
-        <guid isPermaLink="true">http://localhost:4000/2021/09/07/Python/</guid>
+        <pubDate>Tue, 04 Jan 2022 21:00:00 +0800</pubDate>
+        <link>http://www.louishwh.top/2022/01/04/%E6%9C%8D%E5%8A%A1%E7%AB%AF@Java@%E6%A0%B8%E5%BF%83%E5%BA%93/</link>
+        <guid isPermaLink="true">http://www.louishwh.top/2022/01/04/%E6%9C%8D%E5%8A%A1%E7%AB%AF@Java@%E6%A0%B8%E5%BF%83%E5%BA%93/</guid>
         
-        <category>编程</category>
+        <category>【Java】</category>
         
         
-        <category>【语言使用】</category>
+        <category>【服务端】</category>
         
       </item>
     
       <item>
-        <title>Scrapy使用教程</title>
-        <description>&lt;h2 id=&quot;执行过程&quot;&gt;执行过程&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;逻辑过程
-    &lt;pre&gt;&lt;code class=&quot;language-mermaid&quot;&gt;  graph LR
-  A[URL]--&amp;gt;B[Request]
-  B[Request]--&amp;gt;C[Response]
-  C[Response]--&amp;gt;D[Item]
-  D[Item]--&amp;gt;E[More]
-&lt;/code&gt;&lt;/pre&gt;
-  &lt;/li&gt;
-  &lt;li&gt;代码执行过程: 我代码中用到的地方
-    &lt;pre&gt;&lt;code class=&quot;language-mermaid&quot;&gt;  graph LR
-  A[Spider.start_requests]--&amp;gt;B[Middleware.process_request]
-  B[Middleware.process_request]--&amp;gt;C[Spider.parse]
-  C[Spider.parse]--&amp;gt;D[Pipeline.process_item]
-  D[Pipeline.process_item]--&amp;gt;E[MySQL]
-&lt;/code&gt;&lt;/pre&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;问提的与解决&quot;&gt;问提的与解决&lt;/h2&gt;
+        <title>服务端@Java</title>
+        <description>&lt;h3 id=&quot;java开发工具&quot;&gt;Java@开发工具&lt;/h3&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;start_urls只能配置一个数组，如果我想动态配置爬取的源头怎么办？&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;重写 Spider 的 start_requests 函数，在里面设置请求&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;如果我通过请求结果，发起新的请求怎么写？&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;直接在结果里面通过 yield发起请求&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;如果我通过请求结果发起新的请求，怎么处理新的响应结果？
+  &lt;li&gt;开发工具
     &lt;ul&gt;
-      &lt;li&gt;
-        &lt;p&gt;在Spider里新增需要的处理的函数，配置 response 参数即可。&lt;/p&gt;
-
+      &lt;li&gt;Java IDE
         &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;https://www.jetbrains.com/idea/&quot;&gt;IntelliJ IDEA&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://www.eclipse.org/downloads/&quot;&gt;Eclipse IDE&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://netbeans.org/&quot;&gt;NetBeans&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;编辑器
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;https://code.visualstudio.com/&quot;&gt;Visual Studio Code&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;http://www.sublimetext.com/&quot;&gt;Sublime Text&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://notepad-plus-plus.org/&quot;&gt;Notepad++(Windows)&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://www.editplus.com/&quot;&gt;EditPlus&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;开发环境
+    &lt;ul&gt;
+      &lt;li&gt;JDK（Java Development Kit）
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;www.oracle.com&quot;&gt;Oracle JDK(JRL-个人研究)&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;http://openjdk.java.net/&quot;&gt;Open JDK(GPL V2-可商用)&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Java的三大类
+        &lt;ul&gt;
+          &lt;li&gt;Java ME (Java Micro Edition)
+            &lt;ul&gt;
+              &lt;li&gt;针对小型设备&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Jave EE (Java enterprise edition)
+            &lt;ul&gt;
+              &lt;li&gt;SE = ME + 其他类库&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Java EE (Java Standard Edition)
+            &lt;ul&gt;
+              &lt;li&gt;EE = SE + 企业级应用类&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://www.java.com/en/download/help/release_changes.html&quot;&gt;Java版本&lt;/a&gt;
+        &lt;ul&gt;
+          &lt;li&gt;Java8(LTS)&lt;/li&gt;
+          &lt;li&gt;Java9&lt;/li&gt;
+          &lt;li&gt;Java10&lt;/li&gt;
+          &lt;li&gt;Java11(LTS)&lt;/li&gt;
+          &lt;li&gt;Java12&lt;/li&gt;
+          &lt;li&gt;Java13&lt;/li&gt;
+          &lt;li&gt;Java14&lt;/li&gt;
+          &lt;li&gt;Java15&lt;/li&gt;
+          &lt;li&gt;Java16&lt;/li&gt;
+          &lt;li&gt;Java17(LTS) &amp;lt;— 当前版本&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/javase/specs/index.html&quot;&gt;Java Virtual Machine(JVM)&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://www.oracle.com/java/technologies/javase/vmoptions-jsp.html&quot;&gt;HotSpot VM&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://www.oracle.com/middleware/technologies/jrockit/jrockit-mission-control.html&quot;&gt;JRockit VM&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://www.ibm.com/docs/en/sdk-java-technology/7?topic=i-j9-virtual-machine-jvm-2&quot;&gt;J9&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://harmony.apache.org/&quot;&gt;Harmony&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://www.azul.com/&quot;&gt;Azul VM&lt;/a&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;https://www.zhihu.com/question/24938498?sort=created&quot;&gt;相关信息&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;java标准库&quot;&gt;&lt;a href=&quot;https://docs.oracle.com/en/java/javase/index.html&quot;&gt;Java@标准库&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/javase/8/&quot;&gt;Java8@标准库&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/en/java/javase/11/core/java-core-libraries1.html&quot;&gt;Java11@标准库&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/en/java/javase/17/core/java-core-libraries1.html&quot;&gt;Java17@标准库&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;java第三方库&quot;&gt;Java@第三方库&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;核心拓展库
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/google/guava&quot;&gt;Guava&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/apache/commons-lang&quot;&gt;Apache Commons&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Web库
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/spring-projects/spring-framework&quot;&gt;Spring&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://www.gwtproject.org/&quot;&gt;Google Web Toolkit&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://tapestry.apache.org/&quot;&gt;Tapestry&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;数据库
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;http://www.mybatis.org/mybatis-3/&quot;&gt;Mybatis&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://spring.io/projects/spring-framework&quot;&gt;Spring JDBC&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://spring.io/projects/spring-data&quot;&gt;Spring Data&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://hibernate.org/&quot;&gt;hibernate&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/p6spy/p6spy&quot;&gt;JDBC故障诊断库P6spy&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;日志
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://www.slf4j.org/&quot;&gt;SLF4J&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://logging.apache.org/log4j/2.x/&quot;&gt;Log4j&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://logback.qos.ch/&quot;&gt;Logback&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;数据解析
+    &lt;ul&gt;
+      &lt;li&gt;JSON
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;https://github.com/FasterXML/jackson&quot;&gt;Jackson&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://github.com/google/gson&quot;&gt;Gson&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://github.com/alibaba/fastjson&quot;&gt;FastJson&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;HTML
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;https://jsoup.org/&quot;&gt;jsoup&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;XML
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;https://github.com/hunterhacker/jdom&quot;&gt;JDOM&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://github.com/dom4j/dom4j&quot;&gt;JDOM4J&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;http://xerces.apache.org/xerces-j/&quot;&gt;xerces&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;http://x-stream.github.io/download.html&quot;&gt;Xstream&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;序列化
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;https://github.com/protocolbuffers/protobuf/tree/master/java&quot;&gt;Google Protocol Buffer&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;文档处理
+    &lt;ul&gt;
+      &lt;li&gt;Office文档处理
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;https://github.com/junit-team/junit4&quot;&gt;Apache POI&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://github.com/plutext/docx4j&quot;&gt;docx4j&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;PDF
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;https://itextpdf.com/en&quot;&gt;iText&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://pdfbox.apache.org/&quot;&gt;Apache PDF box&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://xmlgraphics.apache.org/fop/&quot;&gt;Apache FOP&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;单元测试
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/junit-team/junit4&quot;&gt;JUnit&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/mockito/mockito&quot;&gt;Mockito&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/powermock/powermock&quot;&gt;PowerMock&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;字节码库
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;http://www.javassist.org/&quot;&gt;javassist&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/cglib/cglib&quot;&gt;cglib&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;邮件API
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;&quot;&gt;javax.mail&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://commons.apache.org/proper/commons-email/download_email.cgi&quot;&gt;Apache Commons Email&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;网络库
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://netty.io/&quot;&gt;Netty&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://mina.apache.org/&quot;&gt;Apache MINA&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;Http
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;https://hc.apache.org/httpclient-legacy/&quot;&gt;HttpClient&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://hc.apache.org/httpcomponents-core-4.4.x/index.html&quot;&gt;HttpCore&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://square.github.io/okhttp/&quot;&gt;Okhttp&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Sun, 02 Jan 2022 09:00:00 +0800</pubDate>
+        <link>http://www.louishwh.top/2022/01/02/%E6%9C%8D%E5%8A%A1%E7%AB%AF@Java/</link>
+        <guid isPermaLink="true">http://www.louishwh.top/2022/01/02/%E6%9C%8D%E5%8A%A1%E7%AB%AF@Java/</guid>
+        
+        <category>【Java】</category>
+        
+        
+        <category>【服务端】</category>
+        
+      </item>
+    
+      <item>
+        <title>服务端@技能点</title>
+        <description>&lt;h3 id=&quot;服务端的比对&quot;&gt;服务端的比对&lt;/h3&gt;
+
+&lt;hr /&gt;
+&lt;ul&gt;
+  &lt;li&gt;Web框架性能排名
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://www.techempower.com/benchmarks/#section=data-r19&amp;amp;hw=ph&amp;amp;test=fortune&quot;&gt;Web Framework Benchmarks&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;一些观点
+    &lt;ol&gt;
+      &lt;li&gt;Web框架性能有差，学习曲线、熟练程度、团队技能要求也有差&lt;/li&gt;
+      &lt;li&gt;在兴趣和好奇下可以去追求极致的性能&lt;/li&gt;
+      &lt;li&gt;在业务和发展下要追求稳定性、可用性、安全性和性能的平衡&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;ul&gt;
+  &lt;li&gt;数据库排行榜
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://db-engines.com/en/ranking&quot;&gt;DB-Engines&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://www.modb.pro/dbRank&quot;&gt;墨天轮&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;一些观点
+    &lt;ol&gt;
+      &lt;li&gt;优先把MySQL或PostgreSQL搞明白&lt;/li&gt;
+      &lt;li&gt;Nosql可以深入研究一下Redis和HBase&lt;/li&gt;
+      &lt;li&gt;当然根据自身需求学习：能用(80%)-&amp;gt;用好(20%)-&amp;gt;用到极致(4%)-&amp;gt;自制(0.8%)&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;服务端的技能点&quot;&gt;服务端的技能点&lt;/h3&gt;
+
+&lt;hr /&gt;
+&lt;ul&gt;
+  &lt;li&gt;计算机常识(必须懂得的概念)
+    &lt;ul&gt;
+      &lt;li&gt;定义
+        &lt;ul&gt;
+          &lt;li&gt;作为计算机从业人员，必须掌握的概念&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;内容
+        &lt;ul&gt;
+          &lt;li&gt;算法+数据结构&lt;/li&gt;
+          &lt;li&gt;操作系统&lt;/li&gt;
+          &lt;li&gt;数据库&lt;/li&gt;
+          &lt;li&gt;网络&lt;/li&gt;
+          &lt;li&gt;编码&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;ul&gt;
+  &lt;li&gt;编程语言(必须深入了解一种)
+    &lt;ul&gt;
+      &lt;li&gt;常见的选择
+        &lt;ul&gt;
+          &lt;li&gt;Java/Kotlin(推荐👍)
+            &lt;ul&gt;
+              &lt;li&gt;技术体系完善&lt;/li&gt;
+              &lt;li&gt;岗位最多&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Go(推荐👍)
+            &lt;ul&gt;
+              &lt;li&gt;编译速度天下第一☝️&lt;/li&gt;
+              &lt;li&gt;并发简单易用且高效&lt;/li&gt;
+              &lt;li&gt;生态也不错&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Python(推荐👍)
+            &lt;ul&gt;
+              &lt;li&gt;强大的第三方库资源&lt;/li&gt;
+              &lt;li&gt;语法简洁&lt;/li&gt;
+              &lt;li&gt;性能不够，C++来凑&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;.NET&lt;/li&gt;
+          &lt;li&gt;C/C++
+            &lt;ul&gt;
+              &lt;li&gt;速度天下第一&lt;/li&gt;
+              &lt;li&gt;适合对于性能要求很高的系统&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Rust
+            &lt;ul&gt;
+              &lt;li&gt;性能接近C/C++&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Node
+            &lt;ul&gt;
+              &lt;li&gt;优势在于密集IO&lt;/li&gt;
+              &lt;li&gt;在较高的并发和尽可能的节省内存&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;PHP
+            &lt;ul&gt;
+              &lt;li&gt;小站用的比较多&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Ruby
+            &lt;ul&gt;
+              &lt;li&gt;国外用的比较多&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Swift
+            &lt;ul&gt;
+              &lt;li&gt;⚠️ 纯粹为iOSer们自娱自乐&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;一些观点
+        &lt;ol&gt;
+          &lt;li&gt;编程语言本身就是一组实现了的数据结构和算法的结合体
+            &lt;ul&gt;
+              &lt;li&gt;编程范式是构建和执行代码的思想&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;编程语言本身各有千秋
+            &lt;ul&gt;
+              &lt;li&gt;编程范式的支持&lt;/li&gt;
+              &lt;li&gt;性能差异&lt;/li&gt;
+              &lt;li&gt;语言生态差异&lt;/li&gt;
+              &lt;li&gt;学习曲线差异&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;学习的意见
+            &lt;ul&gt;
+              &lt;li&gt;接纳不同，不设限制&lt;/li&gt;
+              &lt;li&gt;用其所长，发挥价值&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;ul&gt;
+  &lt;li&gt;Web框架
+    &lt;ul&gt;
+      &lt;li&gt;语言自成体系
+        &lt;ul&gt;
+          &lt;li&gt;Java
+            &lt;ul&gt;
+              &lt;li&gt;&lt;a href=&quot;https://spring.io/&quot;&gt;Spring系列&lt;/a&gt;
+                &lt;ul&gt;
+                  &lt;li&gt;Spring 是核心引擎&lt;/li&gt;
+                  &lt;li&gt;&lt;a href=&quot;https://spring.io/projects/spring-framework&quot;&gt;Spring MVC&lt;/a&gt;
+                    &lt;ul&gt;
+                      &lt;li&gt;基于Spring的MVC框架&lt;/li&gt;
+                    &lt;/ul&gt;
+                  &lt;/li&gt;
+                  &lt;li&gt;&lt;a href=&quot;https://spring.io/projects/spring-boot&quot;&gt;Spring Boot&lt;/a&gt;
+                    &lt;ul&gt;
+                      &lt;li&gt;Spring下的一组开发包(包含Spring MVC)&lt;/li&gt;
+                    &lt;/ul&gt;
+                  &lt;/li&gt;
+                  &lt;li&gt;&lt;a href=&quot;https://spring.io/projects/spring-cloud&quot;&gt;Sprint Cloud&lt;/a&gt;
+                    &lt;ul&gt;
+                      &lt;li&gt;微服务解决方案(包含Spring Boot)&lt;/li&gt;
+                    &lt;/ul&gt;
+                  &lt;/li&gt;
+                  &lt;li&gt;&lt;a href=&quot;https://www.zhihu.com/question/64671972&quot;&gt;MVC &amp;amp; Boot&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href=&quot;https://www.zhihu.com/question/280318988&quot;&gt;Boot &amp;amp; Cloud&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://www.dropwizard.io/en/latest/&quot;&gt;Dropwizard&lt;/a&gt;
+                &lt;ul&gt;
+                  &lt;li&gt;&lt;a href=&quot;https://www.overops.com/blog/java-bootstrap-dropwizard-vs-spring-boot/&quot;&gt;可参考&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://dev.to/speedwheel/top-6-web-frameworks-for-go-as-of-2017-34i&quot;&gt;Go&lt;/a&gt;
+            &lt;ul&gt;
+              &lt;li&gt;&lt;a href=&quot;https://github.com/astaxie/beego&quot;&gt;Beego&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://github.com/kataras/iris&quot;&gt;Iris&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://github.com/gin-gonic/gin&quot;&gt;Gin&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://github.com/labstack/echo&quot;&gt;Echo&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://github.com/revel/revel&quot;&gt;Revel&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://www.cnblogs.com/an-wen/p/11330834.html&quot;&gt;Python&lt;/a&gt;
+            &lt;ul&gt;
+              &lt;li&gt;&lt;a href=&quot;https://www.djangoproject.com/&quot;&gt;Django&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://www.tornadoweb.org/en/stable/&quot;&gt;Tornado&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://dormousehole.readthedocs.io/en/latest/&quot;&gt;Flask&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://twistedmatrix.com/trac/&quot;&gt;Twisted&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
           &lt;li&gt;
-            &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;yield scrapy.Request(next_page, callback=self.parse_new)&lt;/code&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=&quot;https://www.zhihu.com/question/366937369&quot;&gt;.NET&lt;/a&gt;&lt;/p&gt;
           &lt;/li&gt;
-          &lt;li&gt;
-            &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;def parse_new(self, response, **kwargs)&lt;/code&gt;&lt;/p&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;如何把发起请求时候的参数传递到响应结果？
-    &lt;ul&gt;
-      &lt;li&gt;通过 Request 的 meta 参数，传输一个字典过去。&lt;/li&gt;
-      &lt;li&gt;通过 response.meta 拿到你存入的值。&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;如何给Spdier配置特点的中间件(middleware)、管道(pipelines)？
-    &lt;ul&gt;
-      &lt;li&gt;custom_settings
-        &lt;ul&gt;
-          &lt;li&gt;ITEM_PIPELINES&lt;/li&gt;
-          &lt;li&gt;SPIDER_MIDDLEWARES&lt;/li&gt;
-          &lt;li&gt;DOWNLOADER_MIDDLEWARES&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;对于一些异步加载的页面怎么处理？
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;h5 id=&quot;方案一splash&quot;&gt;方案一：splash&lt;/h5&gt;
-        &lt;ul&gt;
-          &lt;li&gt;docker 启动一个 Splash 代理服务：
+          &lt;li&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s?__biz=MzAxNDI5NzEzNg==&amp;amp;mid=2651164874&amp;amp;idx=1&amp;amp;sn=38efbfb036b5f667403d87a9d70bffb3&amp;amp;chksm=80644195b713c88368c88d73bd092c4132f1b6908b12036775cebef5edc9606fd08c14accf1e&amp;amp;scene=21#wechat_redirect&quot;&gt;C/C++&lt;/a&gt;
             &lt;ul&gt;
-              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;docker run -it -p 8050:8050 --rm scrapinghub/splash&lt;/code&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;settings 配置：
-            &lt;ul&gt;
-              &lt;li&gt;
-                &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  SPLASH_URL = 'http://host:port'
-  DUPEFILTER_CLASS = 'scrapy_splash.SplashAwareDupeFilter'	
-  HTTPCACHE_STORAGE = 'scrapy_splash.SplashAwareFSCacheStorage'
- 		SPIDER_MIDDLEWARES = {
-   		'scrapy_splash.SplashDeduplicateArgsMiddleware': 100,
-}	
-DOWNLOADER_MIDDLEWARES = {  
-   		'scrapy_splash.SplashCookiesMiddleware': 723,
-   		'scrapy_splash.SplashMiddleware': 725,
-   		'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware': 810
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;                &lt;/div&gt;
-              &lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;python 导入依赖
-  &lt;code class=&quot;highlighter-rouge&quot;&gt;pip3 install scrapy-splash&lt;/code&gt;&lt;/li&gt;
-          &lt;li&gt;Spider 中引入
-  &lt;code class=&quot;highlighter-rouge&quot;&gt;from scrapy_splash import SplashRequest&lt;/code&gt;&lt;/li&gt;
-          &lt;li&gt;请求替换
-            &lt;ul&gt;
-              &lt;li&gt;从：&lt;code class=&quot;highlighter-rouge&quot;&gt;scrapy.Request(stock_url, self.parse, meta=params, dont_filter=True)&lt;/code&gt;&lt;/li&gt;
-              &lt;li&gt;到：&lt;code class=&quot;highlighter-rouge&quot;&gt;SplashRequest(url, self.parse, meta=params, args={'wait': 0.5})&lt;/code&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;parse正常解析结果即可&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;h5 id=&quot;方案二selenium&quot;&gt;方案二：selenium&lt;/h5&gt;
-        &lt;ul&gt;
-          &lt;li&gt;python 导入依赖
-            &lt;ul&gt;
-              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;pip3 install selenium&lt;/code&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;配置 custom_settings：
-            &lt;ul&gt;
-              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
- 		'DOWNLOADER_MIDDLEWARES': {
-  	'ht_msg.middlewares.SeleniumDownloadMiddleware': 500
-  	}
-  	&lt;/code&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;创建中间件
-            &lt;ul&gt;
-              &lt;li&gt;```
-  from selenium.webdriver.chrome.options import Options
-  from selenium import webdriver
-  from scrapy.http import HtmlResponse&lt;/li&gt;
-            &lt;/ul&gt;
-
-            &lt;p&gt;class SeleniumDownloadMiddleware(object):
-  	  def &lt;strong&gt;init&lt;/strong&gt;(self):
-     	chrome_options = Options()
-     	chrome_options.add_argument(‘–headless’)
-     	chrome_options.add_argument(‘–disable-gpu’)
-     	chrome_options.add_argument(“window-size=1024,768”)
-     	chrome_options.add_argument(“–no-sandbox”)
-     	self.driver = webdriver.Chrome(chrome_options=chrome_options)&lt;/p&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-
-  	  def process_request(self, request, spider):
-        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;     	self.driver.get(request.url)
-     	time.sleep(12)
-     	source = self.driver.page_source
-     	url = self.driver.current_url
-     	return HtmlResponse(url=url, body=source, request=request, encoding=&quot;utf-8&quot;)
-	```
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;未完待续&quot;&gt;未完待续…..&lt;/h3&gt;
-
-&lt;h3 id=&quot;参考的文件&quot;&gt;参考的文件&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;scrapy:
-    &lt;ul&gt;
-      &lt;li&gt;文档
-        &lt;ul&gt;
-          &lt;li&gt;https://doc.scrapy.org/en/latest/topics/request-response.html#response-objects&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;教程
-        &lt;ul&gt;
-          &lt;li&gt;https://geek-docs.com/scrapy/scrapy-tutorials/scrapy-css-grammar.html&lt;/li&gt;
-          &lt;li&gt;https://www.jianshu.com/p/df9c0d1e9087&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;多种方案：爬取动态JS
-        &lt;ul&gt;
-          &lt;li&gt;https://zhuanlan.zhihu.com/p/130867872&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;splash教程
-        &lt;ul&gt;
-          &lt;li&gt;https://splash.readthedocs.io/en/stable/&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;配置可变的start_urls
-        &lt;ul&gt;
-          &lt;li&gt;https://blog.csdn.net/sirobot/article/details/105360486&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;splash
-        &lt;ul&gt;
-          &lt;li&gt;https://github.com/scrapy-plugins/scrapy-splash&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;xpath/css
-        &lt;ul&gt;
-          &lt;li&gt;https://zhuanlan.zhihu.com/p/65143300&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;不同spider配置不同的pipline:
-        &lt;ul&gt;
-          &lt;li&gt;https://blog.csdn.net/peiwang245/article/details/100071316&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;response传递参数：
-        &lt;ul&gt;
-          &lt;li&gt;https://blog.csdn.net/killeri/article/details/80255500&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;spider的setting优先级
-        &lt;ul&gt;
-          &lt;li&gt;https://blog.csdn.net/he_ranly/article/details/85092065&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;中间件的区别
-        &lt;ul&gt;
-          &lt;li&gt;https://www.jianshu.com/p/3a9a385b9483&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;scrapy部署
-    &lt;ul&gt;
-      &lt;li&gt;APscheduler
-        &lt;ul&gt;
-          &lt;li&gt;https://apscheduler.readthedocs.io/en/latest/&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;subprocess
-        &lt;ul&gt;
-          &lt;li&gt;https://www.runoob.com/w3cnote/python3-subprocess.html&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;APscheduler+scarpy
-        &lt;ul&gt;
-          &lt;li&gt;https://apscheduler.readthedocs.io/en/latest/userguide.html&lt;/li&gt;
-          &lt;li&gt;https://www.cnblogs.com/jdbc2nju/p/9563761.html&lt;/li&gt;
-          &lt;li&gt;https://www.jianshu.com/p/c37c46de3168&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Wed, 07 Apr 2021 10:50:00 +0800</pubDate>
-        <link>http://localhost:4000/2021/04/07/scrapy/</link>
-        <guid isPermaLink="true">http://localhost:4000/2021/04/07/scrapy/</guid>
-        
-        <category>编程</category>
-        
-        
-        <category>【工具使用】</category>
-        
-      </item>
-    
-      <item>
-        <title>Rxswift</title>
-        <description>
-</description>
-        <pubDate>Thu, 18 Mar 2021 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2021/03/18/RxSwift/</link>
-        <guid isPermaLink="true">http://localhost:4000/2021/03/18/RxSwift/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>记忆技术</title>
-        <description>&lt;h3 id=&quot;背景&quot;&gt;背景&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;记忆力还算不错&lt;/li&gt;
-  &lt;li&gt;记忆文字和数字速度有些慢&lt;/li&gt;
-  &lt;li&gt;急需提升的办法&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;解决方案&quot;&gt;解决方案&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;看到广告超级记忆课程
-    &lt;ul&gt;
-      &lt;li&gt;觉得理论还站的住&lt;/li&gt;
-      &lt;li&gt;有新方法可以试试
-        &lt;ul&gt;
-          &lt;li&gt;理论可行就是实践&lt;/li&gt;
-          &lt;li&gt;无非就是试错成本&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;学习方法
-    &lt;ul&gt;
-      &lt;li&gt;先看大概&lt;/li&gt;
-      &lt;li&gt;分段练习&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;理论基础&quot;&gt;理论基础&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;人的进化历程
-    &lt;ul&gt;
-      &lt;li&gt;视觉信息
-        &lt;ul&gt;
-          &lt;li&gt;大脑最擅长处理&lt;/li&gt;
-          &lt;li&gt;视觉生物都擅长&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;语言信息
-        &lt;ul&gt;
-          &lt;li&gt;随着语言诞生&lt;/li&gt;
-          &lt;li&gt;应该有几万年&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;文字信息
-        &lt;ul&gt;
-          &lt;li&gt;人类自创的符号系统&lt;/li&gt;
-          &lt;li&gt;大脑不擅长直接存储&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;数字信息
-        &lt;ul&gt;
-          &lt;li&gt;较为高级的抽象概念&lt;/li&gt;
-          &lt;li&gt;大脑也不擅长直接存储&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;信息处理的流程
-    &lt;ul&gt;
-      &lt;li&gt;获取信息
-        &lt;ul&gt;
-          &lt;li&gt;信息分类
-            &lt;ul&gt;
-              &lt;li&gt;图片&lt;/li&gt;
-              &lt;li&gt;声音&lt;/li&gt;
-              &lt;li&gt;文字&lt;/li&gt;
-              &lt;li&gt;数字&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;获取方式
-            &lt;ul&gt;
-              &lt;li&gt;看&lt;/li&gt;
-              &lt;li&gt;听&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;处理信息
-        &lt;ul&gt;
-          &lt;li&gt;化繁为简&lt;/li&gt;
-          &lt;li&gt;转换图片&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;存储信息
-        &lt;ul&gt;
-          &lt;li&gt;四大记忆方法
-            &lt;ul&gt;
-              &lt;li&gt;定位桩
+              &lt;li&gt;&lt;a href=&quot;https://github.com/facebook/proxygen&quot;&gt;Proxygen&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://github.com/ipkn/crow&quot;&gt;Crow&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://github.com/microsoft/cpprestsdk&quot;&gt;C++ REST SDK&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://github.com/an-tao/drogon&quot;&gt;Drogon&lt;/a&gt;
                 &lt;ul&gt;
-                  &lt;li&gt;大脑图书馆&lt;/li&gt;
+                  &lt;li&gt;这个现在还在性能榜第一☝️&lt;/li&gt;
                 &lt;/ul&gt;
               &lt;/li&gt;
-              &lt;li&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://github.com/oatpp/oatpp&quot;&gt;Oatpp&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://github.com/oktal/pistache/&quot;&gt;Pistache&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://github.com/matt-42/silicon/&quot;&gt;Silicon&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://github.com/civetweb/civetweb&quot;&gt;CivetWeb&lt;/a&gt;&lt;/li&gt;
             &lt;/ul&gt;
           &lt;/li&gt;
-          &lt;li&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;提取信息
-        &lt;ul&gt;
-          &lt;li&gt;通过线索&lt;/li&gt;
-          &lt;li&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://www.rust-lang.org/&quot;&gt;Rust&lt;/a&gt;
+            &lt;ul&gt;
+              &lt;li&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/398232138&quot;&gt;Rust的Web生态&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://actix.rs/&quot;&gt;Actix&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://rocket.rs/&quot;&gt;Rocket&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://github.com/tokio-rs/axum&quot;&gt;Axum&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://nodejs.org&quot;&gt;Node.js&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/111015050&quot;&gt;PHP&lt;/a&gt;
+            &lt;ul&gt;
+              &lt;li&gt;&lt;a href=&quot;https://laravel.com/&quot;&gt;Laravel&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://www.excellentwebworld.com/codeigniter-development/&quot;&gt;CodeIgniter&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://symfony.com/&quot;&gt;Symfony&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://www.zend.com/&quot;&gt;Zend&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://www.yiiframework.com/&quot;&gt;YII2&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://www.excellentwebworld.com/cakephp-development/&quot;&gt;Cakephp&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;http://www.ruby-lang.org&quot;&gt;Ruby&lt;/a&gt;
+            &lt;ul&gt;
+              &lt;li&gt;&lt;a href=&quot;https://github.com/rails/rails&quot;&gt;Ruby on Rails&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://github.com/merb/merb&quot;&gt;Merb&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://github.com/camping/mab&quot;&gt;Camping&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://github.com/Ramaze/ramaze&quot;&gt;Ramaze&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://www.swift.org/&quot;&gt;Swift 看看就得了，权当尝试&lt;/a&gt;
+            &lt;ul&gt;
+              &lt;li&gt;&lt;a href=&quot;https://github.com/perfectlySoft/Perfect&quot;&gt;Perfect&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://github.com/vapor/Vapor&quot;&gt;Vapor&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://github.com/Kitura/Kitura&quot;&gt;Kitura&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://github.com/zewo/Zewo&quot;&gt;Zewo&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&quot;自我的实践&quot;&gt;自我的实践&lt;/h4&gt;
-
+&lt;hr /&gt;
 &lt;ul&gt;
-  &lt;li&gt;定位桩练习
+  &lt;li&gt;数据库
     &lt;ul&gt;
-      &lt;li&gt;先构建定位桩系统
+      &lt;li&gt;关系数据库
         &lt;ul&gt;
-          &lt;li&gt;看过的电影
+          &lt;li&gt;&lt;a href=&quot;https://github.com/mysql&quot;&gt;MySQL&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://github.com/postgres/postgres&quot;&gt;PostgreSQL&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;NoSQL
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis&quot;&gt;Redis&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://github.com/neo4j/neo4j&quot;&gt;Neo4j&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://github.com/apache/hbase&quot;&gt;HBase&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://github.com/elastic/elasticsearch&quot;&gt;Elasticsearch&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://github.com/google/leveldb&quot;&gt;LevelDB&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://github.com/facebook/rocksdb&quot;&gt;RocksDB(基于LevelDB)&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;ul&gt;
+  &lt;li&gt;操作系统
+    &lt;ul&gt;
+      &lt;li&gt;开发环境
+        &lt;ul&gt;
+          &lt;li&gt;Windows&lt;/li&gt;
+          &lt;li&gt;MacOS&lt;/li&gt;
+          &lt;li&gt;Linux(还有很多)
             &lt;ul&gt;
-              &lt;li&gt;哈尔的移动城堡&lt;/li&gt;
-              &lt;li&gt;天空之城&lt;/li&gt;
-              &lt;li&gt;⚠️
+              &lt;li&gt;&lt;a href=&quot;https://ubuntu.com/&quot;&gt;Ubuntu&lt;/a&gt;
                 &lt;ul&gt;
-                  &lt;li&gt;一定要很熟悉&lt;/li&gt;
-                  &lt;li&gt;这些电影我都是看过十遍以上，剧情熟悉&lt;/li&gt;
+                  &lt;li&gt;&lt;a href=&quot;htts://Elementaryos.org&quot;&gt;Elementaryos&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href=&quot;http://linuxmint.com/&quot;&gt;Linuxmint&lt;/a&gt;&lt;/li&gt;
                 &lt;/ul&gt;
               &lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://www.kali.org/docs/&quot;&gt;Kali(侧重Web安全)&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://manjaro.org/&quot;&gt;Manjaro&lt;/a&gt;&lt;/li&gt;
             &lt;/ul&gt;
           &lt;/li&gt;
-          &lt;li&gt;走过的路
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;部署环境(不仅限于此)
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;https://ubuntu.com/&quot;&gt;Ubuntu server&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://www.centos.org/&quot;&gt;CentOS&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://www.debian.org/&quot;&gt;Deban&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Unix&quot;&gt;Unix&lt;/a&gt;
             &lt;ul&gt;
-              &lt;li&gt;小学&lt;/li&gt;
-              &lt;li&gt;初中&lt;/li&gt;
-              &lt;li&gt;高中&lt;/li&gt;
-              &lt;li&gt;大学&lt;/li&gt;
-              &lt;li&gt;⚠️
-                &lt;ul&gt;
-                  &lt;li&gt;担心混淆了以前的记忆&lt;/li&gt;
-                &lt;/ul&gt;
-              &lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://www.freebsd.org/&quot;&gt;Unix—FreeBSD&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;https://www.unix.com/&quot;&gt;Unix—Forums&lt;/a&gt;&lt;/li&gt;
             &lt;/ul&gt;
           &lt;/li&gt;
         &lt;/ul&gt;
@@ -491,320 +846,177 @@ DOWNLOADER_MIDDLEWARES = {
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;未完待续&quot;&gt;未完待续………..&lt;/h3&gt;
-
-</description>
-        <pubDate>Sun, 21 Feb 2021 10:50:00 +0800</pubDate>
-        <link>http://localhost:4000/2021/02/21/%E8%AE%B0%E5%BF%86%E6%8A%80%E6%9C%AF/</link>
-        <guid isPermaLink="true">http://localhost:4000/2021/02/21/%E8%AE%B0%E5%BF%86%E6%8A%80%E6%9C%AF/</guid>
-        
-        <category>记忆</category>
-        
-        
-        <category>【基础能力】</category>
-        
-      </item>
-    
-      <item>
-        <title>Python图片处理到打包app</title>
-        <description>&lt;h3 id=&quot;需求介绍&quot;&gt;需求介绍&lt;/h3&gt;
+&lt;hr /&gt;
 &lt;ul&gt;
-  &lt;li&gt;从网页上下载数据&lt;/li&gt;
-  &lt;li&gt;将数据根据模版生成图片&lt;/li&gt;
-  &lt;li&gt;最后打包成一个app&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;工具库&quot;&gt;工具库&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;拉取数据
+  &lt;li&gt;网络工具
     &lt;ul&gt;
-      &lt;li&gt;requests&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;解析网页
-    &lt;ul&gt;
-      &lt;li&gt;BeautifulSoup4&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;图片处理
-    &lt;ul&gt;
-      &lt;li&gt;Pillow&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;打包app
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;table&gt;
-          &lt;tbody&gt;
-            &lt;tr&gt;
-              &lt;td&gt;py2app&lt;/td&gt;
-              &lt;td&gt;pyinstaller&lt;/td&gt;
-            &lt;/tr&gt;
-          &lt;/tbody&gt;
-        &lt;/table&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;大致代码&quot;&gt;大致代码&lt;/h3&gt;
-</description>
-        <pubDate>Sun, 14 Feb 2021 10:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2021/02/14/Python%E5%9B%BE%E7%89%87%E5%A4%84%E7%90%86%E5%88%B0%E6%89%93%E5%8C%85app/</link>
-        <guid isPermaLink="true">http://localhost:4000/2021/02/14/Python%E5%9B%BE%E7%89%87%E5%A4%84%E7%90%86%E5%88%B0%E6%89%93%E5%8C%85app/</guid>
-        
-        <category>Python</category>
-        
-        
-        <category>【图片处理】</category>
-        
-      </item>
-    
-      <item>
-        <title>Mac游戏BombSquad</title>
-        <description>&lt;h3 id=&quot;很早之前玩过的游戏&quot;&gt;很早之前玩过的游戏&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;16年的时候玩过的游戏&lt;/li&gt;
-  &lt;li&gt;最近想起来找到了，玩的很逗。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;mac下载&quot;&gt;Mac下载&lt;/h4&gt;
-&lt;ol&gt;
-  &lt;li&gt;Mac上AppStore登录美国区账号&lt;/li&gt;
-  &lt;li&gt;Mac上AppStore搜索：Mac游戏BombSquad（主机）&lt;/li&gt;
-  &lt;li&gt;iPhone搜索BombSquad Remote (手柄), 安卓版本的手柄也用&lt;/li&gt;
-  &lt;li&gt;Mac和iPhone连接到相同的wifi&lt;/li&gt;
-  &lt;li&gt;打开Mac版本&lt;/li&gt;
-  &lt;li&gt;打开iPhone版本，就会显示了&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;然后&quot;&gt;然后&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;愉快的和家人玩耍吧&lt;/li&gt;
-&lt;/ul&gt;
-
-</description>
-        <pubDate>Fri, 12 Feb 2021 10:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2021/02/12/%E6%B8%B8%E6%88%8FBombSquad/</link>
-        <guid isPermaLink="true">http://localhost:4000/2021/02/12/%E6%B8%B8%E6%88%8FBombSquad/</guid>
-        
-        <category>Golang</category>
-        
-        
-        <category>【游戏】</category>
-        
-      </item>
-    
-      <item>
-        <title>如何系统学习编程</title>
-        <description>&lt;h4 id=&quot;编程的本质&quot;&gt;编程的本质？&lt;/h4&gt;
-&lt;p&gt;这些年一直在思考编程的本质，从不同层次做一些分析：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;过程分类
-    &lt;ul&gt;
-      &lt;li&gt;你想干什么
+      &lt;li&gt;应用层协议
         &lt;ul&gt;
-          &lt;li&gt;清楚界定你想干什么&lt;/li&gt;
-          &lt;li&gt;知道自己的目的是最重要的&lt;/li&gt;
+          &lt;li&gt;DNS:解析域名&lt;/li&gt;
+          &lt;li&gt;SMTP:邮件发送&lt;/li&gt;
+          &lt;li&gt;POP3:邮件接收&lt;/li&gt;
+          &lt;li&gt;MQTT&lt;/li&gt;
+          &lt;li&gt;HTTP&lt;/li&gt;
+          &lt;li&gt;FTP&lt;/li&gt;
+          &lt;li&gt;P2P&lt;/li&gt;
+          &lt;li&gt;SSH&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
-      &lt;li&gt;对事件发生过程的分解与重组
+      &lt;li&gt;传输层协议
         &lt;ul&gt;
-          &lt;li&gt;分解你做的事情&lt;/li&gt;
-          &lt;li&gt;明确知道每一步&lt;/li&gt;
-          &lt;li&gt;把各个步骤组合在一起&lt;/li&gt;
-          &lt;li&gt;以最高效的方式去做事&lt;/li&gt;
+          &lt;li&gt;UDP&lt;/li&gt;
+          &lt;li&gt;TCP&lt;/li&gt;
+          &lt;li&gt;SPX&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
-      &lt;li&gt;与电脑的对话
+      &lt;li&gt;网络层协议
         &lt;ul&gt;
-          &lt;li&gt;你要明白电脑能干什么&lt;/li&gt;
-          &lt;li&gt;你要会用电脑的语言&lt;/li&gt;
-          &lt;li&gt;你要知道如何组织语言&lt;/li&gt;
+          &lt;li&gt;IP&lt;/li&gt;
+          &lt;li&gt;IPX&lt;/li&gt;
+          &lt;li&gt;RIP&lt;/li&gt;
+          &lt;li&gt;OSPF&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;传统分类
-    &lt;ul&gt;
-      &lt;li&gt;数据结构
+      &lt;li&gt;数据链路层
         &lt;ul&gt;
-          &lt;li&gt;数据的组织形式&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;算法
-        &lt;ul&gt;
-          &lt;li&gt;数据流动的过程&lt;/li&gt;
-          &lt;li&gt;&lt;/li&gt;
+          &lt;li&gt;SDLC&lt;/li&gt;
+          &lt;li&gt;HDLC&lt;/li&gt;
+          &lt;li&gt;PPP&lt;/li&gt;
+          &lt;li&gt;STP&lt;/li&gt;
+          &lt;li&gt;帧中继&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&quot;学习编程的指导思想&quot;&gt;学习编程的指导思想&lt;/h4&gt;
-
-&lt;p&gt;A. 实践第一&lt;/p&gt;
+&lt;h3 id=&quot;服务端需要架构加持&quot;&gt;服务端需要架构加持&lt;/h3&gt;
 &lt;ul&gt;
-  &lt;li&gt;编程有很强的实操性&lt;/li&gt;
-  &lt;li&gt;结果快速反馈&lt;/li&gt;
-  &lt;li&gt;先写出一定量的程序再谈其他
-B. 精通其一&lt;/li&gt;
-  &lt;li&gt;先深入学习一门语言&lt;/li&gt;
-  &lt;li&gt;熟练使用一套工具链&lt;/li&gt;
-  &lt;li&gt;根据需求研究专门领域
-C. 分层学习&lt;/li&gt;
-  &lt;li&gt;根据现有的段位去深入升级
-    &lt;ol&gt;
-      &lt;li&gt;抄程序可以跑&lt;/li&gt;
-      &lt;li&gt;独立实现简单程序&lt;/li&gt;
-      &lt;li&gt;合作开发完善的系统&lt;/li&gt;
-      &lt;li&gt;开发高性能的系统&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;根据不同阶段的能力向下深入如下方面
-    &lt;ol&gt;
-      &lt;li&gt;编程语言&lt;/li&gt;
-      &lt;li&gt;操作系统&lt;/li&gt;
-      &lt;li&gt;网络&lt;/li&gt;
-      &lt;li&gt;领域特征&lt;/li&gt;
-    &lt;/ol&gt;
+  &lt;li&gt;&lt;a href=&quot;/2021/12/04/架构-架构思维框架/index.html&quot;&gt;Web架构思维框架&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;/2021/12/15/架构-Web高性能架构/index.html&quot;&gt;Web高性能架构&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;/2021/12/18/架构-Web高可用架构/index.html&quot;&gt;Web高可用架构&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;/2021/12/21/架构-Web高伸缩架构/index.html&quot;&gt;Web高伸缩架构&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;/2021/12/24/架构-Web可拓展架构/index.html&quot;&gt;Web可拓展架构&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;/2021/12/27/架构-Web高安全架构/index.html&quot;&gt;Web高安全架构&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&quot;可以采取的具体过程&quot;&gt;可以采取的具体过程&lt;/h4&gt;
-
-&lt;p&gt;– 未完待续
-– 0x0361c51f5ad9482c69ad34a1b73719f8c9568bd6&lt;/p&gt;
-
 </description>
-        <pubDate>Tue, 26 Jan 2021 10:50:00 +0800</pubDate>
-        <link>http://localhost:4000/2021/01/26/%E5%A6%82%E4%BD%95%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0%E7%BC%96%E7%A8%8B/</link>
-        <guid isPermaLink="true">http://localhost:4000/2021/01/26/%E5%A6%82%E4%BD%95%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0%E7%BC%96%E7%A8%8B/</guid>
+        <pubDate>Sat, 01 Jan 2022 09:00:00 +0800</pubDate>
+        <link>http://www.louishwh.top/2022/01/01/%E6%9C%8D%E5%8A%A1%E7%AB%AF@%E6%8A%80%E8%83%BD%E7%82%B9/</link>
+        <guid isPermaLink="true">http://www.louishwh.top/2022/01/01/%E6%9C%8D%E5%8A%A1%E7%AB%AF@%E6%8A%80%E8%83%BD%E7%82%B9/</guid>
+        
+        <category>【架构】</category>
         
         
-        <category>【基础能力】</category>
+        <category>【服务端】</category>
         
       </item>
     
       <item>
-        <title>Golang</title>
-        <description>&lt;h3 id=&quot;go基础啊&quot;&gt;GO基础啊&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/Unknwon/go-fundamental-programming&quot;&gt;基础语法&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/unknwon/the-way-to-go_ZH_CN/blob/master/eBook/directory.md&quot;&gt;入门指南&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://gowalker.org/&quot;&gt;Go开源项目&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Mon, 09 Dec 2019 10:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/12/09/Golang%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/12/09/Golang%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/</guid>
-        
-        <category>Golang</category>
-        
-        
-        <category>【编程语言】</category>
-        
-      </item>
-    
-      <item>
-        <title>RSA加密技术</title>
-        <description>&lt;h3 id=&quot;参考文章&quot;&gt;参考文章&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;cnblogs.com/pcheng/p/9629621.html&quot;&gt;RSA加密技术1&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Tue, 19 Nov 2019 10:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/11/19/RSA%E5%8A%A0%E5%AF%86/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/11/19/RSA%E5%8A%A0%E5%AF%86/</guid>
-        
-        <category>【加密】</category>
-        
-        
-        <category>【编程常识】</category>
-        
-      </item>
-    
-      <item>
-        <title>RSA加密</title>
-        <description>&lt;h4 id=&quot;参考文章&quot;&gt;参考文章&lt;/h4&gt;
+        <title>数据库@排名</title>
+        <description>&lt;h3 id=&quot;数据库的排名&quot;&gt;数据库的排名&lt;/h3&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://baike.baidu.com/item/%E9%9D%9E%E5%AF%B9%E7%A7%B0%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95/1208652?fr=aladdin&quot;&gt;非对称加密&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.jianshu.com/p/ca659dbc6f46&quot;&gt;RSA数学原理&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://baike.baidu.com/item/RSA%E7%AE%97%E6%B3%95/263310?fromtitle=RSA&amp;amp;fromid=210678&amp;amp;fr=aladdin&quot;&gt;RSA算法&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://blog.csdn.net/gulang03/article/details/81176133&quot;&gt;RSA原理&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://blog.csdn.net/jijianshuai/article/details/80582187&quot;&gt;RSA原理&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://www.cnblogs.com/NathanYang/p/9182929.html&quot;&gt;RSA原理&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://baike.baidu.com/item/%E6%AC%A7%E6%8B%89%E5%87%BD%E6%95%B0/1944850?fr=aladdin&quot;&gt;欧拉函数&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://baike.baidu.com/item/%E4%BA%92%E8%B4%A8%E6%95%B0/6147106?fr=aladdin&quot;&gt;互质数&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://stuvel.eu/python-rsa-doc/usage.html#generating-keys&quot;&gt;Python-RSA&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://blog.csdn.net/gulang03/article/details/81175854&quot;&gt;引用&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://db-engines.com/en/ranking&quot;&gt;DB-Engines&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.modb.pro/dbRank&quot;&gt;墨天轮&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&quot;过程梳理&quot;&gt;过程梳理&lt;/h4&gt;
+&lt;h3 id=&quot;当前排名现状&quot;&gt;当前排名现状&lt;/h3&gt;
+
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;ol&gt;
-      &lt;li&gt;随机取两个素数数: P、Q&lt;/li&gt;
-    &lt;/ol&gt;
+    &lt;p&gt;Oracle&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;ol&gt;
-      &lt;li&gt;计算素数的最小公倍数: m = P * Q&lt;/li&gt;
-    &lt;/ol&gt;
+    &lt;p&gt;MySQL&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;ol&gt;
-      &lt;li&gt;计算欧拉数: eular = (p -1 ) * (q - 1)
-        &lt;ul&gt;
-          &lt;li&gt;3.1 计算加密指数 e&lt;/li&gt;
-        &lt;/ul&gt;
-        &lt;ul&gt;
-          &lt;li&gt;3.1.1 生成公钥
-    - 3.2 计算模反元素&lt;/li&gt;
-          &lt;li&gt;3.2.1 生成私钥&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ol&gt;
+    &lt;p&gt;Microsoft SQL Server&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;ol&gt;
-      &lt;li&gt;模幂运算
-        &lt;ul&gt;
-          &lt;li&gt;密文&lt;/li&gt;
-          &lt;li&gt;明文&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ol&gt;
+    &lt;p&gt;PostgreSQL&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;MongoDB&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Redis&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Elasticsearch&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;SQLite&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Microsoft Access&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Cassandra&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;MariaDB&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&quot;数学知识&quot;&gt;数学知识&lt;/h4&gt;
+&lt;h3 id=&quot;七周七数据库提及的&quot;&gt;七周七数据库提及的&lt;/h3&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;素数&lt;/li&gt;
-  &lt;li&gt;最小公倍数&lt;/li&gt;
-  &lt;li&gt;欧拉函数&lt;/li&gt;
-  &lt;li&gt;幂运算&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;PostgreSQL&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Riak&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Apache HBase&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Apache CouchDB&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;MongoDB&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Neo4j&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Redis&lt;/p&gt;
+  &lt;/li&gt;
 &lt;/ol&gt;
+
+&lt;h3 id=&quot;自己真正玩过的&quot;&gt;自己真正玩过的&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;MySQL&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;PostgreSQL&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;MongoDB&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Redis&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;SQLite&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
 </description>
-        <pubDate>Mon, 18 Nov 2019 12:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/11/18/RSA%E5%8A%A0%E5%AF%86/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/11/18/RSA%E5%8A%A0%E5%AF%86/</guid>
+        <pubDate>Sat, 01 Jan 2022 08:00:00 +0800</pubDate>
+        <link>http://www.louishwh.top/2022/01/01/%E6%95%B0%E6%8D%AE%E5%BA%93@%E6%8E%92%E5%90%8D/</link>
+        <guid isPermaLink="true">http://www.louishwh.top/2022/01/01/%E6%95%B0%E6%8D%AE%E5%BA%93@%E6%8E%92%E5%90%8D/</guid>
         
-        <category>【RSA加密】</category>
+        <category>【数据库】</category>
         
         
-        <category>【非对称加密】</category>
+        <category>【数据库】</category>
         
       </item>
     

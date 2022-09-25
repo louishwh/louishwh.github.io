@@ -1,0 +1,12 @@
+---
+layout: post
+title: Golang
+date: 2019-12-09 10:00:00 +0800
+categories: 【编程语言】
+tag: 【Go】
+---
+
+### GO基础啊
+- [基础语法](https://github.com/Unknwon/go-fundamental-programming)
+- [入门指南](https://github.com/unknwon/the-way-to-go_ZH_CN/blob/master/eBook/directory.md)
+- [Go开源项目](https://gowalker.org/)

@@ -1,4 +1,4 @@
-I"�!<blockquote>
+I"C#<blockquote>
   <p><a href="https://www.runoob.com/regexp/regexp-intro.html">参考文档1</a></p>
 
 </blockquote>
@@ -57,13 +57,13 @@
           <li>限定符
             <ul>
               <li>含义: 指定正则表达式的一个给定组件必须要出现多少次才能满足匹配</li>
-              <li><code class="highlighter-rouge">*</code> 匹配前面的子表达式零次或多次。</li>
-              <li><code class="highlighter-rouge">+</code> 匹配前面的子表达式一次或多次。</li>
-              <li><code class="highlighter-rouge">?</code> 匹配前面的子表达式零次或一次。</li>
-              <li><code class="highlighter-rouge">{n}</code> n是一个非负整数。匹配确定的 n 次。</li>
-              <li><code class="highlighter-rouge">{n,}</code> n是一个非负整数。至少匹配n 次。</li>
-              <li><code class="highlighter-rouge">{n,m}</code> m和n均为非负整数，其中n &lt;= m。最少匹配 n 次且最多匹配 m 次。</li>
-              <li>⚠️ <code class="highlighter-rouge">*、+</code> 限定符都是贪婪的, 在它们的后面加上一个?就可以实现非贪婪或最小匹配。</li>
+              <li><code class="language-plaintext highlighter-rouge">*</code> 匹配前面的子表达式零次或多次。</li>
+              <li><code class="language-plaintext highlighter-rouge">+</code> 匹配前面的子表达式一次或多次。</li>
+              <li><code class="language-plaintext highlighter-rouge">?</code> 匹配前面的子表达式零次或一次。</li>
+              <li><code class="language-plaintext highlighter-rouge">{n}</code> n是一个非负整数。匹配确定的 n 次。</li>
+              <li><code class="language-plaintext highlighter-rouge">{n,}</code> n是一个非负整数。至少匹配n 次。</li>
+              <li><code class="language-plaintext highlighter-rouge">{n,m}</code> m和n均为非负整数，其中n &lt;= m。最少匹配 n 次且最多匹配 m 次。</li>
+              <li>⚠️ <code class="language-plaintext highlighter-rouge">*、+</code> 限定符都是贪婪的, 在它们的后面加上一个?就可以实现非贪婪或最小匹配。</li>
             </ul>
           </li>
           <li>定位符
@@ -112,22 +112,22 @@
           <li>特殊字符 * 与 {0,} 是相等的，它们都代表着 0 个或多个前面的内容 。</li>
           <li>所有包含一个以上的字母、数字或下划线的字符串
             <ul>
-              <li><code class="highlighter-rouge">^[a-zA-Z0-9_]{1,}$</code></li>
+              <li><code class="language-plaintext highlighter-rouge">^[a-zA-Z0-9_]{1,}$</code></li>
             </ul>
           </li>
           <li>所有的正整数
             <ul>
-              <li><code class="highlighter-rouge">^[1-9][0-9]{0,}$</code></li>
+              <li><code class="language-plaintext highlighter-rouge">^[1-9][0-9]{0,}$</code></li>
             </ul>
           </li>
           <li>所有的整数
             <ul>
-              <li><code class="highlighter-rouge">^\-{0,1}[0-9]{1,}$</code></li>
+              <li><code class="language-plaintext highlighter-rouge">^\-{0,1}[0-9]{1,}$</code></li>
             </ul>
           </li>
           <li>所有的浮点数
             <ul>
-              <li><code class="highlighter-rouge">^[-]?[0-9]+\.?[0-9]+$</code></li>
+              <li><code class="language-plaintext highlighter-rouge">^[-]?[0-9]+\.?[0-9]+$</code></li>
             </ul>
           </li>
         </ul>
@@ -140,52 +140,52 @@
 <ul>
   <li>匹配双字节汉字:
     <ul>
-      <li><code class="highlighter-rouge">[^u4e00-u9fa5]</code></li>
+      <li><code class="language-plaintext highlighter-rouge">[^u4e00-u9fa5]</code></li>
     </ul>
   </li>
   <li>匹配中文字符
     <ul>
-      <li><code class="highlighter-rouge">[u4e00-u9fa5]</code></li>
+      <li><code class="language-plaintext highlighter-rouge">[u4e00-u9fa5]</code></li>
     </ul>
   </li>
   <li>匹配HTML标记:
     <ul>
-      <li><code class="highlighter-rouge">&lt;(S*?)[^&gt;]*&gt;.*?|&lt;.*? /&gt;</code></li>
+      <li><code class="language-plaintext highlighter-rouge">&lt;(S*?)[^&gt;]*&gt;.*?|&lt;.*? /&gt;</code></li>
     </ul>
   </li>
   <li>匹配HTML标签:
     <ul>
-      <li><code class="highlighter-rouge">&lt;/?[a-zA-Z]+[^&gt;&lt;]*&gt;</code></li>
+      <li><code class="language-plaintext highlighter-rouge">&lt;/?[a-zA-Z]+[^&gt;&lt;]*&gt;</code></li>
     </ul>
   </li>
   <li>匹配空白行:
     <ul>
-      <li><code class="highlighter-rouge">ns*r</code></li>
+      <li><code class="language-plaintext highlighter-rouge">ns*r</code></li>
     </ul>
   </li>
   <li>匹配首尾空白字符
     <ul>
-      <li><code class="highlighter-rouge">^s*|s*$</code></li>
+      <li><code class="language-plaintext highlighter-rouge">^s*|s*$</code></li>
     </ul>
   </li>
   <li>匹配Email地址
     <ul>
-      <li><code class="highlighter-rouge">w+([-+.]w+)*@w+([-.]w+)*.w+([-.]w+)*</code></li>
+      <li><code class="language-plaintext highlighter-rouge">w+([-+.]w+)*@w+([-.]w+)*.w+([-.]w+)*</code></li>
     </ul>
   </li>
   <li>匹配网址URL的正则表达式：
     <ul>
-      <li><code class="highlighter-rouge">http://([w-]+.)+[w-]+(/[w- ./?%&amp;=]*)?</code></li>
+      <li><code class="language-plaintext highlighter-rouge">http://([w-]+.)+[w-]+(/[w- ./?%&amp;=]*)?</code></li>
     </ul>
   </li>
   <li>匹配国内电话号码：
     <ul>
-      <li><code class="highlighter-rouge">[0-9]{3}-[0-9]{8}|[0-9]{4}-[0-9]{7}</code></li>
+      <li><code class="language-plaintext highlighter-rouge">[0-9]{3}-[0-9]{8}|[0-9]{4}-[0-9]{7}</code></li>
     </ul>
   </li>
   <li>匹配ip地址：
     <ul>
-      <li><code class="highlighter-rouge">[1-2]?[0-9]{1,2}.[1-2]?[0-9]{1,2}.[1-2]?[0-9]{1,2}.[1-2]?[0-9]{1,2}</code></li>
+      <li><code class="language-plaintext highlighter-rouge">[1-2]?[0-9]{1,2}.[1-2]?[0-9]{1,2}.[1-2]?[0-9]{1,2}.[1-2]?[0-9]{1,2}</code></li>
     </ul>
   </li>
   <li>匹配26个英文字母字符串
@@ -195,12 +195,12 @@
   </li>
   <li>验证一年的12个月
     <ul>
-      <li><code class="highlighter-rouge">^(0?[1-9]|1[0-2])$</code></li>
+      <li><code class="language-plaintext highlighter-rouge">^(0?[1-9]|1[0-2])$</code></li>
     </ul>
   </li>
   <li>验证一个月的31天：
     <ul>
-      <li><code class="highlighter-rouge">^((0?[1-9])|((1|2)[0-9])|30|31)$</code></li>
+      <li><code class="language-plaintext highlighter-rouge">^((0?[1-9])|((1|2)[0-9])|30|31)$</code></li>
     </ul>
   </li>
 </ul>

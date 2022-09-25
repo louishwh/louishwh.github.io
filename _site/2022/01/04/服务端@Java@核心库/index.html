@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>服务端@Java@核心库人码合一</title>
+
+	<link rel="shortcut icon" href="/styles/images/favicon.png">
+	<link rel="icon" href="/styles/images/favicon.png">
+
+	<link rel="stylesheet" href="/styles/css/index.css">
+	<link rel="stylesheet" href="/styles/css/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/styles/css/syntax.css">
+	<link rel="canonical" href="/2022/01/04/%E6%9C%8D%E5%8A%A1%E7%AB%AF@Java@%E6%A0%B8%E5%BF%83%E5%BA%93/">
+	<link rel="alternate" type="application/rss+xml" title="人码合一" href="/feed.xml">
+	
+	<meta name="keywords" content="服务端@Java@核心库, 人码合一, ">
+	<meta name="description" content="">
+
+	<!-- <script src="/styles/js/jquery.min.js"></script> -->
+	<!--[if lt IE 9]>
+    	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  	<![endif]-->
+<!--   	<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "//hm.baidu.com/hm.js?624f97ab37fd73fbedc7929427ca95ea";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script> -->
+  	<style type="text/css">
+	  	.docs-content{
+	  		margin-bottom: 10px;
+	  	}
+  	</style>
+</head>
+
+  <body class="index">
+
+    <header class="navbar navbar-inverse navbar-fixed-top docs-nav" role="banner">
+  <div class="container">
+
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+     <!--  <a href="/" class="navbar-brand">
+        <img src="/styles/images/logo.png">
+      </a> -->
+
+    </div>
+
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">    
+         <li>
+          <a href="https://github.com/louishwh//" style="color:#e88b00">Louishwh</a>
+        </li>
+        
+        <li>
+          <a href="/">技术</a>
+        </li>
+
+         <li>
+          <a href="/sources">资源</a>
+        </li>
+
+        <!-- <li>
+          <a href="/page/categories/">分类</a>
+        </li>
+        
+        <li>
+          <a href="/page/tag">索引</a>
+        </li>
+        
+        <li>
+          <a href="/page/level">分级</a>
+        </li> -->
+
+        <li>
+          <a rel="nofollow" href="/books">读书</a>
+        </li>
+
+      </ul>
+
+<!--       <ul class="nav navbar-nav navbar-right">
+        <li>
+            <a><span id="busuanzi_container_site_pv">总访问量<span id="busuanzi_value_site_pv"></span>次</span></a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">关于<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a rel="nofollow" target="_blank" href="https://github.com/louishwh/">Github</a></li>
+            <li><a rel="nofollow" target="_blank" href="">关于作者</a></li>
+            <li><a rel="nofollow" href="/books">我的书单</a></li>
+            <li class="divider"></li>
+            <li><a rel="nofollow" target="_blank" href="https://github.com/luoyan35714/LessOrMore.git">本项目</a></li>
+          </ul>
+        </li>
+      </ul> -->
+
+
+    </nav>
+  </div>
+</header>
+    <!-- <div class="docs-header" id="content"> -->
+  <!-- <div class="container"> -->
+  	<!--  -->
+  		<!-- 
+		    <h1>服务端@Java@核心库</h1>
+		    <p>Post on Jan 04, 2022 by <a href="/about">louis han</a></p>
+		 -->
+		    <!-- <h1>知行合一</h1> -->
+    <!--  -->
+  <!-- </div> -->
+<!-- </div> -->
+    
+      <!-- 
+<div class="banner">
+  <div class="container">
+  	
+    	<a href="/categories/#【服务端】-ref">【服务端】</a>	/
+    	<a href="/tag/#【Java】-ref">【Java】</a>
+    
+  </div>
+</div> -->
+
+    
+
+    <div class="container docs-container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="sidebar hidden-print" role="complementary">
+        <div id="navigation">
+  <h2>目录</h2>
+  <ul class="nav sidenav">
+  </ul>
+  <div style="height: 200px;width: 150px;">
+    <!-- script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async"> 
+    <!-- </script>  -->
+
+  </div>
+</div>
+
+ 
+      </div>
+    </div>
+    
+    <div class="col-md-9" role="main">
+      <div class="panel docs-content">
+        <div class="wrapper">
+            <header class="post-header">
+              <h1 class="post-title">服务端@Java@核心库</h1>
+              <!--
+                <p class="post-meta">Jan 4, 2022</p>
+              -->
+              <div class="meta"> <span class="postdate">2022-01-04-(2)-PM:004</span>  
+                <!-- <a target="_blank" href="http://www.louishwh.top">louis han</a> -->
+              </div>
+              <br />
+            </header>
+            <article class="post-content">
+              <h3 id="java标准库"><a href="https://docs.oracle.com/en/java/javase/index.html">Java@标准库</a></h3>
+<ul>
+  <li><a href="https://docs.oracle.com/javase/8/">Java8@标准库</a></li>
+  <li><a href="https://docs.oracle.com/en/java/javase/11/core/java-core-libraries1.html">Java11@标准库</a></li>
+  <li><a href="https://docs.oracle.com/en/java/javase/17/core/java-core-libraries1.html">Java17@标准库</a></li>
+</ul>
+
+<h3 id="java17核心库">Java17@核心库</h3>
+
+<ol>
+  <li>序列化过滤
+    <ul>
+      <li>解决反序列化漏洞</li>
+      <li>Java序列化过滤器</li>
+      <li>过滤器工厂</li>
+      <li>Allow-Lists and Reject-Lists</li>
+      <li>基于模式的过滤器</li>
+      <li>自定义过滤器</li>
+      <li>设置过滤器工厂</li>
+      <li>内置的过滤器</li>
+      <li>日志过滤操作</li>
+    </ul>
+  </li>
+  <li>增强弃用
+    <ul>
+      <li>JDK中已弃用</li>
+      <li>如何弃用API</li>
+      <li>通知和警告</li>
+      <li>运行jdeprscan</li>
+    </ul>
+  </li>
+  <li>XML目录API
+ -
+    <ul>
+      <li></li>
+      <li></li>
+    </ul>
+  </li>
+  <li>创建不可修改的列表、集合和映射
+    <ul>
+      <li>用例</li>
+      <li>语法</li>
+      <li>创建集合的不可修改副本</li>
+      <li>从流中创建不可修改的集合</li>
+      <li>随机迭代顺序</li>
+      <li>不可修改的集合</li>
+      <li>空间效率</li>
+      <li>线程安全</li>
+    </ul>
+  </li>
+  <li>进程API
+    <ul>
+      <li>进程相关的类与接口</li>
+      <li>创建进程</li>
+      <li>获取进程信息</li>
+      <li>从进程重定向输出</li>
+      <li>用流过滤进程</li>
+      <li>当进程调用onExit方法终止时处理</li>
+      <li>控制对进程敏感信息的访问</li>
+    </ul>
+  </li>
+  <li>首选API
+    <ul>
+      <li>比较首选项API和其他机制</li>
+      <li>用法说明</li>
+      <li>设计常见问题</li>
+    </ul>
+  </li>
+  <li>Java日志概述
+    <ul>
+      <li>控制流程概述</li>
+      <li>日志级别</li>
+      <li>记录仪</li>
+      <li>日志记录方法</li>
+      <li>处理程序</li>
+      <li>格式化程序</li>
+      <li>日志管理器</li>
+      <li>配置文件</li>
+      <li>默认配置</li>
+      <li>动态配置更新</li>
+      <li>本地方法</li>
+      <li>文档类型定义</li>
+      <li>唯一的消息ID</li>
+      <li>安全</li>
+      <li>配置管理</li>
+      <li>打包</li>
+      <li>本地化</li>
+      <li>远程访问和序列化</li>
+      <li>实例</li>
+    </ul>
+  </li>
+  <li>Java NIO
+    <ul>
+      <li>Grep NIO</li>
+      <li>校验NIO示例</li>
+      <li>时间查询NIO示例</li>
+      <li>时间服务器NIO示例</li>
+      <li>非阻塞时间服务器NIO示例</li>
+      <li>Internet协议和UNIX域套接字NIO示例</li>
+      <li>文件NIO的例子:
+        <ul>
+          <li>Chmod文件NIO示例</li>
+          <li>Copy File NIO示例</li>
+          <li>磁盘占用率文件NIO示例</li>
+          <li>自定义文件属性文件NIO示例</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Java网络
+    <ul>
+      <li>Java网络API
+        <ul>
+          <li>java.net: 实现网络应用的类库</li>
+          <li>java.net.http: HTTP Client/WebSocket</li>
+          <li>javax.net: 套接字的类库</li>
+          <li>javax.net.ssl: 安全套接字类库</li>
+          <li>jdk.net: 针对java.net和java.nio.channels的平台选项</li>
+        </ul>
+      </li>
+      <li>网络系统属性
+        <ul>
+          <li>使用java命令的-D选项</li>
+          <li>使用System.setProperty(String, String)</li>
+          <li>在$JAVA_HOME/conf/net.properties中指定.注意，在此文件中只能指定与代理相关的属性。</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>伪随机数生成器
+    <ul>
+      <li>伪随机数发生器的特性</li>
+      <li>用随机发生器接口生成伪随机数</li>
+      <li>在多线程应用程序中生成伪随机数
+        <ul>
+          <li>动态创建新的生成器</li>
+          <li>创建生成器流</li>
+        </ul>
+      </li>
+      <li>选择伪随机数生成器算法</li>
+    </ul>
+  </li>
+</ol>
+
+
+            </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+    <footer class="footer" role="contentinfo">
+	<div class="container">
+		<p class="copyright">版权 &copy; 2018-2022 <a href=""><code>louis han</code></a>.</p>
+		<p>自 <a href="http://jekyllrb.com"> Jekyll </a>的<a href="http://lesscss.cn/"> Less </a>主题重构产生。</p>
+	</div>
+</footer>
+
+<script src="/styles/js/jquery.min.js"></script>
+<script src="/styles/js/bootstrap.min.js"></script>
+<script src="/styles/js/holder.min.js"></script>
+<script src="/styles/js/lessismore.js"></script>
+<script src="/styles/js/application.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  </body>
+</html>

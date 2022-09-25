@@ -1,0 +1,44 @@
+---
+layout: post
+title: 《源码阅读计划》
+date: 2019-10-01 00:00:00 +0800
+categories: 【数据库】
+tag: 【源码阅读】
+---
+
+
+## 目标
+
+- 时间节点: 
+	- 2019-10.1~2019.12.31
+	- 40-44周
+	- 45-48周
+	- 49-53周
+
+- 完成项目的整体认识
+	- Redis(c)
+		- 架构图
+		- 文件架构图
+		
+	- MySQL(c)
+		-
+		-	
+	- Nginx(c)
+		-
+		-  
+	- Tomcat(Java)
+		-
+		- 
+	- Netty(Java)
+		-
+		- 
+
+- 工具掌握
+	- 编辑器 & IDE
+		- CLion
+		- InteliJ IDEA
+		- Vim
+		- VS Code
+		- Sublime Text 
+
+

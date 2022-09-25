@@ -1,0 +1,47 @@
+---
+layout: default
+title: 分类
+header: Posts By Source
+---
+
+<div class="container docs-container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="sidebar hidden-print" role="complementary">
+        <div id="navigation">
+        	<h3>资源分类</h3>
+      		<ul class="nav sidenav">
+				{% if site.sources.first[0] == null %}
+					{% for source in site.sources %} 
+				    	<li><a href="#{{ source }}-ref">
+				    		{{ category | join: "/" }} <span style="color: #999999;" >({{ site.sources[source].size }})</span>
+				    	</a></li>
+			    	{% endfor %}
+			  	{% else %}
+			    	{% for source in site.sources %} 
+				    	<li><a href="#{{ source[0] }}-ref">
+				    		{{ source[0] | join: "/" }} <span style="color: #999999;" >({{ source[1].size }})</span>
+				    	</a></li>
+			    	{% endfor %}
+			  	{% endif %}
+          	</ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-9" role="main">
+      <div class="panel docs-content">
+        <div class="wrapper">
+          <div class="home">
+			{% for source in site.sources %} 
+			  <h4 id="{{ category[0] }}-ref">{{ source[0] | join: "/" }}</h4>
+			  <ul>
+			    {% assign pages_list = source[1] %}  
+			    {% include LessOrMore/pages_list %}
+			  </ul>
+			{% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

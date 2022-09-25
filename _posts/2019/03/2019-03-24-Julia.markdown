@@ -1,0 +1,9 @@
+---
+layout: post
+title: Julia知识点
+date: 2019-03-24 18:50:00 +0800
+categories: 【数据分析】
+tag: 【Julia】
+---
+
+[Julia为什么快？](https://mp.weixin.qq.com/s/HNdR3PahyExix3F6O8yHeA)
