@@ -1,0 +1,46 @@
+I"�<h3 id="目录">目录</h3>
+<ol>
+  <li>几个重要的消息队列协议</li>
+  <li>AMQP</li>
+  <li>MQTT</li>
+</ol>
+
+<h4 id="重要的消息队列协议">重要的消息队列协议</h4>
+
+<ul>
+  <li><a href="https://www.amqp.org/">AMQP</a>
+    <ul>
+      <li>RabbitMQ</li>
+      <li>Apache Apollo</li>
+      <li>Apache ActiveMQ</li>
+    </ul>
+  </li>
+  <li><a href="https://mqtt.org/">MQTT</a>
+    <ul>
+      <li>RabbitMQ</li>
+      <li>Apache Apollo</li>
+      <li>Apache ActiveMQ</li>
+      <li>HiveMQ</li>
+    </ul>
+  </li>
+  <li><a href="https://stomp.github.io/stomp-specification-1.2.html">STOMP</a>
+    <ul>
+      <li>RabbitMQ</li>
+      <li>Apache Apollo</li>
+      <li>Apache ActiveMQ</li>
+    </ul>
+  </li>
+  <li><a href="https://xmpp.org/">XMPP</a></li>
+  <li><a href="https://www.oracle.com/technical-resources/articles/java/intro-java-message-service.html">JMS</a></li>
+</ul>
+
+<h4 id="amqp">AMQP</h4>
+<ul>
+  <li></li>
+</ul>
+
+<h4 id="mqtt">MQTT</h4>
+<ul>
+  <li></li>
+</ul>
+:ET
