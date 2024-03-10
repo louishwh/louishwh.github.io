@@ -1,4 +1,4 @@
-I"�<h3 id="文章目录">文章目录</h3>
+I"�<h3 id="文章目录">文章目录</h3>
 <ol>
   <li>系统间通信</li>
   <li>为什么用消息队列？</li>
@@ -54,7 +54,7 @@
 
 <h4 id="5-常用的消息队列产品">5. 常用的消息队列产品</h4>
 <ul>
-  <li><a href="https://kafka.apache.org/">‼️Kafka</a></li>
+  <li><a href="https://kafka.apache.org/">️Kafka</a></li>
   <li><a href="https://rabbitmq.com/">RabbitMQ</a></li>
   <li><a href="https://github.com/apache/rocketmq">RocketMQ</a></li>
   <li><a href="https://github.com/apache/activemq">ActiveMQ</a></li>
